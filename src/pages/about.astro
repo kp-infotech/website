@@ -6,7 +6,7 @@ import Values from '../components/sections/Values.astro';
 import Team from '../components/sections/Team.astro';
 import Certifications from '../components/sections/Certifications.astro';
 import CTASection from '../components/sections/CTASection.astro';
-import { client } from '../lib/sanity';
+import { client, urlFor } from '../lib/sanity';
 
 // Fetch about page data from Sanity (if available)
 const aboutQuery = `{
@@ -19,6 +19,9 @@ const aboutQuery = `{
     role,
     photo,
     linkedin
+  },
+  "pageHeroes": *[_type == "pageHeroes"][0] {
+    aboutHero
   }
 }`;
 
@@ -31,10 +34,19 @@ const data = await client.fetch<{
     photo?: any;
     linkedin?: string;
   }>;
+  pageHeroes: { aboutHero?: any } | null;
 }>(aboutQuery);
 
 const teamMembers = data?.teamMembers || [];
 const showTeam = teamMembers.length > 0;
+
+// Build hero image URL if available
+let aboutHeroUrl: string | undefined;
+if (data?.pageHeroes?.aboutHero) {
+  try {
+    aboutHeroUrl = urlFor(data.pageHeroes.aboutHero).width(1920).format('webp').url();
+  } catch { /* fall back to placeholder */ }
+}
 ---
 
 <BaseLayout
@@ -45,6 +57,7 @@ const showTeam = teamMembers.length > 0;
     label="About Us"
     headline="We *Craft* Digital Excellence"
     description="A premium digital product studio helping ambitious brands transform their ideas into exceptional digital experiences."
+    image={aboutHeroUrl}
   />
 
   <OurStory

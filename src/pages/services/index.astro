@@ -8,6 +8,18 @@ import { ChevronDown, MoveRight } from '@lucide/astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allServicesQuery } from '../../lib/queries';
 
+// Fetch page hero
+const pageHeroes = await client.fetch<Record<string, any> | null>(
+  `*[_type == "pageHeroes"][0] { servicesHero }`
+);
+
+let servicesHeroUrl: string | undefined;
+if (pageHeroes?.servicesHero) {
+  try {
+    servicesHeroUrl = urlFor(pageHeroes.servicesHero).width(1920).format('webp').url();
+  } catch { /* fall back to placeholder */ }
+}
+
 // Fetch services from Sanity
 const services = await client.fetch<Array<{
   _id: string;
@@ -40,7 +52,7 @@ const servicesWithImages = services.map((service) => {
   description="Explore our comprehensive range of digital services including UI/UX design, web development, mobile apps, ERP solutions, and digital marketing."
 >
   <!-- Hero Section -->
-  <PageHero variant="inner">
+  <PageHero variant="inner" image={servicesHeroUrl}>
     <SectionLabel text="Services" />
     <h1>
       <HighlightedText text="What We *Do*" />

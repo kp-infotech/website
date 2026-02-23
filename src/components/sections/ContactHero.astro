@@ -7,16 +7,18 @@ interface Props {
   label?: string;
   headline?: string;
   description?: string;
+  image?: string;
 }
 
 const {
   label = "Get In Touch",
   headline = "Let's Build Something *Great*",
-  description = "We're ready to bring your vision to life. Tell us about your project and let's create something extraordinary together."
+  description = "We're ready to bring your vision to life. Tell us about your project and let's create something extraordinary together.",
+  image,
 } = Astro.props;
 ---
 
-<PageHero variant="inner">
+<PageHero variant="inner" image={image}>
   <SectionLabel text={label} />
 
   <h1>

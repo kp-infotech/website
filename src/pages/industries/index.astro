@@ -5,11 +5,23 @@ import SectionLabel from '../../components/ui/SectionLabel.astro';
 import HighlightedText from '../../components/ui/HighlightedText.astro';
 import IndustryCard from '../../components/ui/IndustryCard.astro';
 import CTASection from '../../components/sections/CTASection.astro';
-import { client } from '../../lib/sanity';
+import { client, urlFor } from '../../lib/sanity';
 import { allIndustriesQuery } from '../../lib/queries';
 
 // Fetch all industries
 const industries = await client.fetch(allIndustriesQuery);
+
+// Fetch page hero
+const pageHeroes = await client.fetch<Record<string, any> | null>(
+  `*[_type == "pageHeroes"][0] { industriesHero }`
+);
+
+let industriesHeroUrl: string | undefined;
+if (pageHeroes?.industriesHero) {
+  try {
+    industriesHeroUrl = urlFor(pageHeroes.industriesHero).width(1920).format('webp').url();
+  } catch { /* fall back to placeholder */ }
+}
 
 // Build stacked rows pattern: full → grid → full → grid...
 interface StackedRow {
@@ -47,7 +59,7 @@ const seoDescription = 'Deep domain expertise across sectors that power the mode
 ---
 
 <BaseLayout title={seoTitle} description={seoDescription}>
-  <PageHero variant="inner">
+  <PageHero variant="inner" image={industriesHeroUrl}>
     <h1><HighlightedText text="Industries we *serve*" /></h1>
     <p class="page-hero__description">
       Deep domain expertise across sectors that power the modern economy. From healthcare to energy, we bring vertical expertise to every project.

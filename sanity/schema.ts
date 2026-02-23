@@ -10,6 +10,7 @@ import { testimonial } from './schemas/testimonial';
 import { teamMember } from './schemas/teamMember';
 import { jobListing } from './schemas/jobListing';
 import { siteSettings } from './schemas/siteSettings';
+import { pageHeroes } from './schemas/pageHeroes';
 
 // Object schemas
 import { processStep } from './schemas/objects/processStep';
@@ -33,6 +34,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     teamMember,
     jobListing,
     siteSettings,
+    pageHeroes,
     // Object types
     processStep,
     faqItem,

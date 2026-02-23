@@ -20,6 +20,19 @@ export const siteSettingsQuery = `
   }
 `;
 
+// Page Heroes (singleton)
+export const pageHeroesQuery = `
+  *[_type == "pageHeroes"][0] {
+    homeHero,
+    aboutHero,
+    contactHero,
+    workHero,
+    servicesHero,
+    industriesHero,
+    insightsHero
+  }
+`;
+
 // Homepage data - fetches all data needed for the homepage
 export const homepageDataQuery = `
 {

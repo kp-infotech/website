@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { client } from '../lib/sanity';
+import { client, urlFor } from '../lib/sanity';
 import { homepageDataQuery } from '../lib/queries';
 
 // Section components
@@ -15,8 +15,19 @@ import CTASection from '../components/sections/CTASection.astro';
 
 // Fetch all homepage data from Sanity
 const data = await client.fetch(homepageDataQuery);
+const pageHeroes = await client.fetch<Record<string, any> | null>(
+  `*[_type == "pageHeroes"][0] { homeHero }`
+);
 
 const { siteSettings, services, industries, featuredWork, testimonials } = data;
+
+// Build hero image URL if available
+let homeHeroUrl: string | undefined;
+if (pageHeroes?.homeHero) {
+  try {
+    homeHeroUrl = urlFor(pageHeroes.homeHero).width(1920).format('webp').url();
+  } catch { /* fall back to local asset */ }
+}
 
 // Prepare service names for marquee
 const serviceNames = services?.map((s: any) => s.title) || [
@@ -46,6 +57,7 @@ const heroDescription = "We craft premium digital experiences for startups and b
     tagline={siteSettings?.siteTagline || "Digital Product Studio"}
     headline={siteSettings?.heroHeadline || "We craft *digital experiences* that drive growth"}
     description={heroDescription}
+    image={homeHeroUrl}
   />
 
   <!-- Services Marquee -->

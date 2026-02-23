@@ -19,6 +19,18 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 const { page } = Astro.props;
 const categories = await client.fetch(allBlogCategoriesQuery);
 
+// Fetch page hero
+const pageHeroes = await client.fetch<Record<string, any> | null>(
+  `*[_type == "pageHeroes"][0] { insightsHero }`
+);
+
+let insightsHeroUrl: string | undefined;
+if (pageHeroes?.insightsHero) {
+  try {
+    insightsHeroUrl = urlFor(pageHeroes.insightsHero).width(1920).format('webp').url();
+  } catch { /* fall back to placeholder */ }
+}
+
 const isFirstPage = page.currentPage === 1;
 const featuredPost = isFirstPage ? page.data[0] : undefined;
 const gridPosts = isFirstPage ? page.data.slice(1) : page.data;
@@ -45,7 +57,7 @@ const seoDescription =
 ---
 
 <BaseLayout title={seoTitle} description={seoDescription}>
-  <PageHero variant="inner">
+  <PageHero variant="inner" image={insightsHeroUrl}>
     <SectionLabel text="Learn & Explore" />
     <h1>
       <HighlightedText text="Insights & *Articles*" />

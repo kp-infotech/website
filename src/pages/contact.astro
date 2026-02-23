@@ -3,30 +3,48 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactHero from '../components/sections/ContactHero.astro';
 import ContactFormSection from '../components/sections/ContactFormSection.astro';
 import ContactMap from '../components/sections/ContactMap.astro';
-import { client } from '../lib/sanity';
+import { client, urlFor } from '../lib/sanity';
 
-// Fetch site settings from Sanity for contact info
-const siteSettingsQuery = `*[_type == "siteSettings"][0] {
-  contactEmail,
-  contactPhone,
-  address,
-  socialLinks {
-    linkedin,
-    twitter,
-    instagram
+// Fetch site settings and page hero from Sanity
+const siteSettingsQuery = `{
+  "siteSettings": *[_type == "siteSettings"][0] {
+    contactEmail,
+    contactPhone,
+    address,
+    socialLinks {
+      linkedin,
+      twitter,
+      instagram
+    }
+  },
+  "pageHeroes": *[_type == "pageHeroes"][0] {
+    contactHero
   }
 }`;
 
-const siteSettings = await client.fetch<{
-  contactEmail?: string;
-  contactPhone?: string;
-  address?: string;
-  socialLinks?: {
-    linkedin?: string;
-    twitter?: string;
-    instagram?: string;
-  };
+const contactData = await client.fetch<{
+  siteSettings: {
+    contactEmail?: string;
+    contactPhone?: string;
+    address?: string;
+    socialLinks?: {
+      linkedin?: string;
+      twitter?: string;
+      instagram?: string;
+    };
+  } | null;
+  pageHeroes: { contactHero?: any } | null;
 }>(siteSettingsQuery);
+
+const siteSettings = contactData?.siteSettings;
+
+// Build hero image URL if available
+let contactHeroUrl: string | undefined;
+if (contactData?.pageHeroes?.contactHero) {
+  try {
+    contactHeroUrl = urlFor(contactData.pageHeroes.contactHero).width(1920).format('webp').url();
+  } catch { /* fall back to placeholder */ }
+}
 
 // Parse address into lines if provided
 // If address has multiple lines, use them; otherwise use defaults
@@ -71,6 +89,7 @@ const contactSchema = {
     label="Get In Touch"
     headline="Let's Build Something *Great*"
     description="We're ready to bring your vision to life. Tell us about your project and let's create something extraordinary together."
+    image={contactHeroUrl}
   />
 
   <ContactFormSection

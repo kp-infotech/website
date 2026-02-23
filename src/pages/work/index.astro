@@ -5,10 +5,20 @@ import SectionLabel from '../../components/ui/SectionLabel.astro';
 import HighlightedText from '../../components/ui/HighlightedText.astro';
 import WorkGrid from '../../components/sections/WorkGrid.astro';
 import CTASection from '../../components/sections/CTASection.astro';
-import { client } from '../../lib/sanity';
+import { client, urlFor } from '../../lib/sanity';
 import { allCaseStudiesQuery } from '../../lib/queries';
 
 const caseStudies = await client.fetch(allCaseStudiesQuery);
+const pageHeroes = await client.fetch<Record<string, any> | null>(
+  `*[_type == "pageHeroes"][0] { workHero }`
+);
+
+let workHeroUrl: string | undefined;
+if (pageHeroes?.workHero) {
+  try {
+    workHeroUrl = urlFor(pageHeroes.workHero).width(1920).format('webp').url();
+  } catch { /* fall back to placeholder */ }
+}
 
 // Extract unique services for filter pills
 const servicesMap = new Map<string, { _id: string; title: string }>();
@@ -26,7 +36,7 @@ const services = Array.from(servicesMap.values());
   title="Our Work"
   description="Explore our portfolio of digital projects. From web applications to mobile apps and enterprise solutions, see how we help businesses grow."
 >
-  <PageHero variant="inner">
+  <PageHero variant="inner" image={workHeroUrl}>
     <SectionLabel text="Portfolio" />
     <h1>
       <HighlightedText text="Our *Work*" />

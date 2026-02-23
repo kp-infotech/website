@@ -9,12 +9,13 @@ interface Props {
   tagline: string;
   headline: string;
   description: string;
+  image?: string;
 }
 
-const { tagline, headline, description } = Astro.props;
+const { tagline, headline, description, image } = Astro.props;
 ---
 
-<PageHero image={heroImage}>
+<PageHero image={image || heroImage}>
   <SectionLabel text={tagline} />
 
   <h1>

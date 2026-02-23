@@ -7,16 +7,18 @@ interface Props {
   label?: string;
   headline?: string;
   description?: string;
+  image?: string;
 }
 
 const {
   label = "About Us",
   headline = "Who We Are",
-  description = "A premium digital product studio crafting exceptional experiences for ambitious brands."
+  description = "A premium digital product studio crafting exceptional experiences for ambitious brands.",
+  image,
 } = Astro.props;
 ---
 
-<PageHero variant="inner">
+<PageHero variant="inner" image={image}>
   <SectionLabel text={label} />
 
   <h1>
