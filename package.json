@@ -27,7 +27,10 @@
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/tabler": "^1.2.26",
     "@lucide/astro": "^0.563.0",
+    "@portabletext/block-tools": "^5.0.1",
+    "@portabletext/toolkit": "^5.0.1",
     "@sanity/astro": "^3.2.11",
+    "@sanity/block-tools": "^3.70.0",
     "@sanity/client": "^7.14.1",
     "@sanity/image-url": "^2.0.3",
     "@sanity/vision": "^5.7.0",
@@ -37,11 +40,13 @@
     "astro-portabletext": "^0.13.0",
     "dotenv": "^17.2.3",
     "gsap": "^3.14.2",
+    "node-fetch": "^2.7.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "sanity": "^5.7.0",
     "styled-components": "^6.3.8",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "turndown": "^7.2.2"
   },
   "devDependencies": {
     "wrangler": "^4"
