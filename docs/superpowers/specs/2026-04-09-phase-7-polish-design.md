@@ -202,6 +202,8 @@ Fetch all active `jobListing` documents from Sanity:
   - Position (text, auto-filled from job card click or "General Application")
   - LinkedIn URL (url, optional)
   - Resume/CV (file upload, required, `.pdf,.doc,.docx`, max 5MB)
+- Honeypot field: hidden `website` field, invisible via CSS — if filled, reject silently
+- Cloudflare Turnstile: invisible CAPTCHA widget, generates token validated server-side
 - Submit: "Submit Application" (primary button with border draw)
 - Success: "Application sent! We'll be in touch."
 - Error: "Something went wrong. Please try again or email us at [email]."
@@ -215,10 +217,22 @@ Fetch all active `jobListing` documents from Sanity:
 
 `src/pages/api/careers/apply.ts` (Astro API route, Cloudflare adapter):
 
-1. Receives multipart form data (fields + resume file)
-2. Validates required fields, file size (5MB max), file type
-3. Sends email via Resend or SendGrid with resume as attachment
-4. Returns JSON `{ success: true }` or `{ error: "message" }`
+1. Check honeypot field — if filled, return `{ success: true }` silently (don't reveal detection)
+2. Validate Cloudflare Turnstile token via `https://challenges.cloudflare.com/turnstile/v0/siteverify`
+3. Rate limit: max 3 submissions per IP per hour (using Cloudflare KV or in-memory map)
+4. Validate required fields
+5. Validate file: check MIME type (`application/pdf`, `application/msword`, `application/vnd.openxmlformats-officedocument.wordprocessingml.document`), enforce 5MB max
+6. Send email via Resend with resume as attachment
+7. Return JSON `{ success: true }` or `{ error: "message" }`
+
+### Environment Variables (Careers)
+
+```bash
+TURNSTILE_SITE_KEY=         # Cloudflare Turnstile (public)
+TURNSTILE_SECRET_KEY=       # Cloudflare Turnstile (server-side)
+RESEND_API_KEY=             # Resend email service
+CAREERS_EMAIL_TO=           # Destination email for applications
+```
 
 ### Schema.org
 
