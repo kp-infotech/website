@@ -1,0 +1,268 @@
+---
+/**
+ * CustomCursor - Dot + Ring cursor with contextual states
+ * Mount once in BaseLayout. Hidden on touch devices and reduced motion.
+ *
+ * States triggered by data-cursor attribute on elements:
+ * - default: 6px dot + 36px ring
+ * - hover: ring expands to 60px (auto on <a>, <button>)
+ * - view: ring 80px + "View" label
+ * - play: ring 80px + "▶" label
+ * - text: beam cursor
+ * - drag: ring 70px + "⟷" label
+ */
+---
+
+<div id="custom-cursor" class="custom-cursor" aria-hidden="true">
+  <div class="custom-cursor__dot"></div>
+  <div class="custom-cursor__ring">
+    <span class="custom-cursor__label"></span>
+  </div>
+  <div class="custom-cursor__beam"></div>
+</div>
+
+<style>
+  .custom-cursor {
+    display: none;
+  }
+
+  /* Only show on non-touch devices with no reduced motion preference */
+  @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .custom-cursor {
+      display: block;
+    }
+
+    :global(html) {
+      cursor: none !important;
+    }
+
+    :global(a, button, [role="button"], input, textarea, select, label) {
+      cursor: none !important;
+    }
+  }
+
+  .custom-cursor__dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10001;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s, transform 0.15s;
+  }
+
+  .custom-cursor__ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid rgba(201, 168, 124, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.35s cubic-bezier(0.25, 0.1, 0.25, 1),
+                height 0.35s cubic-bezier(0.25, 0.1, 0.25, 1),
+                background 0.3s,
+                border-color 0.3s,
+                opacity 0.2s;
+  }
+
+  .custom-cursor__label {
+    font-family: var(--font-body, 'Outfit', sans-serif);
+    font-size: 0;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: 0;
+    transition: font-size 0.3s, opacity 0.3s;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .custom-cursor__beam {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 20px;
+    background: var(--accent);
+    pointer-events: none;
+    z-index: 10001;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s;
+  }
+
+  /* State: hidden (when cursor leaves window) */
+  .custom-cursor--hidden .custom-cursor__dot,
+  .custom-cursor--hidden .custom-cursor__ring,
+  .custom-cursor--hidden .custom-cursor__beam {
+    opacity: 0;
+  }
+</style>
+
+<script>
+  function initCursor() {
+    const container = document.getElementById('custom-cursor');
+    if (!container) return;
+
+    // Skip on touch devices or reduced motion
+    const isTouch = window.matchMedia('(pointer: coarse)').matches;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (isTouch || prefersReducedMotion) return;
+
+    const dot = container.querySelector('.custom-cursor__dot') as HTMLElement;
+    const ring = container.querySelector('.custom-cursor__ring') as HTMLElement;
+    const label = container.querySelector('.custom-cursor__label') as HTMLElement;
+    const beam = container.querySelector('.custom-cursor__beam') as HTMLElement;
+
+    let mouseX = 0, mouseY = 0;
+    let ringX = 0, ringY = 0;
+    let currentState = 'default';
+    let visible = false;
+
+    function setState(state: string, labelText?: string) {
+      if (currentState === state) return;
+      currentState = state;
+
+      // Reset all
+      dot.style.opacity = '1';
+      dot.style.transform = 'translate(-50%, -50%)';
+      beam.style.opacity = '0';
+      ring.style.background = 'transparent';
+      ring.style.borderColor = 'rgba(201, 168, 124, 0.5)';
+      ring.style.mixBlendMode = '';
+
+      switch (state) {
+        case 'default':
+          ring.style.width = '36px';
+          ring.style.height = '36px';
+          label.style.fontSize = '0';
+          label.style.opacity = '0';
+          break;
+
+        case 'hover':
+          ring.style.width = '60px';
+          ring.style.height = '60px';
+          ring.style.background = 'rgba(201, 168, 124, 0.08)';
+          ring.style.borderColor = 'rgba(201, 168, 124, 0.6)';
+          ring.style.mixBlendMode = 'difference';
+          dot.style.transform = 'translate(-50%, -50%) scale(0.5)';
+          label.style.fontSize = '0';
+          label.style.opacity = '0';
+          break;
+
+        case 'view':
+          ring.style.width = '80px';
+          ring.style.height = '80px';
+          ring.style.background = 'rgba(201, 168, 124, 0.1)';
+          ring.style.borderColor = 'var(--accent)';
+          dot.style.opacity = '0';
+          label.textContent = labelText || 'View';
+          label.style.fontSize = '9px';
+          label.style.opacity = '1';
+          break;
+
+        case 'play':
+          ring.style.width = '80px';
+          ring.style.height = '80px';
+          ring.style.background = 'rgba(201, 168, 124, 0.1)';
+          ring.style.borderColor = 'var(--accent)';
+          dot.style.opacity = '0';
+          label.textContent = '▶';
+          label.style.fontSize = '16px';
+          label.style.opacity = '1';
+          break;
+
+        case 'text':
+          dot.style.opacity = '0';
+          ring.style.width = '0px';
+          ring.style.height = '0px';
+          ring.style.borderColor = 'transparent';
+          beam.style.opacity = '1';
+          label.style.fontSize = '0';
+          label.style.opacity = '0';
+          break;
+
+        case 'drag':
+          ring.style.width = '70px';
+          ring.style.height = '70px';
+          ring.style.background = 'rgba(201, 168, 124, 0.08)';
+          ring.style.borderColor = 'rgba(201, 168, 124, 0.6)';
+          dot.style.opacity = '0';
+          label.textContent = '⟷';
+          label.style.fontSize = '18px';
+          label.style.opacity = '1';
+          break;
+      }
+    }
+
+    function onMouseMove(e: MouseEvent) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      dot.style.left = mouseX + 'px';
+      dot.style.top = mouseY + 'px';
+      beam.style.left = mouseX + 'px';
+      beam.style.top = mouseY + 'px';
+
+      if (!visible) {
+        visible = true;
+        container.classList.remove('custom-cursor--hidden');
+      }
+    }
+
+    function animate() {
+      ringX += (mouseX - ringX) * 0.12;
+      ringY += (mouseY - ringY) * 0.12;
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      requestAnimationFrame(animate);
+    }
+
+    function bindHoverListeners() {
+      // Auto-detect links and buttons for hover state
+      document.querySelectorAll('a, button, [role="button"]').forEach((el) => {
+        const cursorAttr = el.getAttribute('data-cursor');
+        // Skip if element has a more specific data-cursor
+        if (cursorAttr && cursorAttr !== 'hover') return;
+
+        el.addEventListener('mouseenter', () => setState('hover'));
+        el.addEventListener('mouseleave', () => setState('default'));
+      });
+
+      // Custom data-cursor attributes
+      document.querySelectorAll('[data-cursor]').forEach((el) => {
+        const state = el.getAttribute('data-cursor')!;
+        const cursorLabel = el.getAttribute('data-cursor-label');
+        el.addEventListener('mouseenter', () => setState(state, cursorLabel || undefined));
+        el.addEventListener('mouseleave', () => setState('default'));
+      });
+    }
+
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseleave', () => {
+      visible = false;
+      container.classList.add('custom-cursor--hidden');
+    });
+
+    bindHoverListeners();
+    animate();
+
+    // Re-bind after Astro view transitions
+    document.addEventListener('astro:after-swap', bindHoverListeners);
+  }
+
+  // Init on load and after view transitions
+  initCursor();
+  document.addEventListener('astro:after-swap', initCursor);
+</script>
