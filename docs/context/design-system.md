@@ -522,7 +522,7 @@ Disable GSAP animations when `prefers-reduced-motion: reduce`
 ---
 
 ## File Structure
-
+Do a PR, and by the way, there are skills that we added, so you can also push them with that, no issue. 
 ```
 src/
 ├── components/

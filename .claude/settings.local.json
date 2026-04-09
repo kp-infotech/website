@@ -37,7 +37,9 @@
       "mcp__Sanity__patch_document_from_markdown",
       "Bash(start \"\" \"C:\\\\Users\\\\user\\\\Desktop\\\\Poojan\\\\KP Infotech\\\\website\\\\services-accordion-image-playground.html\")",
       "Bash(npx astro build)",
-      "Bash(del \"C:\\\\Users\\\\user\\\\Desktop\\\\Poojan\\\\KP Infotech\\\\website\\\\sanity\\\\schemas\\\\objects\\\\richText.ts\")"
+      "Bash(del \"C:\\\\Users\\\\user\\\\Desktop\\\\Poojan\\\\KP Infotech\\\\website\\\\sanity\\\\schemas\\\\objects\\\\richText.ts\")",
+      "Bash(node:*)",
+      "Bash(gh issue:*)"
     ]
   },
   "prefersReducedMotion": true

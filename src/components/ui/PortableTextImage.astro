@@ -13,20 +13,22 @@ try {
 }
 ---
 
-{imageUrl && (
-  <figure class="portable-text-image">
-    <SanityPicture
-      src={imageUrl}
-      alt={node.alt || ''}
-      width={1200}
-      height={800}
-      sizes="(max-width: 800px) 100vw, 800px"
-      widths={[400, 800, 1200]}
-      loading="lazy"
-      quality={85}
-    />
-    {node.caption && (
-      <figcaption>{node.caption}</figcaption>
-    )}
-  </figure>
-)}
+<Fragment>
+  {imageUrl && (
+    <figure class="portable-text-image">
+      <SanityPicture
+        src={imageUrl}
+        alt={node.alt || ''}
+        width={1200}
+        height={800}
+        sizes="(max-width: 800px) 100vw, 800px"
+        widths={[400, 800, 1200]}
+        loading="lazy"
+        quality={85}
+      />
+      {node.caption && (
+        <figcaption>{node.caption}</figcaption>
+      )}
+    </figure>
+  )}
+</Fragment>
