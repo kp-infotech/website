@@ -9,13 +9,13 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "wrangler pages dev dist/client",
+    "preview": "wrangler dev",
     "astro": "astro",
     "sanity:dev": "sanity dev",
     "sanity:deploy": "sanity deploy",
     "sanity:build": "sanity build",
-    "deploy": "npm run build && wrangler pages deploy dist/client",
-    "deploy:preview": "npm run build && wrangler pages deploy dist/client --branch preview"
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:preview": "npm run build && wrangler versions upload"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.1.8",

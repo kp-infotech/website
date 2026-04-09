@@ -1,7 +1,14 @@
-# Cloudflare Pages configuration
+# Cloudflare Workers configuration
+# @astrojs/cloudflare v13+ deploys via Workers (not Pages).
+# The adapter's @cloudflare/vite-plugin generates wrangler.json
+# in dist/server/ with the correct assets directory and entrypoint.
 name = "website"
 compatibility_date = "2026-02-11"
 compatibility_flags = ["nodejs_compat", "disable_nodejs_process_v2"]
+
+# 404 handling — serve 404.html for missing routes (like Pages did automatically)
+[assets]
+not_found_handling = "404-page"
 
 # Environment variables (available at build time + runtime)
 [vars]
