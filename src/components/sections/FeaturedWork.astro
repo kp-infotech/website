@@ -40,7 +40,7 @@ function getImageUrl(image: any): string | null {
 
     {hasCaseStudies ? (
       <!-- Case Studies Grid (when projects exist) -->
-      <div class="featured-work__grid">
+      <div class="featured-work__grid" data-reveal="stagger">
         {caseStudies.slice(0, 4).map((caseStudy) => {
           const imageUrl = getImageUrl(caseStudy.thumbnailImage);
           return (

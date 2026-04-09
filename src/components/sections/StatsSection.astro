@@ -22,7 +22,14 @@ const { stats } = Astro.props;
     <div class="stats-section__grid">
       {stats.map((stat) => (
         <div class="stat-item">
-          <span class="stat-item__value">{stat.value}</span>
+          <span
+            class="stat-item__value"
+            data-reveal="counter"
+            data-counter-target={stat.value.replace(/[^0-9]/g, '')}
+            data-counter-suffix={stat.value.replace(/[0-9]/g, '')}
+          >
+            {stat.value}
+          </span>
           <span class="stat-item__label">{stat.label}</span>
         </div>
       ))}

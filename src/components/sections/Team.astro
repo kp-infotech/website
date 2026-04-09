@@ -66,7 +66,7 @@ function getInitials(name: string): string {
       <p class="team__description">{description}</p>
     </header>
 
-    <div class="team__grid">
+    <div class="team__grid" data-reveal="stagger">
       {members.map((member) => {
         const photoUrl = getPhotoUrl(member.photo);
         return (
