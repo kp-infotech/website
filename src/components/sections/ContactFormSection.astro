@@ -1,5 +1,8 @@
 ---
-import { Mail, Phone, MapPin, Clock, ArrowRight, Linkedin, Twitter, Instagram } from '@lucide/astro';
+import { Mail, Phone, MapPin, Clock, ArrowRight } from '@lucide/astro';
+import LinkedinIcon from '../icons/LinkedinIcon.astro';
+import TwitterIcon from '../icons/TwitterIcon.astro';
+import InstagramIcon from '../icons/InstagramIcon.astro';
 import Button from '../ui/Button.astro';
 
 interface SocialLinks {
@@ -30,10 +33,10 @@ const {
 
 // Build social links array
 const socials = [
-  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, Icon: Linkedin },
-  socialLinks?.twitter && { name: 'Twitter', href: socialLinks.twitter, Icon: Twitter },
-  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, Icon: Instagram },
-].filter(Boolean) as Array<{ name: string; href: string; Icon: typeof Linkedin }>;
+  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, Icon: LinkedinIcon },
+  socialLinks?.twitter && { name: 'Twitter', href: socialLinks.twitter, Icon: TwitterIcon },
+  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, Icon: InstagramIcon },
+].filter(Boolean) as Array<{ name: string; href: string; Icon: typeof LinkedinIcon }>;
 
 // Project types for the dropdown
 const projectTypes = [

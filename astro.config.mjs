@@ -27,7 +27,6 @@ if (!PUBLIC_SANITY_PROJECT_ID) {
 
 export default defineConfig({
   site: 'https://kpinfo.tech',
-  output: 'static',
   adapter: cloudflare({ imageService: 'compile' }),
   image: {
     // Allow remote images from Sanity CDN for build-time optimization
