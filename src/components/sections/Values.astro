@@ -5,6 +5,7 @@ import HighlightedText from '../ui/HighlightedText.astro';
 interface Value {
   title: string;
   description: string;
+  icon?: string;
 }
 
 interface Props {
@@ -46,10 +47,22 @@ const {
 
     <div class="values__grid">
       {values.map((value, index) => (
-        <div class="value-card">
-          <span class="value-card__number">{String(index + 1).padStart(2, '0')}</span>
-          <h3 class="value-card__title">{value.title}</h3>
-          <p class="value-card__description">{value.description}</p>
+        <div class:list={["value-card", { "value-card--has-icon": value.icon }]}>
+          {value.icon && (
+            <img
+              src={value.icon}
+              alt={`${value.title} icon`}
+              class="value-card__icon"
+              width="72"
+              height="72"
+              loading="lazy"
+            />
+          )}
+          <div class="value-card__text">
+            <span class="value-card__number">{String(index + 1).padStart(2, '0')}</span>
+            <h3 class="value-card__title">{value.title}</h3>
+            <p class="value-card__description">{value.description}</p>
+          </div>
         </div>
       ))}
     </div>
@@ -95,8 +108,21 @@ const {
     transition: border-color 0.3s ease;
   }
 
+  .value-card--has-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
   .value-card:hover {
     border-color: var(--accent);
+  }
+
+  .value-card__icon {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+    object-fit: contain;
   }
 
   .value-card__number {
@@ -154,6 +180,12 @@ const {
 
     .value-card {
       padding: 2rem;
+    }
+
+    .value-card__icon {
+      width: 56px;
+      height: 56px;
+      min-width: 56px;
     }
   }
 
