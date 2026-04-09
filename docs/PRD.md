@@ -1224,6 +1224,14 @@ Sitemap: https://kpinfo.tech/sitemap.xml
 - [ ] Final content review
 - [ ] DNS cutover
 
+### Phase 9: Content Overhaul (Post-Launch or Pre-Launch TBD)
+
+- [ ] Revisit and potentially change the current 5 services (new set, renamed, or restructured)
+- [ ] Remove all existing case studies from Sanity
+- [ ] Create 3-4 high-quality case studies per service (~15-20 total) — each should be detailed and solid
+- [ ] Review and rework blog/insights content strategy (decide whether to migrate old WordPress posts or start fresh)
+- [ ] Populate Sanity with final content for all document types
+
 ---
 
 ## Appendix A: File Structure
