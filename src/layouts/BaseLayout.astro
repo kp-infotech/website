@@ -95,5 +95,12 @@ const fullTitle = title === siteName ? title : `${title} — ${siteName}`;
       address={siteSettings?.address}
       socialLinks={siteSettings?.socialLinks}
     />
+    <script>
+      import { initAnimations } from '../lib/animations';
+      initAnimations();
+      document.addEventListener('astro:after-swap', () => {
+        initAnimations();
+      });
+    </script>
   </body>
 </html>
