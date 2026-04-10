@@ -74,9 +74,10 @@ const Tag = href ? 'a' : 'button';
 
   .btn--primary:hover {
     color: var(--accent-light, #e4d4bc);
+    border-color: transparent;
   }
 
-  /* Border draw lines — positioned just outside the border box */
+  /* Border draw lines — sit exactly on top of the border edge */
   .btn__draw {
     position: absolute;
     background: var(--accent);
@@ -84,60 +85,55 @@ const Tag = href ? 'a' : 'button';
     pointer-events: none;
   }
 
-  /* Base state = REVERSE stagger (left → bottom → right → top) for mouse-leave */
+  /* Base state = REVERSE stagger for mouse-leave */
   .btn__draw--top {
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: -1px;
     height: 1px;
-    width: 0%;
+    width: 0;
     transition: width 0.15s cubic-bezier(0.65, 0, 0.35, 1) 0.45s;
   }
 
   .btn__draw--right {
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: -1px;
     width: 1px;
-    height: 0%;
+    height: 0;
     transition: height 0.15s cubic-bezier(0.65, 0, 0.35, 1) 0.3s;
   }
 
   .btn__draw--bottom {
-    bottom: 0;
-    right: 0;
+    bottom: -1px;
+    right: -1px;
     height: 1px;
-    width: 0%;
+    width: 0;
     transition: width 0.15s cubic-bezier(0.65, 0, 0.35, 1) 0.15s;
   }
 
   .btn__draw--left {
-    bottom: 0;
-    left: 0;
+    bottom: -1px;
+    left: -1px;
     width: 1px;
-    height: 0%;
+    height: 0;
     transition: height 0.15s cubic-bezier(0.65, 0, 0.35, 1) 0s;
   }
 
   /* Hover = FORWARD stagger (top → right → bottom → left) */
   .btn--primary:hover .btn__draw--top {
-    width: 100%;
+    width: calc(100% + 2px);
     transition: width 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0s;
   }
   .btn--primary:hover .btn__draw--right {
-    height: 100%;
+    height: calc(100% + 2px);
     transition: height 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0.15s;
   }
   .btn--primary:hover .btn__draw--bottom {
-    width: 100%;
+    width: calc(100% + 2px);
     transition: width 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0.3s;
   }
   .btn--primary:hover .btn__draw--left {
-    height: 100%;
+    height: calc(100% + 2px);
     transition: height 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0.45s;
-  }
-
-  /* Hide the base border when draw is active */
-  .btn--primary:hover {
-    border-color: var(--accent);
   }
 
   /* Secondary: Solid accent fill */

@@ -129,17 +129,20 @@ const seoDescription = 'Deep domain expertise across sectors that power the mode
   if (!prefersReducedMotion) {
     // Animate each row as it enters viewport
     document.querySelectorAll('.stacked-row').forEach((row) => {
-      gsap.set(row, { y: 30, opacity: 0 });
-      gsap.to(row, {
-        y: 0,
-        opacity: 1,
-        duration: 0.7,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: row,
-          start: 'top 95%',
-        },
-      });
+      // Only animate rows below the viewport
+      if (row.getBoundingClientRect().top > window.innerHeight * 0.85) {
+        gsap.set(row, { y: 30, opacity: 0 });
+        gsap.to(row, {
+          y: 0,
+          opacity: 1,
+          duration: 0.7,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: row,
+            start: 'top 95%',
+          },
+        });
+      }
     });
   }
 </script>

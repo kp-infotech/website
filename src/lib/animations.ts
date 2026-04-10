@@ -1,11 +1,9 @@
 /**
  * animations.ts — Centralized GSAP animation system
  *
- * Uses gsap.set() to apply initial hidden state immediately, then gsap.to()
- * with ScrollTrigger to reveal. This avoids the "bounce" issue from gsap.from()
- * and the "empty space" issue from immediateRender.
- *
- * Usage: Add data-reveal="text|stagger|curtain|counter|clip|fade" to elements.
+ * Only animates elements that are below the viewport on init.
+ * Elements already visible are left alone (no flash, no bounce).
+ * Uses gsap.set() for initial state + gsap.to() with ScrollTrigger to reveal.
  */
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -16,16 +14,21 @@ function prefersReducedMotion(): boolean {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
 
+/** Check if element is below the visible viewport */
+function isBelowViewport(el: Element, threshold = 0.9): boolean {
+  return el.getBoundingClientRect().top > window.innerHeight * threshold;
+}
+
 /** Text Reveal — lines slide up from below */
 function initTextReveals() {
   document.querySelectorAll('[data-reveal="text"]').forEach((el) => {
+    if (!isBelowViewport(el)) return;
+
     const lines = el.querySelectorAll('.reveal-line');
     if (lines.length === 0) {
       gsap.set(el, { y: 40, opacity: 0 });
       gsap.to(el, {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
+        y: 0, opacity: 1, duration: 0.8,
         ease: 'power3.out',
         scrollTrigger: { trigger: el, start: 'top 85%' },
       });
@@ -33,11 +36,8 @@ function initTextReveals() {
     }
     gsap.set(lines, { y: '100%', opacity: 0 });
     gsap.to(lines, {
-      y: 0,
-      opacity: 1,
-      duration: 1,
-      ease: 'power3.out',
-      stagger: 0.12,
+      y: 0, opacity: 1, duration: 1,
+      ease: 'power3.out', stagger: 0.12,
       scrollTrigger: { trigger: el, start: 'top 80%' },
     });
   });
@@ -46,15 +46,14 @@ function initTextReveals() {
 /** Staggered Grid — children fade up in sequence */
 function initStaggerGrids() {
   document.querySelectorAll('[data-reveal="stagger"]').forEach((el) => {
+    if (!isBelowViewport(el)) return;
+
     const children = el.children;
     if (children.length === 0) return;
     gsap.set(children, { y: 60, opacity: 0 });
     gsap.to(children, {
-      y: 0,
-      opacity: 1,
-      duration: 0.7,
-      stagger: 0.1,
-      ease: 'power3.out',
+      y: 0, opacity: 1, duration: 0.7,
+      stagger: 0.1, ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 85%' },
     });
   });
@@ -71,19 +70,11 @@ function initCurtainReveals() {
       scrollTrigger: { trigger: el, start: 'top 80%' },
     });
 
-    tl.to(overlay, {
-      scaleX: 0,
-      duration: 1.2,
-      ease: 'power3.inOut',
-    });
+    tl.to(overlay, { scaleX: 0, duration: 1.2, ease: 'power3.inOut' });
 
     if (image) {
       gsap.set(image, { scale: 1.3 });
-      tl.to(image, {
-        scale: 1,
-        duration: 1.4,
-        ease: 'power3.out',
-      }, '-=0.8');
+      tl.to(image, { scale: 1, duration: 1.4, ease: 'power3.out' }, '-=0.8');
     }
   });
 }
@@ -113,11 +104,12 @@ function initCounters() {
 /** Clip-Path Wipe — content revealed by animated clip */
 function initClipReveals() {
   document.querySelectorAll('[data-reveal="clip"]').forEach((el) => {
+    if (!isBelowViewport(el)) return;
+
     gsap.set(el, { clipPath: 'inset(0 100% 0 0)' });
     gsap.to(el, {
       clipPath: 'inset(0 0% 0 0)',
-      duration: 1.2,
-      ease: 'power3.inOut',
+      duration: 1.2, ease: 'power3.inOut',
       scrollTrigger: { trigger: el, start: 'top 75%' },
     });
   });
@@ -126,11 +118,11 @@ function initClipReveals() {
 /** Fade Up — simple fade + translate for generic elements */
 function initFadeUps() {
   document.querySelectorAll('[data-reveal="fade"]').forEach((el) => {
+    if (!isBelowViewport(el)) return;
+
     gsap.set(el, { y: 40, opacity: 0 });
     gsap.to(el, {
-      y: 0,
-      opacity: 1,
-      duration: 0.8,
+      y: 0, opacity: 1, duration: 0.8,
       ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 85%' },
     });
@@ -151,6 +143,5 @@ export function initAnimations() {
   initClipReveals();
   initFadeUps();
 
-  // Refresh ScrollTrigger after all animations are set up
   ScrollTrigger.refresh();
 }
