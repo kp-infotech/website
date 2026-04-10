@@ -43,18 +43,20 @@ function initTextReveals() {
   });
 }
 
-/** Staggered Grid — children fade up in sequence */
+/** Staggered Grid — each child animates individually when IT enters viewport */
 function initStaggerGrids() {
-  document.querySelectorAll('[data-reveal="stagger"]').forEach((el) => {
-    if (!isBelowViewport(el)) return;
-
-    const children = el.children;
+  document.querySelectorAll('[data-reveal="stagger"]').forEach((container) => {
+    const children = Array.from(container.children);
     if (children.length === 0) return;
-    gsap.set(children, { y: 60, opacity: 0 });
-    gsap.to(children, {
-      y: 0, opacity: 1, duration: 0.7,
-      stagger: 0.1, ease: 'power3.out',
-      scrollTrigger: { trigger: el, start: 'top 85%' },
+
+    children.forEach((child) => {
+      if (!isBelowViewport(child)) return;
+      gsap.set(child, { y: 50, opacity: 0 });
+      gsap.to(child, {
+        y: 0, opacity: 1, duration: 0.6,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: child, start: 'top 92%' },
+      });
     });
   });
 }

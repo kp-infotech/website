@@ -75,47 +75,26 @@ const regularIndustries = industries.slice(1);
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (!prefersReducedMotion) {
-    // Only animate elements that are below the viewport (not already visible)
-    function animateIfBelow(selector: string, fromVars: object, toVars: object, triggerEl?: string) {
-      const els = document.querySelectorAll(selector);
-      els.forEach((el) => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top > window.innerHeight * 0.85) {
-          gsap.set(el, fromVars);
-          gsap.to(el, {
-            ...toVars,
-            scrollTrigger: {
-              trigger: triggerEl || el,
-              start: 'top 95%',
-            },
-          });
-        }
+    // Animate header if below viewport
+    const header = document.querySelector('.industries-bento__header');
+    if (header && header.getBoundingClientRect().top > window.innerHeight * 0.85) {
+      gsap.set(header, { y: 30, opacity: 0 });
+      gsap.to(header, {
+        y: 0, opacity: 1, duration: 0.8, ease: 'power3.out',
+        scrollTrigger: { trigger: header, start: 'top 95%' },
       });
     }
 
-    animateIfBelow(
-      '.industries-bento__header',
-      { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' }
-    );
-
-    // Cards: use the grid as trigger with stagger
-    const grid = document.querySelector('.industries-bento__grid');
-    const cards = document.querySelectorAll('.industries-bento__grid .industry-card');
-    if (grid && cards.length > 0 && grid.getBoundingClientRect().top > window.innerHeight * 0.85) {
-      gsap.set(cards, { y: 50, opacity: 0 });
-      gsap.to(cards, {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: grid,
-          start: 'top 95%',
-        },
-      });
-    }
+    // Animate each card individually when IT enters the viewport
+    document.querySelectorAll('.industries-bento__grid .industry-card').forEach((card) => {
+      if (card.getBoundingClientRect().top > window.innerHeight * 0.85) {
+        gsap.set(card, { y: 50, opacity: 0 });
+        gsap.to(card, {
+          y: 0, opacity: 1, duration: 0.7, ease: 'power3.out',
+          scrollTrigger: { trigger: card, start: 'top 95%' },
+        });
+      }
+    });
   }
 </script>
 
