@@ -80,6 +80,7 @@ const seoDescription = 'Deep domain expertise across sectors that power the mode
           <div
             class:list={['stacked-row', `stacked-row--${row.type}`]}
             data-row={rowIndex}
+            data-reveal="fade"
           >
             {row.type === 'full' ? (
               <IndustryCard
@@ -117,31 +118,7 @@ const seoDescription = 'Deep domain expertise across sectors that power the mode
   />
 </BaseLayout>
 
-<script>
-  import { gsap } from 'gsap';
-  import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Check for reduced motion preference
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if (!prefersReducedMotion) {
-    // Animate each row as it enters viewport
-    document.querySelectorAll('.stacked-row').forEach((row) => {
-      gsap.from(row, {
-        y: 30,
-        opacity: 0,
-        duration: 0.7,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: row,
-          start: 'top 95%',
-        },
-      });
-    });
-  }
-</script>
+<!-- Animations handled by centralized animations.ts via data-reveal attributes -->
 
 <style>
   .industries-stacked {

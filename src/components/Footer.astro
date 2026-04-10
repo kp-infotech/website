@@ -113,9 +113,15 @@ const socials = [
             <li>
               <a
                 href={service.href}
-                class="text-[var(--text-secondary)] hover:text-[var(--accent)] text-sm transition-colors duration-300"
+                class="footer-nav-link text-[var(--text-secondary)] text-sm"
               >
-                {service.name}
+                <span class="footer-link__letters">
+                  {service.name.split('').map((char: string, i: number) => (
+                    <span class="footer-link__letter" style={`--letter-i: ${i}`}>
+                      {char === ' ' ? '\u00A0' : char}
+                    </span>
+                  ))}
+                </span>
               </a>
             </li>
           ))}
@@ -130,9 +136,15 @@ const socials = [
             <li>
               <a
                 href={link.href}
-                class="text-[var(--text-secondary)] hover:text-[var(--accent)] text-sm transition-colors duration-300"
+                class="footer-nav-link text-[var(--text-secondary)] text-sm"
               >
-                {link.name}
+                <span class="footer-link__letters">
+                  {link.name.split('').map((char: string, i: number) => (
+                    <span class="footer-link__letter" style={`--letter-i: ${i}`}>
+                      {char === ' ' ? '\u00A0' : char}
+                    </span>
+                  ))}
+                </span>
               </a>
             </li>
           ))}
@@ -206,5 +218,26 @@ const socials = [
     letter-spacing: 4px;
     color: var(--accent);
     margin-bottom: 1.5rem;
+  }
+
+  .footer-nav-link {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .footer-link__letters {
+    display: inline-flex;
+  }
+
+  .footer-link__letter {
+    display: inline-block;
+    transition:
+      transform 0.3s calc(var(--letter-i) * 0.025s) cubic-bezier(0.25, 0.1, 0.25, 1),
+      color 0.3s calc(var(--letter-i) * 0.025s);
+  }
+
+  .footer-nav-link:hover .footer-link__letter {
+    transform: translateY(-2px);
+    color: var(--accent);
   }
 </style>

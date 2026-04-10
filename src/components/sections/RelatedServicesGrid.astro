@@ -58,7 +58,7 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
         </Button>
       </div>
 
-      <div class="rsg__grid">
+      <div class="rsg__grid" data-reveal="stagger">
         {services.map((service) => {
           const iconUrl = getIconUrl(service.iconCustom);
           const heroUrl = getHeroUrl(service.heroImage);

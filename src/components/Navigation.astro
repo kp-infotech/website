@@ -87,7 +87,16 @@ const logoUrl = logo
               role="menuitem"
               aria-current={currentPath.startsWith(link.href) ? 'page' : undefined}
             >
-              {link.label}
+              <span class="nav-link__letters">
+                {link.label.split('').map((char, i) => (
+                  <span
+                    class="nav-link__letter"
+                    style={`--letter-i: ${i}`}
+                  >
+                    {char === ' ' ? '\u00A0' : char}
+                  </span>
+                ))}
+              </span>
               <span class="nav-underline absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-300"></span>
             </a>
           </li>
@@ -175,6 +184,22 @@ const logoUrl = logo
     border-bottom-color: var(--border);
   }
 
+  /* Letter stagger hover effect */
+  .nav-link__letters {
+    display: inline-flex;
+  }
+
+  .nav-link__letter {
+    display: inline-block;
+    transition: transform 0.3s calc(var(--letter-i) * 0.025s) cubic-bezier(0.25, 0.1, 0.25, 1),
+                color 0.3s calc(var(--letter-i) * 0.025s);
+  }
+
+  .nav-link:hover .nav-link__letter {
+    transform: translateY(-3px);
+    color: var(--text-primary);
+  }
+
   /* Desktop nav link underline animation */
   .nav-link:hover .nav-underline,
   .nav-link[aria-current='page'] .nav-underline {
@@ -221,6 +246,7 @@ const logoUrl = logo
     .nav-backdrop,
     .nav-link,
     .nav-underline,
+    .nav-link__letter,
     .contact-btn,
     .btn-fill,
     .hamburger-line,

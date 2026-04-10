@@ -25,7 +25,7 @@ const regularIndustries = industries.slice(1);
 
 <section class="industries-bento">
   <div class="industries-bento__container">
-    <header class="industries-bento__header">
+    <header class="industries-bento__header" data-reveal="fade">
       <SectionLabel text="Our Expertise" />
       <h2 class="industries-bento__title">
         <HighlightedText text="Industries where we deliver *results*" />
@@ -38,7 +38,7 @@ const regularIndustries = industries.slice(1);
       </a>
     </header>
 
-    <div class="industries-bento__grid">
+    <div class="industries-bento__grid" data-reveal="stagger">
       {featuredIndustry && (
         <IndustryCard
           title={featuredIndustry.title}
@@ -65,42 +65,7 @@ const regularIndustries = industries.slice(1);
   </div>
 </section>
 
-<script>
-  import { gsap } from 'gsap';
-  import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Check for reduced motion preference
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if (!prefersReducedMotion) {
-    // Animate section header
-    gsap.from('.industries-bento__header', {
-      y: 30,
-      opacity: 0,
-      duration: 0.8,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: '.industries-bento__header',
-        start: 'top 95%',
-      },
-    });
-
-    // Animate cards with stagger
-    gsap.from('.industries-bento__grid .industry-card', {
-      y: 50,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.1,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: '.industries-bento__grid',
-        start: 'top 95%',
-      },
-    });
-  }
-</script>
+<!-- Animations handled by centralized animations.ts via data-reveal attributes -->
 
 <style>
   .industries-bento {

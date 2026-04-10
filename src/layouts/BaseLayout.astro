@@ -5,6 +5,8 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import { client } from '../lib/sanity';
 import { siteSettingsQuery } from '../lib/queries';
+import CustomCursor from '../components/effects/CustomCursor.astro';
+import ScrollProgress from '../components/effects/ScrollProgress.astro';
 
 interface Props {
   title?: string;
@@ -75,6 +77,8 @@ const fullTitle = title === siteName ? title : `${title} — ${siteName}`;
     <slot name="head" />
   </head>
   <body class="bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased">
+    <ScrollProgress />
+    <CustomCursor />
     <Navigation
       siteName={siteName}
       logo={siteSettings?.logo}
@@ -91,5 +95,12 @@ const fullTitle = title === siteName ? title : `${title} — ${siteName}`;
       address={siteSettings?.address}
       socialLinks={siteSettings?.socialLinks}
     />
+    <script>
+      import { initAnimations } from '../lib/animations';
+      initAnimations();
+      document.addEventListener('astro:after-swap', () => {
+        initAnimations();
+      });
+    </script>
   </body>
 </html>
