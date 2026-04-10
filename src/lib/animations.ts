@@ -26,7 +26,8 @@ function initTextReveals() {
         opacity: 0,
         duration: 0.8,
         ease: 'power3.out',
-        scrollTrigger: { trigger: el, start: 'top 85%' },
+        immediateRender: false,
+      scrollTrigger: { trigger: el, start: 'top 85%' },
       });
       return;
     }
@@ -36,6 +37,7 @@ function initTextReveals() {
       duration: 1,
       ease: 'power3.out',
       stagger: 0.12,
+      immediateRender: false,
       scrollTrigger: { trigger: el, start: 'top 80%' },
     });
   });
@@ -52,6 +54,7 @@ function initStaggerGrids() {
       duration: 0.7,
       stagger: 0.1,
       ease: 'power3.out',
+      immediateRender: false,
       scrollTrigger: { trigger: el, start: 'top 85%' },
     });
   });
@@ -113,6 +116,7 @@ function initClipReveals() {
       clipPath: 'inset(0 100% 0 0)',
       duration: 1.2,
       ease: 'power3.inOut',
+      immediateRender: false,
       scrollTrigger: { trigger: el, start: 'top 75%' },
     });
   });
@@ -126,6 +130,7 @@ function initFadeUps() {
       opacity: 0,
       duration: 0.8,
       ease: 'power3.out',
+      immediateRender: false,
       scrollTrigger: { trigger: el, start: 'top 85%' },
     });
   });

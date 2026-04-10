@@ -57,7 +57,6 @@ const Tag = href ? 'a' : 'button';
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    overflow: hidden;
   }
 
   .btn__text {
@@ -84,12 +83,13 @@ const Tag = href ? 'a' : 'button';
     z-index: 0;
   }
 
+  /* Base state transitions = REVERSE order (left → bottom → right → top) */
   .btn__draw--top {
     top: -1px;
     left: -1px;
     height: 1.5px;
     width: 0%;
-    transition: width 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0s;
+    transition: width 0.15s cubic-bezier(0.65, 0, 0.35, 1) 0.45s;
   }
 
   .btn__draw--right {
@@ -97,7 +97,7 @@ const Tag = href ? 'a' : 'button';
     right: -1px;
     width: 1.5px;
     height: 0%;
-    transition: height 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0.15s;
+    transition: height 0.15s cubic-bezier(0.65, 0, 0.35, 1) 0.3s;
   }
 
   .btn__draw--bottom {
@@ -105,7 +105,7 @@ const Tag = href ? 'a' : 'button';
     right: -1px;
     height: 1.5px;
     width: 0%;
-    transition: width 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0.3s;
+    transition: width 0.15s cubic-bezier(0.65, 0, 0.35, 1) 0.15s;
   }
 
   .btn__draw--left {
@@ -113,13 +113,26 @@ const Tag = href ? 'a' : 'button';
     left: -1px;
     width: 1.5px;
     height: 0%;
-    transition: height 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0.45s;
+    transition: height 0.15s cubic-bezier(0.65, 0, 0.35, 1) 0s;
   }
 
-  .btn--primary:hover .btn__draw--top { width: calc(100% + 2px); }
-  .btn--primary:hover .btn__draw--right { height: calc(100% + 2px); }
-  .btn--primary:hover .btn__draw--bottom { width: calc(100% + 2px); }
-  .btn--primary:hover .btn__draw--left { height: calc(100% + 2px); }
+  /* Hover state transitions = FORWARD order (top → right → bottom → left) */
+  .btn--primary:hover .btn__draw--top {
+    width: calc(100% + 2px);
+    transition: width 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0s;
+  }
+  .btn--primary:hover .btn__draw--right {
+    height: calc(100% + 2px);
+    transition: height 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0.15s;
+  }
+  .btn--primary:hover .btn__draw--bottom {
+    width: calc(100% + 2px);
+    transition: width 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0.3s;
+  }
+  .btn--primary:hover .btn__draw--left {
+    height: calc(100% + 2px);
+    transition: height 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0.45s;
+  }
 
   /* Secondary: Solid accent fill */
   .btn--secondary {
