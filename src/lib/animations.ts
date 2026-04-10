@@ -1,11 +1,11 @@
 /**
  * animations.ts — Centralized GSAP animation system
  *
- * Auto-discovers elements with data-reveal attributes and initializes
- * appropriate ScrollTrigger animations. Respects prefers-reduced-motion.
+ * Uses gsap.set() to apply initial hidden state immediately, then gsap.to()
+ * with ScrollTrigger to reveal. This avoids the "bounce" issue from gsap.from()
+ * and the "empty space" issue from immediateRender.
  *
  * Usage: Add data-reveal="text|stagger|curtain|counter|clip|fade" to elements.
- * Import and call initAnimations() from page scripts or BaseLayout.
  */
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -21,23 +21,23 @@ function initTextReveals() {
   document.querySelectorAll('[data-reveal="text"]').forEach((el) => {
     const lines = el.querySelectorAll('.reveal-line');
     if (lines.length === 0) {
-      gsap.from(el, {
-        y: 40,
-        opacity: 0,
+      gsap.set(el, { y: 40, opacity: 0 });
+      gsap.to(el, {
+        y: 0,
+        opacity: 1,
         duration: 0.8,
         ease: 'power3.out',
-        immediateRender: false,
-      scrollTrigger: { trigger: el, start: 'top 85%' },
+        scrollTrigger: { trigger: el, start: 'top 85%' },
       });
       return;
     }
-    gsap.from(lines, {
-      y: '100%',
-      opacity: 0,
+    gsap.set(lines, { y: '100%', opacity: 0 });
+    gsap.to(lines, {
+      y: 0,
+      opacity: 1,
       duration: 1,
       ease: 'power3.out',
       stagger: 0.12,
-      immediateRender: false,
       scrollTrigger: { trigger: el, start: 'top 80%' },
     });
   });
@@ -48,13 +48,13 @@ function initStaggerGrids() {
   document.querySelectorAll('[data-reveal="stagger"]').forEach((el) => {
     const children = el.children;
     if (children.length === 0) return;
-    gsap.from(children, {
-      y: 60,
-      opacity: 0,
+    gsap.set(children, { y: 60, opacity: 0 });
+    gsap.to(children, {
+      y: 0,
+      opacity: 1,
       duration: 0.7,
       stagger: 0.1,
       ease: 'power3.out',
-      immediateRender: false,
       scrollTrigger: { trigger: el, start: 'top 85%' },
     });
   });
@@ -78,8 +78,9 @@ function initCurtainReveals() {
     });
 
     if (image) {
-      tl.from(image, {
-        scale: 1.3,
+      gsap.set(image, { scale: 1.3 });
+      tl.to(image, {
+        scale: 1,
         duration: 1.4,
         ease: 'power3.out',
       }, '-=0.8');
@@ -112,11 +113,11 @@ function initCounters() {
 /** Clip-Path Wipe — content revealed by animated clip */
 function initClipReveals() {
   document.querySelectorAll('[data-reveal="clip"]').forEach((el) => {
-    gsap.from(el, {
-      clipPath: 'inset(0 100% 0 0)',
+    gsap.set(el, { clipPath: 'inset(0 100% 0 0)' });
+    gsap.to(el, {
+      clipPath: 'inset(0 0% 0 0)',
       duration: 1.2,
       ease: 'power3.inOut',
-      immediateRender: false,
       scrollTrigger: { trigger: el, start: 'top 75%' },
     });
   });
@@ -125,12 +126,12 @@ function initClipReveals() {
 /** Fade Up — simple fade + translate for generic elements */
 function initFadeUps() {
   document.querySelectorAll('[data-reveal="fade"]').forEach((el) => {
-    gsap.from(el, {
-      y: 40,
-      opacity: 0,
+    gsap.set(el, { y: 40, opacity: 0 });
+    gsap.to(el, {
+      y: 0,
+      opacity: 1,
       duration: 0.8,
       ease: 'power3.out',
-      immediateRender: false,
       scrollTrigger: { trigger: el, start: 'top 85%' },
     });
   });
