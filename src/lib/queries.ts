@@ -13,6 +13,7 @@ export const siteSettingsQuery = `
     contactPhone,
     address,
     socialLinks,
+    techStack,
     stats,
     footerText,
     defaultSeoTitle,
@@ -40,6 +41,7 @@ export const homepageDataQuery = `
     siteName,
     siteTagline,
     heroHeadline,
+    techStack,
     stats
   },
   "services": *[_type == "service"] | order(order asc) {

@@ -1,8 +1,10 @@
 ---
+import { Mail, Phone, MapPin } from '@lucide/astro';
 import LinkedinIcon from './icons/LinkedinIcon.astro';
 import TwitterIcon from './icons/TwitterIcon.astro';
 import InstagramIcon from './icons/InstagramIcon.astro';
 import DribbbleIcon from './icons/DribbbleIcon.astro';
+import FacebookIcon from './icons/FacebookIcon.astro';
 import { urlFor, isSvgAsset } from '../lib/sanity';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
@@ -11,6 +13,7 @@ interface SocialLinks {
   twitter?: string;
   instagram?: string;
   dribbble?: string;
+  facebook?: string;
 }
 
 interface Props {
@@ -52,9 +55,19 @@ const services = [
 
 const company = [
   { name: 'About', href: '/about/' },
+  { name: 'Work', href: '/work/' },
   { name: 'Careers', href: '/careers/' },
   { name: 'Insights', href: '/insights/' },
   { name: 'Contact', href: '/contact/' },
+];
+
+const industries = [
+  { name: 'Healthcare', href: '/industries/healthcare/' },
+  { name: 'Retail & E-commerce', href: '/industries/retail-ecommerce/' },
+  { name: 'Manufacturing', href: '/industries/manufacturing/' },
+  { name: 'Logistics', href: '/industries/logistics/' },
+  { name: 'Finance', href: '/industries/finance/' },
+  { name: 'Startups', href: '/industries/startups/' },
 ];
 
 // Build socials array from siteSettings
@@ -62,6 +75,7 @@ const socials = [
   socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, Icon: LinkedinIcon },
   socialLinks?.twitter && { name: 'Twitter', href: socialLinks.twitter, Icon: TwitterIcon },
   socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, Icon: InstagramIcon },
+  socialLinks?.facebook && { name: 'Facebook', href: socialLinks.facebook, Icon: FacebookIcon },
   socialLinks?.dribbble && { name: 'Dribbble', href: socialLinks.dribbble, Icon: DribbbleIcon },
 ].filter(Boolean) as Array<{ name: string; href: string; Icon: typeof LinkedinIcon }>;
 ---
@@ -69,9 +83,9 @@ const socials = [
 <footer class="bg-[var(--bg-secondary)] border-t border-[var(--border)]">
   <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
     <!-- Main Footer Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+    <div class="footer-grid">
       <!-- Column 1: Logo + Tagline + Social -->
-      <div class="lg:col-span-1">
+      <div class="footer-brand">
         <a href="/" class="inline-block mb-6" aria-label={`${siteName} - Home`}>
           {logoUrl ? (
             <img
@@ -128,53 +142,79 @@ const socials = [
         </ul>
       </nav>
 
-      <!-- Column 3: Company -->
-      <nav aria-label="Company">
-        <h3 class="footer-label">Company</h3>
-        <ul class="space-y-3">
-          {company.map((link) => (
-            <li>
-              <a
-                href={link.href}
-                class="footer-nav-link text-[var(--text-secondary)] text-sm"
-              >
-                <span class="footer-link__letters">
-                  {link.name.split('').map((char: string, i: number) => (
-                    <span class="footer-link__letter" style={`--letter-i: ${i}`}>
-                      {char === ' ' ? '\u00A0' : char}
-                    </span>
-                  ))}
-                </span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <!-- Column 3: Company + Industries -->
+      <div class="footer-double-col">
+        <nav aria-label="Company">
+          <h3 class="footer-label">Company</h3>
+          <ul class="space-y-3">
+            {company.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="footer-nav-link text-[var(--text-secondary)] text-sm"
+                >
+                  <span class="footer-link__letters">
+                    {link.name.split('').map((char: string, i: number) => (
+                      <span class="footer-link__letter" style={`--letter-i: ${i}`}>
+                        {char === ' ' ? '\u00A0' : char}
+                      </span>
+                    ))}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <nav aria-label="Industries">
+          <h3 class="footer-label">Industries</h3>
+          <ul class="space-y-3">
+            {industries.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="footer-nav-link text-[var(--text-secondary)] text-sm"
+                >
+                  <span class="footer-link__letters">
+                    {link.name.split('').map((char: string, i: number) => (
+                      <span class="footer-link__letter" style={`--letter-i: ${i}`}>
+                        {char === ' ' ? '\u00A0' : char}
+                      </span>
+                    ))}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
 
       <!-- Column 4: Contact -->
       <div>
         <h3 class="footer-label">Contact</h3>
-        <address class="not-italic space-y-3">
+        <address class="not-italic space-y-4">
           {contactEmail && (
             <a
               href={`mailto:${contactEmail}`}
-              class="block text-[var(--text-secondary)] hover:text-[var(--accent)] text-sm transition-colors duration-300"
+              class="footer-contact-link"
             >
-              {contactEmail}
+              <Mail size={16} class="footer-contact-icon" />
+              <span>{contactEmail}</span>
             </a>
           )}
           {contactPhone && (
             <a
               href={`tel:${contactPhone.replace(/\s/g, '')}`}
-              class="block text-[var(--text-secondary)] hover:text-[var(--accent)] text-sm transition-colors duration-300"
+              class="footer-contact-link"
             >
-              {contactPhone}
+              <Phone size={16} class="footer-contact-icon" />
+              <span>{contactPhone}</span>
             </a>
           )}
           {address && (
-            <p class="text-[var(--text-secondary)] text-sm whitespace-pre-line">
-              {address}
-            </p>
+            <div class="footer-contact-link footer-contact-link--static">
+              <MapPin size={16} class="footer-contact-icon" />
+              <span class="whitespace-pre-line">{address}</span>
+            </div>
           )}
         </address>
       </div>
@@ -211,6 +251,12 @@ const socials = [
     width: auto;
   }
 
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
   .footer-label {
     font-size: 11px;
     font-weight: 500;
@@ -239,5 +285,56 @@ const socials = [
   .footer-nav-link:hover .footer-link__letter {
     transform: translateY(-2px);
     color: var(--accent);
+  }
+
+  .footer-double-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-contact-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-contact-link:hover {
+    color: var(--accent);
+  }
+
+  .footer-contact-link--static {
+    cursor: default;
+  }
+
+  .footer-contact-link--static:hover {
+    color: var(--text-secondary);
+  }
+
+  .footer-contact-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--accent);
+    opacity: 0.6;
+  }
+
+  /* Tablet: 2 columns */
+  @media (min-width: 640px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+  }
+
+  /* Desktop: 4 columns — brand wider */
+  @media (min-width: 1024px) {
+    .footer-grid {
+      grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+      gap: 2rem;
+    }
   }
 </style>
