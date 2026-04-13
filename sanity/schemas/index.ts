@@ -9,3 +9,4 @@ export { teamMember } from './teamMember';
 export { jobListing } from './jobListing';
 export { siteSettings } from './siteSettings';
 export { pageHeroes } from './pageHeroes';
+export { aboutPage } from './aboutPage';
