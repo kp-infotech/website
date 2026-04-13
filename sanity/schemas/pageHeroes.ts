@@ -54,6 +54,27 @@ export const pageHeroes = defineType({
       description: 'Hero background image for the Insights (Blog) index page',
       options: { hotspot: true },
     }),
+    defineField({
+      name: 'homeServicesBg',
+      type: 'image',
+      title: 'Homepage — Services Background',
+      description: 'Background image for the Services section on the homepage',
+      options: { hotspot: true },
+    }),
+    defineField({
+      name: 'homeStatsBg',
+      type: 'image',
+      title: 'Homepage — Stats Background',
+      description: 'Background image for the Stats/Numbers section on the homepage',
+      options: { hotspot: true },
+    }),
+    defineField({
+      name: 'homeIndustriesBg',
+      type: 'image',
+      title: 'Homepage — Industries Background',
+      description: 'Background image for the Industries section on the homepage',
+      options: { hotspot: true },
+    }),
   ],
   preview: {
     prepare() {

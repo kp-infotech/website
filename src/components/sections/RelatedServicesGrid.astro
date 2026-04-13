@@ -17,11 +17,13 @@ interface ServiceItem {
 interface Props {
   heading?: string;
   services?: ServiceItem[];
+  backgroundImage?: string;
 }
 
 const {
   heading = 'Our *Services*',
   services: rawServices,
+  backgroundImage,
 } = Astro.props;
 
 const services = (rawServices || []).filter((s): s is ServiceItem => s != null && s.title != null);
@@ -46,7 +48,10 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
 ---
 
 {services.length > 0 && (
-  <section class="rsg">
+  <section
+    class:list={["rsg", { "rsg--has-bg": !!backgroundImage }]}
+    style={backgroundImage ? `background-image: url(${backgroundImage});` : undefined}
+  >
     <div class="rsg__container">
       <div class="rsg__header">
         <div>
@@ -103,12 +108,28 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
 <style>
   .rsg {
     padding: 6rem 0;
+    position: relative;
+  }
+
+  .rsg--has-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .rsg--has-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.95);
   }
 
   .rsg__container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
   }
 
   .rsg__header {

@@ -22,6 +22,14 @@ const aboutQuery = `{
   },
   "pageHeroes": *[_type == "pageHeroes"][0] {
     aboutHero
+  },
+  "aboutPage": *[_type == "aboutPage"][0] {
+    storyImage,
+    craftIcon,
+    partnershipIcon,
+    innovationIcon,
+    integrityIcon,
+    partnersImage
   }
 }`;
 
@@ -35,6 +43,14 @@ const data = await client.fetch<{
     linkedin?: string;
   }>;
   pageHeroes: { aboutHero?: any } | null;
+  aboutPage: {
+    storyImage?: any;
+    craftIcon?: any;
+    partnershipIcon?: any;
+    innovationIcon?: any;
+    integrityIcon?: any;
+    partnersImage?: any;
+  } | null;
 }>(aboutQuery);
 
 const teamMembers = data?.teamMembers || [];
@@ -47,6 +63,25 @@ if (data?.pageHeroes?.aboutHero) {
     aboutHeroUrl = urlFor(data.pageHeroes.aboutHero).width(1920).format('webp').url();
   } catch { /* fall back to placeholder */ }
 }
+
+// Build about page image URLs
+const ap = data?.aboutPage;
+
+function safeUrl(source: any, width: number, format: 'webp' | 'png' = 'webp'): string | undefined {
+  if (!source) return undefined;
+  try {
+    return urlFor(source).width(width).format(format).url();
+  } catch { return undefined; }
+}
+
+const storyImageUrl = safeUrl(ap?.storyImage, 960);
+const partnersImageUrl = safeUrl(ap?.partnersImage, 960);
+
+// Value icons — Sanity overrides static fallbacks
+const craftIconUrl = safeUrl(ap?.craftIcon, 144, 'png') || '/images/values/craft.png';
+const partnershipIconUrl = safeUrl(ap?.partnershipIcon, 144, 'png') || '/images/values/partnership.png';
+const innovationIconUrl = safeUrl(ap?.innovationIcon, 144, 'png') || '/images/values/innovation.png';
+const integrityIconUrl = safeUrl(ap?.integrityIcon, 144, 'png') || '/images/values/integrity.png';
 ---
 
 <BaseLayout
@@ -69,6 +104,7 @@ if (data?.pageHeroes?.aboutHero) {
       "Our approach combines strategic thinking with meticulous craftsmanship. Every project we take on receives our full attention, because we believe in quality over quantity."
     ]}
     founderNames="Krupa & Poojan"
+    image={storyImageUrl}
   />
 
   <Values
@@ -78,22 +114,22 @@ if (data?.pageHeroes?.aboutHero) {
       {
         title: "Craft",
         description: "We obsess over the details. Every pixel, every interaction, every line of code is crafted with intention and care.",
-        icon: "/images/values/craft.png"
+        icon: craftIconUrl
       },
       {
         title: "Partnership",
         description: "We don't just build for clients—we build with them. True collaboration creates the best outcomes.",
-        icon: "/images/values/partnership.png"
+        icon: partnershipIconUrl
       },
       {
         title: "Innovation",
         description: "We stay curious and embrace new technologies, always seeking better ways to solve problems.",
-        icon: "/images/values/innovation.png"
+        icon: innovationIconUrl
       },
       {
         title: "Integrity",
         description: "We're honest about what we can deliver, transparent in our process, and committed to doing what's right.",
-        icon: "/images/values/integrity.png"
+        icon: integrityIconUrl
       }
     ]}
   />
@@ -115,6 +151,7 @@ if (data?.pageHeroes?.aboutHero) {
         description: "Official Odoo implementation and development partner, delivering enterprise ERP solutions with certified expertise."
       }
     ]}
+    sectionImage={partnersImageUrl}
   />
 
   <CTASection

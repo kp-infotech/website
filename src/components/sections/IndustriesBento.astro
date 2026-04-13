@@ -14,16 +14,20 @@ interface Props {
     iconName?: string;
     iconCustom?: SanityImageSource;
   }>;
+  backgroundImage?: string;
 }
 
-const { industries = [] } = Astro.props;
+const { industries = [], backgroundImage } = Astro.props;
 
 // First industry is featured, rest are regular
 const featuredIndustry = industries[0];
 const regularIndustries = industries.slice(1);
 ---
 
-<section class="industries-bento">
+<section
+  class:list={["industries-bento", { "industries-bento--has-bg": !!backgroundImage }]}
+  style={backgroundImage ? `background-image: url(${backgroundImage});` : undefined}
+>
   <div class="industries-bento__container">
     <header class="industries-bento__header" data-reveal="fade">
       <SectionLabel text="Our Expertise" />
@@ -70,6 +74,20 @@ const regularIndustries = industries.slice(1);
 <style>
   .industries-bento {
     padding: 6rem 0;
+    position: relative;
+  }
+
+  .industries-bento--has-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .industries-bento--has-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.85);
   }
 
   @media (max-width: 768px) {
@@ -88,6 +106,8 @@ const regularIndustries = industries.slice(1);
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
   }
 
   /* ─── Header ─── */

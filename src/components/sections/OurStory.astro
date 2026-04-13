@@ -7,7 +7,7 @@ interface Props {
   headline?: string;
   paragraphs?: string[];
   founderNames?: string;
-  imagePlaceholder?: boolean;
+  image?: string;
 }
 
 const {
@@ -19,7 +19,7 @@ const {
     "Our approach combines strategic thinking with meticulous craftsmanship. Every project we take on receives our full attention, because we believe in quality over quantity."
   ],
   founderNames = "Krupa & Poojan",
-  imagePlaceholder = true
+  image,
 } = Astro.props;
 ---
 
@@ -40,12 +40,19 @@ const {
     </div>
 
     <div class="our-story__visual">
-      {imagePlaceholder ? (
+      {image ? (
+        <img
+          src={image}
+          alt="KP Infotech — Our Story"
+          class="our-story__image"
+          width="480"
+          height="600"
+          loading="lazy"
+        />
+      ) : (
         <div class="our-story__image-placeholder">
           <span>Image</span>
         </div>
-      ) : (
-        <slot name="image" />
       )}
     </div>
   </div>
@@ -121,6 +128,14 @@ const {
   .our-story__visual {
     display: flex;
     justify-content: center;
+  }
+
+  .our-story__image {
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border: 1px solid var(--border);
   }
 
   .our-story__image-placeholder {

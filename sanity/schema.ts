@@ -11,6 +11,7 @@ import { teamMember } from './schemas/teamMember';
 import { jobListing } from './schemas/jobListing';
 import { siteSettings } from './schemas/siteSettings';
 import { pageHeroes } from './schemas/pageHeroes';
+import { aboutPage } from './schemas/aboutPage';
 
 // Object schemas
 import { processStep } from './schemas/objects/processStep';
@@ -35,6 +36,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     jobListing,
     siteSettings,
     pageHeroes,
+    aboutPage,
     // Object types
     processStep,
     faqItem,

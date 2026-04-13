@@ -16,7 +16,7 @@ import CTASection from '../components/sections/CTASection.astro';
 // Fetch all homepage data from Sanity
 const data = await client.fetch(homepageDataQuery);
 const pageHeroes = await client.fetch<Record<string, any> | null>(
-  `*[_type == "pageHeroes"][0] { homeHero }`
+  `*[_type == "pageHeroes"][0] { homeHero, homeServicesBg, homeStatsBg, homeIndustriesBg }`
 );
 
 const { siteSettings, services, industries, featuredWork, testimonials } = data;
@@ -28,6 +28,16 @@ if (pageHeroes?.homeHero) {
     homeHeroUrl = urlFor(pageHeroes.homeHero).width(1920).format('webp').url();
   } catch { /* fall back to local asset */ }
 }
+
+// Build section background URLs
+function safeBgUrl(source: any): string | undefined {
+  if (!source) return undefined;
+  try { return urlFor(source).width(1920).format('webp').url(); }
+  catch { return undefined; }
+}
+const servicesBgUrl = safeBgUrl(pageHeroes?.homeServicesBg);
+const statsBgUrl = safeBgUrl(pageHeroes?.homeStatsBg);
+const industriesBgUrl = safeBgUrl(pageHeroes?.homeIndustriesBg);
 
 // Prepare service names for marquee
 const serviceNames = services?.map((s: any) => s.title) || [
@@ -68,17 +78,17 @@ const heroDescription = "We craft premium digital experiences for startups and b
 
   <!-- Services Grid -->
   {services && services.length > 0 && (
-    <RelatedServicesGrid services={services} />
+    <RelatedServicesGrid services={services} backgroundImage={servicesBgUrl} />
   )}
 
   <!-- Stats Section -->
   {stats && stats.length > 0 && (
-    <StatsSection stats={stats} />
+    <StatsSection stats={stats} backgroundImage={statsBgUrl} />
   )}
 
   <!-- Industries Bento -->
   {industries && industries.length > 0 && (
-    <IndustriesBento industries={industries} />
+    <IndustriesBento industries={industries} backgroundImage={industriesBgUrl} />
   )}
 
   <!-- Testimonials Carousel -->
