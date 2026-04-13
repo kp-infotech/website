@@ -4,13 +4,9 @@
  * Fixed header with transparent-to-solid background on scroll
  * Includes desktop nav links and mobile hamburger menu with full-screen overlay
  */
-import { Menu, X, Phone, Mail } from '@lucide/astro';
+import { Icon } from 'astro-icon/components';
 import { urlFor, isSvgAsset, getOriginalAssetUrl } from '../lib/sanity';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
-import LinkedinIcon from './icons/LinkedinIcon.astro';
-import TwitterIcon from './icons/TwitterIcon.astro';
-import InstagramIcon from './icons/InstagramIcon.astro';
-import FacebookIcon from './icons/FacebookIcon.astro';
 
 interface SocialLinks {
   linkedin?: string;
@@ -36,11 +32,11 @@ const { siteName = 'KP Infotech', logo, contactPhone, contactEmail, socialLinks 
 
 // Build utility bar socials
 const utilitySocials = [
-  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, Icon: LinkedinIcon },
-  socialLinks?.twitter && { name: 'Twitter', href: socialLinks.twitter, Icon: TwitterIcon },
-  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, Icon: InstagramIcon },
-  socialLinks?.facebook && { name: 'Facebook', href: socialLinks.facebook, Icon: FacebookIcon },
-].filter(Boolean) as Array<{ name: string; href: string; Icon: typeof LinkedinIcon }>;
+  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, icon: 'fa6-brands:linkedin-in' },
+  socialLinks?.twitter && { name: 'X', href: socialLinks.twitter, icon: 'fa6-brands:x-twitter' },
+  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, icon: 'fa6-brands:instagram' },
+  socialLinks?.facebook && { name: 'Facebook', href: socialLinks.facebook, icon: 'fa6-brands:facebook-f' },
+].filter(Boolean) as Array<{ name: string; href: string; icon: string }>;
 
 const navLinks: NavLink[] = [
   { label: 'Services', href: '/services/' },
@@ -73,13 +69,13 @@ const logoUrl = logo
         <div class="flex items-center gap-6">
           {contactPhone && (
             <a href={`tel:${contactPhone.replace(/\s/g, '')}`} class="utility-link">
-              <Phone size={15} />
+              <Icon name="fa6-solid:phone" size={14} />
               <span>{contactPhone}</span>
             </a>
           )}
           {contactEmail && (
             <a href={`mailto:${contactEmail}`} class="utility-link">
-              <Mail size={15} />
+              <Icon name="fa6-solid:envelope" size={14} />
               <span>{contactEmail}</span>
             </a>
           )}
@@ -94,7 +90,7 @@ const logoUrl = logo
                 class="utility-social"
                 aria-label={social.name}
               >
-                <social.Icon size={16} />
+                <Icon name={social.icon} size={16} />
               </a>
             ))}
           </div>
@@ -181,8 +177,8 @@ const logoUrl = logo
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
-      <Menu id="menu-icon" size={24} class="transition-opacity duration-300" />
-      <X id="close-icon" size={24} class="absolute opacity-0 transition-opacity duration-300" />
+      <Icon name="fa6-solid:bars" id="menu-icon" size={22} class="transition-opacity duration-300" />
+      <Icon name="fa6-solid:xmark" id="close-icon" size={22} class="absolute opacity-0 transition-opacity duration-300" />
     </button>
   </nav>
 </header>

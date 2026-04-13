@@ -1,7 +1,6 @@
 ---
 import { urlFor } from '../../lib/sanity';
-import LinkedinIcon from '../icons/LinkedinIcon.astro';
-import TwitterIcon from '../icons/TwitterIcon.astro';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
   author: {
@@ -65,7 +64,7 @@ if (author.photo) {
               class="author-bio__social-link"
               aria-label="LinkedIn"
             >
-              <LinkedinIcon size={18} />
+              <Icon name="fa6-brands:linkedin-in" size={18} />
             </a>
           )}
           {author.twitter && (
@@ -76,7 +75,7 @@ if (author.photo) {
               class="author-bio__social-link"
               aria-label="Twitter"
             >
-              <TwitterIcon size={18} />
+              <Icon name="fa6-brands:x-twitter" size={18} />
             </a>
           )}
         </div>

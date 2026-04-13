@@ -29,3 +29,61 @@ const { tagline, headline, description, image } = Astro.props;
     <Button href="/work/" variant="text">View Our Work</Button>
   </div>
 </PageHero>
+
+<style>
+  :global(.page-hero__bg .hero-video) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+  }
+
+  :global(.page-hero__bg .hero-video.loaded) {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  function initHeroVideo() {
+    if (!window.matchMedia('(min-width: 768px)').matches) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const bg = document.querySelector('.page-hero__bg');
+    if (!bg) return;
+
+    const video = document.createElement('video');
+    video.className = 'hero-video';
+    video.autoplay = true;
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.preload = 'none';
+
+    const webm = document.createElement('source');
+    webm.src = '/videos/hero-bg.webm';
+    webm.type = 'video/webm';
+
+    const mp4 = document.createElement('source');
+    mp4.src = '/videos/hero-bg.mp4';
+    mp4.type = 'video/mp4';
+
+    video.appendChild(webm);
+    video.appendChild(mp4);
+
+    video.addEventListener('canplaythrough', () => {
+      video.classList.add('loaded');
+    }, { once: true });
+
+    bg.appendChild(video);
+    video.load();
+  }
+
+  if (document.readyState === 'complete') {
+    initHeroVideo();
+  } else {
+    window.addEventListener('load', initHeroVideo, { once: true });
+  }
+</script>

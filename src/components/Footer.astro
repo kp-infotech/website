@@ -1,10 +1,5 @@
 ---
-import { Mail, Phone, MapPin } from '@lucide/astro';
-import LinkedinIcon from './icons/LinkedinIcon.astro';
-import TwitterIcon from './icons/TwitterIcon.astro';
-import InstagramIcon from './icons/InstagramIcon.astro';
-import DribbbleIcon from './icons/DribbbleIcon.astro';
-import FacebookIcon from './icons/FacebookIcon.astro';
+import { Icon } from 'astro-icon/components';
 import { urlFor, isSvgAsset } from '../lib/sanity';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
@@ -72,12 +67,12 @@ const industries = [
 
 // Build socials array from siteSettings
 const socials = [
-  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, Icon: LinkedinIcon },
-  socialLinks?.twitter && { name: 'Twitter', href: socialLinks.twitter, Icon: TwitterIcon },
-  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, Icon: InstagramIcon },
-  socialLinks?.facebook && { name: 'Facebook', href: socialLinks.facebook, Icon: FacebookIcon },
-  socialLinks?.dribbble && { name: 'Dribbble', href: socialLinks.dribbble, Icon: DribbbleIcon },
-].filter(Boolean) as Array<{ name: string; href: string; Icon: typeof LinkedinIcon }>;
+  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, icon: 'fa6-brands:linkedin-in' },
+  socialLinks?.twitter && { name: 'X', href: socialLinks.twitter, icon: 'fa6-brands:x-twitter' },
+  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, icon: 'fa6-brands:instagram' },
+  socialLinks?.facebook && { name: 'Facebook', href: socialLinks.facebook, icon: 'fa6-brands:facebook-f' },
+  socialLinks?.dribbble && { name: 'Dribbble', href: socialLinks.dribbble, icon: 'fa6-brands:dribbble' },
+].filter(Boolean) as Array<{ name: string; href: string; icon: string }>;
 ---
 
 <footer class="bg-[var(--bg-secondary)] border-t border-[var(--border)]">
@@ -112,7 +107,7 @@ const socials = [
                 class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors duration-300"
                 aria-label={social.name}
               >
-                <social.Icon size={20} />
+                <Icon name={social.icon} size={20} />
               </a>
             ))}
           </div>
@@ -197,7 +192,7 @@ const socials = [
               href={`mailto:${contactEmail}`}
               class="footer-contact-link"
             >
-              <Mail size={16} class="footer-contact-icon" />
+              <Icon name="fa6-solid:envelope" size={15} class="footer-contact-icon" />
               <span>{contactEmail}</span>
             </a>
           )}
@@ -206,13 +201,13 @@ const socials = [
               href={`tel:${contactPhone.replace(/\s/g, '')}`}
               class="footer-contact-link"
             >
-              <Phone size={16} class="footer-contact-icon" />
+              <Icon name="fa6-solid:phone" size={15} class="footer-contact-icon" />
               <span>{contactPhone}</span>
             </a>
           )}
           {address && (
             <div class="footer-contact-link footer-contact-link--static">
-              <MapPin size={16} class="footer-contact-icon" />
+              <Icon name="fa6-solid:location-dot" size={15} class="footer-contact-icon" />
               <span class="whitespace-pre-line">{address}</span>
             </div>
           )}
