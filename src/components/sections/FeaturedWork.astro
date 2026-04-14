@@ -33,7 +33,7 @@ function getImageUrl(image: any): string | null {
 ---
 
 <section class="featured-work">
-  <div class="featured-work__container">
+  <div class="featured-work__container site-container">
     <header class="featured-work__header">
       <SectionLabel text="Selected Work" />
       <h2 class="featured-work__title"><HighlightedText text="Featured *Projects*" /></h2>
@@ -97,12 +97,6 @@ function getImageUrl(image: any): string | null {
   .featured-work {
     padding: 6rem 0;
     background: var(--bg-primary);
-  }
-
-  .featured-work__container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .featured-work__header {
@@ -301,19 +295,9 @@ function getImageUrl(image: any): string | null {
       padding: 3rem 0;
     }
 
-    .featured-work__container {
-      padding: 0 1rem;
-    }
-
     .empty-card {
       padding: 2rem 1.25rem;
     }
   }
 
-  @media (min-width: 1024px) {
-    .featured-work__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
 </style>

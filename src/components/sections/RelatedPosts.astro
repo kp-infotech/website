@@ -20,7 +20,7 @@ const { posts } = Astro.props;
 
 {posts && posts.length > 0 && (
   <section class="related-posts">
-    <div class="related-posts__container">
+    <div class="related-posts__container site-container">
       <div class="related-posts__header">
         <SectionLabel text="Related" />
         <h2>Related Articles</h2>
@@ -42,10 +42,6 @@ const { posts } = Astro.props;
   }
 
   .related-posts__container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .related-posts__header {
@@ -93,19 +89,9 @@ const { posts } = Astro.props;
       padding: 3rem 0;
     }
 
-    .related-posts__container {
-      padding: 0 1rem;
-    }
-
     .related-posts__header {
       margin-bottom: 2rem;
     }
   }
 
-  @media (min-width: 1024px) {
-    .related-posts__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
 </style>

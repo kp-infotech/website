@@ -50,7 +50,7 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
 ---
 
 <section class="testimonials" aria-label="Client testimonials">
-  <div class="testimonials__container">
+  <div class="testimonials__container site-container">
     <header class="testimonials__header">
       <SectionLabel text="What Clients Say" />
       <h2 class="testimonials__title"><HighlightedText text="Client *Testimonials*" /></h2>
@@ -159,12 +159,6 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
   .testimonials {
     padding: 6rem 0;
     background: var(--bg-primary);
-  }
-
-  .testimonials__container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .testimonials__header {
@@ -424,10 +418,6 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
       padding: 3rem 0;
     }
 
-    .testimonials__container {
-      padding: 0 1rem;
-    }
-
     .testimonial-card {
       padding: 1.5rem;
     }
@@ -461,12 +451,6 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
     }
   }
 
-  @media (min-width: 1024px) {
-    .testimonials__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
 </style>
 
 <script>

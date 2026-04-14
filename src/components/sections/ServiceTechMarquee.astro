@@ -16,7 +16,7 @@ const {
 
 {technologies && technologies.length > 0 && (
   <section class="service-tech">
-    <div class="service-tech__container">
+    <div class="service-tech__container site-container">
       <div class="service-tech__header">
         <SectionLabel text="Tools & Technologies" />
         <h2 class="service-tech__title">
@@ -37,10 +37,6 @@ const {
   }
 
   .service-tech__container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .service-tech__header {
@@ -93,10 +89,4 @@ const {
     }
   }
 
-  @media (min-width: 1024px) {
-    .service-tech__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
 </style>

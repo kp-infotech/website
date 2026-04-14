@@ -52,7 +52,7 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
     class:list={["rsg", { "rsg--has-bg": !!backgroundImage }]}
     style={backgroundImage ? `background-image: url(${backgroundImage});` : undefined}
   >
-    <div class="rsg__container">
+    <div class="rsg__container site-container">
       <div class="rsg__header">
         <div>
           <SectionLabel text="What We Do" />
@@ -125,9 +125,6 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
   }
 
   .rsg__container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     position: relative;
     z-index: 1;
   }
@@ -298,11 +295,6 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
   }
 
   @media (min-width: 1024px) {
-    .rsg__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-
     .rsg__grid {
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;

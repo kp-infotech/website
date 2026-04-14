@@ -93,6 +93,22 @@ img {
   height: auto;
 }
 
+/* Site container — matches header's 1440px bounding box */
+.site-container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 /* Section Label Pattern - base class only, styles are inline in component */
 .section-label {
   /* Styles moved to inline in SectionLabel.astro to avoid CSS code-splitting */

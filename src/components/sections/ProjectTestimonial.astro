@@ -25,7 +25,7 @@ const hasTestimonial = testimonial?.quote;
 
 {hasTestimonial && (
   <section class="project-testimonial">
-    <div class="project-testimonial__container">
+    <div class="project-testimonial__container site-container">
       <div class="project-testimonial__card">
         <blockquote class="project-testimonial__quote">
           <p>&ldquo;{testimonial.quote}&rdquo;</p>
@@ -65,10 +65,6 @@ const hasTestimonial = testimonial?.quote;
   }
 
   .project-testimonial__container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .project-testimonial__card {
@@ -143,19 +139,9 @@ const hasTestimonial = testimonial?.quote;
       padding: 3rem 0;
     }
 
-    .project-testimonial__container {
-      padding: 0 1rem;
-    }
-
     .project-testimonial__card {
       padding: 1.5rem 1.5rem 1.5rem calc(1.5rem + 4px);
     }
   }
 
-  @media (min-width: 1024px) {
-    .project-testimonial__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
 </style>

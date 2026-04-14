@@ -42,7 +42,7 @@ function getImageUrl(image: any): string | null {
 
 {projects && projects.length > 0 && (
   <section class="service-work">
-    <div class="service-work__container">
+    <div class="service-work__container site-container">
       <div class="service-work__header">
         <div>
           <SectionLabel text="Related Work" />
@@ -129,10 +129,6 @@ function getImageUrl(image: any): string | null {
   }
 
   .service-work__container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .service-work__header {
@@ -326,13 +322,6 @@ function getImageUrl(image: any): string | null {
   }
 
   /* Responsive */
-  @media (min-width: 1024px) {
-    .service-work__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
-
   @media (max-width: 1024px) {
     .work-card--featured {
       grid-template-columns: 1fr;

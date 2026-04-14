@@ -47,7 +47,7 @@ function getLogoUrl(logo: SanityImageSource | undefined): string | null {
   class:list={["certifications", { "certifications--has-bg": !!sectionImage }]}
   style={sectionImage ? `background-image: url(${sectionImage});` : undefined}
 >
-  <div class="certifications__container">
+  <div class="certifications__container site-container">
     <header class="certifications__header">
       <SectionLabel text={label} variant="centered" />
       <h2 class="certifications__headline"><HighlightedText text={headline} /></h2>
@@ -106,9 +106,6 @@ function getLogoUrl(logo: SanityImageSource | undefined): string | null {
   }
 
   .certifications__container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     position: relative;
     z-index: 1;
   }

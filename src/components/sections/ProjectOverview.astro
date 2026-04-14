@@ -28,7 +28,7 @@ const hasContent = blocks.length > 0;
 
 {hasContent && (
   <section class="project-overview">
-    <div class="project-overview__container">
+    <div class="project-overview__container site-container">
       <SectionLabel text="Project Overview" />
       <h2 class="project-overview__title">How we got there</h2>
 
@@ -62,10 +62,6 @@ const hasContent = blocks.length > 0;
   }
 
   .project-overview__container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .project-overview__title {
@@ -195,19 +191,9 @@ const hasContent = blocks.length > 0;
       padding: 3rem 0;
     }
 
-    .project-overview__container {
-      padding: 0 1rem;
-    }
-
     .overview-block {
       padding-left: 1rem;
     }
   }
 
-  @media (min-width: 1024px) {
-    .project-overview__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
 </style>

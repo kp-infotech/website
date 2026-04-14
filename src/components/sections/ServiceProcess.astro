@@ -25,7 +25,7 @@ const detailLabels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 {steps && steps.length > 0 && (
   <section class="blueprint">
-    <div class="blueprint__container">
+    <div class="blueprint__container site-container">
       <div class="blueprint__header">
         <SectionLabel text="Our Process" />
         <h2 class="blueprint__title">
@@ -83,10 +83,6 @@ const detailLabels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   }
 
   .blueprint__container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .blueprint__header {
@@ -369,10 +365,4 @@ const detailLabels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     }
   }
 
-  @media (min-width: 1024px) {
-    .blueprint__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
 </style>

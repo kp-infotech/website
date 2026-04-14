@@ -33,7 +33,7 @@ const filterServices = services.length > 0
 ---
 
 <section class="work-grid">
-  <div class="work-grid__container">
+  <div class="work-grid__container site-container">
     {/* Filter pills */}
     {filterServices.length > 0 && (
       <div class="work-grid__filters" role="tablist" aria-label="Filter projects by service">
@@ -124,10 +124,6 @@ const filterServices = services.length > 0
   }
 
   .work-grid__container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   /* ---- Filter pills ---- */
@@ -325,10 +321,6 @@ const filterServices = services.length > 0
       padding: 0 0 3rem;
     }
 
-    .work-grid__container {
-      padding: 0 1rem;
-    }
-
     .work-grid__filters {
       gap: 0.375rem;
     }
@@ -339,12 +331,6 @@ const filterServices = services.length > 0
     }
   }
 
-  @media (min-width: 1024px) {
-    .work-grid__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
 </style>
 
 <script>

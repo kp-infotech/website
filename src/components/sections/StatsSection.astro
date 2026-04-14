@@ -17,7 +17,7 @@ const { stats, backgroundImage } = Astro.props;
   class:list={["stats-section", { "stats-section--has-bg": !!backgroundImage }]}
   style={backgroundImage ? `background-image: url(${backgroundImage});` : undefined}
 >
-  <div class="stats-section__container">
+  <div class="stats-section__container site-container">
     <header class="stats-section__header">
       <SectionLabel text="By The Numbers" />
       <h2 class="stats-section__title"><HighlightedText text="Our *Impact*" /></h2>
@@ -73,9 +73,6 @@ const { stats, backgroundImage } = Astro.props;
   }
 
   .stats-section__container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     position: relative;
     z-index: 1;
   }
@@ -132,11 +129,6 @@ const { stats, backgroundImage } = Astro.props;
 
   /* Desktop: 4 columns in a row */
   @media (min-width: 1024px) {
-    .stats-section__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-
     .stats-section__grid {
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;

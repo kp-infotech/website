@@ -28,7 +28,7 @@ const regularIndustries = industries.slice(1);
   class:list={["industries-bento", { "industries-bento--has-bg": !!backgroundImage }]}
   style={backgroundImage ? `background-image: url(${backgroundImage});` : undefined}
 >
-  <div class="industries-bento__container">
+  <div class="industries-bento__container site-container">
     <header class="industries-bento__header" data-reveal="fade">
       <SectionLabel text="Our Expertise" />
       <h2 class="industries-bento__title">
@@ -103,9 +103,6 @@ const regularIndustries = industries.slice(1);
   }
 
   .industries-bento__container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     position: relative;
     z-index: 1;
   }
@@ -178,11 +175,6 @@ const regularIndustries = industries.slice(1);
 
   /* Desktop: Classic bento layout */
   @media (min-width: 1024px) {
-    .industries-bento__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-
     .industries-bento__grid {
       grid-template-columns: 1.3fr 1fr 1fr;
       grid-template-rows: auto auto;

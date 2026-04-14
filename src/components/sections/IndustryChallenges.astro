@@ -24,7 +24,7 @@ const challenges = (rawChallenges || []).filter((c): c is ChallengeItem => c != 
 
 {challenges.length > 0 && (
   <section class="tension">
-    <div class="tension__container">
+    <div class="tension__container site-container">
       <div class="tension__head">
         <SectionLabel text="Challenges" />
         <h2 class="tension__title"><HighlightedText text={heading} /></h2>
@@ -67,9 +67,6 @@ const challenges = (rawChallenges || []).filter((c): c is ChallengeItem => c != 
   }
 
   .tension__container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .tension__head {
@@ -285,13 +282,6 @@ const challenges = (rawChallenges || []).filter((c): c is ChallengeItem => c != 
 
     .ghost-text {
       font-size: 3.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .tension__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
     }
   }
 

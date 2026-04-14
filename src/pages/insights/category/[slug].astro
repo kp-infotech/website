@@ -70,7 +70,7 @@ const seoDescription = category.description || `Expert insights and articles abo
   </PageHero>
 
   <section class="insights-list">
-    <div class="insights-list__container">
+    <div class="insights-list__container site-container">
       <!-- Category filter pills -->
       {allCategories && allCategories.length > 0 && (
         <div class="insights-list__filters" role="tablist" aria-label="Filter articles by category">
@@ -171,10 +171,6 @@ const seoDescription = category.description || `Expert insights and articles abo
   }
 
   .insights-list__container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   /* ---- Filter pills ---- */
@@ -377,10 +373,6 @@ const seoDescription = category.description || `Expert insights and articles abo
   @media (max-width: 480px) {
     .insights-list {
       padding: 0 0 3rem;
-    }
-
-    .insights-list__container {
-      padding: 0 1rem;
     }
 
     .insights-list__filters {

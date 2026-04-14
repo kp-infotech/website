@@ -39,7 +39,7 @@ const {
 ---
 
 <section class="values">
-  <div class="values__container">
+  <div class="values__container site-container">
     <header class="values__header">
       <SectionLabel text={label} variant="centered" />
       <h2 class="values__headline"><HighlightedText text={headline} /></h2>
@@ -73,12 +73,6 @@ const {
   .values {
     padding: 6rem 0;
     background: var(--bg-secondary);
-  }
-
-  .values__container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .values__header {
@@ -160,11 +154,6 @@ const {
 
   /* Desktop adjustments */
   @media (min-width: 1024px) {
-    .values__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-
     .values__grid {
       gap: 2rem;
     }

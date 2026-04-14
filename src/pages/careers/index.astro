@@ -54,7 +54,7 @@ const jobPostingSchema = hasJobs
 
   <!-- Open Positions or Empty State -->
   <section class="careers-listings">
-    <div class="careers-listings__container">
+    <div class="careers-listings__container site-container">
       {hasJobs ? (
         <>
           <SectionLabel text="Open Positions" />
@@ -93,7 +93,7 @@ const jobPostingSchema = hasJobs
 
   <!-- Application Form -->
   <section class="careers-form" id="apply">
-    <div class="careers-form__container">
+    <div class="careers-form__container site-container">
       <SectionLabel text="Apply" />
       <h2 class="careers-form__title">
         <HighlightedText text="Send Us Your *Details*" />
@@ -191,9 +191,6 @@ const jobPostingSchema = hasJobs
   }
 
   .careers-listings__container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .careers-listings__list {
@@ -330,9 +327,6 @@ const jobPostingSchema = hasJobs
   }
 
   .careers-form__container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .careers-form__title {

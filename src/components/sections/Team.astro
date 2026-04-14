@@ -59,7 +59,7 @@ function getInitials(name: string): string {
 ---
 
 <section class="team">
-  <div class="team__container">
+  <div class="team__container site-container">
     <header class="team__header">
       <SectionLabel text={label} variant="centered" />
       <h2 class="team__headline"><HighlightedText text={headline} /></h2>
@@ -112,12 +112,6 @@ function getInitials(name: string): string {
   .team {
     padding: 6rem 0;
     background: var(--bg-primary);
-  }
-
-  .team__container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .team__header {
@@ -215,11 +209,6 @@ function getInitials(name: string): string {
 
   /* Desktop: 4 columns */
   @media (min-width: 1024px) {
-    .team__container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-
     .team__grid {
       grid-template-columns: repeat(4, 1fr);
       gap: 2.5rem;
