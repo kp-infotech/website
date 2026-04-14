@@ -162,7 +162,7 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
   }
 
   .testimonials__container {
-    max-width: 900px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -458,6 +458,13 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
 
     .carousel__arrow {
       transition: none;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .testimonials__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 </style>

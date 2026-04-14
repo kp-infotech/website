@@ -54,7 +54,7 @@ const filterServices = services.length > 0
         let thumbUrl: string | undefined;
         if (study.thumbnailImage) {
           try {
-            thumbUrl = urlFor(study.thumbnailImage).width(800).height(600).format('webp').url();
+            thumbUrl = urlFor(study.thumbnailImage).width(1600).height(1000).fit('crop').format('webp').url();
           } catch { /* no image */ }
         }
         const serviceIds = (study.services || []).map((s) => s._id).join(',');
@@ -125,7 +125,7 @@ const filterServices = services.length > 0
 
   .work-grid__container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -336,6 +336,13 @@ const filterServices = services.length > 0
     .work-grid__pill {
       padding: 6px 14px;
       font-size: 10px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .work-grid__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 </style>

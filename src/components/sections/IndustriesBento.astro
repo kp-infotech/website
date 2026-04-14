@@ -103,7 +103,7 @@ const regularIndustries = industries.slice(1);
   }
 
   .industries-bento__container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
     position: relative;
@@ -178,6 +178,11 @@ const regularIndustries = industries.slice(1);
 
   /* Desktop: Classic bento layout */
   @media (min-width: 1024px) {
+    .industries-bento__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
     .industries-bento__grid {
       grid-template-columns: 1.3fr 1fr 1fr;
       grid-template-rows: auto auto;

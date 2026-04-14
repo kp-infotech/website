@@ -39,6 +39,8 @@ interface Props {
   widths?: number[];
   /** Object fit style */
   fit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
+  /** Fill the parent container (absolute positioning) */
+  fill?: boolean;
 }
 
 const {
@@ -52,10 +54,15 @@ const {
   quality = 80,
   widths = [400, 800, 1200, 1600],
   fit = 'cover',
+  fill = false,
 } = Astro.props;
 
 // Filter widths to not exceed the base width
 const responsiveWidths = widths.filter(w => w <= width * 2);
+
+const imgStyle = fill
+  ? `position: absolute; inset: 0; width: 100%; height: 100%; object-fit: ${fit}; transition: transform 0.5s ease;`
+  : `object-fit: ${fit};`;
 ---
 
 <Picture
@@ -70,5 +77,5 @@ const responsiveWidths = widths.filter(w => w <= width * 2);
   quality={quality}
   loading={loading}
   class={className}
-  style={`object-fit: ${fit};`}
+  style={imgStyle}
 />

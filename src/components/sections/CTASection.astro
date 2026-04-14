@@ -37,14 +37,12 @@ const {
 
   .cta-section__container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
 
   .cta-section__card {
-    max-width: 900px;
-    margin: 0 auto;
     padding: 5rem 4rem;
     background: var(--bg-secondary);
     border: 1px solid var(--accent);
@@ -94,6 +92,13 @@ const {
   @media (max-width: 480px) {
     .cta-section__card {
       padding: 2.5rem 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .cta-section__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 </style>

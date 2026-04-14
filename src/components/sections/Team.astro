@@ -115,7 +115,7 @@ function getInitials(name: string): string {
   }
 
   .team__container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -215,6 +215,11 @@ function getInitials(name: string): string {
 
   /* Desktop: 4 columns */
   @media (min-width: 1024px) {
+    .team__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
     .team__grid {
       grid-template-columns: repeat(4, 1fr);
       gap: 2.5rem;

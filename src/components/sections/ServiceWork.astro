@@ -32,7 +32,8 @@ const rest = projects.slice(1, 3);
 function getImageUrl(image: any): string | null {
   if (!image) return null;
   try {
-    return urlFor(image).width(1200).format('webp').url();
+    // Pre-crop to 16:10 at Sanity CDN so Astro doesn't letterbox
+    return urlFor(image).width(1600).height(1000).fit('crop').format('webp').url();
   } catch {
     return null;
   }
@@ -69,6 +70,7 @@ function getImageUrl(image: any): string | null {
                   width={800}
                   height={500}
                   sizes="(max-width: 1024px) 100vw, 60vw"
+                  fill
                 />
               ) : (
                 <div class="work-card__placeholder">Featured Project</div>
@@ -98,9 +100,10 @@ function getImageUrl(image: any): string | null {
                 <SanityPicture
                   src={getImageUrl(project.thumbnailImage)!}
                   alt={project.title}
-                  width={600}
-                  height={400}
+                  width={800}
+                  height={500}
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  fill
                 />
               ) : (
                 <div class="work-card__placeholder">Project Image</div>
@@ -127,7 +130,7 @@ function getImageUrl(image: any): string | null {
 
   .service-work__container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -179,11 +182,19 @@ function getImageUrl(image: any): string | null {
   }
 
   .work-card--featured .work-card__image {
+    position: relative;
     aspect-ratio: 16/10;
     overflow: hidden;
   }
 
+  .work-card--featured .work-card__image :global(picture) {
+    position: absolute;
+    inset: 0;
+  }
+
   .work-card--featured .work-card__image :global(img) {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -238,11 +249,19 @@ function getImageUrl(image: any): string | null {
   }
 
   .work-card--small .work-card__image {
+    position: relative;
     aspect-ratio: 16/10;
     overflow: hidden;
   }
 
+  .work-card--small .work-card__image :global(picture) {
+    position: absolute;
+    inset: 0;
+  }
+
   .work-card--small .work-card__image :global(img) {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -307,6 +326,13 @@ function getImageUrl(image: any): string | null {
   }
 
   /* Responsive */
+  @media (min-width: 1024px) {
+    .service-work__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
   @media (max-width: 1024px) {
     .work-card--featured {
       grid-template-columns: 1fr;

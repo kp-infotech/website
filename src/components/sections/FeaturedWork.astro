@@ -24,7 +24,8 @@ const hasCaseStudies = caseStudies.length > 0;
 function getImageUrl(image: any): string | null {
   if (!image) return null;
   try {
-    return urlFor(image).url();
+    // Pre-crop to 16:10 at Sanity CDN so Astro doesn't letterbox
+    return urlFor(image).width(1600).height(1000).fit('crop').url();
   } catch {
     return null;
   }
@@ -50,11 +51,12 @@ function getImageUrl(image: any): string | null {
                 <SanityPicture
                   src={imageUrl}
                   alt={caseStudy.title}
-                  width={600}
-                  height={375}
+                  width={800}
+                  height={500}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   class="work-card__image"
                   loading="lazy"
+                  fill
                 />
               ) : (
                 <div class="work-card__placeholder"></div>
@@ -98,7 +100,7 @@ function getImageUrl(image: any): string | null {
   }
 
   .featured-work__container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -161,20 +163,7 @@ function getImageUrl(image: any): string | null {
     overflow: hidden;
   }
 
-  .work-card__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  .work-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-
-  .work-card:hover .work-card__image img {
+  .work-card:hover .work-card__image-wrapper :global(img) {
     transform: scale(1.05);
   }
 
@@ -318,6 +307,13 @@ function getImageUrl(image: any): string | null {
 
     .empty-card {
       padding: 2rem 1.25rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .featured-work__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 </style>

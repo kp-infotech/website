@@ -67,7 +67,7 @@ const challenges = (rawChallenges || []).filter((c): c is ChallengeItem => c != 
   }
 
   .tension__container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -285,6 +285,13 @@ const challenges = (rawChallenges || []).filter((c): c is ChallengeItem => c != 
 
     .ghost-text {
       font-size: 3.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .tension__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 

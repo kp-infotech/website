@@ -42,7 +42,7 @@ const hasContent = content && content.length > 0;
 
   .blog-content__container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -247,6 +247,13 @@ const hasContent = content && content.length > 0;
 
     .blog-content__body :global(.portable-text-image figcaption) {
       padding: 0 1rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .blog-content__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 </style>

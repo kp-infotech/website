@@ -37,7 +37,7 @@ const hasResults = results && results.length > 0;
 
   .results-strip__container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
     display: flex;
@@ -96,6 +96,13 @@ const hasResults = results && results.length > 0;
 
     .results-strip__item {
       flex: none;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .results-strip__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 </style>

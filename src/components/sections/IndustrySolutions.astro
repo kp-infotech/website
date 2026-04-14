@@ -92,7 +92,7 @@ const rightSolutions = solutions.filter((_, i) => i % 2 !== 0);
   }
 
   .orbit__container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -261,6 +261,13 @@ const rightSolutions = solutions.filter((_, i) => i % 2 !== 0);
 
     .orbit-card {
       padding: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .orbit__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 

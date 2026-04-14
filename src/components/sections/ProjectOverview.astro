@@ -63,7 +63,7 @@ const hasContent = blocks.length > 0;
 
   .project-overview__container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -201,6 +201,13 @@ const hasContent = blocks.length > 0;
 
     .overview-block {
       padding-left: 1rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .project-overview__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 </style>

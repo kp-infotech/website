@@ -125,7 +125,7 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
   }
 
   .rsg__container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
     position: relative;
@@ -298,6 +298,11 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
   }
 
   @media (min-width: 1024px) {
+    .rsg__container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
     .rsg__grid {
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
