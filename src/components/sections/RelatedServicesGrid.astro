@@ -4,7 +4,7 @@ import HighlightedText from '../ui/HighlightedText.astro';
 import Button from '../ui/Button.astro';
 import { urlFor } from '../../lib/sanity';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
-import { MoveRight } from '@lucide/astro';
+import { Icon } from 'astro-icon/components';
 
 interface ServiceItem {
   title: string;
@@ -94,7 +94,7 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
                 )}
 
                 <span class="rsg-card__link">
-                  Explore <MoveRight size={16} />
+                  Explore <Icon name="fa6-solid:arrow-right" size={14} />
                 </span>
               </div>
             </a>

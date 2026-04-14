@@ -39,13 +39,17 @@ const servicesBgUrl = safeBgUrl(pageHeroes?.homeServicesBg);
 const statsBgUrl = safeBgUrl(pageHeroes?.homeStatsBg);
 const industriesBgUrl = safeBgUrl(pageHeroes?.homeIndustriesBg);
 
-// Prepare service names for marquee
-const serviceNames = services?.map((s: any) => s.title) || [
-  'UI/UX Design',
-  'Web Development',
-  'Mobile Apps',
-  'ERP Solutions',
-  'Digital Marketing'
+// Tech stack slugs for marquee (simple-icons slugs — see https://simpleicons.org)
+const techSlugs = siteSettings?.techStack || [
+  // AI & ML tools
+  'claude', 'googlegemini', 'openrouter',
+  'elevenlabs', 'huggingface', 'ollama', 'replicate',
+  'tensorflow', 'pytorch', 'langchain',
+  // Core dev stack
+  'react', 'nodedotjs', 'nextdotjs', 'typescript',
+  'tailwindcss', 'figma', 'python', 'flutter',
+  'postgresql', 'mongodb', 'docker', 'git',
+  'supabase', 'firebase', 'cloudflare', 'sanity',
 ];
 
 // Prepare stats data
@@ -70,8 +74,8 @@ const heroDescription = "We craft premium digital experiences for startups and b
     image={homeHeroUrl}
   />
 
-  <!-- Services Marquee -->
-  <ServicesMarquee services={serviceNames} />
+  <!-- Tech Stack Marquee -->
+  <ServicesMarquee techSlugs={techSlugs} />
 
   <!-- Featured Work (empty state if no case studies) -->
   <FeaturedWork caseStudies={featuredWork} />

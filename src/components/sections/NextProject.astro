@@ -1,7 +1,7 @@
 ---
 import { urlFor } from '../../lib/sanity';
 import SectionLabel from '../ui/SectionLabel.astro';
-import { MoveRight } from '@lucide/astro';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
   project?: {
@@ -35,7 +35,7 @@ const hasProject = project?.title && project?.slug;
             <span class="next-project__client">{project.client}</span>
           )}
           <span class="next-project__arrow">
-            <MoveRight size={24} />
+            <Icon name="fa6-solid:arrow-right" size={20} />
           </span>
         </div>
         <div class="next-project__image-wrap">

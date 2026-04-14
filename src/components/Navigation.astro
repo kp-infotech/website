@@ -4,13 +4,23 @@
  * Fixed header with transparent-to-solid background on scroll
  * Includes desktop nav links and mobile hamburger menu with full-screen overlay
  */
-import { Menu, X } from '@lucide/astro';
+import { Icon } from 'astro-icon/components';
 import { urlFor, isSvgAsset, getOriginalAssetUrl } from '../lib/sanity';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
+
+interface SocialLinks {
+  linkedin?: string;
+  twitter?: string;
+  instagram?: string;
+  facebook?: string;
+}
 
 interface Props {
   siteName?: string;
   logo?: SanityImageSource;
+  contactPhone?: string;
+  contactEmail?: string;
+  socialLinks?: SocialLinks;
 }
 
 interface NavLink {
@@ -18,7 +28,15 @@ interface NavLink {
   href: string;
 }
 
-const { siteName = 'KP Infotech', logo } = Astro.props;
+const { siteName = 'KP Infotech', logo, contactPhone, contactEmail, socialLinks = {} } = Astro.props;
+
+// Build utility bar socials
+const utilitySocials = [
+  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, icon: 'fa6-brands:linkedin-in' },
+  socialLinks?.twitter && { name: 'X', href: socialLinks.twitter, icon: 'fa6-brands:x-twitter' },
+  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, icon: 'fa6-brands:instagram' },
+  socialLinks?.facebook && { name: 'Facebook', href: socialLinks.facebook, icon: 'fa6-brands:facebook-f' },
+].filter(Boolean) as Array<{ name: string; href: string; icon: string }>;
 
 const navLinks: NavLink[] = [
   { label: 'Services', href: '/services/' },
@@ -44,10 +62,47 @@ const logoUrl = logo
   class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
   role="banner"
 >
+  <!-- Utility Bar -->
+  {(contactPhone || contactEmail || utilitySocials.length > 0) && (
+    <div id="utility-bar" class="utility-bar hidden lg:block">
+      <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 lg:px-12">
+        <div class="flex items-center gap-6">
+          {contactPhone && (
+            <a href={`tel:${contactPhone.replace(/\s/g, '')}`} class="utility-link">
+              <Icon name="fa6-solid:phone" size={14} />
+              <span>{contactPhone}</span>
+            </a>
+          )}
+          {contactEmail && (
+            <a href={`mailto:${contactEmail}`} class="utility-link">
+              <Icon name="fa6-solid:envelope" size={14} />
+              <span>{contactEmail}</span>
+            </a>
+          )}
+        </div>
+        {utilitySocials.length > 0 && (
+          <div class="flex items-center gap-4">
+            {utilitySocials.map((social) => (
+              <a
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="utility-social"
+                aria-label={social.name}
+              >
+                <Icon name={social.icon} size={16} />
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  )}
+
   <div class="nav-backdrop absolute inset-0 opacity-0 transition-opacity duration-300"></div>
 
   <nav
-    class="relative mx-auto flex max-w-[1440px] items-center justify-between px-6 py-5 lg:px-12"
+    class="relative mx-auto flex max-w-[1440px] items-center justify-between px-6 py-6 lg:px-12"
     role="navigation"
     aria-label="Main navigation"
   >
@@ -61,7 +116,7 @@ const logoUrl = logo
         <img
           src={logoUrl}
           alt={siteName}
-          style="height: 40px; width: auto;"
+          style="height: 54px; width: auto;"
           class="object-contain"
         />
       ) : (
@@ -122,8 +177,8 @@ const logoUrl = logo
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
-      <Menu id="menu-icon" size={24} class="transition-opacity duration-300" />
-      <X id="close-icon" size={24} class="absolute opacity-0 transition-opacity duration-300" />
+      <Icon name="fa6-solid:bars" id="menu-icon" size={22} class="transition-opacity duration-300" />
+      <Icon name="fa6-solid:xmark" id="close-icon" size={22} class="absolute opacity-0 transition-opacity duration-300" />
     </button>
   </nav>
 </header>
@@ -173,9 +228,62 @@ const logoUrl = logo
 </div>
 
 <style>
-  /* Navigation backdrop when scrolled */
+  /* Utility bar */
+  .utility-bar {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 8px 0;
+    max-height: 40px;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+                opacity 0.3s ease,
+                padding 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+                border-color 0.3s ease;
+  }
+
+  .utility-bar--hidden {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    border-bottom-color: transparent;
+  }
+
+  .utility-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body, 'Outfit', sans-serif);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .utility-link:hover {
+    color: var(--accent);
+  }
+
+  .utility-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+  }
+
+  .utility-social:hover {
+    color: var(--accent);
+  }
+
+  /* Navigation backdrop — frosted glass */
   .nav-backdrop {
-    background-color: var(--bg-primary);
+    background-color: rgba(10, 10, 10, 0.55);
+    backdrop-filter: blur(24px) saturate(1.4);
+    -webkit-backdrop-filter: blur(24px) saturate(1.4);
     border-bottom: 1px solid transparent;
   }
 
@@ -183,6 +291,7 @@ const logoUrl = logo
     opacity: 1;
     border-bottom-color: var(--border);
   }
+
 
   /* Letter stagger hover effect */
   .nav-link__letters {
@@ -243,6 +352,7 @@ const logoUrl = logo
 
   /* Reduced motion support */
   @media (prefers-reduced-motion: reduce) {
+    .utility-bar,
     .nav-backdrop,
     .nav-link,
     .nav-underline,
@@ -264,6 +374,7 @@ const logoUrl = logo
 <script>
   // Header scroll behavior
   const header = document.getElementById('main-header');
+  const utilityBar = document.getElementById('utility-bar');
   const mobileMenu = document.getElementById('mobile-menu');
   const menuToggle = document.getElementById('mobile-menu-toggle');
 
@@ -275,8 +386,10 @@ const logoUrl = logo
 
     if (scrollY > 50) {
       header?.classList.add('header-scrolled');
+      utilityBar?.classList.add('utility-bar--hidden');
     } else {
       header?.classList.remove('header-scrolled');
+      utilityBar?.classList.remove('utility-bar--hidden');
     }
 
     lastScrollY = scrollY;

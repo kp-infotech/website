@@ -1,8 +1,5 @@
 ---
-import { ExternalLink } from '@lucide/astro';
-import LinkedinIcon from '../icons/LinkedinIcon.astro';
-import TwitterIcon from '../icons/TwitterIcon.astro';
-import InstagramIcon from '../icons/InstagramIcon.astro';
+import { Icon } from 'astro-icon/components';
 
 interface SocialLinks {
   linkedin?: string;
@@ -33,10 +30,10 @@ const {
 
 // Build social links array
 const socials = [
-  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, Icon: LinkedinIcon },
-  socialLinks?.twitter && { name: 'Twitter', href: socialLinks.twitter, Icon: TwitterIcon },
-  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, Icon: InstagramIcon },
-].filter(Boolean) as Array<{ name: string; href: string; Icon: typeof LinkedinIcon }>;
+  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, icon: 'fa6-brands:linkedin-in' },
+  socialLinks?.twitter && { name: 'X', href: socialLinks.twitter, icon: 'fa6-brands:x-twitter' },
+  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, icon: 'fa6-brands:instagram' },
+].filter(Boolean) as Array<{ name: string; href: string; icon: string }>;
 
 // Google Maps directions URL
 const fullAddress = [companyName, address, country].filter(Boolean).join(' ');
@@ -65,7 +62,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
 
       <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="contact-map__directions">
         <span>Get Directions</span>
-        <ExternalLink size={14} />
+        <Icon name="fa6-solid:arrow-up-right-from-square" size={12} />
       </a>
 
       {socials.length > 0 && (
@@ -78,7 +75,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
               class="contact-map__social-link"
               aria-label={social.name}
             >
-              <social.Icon size={18} />
+              <Icon name={social.icon} size={18} />
             </a>
           ))}
         </div>

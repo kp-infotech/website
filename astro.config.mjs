@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import cloudflare from '@astrojs/cloudflare';
 import react from '@astrojs/react';
 import sanity from '@sanity/astro';
+import icon from 'astro-icon';
 
 // Load environment variables from .env files (for local dev)
 const env = loadEnv(
@@ -40,6 +41,12 @@ export default defineConfig({
   integrations: [
     sitemap(),
     react(),
+    icon({
+      include: {
+        'fa6-brands': ['linkedin-in', 'x-twitter', 'instagram', 'facebook-f', 'dribbble', 'whatsapp'],
+        'fa6-solid': ['phone', 'envelope', 'location-dot', 'clock', 'arrow-right', 'chevron-down', 'bars', 'xmark', 'arrow-up-right-from-square', 'chevron-right'],
+      },
+    }),
     sanity({
       projectId: PUBLIC_SANITY_PROJECT_ID,
       dataset: PUBLIC_SANITY_DATASET || 'production',

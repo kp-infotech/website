@@ -4,7 +4,7 @@ import PageHero from '../../components/sections/PageHero.astro';
 import SectionLabel from '../../components/ui/SectionLabel.astro';
 import HighlightedText from '../../components/ui/HighlightedText.astro';
 import CTASection from '../../components/sections/CTASection.astro';
-import { ChevronDown, MoveRight } from '@lucide/astro';
+import { Icon } from 'astro-icon/components';
 import { client, urlFor } from '../../lib/sanity';
 import { allServicesQuery } from '../../lib/queries';
 
@@ -100,7 +100,7 @@ const servicesWithImages = services.map((service) => {
               <span class="accordion-item__tagline">{service.tagline}</span>
             )}
             <span class="accordion-item__icon">
-              <ChevronDown size={20} />
+              <Icon name="fa6-solid:chevron-down" size={16} />
             </span>
           </button>
 
@@ -118,7 +118,7 @@ const servicesWithImages = services.map((service) => {
                   )}
                   <a href={`/services/${service.slug.current}/`} class="accordion-item__link">
                     <span>View Service</span>
-                    <MoveRight size={16} />
+                    <Icon name="fa6-solid:arrow-right" size={14} />
                   </a>
                 </div>
                 {service.technologies && service.technologies.length > 0 && (

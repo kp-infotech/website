@@ -1,8 +1,5 @@
 ---
-import { Mail, Phone, MapPin, Clock, ArrowRight } from '@lucide/astro';
-import LinkedinIcon from '../icons/LinkedinIcon.astro';
-import TwitterIcon from '../icons/TwitterIcon.astro';
-import InstagramIcon from '../icons/InstagramIcon.astro';
+import { Icon } from 'astro-icon/components';
 import Button from '../ui/Button.astro';
 
 interface SocialLinks {
@@ -33,10 +30,10 @@ const {
 
 // Build social links array
 const socials = [
-  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, Icon: LinkedinIcon },
-  socialLinks?.twitter && { name: 'Twitter', href: socialLinks.twitter, Icon: TwitterIcon },
-  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, Icon: InstagramIcon },
-].filter(Boolean) as Array<{ name: string; href: string; Icon: typeof LinkedinIcon }>;
+  socialLinks?.linkedin && { name: 'LinkedIn', href: socialLinks.linkedin, icon: 'fa6-brands:linkedin-in' },
+  socialLinks?.twitter && { name: 'X', href: socialLinks.twitter, icon: 'fa6-brands:x-twitter' },
+  socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, icon: 'fa6-brands:instagram' },
+].filter(Boolean) as Array<{ name: string; href: string; icon: string }>;
 
 // Project types for the dropdown
 const projectTypes = [
@@ -69,7 +66,7 @@ const budgetRanges = [
       <div class="contact-info__items">
         <div class="contact-info__item">
           <div class="contact-info__icon">
-            <Mail size={18} />
+            <Icon name="fa6-solid:envelope" size={18} />
           </div>
           <div class="contact-info__content">
             <span class="contact-info__label">Email</span>
@@ -81,7 +78,7 @@ const budgetRanges = [
 
         <div class="contact-info__item">
           <div class="contact-info__icon">
-            <Phone size={18} />
+            <Icon name="fa6-solid:phone" size={18} />
           </div>
           <div class="contact-info__content">
             <span class="contact-info__label">Phone</span>
@@ -93,7 +90,7 @@ const budgetRanges = [
 
         <div class="contact-info__item">
           <div class="contact-info__icon">
-            <MapPin size={18} />
+            <Icon name="fa6-solid:location-dot" size={18} />
           </div>
           <div class="contact-info__content">
             <span class="contact-info__label">Address</span>
@@ -105,7 +102,7 @@ const budgetRanges = [
 
         <div class="contact-info__item">
           <div class="contact-info__icon">
-            <Clock size={18} />
+            <Icon name="fa6-solid:clock" size={18} />
           </div>
           <div class="contact-info__content">
             <span class="contact-info__label">Office Hours</span>
@@ -128,7 +125,7 @@ const budgetRanges = [
                 class="contact-info__social-link"
                 aria-label={social.name}
               >
-                <social.Icon size={18} />
+                <Icon name={social.icon} size={18} />
               </a>
             ))}
           </div>
@@ -238,7 +235,7 @@ const budgetRanges = [
             <button type="submit" class="form-submit">
               <span class="form-submit__text">Send Message</span>
               <span class="form-submit__icon">
-                <ArrowRight size={16} />
+                <Icon name="fa6-solid:arrow-right" size={14} />
               </span>
               <span class="form-submit__fill"></span>
             </button>
