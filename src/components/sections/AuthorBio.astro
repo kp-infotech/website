@@ -26,7 +26,7 @@ if (author.photo) {
 ---
 
 <section class="author-bio">
-  <div class="author-bio__container">
+  <div class="author-bio__container site-container">
     <div class="author-bio__content">
       <div class="author-bio__profile">
         {photoUrl ? (
@@ -91,10 +91,6 @@ if (author.photo) {
   }
 
   .author-bio__container {
-    width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .author-bio__content {
@@ -208,10 +204,6 @@ if (author.photo) {
   }
 
   @media (max-width: 480px) {
-    .author-bio__container {
-      padding: 0 1rem;
-    }
-
     .author-bio__content {
       padding: 1.5rem 0;
     }

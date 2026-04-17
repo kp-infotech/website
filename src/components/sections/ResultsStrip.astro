@@ -14,7 +14,7 @@ const hasResults = results && results.length > 0;
 
 {hasResults && (
   <section class="results-strip">
-    <div class="results-strip__container">
+    <div class="results-strip__container site-container">
       {results.map((result) => (
         <div class="results-strip__item">
           <span class="results-strip__metric" data-metric={result.metric}>
@@ -36,10 +36,6 @@ const hasResults = results && results.length > 0;
   }
 
   .results-strip__container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -98,6 +94,7 @@ const hasResults = results && results.length > 0;
       flex: none;
     }
   }
+
 </style>
 
 <script>

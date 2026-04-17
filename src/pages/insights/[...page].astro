@@ -69,7 +69,7 @@ const seoDescription =
   </PageHero>
 
   <section class="insights-list">
-    <div class="insights-list__container">
+    <div class="insights-list__container site-container">
 
       <!-- Category filter pills — nav links to category pages -->
       {categories && categories.length > 0 && (
@@ -200,10 +200,6 @@ const seoDescription =
   }
 
   .insights-list__container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   /* ---- Filter pills ---- */
@@ -467,10 +463,6 @@ const seoDescription =
   @media (max-width: 480px) {
     .insights-list {
       padding: 0 0 3rem;
-    }
-
-    .insights-list__container {
-      padding: 0 1rem;
     }
 
     .insights-list__filters {

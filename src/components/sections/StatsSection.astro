@@ -17,7 +17,7 @@ const { stats, backgroundImage } = Astro.props;
   class:list={["stats-section", { "stats-section--has-bg": !!backgroundImage }]}
   style={backgroundImage ? `background-image: url(${backgroundImage});` : undefined}
 >
-  <div class="stats-section__container">
+  <div class="stats-section__container site-container">
     <header class="stats-section__header">
       <SectionLabel text="By The Numbers" />
       <h2 class="stats-section__title"><HighlightedText text="Our *Impact*" /></h2>
@@ -73,9 +73,6 @@ const { stats, backgroundImage } = Astro.props;
   }
 
   .stats-section__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     position: relative;
     z-index: 1;
   }

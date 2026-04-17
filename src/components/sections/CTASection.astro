@@ -18,7 +18,7 @@ const {
 ---
 
 <section class="cta-section">
-  <div class="cta-section__container">
+  <div class="cta-section__container site-container">
     <div class="cta-section__card" data-reveal="clip">
       <h2 class="cta-section__headline"><HighlightedText text={headline} /></h2>
       <p class="cta-section__description">{description}</p>
@@ -35,16 +35,7 @@ const {
     background: var(--bg-primary);
   }
 
-  .cta-section__container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-
   .cta-section__card {
-    max-width: 900px;
-    margin: 0 auto;
     padding: 5rem 4rem;
     background: var(--bg-secondary);
     border: 1px solid var(--accent);
@@ -96,4 +87,5 @@ const {
       padding: 2.5rem 1.5rem;
     }
   }
+
 </style>

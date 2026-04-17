@@ -31,7 +31,7 @@ const rightSolutions = solutions.filter((_, i) => i % 2 !== 0);
 
 {solutions.length > 0 && (
   <section class="orbit">
-    <div class="orbit__container">
+    <div class="orbit__container site-container">
       <div class="orbit__head">
         <SectionLabel text="Solutions" />
         <h2 class="orbit__title"><HighlightedText text={heading} /></h2>
@@ -92,9 +92,6 @@ const rightSolutions = solutions.filter((_, i) => i % 2 !== 0);
   }
 
   .orbit__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .orbit__head {

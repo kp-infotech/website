@@ -24,7 +24,7 @@ const {
 ---
 
 <section class="our-story">
-  <div class="our-story__container">
+  <div class="our-story__container site-container">
     <div class="our-story__content">
       <SectionLabel text={label} />
       <h2 class="our-story__headline"><HighlightedText text={headline} /></h2>
@@ -68,9 +68,6 @@ const {
   }
 
   .our-story__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;

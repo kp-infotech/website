@@ -25,7 +25,7 @@ const hasContent = content && content.length > 0;
 
 {hasContent && (
   <section class="case-content">
-    <div class="case-content__container">
+    <div class="case-content__container site-container">
       <div class="case-content__body">
         <PortableText value={content} components={components} />
       </div>
@@ -41,10 +41,6 @@ const hasContent = content && content.length > 0;
   }
 
   .case-content__container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
   }
 
   .case-content__body {
@@ -160,7 +156,7 @@ const hasContent = content && content.length > 0;
   /* ---- Images: magazine breakout ---- */
   .case-content__body :global(.portable-text-image) {
     width: 100vw;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 2.5rem 0;
     position: relative;
     left: 50%;
@@ -215,10 +211,6 @@ const hasContent = content && content.length > 0;
   @media (max-width: 480px) {
     .case-content {
       padding: 3rem 0;
-    }
-
-    .case-content__container {
-      padding: 0 1rem;
     }
   }
 </style>

@@ -52,7 +52,7 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
     class:list={["rsg", { "rsg--has-bg": !!backgroundImage }]}
     style={backgroundImage ? `background-image: url(${backgroundImage});` : undefined}
   >
-    <div class="rsg__container">
+    <div class="rsg__container site-container">
       <div class="rsg__header">
         <div>
           <SectionLabel text="What We Do" />
@@ -125,9 +125,6 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
   }
 
   .rsg__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     position: relative;
     z-index: 1;
   }

@@ -58,7 +58,7 @@ const budgetRanges = [
 ---
 
 <section class="contact-form-section">
-  <div class="contact-form-section__container">
+  <div class="contact-form-section__container site-container">
     <!-- Contact Info Sidebar -->
     <aside class="contact-info">
       <h2 class="contact-info__title">Contact Details</h2>
@@ -253,9 +253,6 @@ const budgetRanges = [
   }
 
   .contact-form-section__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     display: grid;
     grid-template-columns: 320px 1fr;
     gap: 3rem;
@@ -574,10 +571,6 @@ const budgetRanges = [
   @media (max-width: 480px) {
     .contact-form-section {
       padding: 2rem 0 3rem;
-    }
-
-    .contact-form-section__container {
-      padding: 0 1rem;
     }
 
     .contact-info,

@@ -27,7 +27,7 @@ const hasProject = project?.title && project?.slug;
 {hasProject && (
   <section class="next-project">
     <a href={`/work/${project.slug!.current}/`} class="next-project__link">
-      <div class="next-project__container">
+      <div class="next-project__container site-container">
         <div class="next-project__text">
           <SectionLabel text="Next Project" />
           <h2 class="next-project__title">{project.title}</h2>
@@ -80,10 +80,6 @@ const hasProject = project?.title && project?.slug;
   }
 
   .next-project__container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -209,8 +205,5 @@ const hasProject = project?.title && project?.slug;
       padding: 3rem 0;
     }
 
-    .next-project__container {
-      padding: 0 1rem;
-    }
   }
 </style>
