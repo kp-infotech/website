@@ -12,6 +12,7 @@ import StatsSection from '../components/sections/StatsSection.astro';
 import IndustriesBento from '../components/sections/IndustriesBento.astro';
 import Testimonials from '../components/sections/Testimonials.astro';
 import CTASection from '../components/sections/CTASection.astro';
+import { websiteSchema } from '../lib/seo';
 
 // Fetch all homepage data from Sanity
 const data = await client.fetch(homepageDataQuery);
@@ -60,11 +61,16 @@ const stats = siteSettings?.stats?.map((stat: any) => ({
 
 // Default description for hero
 const heroDescription = "We craft premium digital experiences for startups and businesses. UI/UX design, web development, mobile apps, and ERP solutions from Ahmedabad to the world.";
+const homeJsonLd = [
+  websiteSchema(siteSettings),
+];
 ---
 
 <BaseLayout
   title="KP Infotech"
   description={heroDescription}
+  ogImage={homeHeroUrl}
+  jsonLd={homeJsonLd}
 >
   <!-- Hero Section -->
   <Hero

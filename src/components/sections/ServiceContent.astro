@@ -3,6 +3,7 @@ import SectionLabel from '../ui/SectionLabel.astro';
 import HighlightedText from '../ui/HighlightedText.astro';
 import PortableTextImage from '../ui/PortableTextImage.astro';
 import PortableTextHighlight from '../ui/PortableTextHighlight.astro';
+import PortableTextLink from '../ui/PortableTextLink.astro';
 import { PortableText } from 'astro-portabletext';
 
 interface Props {
@@ -21,6 +22,8 @@ const components = {
   },
   mark: {
     highlight: PortableTextHighlight,
+    externalLink: PortableTextLink,
+    internalLink: PortableTextLink,
   },
 };
 ---

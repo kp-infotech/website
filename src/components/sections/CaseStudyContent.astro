@@ -3,6 +3,7 @@ import { PortableText } from 'astro-portabletext';
 import PortableTextImage from '../ui/PortableTextImage.astro';
 import PortableTextHighlight from '../ui/PortableTextHighlight.astro';
 import PortableTextCode from '../ui/PortableTextCode.astro';
+import PortableTextLink from '../ui/PortableTextLink.astro';
 
 interface Props {
   content?: any[];
@@ -17,6 +18,8 @@ const components = {
   },
   mark: {
     highlight: PortableTextHighlight,
+    externalLink: PortableTextLink,
+    internalLink: PortableTextLink,
   },
 };
 

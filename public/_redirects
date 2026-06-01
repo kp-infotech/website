@@ -131,6 +131,7 @@
 /casestudy/*   /work/:splat  301
 
 # ─── Legacy hire pages → services ────────────────────────────────────────────
+/career/                    /careers/                    301
 /hire-wordpress-developer/   /services/web-development/   301
 /hire-laravel-developer/     /services/web-development/   301
 /hire-react-js-developer/    /services/web-development/   301

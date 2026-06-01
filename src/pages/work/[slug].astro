@@ -9,6 +9,7 @@ import NextProject from '../../components/sections/NextProject.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allCaseStudiesQuery, caseStudyBySlugQuery } from '../../lib/queries';
+import { breadcrumbSchema, canonicalUrl } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const caseStudies = await client.fetch<Array<{ slug: { current: string } }>>(allCaseStudiesQuery);
@@ -38,11 +39,42 @@ if (study.heroImage) {
 
 const seoTitle = study.seoTitle || study.title;
 const seoDescription = study.seoDescription || study.excerpt;
+const studyUrl = canonicalUrl(`/work/${slug}/`);
+const caseStudyJsonLd = [
+  breadcrumbSchema([
+    { name: 'Home', path: '/' },
+    { name: 'Work', path: '/work/' },
+    { name: study.title, path: `/work/${slug}/` },
+  ]),
+  {
+    '@type': 'CreativeWork',
+    '@id': `${studyUrl}#creative-work`,
+    name: study.title,
+    headline: study.title,
+    description: seoDescription,
+    image: heroImageUrl,
+    url: studyUrl,
+    dateCreated: study._createdAt,
+    dateModified: study._updatedAt,
+    creator: { '@id': 'https://kpinfo.tech/#organization' },
+    publisher: { '@id': 'https://kpinfo.tech/#organization' },
+    about: [
+      ...(study.services || []).map((service: any) => service?.title).filter(Boolean),
+      ...(study.industries || []).map((industry: any) => industry?.title).filter(Boolean),
+    ],
+    client: study.client ? {
+      '@type': 'Organization',
+      name: study.client,
+    } : undefined,
+  },
+];
 ---
 
 <BaseLayout
   title={seoTitle}
   description={seoDescription}
+  ogImage={heroImageUrl}
+  jsonLd={caseStudyJsonLd}
 >
   <CaseStudyHero
     title={study.title}

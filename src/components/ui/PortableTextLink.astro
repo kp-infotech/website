@@ -1,0 +1,37 @@
+---
+const { node, value, markDef } = Astro.props;
+
+const annotation = node?.value || node?.markDef || value || markDef || node || {};
+const reference = annotation.reference;
+const slug = reference?.slug?.current;
+
+const internalTypeToPath: Record<string, string> = {
+  service: 'services',
+  industry: 'industries',
+  caseStudy: 'work',
+  blogPost: 'insights',
+};
+
+let href: string | undefined = annotation.href;
+let target: string | undefined;
+let rel: string | undefined;
+
+if (!href && reference?._type && slug && internalTypeToPath[reference._type]) {
+  href = `/${internalTypeToPath[reference._type]}/${slug}/`;
+}
+
+if (annotation.openInNewTab) {
+  target = '_blank';
+  rel = 'noopener noreferrer';
+}
+---
+
+{href ? (
+  <a href={href} target={target} rel={rel}>
+    <slot />
+  </a>
+) : (
+  <span>
+    <slot />
+  </span>
+)}

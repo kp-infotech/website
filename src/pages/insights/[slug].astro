@@ -7,6 +7,7 @@ import RelatedPosts from '../../components/sections/RelatedPosts.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allBlogPostsQuery, blogPostBySlugQuery } from '../../lib/queries';
+import { breadcrumbSchema, canonicalUrl } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const posts = await client.fetch<Array<{ slug: { current: string } }>>(
@@ -59,9 +60,49 @@ const authorData = post.author ? {
 
 const seoTitle = post.seoTitle || `${post.title}`;
 const seoDescription = post.seoDescription || post.excerpt;
+const postUrl = canonicalUrl(`/insights/${slug}/`);
+const blogJsonLd = [
+  breadcrumbSchema([
+    { name: 'Home', path: '/' },
+    { name: 'Insights', path: '/insights/' },
+    ...(post.category?.title && post.category?.slug?.current
+      ? [{ name: post.category.title, path: `/insights/category/${post.category.slug.current}/` }]
+      : []),
+    { name: post.title, path: `/insights/${slug}/` },
+  ]),
+  {
+    '@type': 'BlogPosting',
+    '@id': `${postUrl}#article`,
+    headline: post.title,
+    description: seoDescription,
+    image: heroImageUrl,
+    url: postUrl,
+    datePublished: post.publishedAt,
+    dateModified: post._updatedAt || post.publishedAt,
+    author: post.author ? {
+      '@type': 'Person',
+      name: post.author.name,
+      jobTitle: post.author.role,
+      sameAs: [post.author.linkedin, post.author.twitter].filter(Boolean),
+    } : {
+      '@type': 'Organization',
+      '@id': 'https://kpinfo.tech/#organization',
+      name: 'KP Infotech',
+    },
+    publisher: { '@id': 'https://kpinfo.tech/#organization' },
+    articleSection: post.category?.title,
+    keywords: post.tags,
+  },
+];
 ---
 
-<BaseLayout title={seoTitle} description={seoDescription}>
+<BaseLayout
+  title={seoTitle}
+  description={seoDescription}
+  ogImage={heroImageUrl}
+  ogType="article"
+  jsonLd={blogJsonLd}
+>
   <BlogPostHero post={heroPost} />
 
   {post.content && post.content.length > 0 && (

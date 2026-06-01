@@ -17,7 +17,8 @@ export const siteSettingsQuery = `
     stats,
     footerText,
     defaultSeoTitle,
-    defaultSeoDescription
+    defaultSeoDescription,
+    defaultOgImage
   }
 `;
 
@@ -41,6 +42,14 @@ export const homepageDataQuery = `
     siteName,
     siteTagline,
     heroHeadline,
+    logo,
+    contactEmail,
+    contactPhone,
+    address,
+    socialLinks,
+    defaultSeoTitle,
+    defaultSeoDescription,
+    defaultOgImage,
     techStack,
     stats
   },
@@ -100,6 +109,7 @@ export const allServicesQuery = `
 export const serviceBySlugQuery = `
   *[_type == "service" && slug.current == $slug][0] {
     _id,
+    _updatedAt,
     title,
     slug,
     tagline,
@@ -108,7 +118,20 @@ export const serviceBySlugQuery = `
     "iconCustom": coalesce(iconCustom, icon),
     heroImage,
     contentHeading,
-    content,
+    content[]{
+      ...,
+      markDefs[]{
+        ...,
+        _type == "internalLink" => {
+          ...,
+          reference->{
+            _type,
+            title,
+            slug
+          }
+        }
+      }
+    },
     processHeading,
     process,
     techHeading,
@@ -241,6 +264,8 @@ export const featuredCaseStudiesQuery = `
 export const caseStudyBySlugQuery = `
   *[_type == "caseStudy" && slug.current == $slug][0] {
     _id,
+    _createdAt,
+    _updatedAt,
     title,
     slug,
     client,
@@ -258,10 +283,49 @@ export const caseStudyBySlugQuery = `
       title,
       slug
     },
-    challenge,
-    approach,
+    challenge[]{
+      ...,
+      markDefs[]{
+        ...,
+        _type == "internalLink" => {
+          ...,
+          reference->{
+            _type,
+            title,
+            slug
+          }
+        }
+      }
+    },
+    approach[]{
+      ...,
+      markDefs[]{
+        ...,
+        _type == "internalLink" => {
+          ...,
+          reference->{
+            _type,
+            title,
+            slug
+          }
+        }
+      }
+    },
     resultsSummary,
-    content,
+    content[]{
+      ...,
+      markDefs[]{
+        ...,
+        _type == "internalLink" => {
+          ...,
+          reference->{
+            _type,
+            title,
+            slug
+          }
+        }
+      }
+    },
     results,
     testimonial->{
       _id,
@@ -330,13 +394,28 @@ export const featuredBlogPostsQuery = `
 export const blogPostBySlugQuery = `
   *[_type == "blogPost" && slug.current == $slug][0] {
     _id,
+    _createdAt,
+    _updatedAt,
     title,
     slug,
     excerpt,
     featuredImage,
     publishedAt,
     readTime,
-    content,
+    content[]{
+      ...,
+      markDefs[]{
+        ...,
+        _type == "internalLink" => {
+          ...,
+          reference->{
+            _type,
+            title,
+            slug
+          }
+        }
+      }
+    },
     category->{
       _id,
       title,

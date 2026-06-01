@@ -9,6 +9,7 @@ import ServiceFAQ from '../../components/sections/ServiceFAQ.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allServicesQuery, serviceBySlugQuery } from '../../lib/queries';
+import { breadcrumbSchema, canonicalUrl } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const services = await client.fetch<Array<{ slug: { current: string } }>>(allServicesQuery);
@@ -38,11 +39,46 @@ if (service.heroImage) {
 
 const seoTitle = service.seoTitle || service.title;
 const seoDescription = service.seoDescription || service.excerpt || service.tagline;
+const serviceUrl = canonicalUrl(`/services/${slug}/`);
+const serviceJsonLd = [
+  breadcrumbSchema([
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services/' },
+    { name: service.title, path: `/services/${slug}/` },
+  ]),
+  {
+    '@type': 'Service',
+    '@id': `${serviceUrl}#service`,
+    name: service.title,
+    description: seoDescription,
+    url: serviceUrl,
+    provider: { '@id': 'https://kpinfo.tech/#organization' },
+    serviceType: service.title,
+    areaServed: {
+      '@type': 'Country',
+      name: 'India',
+    },
+  },
+  service.faqs && service.faqs.length > 0 ? {
+    '@type': 'FAQPage',
+    '@id': `${serviceUrl}#faq`,
+    mainEntity: service.faqs.map((faq: any) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  } : undefined,
+];
 ---
 
 <BaseLayout
   title={seoTitle}
   description={seoDescription}
+  ogImage={heroImageUrl}
+  jsonLd={serviceJsonLd}
 >
   <ServiceHero
     title={service.title}

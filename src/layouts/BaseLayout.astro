@@ -5,6 +5,8 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import { client } from '../lib/sanity';
 import { siteSettingsQuery } from '../lib/queries';
+import defaultOgFallback from '../assets/hero-placeholder.jpg';
+import { canonicalUrl, jsonLdGraph, organizationSchema, seoImageUrl } from '../lib/seo';
 import CustomCursor from '../components/effects/CustomCursor.astro';
 import ScrollProgress from '../components/effects/ScrollProgress.astro';
 import WhatsAppButton from '../components/ui/WhatsAppButton.astro';
@@ -12,22 +14,34 @@ import WhatsAppButton from '../components/ui/WhatsAppButton.astro';
 interface Props {
   title?: string;
   description?: string;
-  ogImage?: string;
+  ogImage?: string | Record<string, any>;
+  ogType?: 'website' | 'article';
   canonicalURL?: string;
+  jsonLd?: Record<string, any> | Array<Record<string, any> | undefined | null>;
 }
 
 // Fetch site settings from Sanity
 const siteSettings = await client.fetch(siteSettingsQuery);
 
 const {
-  title = siteSettings?.siteName || 'KP Infotech',
-  description = siteSettings?.defaultSeoDescription || 'Premium Design and Technology studio crafting digital experiences that elevate brands and drive measurable business growth.',
-  ogImage = '/og-image.jpg',
-  canonicalURL = Astro.url.href,
+  title,
+  description,
+  ogImage,
+  ogType = 'website',
+  canonicalURL,
+  jsonLd,
 } = Astro.props;
 
 const siteName = siteSettings?.siteName || 'KP Infotech';
-const fullTitle = title === siteName ? title : `${title} — ${siteName}`;
+const pageTitle = title || siteSettings?.defaultSeoTitle || siteName;
+const fullTitle = pageTitle === siteName || pageTitle.includes(siteName)
+  ? pageTitle
+  : `${pageTitle} — ${siteName}`;
+const metaDescription = description || siteSettings?.defaultSeoDescription || 'Premium Design and Technology studio crafting digital experiences that elevate brands and drive measurable business growth.';
+const canonical = canonicalUrl(canonicalURL || Astro.url.href);
+const resolvedOgImage = seoImageUrl(ogImage, siteSettings?.defaultOgImage, defaultOgFallback.src);
+const jsonLdNodes = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+const jsonLdPayload = jsonLdGraph([organizationSchema(siteSettings), ...jsonLdNodes]);
 ---
 
 <!doctype html>
@@ -43,24 +57,25 @@ const fullTitle = title === siteName ? title : `${title} — ${siteName}`;
     <!-- Primary Meta Tags -->
     <title>{fullTitle}</title>
     <meta name="title" content={fullTitle} />
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDescription} />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href={canonicalURL} />
+    <link rel="canonical" href={canonical} />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
     <meta property="og:title" content={fullTitle} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:description" content={metaDescription} />
+    {resolvedOgImage && <meta property="og:image" content={resolvedOgImage} />}
+    <meta property="og:site_name" content={siteName} />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta property="twitter:title" content={fullTitle} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonical} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={metaDescription} />
+    {resolvedOgImage && <meta name="twitter:image" content={resolvedOgImage} />}
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#0a0a0a" />
@@ -73,6 +88,10 @@ const fullTitle = title === siteName ? title : `${title} — ${siteName}`;
 
     <!-- View Transitions -->
     <ClientRouter />
+
+    {jsonLdPayload && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLdPayload)} />
+    )}
 
     <!-- Additional head content via slot -->
     <slot name="head" />

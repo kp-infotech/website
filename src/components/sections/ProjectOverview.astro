@@ -2,6 +2,7 @@
 import { PortableText } from 'astro-portabletext';
 import SectionLabel from '../ui/SectionLabel.astro';
 import PortableTextHighlight from '../ui/PortableTextHighlight.astro';
+import PortableTextLink from '../ui/PortableTextLink.astro';
 
 interface Props {
   challenge?: any[];
@@ -14,6 +15,8 @@ const { challenge, approach, resultsSummary } = Astro.props;
 const components = {
   mark: {
     highlight: PortableTextHighlight,
+    externalLink: PortableTextLink,
+    internalLink: PortableTextLink,
   },
 };
 
