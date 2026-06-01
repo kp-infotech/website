@@ -3,12 +3,36 @@
 # The adapter's @cloudflare/vite-plugin generates wrangler.json
 # in dist/server/ with the correct assets directory and entrypoint.
 name = "website"
+main = "src/worker.js"
 compatibility_date = "2026-02-11"
 compatibility_flags = ["nodejs_compat", "disable_nodejs_process_v2"]
 
 # Let non-static requests fall through to the Worker (default behavior).
 # The Astro Worker handles SSR routes (e.g. /studio) and serves 404.astro for unknown routes.
 [assets]
+run_worker_first = [
+  "/services/*",
+  "/erp-software",
+  "/erp-software/",
+  "/odoo-crm",
+  "/odoo-crm/",
+  "/mobile-web-app",
+  "/mobile-web-app/",
+  "/career",
+  "/career/",
+  "/blogs",
+  "/blogs/*",
+  "/casestudy",
+  "/casestudy/*",
+  "/hire-wordpress-developer",
+  "/hire-wordpress-developer/",
+  "/hire-laravel-developer",
+  "/hire-laravel-developer/",
+  "/hire-react-js-developer",
+  "/hire-react-js-developer/",
+  "/kp-infotech-faqs",
+  "/kp-infotech-faqs/",
+]
 
 # Environment variables (available at build time + runtime)
 [vars]
