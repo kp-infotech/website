@@ -60,14 +60,14 @@ const stats = siteSettings?.stats?.map((stat: any) => ({
 })) || [];
 
 // Default description for hero
-const heroDescription = "We craft premium digital experiences for startups and businesses. UI/UX design, web development, mobile apps, and ERP solutions from Ahmedabad to the world.";
+const heroDescription = "KP Infotech helps growing B2B teams replace spreadsheets, manual workflows, and disconnected tools with custom software, Odoo ERP, business automation, AI agents, and cloud infrastructure built around how their operations actually work.";
 const homeJsonLd = [
   websiteSchema(siteSettings),
 ];
 ---
 
 <BaseLayout
-  title="KP Infotech"
+  title="Custom Software, ERP, Automation & AI Solutions | KP Infotech"
   description={heroDescription}
   ogImage={homeHeroUrl}
   jsonLd={homeJsonLd}
@@ -75,7 +75,7 @@ const homeJsonLd = [
   <!-- Hero Section -->
   <Hero
     tagline={siteSettings?.siteTagline || "Digital Product Studio"}
-    headline={siteSettings?.heroHeadline || "We craft *digital experiences* that drive growth"}
+    headline={siteSettings?.heroHeadline || "Custom Software, ERP & Automation Systems for Growing Businesses"}
     description={heroDescription}
     image={homeHeroUrl}
   />
