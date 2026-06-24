@@ -61,6 +61,11 @@ const stats = siteSettings?.stats?.map((stat: any) => ({
 
 // Default description for hero
 const heroDescription = "KP Infotech helps growing B2B teams replace spreadsheets, manual workflows, and disconnected tools with custom software, Odoo ERP, business automation, AI agents, and cloud infrastructure built around how their operations actually work.";
+const expectedHeroHeadline = "Custom Software, ERP & Automation Systems for Growing Businesses";
+const legacyHeroHeadline = "We craft *digital experiences* that drive growth";
+const heroHeadline = siteSettings?.heroHeadline && siteSettings.heroHeadline !== legacyHeroHeadline
+  ? siteSettings.heroHeadline
+  : expectedHeroHeadline;
 const homeJsonLd = [
   websiteSchema(siteSettings),
 ];
@@ -75,7 +80,7 @@ const homeJsonLd = [
   <!-- Hero Section -->
   <Hero
     tagline={siteSettings?.siteTagline || "Digital Product Studio"}
-    headline={siteSettings?.heroHeadline || "Custom Software, ERP & Automation Systems for Growing Businesses"}
+    headline={heroHeadline}
     description={heroDescription}
     image={homeHeroUrl}
   />
