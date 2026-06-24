@@ -46,6 +46,7 @@ const MIGRATED_BLOG_SLUGS = new Set([
   'best-seo-tools-for-small-businesses',
   'best-web-application-frameworks',
   'brand-style-guide-template',
+  'business-process-automation-examples',
   'business-process-automation-tools',
   'business-process-improvement-methods',
   'cloud-application-architecture-diagram',
