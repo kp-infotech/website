@@ -1,8 +1,8 @@
 # ─── Service page redirects (old WP slugs → new Astro slugs) ─────────────────
 /services/website-design/          /services/web-development/    301
 /services/graphics-design/         /services/ui-ux-design/       301
-/services/erp-software/            /services/erp-solutions/      301
-/services/erp-software/odoo-crm/   /services/erp-solutions/      301
+/services/erp-solutions/           /services/erp-software/       301
+/services/erp-software/odoo-crm/   /services/erp-software/       301
 /services/mobile-web-app/          /services/mobile-apps/        301
 /services/marketing/               /services/digital-marketing/  301
 
