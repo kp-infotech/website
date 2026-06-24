@@ -69,6 +69,10 @@ describe('migration redirects', () => {
       `${origin}/insights/node-js-frameworks/`,
     );
     assert.equal(
+      redirectFor('/business-process-automation-examples/'),
+      `${origin}/insights/business-process-automation-examples/`,
+    );
+    assert.equal(
       redirectFor('/casestudy/ai-shopping-app-visual-search/'),
       `${origin}/work/ai-shopping-app-visual-search/`,
     );
