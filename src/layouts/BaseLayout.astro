@@ -10,6 +10,11 @@ import { canonicalUrl, jsonLdGraph, organizationSchema, seoImageUrl, ORG_PHONE, 
 import CustomCursor from '../components/effects/CustomCursor.astro';
 import ScrollProgress from '../components/effects/ScrollProgress.astro';
 import WhatsAppButton from '../components/ui/WhatsAppButton.astro';
+// Above-the-fold font weights, imported so Vite resolves the same hashed URL the
+// bundled @font-face uses — lets us preload them and shorten the CSS→font chain.
+// Hero H1 = Playfair Display 500; nav/body = Outfit 400.
+import playfairDisplay500 from '@fontsource/playfair-display/files/playfair-display-latin-500-normal.woff2?url';
+import outfit400 from '@fontsource/outfit/files/outfit-latin-400-normal.woff2?url';
 
 interface Props {
   title?: string;
@@ -56,9 +61,12 @@ const clarityProjectId = import.meta.env.PUBLIC_CLARITY_ID;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Preload above-the-fold fonts to shorten the render-critical CSS→font chain -->
+    <link rel="preload" href={playfairDisplay500} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={outfit400} as="font" type="font/woff2" crossorigin />
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <!-- Primary Meta Tags -->
     <title>{fullTitle}</title>
