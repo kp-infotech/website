@@ -285,13 +285,15 @@ await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${portalI
 });
 ```
 
-### Cloudflare Pages Deployment
+### Cloudflare Workers Deployment
 
-- **Staging:** Push to `main` → auto-deploys to `<project>.pages.dev`
-- **Preview:** PR branches → `<branch>.<project>.pages.dev`
+Hosting is Cloudflare **Workers** (Astro static assets served from the edge + a Worker for SSR/redirects) via `@astrojs/cloudflare` v13+. See [wrangler.toml](wrangler.toml).
+
+- **Staging:** Push to `main` → auto-deploys to the `*.workers.dev` URL
+- **Preview:** PR branches → preview Worker deployment
 - **Manual:** `npm run deploy` / `npm run deploy:preview`
-- **Production:** Custom domain `kpinfo.tech` (to be configured when site goes live)
-- **Rebuild trigger:** Sanity webhook → Cloudflare Pages deploy hook
+- **Production:** Custom domain `kpinfo.tech` (apex) attached to the Worker. `www.kpinfo.tech` 301-redirects to the apex via a Cloudflare Redirect Rule. The codebase hard-codes the apex as the single canonical host — canonical URLs, analytics/consent gating, and the `noindex` fallback all key off `hostname === 'kpinfo.tech'`.
+- **Rebuild trigger:** Sanity webhook → Cloudflare deploy hook
 
 ### Static Files
 
