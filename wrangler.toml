@@ -38,6 +38,10 @@ run_worker_first = [
 [vars]
 PUBLIC_SANITY_PROJECT_ID = "5rux0mv2"
 PUBLIC_SANITY_DATASET = "production"
+# Analytics — public IDs (consent-gated via CookieYes + hostname-gated to kpinfo.tech).
+# Build-time inlined; the local `astro build` reads these from .env, so keep both in sync.
+PUBLIC_GA_MEASUREMENT_ID = "G-7K17R4CWQ7"
+PUBLIC_CLARITY_ID = "pqpi438d1f"
 
 # Cloudflare Email Sending — exposes env.EMAIL.send() to the Worker (no API key needed).
 # Onboard the sending domain once: `npx wrangler email sending enable kpinfo.tech`

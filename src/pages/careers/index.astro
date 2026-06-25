@@ -526,6 +526,8 @@ const jobPostingSchema = hasJobs
 </style>
 
 <script>
+  import { trackEvent } from '../../lib/analytics';
+
   // Auto-fill position from job card click
   document.querySelectorAll('.job-card').forEach((card) => {
     card.addEventListener('click', () => {
@@ -618,6 +620,10 @@ const jobPostingSchema = hasJobs
 
         // Success
         if (successMsg) successMsg.style.display = 'block';
+        trackEvent('job_application_submit', {
+          form_id: 'careers',
+          position: String(formData.get('position') || 'General Application'),
+        });
         form.reset();
         if (fileText) fileText.textContent = 'Choose file or drag here';
         if (fileArea) fileArea.classList.remove('file-upload--has-file');

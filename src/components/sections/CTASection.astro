@@ -7,13 +7,21 @@ interface Props {
   description?: string;
   buttonText?: string;
   buttonHref?: string;
+  event?: string;
+  location?: string;
+  serviceSlug?: string;
+  caseStudySlug?: string;
 }
 
 const {
   headline = "Ready to Replace Manual Work With Better Systems?",
   description = "Tell us where your operations are slowing down. We’ll help you plan the right mix of custom software, ERP, automation, AI, and cloud infrastructure.",
   buttonText = "Discuss Your Operations Challenge",
-  buttonHref = "/contact/"
+  buttonHref = "/contact/",
+  event = 'cta',
+  location = 'cta_section',
+  serviceSlug,
+  caseStudySlug,
 } = Astro.props;
 ---
 
@@ -22,7 +30,15 @@ const {
     <div class="cta-section__card" data-reveal="clip">
       <h2 class="cta-section__headline"><HighlightedText text={headline} /></h2>
       <p class="cta-section__description">{description}</p>
-      <Button variant="primary" href={buttonHref}>
+      <Button
+        variant="primary"
+        href={buttonHref}
+        data-cta={event}
+        data-location={location}
+        data-label={buttonText}
+        data-service={serviceSlug}
+        data-case-study={caseStudySlug}
+      >
         {buttonText}
       </Button>
     </div>

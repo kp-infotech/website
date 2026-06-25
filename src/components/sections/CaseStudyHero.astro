@@ -47,7 +47,7 @@ const { title, client, year, services, heroImageUrl, slug } = Astro.props;
   )}
 
   <div class="page-hero__actions">
-    <Button href="/contact/" variant="primary">Discuss Your Project</Button>
+    <Button href="/contact/" variant="primary" data-cta="case_study_cta" data-case-study={slug} data-location="case_study_hero" data-label="Discuss Your Project">Discuss Your Project</Button>
     <Button href="/work/" variant="text">All Work</Button>
   </div>
 </PageHero>

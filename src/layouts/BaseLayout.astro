@@ -42,6 +42,12 @@ const canonical = canonicalUrl(canonicalURL || Astro.url.href);
 const resolvedOgImage = seoImageUrl(ogImage, siteSettings?.defaultOgImage, defaultOgFallback.src);
 const jsonLdNodes = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
 const jsonLdPayload = jsonLdGraph([organizationSchema(siteSettings), ...jsonLdNodes]);
+
+// Analytics IDs (public). When unset at build time, the tag block is not
+// rendered at all (no tracking). At runtime the scripts additionally gate on
+// the production hostname so preview / *.workers.dev builds stay clean.
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+const clarityProjectId = import.meta.env.PUBLIC_CLARITY_ID;
 ---
 
 <!doctype html>
@@ -88,6 +94,69 @@ const jsonLdPayload = jsonLdGraph([organizationSchema(siteSettings), ...jsonLdNo
 
     <!-- View Transitions -->
     <ClientRouter />
+
+    <!-- Keep non-production hosts (preview / *.workers.dev) out of search indexes -->
+    <script is:inline>
+      if (window.location.hostname !== 'kpinfo.tech') {
+        var robotsMeta = document.createElement('meta');
+        robotsMeta.name = 'robots';
+        robotsMeta.content = 'noindex, nofollow';
+        document.head.appendChild(robotsMeta);
+      }
+    </script>
+
+    {gaMeasurementId && (
+      <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    )}
+
+    {/* Google Analytics 4 + Consent Mode v2 — production host only; denied by default until CookieYes records consent. */}
+    {gaMeasurementId && (
+      <script define:vars={{ gaMeasurementId }}>
+        if (window.location.hostname === 'kpinfo.tech') {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { window.dataLayer.push(arguments); }
+          window.gtag = gtag;
+          gtag('consent', 'default', {
+            ad_storage: 'denied',
+            analytics_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            functionality_storage: 'granted',
+            security_storage: 'granted',
+            wait_for_update: 500,
+          });
+          gtag('js', new Date());
+          gtag('config', gaMeasurementId, { send_page_view: false });
+          var gaScript = document.createElement('script');
+          gaScript.async = true;
+          gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaMeasurementId;
+          document.head.appendChild(gaScript);
+        }
+      </script>
+    )}
+
+    {/* CookieYes consent banner — manages Consent Mode v2 updates + activates consent-gated tags. Production host only. */}
+    <script is:inline>
+      if (window.location.hostname === 'kpinfo.tech') {
+        var cookieYes = document.createElement('script');
+        cookieYes.id = 'cookieyes';
+        cookieYes.src = 'https://cdn-cookieyes.com/client_data/c662513a7c55e0d03f7898ac79bd6545/script.js';
+        document.head.appendChild(cookieYes);
+      }
+    </script>
+
+    {/* Microsoft Clarity — text/plain + data-cookieyes so CookieYes only runs it after the visitor accepts the Analytics category. */}
+    {clarityProjectId && (
+      <script type="text/plain" data-cookieyes="cookieyes-analytics" define:vars={{ clarityProjectId }}>
+        if (window.location.hostname === 'kpinfo.tech') {
+          (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+            t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+          })(window, document, 'clarity', 'script', clarityProjectId);
+        }
+      </script>
+    )}
 
     {jsonLdPayload && (
       <script type="application/ld+json" set:html={JSON.stringify(jsonLdPayload)} />
@@ -144,10 +213,17 @@ const jsonLdPayload = jsonLdGraph([organizationSchema(siteSettings), ...jsonLdNo
 
     <script>
       import { initAnimations } from '../lib/animations';
+      import { trackPageView, initClickTracking } from '../lib/analytics';
       initAnimations();
       document.addEventListener('astro:after-swap', () => {
         initAnimations();
       });
+      // GA4 page_view on initial load + every view-transition navigation.
+      // astro:page-load fires on first load AND after each swap → one page_view
+      // per route, no duplicates (gtag config uses send_page_view:false).
+      document.addEventListener('astro:page-load', trackPageView);
+      // One delegated listener for all CTA / email / phone / WhatsApp clicks.
+      initClickTracking();
     </script>
   </body>
 </html>

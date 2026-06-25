@@ -120,6 +120,8 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 </BaseLayout>
 
 <script>
+  import { trackEvent } from '../lib/analytics';
+
   const form = document.getElementById('contact-form') as HTMLFormElement | null;
   const statusEl = document.getElementById('contact-status');
 
@@ -159,6 +161,10 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 
         if (textSpan) textSpan.textContent = 'Message Sent!';
         setStatus("Thanks — we've received your message and will be in touch.", 'success');
+        trackEvent('generate_lead', {
+          form_id: 'contact',
+          project_type: (form.querySelector('#project-type') as HTMLSelectElement | null)?.value || '',
+        });
         form.reset();
         resetTurnstile();
 
