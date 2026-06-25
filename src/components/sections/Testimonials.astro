@@ -127,10 +127,17 @@ function attribution(role?: string, company?: string): string {
     background: var(--bg-primary);
   }
 
+  /* Match the site-wide container so the section aligns with every other section. */
   .testimonials__inner {
-    max-width: 1180px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .testimonials__inner {
+      padding: 0 3rem;
+    }
   }
 
   /* ===== Header ===== */
