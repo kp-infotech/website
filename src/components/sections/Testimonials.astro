@@ -13,141 +13,107 @@ interface Props {
     clientCompany?: string;
     clientPhoto?: SanityImageSource;
   }>;
-  autoPlay?: boolean;
-  autoPlayInterval?: number;
 }
 
-const {
-  testimonials,
-  autoPlay = false,
-  autoPlayInterval = 5000
-} = Astro.props;
+const { testimonials } = Astro.props;
 
 const hasTestimonials = testimonials && testimonials.length > 0;
 
-/**
- * Gets the first letter of the client name as a placeholder
- * when no photo is provided
- */
+// First testimonial is featured; the rest scroll in the side column.
+const featured = hasTestimonials ? testimonials[0] : null;
+const rest = hasTestimonials ? testimonials.slice(1) : [];
+
+/** First letter of the name, used to seed the placeholder avatar. */
 function getInitial(name: string | null | undefined): string {
   if (!name) return '?';
   return name.charAt(0).toUpperCase();
 }
 
-/**
- * Gets the avatar URL from Sanity image or placeholder
- */
-function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null | undefined): string {
+/** Resolve a Sanity photo to a square webp avatar, or fall back to a placeholder. */
+function getAvatarUrl(
+  photo: SanityImageSource | undefined,
+  name: string | null | undefined,
+  size: number
+): string {
   if (photo) {
     try {
-      return urlFor(photo).width(160).height(160).format('webp').url();
+      return urlFor(photo).width(size * 2).height(size * 2).format('webp').url();
     } catch {
       // Fall through to placeholder
     }
   }
-  return getPlaceholderImage(80, 80, getInitial(name));
+  return getPlaceholderImage(size, size, getInitial(name));
+}
+
+/** "Role, Company" — either part optional. */
+function attribution(role?: string, company?: string): string {
+  return [role, company].filter(Boolean).join(', ');
 }
 ---
 
 <section class="testimonials" aria-label="Client testimonials">
-  <div class="testimonials__container site-container">
+  <div class="testimonials__inner">
     <header class="testimonials__header">
-      <SectionLabel text="What Clients Say" />
+      <SectionLabel text="What Clients Say" variant="centered" />
       <h2 class="testimonials__title"><HighlightedText text="Client *Testimonials*" /></h2>
     </header>
 
-    {hasTestimonials ? (
-      <div
-        class="testimonials__carousel"
-        data-carousel
-        data-autoplay={autoPlay ? 'true' : 'false'}
-        data-interval={autoPlayInterval}
-      >
-        <!-- Carousel Track -->
-        <div class="carousel__track-container">
-          <div class="carousel__track" data-carousel-track>
-            {testimonials.map((testimonial, index) => {
-              const avatarUrl = getAvatarUrl(testimonial.clientPhoto, testimonial.clientName);
-              return (
-                <div
-                  class="carousel__slide"
-                  data-carousel-slide
-                  aria-hidden={index !== 0 ? 'true' : 'false'}
-                >
-                  <article class="testimonial-card">
-                    <div class="testimonial-card__avatar">
-                      <img
-                        src={avatarUrl}
-                        alt={`Photo of ${testimonial.clientName || 'Client'}`}
-                        loading={index === 0 ? 'eager' : 'lazy'}
-                        width="80"
-                        height="80"
-                      />
-                    </div>
-                    <div class="testimonial-card__content">
-                      <blockquote class="testimonial-card__quote">
-                        <span class="quote-mark">"</span>
-                        {testimonial.quote}
-                      </blockquote>
-                      <footer class="testimonial-card__attribution">
-                        <cite class="testimonial-card__name">{testimonial.clientName || 'Anonymous Client'}</cite>
-                        {(testimonial.clientRole || testimonial.clientCompany) && (
-                          <span class="testimonial-card__role">
-                            {testimonial.clientRole}
-                            {testimonial.clientRole && testimonial.clientCompany && ' at '}
-                            {testimonial.clientCompany}
-                          </span>
-                        )}
-                      </footer>
-                    </div>
-                  </article>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <!-- Navigation Arrows (desktop only) -->
-        {testimonials.length > 1 && (
-          <div class="carousel__arrows">
-            <button
-              class="carousel__arrow carousel__arrow--prev"
-              data-carousel-prev
-              aria-label="Previous testimonial"
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 12H5M12 19l-7-7 7-7"/>
-              </svg>
-            </button>
-            <button
-              class="carousel__arrow carousel__arrow--next"
-              data-carousel-next
-              aria-label="Next testimonial"
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </button>
-          </div>
-        )}
-
-        <!-- Dots Navigation -->
-        {testimonials.length > 1 && (
-          <div class="carousel__dots" role="tablist" aria-label="Testimonial navigation">
-            {testimonials.map((_, index) => (
-              <button
-                class:list={['carousel__dot', { 'carousel__dot--active': index === 0 }]}
-                data-carousel-dot={index}
-                role="tab"
-                aria-selected={index === 0 ? 'true' : 'false'}
-                aria-label={`Go to testimonial ${index + 1}`}
+    {hasTestimonials && featured ? (
+      <div class:list={['t-grid', { 't-grid--solo': rest.length === 0 }]}>
+        <!-- Featured testimonial -->
+        <article class="t-featured" data-featured>
+          <span class="t-featured__mark" aria-hidden="true">&#8220;</span>
+          <blockquote class="t-featured__quote">{featured.quote}</blockquote>
+          <footer class="t-person">
+            <span class="t-avatar t-avatar--lg">
+              <img
+                src={getAvatarUrl(featured.clientPhoto, featured.clientName, 58)}
+                alt={`Photo of ${featured.clientName || 'Client'}`}
+                width="58"
+                height="58"
+                loading="lazy"
               />
-            ))}
+            </span>
+            <span class="t-person__meta">
+              <cite class="t-name t-name--lg">{featured.clientName || 'Anonymous Client'}</cite>
+              {attribution(featured.clientRole, featured.clientCompany) && (
+                <span class="t-role t-role--lg">{attribution(featured.clientRole, featured.clientCompany)}</span>
+              )}
+            </span>
+          </footer>
+        </article>
+
+        <!-- Scrolling column of supporting testimonials -->
+        {rest.length > 0 && (
+          <div class="t-window" data-scroll-window aria-label="More client testimonials">
+            <div class="t-track" data-scroll-track>
+              {rest.map((t) => (
+                <article class="t-card">
+                  <p class="t-card__quote">{t.quote}</p>
+                  <footer class="t-person">
+                    <span class="t-avatar">
+                      <img
+                        src={getAvatarUrl(t.clientPhoto, t.clientName, 44)}
+                        alt={`Photo of ${t.clientName || 'Client'}`}
+                        width="44"
+                        height="44"
+                        loading="lazy"
+                      />
+                    </span>
+                    <span class="t-person__meta">
+                      <cite class="t-name">{t.clientName || 'Anonymous Client'}</cite>
+                      {attribution(t.clientRole, t.clientCompany) && (
+                        <span class="t-role">{attribution(t.clientRole, t.clientCompany)}</span>
+                      )}
+                    </span>
+                  </footer>
+                </article>
+              ))}
+            </div>
           </div>
         )}
       </div>
     ) : (
-      <!-- Empty State -->
       <div class="testimonials__empty">
         <p class="testimonials__empty-text">Client testimonials coming soon.</p>
       </div>
@@ -161,9 +127,16 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
     background: var(--bg-primary);
   }
 
+  .testimonials__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* ===== Header ===== */
   .testimonials__header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
   }
 
   .testimonials__header :global(.section-label) {
@@ -171,179 +144,156 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
   }
 
   .testimonials__title {
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-    font-family: var(--font-display, 'Playfair Display', serif);
+    margin: 1.5rem 0 0;
+    font-family: var(--font-display);
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 500;
+    line-height: 1.1;
     color: var(--text-primary);
   }
 
-  /* ===== Carousel ===== */
-  .testimonials__carousel {
-    position: relative;
+  /* ===== Layout ===== */
+  .t-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
   }
 
-  .carousel__track-container {
+  .t-grid--solo {
+    grid-template-columns: minmax(0, 760px);
+    justify-content: center;
+  }
+
+  /* ===== Featured card ===== */
+  .t-featured {
+    display: flex;
+    flex-direction: column;
+    min-height: 340px;
+    box-sizing: border-box;
+    padding: 2.75rem 2.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid rgba(201, 168, 124, 0.24);
+    border-radius: 2px;
+    box-shadow: 0 0 40px rgba(201, 168, 124, 0.1);
+  }
+
+  .t-featured__mark {
+    font-family: var(--font-display);
+    font-size: 4.2rem;
+    line-height: 0.6;
+    color: var(--accent);
+    margin-bottom: 0.375rem;
+  }
+
+  .t-featured__quote {
+    margin: 0 0 1.75rem;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.42;
+    color: var(--text-primary);
+  }
+
+  /* ===== Scrolling column ===== */
+  .t-window {
+    position: relative;
+    height: 360px;
     overflow: hidden;
   }
 
-  .carousel__track {
-    display: flex;
-    transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
-  }
-
-  .carousel__slide {
-    flex: 0 0 100%;
-    min-width: 0;
-  }
-
-  /* ===== Testimonial Card ===== */
-  .testimonial-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 2.5rem;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-  }
-
-  .testimonial-card__avatar {
-    flex-shrink: 0;
-  }
-
-  .testimonial-card__avatar img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--border-light, #2a2a2a);
-  }
-
-  .testimonial-card__content {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .testimonial-card__quote {
-    margin: 0 0 1.5rem 0;
-    font-family: var(--font-body, 'Outfit', sans-serif);
-    font-size: 1.125rem;
-    font-weight: 300;
-    font-style: italic;
-    line-height: 1.7;
-    color: var(--text-primary);
-    position: relative;
-  }
-
-  .quote-mark {
-    font-family: var(--font-display, 'Playfair Display', serif);
-    font-size: 2.5rem;
-    font-style: normal;
-    color: var(--accent);
-    line-height: 1;
-    margin-right: 0.25rem;
-    vertical-align: -0.25em;
-  }
-
-  .testimonial-card__attribution {
+  .t-track {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 20px; /* keep in sync with GAP in the script */
+    will-change: transform;
   }
 
-  .testimonial-card__name {
-    font-family: var(--font-body, 'Outfit', sans-serif);
+  .t-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1.625rem 1.875rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+  }
+
+  .t-card__quote {
+    margin: 0;
+    font-family: var(--font-body);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 300;
+    line-height: 1.55;
+    color: var(--text-secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ===== Person (shared) ===== */
+  .t-person {
+    display: flex;
+    align-items: center;
+    gap: 0.8125rem;
+    margin-top: auto;
+    padding-top: 1.25rem;
+  }
+
+  .t-avatar {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgba(201, 168, 124, 0.4);
+  }
+
+  .t-avatar--lg {
+    width: 58px;
+    height: 58px;
+  }
+
+  .t-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .t-person__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  .t-name {
+    font-family: var(--font-body);
     font-style: normal;
+    font-weight: 600;
+    font-size: 0.92rem;
     color: var(--text-primary);
   }
 
-  .testimonial-card__role {
-    font-family: var(--font-body, 'Outfit', sans-serif);
-    font-size: 0.875rem;
-    font-weight: 300;
+  .t-name--lg {
+    font-size: 1.05rem;
+  }
+
+  .t-role {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 0.8rem;
     color: var(--text-secondary);
   }
 
-  /* ===== Navigation Arrows ===== */
-  .carousel__arrows {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    left: -60px;
-    right: -60px;
-    transform: translateY(-50%);
-    pointer-events: none;
+  .t-role--lg {
+    font-size: 0.86rem;
   }
 
-  .carousel__arrow {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    color: var(--text-primary);
-    cursor: pointer;
-    pointer-events: auto;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-  }
-
-  .carousel__arrow:hover {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--bg-primary);
-  }
-
-  .carousel__arrow:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-
-  .carousel__arrow:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-
-  /* ===== Dots Navigation ===== */
-  .carousel__dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.75rem;
-    margin-top: 2rem;
-  }
-
-  .carousel__dot {
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    background: var(--border-light, #2a2a2a);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-
-  .carousel__dot:hover {
-    background: var(--text-secondary);
-  }
-
-  .carousel__dot--active {
-    background: var(--accent);
-    transform: scale(1.2);
-  }
-
-  .carousel__dot:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-
-  /* ===== Empty State ===== */
+  /* ===== Empty state ===== */
   .testimonials__empty {
     text-align: center;
     padding: 3rem;
@@ -353,63 +303,34 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
 
   .testimonials__empty-text {
     margin: 0;
-    font-family: var(--font-body, 'Outfit', sans-serif);
+    font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 300;
     color: var(--text-secondary);
   }
 
   /* ===== Responsive ===== */
-  @media (max-width: 1024px) {
-    .carousel__arrows {
-      left: -20px;
-      right: -20px;
-    }
-
-    .carousel__arrow {
-      width: 40px;
-      height: 40px;
-    }
-
-    .carousel__arrow svg {
-      width: 20px;
-      height: 20px;
-    }
-  }
-
+  /* Stack below the desktop breakpoint; the side column becomes a static list. */
   @media (max-width: 768px) {
-    .testimonials {
-      padding: 4rem 0;
+    .t-grid,
+    .t-grid--solo {
+      grid-template-columns: 1fr;
+      justify-content: stretch;
     }
 
-    .testimonials__header {
-      margin-bottom: 3rem;
+    .t-featured {
+      padding: 2.25rem 1.75rem;
+      min-height: 0;
     }
 
-    /* Hide arrows on mobile, keep dots */
-    .carousel__arrows {
-      display: none;
+    .t-featured__quote {
+      font-size: 1.3rem;
     }
 
-    .testimonial-card {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-      gap: 1.5rem;
-    }
-
-    .testimonial-card__avatar img {
-      width: 70px;
-      height: 70px;
-    }
-
-    .testimonial-card__quote {
-      font-size: 1rem;
-    }
-
-    .testimonial-card__attribution {
-      align-items: center;
+    /* Side column: show all cards stacked, no clipping, no animation. */
+    .t-window {
+      height: auto;
+      overflow: visible;
     }
   }
 
@@ -418,208 +339,160 @@ function getAvatarUrl(photo: SanityImageSource | undefined, name: string | null 
       padding: 3rem 0;
     }
 
-    .testimonial-card {
+    .testimonials__header {
+      margin-bottom: 2.5rem;
+    }
+
+    .t-featured {
+      padding: 1.75rem 1.5rem;
+    }
+
+    .t-featured__mark {
+      font-size: 3.5rem;
+    }
+
+    .t-featured__quote {
+      font-size: 1.2rem;
+    }
+
+    .t-card {
       padding: 1.5rem;
     }
-
-    .testimonial-card__avatar img {
-      width: 60px;
-      height: 60px;
-    }
-
-    .quote-mark {
-      font-size: 2rem;
-    }
-
-    .carousel__dots {
-      margin-top: 1.5rem;
-    }
   }
 
-  /* ===== Reduced Motion ===== */
+  /* On reduced motion the script never animates; show the list naturally. */
   @media (prefers-reduced-motion: reduce) {
-    .carousel__track {
-      transition: none;
-    }
-
-    .carousel__dot {
-      transition: none;
-    }
-
-    .carousel__arrow {
-      transition: none;
+    .t-window {
+      height: auto;
+      overflow: visible;
     }
   }
-
 </style>
 
 <script>
-  class TestimonialsCarousel {
-    private carousel: HTMLElement;
+  import { gsap } from 'gsap';
+
+  const GAP = 20;     // must match .t-track gap
+  const HOLD = 2600;  // ms each pair rests before scrolling
+  const DUR = 0.85;   // seconds of scroll motion
+
+  class TestimonialScroller {
+    private win: HTMLElement;
     private track: HTMLElement;
-    private slides: HTMLElement[];
-    private dots: HTMLElement[];
-    private prevBtn: HTMLButtonElement | null;
-    private nextBtn: HTMLButtonElement | null;
-    private currentIndex: number = 0;
-    private autoPlay: boolean;
-    private autoPlayInterval: number;
-    private autoPlayTimer: number | null = null;
-    private isTransitioning: boolean = false;
+    private featured: HTMLElement | null;
+    private cards: HTMLElement[];
+    private desktopMq: MediaQueryList;
+    private reduce: boolean;
+    private timer: ReturnType<typeof setTimeout> | null = null;
+    private paused = false;
+    private running = false;
+    private stepDist = 0;
+    private ro?: ResizeObserver;
 
-    constructor(carousel: HTMLElement) {
-      this.carousel = carousel;
-      this.track = carousel.querySelector('[data-carousel-track]') as HTMLElement;
-      this.slides = Array.from(carousel.querySelectorAll('[data-carousel-slide]'));
-      this.dots = Array.from(carousel.querySelectorAll('[data-carousel-dot]'));
-      this.prevBtn = carousel.querySelector('[data-carousel-prev]');
-      this.nextBtn = carousel.querySelector('[data-carousel-next]');
+    constructor(grid: HTMLElement) {
+      this.win = grid.querySelector('[data-scroll-window]') as HTMLElement;
+      this.track = grid.querySelector('[data-scroll-track]') as HTMLElement;
+      this.featured = grid.querySelector('[data-featured]');
+      this.cards = this.track ? (Array.from(this.track.children) as HTMLElement[]) : [];
 
-      this.autoPlay = carousel.dataset.autoplay === 'true';
-      this.autoPlayInterval = parseInt(carousel.dataset.interval || '5000', 10);
+      if (!this.win || !this.track) return;
 
-      if (this.slides.length <= 1) return;
+      this.desktopMq = window.matchMedia('(min-width: 769px)');
+      this.reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      this.init();
-    }
+      this.win.addEventListener('mouseenter', () => { this.paused = true; });
+      this.win.addEventListener('mouseleave', () => { this.paused = false; });
+      document.addEventListener('visibilitychange', () => { this.paused = document.hidden; });
+      window.addEventListener('resize', () => this.layout());
+      this.desktopMq.addEventListener?.('change', () => this.layout());
 
-    private init(): void {
-      // Add event listeners
-      this.prevBtn?.addEventListener('click', () => this.prev());
-      this.nextBtn?.addEventListener('click', () => this.next());
-
-      this.dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => this.goToSlide(index));
-      });
-
-      // Keyboard navigation
-      this.carousel.addEventListener('keydown', (e) => this.handleKeyboard(e));
-
-      // Touch/swipe support
-      this.setupTouchEvents();
-
-      // Track transition end
-      this.track.addEventListener('transitionend', () => {
-        this.isTransitioning = false;
-      });
-
-      // Pause autoplay on hover/focus
-      if (this.autoPlay) {
-        this.carousel.addEventListener('mouseenter', () => this.pauseAutoPlay());
-        this.carousel.addEventListener('mouseleave', () => this.startAutoPlay());
-        this.carousel.addEventListener('focusin', () => this.pauseAutoPlay());
-        this.carousel.addEventListener('focusout', () => this.startAutoPlay());
-        this.startAutoPlay();
+      // The featured card sets the window height; re-measure when it reflows
+      // (late web-font / image loads would otherwise leave the column too short).
+      if (this.featured && 'ResizeObserver' in window) {
+        this.ro = new ResizeObserver(() => {
+          if (this.desktopMq.matches && !this.reduce && this.cards.length >= 3) this.size();
+        });
+        this.ro.observe(this.featured);
       }
 
-      // Handle visibility change
-      document.addEventListener('visibilitychange', () => {
-        if (document.hidden) {
-          this.pauseAutoPlay();
-        } else if (this.autoPlay) {
-          this.startAutoPlay();
-        }
-      });
+      // Run now for first paint, then again once fonts/images settle (they grow
+      // the featured card, which the window height is derived from).
+      this.layout();
+      if (document.fonts?.ready) document.fonts.ready.then(() => this.layout());
+      window.addEventListener('load', () => this.layout());
     }
 
-    private goToSlide(index: number): void {
-      if (this.isTransitioning || index === this.currentIndex) return;
-      if (index < 0 || index >= this.slides.length) return;
-
-      this.isTransitioning = true;
-      this.currentIndex = index;
-
-      // Update track position
-      const offset = -index * 100;
-      this.track.style.transform = `translateX(${offset}%)`;
-
-      // Update aria-hidden on slides
-      this.slides.forEach((slide, i) => {
-        slide.setAttribute('aria-hidden', i !== index ? 'true' : 'false');
-      });
-
-      // Update dots
-      this.dots.forEach((dot, i) => {
-        dot.classList.toggle('carousel__dot--active', i === index);
-        dot.setAttribute('aria-selected', i === index ? 'true' : 'false');
-      });
-    }
-
-    private next(): void {
-      const nextIndex = (this.currentIndex + 1) % this.slides.length;
-      this.goToSlide(nextIndex);
-    }
-
-    private prev(): void {
-      const prevIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-      this.goToSlide(prevIndex);
-    }
-
-    private handleKeyboard(e: KeyboardEvent): void {
-      if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        this.prev();
-      } else if (e.key === 'ArrowRight') {
-        e.preventDefault();
-        this.next();
+    /** Decide whether to animate based on viewport + motion preference + card count. */
+    private layout(): void {
+      const enable = this.desktopMq.matches && !this.reduce && this.cards.length >= 3;
+      if (!enable) {
+        this.stop();
+        this.clearSizing();
+        return;
       }
+      this.size();
+      if (!this.running) this.start();
     }
 
-    private setupTouchEvents(): void {
-      let startX: number = 0;
-      let endX: number = 0;
-      const threshold = 50;
+    /** Size the window to the featured card and split it into exactly two visible cards. */
+    private size(): void {
+      const winH = this.featured ? this.featured.offsetHeight : this.win.clientHeight;
+      this.win.style.height = `${winH}px`;
+      const cardH = Math.round((winH - GAP) / 2);
+      this.cards.forEach((c) => { c.style.height = `${cardH}px`; });
+      this.stepDist = cardH + GAP;
+    }
 
-      this.track.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-      }, { passive: true });
+    private clearSizing(): void {
+      this.win.style.height = '';
+      gsap.set(this.track, { y: 0 });
+      this.cards.forEach((c) => { c.style.height = ''; });
+    }
 
-      this.track.addEventListener('touchmove', (e) => {
-        endX = e.touches[0].clientX;
-      }, { passive: true });
+    private start(): void {
+      this.running = true;
+      this.timer = setTimeout(() => this.step(), HOLD);
+    }
 
-      this.track.addEventListener('touchend', () => {
-        const diff = startX - endX;
-        if (Math.abs(diff) > threshold) {
-          if (diff > 0) {
-            this.next();
-          } else {
-            this.prev();
+    private stop(): void {
+      this.running = false;
+      if (this.timer) clearTimeout(this.timer);
+      this.timer = null;
+    }
+
+    private step(): void {
+      if (this.paused) {
+        this.timer = setTimeout(() => this.step(), 600);
+        return;
+      }
+      gsap.to(this.track, {
+        y: -this.stepDist,
+        duration: DUR,
+        ease: 'power2.inOut',
+        onComplete: () => {
+          // Recycle the card that scrolled out of view, then reset onto an identical layout.
+          if (this.track.firstElementChild) {
+            this.track.appendChild(this.track.firstElementChild);
           }
-        }
+          gsap.set(this.track, { y: 0 });
+          this.timer = setTimeout(() => this.step(), HOLD);
+        },
       });
-    }
-
-    private startAutoPlay(): void {
-      if (!this.autoPlay || this.autoPlayTimer) return;
-      this.autoPlayTimer = window.setInterval(() => {
-        this.next();
-      }, this.autoPlayInterval);
-    }
-
-    private pauseAutoPlay(): void {
-      if (this.autoPlayTimer) {
-        clearInterval(this.autoPlayTimer);
-        this.autoPlayTimer = null;
-      }
     }
   }
 
-  // Initialize all carousels on the page
-  function initCarousels(): void {
-    const carousels = document.querySelectorAll('[data-carousel]');
-    carousels.forEach((carousel) => {
-      new TestimonialsCarousel(carousel as HTMLElement);
+  function init(): void {
+    document.querySelectorAll<HTMLElement>('.testimonials .t-grid').forEach((grid) => {
+      if (grid.dataset.scrollBound) return;
+      grid.dataset.scrollBound = '1';
+      new TestimonialScroller(grid);
     });
   }
 
-  // Initialize on DOM ready and after Astro page transitions
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCarousels);
+    document.addEventListener('DOMContentLoaded', init);
   } else {
-    initCarousels();
+    init();
   }
-
-  // Re-initialize after Astro view transitions
-  document.addEventListener('astro:after-swap', initCarousels);
+  document.addEventListener('astro:page-load', init);
 </script>
