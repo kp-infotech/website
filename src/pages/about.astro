@@ -60,7 +60,8 @@ const data = await client.fetch<{
 }>(aboutQuery);
 
 const teamMembers = data?.teamMembers || [];
-const showTeam = teamMembers.length > 0;
+// Team section temporarily hidden — see <Team visible={false} /> below. Restore by
+// passing visible={teamMembers.length > 0}.
 
 // Build hero image URL if available
 let aboutHeroUrl: string | undefined;
@@ -142,7 +143,7 @@ const integrityIconUrl = safeUrl(ap?.integrityIcon, 144, 'png') || '/images/valu
   />
 
   <Team
-    visible={showTeam}
+    visible={false}
     members={teamMembers}
     label="Our Team"
     headline="The People Behind the *Work*"
