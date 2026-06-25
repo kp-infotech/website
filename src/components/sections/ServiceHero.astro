@@ -15,15 +15,16 @@ const { title, tagline, excerpt, heroImageUrl, slug } = Astro.props;
 const description = excerpt || tagline;
 ---
 
-<PageHero image={heroImageUrl} variant="inner" imageTransitionName={slug ? `service-hero-${slug}` : undefined}>
-  <nav class="service-hero__breadcrumb" aria-label="Breadcrumb">
-    <a href="/">Home</a>
-    <span class="service-hero__sep">/</span>
-    <a href="/services/">Services</a>
-    <span class="service-hero__sep">/</span>
-    <span class="service-hero__current">{title}</span>
-  </nav>
-
+<PageHero
+  image={heroImageUrl}
+  variant="inner"
+  imageTransitionName={slug ? `service-hero-${slug}` : undefined}
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/services/' },
+    { name: title },
+  ]}
+>
   <SectionLabel text="Service" />
 
   <h1 style={slug ? `view-transition-name: service-title-${slug}` : undefined}>{title}</h1>
@@ -38,37 +39,3 @@ const description = excerpt || tagline;
   </div>
 </PageHero>
 
-<style>
-  .service-hero__breadcrumb {
-    font-family: var(--font-body);
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-  }
-
-  .service-hero__breadcrumb a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .service-hero__breadcrumb a:hover {
-    color: var(--accent);
-  }
-
-  .service-hero__sep {
-    margin: 0 8px;
-    color: var(--text-muted);
-  }
-
-  .service-hero__current {
-    color: var(--accent);
-  }
-
-  @media (max-width: 480px) {
-    .service-hero__breadcrumb {
-      display: none;
-    }
-  }
-</style>

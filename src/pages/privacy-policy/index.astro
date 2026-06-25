@@ -1,13 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/sections/PageHero.astro';
+import { breadcrumbSchema } from '../../lib/seo';
+
+const breadcrumbItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Privacy Policy', path: '/privacy-policy/' },
+];
 ---
 
 <BaseLayout
   title="Privacy Policy"
   description="KP Infotech privacy policy — how we collect, use, and protect your information."
+  jsonLd={[breadcrumbSchema(breadcrumbItems)]}
 >
-  <PageHero variant="inner">
+  <PageHero
+    variant="inner"
+    breadcrumbs={breadcrumbItems.map((c) => ({ name: c.name, href: c.path }))}
+  >
     <h1>Privacy Policy</h1>
     <p class="page-hero__description">Last updated: June 2026</p>
   </PageHero>

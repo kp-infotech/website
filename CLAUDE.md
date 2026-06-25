@@ -191,7 +191,7 @@ Industry: `icon` is image field (SVG upload), not string
 
 | Content Type | Pattern | Example |
 |--------------|---------|---------|
-| Service | `/services/[slug]/` | /services/ui-ux-design/ |
+| Service | `/services/[slug]/` | /services/custom-software-development/ |
 | Industry | `/industries/[slug]/` | /industries/healthcare/ |
 | Case Study | `/work/[slug]/` | /work/fintech-mobile-app/ |
 | Blog Post | `/insights/[slug]/` | /insights/node-js-frameworks/ |
@@ -199,7 +199,7 @@ Industry: `icon` is image field (SVG upload), not string
 
 ### Services (5 total)
 
-`ui-ux-design`, `web-development`, `mobile-apps`, `erp-solutions`, `digital-marketing`
+`custom-software-development`, `business-automation`, `erp-software`, `ai-automation-agents`, `cloud-devops`
 
 ### Industries (6 total)
 

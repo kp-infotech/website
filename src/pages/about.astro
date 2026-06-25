@@ -7,6 +7,12 @@ import Team from '../components/sections/Team.astro';
 import Certifications from '../components/sections/Certifications.astro';
 import CTASection from '../components/sections/CTASection.astro';
 import { client, urlFor } from '../lib/sanity';
+import { breadcrumbSchema } from '../lib/seo';
+
+const breadcrumbItems = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about/' },
+];
 
 // Fetch about page data from Sanity (if available)
 const aboutQuery = `{
@@ -87,6 +93,7 @@ const integrityIconUrl = safeUrl(ap?.integrityIcon, 144, 'png') || '/images/valu
 <BaseLayout
   title="About"
   description="Learn about KP Infotech - a premium digital product studio based in Ahmedabad, India. Crafting exceptional digital experiences since our founding."
+  jsonLd={[breadcrumbSchema(breadcrumbItems)]}
 >
   <AboutHero
     label="About Us"

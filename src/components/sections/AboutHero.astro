@@ -18,7 +18,14 @@ const {
 } = Astro.props;
 ---
 
-<PageHero variant="inner" image={image}>
+<PageHero
+  variant="inner"
+  image={image}
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'About' },
+  ]}
+>
   <SectionLabel text={label} />
 
   <h1>

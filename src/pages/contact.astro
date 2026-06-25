@@ -4,7 +4,12 @@ import ContactHero from '../components/sections/ContactHero.astro';
 import ContactFormSection from '../components/sections/ContactFormSection.astro';
 import ContactMap from '../components/sections/ContactMap.astro';
 import { client, urlFor } from '../lib/sanity';
-import { ORG_ID, canonicalUrl } from '../lib/seo';
+import { ORG_ID, canonicalUrl, breadcrumbSchema } from '../lib/seo';
+
+const breadcrumbItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Contact', path: '/contact/' },
+];
 
 // Fetch site settings and page hero from Sanity
 const siteSettingsQuery = `{
@@ -74,7 +79,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 <BaseLayout
   title="Contact"
   description="Talk to KP Infotech about custom software, Odoo ERP, automation, AI agents, and cloud infrastructure for growing business operations."
-  jsonLd={contactSchema}
+  jsonLd={[breadcrumbSchema(breadcrumbItems), contactSchema]}
 >
   <ContactHero
     label="Get In Touch"

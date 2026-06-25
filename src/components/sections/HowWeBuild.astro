@@ -1,0 +1,447 @@
+---
+/**
+ * HowWeBuild — "Our Process" section (Direction 02: Process Rail).
+ *
+ * A horizontal rail of process steps with a gold progress line that fills to the
+ * selected step, paired with a detail panel revealing that step's description,
+ * duration and deliverables. Implemented as an accessible ARIA tablist
+ * (click + arrow-key navigation).
+ *
+ * Data-driven: service detail pages pass each service's Sanity `process` steps;
+ * industry pages pass the generic `defaultProcessSteps`. Renders nothing when no
+ * steps are provided. Width and section rhythm follow the site convention
+ * (`.site-container`, SectionLabel + HighlightedText header, 6rem padding).
+ */
+import SectionLabel from '../ui/SectionLabel.astro';
+import HighlightedText from '../ui/HighlightedText.astro';
+
+// Mirrors the Sanity `processStep` object (sanity/schemas/objects/processStep.ts).
+interface ProcessStep {
+  stepNumber?: number;
+  title: string;
+  description: string;
+  duration?: string;
+  deliverables?: string[];
+}
+
+interface Props {
+  heading?: string;
+  steps?: ProcessStep[];
+}
+
+const { heading = 'How We *Build*', steps = [] } = Astro.props;
+const num = (step: ProcessStep, i: number) => String(step.stepNumber ?? i + 1).padStart(2, '0');
+---
+
+{steps && steps.length > 0 && (
+  <section class="how-we-build">
+    <div class="how-we-build__container site-container">
+      <div class="how-we-build__header">
+        <SectionLabel text="Our Process" />
+        <h2 class="how-we-build__title">
+          <HighlightedText text={heading} />
+        </h2>
+      </div>
+
+      <!-- Process rail (tablist) -->
+      <div class="hwb-rail" role="tablist" aria-label="Our process steps" style="--hwb-progress: 0;">
+        <div class="hwb-rail__track" aria-hidden="true"></div>
+        <div class="hwb-rail__progress" aria-hidden="true"></div>
+        {steps.map((step, i) => (
+          <button
+            type="button"
+            class:list={['hwb-node', { 'is-active': i === 0 }]}
+            role="tab"
+            id={`hwb-tab-${i}`}
+            aria-selected={i === 0 ? 'true' : 'false'}
+            aria-controls={`hwb-panel-${i}`}
+            tabindex={i === 0 ? 0 : -1}
+            data-index={i}
+          >
+            <span class="hwb-node__marker">{num(step, i)}</span>
+            <span class="hwb-node__title">{step.title}</span>
+          </button>
+        ))}
+      </div>
+
+      <!-- Detail panels -->
+      <div class="hwb-panels">
+        {steps.map((step, i) => (
+          <div
+            class:list={['hwb-panel', { 'is-active': i === 0 }]}
+            id={`hwb-panel-${i}`}
+            role="tabpanel"
+            aria-labelledby={`hwb-tab-${i}`}
+            tabindex="0"
+            hidden={i !== 0}
+          >
+            <div class="hwb-panel__main">
+              <div class="hwb-panel__heading">
+                <span class="hwb-panel__num">{num(step, i)}</span>
+                <h3 class="hwb-panel__title">{step.title}</h3>
+              </div>
+              <p class="hwb-panel__desc">{step.description}</p>
+              {step.duration && (
+                <span class="hwb-panel__duration">{step.duration}</span>
+              )}
+            </div>
+            {step.deliverables && step.deliverables.length > 0 && (
+              <div class="hwb-panel__aside">
+                <span class="hwb-panel__aside-label">What you get</span>
+                <ul class="hwb-panel__deliverables">
+                  {step.deliverables.map((d) => (
+                    <li class="hwb-panel__deliverable">
+                      <span class="hwb-panel__arrow" aria-hidden="true">&#8594;</span>
+                      <span>{d}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .how-we-build {
+    padding: 6rem 0;
+    background: var(--bg-primary);
+  }
+
+  .how-we-build__header {
+    margin-bottom: 4rem;
+  }
+
+  .how-we-build__title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--text-primary);
+    margin-top: 1.5rem;
+  }
+
+  /* ---- Process rail ---- */
+  .hwb-rail {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3.25rem;
+  }
+
+  /* Connecting track + gold progress fill (markers are 42px → centre at 21px) */
+  .hwb-rail__track,
+  .hwb-rail__progress {
+    position: absolute;
+    top: 21px;
+    left: 9%;
+    height: 1px;
+  }
+
+  .hwb-rail__track {
+    right: 9%;
+    background: var(--border-light);
+  }
+
+  .hwb-rail__progress {
+    width: calc((100% - 18%) * var(--hwb-progress));
+    background: var(--accent);
+    transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .hwb-node {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: inherit;
+  }
+
+  .hwb-node__marker {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    border-radius: 2px;
+    background: var(--bg-primary);
+    color: var(--accent);
+    border: 1px solid var(--border-light);
+    transition: background 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .hwb-node:hover .hwb-node__marker {
+    border-color: var(--accent);
+  }
+
+  .hwb-node.is-active .hwb-node__marker {
+    background: var(--accent);
+    color: var(--bg-primary);
+    border-color: var(--accent);
+  }
+
+  .hwb-node__title {
+    max-width: 120px;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    transition: color 0.4s;
+  }
+
+  .hwb-node.is-active .hwb-node__title {
+    color: var(--text-primary);
+  }
+
+  .hwb-node:focus-visible {
+    outline: none;
+  }
+
+  .hwb-node:focus-visible .hwb-node__marker {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  /* ---- Detail panel ---- */
+  .hwb-panels {
+    position: relative;
+  }
+
+  .hwb-panel {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 3rem;
+    padding: 2.5rem 2.75rem;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    animation: hwb-fade 0.4s ease;
+  }
+
+  .hwb-panel[hidden] {
+    display: none;
+  }
+
+  @keyframes hwb-fade {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hwb-panel__heading {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hwb-panel__num {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    line-height: 1;
+    color: var(--accent);
+  }
+
+  .hwb-panel__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--text-primary);
+  }
+
+  .hwb-panel__desc {
+    margin: 0 0 1.25rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--text-secondary);
+  }
+
+  .hwb-panel__duration {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-body);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-dim);
+  }
+
+  .hwb-panel__duration::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: var(--accent-dim);
+  }
+
+  .hwb-panel__aside-label {
+    display: block;
+    margin-bottom: 1.125rem;
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .hwb-panel__deliverables {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  .hwb-panel__deliverable {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 0.875rem;
+    border-bottom: 1px solid var(--border);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+  }
+
+  .hwb-panel__arrow {
+    color: var(--accent);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 768px) {
+    .how-we-build {
+      padding: 4rem 0;
+    }
+
+    .how-we-build__header {
+      margin-bottom: 3rem;
+    }
+
+    .hwb-rail {
+      margin-bottom: 2.5rem;
+    }
+
+    .hwb-panel {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  /* Markers-only rail on small screens — step name lives in the panel */
+  @media (max-width: 560px) {
+    .hwb-node__title {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .how-we-build {
+      padding: 3rem 0;
+    }
+
+    .hwb-panel__desc {
+      font-size: 0.9375rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hwb-rail__progress,
+    .hwb-node__marker,
+    .hwb-node__title {
+      transition: none;
+    }
+
+    .hwb-panel {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  function initHowWeBuild() {
+    const sections = document.querySelectorAll<HTMLElement>('.how-we-build');
+
+    sections.forEach((section) => {
+      const rail = section.querySelector<HTMLElement>('.hwb-rail');
+      const tabs = Array.from(section.querySelectorAll<HTMLButtonElement>('.hwb-node'));
+      const panels = Array.from(section.querySelectorAll<HTMLElement>('.hwb-panel'));
+      const count = tabs.length;
+      if (!rail || count === 0) return;
+
+      function activate(index: number, focus: boolean) {
+        tabs.forEach((tab, i) => {
+          const active = i === index;
+          tab.classList.toggle('is-active', active);
+          tab.setAttribute('aria-selected', active ? 'true' : 'false');
+          tab.tabIndex = active ? 0 : -1;
+          if (active && focus) tab.focus();
+        });
+
+        panels.forEach((panel, i) => {
+          const active = i === index;
+          panel.classList.toggle('is-active', active);
+          panel.hidden = !active;
+        });
+
+        rail.style.setProperty('--hwb-progress', count > 1 ? String(index / (count - 1)) : '0');
+      }
+
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => activate(i, false));
+        tab.addEventListener('keydown', (event) => {
+          let next: number | null = null;
+          switch (event.key) {
+            case 'ArrowRight':
+            case 'ArrowDown':
+              next = (i + 1) % count;
+              break;
+            case 'ArrowLeft':
+            case 'ArrowUp':
+              next = (i - 1 + count) % count;
+              break;
+            case 'Home':
+              next = 0;
+              break;
+            case 'End':
+              next = count - 1;
+              break;
+          }
+          if (next !== null) {
+            event.preventDefault();
+            activate(next, true);
+          }
+        });
+      });
+    });
+  }
+
+  initHowWeBuild();
+  document.addEventListener('astro:after-swap', initHowWeBuild);
+</script>

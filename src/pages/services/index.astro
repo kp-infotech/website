@@ -7,6 +7,12 @@ import CTASection from '../../components/sections/CTASection.astro';
 import { Icon } from 'astro-icon/components';
 import { client, urlFor } from '../../lib/sanity';
 import { allServicesQuery } from '../../lib/queries';
+import { breadcrumbSchema } from '../../lib/seo';
+
+const breadcrumbItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Services', path: '/services/' },
+];
 
 // Fetch page hero
 const pageHeroes = await client.fetch<Record<string, any> | null>(
@@ -50,9 +56,14 @@ const servicesWithImages = services.map((service) => {
 <BaseLayout
   title="Services"
   description="Explore our comprehensive range of digital services including UI/UX design, web development, mobile apps, ERP solutions, and digital marketing."
+  jsonLd={[breadcrumbSchema(breadcrumbItems)]}
 >
   <!-- Hero Section -->
-  <PageHero variant="inner" image={servicesHeroUrl}>
+  <PageHero
+    variant="inner"
+    image={servicesHeroUrl}
+    breadcrumbs={breadcrumbItems.map((c) => ({ name: c.name, href: c.path }))}
+  >
     <SectionLabel text="Services" />
     <h1>
       <HighlightedText text="What We *Do*" />

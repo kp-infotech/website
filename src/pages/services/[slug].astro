@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ServiceHero from '../../components/sections/ServiceHero.astro';
 import ServiceContent from '../../components/sections/ServiceContent.astro';
-import ServiceProcess from '../../components/sections/ServiceProcess.astro';
+import HowWeBuild from '../../components/sections/HowWeBuild.astro';
 import ServiceTechMarquee from '../../components/sections/ServiceTechMarquee.astro';
 import ServiceWork from '../../components/sections/ServiceWork.astro';
 import ServiceFAQ from '../../components/sections/ServiceFAQ.astro';
@@ -93,7 +93,7 @@ const serviceJsonLd = [
     content={service.content}
   />
 
-  <ServiceProcess
+  <HowWeBuild
     heading={service.processHeading}
     steps={service.process}
   />
