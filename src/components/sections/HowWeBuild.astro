@@ -7,65 +7,30 @@
  * duration and deliverables. Implemented as an accessible ARIA tablist
  * (click + arrow-key navigation).
  *
- * Width and section rhythm follow the site convention (`.site-container`,
- * SectionLabel + HighlightedText header, 6rem section padding) so it lines up
- * edge-to-edge with every other section.
+ * Data-driven: service detail pages pass each service's Sanity `process` steps;
+ * industry pages pass the generic `defaultProcessSteps`. Renders nothing when no
+ * steps are provided. Width and section rhythm follow the site convention
+ * (`.site-container`, SectionLabel + HighlightedText header, 6rem padding).
  */
 import SectionLabel from '../ui/SectionLabel.astro';
 import HighlightedText from '../ui/HighlightedText.astro';
 
-interface Step {
+// Mirrors the Sanity `processStep` object (sanity/schemas/objects/processStep.ts).
+interface ProcessStep {
+  stepNumber?: number;
   title: string;
-  duration: string;
   description: string;
-  deliverables: string[];
+  duration?: string;
+  deliverables?: string[];
 }
 
 interface Props {
   heading?: string;
-  steps?: Step[];
+  steps?: ProcessStep[];
 }
 
-const defaultSteps: Step[] = [
-  {
-    title: 'Discovery & Mapping',
-    duration: '1–2 weeks',
-    description:
-      'We sit with your team and map how operations actually run today — the tools, the handoffs, and the workarounds people rely on.',
-    deliverables: ['Process audit', 'Stakeholder interviews', 'Scope & success metrics'],
-  },
-  {
-    title: 'Architecture & Design',
-    duration: '2–3 weeks',
-    description:
-      'We shape the system around your workflows: the data model, the interfaces, and the right stack to build it on.',
-    deliverables: ['System architecture', 'Data model', 'Interface prototypes'],
-  },
-  {
-    title: 'Build & Integrate',
-    duration: '4–10 weeks',
-    description:
-      'We develop in focused sprints and wire the new system into the tools your team already runs on.',
-    deliverables: ['Working software', 'API integrations', 'Sprint demos'],
-  },
-  {
-    title: 'Test & Harden',
-    duration: '1–2 weeks',
-    description:
-      'We test against real scenarios, tighten security, and tune performance before anything reaches production.',
-    deliverables: ['QA test suite', 'Security review', 'UAT sign-off'],
-  },
-  {
-    title: 'Launch & Support',
-    duration: 'Ongoing',
-    description:
-      'We deploy, train your team, and stay on to refine the system as your operations grow and change.',
-    deliverables: ['Production deploy', 'Team training', 'Support SLA'],
-  },
-];
-
-const { heading = 'How We *Build*', steps = defaultSteps } = Astro.props;
-const num = (i: number) => String(i + 1).padStart(2, '0');
+const { heading = 'How We *Build*', steps = [] } = Astro.props;
+const num = (step: ProcessStep, i: number) => String(step.stepNumber ?? i + 1).padStart(2, '0');
 ---
 
 {steps && steps.length > 0 && (
@@ -93,7 +58,7 @@ const num = (i: number) => String(i + 1).padStart(2, '0');
             tabindex={i === 0 ? 0 : -1}
             data-index={i}
           >
-            <span class="hwb-node__marker">{num(i)}</span>
+            <span class="hwb-node__marker">{num(step, i)}</span>
             <span class="hwb-node__title">{step.title}</span>
           </button>
         ))}
@@ -112,23 +77,27 @@ const num = (i: number) => String(i + 1).padStart(2, '0');
           >
             <div class="hwb-panel__main">
               <div class="hwb-panel__heading">
-                <span class="hwb-panel__num">{num(i)}</span>
+                <span class="hwb-panel__num">{num(step, i)}</span>
                 <h3 class="hwb-panel__title">{step.title}</h3>
               </div>
               <p class="hwb-panel__desc">{step.description}</p>
-              <span class="hwb-panel__duration">{step.duration}</span>
+              {step.duration && (
+                <span class="hwb-panel__duration">{step.duration}</span>
+              )}
             </div>
-            <div class="hwb-panel__aside">
-              <span class="hwb-panel__aside-label">What you get</span>
-              <ul class="hwb-panel__deliverables">
-                {step.deliverables.map((d) => (
-                  <li class="hwb-panel__deliverable">
-                    <span class="hwb-panel__arrow" aria-hidden="true">&#8594;</span>
-                    <span>{d}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {step.deliverables && step.deliverables.length > 0 && (
+              <div class="hwb-panel__aside">
+                <span class="hwb-panel__aside-label">What you get</span>
+                <ul class="hwb-panel__deliverables">
+                  {step.deliverables.map((d) => (
+                    <li class="hwb-panel__deliverable">
+                      <span class="hwb-panel__arrow" aria-hidden="true">&#8594;</span>
+                      <span>{d}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         ))}
       </div>
