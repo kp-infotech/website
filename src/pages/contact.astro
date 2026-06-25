@@ -4,6 +4,7 @@ import ContactHero from '../components/sections/ContactHero.astro';
 import ContactFormSection from '../components/sections/ContactFormSection.astro';
 import ContactMap from '../components/sections/ContactMap.astro';
 import { client, urlFor } from '../lib/sanity';
+import { ORG_ID, canonicalUrl } from '../lib/seo';
 
 // Fetch site settings and page hero from Sanity
 const siteSettingsQuery = `{
@@ -54,25 +55,15 @@ const addressLine1 = addressLines[0] || "Ahmedabad, Gujarat";
 // Only show addressLine2 if there are actually multiple lines, otherwise empty
 const addressLine2 = addressLines.length > 1 ? addressLines[1] : (addressLines.length === 0 ? "India" : "");
 
-// Schema.org ContactPage structured data
+// Schema.org ContactPage — references the single canonical Organization
+// (#organization) instead of re-declaring it, so search engines and AI answer
+// engines see one entity. Merged into the shared @graph via BaseLayout's jsonLd prop.
 const contactSchema = {
-  "@context": "https://schema.org",
   "@type": "ContactPage",
   "name": "Contact KP Infotech",
   "description": "Talk to KP Infotech about custom software, Odoo ERP, automation, AI agents, and cloud infrastructure for growing business operations.",
-  "url": "https://kpinfo.tech/contact/",
-  "mainEntity": {
-    "@type": "Organization",
-    "name": "KP Infotech",
-    "email": siteSettings?.contactEmail || "info@kpinfo.tech",
-    "telephone": siteSettings?.contactPhone || "+91 86182 79004",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ahmedabad",
-      "addressRegion": "Gujarat",
-      "addressCountry": "India"
-    }
-  }
+  "url": canonicalUrl('/contact/'),
+  "mainEntity": { "@id": ORG_ID }
 };
 
 // Cloudflare Turnstile site key (public). When unset, no widget renders and the
@@ -83,12 +74,8 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 <BaseLayout
   title="Contact"
   description="Talk to KP Infotech about custom software, Odoo ERP, automation, AI agents, and cloud infrastructure for growing business operations."
+  jsonLd={contactSchema}
 >
-  <!-- Schema.org structured data -->
-  <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(contactSchema)} />
-  </Fragment>
-
   <ContactHero
     label="Get In Touch"
     headline="Let's Build Something *Great*"
@@ -122,21 +109,27 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 <script>
   import { trackEvent } from '../lib/analytics';
 
-  const form = document.getElementById('contact-form') as HTMLFormElement | null;
-  const statusEl = document.getElementById('contact-status');
+  // Re-init on every load + ClientRouter navigation: Astro module scripts run
+  // once, but the form is re-created on view-transition swaps, so the submit
+  // handler (and its generate_lead event) must re-attach. Idempotent via a flag.
+  function initContactForm() {
+    const form = document.getElementById('contact-form') as HTMLFormElement | null;
+    if (!form || form.dataset.bound === 'true') return;
+    form.dataset.bound = 'true';
 
-  function setStatus(message: string, type: 'success' | 'error' | '') {
-    if (!statusEl) return;
-    statusEl.textContent = message;
-    statusEl.className = 'form-status' + (type ? ` form-status--${type}` : '');
-  }
+    const statusEl = document.getElementById('contact-status');
 
-  function resetTurnstile() {
-    const t = (window as any).turnstile;
-    if (typeof t !== 'undefined') t.reset();
-  }
+    function setStatus(message: string, type: 'success' | 'error' | '') {
+      if (!statusEl) return;
+      statusEl.textContent = message;
+      statusEl.className = 'form-status' + (type ? ` form-status--${type}` : '');
+    }
 
-  if (form) {
+    function resetTurnstile() {
+      const t = (window as any).turnstile;
+      if (typeof t !== 'undefined') t.reset();
+    }
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
@@ -181,4 +174,6 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
       }
     });
   }
+
+  document.addEventListener('astro:page-load', initContactForm);
 </script>

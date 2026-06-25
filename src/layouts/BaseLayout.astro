@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 import { client } from '../lib/sanity';
 import { siteSettingsQuery } from '../lib/queries';
 import defaultOgFallback from '../assets/hero-placeholder.jpg';
-import { canonicalUrl, jsonLdGraph, organizationSchema, seoImageUrl } from '../lib/seo';
+import { canonicalUrl, jsonLdGraph, organizationSchema, seoImageUrl, ORG_PHONE, ORG_EMAIL, ORG_ADDRESS_DISPLAY } from '../lib/seo';
 import CustomCursor from '../components/effects/CustomCursor.astro';
 import ScrollProgress from '../components/effects/ScrollProgress.astro';
 import WhatsAppButton from '../components/ui/WhatsAppButton.astro';
@@ -171,8 +171,8 @@ const clarityProjectId = import.meta.env.PUBLIC_CLARITY_ID;
     <Navigation
       siteName={siteName}
       logo={siteSettings?.logo}
-      contactPhone={siteSettings?.contactPhone}
-      contactEmail={siteSettings?.contactEmail}
+      contactPhone={siteSettings?.contactPhone || ORG_PHONE}
+      contactEmail={siteSettings?.contactEmail || ORG_EMAIL}
       socialLinks={siteSettings?.socialLinks}
     />
     <main class="flex flex-col gap-10">
@@ -182,12 +182,12 @@ const clarityProjectId = import.meta.env.PUBLIC_CLARITY_ID;
       siteName={siteName}
       logo={siteSettings?.logo}
       footerText={siteSettings?.footerText}
-      contactEmail={siteSettings?.contactEmail}
-      contactPhone={siteSettings?.contactPhone}
-      address={siteSettings?.address}
+      contactEmail={siteSettings?.contactEmail || ORG_EMAIL}
+      contactPhone={siteSettings?.contactPhone || ORG_PHONE}
+      address={siteSettings?.address || ORG_ADDRESS_DISPLAY}
       socialLinks={siteSettings?.socialLinks}
     />
-    <WhatsAppButton phone={siteSettings?.contactPhone} />
+    <WhatsAppButton phone={siteSettings?.contactPhone || ORG_PHONE} />
 
     <!-- Grain/Noise Texture Overlay -->
     <div class="grain-overlay" aria-hidden="true"></div>

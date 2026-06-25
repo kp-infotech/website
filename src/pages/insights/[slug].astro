@@ -7,7 +7,7 @@ import RelatedPosts from '../../components/sections/RelatedPosts.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { blogPostBySlugQuery, publicBlogSlugsQuery } from '../../lib/queries';
-import { breadcrumbSchema, canonicalUrl } from '../../lib/seo';
+import { breadcrumbSchema, canonicalUrl, ORG_ID } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const posts = await client.fetch<Array<{ slug: { current: string } }>>(
@@ -84,12 +84,8 @@ const blogJsonLd = [
       name: post.author.name,
       jobTitle: post.author.role,
       sameAs: [post.author.linkedin, post.author.twitter].filter(Boolean),
-    } : {
-      '@type': 'Organization',
-      '@id': 'https://kpinfo.tech/#organization',
-      name: 'KP Infotech',
-    },
-    publisher: { '@id': 'https://kpinfo.tech/#organization' },
+    } : { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
     articleSection: post.category?.title,
     keywords: post.tags,
   },
