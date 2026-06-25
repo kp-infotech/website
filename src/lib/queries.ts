@@ -164,6 +164,22 @@ export const featuredServicesQuery = `
   }
 `;
 
+// Minimal service list for the footer navigation
+export const footerServicesQuery = `
+  *[_type == "service"] | order(order asc) {
+    title,
+    "slug": slug.current
+  }
+`;
+
+// Minimal industry list for the footer navigation
+export const footerIndustriesQuery = `
+  *[_type == "industry"] | order(order asc) {
+    title,
+    "slug": slug.current
+  }
+`;
+
 // ============================================
 // Industries
 // ============================================

@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { urlFor, isSvgAsset } from '../lib/sanity';
+import { client, urlFor, isSvgAsset } from '../lib/sanity';
+import { footerServicesQuery, footerIndustriesQuery } from '../lib/queries';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
 interface SocialLinks {
@@ -40,13 +41,17 @@ const logoUrl = logo
 
 const currentYear = new Date().getFullYear();
 
-const services = [
-  { name: 'UI/UX Design', href: '/services/ui-ux-design/' },
-  { name: 'Web Development', href: '/services/web-development/' },
-  { name: 'Mobile Apps', href: '/services/mobile-apps/' },
-  { name: 'ERP Solutions', href: '/services/erp-solutions/' },
-  { name: 'Digital Marketing', href: '/services/digital-marketing/' },
-];
+// Services are managed in Sanity — fetch them so the footer stays in sync
+// with the services page (ordered by `order`).
+const serviceDocs = await client.fetch<Array<{ title: string; slug: string | null }>>(
+  footerServicesQuery
+);
+const services = serviceDocs
+  .filter((service) => service.slug)
+  .map((service) => ({
+    name: service.title,
+    href: `/services/${service.slug}/`,
+  }));
 
 const company = [
   { name: 'About', href: '/about/' },
@@ -56,14 +61,17 @@ const company = [
   { name: 'Contact', href: '/contact/' },
 ];
 
-const industries = [
-  { name: 'Healthcare', href: '/industries/healthcare/' },
-  { name: 'Retail & E-commerce', href: '/industries/retail-ecommerce/' },
-  { name: 'Manufacturing', href: '/industries/manufacturing/' },
-  { name: 'Logistics', href: '/industries/logistics/' },
-  { name: 'Finance', href: '/industries/finance/' },
-  { name: 'Startups', href: '/industries/startups/' },
-];
+// Industries are managed in Sanity — fetch them so the footer stays in sync
+// with the industries section (ordered by `order`).
+const industryDocs = await client.fetch<Array<{ title: string; slug: string | null }>>(
+  footerIndustriesQuery
+);
+const industries = industryDocs
+  .filter((industry) => industry.slug)
+  .map((industry) => ({
+    name: industry.title,
+    href: `/industries/${industry.slug}/`,
+  }));
 
 // Build socials array from siteSettings
 const socials = [

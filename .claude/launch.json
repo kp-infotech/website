@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "astro-dev",
+      "runtimeExecutable": "C:/Users/pooja/AppData/Roaming/fnm/node-versions/v24.15.0/installation/node.exe",
+      "runtimeArgs": ["node_modules/astro/bin/astro.mjs", "dev", "--port", "4330"],
+      "port": 4330,
+      "autoPort": false
+    }
+  ]
+}
