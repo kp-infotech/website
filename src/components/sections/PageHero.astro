@@ -65,13 +65,11 @@ const resolvedImage = image || heroPlaceholder;
   }
 
   /* --- Inner page variant: shorter hero ---
-     Top-anchored content (not vertically centred) so every inner page — service,
-     industry, work, blog detail and the listing pages — starts the breadcrumb /
-     eyebrow at the same Y below the fixed header, instead of drifting with the
-     content height. Desktop (tall viewports) restores centring further down. */
+     Content is vertically centred at every breakpoint, matching the desktop
+     layout (the section flex-centres its container). */
   .page-hero--inner {
     min-height: 75vh;
-    align-items: flex-start;
+    align-items: center;
   }
 
   /* --- Background image layer --- */
@@ -212,12 +210,11 @@ const resolvedImage = image || heroPlaceholder;
     }
   }
 
-  /* Laptop / short viewports (13"–16" MacBooks, windowed desktops): wide enough to
-     be desktop-class but too short for a comfortable centred 75vh hero. Give inner
-     heroes the full screen height and top-anchor the content so it clears the fixed
-     header (which the centred layout used to collide with on these heights), and
-     scale the headline to fit. Tall desktop monitors (>1050px) keep the centred,
-     full-size 75vh hero unchanged. */
+  /* Laptop / short viewports (13"–16" MacBooks, windowed desktops): give inner
+     heroes the full screen height (100vh) so they fill these shorter screens, with
+     the content vertically centred (inherits align-items:center from the desktop
+     rule above). The headline is scaled and spacing tightened so the full-size type
+     doesn't overflow. Tall desktop monitors (>1050px) keep the 75vh hero. */
   @media (min-width: 1024px) and (max-height: 1050px) {
     .page-hero--inner {
       min-height: 100vh;
@@ -225,10 +222,6 @@ const resolvedImage = image || heroPlaceholder;
 
     .page-hero--inner .page-hero__container {
       min-height: 100vh;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding-top: clamp(9.5rem, 20vh, 13rem);
-      padding-bottom: 4rem;
     }
 
     .page-hero__content {
