@@ -55,6 +55,10 @@ const budgetRanges = [
   { value: "50k-plus", label: "$50,000+" },
   { value: "not-sure", label: "Not sure yet" }
 ];
+
+// Cloudflare Turnstile site key (public). When unset, the widget is omitted and
+// the server skips Turnstile verification.
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 ---
 
 <section class="contact-form-section">
@@ -138,6 +142,11 @@ const budgetRanges = [
       <h2 class="contact-form__title">Send Us a Message</h2>
 
       <form class="contact-form" id="contact-form" method="POST">
+        <!-- Honeypot — hidden from humans; bots that auto-fill it are silently dropped -->
+        <div class="hp-field" aria-hidden="true">
+          <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+        </div>
+
         <div class="contact-form__grid">
           <!-- Name -->
           <div class="form-group">
@@ -230,6 +239,12 @@ const budgetRanges = [
             ></textarea>
           </div>
 
+          {turnstileSiteKey && (
+            <div class="form-group form-group--full turnstile-wrapper">
+              <div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-theme="dark"></div>
+            </div>
+          )}
+
           <!-- Submit Button -->
           <div class="form-group form-group--full">
             <button type="submit" class="form-submit">
@@ -239,6 +254,10 @@ const budgetRanges = [
               </span>
               <span class="form-submit__fill"></span>
             </button>
+          </div>
+
+          <div class="form-group form-group--full">
+            <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
           </div>
         </div>
       </form>
@@ -530,6 +549,33 @@ const budgetRanges = [
   .form-submit:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 4px;
+  }
+
+  /* Honeypot (visually hidden), Turnstile spacing, and status message */
+  .hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .turnstile-wrapper {
+    margin-top: 0.5rem;
+  }
+
+  .form-status {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 300;
+  }
+
+  .form-status--success {
+    color: var(--success);
+  }
+
+  .form-status--error {
+    color: var(--error);
   }
 
   /* Responsive */
