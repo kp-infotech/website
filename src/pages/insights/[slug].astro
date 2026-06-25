@@ -6,12 +6,12 @@ import AuthorBio from '../../components/sections/AuthorBio.astro';
 import RelatedPosts from '../../components/sections/RelatedPosts.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
-import { allBlogPostsQuery, blogPostBySlugQuery } from '../../lib/queries';
+import { blogPostBySlugQuery, publicBlogSlugsQuery } from '../../lib/queries';
 import { breadcrumbSchema, canonicalUrl } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const posts = await client.fetch<Array<{ slug: { current: string } }>>(
-    `*[_type == "blogPost"] { slug }`
+    publicBlogSlugsQuery
   );
 
   return posts.map((post) => ({

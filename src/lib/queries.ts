@@ -1,5 +1,10 @@
 // GROQ Queries for KP Infotech website
 
+import {
+  FINAL_BLOG_CATEGORY_GROQ_FILTER,
+  PUBLIC_BLOG_GROQ_FILTER,
+} from './public-blog-policy.js';
+
 // ============================================
 // Site Settings
 // ============================================
@@ -368,8 +373,14 @@ export const caseStudyBySlugQuery = `
 // ============================================
 // Blog Posts
 // ============================================
+export const publicBlogSlugsQuery = `
+  *[_type == "blogPost" && (${PUBLIC_BLOG_GROQ_FILTER})] | order(publishedAt desc) {
+    slug
+  }
+`;
+
 export const allBlogPostsQuery = `
-  *[_type == "blogPost"] | order(publishedAt desc) {
+  *[_type == "blogPost" && (${PUBLIC_BLOG_GROQ_FILTER})] | order(publishedAt desc) {
     _id,
     title,
     slug,
@@ -391,7 +402,7 @@ export const allBlogPostsQuery = `
 `;
 
 export const featuredBlogPostsQuery = `
-  *[_type == "blogPost" && featured == true] | order(publishedAt desc)[0...3] {
+  *[_type == "blogPost" && featured == true && (${PUBLIC_BLOG_GROQ_FILTER})] | order(publishedAt desc)[0...3] {
     _id,
     title,
     slug,
@@ -408,7 +419,7 @@ export const featuredBlogPostsQuery = `
 `;
 
 export const blogPostBySlugQuery = `
-  *[_type == "blogPost" && slug.current == $slug][0] {
+  *[_type == "blogPost" && slug.current == $slug && (${PUBLIC_BLOG_GROQ_FILTER})][0] {
     _id,
     _createdAt,
     _updatedAt,
@@ -449,7 +460,7 @@ export const blogPostBySlugQuery = `
     tags,
     seoTitle,
     seoDescription,
-    "relatedPosts": *[_type == "blogPost" && slug.current != $slug && (
+    "relatedPosts": *[_type == "blogPost" && slug.current != $slug && (${PUBLIC_BLOG_GROQ_FILTER}) && (
       category._ref == ^.category._ref ||
       count(tags[@in ^.^.tags]) > 0
     )] | order(publishedAt desc)[0...3] {
@@ -464,7 +475,7 @@ export const blogPostBySlugQuery = `
 `;
 
 export const blogPostsByCategoryQuery = `
-  *[_type == "blogPost" && category->slug.current == $categorySlug] | order(publishedAt desc) {
+  *[_type == "blogPost" && category->slug.current == $categorySlug && (${PUBLIC_BLOG_GROQ_FILTER})] | order(publishedAt desc) {
     _id,
     title,
     slug,
@@ -483,13 +494,19 @@ export const blogPostsByCategoryQuery = `
 // ============================================
 // Blog Categories
 // ============================================
+export const publicBlogCategorySlugsQuery = `
+  *[_type == "blogCategory" && (${FINAL_BLOG_CATEGORY_GROQ_FILTER})] | order(title asc) {
+    slug
+  }
+`;
+
 export const allBlogCategoriesQuery = `
-  *[_type == "blogCategory"] | order(title asc) {
+  *[_type == "blogCategory" && (${FINAL_BLOG_CATEGORY_GROQ_FILTER})] | order(title asc) {
     _id,
     title,
     slug,
     description,
-    "postCount": count(*[_type == "blogPost" && references(^._id)])
+    "postCount": count(*[_type == "blogPost" && references(^._id) && (${PUBLIC_BLOG_GROQ_FILTER})])
   }
 `;
 
