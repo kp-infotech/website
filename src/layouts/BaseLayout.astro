@@ -51,8 +51,12 @@ const jsonLdPayload = jsonLdGraph([organizationSchema(siteSettings), ...jsonLdNo
 // Analytics IDs (public). When unset at build time, the tag block is not
 // rendered at all (no tracking). At runtime the scripts additionally gate on
 // the production hostname so preview / *.workers.dev builds stay clean.
-const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
-const clarityProjectId = import.meta.env.PUBLIC_CLARITY_ID;
+// `.trim()` guards against stray whitespace in a CI/build env var (e.g. a value
+// pasted into the Cloudflare build variables with a trailing space) — that would
+// otherwise produce a broken tag URL / measurement id. A whitespace-only value
+// trims to '' (falsy) and correctly omits the tag block.
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim();
+const clarityProjectId = import.meta.env.PUBLIC_CLARITY_ID?.trim();
 ---
 
 <!doctype html>
@@ -153,9 +157,13 @@ const clarityProjectId = import.meta.env.PUBLIC_CLARITY_ID;
       }
     </script>
 
-    {/* Microsoft Clarity — text/plain + data-cookieyes so CookieYes only runs it after the visitor accepts the Analytics category. */}
+    {/* Microsoft Clarity — loads normally on the production host. Consent is enforced by Clarity's
+        own "Cookie consent" project setting + CookieYes's Clarity Consent API integration, which
+        signals consent to Clarity on accept. Do NOT re-add type="text/plain"/data-cookieyes here:
+        CookieYes script-blocking conflicts with the Consent API integration and leaves the tag
+        permanently un-executed (it never lifts the block), so Clarity records nothing. */}
     {clarityProjectId && (
-      <script type="text/plain" data-cookieyes="cookieyes-analytics" define:vars={{ clarityProjectId }}>
+      <script define:vars={{ clarityProjectId }}>
         if (window.location.hostname === 'kpinfo.tech') {
           (function (c, l, a, r, i, t, y) {
             c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
