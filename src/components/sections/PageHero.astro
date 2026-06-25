@@ -201,5 +201,23 @@ const resolvedImage = image || heroPlaceholder;
     }
   }
 
-  /* Large desktop: 1280px+ — keep same padding as header (3rem) */
+  /* Laptop / short viewports (13"–14" MacBooks, windowed desktops): at the full
+     headline size the vertically-centred hero grows taller than the screen, which
+     hides the eyebrow behind the fixed header and pushes the CTAs below the fold.
+     Scale the headline to the available height and tighten spacing so the whole
+     hero fits one screen. Tall screens (>1050px) keep the full-size headline. */
+  @media (min-width: 1024px) and (max-height: 1050px) {
+    .page-hero__content {
+      gap: 1.25rem;
+    }
+
+    .page-hero__content :global(h1) {
+      font-size: clamp(2.25rem, 5.5vh, 4rem);
+      line-height: 1.08;
+    }
+
+    .page-hero__content :global(.page-hero__description) {
+      font-size: 1rem;
+    }
+  }
 </style>
