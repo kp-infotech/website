@@ -9,7 +9,7 @@ import ServiceFAQ from '../../components/sections/ServiceFAQ.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allServicesQuery, serviceBySlugQuery } from '../../lib/queries';
-import { breadcrumbSchema, canonicalUrl } from '../../lib/seo';
+import { breadcrumbSchema, canonicalUrl, ORG_ID } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const services = await client.fetch<Array<{ slug: { current: string } }>>(allServicesQuery);
@@ -52,7 +52,7 @@ const serviceJsonLd = [
     name: service.title,
     description: seoDescription,
     url: serviceUrl,
-    provider: { '@id': 'https://kpinfo.tech/#organization' },
+    provider: { '@id': ORG_ID },
     serviceType: service.title,
     areaServed: {
       '@type': 'Country',

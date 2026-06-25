@@ -9,7 +9,7 @@ import NextProject from '../../components/sections/NextProject.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allCaseStudiesQuery, caseStudyBySlugQuery } from '../../lib/queries';
-import { breadcrumbSchema, canonicalUrl } from '../../lib/seo';
+import { breadcrumbSchema, canonicalUrl, ORG_ID } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const caseStudies = await client.fetch<Array<{ slug: { current: string } }>>(allCaseStudiesQuery);
@@ -56,8 +56,8 @@ const caseStudyJsonLd = [
     url: studyUrl,
     dateCreated: study._createdAt,
     dateModified: study._updatedAt,
-    creator: { '@id': 'https://kpinfo.tech/#organization' },
-    publisher: { '@id': 'https://kpinfo.tech/#organization' },
+    creator: { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
     about: [
       ...(study.services || []).map((service: any) => service?.title).filter(Boolean),
       ...(study.industries || []).map((industry: any) => industry?.title).filter(Boolean),

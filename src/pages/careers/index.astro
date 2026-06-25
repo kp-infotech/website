@@ -7,6 +7,7 @@ import Button from '../../components/ui/Button.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client } from '../../lib/sanity';
 import { activeJobListingsQuery } from '../../lib/queries';
+import { ORG_ID } from '../../lib/seo';
 
 // Fetch active job listings
 const jobs = await client.fetch(activeJobListingsQuery) || [];
@@ -19,7 +20,6 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 // Build JobPosting schema for structured data
 const jobPostingSchema = hasJobs
   ? jobs.map((job: any) => ({
-      "@context": "https://schema.org",
       "@type": "JobPosting",
       "title": job.title,
       "employmentType": job.employmentType?.toUpperCase().replace(/\s/g, '_'),
@@ -27,11 +27,8 @@ const jobPostingSchema = hasJobs
         "@type": "Place",
         "address": job.location
       },
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "KP Infotech",
-        "sameAs": "https://kpinfo.tech"
-      },
+      // Reference the single canonical Organization rather than a separate one.
+      "hiringOrganization": { "@id": ORG_ID },
       "description": job.tagline
     }))
   : null;
@@ -40,13 +37,8 @@ const jobPostingSchema = hasJobs
 <BaseLayout
   title="Careers"
   description="Join KP Infotech to build custom software, ERP, automation, AI, and cloud systems for growing businesses."
+  jsonLd={jobPostingSchema}
 >
-  <!-- Schema.org structured data for job postings -->
-  {hasJobs && (
-    <Fragment slot="head">
-      <script type="application/ld+json" set:html={JSON.stringify(jobPostingSchema)} />
-    </Fragment>
-  )}
 
   <!-- Hero -->
   <PageHero variant="inner">
@@ -528,6 +520,14 @@ const jobPostingSchema = hasJobs
 <script>
   import { trackEvent } from '../../lib/analytics';
 
+  // Re-init on every load + ClientRouter navigation: Astro module scripts run
+  // once, but the careers DOM is re-created on view-transition swaps, so the
+  // handlers (and job_application_submit) must re-attach. Idempotent via a flag.
+  function initCareers() {
+    const careersForm = document.getElementById('careers-form') as HTMLFormElement | null;
+    if (!careersForm || careersForm.dataset.bound === 'true') return;
+    careersForm.dataset.bound = 'true';
+
   // Auto-fill position from job card click
   document.querySelectorAll('.job-card').forEach((card) => {
     card.addEventListener('click', () => {
@@ -622,7 +622,7 @@ const jobPostingSchema = hasJobs
         if (successMsg) successMsg.style.display = 'block';
         trackEvent('job_application_submit', {
           form_id: 'careers',
-          position: String(formData.get('position') || 'General Application'),
+          position: String(formData.get('position') || 'General Application').slice(0, 100),
         });
         form.reset();
         if (fileText) fileText.textContent = 'Choose file or drag here';
@@ -647,4 +647,7 @@ const jobPostingSchema = hasJobs
       }
     });
   }
+  }
+
+  document.addEventListener('astro:page-load', initCareers);
 </script>

@@ -4,6 +4,23 @@ import { getOriginalAssetUrl, isSvgAsset, urlFor } from './sanity';
 export const SITE_URL = 'https://kpinfo.tech';
 const SITE_ORIGIN = new URL(SITE_URL).origin;
 
+// ---------------------------------------------------------------------------
+// Canonical organization identity — single source of truth for NAP + entity.
+// Used as schema values and as fallbacks when Sanity siteSettings are empty so
+// every surface (footer, nav, contact, schema) agrees on one set of facts.
+// ---------------------------------------------------------------------------
+export const ORG_ID = `${SITE_URL}/#organization`;
+export const ORG_NAME = 'KP Infotech';
+export const ORG_EMAIL = 'info@kpinfo.tech';
+export const ORG_PHONE = '+91 86182 79004';
+export const ORG_LOCALITY = 'Ahmedabad';
+export const ORG_REGION = 'Gujarat';
+export const ORG_COUNTRY = 'India';
+export const ORG_COUNTRY_CODE = 'IN';
+export const ORG_ADDRESS_DISPLAY = 'Ahmedabad, Gujarat, India';
+export const ORG_DESCRIPTION =
+  'KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.';
+
 type JsonValue =
   | string
   | number
@@ -126,21 +143,32 @@ export function organizationSchema(settings?: any): JsonLdNode {
     ? Object.values(settings.socialLinks).filter((url): url is string => typeof url === 'string' && url.length > 0)
     : [];
 
+  const email = settings?.contactEmail || ORG_EMAIL;
+  const telephone = settings?.contactPhone || ORG_PHONE;
+
   return {
     '@type': 'Organization',
-    '@id': `${SITE_URL}/#organization`,
-    name: settings?.siteName || 'KP Infotech',
+    '@id': ORG_ID,
+    name: settings?.siteName || ORG_NAME,
     url: SITE_URL,
     logo: sanityImageUrl(settings?.logo, 512, 512),
-    email: settings?.contactEmail,
-    telephone: settings?.contactPhone,
-    address: settings?.address
-      ? {
-          '@type': 'PostalAddress',
-          streetAddress: settings.address,
-          addressCountry: 'IN',
-        }
-      : undefined,
+    description: ORG_DESCRIPTION,
+    email,
+    telephone,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: ORG_LOCALITY,
+      addressRegion: ORG_REGION,
+      addressCountry: ORG_COUNTRY_CODE,
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      telephone,
+      email,
+      areaServed: ['India', 'United States', 'United Kingdom', 'Europe'],
+      availableLanguage: ['English'],
+    },
     sameAs: socialLinks,
   };
 }
@@ -149,9 +177,9 @@ export function websiteSchema(settings?: any): JsonLdNode {
   return {
     '@type': 'WebSite',
     '@id': `${SITE_URL}/#website`,
-    name: settings?.siteName || 'KP Infotech',
+    name: settings?.siteName || ORG_NAME,
     url: SITE_URL,
-    publisher: { '@id': `${SITE_URL}/#organization` },
+    publisher: { '@id': ORG_ID },
   };
 }
 

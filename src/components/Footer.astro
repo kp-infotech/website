@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import { client, urlFor, isSvgAsset } from '../lib/sanity';
 import { footerServicesQuery, footerIndustriesQuery } from '../lib/queries';
+import { ORG_EMAIL, ORG_ADDRESS_DISPLAY } from '../lib/seo';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
 interface SocialLinks {
@@ -26,9 +27,9 @@ const {
   siteName = 'KP Infotech',
   logo,
   footerText = 'Crafting digital experiences that elevate brands and drive measurable business growth.',
-  contactEmail = 'hello@kpinfo.tech',
+  contactEmail = ORG_EMAIL,
   contactPhone,
-  address = 'Ahmedabad, India',
+  address = ORG_ADDRESS_DISPLAY,
   socialLinks = {},
 } = Astro.props;
 
