@@ -24,6 +24,8 @@
 <style>
   .custom-cursor {
     display: none;
+    opacity: 1;
+    transition: opacity 0.2s ease;
   }
 
   /* Only show on non-touch devices with no reduced motion preference */
@@ -38,6 +40,30 @@
 
     :global(a, button, [role="button"], input, textarea, select, label) {
       cursor: none !important;
+    }
+
+    /*
+     * CookieYes consent banner + preference modal are third-party UI injected
+     * with a near-max z-index, so they paint over our custom cursor while the
+     * global `cursor: none` hides the native one — leaving no visible cursor.
+     * Restore the native cursor on any `cky-`-prefixed element, and fade out our
+     * cursor while the banner is hovered (avoids a ghost ring at its edges).
+     * The token-safe `cky-` selectors won't match unrelated classes (`sticky-*`).
+     */
+    :global(:is([class^="cky-"], [class*=" cky-"])),
+    :global(:is([class^="cky-"], [class*=" cky-"]) *) {
+      cursor: auto !important;
+    }
+
+    :global(
+      :is([class^="cky-"], [class*=" cky-"])
+        :is(a, button, [role="button"], label, input)
+    ) {
+      cursor: pointer !important;
+    }
+
+    :global(body:has(:is([class^="cky-"], [class*=" cky-"]):hover)) .custom-cursor {
+      opacity: 0;
     }
   }
 
