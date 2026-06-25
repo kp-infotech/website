@@ -37,7 +37,7 @@ const num = (step: ProcessStep, i: number) => String(step.stepNumber ?? i + 1).p
   <section class="how-we-build">
     <div class="how-we-build__container site-container">
       <div class="how-we-build__header">
-        <SectionLabel text="Our Process" />
+        <SectionLabel text="Our Process" variant="centered" />
         <h2 class="how-we-build__title">
           <HighlightedText text={heading} />
         </h2>
@@ -113,6 +113,7 @@ const num = (step: ProcessStep, i: number) => String(step.stepNumber ?? i + 1).p
 
   .how-we-build__header {
     margin-bottom: 4rem;
+    text-align: center;
   }
 
   .how-we-build__title {
