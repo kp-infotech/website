@@ -1,74 +1,19 @@
 export const prerender = false;
 
 import type { APIRoute } from 'astro';
-import { Resend } from 'resend';
+import {
+  getClientIp,
+  createRateLimiter,
+  verifyTurnstile,
+  escapeHtml,
+  json,
+} from '../../../lib/form-utils';
+// Astro 6 + @astrojs/cloudflare: Worker bindings/secrets/vars come from here,
+// NOT Astro.locals.runtime.env (removed in v6). `env` resolves per-request.
+import { env } from 'cloudflare:workers';
 
-// ---------------------------------------------------------------------------
-// Rate limiting — in-memory Map, max 3 submissions per IP per hour
-// ---------------------------------------------------------------------------
-
-interface RateEntry {
-  count: number;
-  resetAt: number;
-}
-
-const rateLimitMap = new Map<string, RateEntry>();
-const RATE_LIMIT_MAX = 3;
-const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
-
-function getClientIp(request: Request): string {
-  return (
-    request.headers.get('cf-connecting-ip') ||
-    request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
-    'unknown'
-  );
-}
-
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitMap.get(ip);
-
-  if (!entry || now > entry.resetAt) {
-    // No entry or window has expired — not limited yet (entry will be created on record)
-    return false;
-  }
-
-  return entry.count >= RATE_LIMIT_MAX;
-}
-
-function recordSubmission(ip: string): void {
-  const now = Date.now();
-  const entry = rateLimitMap.get(ip);
-
-  if (!entry || now > entry.resetAt) {
-    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
-  } else {
-    entry.count += 1;
-  }
-}
-
-// ---------------------------------------------------------------------------
-// Cloudflare Turnstile verification
-// ---------------------------------------------------------------------------
-
-async function verifyTurnstile(token: string, secretKey: string): Promise<boolean> {
-  const body = new URLSearchParams();
-  body.append('secret', secretKey);
-  body.append('response', token);
-
-  const response = await fetch(
-    'https://challenges.cloudflare.com/turnstile/v0/siteverify',
-    {
-      method: 'POST',
-      body,
-    }
-  );
-
-  if (!response.ok) return false;
-
-  const data = (await response.json()) as { success: boolean };
-  return data.success === true;
-}
+// Rate limiting — 3 submissions per IP per hour (best-effort, per Worker isolate)
+const limiter = createRateLimiter(3, 60 * 60 * 1000);
 
 // ---------------------------------------------------------------------------
 // Allowed MIME types for resume files
@@ -90,11 +35,8 @@ export const POST: APIRoute = async ({ request }) => {
   const ip = getClientIp(request);
 
   // 1. Rate limiting check
-  if (isRateLimited(ip)) {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Too many submissions. Please try again later.' }),
-      { status: 429, headers: { 'Content-Type': 'application/json' } }
-    );
+  if (limiter.isRateLimited(ip)) {
+    return json({ success: false, error: 'Too many submissions. Please try again later.' }, 429);
   }
 
   // Parse multipart form data
@@ -102,38 +44,26 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     formData = await request.formData();
   } catch {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Invalid form data.' }),
-      { status: 400, headers: { 'Content-Type': 'application/json' } }
-    );
+    return json({ success: false, error: 'Invalid form data.' }, 400);
   }
 
   // 2. Honeypot — silently succeed if the hidden "website" field is filled
   const honeypot = formData.get('website');
   if (honeypot && String(honeypot).trim() !== '') {
-    return new Response(
-      JSON.stringify({ success: true }),
-      { status: 200, headers: { 'Content-Type': 'application/json' } }
-    );
+    return json({ success: true }, 200);
   }
 
   // 3. Cloudflare Turnstile verification (only when secret key is configured)
-  const turnstileSecretKey = import.meta.env.TURNSTILE_SECRET_KEY;
+  const turnstileSecretKey = env.TURNSTILE_SECRET_KEY ?? import.meta.env.TURNSTILE_SECRET_KEY;
   if (turnstileSecretKey) {
     const turnstileToken = formData.get('cf-turnstile-response');
     if (!turnstileToken || String(turnstileToken).trim() === '') {
-      return new Response(
-        JSON.stringify({ success: false, error: 'CAPTCHA verification required.' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
-      );
+      return json({ success: false, error: 'CAPTCHA verification required.' }, 400);
     }
 
     const turnstileValid = await verifyTurnstile(String(turnstileToken), turnstileSecretKey);
     if (!turnstileValid) {
-      return new Response(
-        JSON.stringify({ success: false, error: 'CAPTCHA verification failed. Please try again.' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
-      );
+      return json({ success: false, error: 'CAPTCHA verification failed. Please try again.' }, 400);
     }
   }
 
@@ -145,74 +75,49 @@ export const POST: APIRoute = async ({ request }) => {
   const linkedin = String(formData.get('linkedin') ?? '').trim();
 
   if (!name) {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Name is required.' }),
-      { status: 400, headers: { 'Content-Type': 'application/json' } }
-    );
+    return json({ success: false, error: 'Name is required.' }, 400);
   }
 
   if (!email) {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Email is required.' }),
-      { status: 400, headers: { 'Content-Type': 'application/json' } }
-    );
+    return json({ success: false, error: 'Email is required.' }, 400);
   }
 
   if (!phone) {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Phone is required.' }),
-      { status: 400, headers: { 'Content-Type': 'application/json' } }
-    );
+    return json({ success: false, error: 'Phone is required.' }, 400);
   }
 
   // 5. Resume file validation
   const resumeEntry = formData.get('resume');
 
   if (!resumeEntry || !(resumeEntry instanceof File)) {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Resume file is required.' }),
-      { status: 400, headers: { 'Content-Type': 'application/json' } }
-    );
+    return json({ success: false, error: 'Resume file is required.' }, 400);
   }
 
   const resume = resumeEntry as File;
 
   if (resume.size === 0) {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Resume file is empty.' }),
-      { status: 400, headers: { 'Content-Type': 'application/json' } }
-    );
+    return json({ success: false, error: 'Resume file is empty.' }, 400);
   }
 
   if (resume.size > MAX_FILE_SIZE_BYTES) {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Resume file must be smaller than 5 MB.' }),
-      { status: 400, headers: { 'Content-Type': 'application/json' } }
-    );
+    return json({ success: false, error: 'Resume file must be smaller than 5 MB.' }, 400);
   }
 
   if (!ALLOWED_MIME_TYPES.has(resume.type)) {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Resume must be a PDF or Word document (.pdf, .doc, .docx).' }),
-      { status: 400, headers: { 'Content-Type': 'application/json' } }
-    );
+    return json({ success: false, error: 'Resume must be a PDF or Word document (.pdf, .doc, .docx).' }, 400);
   }
 
-  // 6. Send email via Resend
-  const resendApiKey = import.meta.env.RESEND_API_KEY;
-  if (!resendApiKey) {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Email service is not configured.' }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
-    );
+  // 6. Send email via Cloudflare Email Sending (env.EMAIL binding — no API key)
+  const emailBinding = env.EMAIL;
+  if (!emailBinding) {
+    return json({ success: false, error: 'Email service is not configured.' }, 500);
   }
-
-  const resend = new Resend(resendApiKey);
 
   const careersEmailTo =
-    import.meta.env.CAREERS_EMAIL_TO || 'careers@kpinfo.tech';
+    env.CAREERS_EMAIL_TO || import.meta.env.CAREERS_EMAIL_TO || 'careers@kpinfo.tech';
 
-  const resumeBuffer = Buffer.from(await resume.arrayBuffer());
+  // Cloudflare's binding takes binary attachment content as an ArrayBuffer.
+  const resumeContent = await resume.arrayBuffer();
 
   const emailHtml = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
@@ -262,53 +167,46 @@ export const POST: APIRoute = async ({ request }) => {
     </div>
   `;
 
+  // Plain-text alternative — improves deliverability and spam scores.
+  const emailText = [
+    'New Job Application',
+    '',
+    `Position: ${position}`,
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Phone: ${phone}`,
+    linkedin ? `LinkedIn: ${linkedin}` : '',
+    `Resume: attached (${resume.name})`,
+    '',
+    'Submitted from kpinfo.tech/careers',
+  ]
+    .filter(Boolean)
+    .join('\n');
+
   try {
-    const { error } = await resend.emails.send({
-      from: 'KP Infotech Careers <careers@kpinfo.tech>',
+    await emailBinding.send({
       to: careersEmailTo,
+      from: { email: 'careers@kpinfo.tech', name: 'KP Infotech Careers' },
+      replyTo: email,
       subject: `New Application: ${position} — ${name}`,
       html: emailHtml,
+      text: emailText,
       attachments: [
         {
+          content: resumeContent,
           filename: resume.name,
-          content: resumeBuffer,
+          type: resume.type || 'application/octet-stream',
+          disposition: 'attachment',
         },
       ],
     });
-
-    if (error) {
-      console.error('Resend API error:', error);
-      return new Response(
-        JSON.stringify({ success: false, error: 'Failed to send application. Please try again.' }),
-        { status: 500, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
-  } catch (err) {
-    console.error('Unexpected error sending email:', err);
-    return new Response(
-      JSON.stringify({ success: false, error: 'An unexpected error occurred. Please try again.' }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
-    );
+  } catch (err: any) {
+    console.error('Cloudflare Email send error:', err?.code, err?.message ?? err);
+    return json({ success: false, error: 'Failed to send application. Please try again.' }, 500);
   }
 
   // 7. Record the submission for rate limiting (only after successful send)
-  recordSubmission(ip);
+  limiter.recordSubmission(ip);
 
-  return new Response(
-    JSON.stringify({ success: true }),
-    { status: 200, headers: { 'Content-Type': 'application/json' } }
-  );
+  return json({ success: true }, 200);
 };
-
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
-function escapeHtml(str: string): string {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
-}

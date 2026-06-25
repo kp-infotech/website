@@ -12,6 +12,10 @@ import { activeJobListingsQuery } from '../../lib/queries';
 const jobs = await client.fetch(activeJobListingsQuery) || [];
 const hasJobs = jobs.length > 0;
 
+// Cloudflare Turnstile site key (public). When unset, the widget is omitted and
+// the server skips Turnstile verification.
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
+
 // Build JobPosting schema for structured data
 const jobPostingSchema = hasJobs
   ? jobs.map((job: any) => ({
@@ -153,8 +157,12 @@ const jobPostingSchema = hasJobs
           </div>
         </div>
 
-        <!-- Turnstile widget placeholder -->
-        <div id="turnstile-container" class="turnstile-wrapper"></div>
+        <!-- Cloudflare Turnstile widget (omitted when no site key is configured) -->
+        {turnstileSiteKey && (
+          <div class="turnstile-wrapper">
+            <div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-theme="dark"></div>
+          </div>
+        )}
 
         <div class="form-actions">
           <Button variant="primary" type="submit">
@@ -180,6 +188,10 @@ const jobPostingSchema = hasJobs
     buttonText="Get in Touch"
     buttonHref="/contact/"
   />
+
+  {turnstileSiteKey && (
+    <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  )}
 </BaseLayout>
 
 <style>
@@ -609,12 +621,19 @@ const jobPostingSchema = hasJobs
         form.reset();
         if (fileText) fileText.textContent = 'Choose file or drag here';
         if (fileArea) fileArea.classList.remove('file-upload--has-file');
+        if (typeof (window as any).turnstile !== 'undefined') {
+          (window as any).turnstile.reset();
+        }
 
       } catch (error: any) {
         console.error('Form error:', error);
         if (errorMsg) {
           errorMsg.textContent = error.message || 'Something went wrong. Please try again.';
           errorMsg.style.display = 'block';
+        }
+        // Turnstile tokens are single-use — reset so the user can retry.
+        if (typeof (window as any).turnstile !== 'undefined') {
+          (window as any).turnstile.reset();
         }
       } finally {
         if (submitBtn) submitBtn.disabled = false;

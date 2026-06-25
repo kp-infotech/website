@@ -38,3 +38,8 @@ run_worker_first = [
 [vars]
 PUBLIC_SANITY_PROJECT_ID = "5rux0mv2"
 PUBLIC_SANITY_DATASET = "production"
+
+# Cloudflare Email Sending — exposes env.EMAIL.send() to the Worker (no API key needed).
+# Onboard the sending domain once: `npx wrangler email sending enable kpinfo.tech`
+[[send_email]]
+name = "EMAIL"
