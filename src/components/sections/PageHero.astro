@@ -2,6 +2,7 @@
 import { Picture } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import heroPlaceholder from '../../assets/hero-placeholder.jpg';
+import Breadcrumbs from '../ui/Breadcrumbs.astro';
 
 interface Props {
   /** Sanity image URL (string) or imported local image */
@@ -10,10 +11,12 @@ interface Props {
   variant?: 'default' | 'inner';
   /** View Transition name for the background image */
   imageTransitionName?: string;
+  /** Breadcrumb trail rendered above the slot content. Last item = current page. */
+  breadcrumbs?: Array<{ name: string; href?: string }>;
   class?: string;
 }
 
-const { image, imageAlt = '', variant = 'default', imageTransitionName, class: className } = Astro.props;
+const { image, imageAlt = '', variant = 'default', imageTransitionName, breadcrumbs, class: className } = Astro.props;
 
 // Always show a background — use placeholder when no image provided
 const resolvedImage = image || heroPlaceholder;
@@ -38,6 +41,9 @@ const resolvedImage = image || heroPlaceholder;
 
   <div class="page-hero__container">
     <div class="page-hero__content">
+      {breadcrumbs && breadcrumbs.length > 0 && (
+        <Breadcrumbs items={breadcrumbs} class="page-hero__breadcrumbs" />
+      )}
       <slot />
     </div>
   </div>
@@ -58,9 +64,14 @@ const resolvedImage = image || heroPlaceholder;
     background: var(--bg-primary);
   }
 
-  /* --- Inner page variant: shorter hero --- */
+  /* --- Inner page variant: shorter hero ---
+     Top-anchored content (not vertically centred) so every inner page — service,
+     industry, work, blog detail and the listing pages — starts the breadcrumb /
+     eyebrow at the same Y below the fixed header, instead of drifting with the
+     content height. Desktop (tall viewports) restores centring further down. */
   .page-hero--inner {
     min-height: 75vh;
+    align-items: flex-start;
   }
 
   /* --- Background image layer --- */
@@ -201,12 +212,25 @@ const resolvedImage = image || heroPlaceholder;
     }
   }
 
-  /* Laptop / short viewports (13"–14" MacBooks, windowed desktops): at the full
-     headline size the vertically-centred hero grows taller than the screen, which
-     hides the eyebrow behind the fixed header and pushes the CTAs below the fold.
-     Scale the headline to the available height and tighten spacing so the whole
-     hero fits one screen. Tall screens (>1050px) keep the full-size headline. */
+  /* Laptop / short viewports (13"–16" MacBooks, windowed desktops): wide enough to
+     be desktop-class but too short for a comfortable centred 75vh hero. Give inner
+     heroes the full screen height and top-anchor the content so it clears the fixed
+     header (which the centred layout used to collide with on these heights), and
+     scale the headline to fit. Tall desktop monitors (>1050px) keep the centred,
+     full-size 75vh hero unchanged. */
   @media (min-width: 1024px) and (max-height: 1050px) {
+    .page-hero--inner {
+      min-height: 100vh;
+    }
+
+    .page-hero--inner .page-hero__container {
+      min-height: 100vh;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: clamp(9.5rem, 20vh, 13rem);
+      padding-bottom: 4rem;
+    }
+
     .page-hero__content {
       gap: 1.25rem;
     }

@@ -10,6 +10,7 @@ import FeaturedWork from '../components/sections/FeaturedWork.astro';
 import RelatedServicesGrid from '../components/sections/RelatedServicesGrid.astro';
 import StatsSection from '../components/sections/StatsSection.astro';
 import IndustriesBento from '../components/sections/IndustriesBento.astro';
+import HowWeBuild from '../components/sections/HowWeBuild.astro';
 import Testimonials from '../components/sections/Testimonials.astro';
 import CTASection from '../components/sections/CTASection.astro';
 import { websiteSchema } from '../lib/seo';
@@ -95,6 +96,9 @@ const homeJsonLd = [
   {services && services.length > 0 && (
     <RelatedServicesGrid services={services} backgroundImage={servicesBgUrl} />
   )}
+
+  <!-- How We Build (Our Process) -->
+  <HowWeBuild />
 
   <!-- Stats Section -->
   {stats && stats.length > 0 && (

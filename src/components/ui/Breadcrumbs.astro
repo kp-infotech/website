@@ -1,0 +1,98 @@
+---
+/**
+ * Breadcrumbs — shared breadcrumb trail.
+ *
+ * Single source of truth for the breadcrumb UI used across every inner page
+ * (service / industry / work / blog detail) and listing/utility page. Replaces
+ * the per-hero duplicated markup that previously lived in ServiceHero,
+ * CaseStudyHero, BlogPostHero and the industries detail page.
+ *
+ * The last item is rendered as the current (non-link) crumb in accent colour.
+ * Items before it render as links when they carry an `href`.
+ */
+interface Crumb {
+  name: string;
+  href?: string;
+}
+
+interface Props {
+  items: Crumb[];
+  class?: string;
+}
+
+const { items, class: className } = Astro.props;
+---
+
+{items.length > 0 && (
+  <nav class:list={['breadcrumbs', className]} aria-label="Breadcrumb">
+    {items.map((item, index) => {
+      const isLast = index === items.length - 1;
+      return (
+        <Fragment>
+          {index > 0 && <span class="breadcrumbs__sep" aria-hidden="true">/</span>}
+          {item.href && !isLast ? (
+            <a href={item.href} class="breadcrumbs__link">{item.name}</a>
+          ) : (
+            <span class="breadcrumbs__current" aria-current={isLast ? 'page' : undefined}>{item.name}</span>
+          )}
+        </Fragment>
+      );
+    })}
+  </nav>
+)}
+
+<style>
+  .breadcrumbs {
+    font-family: var(--font-body);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+  }
+
+  .breadcrumbs__link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .breadcrumbs__link:hover {
+    color: var(--accent);
+  }
+
+  .breadcrumbs__link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .breadcrumbs__sep {
+    margin: 0 8px;
+    color: var(--text-muted);
+  }
+
+  .breadcrumbs__current {
+    color: var(--accent);
+    display: inline-block;
+    max-width: min(60vw, 420px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+  }
+
+  @media (max-width: 768px) {
+    .breadcrumbs {
+      font-size: 10px;
+    }
+
+    .breadcrumbs__current {
+      max-width: 200px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .breadcrumbs {
+      display: none;
+    }
+  }
+</style>

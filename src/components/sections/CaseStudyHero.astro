@@ -15,15 +15,16 @@ interface Props {
 const { title, client, year, services, heroImageUrl, slug } = Astro.props;
 ---
 
-<PageHero image={heroImageUrl} variant="inner" imageTransitionName={slug ? `work-hero-${slug}` : undefined}>
-  <nav class="case-hero__breadcrumb" aria-label="Breadcrumb">
-    <a href="/">Home</a>
-    <span class="case-hero__sep">/</span>
-    <a href="/work/">Work</a>
-    <span class="case-hero__sep">/</span>
-    <span class="case-hero__current">{title}</span>
-  </nav>
-
+<PageHero
+  image={heroImageUrl}
+  variant="inner"
+  imageTransitionName={slug ? `work-hero-${slug}` : undefined}
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'Work', href: '/work/' },
+    { name: title },
+  ]}
+>
   <SectionLabel text="Case Study" />
 
   <h1 style={slug ? `view-transition-name: work-title-${slug}` : undefined}>{title}</h1>
@@ -53,33 +54,6 @@ const { title, client, year, services, heroImageUrl, slug } = Astro.props;
 </PageHero>
 
 <style>
-  .case-hero__breadcrumb {
-    font-family: var(--font-body);
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-  }
-
-  .case-hero__breadcrumb a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .case-hero__breadcrumb a:hover {
-    color: var(--accent);
-  }
-
-  .case-hero__sep {
-    margin: 0 8px;
-    color: var(--text-muted);
-  }
-
-  .case-hero__current {
-    color: var(--accent);
-  }
-
   .case-hero__meta {
     display: flex;
     align-items: center;
@@ -118,11 +92,5 @@ const { title, client, year, services, heroImageUrl, slug } = Astro.props;
   .case-hero__tag:hover {
     border-color: var(--accent-dim);
     color: var(--accent);
-  }
-
-  @media (max-width: 480px) {
-    .case-hero__breadcrumb {
-      display: none;
-    }
   }
 </style>

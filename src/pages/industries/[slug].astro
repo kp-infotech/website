@@ -10,6 +10,7 @@ import ServiceWork from '../../components/sections/ServiceWork.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allIndustriesQuery, industryBySlugQuery } from '../../lib/queries';
+import { breadcrumbSchema } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const industries = await client.fetch<Array<{ slug: { current: string } }>>(allIndustriesQuery);
@@ -43,21 +44,30 @@ const relatedServices = (industry.relatedServices || []).filter((s: any) => s !=
 
 const seoTitle = industry.seoTitle || industry.title;
 const seoDescription = industry.seoDescription || industry.excerpt || industry.tagline;
+const industryJsonLd = [
+  breadcrumbSchema([
+    { name: 'Home', path: '/' },
+    { name: 'Industries', path: '/industries/' },
+    { name: industry.title, path: `/industries/${slug}/` },
+  ]),
+];
 ---
 
 <BaseLayout
   title={seoTitle}
   description={seoDescription}
+  ogImage={heroImageUrl}
+  jsonLd={industryJsonLd}
 >
-  <PageHero image={heroImageUrl} variant="inner">
-    <nav class="industry-hero__breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a>
-      <span class="industry-hero__sep">/</span>
-      <a href="/industries/">Industries</a>
-      <span class="industry-hero__sep">/</span>
-      <span class="industry-hero__current">{industry.title}</span>
-    </nav>
-
+  <PageHero
+    image={heroImageUrl}
+    variant="inner"
+    breadcrumbs={[
+      { name: 'Home', href: '/' },
+      { name: 'Industries', href: '/industries/' },
+      { name: industry.title },
+    ]}
+  >
     <SectionLabel text="Industry" />
 
     <h1>{industry.title}</h1>
@@ -103,38 +113,3 @@ const seoDescription = industry.seoDescription || industry.excerpt || industry.t
     buttonHref="/contact/"
   />
 </BaseLayout>
-
-<style>
-  .industry-hero__breadcrumb {
-    font-family: var(--font-body);
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-  }
-
-  .industry-hero__breadcrumb a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .industry-hero__breadcrumb a:hover {
-    color: var(--accent);
-  }
-
-  .industry-hero__sep {
-    margin: 0 8px;
-    color: var(--text-muted);
-  }
-
-  .industry-hero__current {
-    color: var(--accent);
-  }
-
-  @media (max-width: 480px) {
-    .industry-hero__breadcrumb {
-      display: none;
-    }
-  }
-</style>

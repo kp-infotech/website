@@ -8,6 +8,7 @@ import CTASection from '../../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../../lib/sanity';
 import { allBlogCategoriesQuery, blogPostsByCategoryQuery, publicBlogCategorySlugsQuery } from '../../../lib/queries';
 import { formatDate } from '../../../lib/utils';
+import { breadcrumbSchema } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const categories = await client.fetch<Array<{ slug: { current: string } }>>(
@@ -54,10 +55,19 @@ const formattedFeaturedDate = featuredPost?.publishedAt ? formatDate(featuredPos
 
 const seoTitle = `${category.title} Articles`;
 const seoDescription = category.description || `Expert insights and articles about ${category.title.toLowerCase()}. Learn from our experience and practical knowledge.`;
+
+const breadcrumbItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Insights', path: '/insights/' },
+  { name: category.title, path: `/insights/category/${slug}/` },
+];
 ---
 
-<BaseLayout title={seoTitle} description={seoDescription}>
-  <PageHero variant="inner">
+<BaseLayout title={seoTitle} description={seoDescription} jsonLd={[breadcrumbSchema(breadcrumbItems)]}>
+  <PageHero
+    variant="inner"
+    breadcrumbs={breadcrumbItems.map((c) => ({ name: c.name, href: c.path }))}
+  >
     <SectionLabel text="Category" />
     <h1>
       <HighlightedText text={`*${category.title}* Articles`} />

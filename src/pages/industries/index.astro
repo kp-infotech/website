@@ -7,6 +7,12 @@ import IndustryCard from '../../components/ui/IndustryCard.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allIndustriesQuery } from '../../lib/queries';
+import { breadcrumbSchema } from '../../lib/seo';
+
+const breadcrumbItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Industries', path: '/industries/' },
+];
 
 // Fetch all industries
 const industries = await client.fetch(allIndustriesQuery);
@@ -58,8 +64,12 @@ const seoTitle = 'Industries — KP Infotech';
 const seoDescription = 'Deep domain expertise across sectors that power the modern economy. From healthcare to energy, we bring vertical expertise to every project.';
 ---
 
-<BaseLayout title={seoTitle} description={seoDescription}>
-  <PageHero variant="inner" image={industriesHeroUrl}>
+<BaseLayout title={seoTitle} description={seoDescription} jsonLd={[breadcrumbSchema(breadcrumbItems)]}>
+  <PageHero
+    variant="inner"
+    image={industriesHeroUrl}
+    breadcrumbs={breadcrumbItems.map((c) => ({ name: c.name, href: c.path }))}
+  >
     <h1><HighlightedText text="Industries we *serve*" /></h1>
     <p class="page-hero__description">
       Deep domain expertise across sectors that power the modern economy. From healthcare to energy, we bring vertical expertise to every project.

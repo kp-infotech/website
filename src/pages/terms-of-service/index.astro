@@ -1,13 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/sections/PageHero.astro';
+import { breadcrumbSchema } from '../../lib/seo';
+
+const breadcrumbItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Terms of Service', path: '/terms-of-service/' },
+];
 ---
 
 <BaseLayout
   title="Terms of Service"
   description="KP Infotech terms of service — the terms governing use of our website and services."
+  jsonLd={[breadcrumbSchema(breadcrumbItems)]}
 >
-  <PageHero variant="inner">
+  <PageHero
+    variant="inner"
+    breadcrumbs={breadcrumbItems.map((c) => ({ name: c.name, href: c.path }))}
+  >
     <h1>Terms of Service</h1>
     <p class="page-hero__description">Last updated: April 2026</p>
   </PageHero>

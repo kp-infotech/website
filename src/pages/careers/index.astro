@@ -7,7 +7,12 @@ import Button from '../../components/ui/Button.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client } from '../../lib/sanity';
 import { activeJobListingsQuery } from '../../lib/queries';
-import { ORG_ID } from '../../lib/seo';
+import { ORG_ID, breadcrumbSchema } from '../../lib/seo';
+
+const breadcrumbItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Careers', path: '/careers/' },
+];
 
 // Fetch active job listings
 const jobs = await client.fetch(activeJobListingsQuery) || [];
@@ -37,11 +42,14 @@ const jobPostingSchema = hasJobs
 <BaseLayout
   title="Careers"
   description="Join KP Infotech to build custom software, ERP, automation, AI, and cloud systems for growing businesses."
-  jsonLd={jobPostingSchema}
+  jsonLd={[breadcrumbSchema(breadcrumbItems), ...(jobPostingSchema || [])]}
 >
 
   <!-- Hero -->
-  <PageHero variant="inner">
+  <PageHero
+    variant="inner"
+    breadcrumbs={breadcrumbItems.map((c) => ({ name: c.name, href: c.path }))}
+  >
     <h1>Join Our <span class="text-[var(--accent)]">Team</span></h1>
     <p class="page-hero__description">
       We're building practical systems for growing businesses. Find your place at KP Infotech.

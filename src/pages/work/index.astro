@@ -7,6 +7,12 @@ import WorkGrid from '../../components/sections/WorkGrid.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allCaseStudiesQuery } from '../../lib/queries';
+import { breadcrumbSchema } from '../../lib/seo';
+
+const breadcrumbItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Work', path: '/work/' },
+];
 
 const caseStudies = await client.fetch(allCaseStudiesQuery);
 const pageHeroes = await client.fetch<Record<string, any> | null>(
@@ -35,8 +41,13 @@ const services = Array.from(servicesMap.values());
 <BaseLayout
   title="Our Work"
   description="Explore our portfolio of digital projects. From web applications to mobile apps and enterprise solutions, see how we help businesses grow."
+  jsonLd={[breadcrumbSchema(breadcrumbItems)]}
 >
-  <PageHero variant="inner" image={workHeroUrl}>
+  <PageHero
+    variant="inner"
+    image={workHeroUrl}
+    breadcrumbs={breadcrumbItems.map((c) => ({ name: c.name, href: c.path }))}
+  >
     <SectionLabel text="Portfolio" />
     <h1>
       <HighlightedText text="Our *Work*" />
