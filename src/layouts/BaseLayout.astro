@@ -57,6 +57,31 @@ const jsonLdPayload = jsonLdGraph([organizationSchema(siteSettings), ...jsonLdNo
 // trims to '' (falsy) and correctly omits the tag block.
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID?.trim();
 const clarityProjectId = import.meta.env.PUBLIC_CLARITY_ID?.trim();
+
+const criticalFontCss = `
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(${playfairDisplay500}) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(${outfit400}) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Outfit', sans-serif;
+}
+`;
 ---
 
 <!doctype html>
@@ -68,6 +93,7 @@ const clarityProjectId = import.meta.env.PUBLIC_CLARITY_ID?.trim();
     <!-- Preload above-the-fold fonts to shorten the render-critical CSS→font chain -->
     <link rel="preload" href={playfairDisplay500} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={outfit400} as="font" type="font/woff2" crossorigin />
+    <style is:inline set:html={criticalFontCss}></style>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
