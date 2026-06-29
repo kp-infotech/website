@@ -87,6 +87,24 @@ The redirect verification script checks:
 - Manual-review URLs are still not redirected.
 - Existing Worker redirects still resolve to their previous targets.
 
+## Local Verification Results
+
+Last checked: 2026-06-29
+
+```text
+node --test tests/migration-redirects.test.mjs
+PASS: 9 tests, 0 failures
+
+node --test tests/seo-metadata-batch.test.mjs
+PASS: 7 tests, 0 failures
+
+npm run build
+PASS: Astro build completed, sitemap generated, server built successfully.
+
+npm run seo:verify-redirects
+PASS: Batch 1 redirects return 301, existing protected redirects pass, manual-review URLs remain unredirected, targets do not redirect again, and built target HTML exists.
+```
+
 ## Known Risks
 
 - These redirects are implemented in the Worker map. If deployment changes back to Cloudflare Pages-only, `_redirects` would need to be synchronized before deployment.
