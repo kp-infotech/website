@@ -1,0 +1,295 @@
+{
+  "name": "seo-metadata-batch-1",
+  "source": "docs/seo-migration/metadata-inventory.md",
+  "projectId": "5rux0mv2",
+  "dataset": "production",
+  "updates": [
+    {
+      "documentType": "siteSettings",
+      "title": "Site Settings",
+      "priority": "P0",
+      "fields": {
+        "defaultSeoTitle": {
+          "allowedCurrent": ["KP Infotech — Digital Product Studio"],
+          "proposed": "KP Infotech — Custom Software, ERP, Automation & AI Solutions"
+        },
+        "defaultSeoDescription": {
+          "allowedCurrent": [
+            "We craft premium digital experiences for startups and businesses. UI/UX design, web development, mobile apps, and ERP solutions from Ahmedabad to the world."
+          ],
+          "proposed": "KP Infotech helps growing B2B teams replace manual workflows, spreadsheets, and disconnected tools with custom software, Odoo ERP, automation, AI agents, and cloud infrastructure."
+        }
+      }
+    },
+    {
+      "documentType": "industry",
+      "slug": "healthcare",
+      "title": "Healthcare",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Healthcare Software, Automation & Patient Operations — KP Infotech"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Build secure healthcare portals, telemedicine workflows, practice dashboards, and integrations that reduce admin work and improve patient service visibility."
+        }
+      }
+    },
+    {
+      "documentType": "industry",
+      "slug": "retail-ecommerce",
+      "title": "Retail & E-commerce",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Retail & E-commerce ERP, Automation & Commerce Systems — KP Infotech"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Unify storefronts, inventory, orders, CRM, and reporting with retail systems that reduce manual reconciliation and help teams serve buyers faster."
+        }
+      }
+    },
+    {
+      "documentType": "industry",
+      "slug": "manufacturing",
+      "title": "Manufacturing",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Manufacturing ERP, Automation & Production Dashboards — KP Infotech"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Connect production, inventory, purchasing, quality, and reporting with ERP and automation systems that give manufacturers clearer operational control."
+        }
+      }
+    },
+    {
+      "documentType": "industry",
+      "slug": "logistics",
+      "title": "Logistics & Supply Chain",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Logistics Software, Fleet Tracking & Warehouse Automation — KP Infotech"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Improve fleet visibility, warehouse workflows, route planning, and supply chain reporting with custom logistics software and automation."
+        }
+      }
+    },
+    {
+      "documentType": "industry",
+      "slug": "finance",
+      "title": "Finance",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Finance Software, Secure Dashboards & Workflow Automation — KP Infotech"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Build secure finance portals, payment integrations, reporting dashboards, and automated workflows that improve visibility and control."
+        }
+      }
+    },
+    {
+      "documentType": "industry",
+      "slug": "startups",
+      "title": "Startups & SMEs",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Startup MVPs, SaaS Platforms & Scalable Business Software — KP Infotech"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Launch MVPs, portals, SaaS products, and internal systems with practical architecture that supports fast learning without avoidable rework."
+        }
+      }
+    },
+    {
+      "documentType": "industry",
+      "slug": "real-estate",
+      "title": "Real Estate",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Real Estate Portals, Listing Platforms & Workflow Automation — KP Infotech"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Modernize property operations with listing platforms, portals, virtual tour integrations, CRM workflows, and dashboards that help teams move deals faster."
+        }
+      }
+    },
+    {
+      "documentType": "industry",
+      "slug": "education",
+      "title": "Education",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Education Portals, LMS & Student Workflow Automation — KP Infotech"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Build LMS platforms, student portals, reporting dashboards, and admin automation that help education teams deliver and measure learning."
+        }
+      }
+    },
+    {
+      "documentType": "blogPost",
+      "slug": "cloud-deployment-models-diagram",
+      "title": "Cloud Deployment Models Diagram Explained",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Cloud Deployment Models: Public, Private & Hybrid Explained"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Understand public, private, hybrid, and multi-cloud deployment models, with tradeoffs for control, cost, security, and operations."
+        }
+      }
+    },
+    {
+      "documentType": "blogPost",
+      "slug": "erp-for-retail-stores",
+      "title": "Your Guide to ERP for Retail Stores in India",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "ERP for Retail Stores: Inventory, POS & Omnichannel Guide"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Learn how retail ERP connects POS, inventory, purchasing, finance, CRM, and omnichannel operations to reduce manual reconciliation."
+        }
+      }
+    },
+    {
+      "documentType": "blogPost",
+      "slug": "angular-vs-react",
+      "title": "Angular vs React: Which Framework Is Better in 2024?",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Angular vs React for Business Web Applications"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Compare Angular and React for enterprise and startup web applications, including architecture, speed, maintainability, and team fit."
+        }
+      }
+    },
+    {
+      "documentType": "blogPost",
+      "slug": "node-js-frameworks",
+      "title": "12 Best Node JS Frameworks & Resources for 2025",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Best Node.js Frameworks for Scalable Web Applications"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Compare Node.js frameworks for APIs, web apps, and real-time systems, with practical tradeoffs for performance, maintainability, and team fit."
+        }
+      }
+    },
+    {
+      "documentType": "blogPost",
+      "slug": "best-hr-software-for-startups",
+      "title": "12 Best hr software for startups You Should Know",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Best HR Software for Startups: Selection Guide"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Compare HR software options for startups by hiring workflow, employee records, payroll needs, automation, integrations, and growth stage."
+        }
+      }
+    },
+    {
+      "documentType": "blogPost",
+      "slug": "best-web-application-frameworks",
+      "title": "Top 12 Best Web Application Frameworks for 2025",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Best Web Application Frameworks for Business Software"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Compare leading web application frameworks for scalable business apps, portals, dashboards, and SaaS products, with practical fit by use case."
+        }
+      }
+    },
+    {
+      "documentType": "blogPost",
+      "slug": "odoo-erp-complete-guide",
+      "title": "Odoo ERP Complete Guide (2025): Features, Benefits & Pricing Explained",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Odoo ERP Guide: Features, Modules, Pricing & Fit"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Understand Odoo ERP modules, implementation considerations, pricing factors, and when it fits growing businesses replacing scattered tools."
+        }
+      }
+    },
+    {
+      "documentType": "blogPost",
+      "slug": "minimum-viable-product-examples",
+      "title": "Top 7 Minimum Viable Product Examples That Succeeded in 2025",
+      "priority": "P1",
+      "fields": {
+        "seoTitle": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Minimum Viable Product Examples for Startup Planning"
+        },
+        "seoDescription": {
+          "allowedCurrent": [null, ""],
+          "proposed": "Review practical MVP examples and lessons for validating product ideas, prioritizing features, and avoiding avoidable build cost early."
+        }
+      }
+    },
+    {
+      "documentType": "caseStudy",
+      "slug": "virtual-tours-ai-listings",
+      "title": "3D Virtual Tours & AI Property Listing Platform",
+      "priority": "P1",
+      "fields": {
+        "seoDescription": {
+          "allowedCurrent": [
+            "3D virtual tour platform generating 85K leads, 420% views, $180M sales, 34% conversion."
+          ],
+          "proposed": "Real estate platform case study for 3D virtual tours, AI listing content, lead capture, CRM workflows, and sales pipeline visibility."
+        }
+      }
+    }
+  ]
+}

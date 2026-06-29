@@ -15,7 +15,8 @@
     "sanity:deploy": "sanity deploy",
     "sanity:build": "sanity build",
     "deploy": "npm run build && wrangler deploy",
-    "deploy:preview": "npm run build && wrangler versions upload"
+    "deploy:preview": "npm run build && wrangler versions upload",
+    "seo:verify-redirects": "node scripts/seo/verify-redirect-batch-1.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.1.8",
