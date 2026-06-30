@@ -38,11 +38,14 @@ const {
 } = Astro.props;
 
 const siteName = siteSettings?.siteName || 'KP Infotech';
-const pageTitle = title || siteSettings?.defaultSeoTitle || siteName;
+const fallbackSeoTitle = 'KP Infotech — Custom Software, ERP, Automation & AI Solutions';
+const fallbackSeoDescription =
+  'KP Infotech helps growing B2B teams replace manual workflows, spreadsheets, and disconnected tools with custom software, Odoo ERP, automation, AI agents, and cloud infrastructure.';
+const pageTitle = title || siteSettings?.defaultSeoTitle || fallbackSeoTitle;
 const fullTitle = pageTitle === siteName || pageTitle.includes(siteName)
   ? pageTitle
   : `${pageTitle} — ${siteName}`;
-const metaDescription = description || siteSettings?.defaultSeoDescription || 'Premium Design and Technology studio crafting digital experiences that elevate brands and drive measurable business growth.';
+const metaDescription = description || siteSettings?.defaultSeoDescription || fallbackSeoDescription;
 const canonical = canonicalUrl(canonicalURL || Astro.url.href);
 const resolvedOgImage = seoImageUrl(ogImage, siteSettings?.defaultOgImage, defaultOgFallback.src);
 const jsonLdNodes = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
