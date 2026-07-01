@@ -5,16 +5,22 @@ export const PUBLIC_BLOG_SLUGS = Object.freeze([
   'best-hr-software-for-startups',
   'best-seo-tools-for-small-businesses',
   'best-web-application-frameworks',
+  'business-process-automation-tools',
+  'business-process-improvement-methods',
   'cloud-deployment-models-diagram',
   'database-design-best-practices',
+  'devops-best-practices',
   'erp-for-retail-stores',
   'erp-implementation-cost',
+  'how-to-choose-erp-system',
   'inventory-management-best-practices',
   'minimum-viable-product-examples',
   'mobile-app-monetization-strategies',
   'node-js-frameworks',
   'odoo-erp-complete-guide',
+  'on-premise-vs-cloud-erp',
   'scalable-system-architecture',
+  'what-is-custom-software',
 ]);
 
 export const PUBLIC_BLOG_SLUG_SET = new Set(PUBLIC_BLOG_SLUGS);

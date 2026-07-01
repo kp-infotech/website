@@ -1,0 +1,86 @@
+{
+  "name": "p0-insight-draft-import",
+  "projectId": "5rux0mv2",
+  "dataset": "production",
+  "source": "docs/seo-migration/p0-content-drafts/",
+  "articles": [
+    {
+      "documentType": "blogPost",
+      "draftId": "drafts.blogPost.what-is-custom-software",
+      "title": "What Is Custom Software? Definition, Examples, and When to Build",
+      "slug": "what-is-custom-software",
+      "seoTitle": "What Is Custom Software? Definition, Examples & Fit",
+      "seoDescription": "Learn what custom software is, when it fits growing businesses, and how it compares with off-the-shelf tools for workflows, dashboards, and integrations.",
+      "excerpt": "Custom software is built around the way a business actually operates. This guide explains when it makes sense, where packaged tools fit, and how to evaluate the decision.",
+      "categorySlug": "custom-software-development",
+      "categoryId": "blogCategory-custom-software-development",
+      "tags": ["Custom Software", "Internal Tools", "Business Operations"],
+      "sourceDraft": "docs/seo-migration/p0-content-drafts/what-is-custom-software.md"
+    },
+    {
+      "documentType": "blogPost",
+      "draftId": "drafts.blogPost.business-process-automation-tools",
+      "title": "Business Process Automation Tools: Types, Use Cases, and Selection Guide",
+      "slug": "business-process-automation-tools",
+      "seoTitle": "Business Process Automation Tools: Types & Selection Guide",
+      "seoDescription": "Compare business process automation tools by use case, workflow complexity, integrations, approvals, reporting, AI fit, and long-term operations needs.",
+      "excerpt": "Business process automation tools help teams reduce repetitive work, route approvals, connect systems, and improve visibility. This guide explains the main tool types and how to choose.",
+      "categorySlug": "automation-ai",
+      "categoryId": "blogCategory-automation-ai",
+      "tags": ["Business Automation", "Workflow Automation", "AI Automation"],
+      "sourceDraft": "docs/seo-migration/p0-content-drafts/business-process-automation-tools.md"
+    },
+    {
+      "documentType": "blogPost",
+      "draftId": "drafts.blogPost.business-process-improvement-methods",
+      "title": "Business Process Improvement Methods for Growing Companies",
+      "slug": "business-process-improvement-methods",
+      "seoTitle": "Business Process Improvement Methods for Growing Teams",
+      "seoDescription": "Learn practical business process improvement methods for reducing manual work, improving visibility, simplifying workflows, and preparing for automation.",
+      "excerpt": "Business process improvement helps growing companies remove bottlenecks before they automate. This guide covers practical methods, examples, and a process audit checklist.",
+      "categorySlug": "automation-ai",
+      "categoryId": "blogCategory-automation-ai",
+      "tags": ["Process Improvement", "Business Automation", "Operations"],
+      "sourceDraft": "docs/seo-migration/p0-content-drafts/business-process-improvement-methods.md"
+    },
+    {
+      "documentType": "blogPost",
+      "draftId": "drafts.blogPost.how-to-choose-erp-system",
+      "title": "How to Choose an ERP System: Requirements, Costs, and Evaluation Checklist",
+      "slug": "how-to-choose-erp-system",
+      "seoTitle": "How to Choose an ERP System: Evaluation Checklist",
+      "seoDescription": "Learn how to choose an ERP system by mapping requirements, modules, integrations, costs, deployment options, vendor fit, and implementation readiness.",
+      "excerpt": "Choosing an ERP system is an operations decision, not only a software purchase. This guide explains how to evaluate requirements, costs, modules, vendors, and rollout risk.",
+      "categorySlug": "erp-business-systems",
+      "categoryId": "blogCategory-erp-business-systems",
+      "tags": ["ERP", "Odoo", "Business Systems"],
+      "sourceDraft": "docs/seo-migration/p0-content-drafts/how-to-choose-erp-system.md"
+    },
+    {
+      "documentType": "blogPost",
+      "draftId": "drafts.blogPost.on-premise-vs-cloud-erp",
+      "title": "On-Premise vs Cloud ERP: Differences, Costs, Security, and Fit",
+      "slug": "on-premise-vs-cloud-erp",
+      "seoTitle": "On-Premise vs Cloud ERP: Key Differences & Fit",
+      "seoDescription": "Compare on-premise ERP and cloud ERP by cost, control, security, access, customization, maintenance, scalability, and fit for growing businesses.",
+      "excerpt": "On-premise ERP gives more infrastructure control, while cloud ERP reduces infrastructure burden and improves accessibility. This guide compares the tradeoffs for growing companies.",
+      "categorySlug": "erp-business-systems",
+      "categoryId": "blogCategory-erp-business-systems",
+      "tags": ["ERP", "Cloud", "Infrastructure"],
+      "sourceDraft": "docs/seo-migration/p0-content-drafts/on-premise-vs-cloud-erp.md"
+    },
+    {
+      "documentType": "blogPost",
+      "draftId": "drafts.blogPost.devops-best-practices",
+      "title": "DevOps Best Practices for Reliable Business Applications",
+      "slug": "devops-best-practices",
+      "seoTitle": "DevOps Best Practices for Reliable Business Apps",
+      "seoDescription": "Learn DevOps best practices for CI/CD, infrastructure, monitoring, rollback, backups, security, and operational reliability in business applications.",
+      "excerpt": "DevOps best practices help teams ship changes safely and keep business applications reliable. This guide covers CI/CD, monitoring, rollback, backups, security, and maturity planning.",
+      "categorySlug": "cloud-devops",
+      "categoryId": "0213cb0f-23cd-4489-9712-7107bd7a829e",
+      "tags": ["DevOps", "Cloud Infrastructure", "Reliability"],
+      "sourceDraft": "docs/seo-migration/p0-content-drafts/devops-best-practices.md"
+    }
+  ]
+}
