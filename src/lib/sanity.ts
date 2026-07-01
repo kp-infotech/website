@@ -4,6 +4,10 @@ import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
 const projectId = import.meta.env.PUBLIC_SANITY_PROJECT_ID;
 const dataset = import.meta.env.PUBLIC_SANITY_DATASET || 'production';
+const sanityToken = import.meta.env.SSR
+  ? import.meta.env.SANITY_API_TOKEN
+  : undefined;
+const shouldUseCdn = import.meta.env.PROD && !sanityToken;
 
 if (!projectId) {
   throw new Error(
@@ -15,7 +19,9 @@ if (!projectId) {
 export const client = createClient({
   projectId,
   dataset,
-  useCdn: import.meta.env.PROD,
+  token: sanityToken,
+  perspective: 'published',
+  useCdn: shouldUseCdn,
   apiVersion: '2024-01-01',
 });
 
