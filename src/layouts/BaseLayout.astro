@@ -146,9 +146,54 @@ const criticalFontCss = `
       }
     </script>
 
-    {gaMeasurementId && (
-      <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
-    )}
+    {/* Analytics and consent utilities are not needed to paint the page. Keep
+        their downloads out of the mobile render path, then start them once the
+        initial document and its critical assets have finished loading. */}
+    <script is:inline>
+      window.loadAfterInitialRender = function (callback) {
+        var hasRun = false;
+        var runOnce = function () {
+          if (hasRun) return;
+          hasRun = true;
+          callback();
+        };
+        var scheduleAfterLoad = function () {
+          window.addEventListener('pointerdown', runOnce, { once: true, passive: true });
+          window.addEventListener('touchstart', runOnce, { once: true, passive: true });
+          window.addEventListener('keydown', runOnce, { once: true });
+          setTimeout(runOnce, 5000);
+        };
+
+        if (document.readyState === 'complete') {
+          scheduleAfterLoad();
+        } else {
+          window.addEventListener('load', scheduleAfterLoad, { once: true });
+        }
+      };
+    </script>
+
+    {/* Cloudflare Web Analytics — manually installed so its RUM beacon stays
+        out of the initial render path. Automatic Setup must be disabled in the
+        Cloudflare dashboard; the selector guard prevents a temporary duplicate
+        while that setting propagates. */}
+    <script is:inline>
+      if (window.location.hostname === 'kpinfo.tech') {
+        window.loadAfterInitialRender(function () {
+          if (document.querySelector('script[src*="static.cloudflareinsights.com/beacon.min.js"]')) {
+            return;
+          }
+
+          var cloudflareBeacon = document.createElement('script');
+          cloudflareBeacon.type = 'module';
+          cloudflareBeacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+          cloudflareBeacon.setAttribute(
+            'data-cf-beacon',
+            '{"token":"a9661ca4f3144990acf6e29d46d2af50"}'
+          );
+          document.head.appendChild(cloudflareBeacon);
+        });
+      }
+    </script>
 
     {/* Google Analytics 4 + Consent Mode v2 — production host only; denied by default until CookieYes records consent. */}
     {gaMeasurementId && (
@@ -168,10 +213,12 @@ const criticalFontCss = `
           });
           gtag('js', new Date());
           gtag('config', gaMeasurementId, { send_page_view: false });
-          var gaScript = document.createElement('script');
-          gaScript.async = true;
-          gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaMeasurementId;
-          document.head.appendChild(gaScript);
+          window.loadAfterInitialRender(function () {
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaMeasurementId;
+            document.head.appendChild(gaScript);
+          });
         }
       </script>
     )}
@@ -179,10 +226,12 @@ const criticalFontCss = `
     {/* CookieYes consent banner — manages Consent Mode v2 updates + activates consent-gated tags. Production host only. */}
     <script is:inline>
       if (window.location.hostname === 'kpinfo.tech') {
-        var cookieYes = document.createElement('script');
-        cookieYes.id = 'cookieyes';
-        cookieYes.src = 'https://cdn-cookieyes.com/client_data/c662513a7c55e0d03f7898ac79bd6545/script.js';
-        document.head.appendChild(cookieYes);
+        window.loadAfterInitialRender(function () {
+          var cookieYes = document.createElement('script');
+          cookieYes.id = 'cookieyes';
+          cookieYes.src = 'https://cdn-cookieyes.com/client_data/c662513a7c55e0d03f7898ac79bd6545/script.js';
+          document.head.appendChild(cookieYes);
+        });
       }
     </script>
 
@@ -194,11 +243,15 @@ const criticalFontCss = `
     {clarityProjectId && (
       <script define:vars={{ clarityProjectId }}>
         if (window.location.hostname === 'kpinfo.tech') {
-          (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
-            t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-          })(window, document, 'clarity', 'script', clarityProjectId);
+          window.clarity = window.clarity || function () {
+            (window.clarity.q = window.clarity.q || []).push(arguments);
+          };
+          window.loadAfterInitialRender(function () {
+            var clarityScript = document.createElement('script');
+            clarityScript.async = true;
+            clarityScript.src = 'https://www.clarity.ms/tag/' + clarityProjectId;
+            document.head.appendChild(clarityScript);
+          });
         }
       </script>
     )}
