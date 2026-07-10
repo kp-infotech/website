@@ -29,6 +29,11 @@ if (!PUBLIC_SANITY_PROJECT_ID) {
 export default defineConfig({
   site: 'https://kpinfo.tech',
   adapter: cloudflare({ imageService: 'compile' }),
+  build: {
+    // The homepage's two small CSS files cost an extra render-blocking round
+    // trip on mobile. Inlining keeps the first paint on the HTML response.
+    inlineStylesheets: 'always',
+  },
   image: {
     // Allow remote images from Sanity CDN for build-time optimization
     remotePatterns: [
