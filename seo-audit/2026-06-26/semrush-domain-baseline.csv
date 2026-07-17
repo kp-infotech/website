@@ -1,0 +1,173 @@
+section,metric,value,notes
+# ─────────────────────────────────────────────────────────────────────────────
+# KP INFOTECH — SEMrush DOMAIN BASELINE (snapshot 2026-06-26)
+# Source: SEMrush MCP (overview_research/domain_rank, organic_research/*, backlink_research/*)
+# Live HTTP status columns added by direct curl verification on 2026-06-26.
+# ─────────────────────────────────────────────────────────────────────────────
+DOMAIN_OVERVIEW_IN,domain,kpinfo.tech,India database (in)
+DOMAIN_OVERVIEW_IN,semrush_rank,1697695,
+DOMAIN_OVERVIEW_IN,organic_keywords,65,
+DOMAIN_OVERVIEW_IN,organic_traffic_est,27,monthly est. sessions
+DOMAIN_OVERVIEW_IN,organic_cost_est,0,
+DOMAIN_OVERVIEW_IN,paid_keywords,0,
+DOMAIN_OVERVIEW_IN,paid_traffic,0,
+DOMAIN_OVERVIEW_US,domain,kpinfo.tech,US database (us)
+DOMAIN_OVERVIEW_US,semrush_rank,12108726,
+DOMAIN_OVERVIEW_US,organic_keywords,267,mostly long-tail positions 50-100
+DOMAIN_OVERVIEW_US,organic_traffic_est,1,
+DOMAIN_OVERVIEW_US,paid_keywords,0,
+BACKLINKS_OVERVIEW,total_backlinks,301,
+BACKLINKS_OVERVIEW,referring_domains,174,
+BACKLINKS_OVERVIEW,referring_ips,103,
+BACKLINKS_OVERVIEW,follow_links,233,
+BACKLINKS_OVERVIEW,nofollow_links,70,
+BACKLINKS_OVERVIEW,authority_score,16,
+BACKLINKS_OVERVIEW,trust_score,16,
+BACKLINKS_OVERVIEW,indexed_urls_with_links,285,many are pre-migration WordPress URLs
+BACKLINKS_OVERVIEW,referring_text_links,299,
+
+# ─────────────────────────────────────────────────────────────────────────────
+# TOP ORGANIC PAGES (India) — domain_organic_unique
+# url,organic_keywords,traffic_est,traffic_pct,live_status_2026-06-26
+TOP_PAGE,https://kpinfo.tech/,14,23,85.18,200
+TOP_PAGE,https://kpinfo.tech/what-is-customised-software/,4,2,7.40,404 ** LOST — was #2 traffic page
+TOP_PAGE,https://kpinfo.tech/5-best-modern-website-design-ideas/,4,1,3.70,404 ** LOST
+TOP_PAGE,https://kpinfo.tech/contact/,2,1,3.70,200
+TOP_PAGE,https://kpinfo.tech/sample-digital-marketing-strategy/,2,0,0.00,404 ** LOST
+TOP_PAGE,https://kpinfo.tech/services/website-design/,2,0,0.00,301->/services/custom-software-development/
+TOP_PAGE,https://kpinfo.tech/services/graphics-design/,1,0,0.00,301->/services/custom-software-development/
+TOP_PAGE,https://kpinfo.tech/casestudy/,1,0,0.00,301->/work/
+TOP_PAGE,https://kpinfo.tech/hire-wordpress-developer/,1,0,0.00,301->/services/custom-software-development/
+TOP_PAGE,https://kpinfo.tech/software-development-life-cycle-example/,1,0,0.00,404 ** LOST
+TOP_PAGE,https://kpinfo.tech/mobile-app-monetization-strategies/,3,0,0.00,301->/insights/mobile-app-monetization-strategies/
+TOP_PAGE,https://kpinfo.tech/about-kp-infotech-expertise/,1,0,0.00,404 ** LOST
+TOP_PAGE,https://kpinfo.tech/best-ecommerce-platform-for-small-business/,2,0,0.00,404 ** LOST
+TOP_PAGE,https://kpinfo.tech/applications-based-on-cloud-computing/,2,0,0.00,404 ** LOST
+TOP_PAGE,https://kpinfo.tech/database-design-best-practices/,3,0,0.00,301->/insights/database-design-best-practices/
+TOP_PAGE,https://kpinfo.tech/node-js-frameworks/,3,0,0.00,301->/insights/node-js-frameworks/
+TOP_PAGE,https://kpinfo.tech/business-process-automation-tools/,1,0,0.00,404 ** LOST (CPC $30.58 keyword)
+TOP_PAGE,https://kpinfo.tech/minimum-viable-product-examples/,1,0,0.00,301->/insights/minimum-viable-product-examples/
+TOP_PAGE,https://kpinfo.tech/kp-infotech-faqs/,2,0,0.00,301->/contact/
+TOP_PAGE,https://kpinfo.tech/cloud-deployment-models-diagram/,3,0,0.00,301->/insights/cloud-deployment-models-diagram/
+TOP_PAGE,https://kpinfo.tech/services/mobile-web-app/,1,0,0.00,301->/services/custom-software-development/
+TOP_PAGE,https://kpinfo.tech/how-to-make-a-website-mobile-friendly/,3,0,0.00,404 ** LOST
+TOP_PAGE,https://kpinfo.tech/architecture-of-a-mobile-app/,2,0,0.00,404 ** LOST
+TOP_PAGE,https://kpinfo.tech/services/erp-software/,1,0,0.00,200
+TOP_PAGE,https://kpinfo.tech/about/,2,0,0.00,200
+TOP_PAGE,https://kpinfo.tech/career/,1,0,0.00,301->/careers/
+TOP_PAGE,https://kpinfo.tech/software-development-process-phases/,2,0,0.00,404 ** LOST
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ORGANIC KEYWORDS (India) — domain_organic
+# keyword,position,prev_position,volume,cpc_usd,competition,kd,traffic_pct,ranking_url,live_status
+KEYWORD,kp infotech,2,2,170,0.00,0.01,,81.48,https://kpinfo.tech/,200 (branded)
+KEYWORD,modern website,23,23,720,0.44,0.14,,3.70,https://kpinfo.tech/5-best-modern-website-design-ideas/,404 ** LOST
+KEYWORD,kp technical,14,14,480,0.00,0.01,,3.70,https://kpinfo.tech/contact/,200
+KEYWORD,kp it,14,57,260,0.00,0.00,,3.70,https://kpinfo.tech/,200 (branded)
+KEYWORD,app monetization strategies,28,28,110,0.00,0.33,,0.00,https://kpinfo.tech/mobile-app-monetization-strategies/,301 ok
+KEYWORD,kc infotech,21,0,210,0.00,0.04,,0.00,https://kpinfo.tech/,200 (branded misspelling)
+KEYWORD,kp infotech (career),12,12,170,0.00,0.01,,0.00,https://kpinfo.tech/career/,301->/careers/
+KEYWORD,kp infotech (website-design),37,37,170,0.00,0.01,,0.00,https://kpinfo.tech/services/website-design/,301 ok
+KEYWORD,kp infotech (faqs),46,46,170,0.00,0.01,,0.00,https://kpinfo.tech/kp-infotech-faqs/,301->/contact/
+KEYWORD,kp infotech (about-expertise),54,54,170,0.00,0.01,,0.00,https://kpinfo.tech/about-kp-infotech-expertise/,404 ** LOST
+KEYWORD,kp infotech (casestudy),63,63,170,0.00,0.01,,0.00,https://kpinfo.tech/casestudy/,301->/work/
+KEYWORD,kp infotech (erp),64,64,170,0.00,0.01,,0.00,https://kpinfo.tech/services/erp-software/,200
+KEYWORD,kp infotech (graphics),65,65,170,0.00,0.01,,0.00,https://kpinfo.tech/services/graphics-design/,301 ok
+KEYWORD,kp infotech (hire-wp),67,67,170,0.00,0.01,,0.00,https://kpinfo.tech/hire-wordpress-developer/,301 ok
+KEYWORD,kp infotech (mobile-web-app),68,68,170,0.00,0.01,,0.00,https://kpinfo.tech/services/mobile-web-app/,301 ok
+KEYWORD,ker infotech,41,41,140,0.00,0.03,,0.00,https://kpinfo.tech/,200 (branded misspelling)
+KEYWORD,kp digital,18,37,140,0.00,0.02,,0.00,https://kpinfo.tech/,200 (branded)
+KEYWORD,modern website design,48,48,880,0.52,0.08,,0.00,https://kpinfo.tech/5-best-modern-website-design-ideas/,404 ** LOST
+KEYWORD,database design principles,37,37,110,0.00,0.04,,0.00,https://kpinfo.tech/database-design-best-practices/,301 ok
+KEYWORD,digital marketing strategy example,61,61,170,0.75,0.09,,0.00,https://kpinfo.tech/sample-digital-marketing-strategy/,404 ** LOST
+KEYWORD,key info technologies,40,40,110,0.00,0.02,,0.00,https://kpinfo.tech/,200 (branded)
+KEYWORD,ecommerce platforms for small business,45,45,110,0.68,0.01,,0.00,https://kpinfo.tech/best-ecommerce-platform-for-small-business/,404 ** LOST
+KEYWORD,a database should be designed to allow providing,19,19,140,0.00,0.00,,0.00,https://kpinfo.tech/database-design-best-practices/,301 ok
+KEYWORD,digital marketing strategy ideas,80,80,260,0.58,0.18,,0.00,https://kpinfo.tech/sample-digital-marketing-strategy/,404 ** LOST
+KEYWORD,small business ecommerce,63,63,140,0.30,0.33,,0.00,https://kpinfo.tech/best-ecommerce-platform-for-small-business/,404 ** LOST
+KEYWORD,kp website,13,13,110,0.00,0.33,,0.00,https://kpinfo.tech/,200 (branded)
+KEYWORD,process automation software,42,42,210,30.58,0.02,,0.00,https://kpinfo.tech/business-process-automation-tools/,404 ** LOST (high CPC)
+KEYWORD,public cloud diagram,31,31,880,0.00,0.33,,0.00,https://kpinfo.tech/cloud-deployment-models-diagram/,301 ok
+KEYWORD,mobile application architecture,71,71,320,0.37,0.01,,0.00,https://kpinfo.tech/architecture-of-a-mobile-app/,404 ** LOST
+KEYWORD,most viable product,35,35,110,0.00,0.01,,0.00,https://kpinfo.tech/minimum-viable-product-examples/,301 ok
+KEYWORD,kkv infotech,69,69,170,0.00,0.33,,0.00,https://kpinfo.tech/,200 (branded misspelling)
+KEYWORD,custom software,77,77,1000,0.84,0.08,,0.00,https://kpinfo.tech/what-is-customised-software/,404 ** LOST (vol 1000)
+KEYWORD,node js framework list,67,67,110,0.00,0.02,,0.00,https://kpinfo.tech/node-js-frameworks/,301 ok
+KEYWORD,pk infotech,46,46,140,0.00,0.00,,0.00,https://kpinfo.tech/,200 (branded misspelling)
+KEYWORD,node js framework,36,36,880,0.83,0.02,,0.00,https://kpinfo.tech/node-js-frameworks/,301 ok
+KEYWORD,kp technologies,48,48,480,0.00,0.01,,0.00,https://kpinfo.tech/,200 (branded)
+KEYWORD,knp infotech,32,32,210,0.00,0.33,,0.00,https://kpinfo.tech/,200 (branded misspelling)
+KEYWORD,what is custom software,70,70,210,0.00,0.33,,0.00,https://kpinfo.tech/what-is-customised-software/,404 ** LOST
+KEYWORD,mobile app architecture,88,88,320,0.00,0.01,,0.00,https://kpinfo.tech/architecture-of-a-mobile-app/,404 ** LOST
+KEYWORD,private cloud diagram,35,35,720,0.00,0.33,,0.00,https://kpinfo.tech/cloud-deployment-models-diagram/,301 ok
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ORGANIC COMPETITORS (India) — domain_organic_organic (top, by relevance)
+# domain,competitor_relevance,common_keywords,organic_keywords,organic_traffic
+COMPETITOR,kpinfotech.co.in,0.49,2,31,101
+COMPETITOR,kpretails.com,0.44,1,12,56
+COMPETITOR,myth.digital,0.26,1,14,2
+COMPETITOR,kpitexperts.com,0.12,1,4,8
+COMPETITOR,kptechtools.com,0.12,1,9,258
+COMPETITOR,kptech.co.in,0.11,1,27,58
+COMPETITOR,kpdigitalworld.com,0.10,1,22,149
+COMPETITOR,kptechnologiesindia.com,0.10,1,11,227
+COMPETITOR,kp.digital,0.10,1,15,826
+COMPETITOR,gigster.com,0.06,1,50,610
+COMPETITOR,arkbauer.com,0.05,1,26,422
+COMPETITOR,atomicobject.com,0.01,1,584,1750
+COMPETITOR,tadabase.io,0.01,1,544,668
+COMPETITOR,dac.digital,0.02,1,124,314
+COMPETITOR,multishoring.com,0.03,1,217,196
+COMPETITOR,sam-solutions.com,0.00,1,845,1863
+NOTE,competitor_interpretation,Most "competitors" are brand-name collisions (kp* domains) not true service competitors. True service competitors for the new positioning (atomicobject.com / gigster.com / tadabase.io / arkbauer.com / sam-solutions.com / multishoring.com) rank for custom-software & app-dev terms and are the relevant benchmark set.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# BACKLINKED PAGES — backlinks_pages (source_url,backlinks,ref_domains,semrush_seen_code,live_status_2026-06-26)
+BACKLINK_PAGE,https://kpinfo.tech/,137,67,200,200
+BACKLINK_PAGE,http://kpinfo.tech/,42,29,301,301->https (ok)
+BACKLINK_PAGE,https://kpinfo.tech/erp-software/,14,12,301,301->/services/erp-software/ (ok)
+BACKLINK_PAGE,https://kpinfo.tech/data-visualization-best-practices/,12,3,403,404 ** LOST (12 backlinks)
+BACKLINK_PAGE,https://kpinfo.tech/inventory-management-best-practices/,8,3,200,301->/insights/inventory-management-best-practices/ (ok)
+BACKLINK_PAGE,https://kpinfo.tech/business-process-improvement-methods/,7,6,403,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/best-ecommerce-platform-for-small-business/,6,6,403,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/mobile-web-app/,5,3,301,301->/services/custom-software-development/ (ok)
+BACKLINK_PAGE,https://kpinfo.tech/best-seo-tools-for-small-businesses/,4,3,200,301->/insights/best-seo-tools-for-small-businesses/ (ok)
+BACKLINK_PAGE,https://kpinfo.tech/how-to-choose-the-right-digital-marketing-channels-for-your-business/,4,4,403,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/how-to-make-a-website-mobile-friendly/,4,3,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/requirements-gathering-techniques/,4,1,404,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/graphics-design/,3,2,403,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/odoo-erp-complete-guide/,3,2,200,301->/insights/odoo-erp-complete-guide/ (ok)
+BACKLINK_PAGE,https://kpinfo.tech/on-premise-vs-cloud-erp/,3,2,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/web-design-company/,3,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/affordable-web-hosting-solutions-for-businesses/,2,2,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/analytics-and-data-visualization/,2,2,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/digital-marketing-for-startups/,2,2,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/digital-transformation-roadmap/,2,2,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/how-to-choose-erp-system/,2,2,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/how-to-create-brand-guidelines/,2,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/odoo-crm/,2,2,301,301->/services/erp-software/ (ok)
+BACKLINK_PAGE,https://kpinfo.tech/scalable-system-architecture/,2,2,403,301->/insights/scalable-system-architecture/ (ok)
+BACKLINK_PAGE,https://kpinfo.tech/web-application-security-guide/,2,2,404,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/website-and-app-development-company/,2,2,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/website-design/,2,2,301,404 ** LOST (root /website-design/ now 404; only /services/website-design/ is redirected)
+BACKLINK_PAGE,https://kpinfo.tech/analytics-in-banking-industry/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/architecture-of-a-mobile-app/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/b-2-b-lead-generation-strategies/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/benefits-of-erp/,1,1,403,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/business-process-automation-examples/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/business-process-automation-tools/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/erp-for-retail-stores/,1,1,200,301->/insights/erp-for-retail-stores/ (ok)
+BACKLINK_PAGE,https://kpinfo.tech/erp-implementation-best-practices/,1,1,403,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/erp-solutions-for-small-businesses/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/hire-wordpress-developer/,1,1,301,301->/services/custom-software-development/ (ok)
+BACKLINK_PAGE,https://kpinfo.tech/how-to-create-a-process-map/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/how-to-increase-online-sales/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/how-to-use-odoo-crm-for-effective-customer-relationships/,1,1,403,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/mobile-app-monetization-strategies/,1,1,200,301->/insights/... (ok)
+BACKLINK_PAGE,https://kpinfo.tech/mobile-app-testing-checklist/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/optimizing-cloud-computing/,1,1,403,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/privacy-policy-2/,1,1,404,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/software-development-process-phases/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/website-development-for-startups/,1,1,200,404 ** LOST
+BACKLINK_PAGE,https://kpinfo.tech/what-is-customised-software/,1,1,200,404 ** LOST

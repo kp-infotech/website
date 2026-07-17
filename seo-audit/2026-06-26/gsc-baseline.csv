@@ -1,0 +1,32 @@
+page,query,clicks,impressions,ctr,avg_position,country,device,date_range,notes
+# ─────────────────────────────────────────────────────────────────────────────
+# GOOGLE SEARCH CONSOLE BASELINE — TEMPLATE (NOT AUTO-FILLED)
+# Status 2026-06-26: No Google Search Console connector/MCP is available in this environment,
+# and the GSC API requires OAuth against the verified property. SEMrush (semrush-domain-baseline.csv)
+# is used as the proxy ranking baseline for this audit.
+#
+# ACTION FOR HUMAN: Export the three period sets below from https://search.google.com/search-console
+# (property: kpinfo.tech) and paste rows under each section header, OR share read access so this
+# can be pulled via API on the next pass. This file is the agreed schema for that export.
+#
+# Recommended exports (Performance > Search results > Export):
+#   1) PAGES  — last 28 days, last 3 months, and 3-month-vs-previous comparison
+#   2) QUERIES — same periods
+#   3) Filter device + country (India primary) where useful
+#   4) Page Indexing report — count of Indexed / Crawled-not-indexed / Discovered-not-indexed / 404 (excluded)
+#   5) Manually flag any 404s GSC reports for the 42 legacy URLs in redirect-risk-check.md
+# ─────────────────────────────────────────────────────────────────────────────
+# SECTION A — TOP PAGES (last 28 days)
+# (paste rows: page,,clicks,impressions,ctr,avg_position,country,device,2026-05-29_to_2026-06-26,)
+# SECTION B — TOP QUERIES (last 28 days)
+# (paste rows: ,query,clicks,impressions,ctr,avg_position,country,device,2026-05-29_to_2026-06-26,)
+# SECTION C — LAST 3 MONTHS + COMPARISON vs PRIOR 3 MONTHS
+# (paste rows with date_range = 2026-03-26_to_2026-06-26 and a delta note)
+# SECTION D — COVERAGE / 404 WATCHLIST (cross-check against redirect-risk-check.md)
+# (paste any GSC-reported 404 or "Crawled - currently not indexed" URLs here)
+#
+# KEY THINGS TO CONFIRM ONCE GSC DATA IS AVAILABLE:
+# - Whether GSC still shows impressions for the 42 legacy 404 URLs (urgency signal for redirects)
+# - Whether the 5 service pages are "Indexed" (submitted & indexed) in the Page Indexing report
+# - Branded "kp infotech" clicks/CTR trend across the migration date
+# - Any "Page with redirect" or "Soft 404" entries
