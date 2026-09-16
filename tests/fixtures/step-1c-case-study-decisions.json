@@ -1,0 +1,34 @@
+{
+  "decision": "Step 1C user-authorized removal: no reliable evidence of a genuine historically published project found in Step 1B repository/CMS/history review. Normal 404, no 410 or replacement.",
+  "evidence": "docs/seo-review/step-1d-release-candidate.md",
+  "activePublishedSlugs": [
+    "cloud-cost-optimization-industrial-sme",
+    "collaboration-platform-distributed-teams",
+    "digital-banking-platform",
+    "omnichannel-ecommerce-platform",
+    "virtual-tours-ai-listings"
+  ],
+  "removedCaseStudySlugs": [
+    "ai-shopping-app-visual-search",
+    "ar-furniture-configurator",
+    "cloud-ehr-multi-specialty",
+    "crypto-trading-platform",
+    "digital-wallet-p2p-payments",
+    "fleet-management-route-optimization",
+    "food-delivery-platform",
+    "insurance-claims-ai-portal",
+    "inventory-warehouse-management",
+    "investment-portfolio-app",
+    "learning-management-system-university",
+    "patient-engagement-app",
+    "production-planning-mrp-automotive",
+    "property-management-erp-portal",
+    "quality-control-dashboard-spc",
+    "saas-mvp-project-management",
+    "secure-telemedicine-platform",
+    "shipment-tracking-last-mile",
+    "student-portal-mobile-app",
+    "supplier-management-procurement",
+    "warehouse-automation-robotics"
+  ]
+}

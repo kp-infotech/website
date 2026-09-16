@@ -1,0 +1,666 @@
+{
+  "captured": "2026-09-16",
+  "note": "Pre-Step-1 working-tree behavior snapshot; protects existing mappings, does not approve their intent or guarantee live target health.",
+  "exactCount": 56,
+  "blogSlugs": [
+    "angular-vs-react",
+    "best-hr-software-for-startups",
+    "best-seo-tools-for-small-businesses",
+    "best-web-application-frameworks",
+    "business-process-automation-tools",
+    "business-process-improvement-methods",
+    "cloud-deployment-models-diagram",
+    "database-design-best-practices",
+    "devops-best-practices",
+    "erp-for-retail-stores",
+    "erp-implementation-cost",
+    "how-to-choose-erp-system",
+    "inventory-management-best-practices",
+    "minimum-viable-product-examples",
+    "mobile-app-monetization-strategies",
+    "node-js-frameworks",
+    "odoo-erp-complete-guide",
+    "on-premise-vs-cloud-erp",
+    "scalable-system-architecture",
+    "what-is-custom-software"
+  ],
+  "caseStudySlugs": [
+    "ai-shopping-app-visual-search",
+    "ar-furniture-configurator",
+    "cloud-ehr-multi-specialty",
+    "collaboration-platform-distributed-teams",
+    "crypto-trading-platform",
+    "digital-banking-platform",
+    "digital-wallet-p2p-payments",
+    "fleet-management-route-optimization",
+    "food-delivery-platform",
+    "insurance-claims-ai-portal",
+    "inventory-warehouse-management",
+    "investment-portfolio-app",
+    "learning-management-system-university",
+    "omnichannel-ecommerce-platform",
+    "patient-engagement-app",
+    "production-planning-mrp-automotive",
+    "property-management-erp-portal",
+    "quality-control-dashboard-spc",
+    "saas-mvp-project-management",
+    "secure-telemedicine-platform",
+    "shipment-tracking-last-mile",
+    "student-portal-mobile-app",
+    "supplier-management-procurement",
+    "virtual-tours-ai-listings",
+    "warehouse-automation-robotics"
+  ],
+  "worker": [
+    {
+      "source": "/services/web-application-development/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/services/erp-solutions/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/services/ai-automation/",
+      "target": "/services/ai-automation-agents/"
+    },
+    {
+      "source": "/services/mobile-app-development/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/services/ui-ux-design/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/services/website-design/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/services/graphics-design/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/services/mobile-web-app/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/services/erp-software/odoo-crm/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/erp-software/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/odoo-crm/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/mobile-web-app/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/what-is-customised-software/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/business-process-automation-tools/",
+      "target": "/services/business-automation/"
+    },
+    {
+      "source": "/5-best-modern-website-design-ideas/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/data-visualization-best-practices/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/business-process-improvement-methods/",
+      "target": "/services/business-automation/"
+    },
+    {
+      "source": "/best-ecommerce-platform-for-small-business/",
+      "target": "/industries/retail-ecommerce/"
+    },
+    {
+      "source": "/about-kp-infotech-expertise/",
+      "target": "/about/"
+    },
+    {
+      "source": "/on-premise-vs-cloud-erp/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/web-design-company/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/how-to-choose-erp-system/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/how-to-make-a-website-mobile-friendly/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/requirements-gathering-techniques/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/architecture-of-a-mobile-app/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/affordable-web-hosting-solutions-for-businesses/",
+      "target": "/services/cloud-devops/"
+    },
+    {
+      "source": "/web-application-security-guide/",
+      "target": "/services/cloud-devops/"
+    },
+    {
+      "source": "/analytics-and-data-visualization/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/digital-transformation-roadmap/",
+      "target": "/services/business-automation/"
+    },
+    {
+      "source": "/digital-marketing-for-startups/",
+      "target": "/industries/startups/"
+    },
+    {
+      "source": "/website-and-app-development-company/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/website-design/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/applications-based-on-cloud-computing/",
+      "target": "/services/cloud-devops/"
+    },
+    {
+      "source": "/software-development-process-phases/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/software-development-life-cycle-example/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/benefits-of-erp/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/erp-solutions-for-small-businesses/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/erp-implementation-best-practices/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/how-to-use-odoo-crm-for-effective-customer-relationships/",
+      "target": "/services/erp-software/"
+    },
+    {
+      "source": "/business-process-automation-examples/",
+      "target": "/services/business-automation/"
+    },
+    {
+      "source": "/analytics-in-banking-industry/",
+      "target": "/industries/finance/"
+    },
+    {
+      "source": "/mobile-app-testing-checklist/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/how-to-create-a-process-map/",
+      "target": "/services/business-automation/"
+    },
+    {
+      "source": "/how-to-increase-online-sales/",
+      "target": "/industries/retail-ecommerce/"
+    },
+    {
+      "source": "/optimizing-cloud-computing/",
+      "target": "/services/cloud-devops/"
+    },
+    {
+      "source": "/website-development-for-startups/",
+      "target": "/industries/startups/"
+    },
+    {
+      "source": "/privacy-policy-2/",
+      "target": "/privacy-policy/"
+    },
+    {
+      "source": "/how-to-make-a-website/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/best-practices-for-devops/",
+      "target": "/services/cloud-devops/"
+    },
+    {
+      "source": "/career/",
+      "target": "/careers/"
+    },
+    {
+      "source": "/blogs/",
+      "target": "/insights/"
+    },
+    {
+      "source": "/casestudy/",
+      "target": "/work/"
+    },
+    {
+      "source": "/hire-wordpress-developer/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/hire-laravel-developer/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/hire-react-js-developer/",
+      "target": "/services/custom-software-development/"
+    },
+    {
+      "source": "/kp-infotech-faqs/",
+      "target": "/contact/"
+    },
+    {
+      "source": "/angular-vs-react/",
+      "target": "/insights/angular-vs-react/"
+    },
+    {
+      "source": "/blogs/angular-vs-react/",
+      "target": "/insights/angular-vs-react/"
+    },
+    {
+      "source": "/best-hr-software-for-startups/",
+      "target": "/insights/best-hr-software-for-startups/"
+    },
+    {
+      "source": "/blogs/best-hr-software-for-startups/",
+      "target": "/insights/best-hr-software-for-startups/"
+    },
+    {
+      "source": "/best-seo-tools-for-small-businesses/",
+      "target": "/insights/best-seo-tools-for-small-businesses/"
+    },
+    {
+      "source": "/blogs/best-seo-tools-for-small-businesses/",
+      "target": "/insights/best-seo-tools-for-small-businesses/"
+    },
+    {
+      "source": "/best-web-application-frameworks/",
+      "target": "/insights/best-web-application-frameworks/"
+    },
+    {
+      "source": "/blogs/best-web-application-frameworks/",
+      "target": "/insights/best-web-application-frameworks/"
+    },
+    {
+      "source": "/blogs/business-process-automation-tools/",
+      "target": "/insights/business-process-automation-tools/"
+    },
+    {
+      "source": "/blogs/business-process-improvement-methods/",
+      "target": "/insights/business-process-improvement-methods/"
+    },
+    {
+      "source": "/cloud-deployment-models-diagram/",
+      "target": "/insights/cloud-deployment-models-diagram/"
+    },
+    {
+      "source": "/blogs/cloud-deployment-models-diagram/",
+      "target": "/insights/cloud-deployment-models-diagram/"
+    },
+    {
+      "source": "/database-design-best-practices/",
+      "target": "/insights/database-design-best-practices/"
+    },
+    {
+      "source": "/blogs/database-design-best-practices/",
+      "target": "/insights/database-design-best-practices/"
+    },
+    {
+      "source": "/devops-best-practices/",
+      "target": "/insights/devops-best-practices/"
+    },
+    {
+      "source": "/blogs/devops-best-practices/",
+      "target": "/insights/devops-best-practices/"
+    },
+    {
+      "source": "/erp-for-retail-stores/",
+      "target": "/insights/erp-for-retail-stores/"
+    },
+    {
+      "source": "/blogs/erp-for-retail-stores/",
+      "target": "/insights/erp-for-retail-stores/"
+    },
+    {
+      "source": "/erp-implementation-cost/",
+      "target": "/insights/erp-implementation-cost/"
+    },
+    {
+      "source": "/blogs/erp-implementation-cost/",
+      "target": "/insights/erp-implementation-cost/"
+    },
+    {
+      "source": "/blogs/how-to-choose-erp-system/",
+      "target": "/insights/how-to-choose-erp-system/"
+    },
+    {
+      "source": "/inventory-management-best-practices/",
+      "target": "/insights/inventory-management-best-practices/"
+    },
+    {
+      "source": "/blogs/inventory-management-best-practices/",
+      "target": "/insights/inventory-management-best-practices/"
+    },
+    {
+      "source": "/minimum-viable-product-examples/",
+      "target": "/insights/minimum-viable-product-examples/"
+    },
+    {
+      "source": "/blogs/minimum-viable-product-examples/",
+      "target": "/insights/minimum-viable-product-examples/"
+    },
+    {
+      "source": "/mobile-app-monetization-strategies/",
+      "target": "/insights/mobile-app-monetization-strategies/"
+    },
+    {
+      "source": "/blogs/mobile-app-monetization-strategies/",
+      "target": "/insights/mobile-app-monetization-strategies/"
+    },
+    {
+      "source": "/node-js-frameworks/",
+      "target": "/insights/node-js-frameworks/"
+    },
+    {
+      "source": "/blogs/node-js-frameworks/",
+      "target": "/insights/node-js-frameworks/"
+    },
+    {
+      "source": "/odoo-erp-complete-guide/",
+      "target": "/insights/odoo-erp-complete-guide/"
+    },
+    {
+      "source": "/blogs/odoo-erp-complete-guide/",
+      "target": "/insights/odoo-erp-complete-guide/"
+    },
+    {
+      "source": "/blogs/on-premise-vs-cloud-erp/",
+      "target": "/insights/on-premise-vs-cloud-erp/"
+    },
+    {
+      "source": "/scalable-system-architecture/",
+      "target": "/insights/scalable-system-architecture/"
+    },
+    {
+      "source": "/blogs/scalable-system-architecture/",
+      "target": "/insights/scalable-system-architecture/"
+    },
+    {
+      "source": "/what-is-custom-software/",
+      "target": "/insights/what-is-custom-software/"
+    },
+    {
+      "source": "/blogs/what-is-custom-software/",
+      "target": "/insights/what-is-custom-software/"
+    },
+    {
+      "source": "/casestudy/ai-shopping-app-visual-search/",
+      "target": "/work/ai-shopping-app-visual-search/"
+    },
+    {
+      "source": "/casestudy/ar-furniture-configurator/",
+      "target": "/work/ar-furniture-configurator/"
+    },
+    {
+      "source": "/casestudy/cloud-ehr-multi-specialty/",
+      "target": "/work/cloud-ehr-multi-specialty/"
+    },
+    {
+      "source": "/casestudy/collaboration-platform-distributed-teams/",
+      "target": "/work/collaboration-platform-distributed-teams/"
+    },
+    {
+      "source": "/casestudy/crypto-trading-platform/",
+      "target": "/work/crypto-trading-platform/"
+    },
+    {
+      "source": "/casestudy/digital-banking-platform/",
+      "target": "/work/digital-banking-platform/"
+    },
+    {
+      "source": "/casestudy/digital-wallet-p2p-payments/",
+      "target": "/work/digital-wallet-p2p-payments/"
+    },
+    {
+      "source": "/casestudy/fleet-management-route-optimization/",
+      "target": "/work/fleet-management-route-optimization/"
+    },
+    {
+      "source": "/casestudy/food-delivery-platform/",
+      "target": "/work/food-delivery-platform/"
+    },
+    {
+      "source": "/casestudy/insurance-claims-ai-portal/",
+      "target": "/work/insurance-claims-ai-portal/"
+    },
+    {
+      "source": "/casestudy/inventory-warehouse-management/",
+      "target": "/work/inventory-warehouse-management/"
+    },
+    {
+      "source": "/casestudy/investment-portfolio-app/",
+      "target": "/work/investment-portfolio-app/"
+    },
+    {
+      "source": "/casestudy/learning-management-system-university/",
+      "target": "/work/learning-management-system-university/"
+    },
+    {
+      "source": "/casestudy/omnichannel-ecommerce-platform/",
+      "target": "/work/omnichannel-ecommerce-platform/"
+    },
+    {
+      "source": "/casestudy/patient-engagement-app/",
+      "target": "/work/patient-engagement-app/"
+    },
+    {
+      "source": "/casestudy/production-planning-mrp-automotive/",
+      "target": "/work/production-planning-mrp-automotive/"
+    },
+    {
+      "source": "/casestudy/property-management-erp-portal/",
+      "target": "/work/property-management-erp-portal/"
+    },
+    {
+      "source": "/casestudy/quality-control-dashboard-spc/",
+      "target": "/work/quality-control-dashboard-spc/"
+    },
+    {
+      "source": "/casestudy/saas-mvp-project-management/",
+      "target": "/work/saas-mvp-project-management/"
+    },
+    {
+      "source": "/casestudy/secure-telemedicine-platform/",
+      "target": "/work/secure-telemedicine-platform/"
+    },
+    {
+      "source": "/casestudy/shipment-tracking-last-mile/",
+      "target": "/work/shipment-tracking-last-mile/"
+    },
+    {
+      "source": "/casestudy/student-portal-mobile-app/",
+      "target": "/work/student-portal-mobile-app/"
+    },
+    {
+      "source": "/casestudy/supplier-management-procurement/",
+      "target": "/work/supplier-management-procurement/"
+    },
+    {
+      "source": "/casestudy/virtual-tours-ai-listings/",
+      "target": "/work/virtual-tours-ai-listings/"
+    },
+    {
+      "source": "/casestudy/warehouse-automation-robotics/",
+      "target": "/work/warehouse-automation-robotics/"
+    }
+  ],
+  "staticRules": [
+    {
+      "source": "/services/website-design/",
+      "target": "/services/web-development/",
+      "status": 301
+    },
+    {
+      "source": "/services/graphics-design/",
+      "target": "/services/ui-ux-design/",
+      "status": 301
+    },
+    {
+      "source": "/services/erp-solutions/",
+      "target": "/services/erp-software/",
+      "status": 301
+    },
+    {
+      "source": "/services/erp-software/odoo-crm/",
+      "target": "/services/erp-software/",
+      "status": 301
+    },
+    {
+      "source": "/services/mobile-web-app/",
+      "target": "/services/mobile-apps/",
+      "status": 301
+    },
+    {
+      "source": "/services/marketing/",
+      "target": "/services/digital-marketing/",
+      "status": 301
+    },
+    {
+      "source": "/blogs/",
+      "target": "/insights/",
+      "status": 301
+    },
+    {
+      "source": "/cloud-deployment-models-diagram/",
+      "target": "/insights/cloud-deployment-models-diagram/",
+      "status": 301
+    },
+    {
+      "source": "/erp-for-retail-stores/",
+      "target": "/insights/erp-for-retail-stores/",
+      "status": 301
+    },
+    {
+      "source": "/angular-vs-react/",
+      "target": "/insights/angular-vs-react/",
+      "status": 301
+    },
+    {
+      "source": "/database-design-best-practices/",
+      "target": "/insights/database-design-best-practices/",
+      "status": 301
+    },
+    {
+      "source": "/node-js-frameworks/",
+      "target": "/insights/node-js-frameworks/",
+      "status": 301
+    },
+    {
+      "source": "/best-hr-software-for-startups/",
+      "target": "/insights/best-hr-software-for-startups/",
+      "status": 301
+    },
+    {
+      "source": "/best-web-application-frameworks/",
+      "target": "/insights/best-web-application-frameworks/",
+      "status": 301
+    },
+    {
+      "source": "/erp-implementation-cost/",
+      "target": "/insights/erp-implementation-cost/",
+      "status": 301
+    },
+    {
+      "source": "/scalable-system-architecture/",
+      "target": "/insights/scalable-system-architecture/",
+      "status": 301
+    },
+    {
+      "source": "/odoo-erp-complete-guide/",
+      "target": "/insights/odoo-erp-complete-guide/",
+      "status": 301
+    },
+    {
+      "source": "/inventory-management-best-practices/",
+      "target": "/insights/inventory-management-best-practices/",
+      "status": 301
+    },
+    {
+      "source": "/best-seo-tools-for-small-businesses/",
+      "target": "/insights/best-seo-tools-for-small-businesses/",
+      "status": 301
+    },
+    {
+      "source": "/mobile-app-monetization-strategies/",
+      "target": "/insights/mobile-app-monetization-strategies/",
+      "status": 301
+    },
+    {
+      "source": "/minimum-viable-product-examples/",
+      "target": "/insights/minimum-viable-product-examples/",
+      "status": 301
+    },
+    {
+      "source": "/casestudy/",
+      "target": "/work/",
+      "status": 301
+    },
+    {
+      "source": "/casestudy/*",
+      "target": "/work/:splat",
+      "status": 301
+    },
+    {
+      "source": "/career/",
+      "target": "/careers/",
+      "status": 301
+    },
+    {
+      "source": "/hire-wordpress-developer/",
+      "target": "/services/web-development/",
+      "status": 301
+    },
+    {
+      "source": "/hire-laravel-developer/",
+      "target": "/services/web-development/",
+      "status": 301
+    },
+    {
+      "source": "/hire-react-js-developer/",
+      "target": "/services/web-development/",
+      "status": 301
+    },
+    {
+      "source": "/kp-infotech-faqs/",
+      "target": "/contact/",
+      "status": 301
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 // GROQ Queries for KP Infotech website
 
+import { PUBLIC_CASE_STUDY_GROQ_FILTER } from './public-case-study-policy.js';
+
 import {
   FINAL_BLOG_CATEGORY_GROQ_FILTER,
   PUBLIC_BLOG_GROQ_FILTER,
@@ -76,7 +78,7 @@ export const homepageDataQuery = `
     iconName,
     "iconCustom": coalesce(iconCustom, icon)
   },
-  "featuredWork": *[_type == "caseStudy" && featured == true] | order(_createdAt desc)[0...4] {
+  "featuredWork": *[${PUBLIC_CASE_STUDY_GROQ_FILTER} && featured == true] | order(_createdAt desc)[0...4] {
     _id,
     title,
     slug,
@@ -144,7 +146,7 @@ export const serviceBySlugQuery = `
     faqHeading,
     faqs,
     workHeading,
-    relatedWork[]->{
+    "relatedWork": (relatedWork[]->)[${PUBLIC_CASE_STUDY_GROQ_FILTER}]{
       _id,
       title,
       slug,
@@ -218,7 +220,7 @@ export const industryBySlugQuery = `
     solutions,
     servicesHeading,
     workHeading,
-    relatedWork[]->{
+    "relatedWork": (relatedWork[]->)[${PUBLIC_CASE_STUDY_GROQ_FILTER}]{
       _id,
       title,
       slug,
@@ -244,7 +246,7 @@ export const industryBySlugQuery = `
 // Case Studies
 // ============================================
 export const allCaseStudiesQuery = `
-  *[_type == "caseStudy"] | order(coalesce(order, 999) asc, _createdAt desc) {
+  *[${PUBLIC_CASE_STUDY_GROQ_FILTER}] | order(coalesce(order, 999) asc, _createdAt desc) {
     _id,
     title,
     slug,
@@ -268,7 +270,7 @@ export const allCaseStudiesQuery = `
 `;
 
 export const featuredCaseStudiesQuery = `
-  *[_type == "caseStudy" && featured == true] | order(_createdAt desc)[0...4] {
+  *[${PUBLIC_CASE_STUDY_GROQ_FILTER} && featured == true] | order(_createdAt desc)[0...4] {
     _id,
     title,
     slug,
@@ -283,7 +285,7 @@ export const featuredCaseStudiesQuery = `
 `;
 
 export const caseStudyBySlugQuery = `
-  *[_type == "caseStudy" && slug.current == $slug][0] {
+  *[${PUBLIC_CASE_STUDY_GROQ_FILTER} && slug.current == $slug][0] {
     _id,
     _createdAt,
     _updatedAt,
@@ -360,7 +362,7 @@ export const caseStudyBySlugQuery = `
     seoTitle,
     seoDescription,
     order,
-    "nextProject": *[_type == "caseStudy" && slug.current != $slug] | order(coalesce(order, 999) asc, _createdAt desc)[0] {
+    "nextProject": *[${PUBLIC_CASE_STUDY_GROQ_FILTER} && slug.current != $slug] | order(coalesce(order, 999) asc, _createdAt desc)[0] {
       _id,
       title,
       slug,

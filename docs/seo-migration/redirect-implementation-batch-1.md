@@ -7,7 +7,7 @@ Production redirects are implemented at the Cloudflare Worker layer.
 - `wrangler.toml` sets `main = "src/worker.js"`.
 - `src/worker.js` calls `getMigrationRedirectLocation()` from `src/worker/migration-redirects.js` before handing the request to Astro.
 - `src/worker/migration-redirects.js` is the redirect source of truth for this batch.
-- `public/_redirects` is retained as documentation/fallback for older deployment modes, but it is not the active source for this Worker deployment.
+- `public/_redirects` is also parsed by Cloudflare Workers static assets. Worker-first routes may subsequently reach the asset binding through Astro. Do not assume this file is inactive: keep overlapping destinations consistent. See `docs/seo-review/step-1d-release-candidate.md` for the isolated release scope and verification.
 
 Batch 1 uses exact 301 redirects only. It does not change Sanity content, metadata, schema, sitemap, robots/noindex behavior, canonicals, slugs, or page copy.
 

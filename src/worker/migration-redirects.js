@@ -64,32 +64,12 @@ const EXACT_REDIRECTS = new Map([
   ['/kp-infotech-faqs', '/contact/'],
 ]);
 
+// Reviewed Step 1C migrations only; unknown legacy projects use normal 404.
 const MIGRATED_CASE_STUDY_SLUGS = new Set([
-  'ai-shopping-app-visual-search',
-  'ar-furniture-configurator',
-  'cloud-ehr-multi-specialty',
   'collaboration-platform-distributed-teams',
-  'crypto-trading-platform',
   'digital-banking-platform',
-  'digital-wallet-p2p-payments',
-  'fleet-management-route-optimization',
-  'food-delivery-platform',
-  'insurance-claims-ai-portal',
-  'inventory-warehouse-management',
-  'investment-portfolio-app',
-  'learning-management-system-university',
   'omnichannel-ecommerce-platform',
-  'patient-engagement-app',
-  'production-planning-mrp-automotive',
-  'property-management-erp-portal',
-  'quality-control-dashboard-spc',
-  'saas-mvp-project-management',
-  'secure-telemedicine-platform',
-  'shipment-tracking-last-mile',
-  'student-portal-mobile-app',
-  'supplier-management-procurement',
   'virtual-tours-ai-listings',
-  'warehouse-automation-robotics',
 ]);
 
 export function getMigrationRedirectLocation(requestUrl) {

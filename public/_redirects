@@ -1,9 +1,9 @@
 # ─── Service page redirects (old WP slugs → new Astro slugs) ─────────────────
-/services/website-design/          /services/web-development/    301
-/services/graphics-design/         /services/ui-ux-design/       301
+/services/website-design/                  /services/custom-software-development/           301
+/services/graphics-design/                 /services/custom-software-development/           301
 /services/erp-solutions/           /services/erp-software/       301
 /services/erp-software/odoo-crm/   /services/erp-software/       301
-/services/mobile-web-app/          /services/mobile-apps/        301
+/services/mobile-web-app/                  /services/custom-software-development/           301
 /services/marketing/               /services/digital-marketing/  301
 
 # ─── Blog index ───────────────────────────────────────────────────────────────
@@ -30,13 +30,21 @@
 
 # ─── Old case study URLs ──────────────────────────────────────────────────────
 /casestudy/    /work/      301
-/casestudy/*   /work/:splat  301
+# Step 1C: exact existing migrations only; unknown projects must return normal 404.
+/casestudy/collaboration-platform-distributed-teams /work/collaboration-platform-distributed-teams/ 301
+/casestudy/collaboration-platform-distributed-teams/ /work/collaboration-platform-distributed-teams/ 301
+/casestudy/digital-banking-platform /work/digital-banking-platform/ 301
+/casestudy/digital-banking-platform/ /work/digital-banking-platform/ 301
+/casestudy/omnichannel-ecommerce-platform /work/omnichannel-ecommerce-platform/ 301
+/casestudy/omnichannel-ecommerce-platform/ /work/omnichannel-ecommerce-platform/ 301
+/casestudy/virtual-tours-ai-listings /work/virtual-tours-ai-listings/ 301
+/casestudy/virtual-tours-ai-listings/ /work/virtual-tours-ai-listings/ 301
 
 # ─── Legacy hire pages → services ────────────────────────────────────────────
 /career/                    /careers/                    301
-/hire-wordpress-developer/   /services/web-development/   301
-/hire-laravel-developer/     /services/web-development/   301
-/hire-react-js-developer/    /services/web-development/   301
+/hire-wordpress-developer/                 /services/custom-software-development/           301
+/hire-laravel-developer/                   /services/custom-software-development/           301
+/hire-react-js-developer/                  /services/custom-software-development/           301
 
 # ─── Old FAQ URL ──────────────────────────────────────────────────────────────
 /kp-infotech-faqs/   /contact/   301
