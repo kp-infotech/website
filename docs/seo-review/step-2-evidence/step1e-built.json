@@ -1,0 +1,64 @@
+{
+  "errors": [],
+  "articles": [
+    {
+      "path": "/insights/business-process-automation-tools/",
+      "canonical": "https://kpinfo.tech/insights/business-process-automation-tools/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true
+    },
+    {
+      "path": "/insights/business-process-improvement-methods/",
+      "canonical": "https://kpinfo.tech/insights/business-process-improvement-methods/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true
+    },
+    {
+      "path": "/insights/devops-best-practices/",
+      "canonical": "https://kpinfo.tech/insights/devops-best-practices/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true
+    },
+    {
+      "path": "/insights/how-to-choose-erp-system/",
+      "canonical": "https://kpinfo.tech/insights/how-to-choose-erp-system/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true
+    },
+    {
+      "path": "/insights/on-premise-vs-cloud-erp/",
+      "canonical": "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true
+    },
+    {
+      "path": "/insights/what-is-custom-software/",
+      "canonical": "https://kpinfo.tech/insights/what-is-custom-software/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true
+    }
+  ],
+  "redirects": [],
+  "deadInternalLinks": [],
+  "checkedAt": "2026-09-17T05:02:06.543Z",
+  "htmlFilesScanned": 57,
+  "sitemapPageCount": 56
+}

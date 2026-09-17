@@ -1,0 +1,83 @@
+
+> kpinfotech-website@0.0.1 seo:verify-redirects
+> node scripts/seo/verify-redirect-batch-1.mjs
+
+PASS redirect status constant is 301
+PASS Batch 1 /what-is-customised-software/
+PASS Batch 1 /business-process-automation-tools/
+PASS Batch 1 /5-best-modern-website-design-ideas/
+PASS Batch 1 /data-visualization-best-practices/
+PASS Batch 1 /business-process-improvement-methods/
+PASS Batch 1 /best-ecommerce-platform-for-small-business/
+PASS Batch 1 /about-kp-infotech-expertise/
+PASS Batch 1 /on-premise-vs-cloud-erp/
+PASS Batch 1 /web-design-company/
+PASS Batch 1 /how-to-choose-erp-system/
+PASS Batch 1 /how-to-make-a-website-mobile-friendly/
+PASS Batch 1 /requirements-gathering-techniques/
+PASS Batch 1 /architecture-of-a-mobile-app/
+PASS Batch 1 /affordable-web-hosting-solutions-for-businesses/
+PASS Batch 1 /web-application-security-guide/
+PASS Batch 1 /analytics-and-data-visualization/
+PASS Batch 1 /digital-transformation-roadmap/
+PASS Batch 1 /digital-marketing-for-startups/
+PASS Batch 1 /website-and-app-development-company/
+PASS Batch 1 /website-design/
+PASS Batch 1 /applications-based-on-cloud-computing/
+PASS Batch 1 /software-development-process-phases/
+PASS Batch 1 /software-development-life-cycle-example/
+PASS Batch 1 /benefits-of-erp/
+PASS Batch 1 /erp-solutions-for-small-businesses/
+PASS Batch 1 /erp-implementation-best-practices/
+PASS Batch 1 /how-to-use-odoo-crm-for-effective-customer-relationships/
+PASS Batch 1 /business-process-automation-examples/
+PASS Batch 1 /analytics-in-banking-industry/
+PASS Batch 1 /mobile-app-testing-checklist/
+PASS Batch 1 /how-to-create-a-process-map/
+PASS Batch 1 /how-to-increase-online-sales/
+PASS Batch 1 /optimizing-cloud-computing/
+PASS Batch 1 /website-development-for-startups/
+PASS Batch 1 /privacy-policy-2/
+PASS Batch 1 /how-to-make-a-website/
+PASS Batch 1 /best-practices-for-devops/
+PASS existing redirect /services/web-application-development/
+PASS existing redirect /services/erp-solutions/
+PASS existing redirect /services/ai-automation/
+PASS existing redirect /services/mobile-app-development/
+PASS existing redirect /services/ui-ux-design/
+PASS existing redirect /mobile-web-app/
+PASS existing redirect /odoo-crm/
+PASS existing redirect /career/
+PASS existing redirect /blogs/node-js-frameworks/
+PASS existing redirect /casestudy/virtual-tours-ai-listings/
+PASS manual review remains unredirected /graphics-design/
+PASS manual review remains unredirected /how-to-choose-the-right-digital-marketing-channels-for-your-business/
+PASS manual review remains unredirected /sample-digital-marketing-strategy/
+PASS manual review remains unredirected /how-to-create-brand-guidelines/
+PASS manual review remains unredirected /b-2-b-lead-generation-strategies/
+PASS no redirect chain at target /services/custom-software-development/
+PASS built target exists /services/custom-software-development/
+PASS no redirect chain at target /services/business-automation/
+PASS built target exists /services/business-automation/
+PASS no redirect chain at target /industries/retail-ecommerce/
+PASS built target exists /industries/retail-ecommerce/
+PASS no redirect chain at target /about/
+PASS built target exists /about/
+PASS no redirect chain at target /services/erp-software/
+PASS built target exists /services/erp-software/
+PASS no redirect chain at target /services/cloud-devops/
+PASS built target exists /services/cloud-devops/
+PASS no redirect chain at target /industries/startups/
+PASS built target exists /industries/startups/
+PASS no redirect chain at target /industries/finance/
+PASS built target exists /industries/finance/
+PASS no redirect chain at target /privacy-policy/
+PASS built target exists /privacy-policy/
+PASS no redirect chain at target /services/ai-automation-agents/
+PASS built target exists /services/ai-automation-agents/
+PASS no redirect chain at target /careers/
+PASS built target exists /careers/
+PASS no redirect chain at target /insights/node-js-frameworks/
+PASS built target exists /insights/node-js-frameworks/
+PASS no redirect chain at target /work/virtual-tours-ai-listings/
+PASS built target exists /work/virtual-tours-ai-listings/

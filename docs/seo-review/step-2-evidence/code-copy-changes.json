@@ -1,0 +1,127 @@
+[
+  {
+    "source": "src/pages/index.astro",
+    "old": "title=\"Custom Software, ERP, Automation & AI Solutions | KP Infotech\"",
+    "new": "title=\"Custom Software, Odoo ERP & Automation | KP Infotech\""
+  },
+  {
+    "source": "src/pages/services/index.astro",
+    "old": "title=\"B2B Software, ERP, Automation & AI Services\"",
+    "new": "title=\"Custom Software, ERP, AI & Cloud Services | KP Infotech\""
+  },
+  {
+    "source": "src/pages/about.astro",
+    "old": "title=\"About\"",
+    "new": "title=\"About KP Infotech | B2B Technology & Automation Partner\""
+  },
+  {
+    "source": "src/pages/contact.astro",
+    "old": "title=\"Contact\"",
+    "new": "title=\"Contact KP Infotech | Discuss Your Operations Challenge\""
+  },
+  {
+    "source": "src/pages/index.astro",
+    "old": "\"Digital Product Studio\"",
+    "new": "\"B2B Operations Technology Partner\""
+  },
+  {
+    "source": "src/pages/services/index.astro",
+    "old": "We offer end-to-end digital solutions, from initial concept and design\n      through development and launch. Each service is tailored to your unique needs.",
+    "new": "We design and implement the systems growing businesses need to run better \u2014\n      from custom software and Odoo ERP to workflow automation, AI agents and scalable cloud infrastructure."
+  },
+  {
+    "source": "src/pages/about.astro",
+    "old": "We *Craft* Digital Excellence",
+    "new": "Technology Built Around *Better Business Operations*"
+  },
+  {
+    "source": "src/pages/about.astro",
+    "old": "A B2B operations technology partner helping growing businesses replace manual workflows and disconnected tools with custom software, ERP, automation, AI, and cloud systems.",
+    "new": "KP Infotech helps growing businesses build and improve the software, ERP, automation, AI and cloud systems that support day-to-day operations."
+  },
+  {
+    "source": "src/pages/contact.astro",
+    "old": "We're ready to bring your vision to life. Tell us about your project and let's create something extraordinary together.",
+    "new": "Tell us where manual work or disconnected systems slow your team down. We'll help you plan the right next step."
+  },
+  {
+    "source": "src/components/sections/ContactHero.astro",
+    "old": "We're ready to bring your vision to life. Tell us about your project and let's create something extraordinary together.",
+    "new": "Tell us where manual work or disconnected systems slow your team down. We'll help you plan the right next step."
+  },
+  {
+    "source": "src/pages/contact.astro",
+    "old": "Talk to KP Infotech about custom software, Odoo ERP, automation, AI agents, and cloud infrastructure for growing business operations.",
+    "new": "Discuss your operations challenge with KP Infotech and plan the right mix of custom software, Odoo ERP, automation, AI and cloud infrastructure."
+  },
+  {
+    "source": "src/components/Footer.astro",
+    "old": "Crafting digital experiences that elevate brands and drive measurable business growth.",
+    "new": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work."
+  },
+  {
+    "source": "src/components/sections/AboutHero.astro",
+    "old": "A premium digital product studio crafting exceptional experiences for ambitious brands.",
+    "new": "KP Infotech helps growing businesses build and improve the software, ERP, automation, AI and cloud systems that support day-to-day operations."
+  },
+  {
+    "source": "src/components/sections/Team.astro",
+    "old": "A dedicated team of designers, developers, and strategists passionate about creating exceptional digital experiences.",
+    "new": "A dedicated team of engineers, ERP specialists, and automation experts building practical systems for growing businesses."
+  },
+  {
+    "source": "src/pages/services/[slug].astro",
+    "old": "Let's explore how we can help bring your vision to life.",
+    "new": "Let's discuss the systems and workflows your business needs to run better."
+  },
+  {
+    "source": "src/pages/industries/[slug].astro",
+    "old": "Let's explore how we can help bring your vision to life.",
+    "new": "Let's discuss the operational challenges and systems your industry depends on."
+  },
+  {
+    "source": "src/pages/work/[slug].astro",
+    "old": "Let's explore how we can help bring your vision to life.",
+    "new": "Let's discuss how the right systems can improve your operations."
+  },
+  {
+    "source": "src/pages/about.astro",
+    "old": "Let's discuss how we can help bring your vision to life.",
+    "new": "Talk to us about the workflows, tools and systems your team needs to improve."
+  },
+  {
+    "source": "src/pages/work/index.astro",
+    "old": "Let's discuss how we can bring your vision to life with the right strategy and technology.",
+    "new": "Let's discuss how the right software and automation can improve your operations."
+  },
+  {
+    "source": "src/pages/insights/[...page].astro",
+    "old": "Ready to *elevate* your digital presence?",
+    "new": "Ready to improve your *business operations*?"
+  },
+  {
+    "source": "src/pages/insights/[slug].astro",
+    "old": "Ready to *elevate* your digital presence?",
+    "new": "Ready to improve your *business operations*?"
+  },
+  {
+    "source": "src/pages/insights/category/[slug].astro",
+    "old": "Ready to *elevate* your digital presence?",
+    "new": "Ready to improve your *business operations*?"
+  },
+  {
+    "source": "src/components/sections/ContactFormSection.astro",
+    "old": "const projectTypes = [\n  { value: \"\", label: \"Select project type...\" },\n  { value: \"ui-ux-design\", label: \"UI/UX Design\" },\n  { value: \"web-development\", label: \"Web Development\" },\n  { value: \"mobile-apps\", label: \"Mobile App\" },\n  { value: \"erp-solutions\", label: \"ERP Solution\" },\n  { value: \"digital-marketing\", label: \"Digital Marketing\" },\n  { value: \"other\", label: \"Other\" }\n];\n\n",
+    "new": "const projectTypes = [\n  { value: \"\", label: \"Select project type...\" },\n  { value: \"custom-software-development\", label: \"Custom Software Development\" },\n  { value: \"erp-solutions\", label: \"ERP & Odoo Solutions\" },\n  { value: \"business-automation\", label: \"Business Automation\" },\n  { value: \"ai-automation-agents\", label: \"AI Automation & Agents\" },\n  { value: \"cloud-devops\", label: \"Cloud & DevOps\" },\n  { value: \"other\", label: \"Other / Not Sure\" },\n];\n\n"
+  },
+  {
+    "source": "src/pages/about.astro",
+    "old": "We obsess over the details. Every pixel, every interaction, every line of code is crafted with intention and care.",
+    "new": "We focus on the details that make systems dependable: clear workflows, reliable integrations and maintainable code."
+  },
+  {
+    "source": "src/components/sections/Values.astro",
+    "old": "We obsess over the details. Every pixel, every interaction, every line of code is crafted with intention and care.",
+    "new": "We focus on the details that make systems dependable: clear workflows, reliable integrations and maintainable code."
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "path": "/",
+    "title": "Custom Software, Odoo ERP & Automation | KP Infotech",
+    "description": "KP Infotech builds custom software, Odoo ERP, business automation, AI agents and cloud systems that reduce manual work and improve operations.",
+    "intent": "KP Infotech + broad B2B technology entity"
+  },
+  {
+    "path": "/services/",
+    "title": "Custom Software, ERP, AI & Cloud Services | KP Infotech",
+    "description": "Explore custom software, Odoo ERP, business automation, AI agents and cloud infrastructure that reduce manual work and improve business operations.",
+    "intent": "Navigation / broad five-pillar services"
+  },
+  {
+    "path": "/services/custom-software-development/",
+    "title": "Custom Software Development Company | KP Infotech",
+    "description": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+    "intent": "Custom software development company/services"
+  },
+  {
+    "path": "/services/business-automation/",
+    "title": "Business Process Automation Services | KP Infotech",
+    "description": "Automate workflows, approvals, reporting, documents and system handoffs with practical business automation built around your operations.",
+    "intent": "Business process automation services"
+  },
+  {
+    "path": "/services/erp-software/",
+    "title": "Odoo ERP Implementation Services | KP Infotech",
+    "description": "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech.",
+    "intent": "Odoo ERP implementation services/company"
+  },
+  {
+    "path": "/services/ai-automation-agents/",
+    "title": "AI Agent Development & Automation Services | KP Infotech",
+    "description": "Build AI agents and automation for document processing, operational knowledge, task routing and repetitive workflows with human oversight.",
+    "intent": "AI agent development/automation services"
+  },
+  {
+    "path": "/services/cloud-devops/",
+    "title": "Cloud & DevOps Services | KP Infotech",
+    "description": "Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently.",
+    "intent": "Cloud & DevOps services"
+  },
+  {
+    "path": "/about/",
+    "title": "About KP Infotech | B2B Technology & Automation Partner",
+    "description": "Learn how KP Infotech helps growing businesses replace manual work and disconnected systems with software, ERP, automation, AI and cloud solutions.",
+    "intent": "Company/entity/trust"
+  },
+  {
+    "path": "/contact/",
+    "title": "Contact KP Infotech | Discuss Your Operations Challenge",
+    "description": "Discuss your operations challenge with KP Infotech and plan the right mix of custom software, Odoo ERP, automation, AI and cloud infrastructure.",
+    "intent": "Brand/contact/conversion"
+  }
+]

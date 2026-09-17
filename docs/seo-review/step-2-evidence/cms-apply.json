@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-09-17T04:55:50.425Z",
+  "transactionId": "Xe0A1k3WLpDZQN3vt63OC4",
+  "changes": [
+    {
+      "id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+      "field": "seoTitle",
+      "before": "Custom Business Software Development Company — KP Infotech",
+      "after": "Custom Software Development Company | KP Infotech"
+    },
+    {
+      "id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+      "field": "seoDescription",
+      "before": "Custom business software development for growing teams that need internal tools, dashboards, portals, SaaS MVPs, workflow systems, and integrations to reduce manual work and improve operational visibility.",
+      "after": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility."
+    },
+    {
+      "id": "376db61e-bc91-4f7f-8a3c-a2c3b7ef60b9",
+      "field": "siteTagline",
+      "before": "Design & Technology Studio",
+      "after": "B2B Operations Technology Partner"
+    },
+    {
+      "id": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+      "field": "seoTitle",
+      "before": "AI Agent Development & Automation for Business Operations — KP Infotech",
+      "after": "AI Agent Development & Automation Services | KP Infotech"
+    },
+    {
+      "id": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+      "field": "seoDescription",
+      "before": "AI agent development and AI automation for business operations. KP Infotech builds document processing agents, internal AI assistants, workflow automations, support agents, and reporting agents with practical guardrails.",
+      "after": "Build AI agents and automation for document processing, operational knowledge, task routing and repetitive workflows with human oversight."
+    },
+    {
+      "id": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+      "field": "seoTitle",
+      "before": "Business Automation Services for Growing Companies — KP Infotech",
+      "after": "Business Process Automation Services | KP Infotech"
+    },
+    {
+      "id": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+      "field": "seoDescription",
+      "before": "Business automation services for teams using spreadsheets, manual approvals, disconnected tools, and repetitive admin workflows. KP Infotech builds workflow automation, integrations, dashboards, and operational systems.",
+      "after": "Automate workflows, approvals, reporting, documents and system handoffs with practical business automation built around your operations."
+    },
+    {
+      "id": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+      "field": "seoTitle",
+      "before": "Odoo ERP Implementation & Customization Company — KP Infotech",
+      "after": "Odoo ERP Implementation Services | KP Infotech"
+    },
+    {
+      "id": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+      "field": "seoDescription",
+      "before": "Odoo ERP implementation, customization, migration, and support for growing businesses. KP Infotech connects CRM, sales, purchase, inventory, accounting, manufacturing, HR, and operations in one ERP system.",
+      "after": "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech."
+    },
+    {
+      "id": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+      "field": "seoTitle",
+      "before": "Cloud & DevOps Services for Scalable Business Systems — KP Infotech",
+      "after": "Cloud & DevOps Services | KP Infotech"
+    },
+    {
+      "id": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+      "field": "seoDescription",
+      "before": "Cloud and DevOps services for reliable deployments, scalable infrastructure, CI/CD pipelines, monitoring, backups, cloud hosting, security controls, and cost optimization for growing business systems.",
+      "after": "Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently."
+    }
+  ]
+}

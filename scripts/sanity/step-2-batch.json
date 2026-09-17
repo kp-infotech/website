@@ -1,0 +1,92 @@
+{
+  "projectId": "5rux0mv2",
+  "dataset": "production",
+  "updates": [
+    {
+      "id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+      "revision": "tQCrbgePRAC9whbqJdEI1R",
+      "type": "service",
+      "fields": {
+        "seoTitle": {
+          "before": "Custom Business Software Development Company \u2014 KP Infotech",
+          "after": "Custom Software Development Company | KP Infotech"
+        },
+        "seoDescription": {
+          "before": "Custom business software development for growing teams that need internal tools, dashboards, portals, SaaS MVPs, workflow systems, and integrations to reduce manual work and improve operational visibility.",
+          "after": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility."
+        }
+      }
+    },
+    {
+      "id": "376db61e-bc91-4f7f-8a3c-a2c3b7ef60b9",
+      "revision": "AHCwFnLIj2DFqgO7zKgBa0",
+      "type": "siteSettings",
+      "fields": {
+        "siteTagline": {
+          "before": "Design & Technology Studio",
+          "after": "B2B Operations Technology Partner"
+        }
+      }
+    },
+    {
+      "id": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+      "revision": "RfimE1gVC9ER6WRH3gcRwp",
+      "type": "service",
+      "fields": {
+        "seoTitle": {
+          "before": "AI Agent Development & Automation for Business Operations \u2014 KP Infotech",
+          "after": "AI Agent Development & Automation Services | KP Infotech"
+        },
+        "seoDescription": {
+          "before": "AI agent development and AI automation for business operations. KP Infotech builds document processing agents, internal AI assistants, workflow automations, support agents, and reporting agents with practical guardrails.",
+          "after": "Build AI agents and automation for document processing, operational knowledge, task routing and repetitive workflows with human oversight."
+        }
+      }
+    },
+    {
+      "id": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+      "revision": "tQCrbgePRAC9whbqJdG7dp",
+      "type": "service",
+      "fields": {
+        "seoTitle": {
+          "before": "Business Automation Services for Growing Companies \u2014 KP Infotech",
+          "after": "Business Process Automation Services | KP Infotech"
+        },
+        "seoDescription": {
+          "before": "Business automation services for teams using spreadsheets, manual approvals, disconnected tools, and repetitive admin workflows. KP Infotech builds workflow automation, integrations, dashboards, and operational systems.",
+          "after": "Automate workflows, approvals, reporting, documents and system handoffs with practical business automation built around your operations."
+        }
+      }
+    },
+    {
+      "id": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+      "revision": "tQCrbgePRAC9whbqJdEP2v",
+      "type": "service",
+      "fields": {
+        "seoTitle": {
+          "before": "Odoo ERP Implementation & Customization Company \u2014 KP Infotech",
+          "after": "Odoo ERP Implementation Services | KP Infotech"
+        },
+        "seoDescription": {
+          "before": "Odoo ERP implementation, customization, migration, and support for growing businesses. KP Infotech connects CRM, sales, purchase, inventory, accounting, manufacturing, HR, and operations in one ERP system.",
+          "after": "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech."
+        }
+      }
+    },
+    {
+      "id": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+      "revision": "FLWOnYzhRkuT5CLpJPufWa",
+      "type": "service",
+      "fields": {
+        "seoTitle": {
+          "before": "Cloud & DevOps Services for Scalable Business Systems \u2014 KP Infotech",
+          "after": "Cloud & DevOps Services | KP Infotech"
+        },
+        "seoDescription": {
+          "before": "Cloud and DevOps services for reliable deployments, scalable infrastructure, CI/CD pipelines, monitoring, backups, cloud hosting, security controls, and cost optimization for growing business systems.",
+          "after": "Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently."
+        }
+      }
+    }
+  ]
+}

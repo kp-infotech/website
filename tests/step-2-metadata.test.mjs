@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {inspect,targets,validate}from '../scripts/seo/audit-step2.mjs';
+const before=JSON.parse(readFileSync(new URL('../docs/seo-review/step-2-evidence/metadata-before.json',import.meta.url)));
+for(const target of targets)test('Step 2 rendered metadata '+target.path,()=>{const html=readFileSync(new URL('../dist/client'+target.path+'index.html',import.meta.url),'utf8');assert.deepEqual(validate(inspect(html),target,before.find(p=>p.path===target.path)),[]);});
+test('Step 2 titles uniquely own their intent',()=>assert.equal(new Set(targets.map(t=>t.title)).size,9));
+test('Step 2 preserves the exact 56-page production sitemap',()=>{const paths=xml=>[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]).sort();const old=paths(readFileSync(new URL('../docs/seo-review/step-2-evidence/before-sitemap.xml',import.meta.url),'utf8'));assert.equal(old.length,56);assert.deepEqual(paths(readFileSync(new URL('../dist/client/sitemap-0.xml',import.meta.url),'utf8')),old);});

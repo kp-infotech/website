@@ -1,0 +1,393 @@
+[
+  {
+    "path": "/industries/education/",
+    "status": 200,
+    "title": "Education Portals, LMS & Student Workflow Automation — KP Infotech",
+    "description": "Build LMS platforms, student portals, reporting dashboards, and admin automation that help education teams deliver and measure learning.",
+    "h1": [
+      "Education"
+    ]
+  },
+  {
+    "path": "/industries/finance/",
+    "status": 200,
+    "title": "Finance Software, Secure Dashboards & Workflow Automation — KP Infotech",
+    "description": "Build secure finance portals, payment integrations, reporting dashboards, and automated workflows that improve visibility and control.",
+    "h1": [
+      "Finance"
+    ]
+  },
+  {
+    "path": "/industries/healthcare/",
+    "status": 200,
+    "title": "Healthcare Software, Automation & Patient Operations — KP Infotech",
+    "description": "Build secure healthcare portals, telemedicine workflows, practice dashboards, and integrations that reduce admin work and improve patient service visibility.",
+    "h1": [
+      "Healthcare"
+    ]
+  },
+  {
+    "path": "/industries/logistics/",
+    "status": 200,
+    "title": "Logistics Software, Fleet Tracking & Warehouse Automation — KP Infotech",
+    "description": "Improve fleet visibility, warehouse workflows, route planning, and supply chain reporting with custom logistics software and automation.",
+    "h1": [
+      "Logistics & Supply Chain"
+    ]
+  },
+  {
+    "path": "/industries/manufacturing/",
+    "status": 200,
+    "title": "Manufacturing ERP, Automation & Production Dashboards — KP Infotech",
+    "description": "Connect production, inventory, purchasing, quality, and reporting with ERP and automation systems that give manufacturers clearer operational control.",
+    "h1": [
+      "Manufacturing"
+    ]
+  },
+  {
+    "path": "/industries/real-estate/",
+    "status": 200,
+    "title": "Real Estate Portals, Listing Platforms & Workflow Automation — KP Infotech",
+    "description": "Modernize property operations with listing platforms, portals, virtual tour integrations, CRM workflows, and dashboards that help teams move deals faster.",
+    "h1": [
+      "Real Estate"
+    ]
+  },
+  {
+    "path": "/industries/retail-ecommerce/",
+    "status": 200,
+    "title": "Retail & E-commerce ERP, Automation & Commerce Systems — KP Infotech",
+    "description": "Unify storefronts, inventory, orders, CRM, and reporting with retail systems that reduce manual reconciliation and help teams serve buyers faster.",
+    "h1": [
+      "Retail & E-commerce"
+    ]
+  },
+  {
+    "path": "/industries/startups/",
+    "status": 200,
+    "title": "Startup MVPs, SaaS Platforms & Scalable Business Software — KP Infotech",
+    "description": "Launch MVPs, portals, SaaS products, and internal systems with practical architecture that supports fast learning without avoidable rework.",
+    "h1": [
+      "Startups & SMEs"
+    ]
+  },
+  {
+    "path": "/insights/",
+    "status": 200,
+    "title": "Insights & Articles — KP Infotech",
+    "description": "Expert insights on design, development, and digital transformation. Learn from our experience building digital products that drive business growth.",
+    "h1": [
+      "Insights & Articles"
+    ]
+  },
+  {
+    "path": "/insights/2/",
+    "status": 200,
+    "title": "Insights & Articles — Page 2 — KP Infotech",
+    "description": "Expert insights on design, development, and digital transformation. Learn from our experience building digital products that drive business growth.",
+    "h1": [
+      "Insights & Articles"
+    ]
+  },
+  {
+    "path": "/insights/3/",
+    "status": 200,
+    "title": "Insights & Articles — Page 3 — KP Infotech",
+    "description": "Expert insights on design, development, and digital transformation. Learn from our experience building digital products that drive business growth.",
+    "h1": [
+      "Insights & Articles"
+    ]
+  },
+  {
+    "path": "/insights/angular-vs-react/",
+    "status": 200,
+    "title": "Angular vs React for Business Web Applications — KP Infotech",
+    "description": "Compare Angular and React for enterprise and startup web applications, including architecture, speed, maintainability, and team fit.",
+    "h1": [
+      "Angular vs React: Which Framework Is Better in 2024?",
+      "Angular vs React: A Concise Comparison"
+    ]
+  },
+  {
+    "path": "/insights/best-hr-software-for-startups/",
+    "status": 200,
+    "title": "Best HR Software for Startups: Selection Guide — KP Infotech",
+    "description": "Compare HR software options for startups by hiring workflow, employee records, payroll needs, automation, integrations, and growth stage.",
+    "h1": [
+      "12 Best hr software for startups You Should Know",
+      "Best HR Software for Startups: 12 Platforms to Scale Your Team",
+      "Best HR Software for Startups: 12 Platforms to Scale Your Team"
+    ]
+  },
+  {
+    "path": "/insights/best-seo-tools-for-small-businesses/",
+    "status": 200,
+    "title": "12 Best SEO Tools for Small Businesses in 2025 — KP Infotech",
+    "description": "Discover the 12 best SEO tools for small businesses in our 2025 guide. Boost your visibility with top tools for keyword research, site audits, and more.",
+    "h1": [
+      "12 Best SEO Tools for Small Businesses in 2025"
+    ]
+  },
+  {
+    "path": "/insights/best-web-application-frameworks/",
+    "status": 200,
+    "title": "Best Web Application Frameworks for Business Software — KP Infotech",
+    "description": "Compare leading web application frameworks for scalable business apps, portals, dashboards, and SaaS products, with practical fit by use case.",
+    "h1": [
+      "Top 12 Best Web Application Frameworks for 2025"
+    ]
+  },
+  {
+    "path": "/insights/business-process-automation-tools/",
+    "status": 200,
+    "title": "Business Process Automation Tools: Types & Selection Guide — KP Infotech",
+    "description": "Compare business process automation tools by use case, workflow complexity, integrations, approvals, reporting, AI fit, and long-term operations needs.",
+    "h1": [
+      "Business Process Automation Tools: Types, Use Cases, and Selection Guide"
+    ]
+  },
+  {
+    "path": "/insights/business-process-improvement-methods/",
+    "status": 200,
+    "title": "Business Process Improvement Methods for Growing Teams — KP Infotech",
+    "description": "Learn practical business process improvement methods for reducing manual work, improving visibility, simplifying workflows, and preparing for automation.",
+    "h1": [
+      "Business Process Improvement Methods for Growing Companies"
+    ]
+  },
+  {
+    "path": "/insights/category/automation-ai/",
+    "status": 200,
+    "title": "Automation & AI Articles — KP Infotech",
+    "description": "Business process automation, workflow optimization, AI agents, and AI-powered operations.",
+    "h1": [
+      "Automation & AI Articles"
+    ]
+  },
+  {
+    "path": "/insights/category/cloud-devops/",
+    "status": 200,
+    "title": "Cloud & DevOps Articles — KP Infotech",
+    "description": "Cloud infrastructure, deployment, and operational best practices",
+    "h1": [
+      "Cloud & DevOps Articles"
+    ]
+  },
+  {
+    "path": "/insights/category/custom-software-development/",
+    "status": 200,
+    "title": "Custom Software & Development Articles — KP Infotech",
+    "description": "Software engineering, application development, architecture, testing, and mobile development insights.",
+    "h1": [
+      "Custom Software & Development Articles"
+    ]
+  },
+  {
+    "path": "/insights/category/digital-platforms-ecommerce/",
+    "status": 200,
+    "title": "Digital Platforms & E-commerce Articles — KP Infotech",
+    "description": "Websites, e-commerce, UX design, digital marketing, and customer-facing digital platforms.",
+    "h1": [
+      "Digital Platforms & E-commerce Articles"
+    ]
+  },
+  {
+    "path": "/insights/category/erp-business-systems/",
+    "status": 200,
+    "title": "ERP & Business Systems Articles — KP Infotech",
+    "description": "ERP, CRM, inventory, HR software, implementation planning, and operational business systems.",
+    "h1": [
+      "ERP & Business Systems Articles"
+    ]
+  },
+  {
+    "path": "/insights/cloud-deployment-models-diagram/",
+    "status": 200,
+    "title": "Cloud Deployment Models: Public, Private & Hybrid Explained — KP Infotech",
+    "description": "Understand public, private, hybrid, and multi-cloud deployment models, with tradeoffs for control, cost, security, and operations.",
+    "h1": [
+      "Cloud Deployment Models Diagram Explained"
+    ]
+  },
+  {
+    "path": "/insights/database-design-best-practices/",
+    "status": 200,
+    "title": "8 Essential Database Design Best Practices for 2025 — KP Infotech",
+    "description": "Discover 8 essential database design best practices to optimize performance, security, and scalability. Learn from experts with real-world examples.",
+    "h1": [
+      "8 Essential Database Design Best Practices for 2025"
+    ]
+  },
+  {
+    "path": "/insights/devops-best-practices/",
+    "status": 200,
+    "title": "DevOps Best Practices for Reliable Business Apps — KP Infotech",
+    "description": "Learn DevOps best practices for CI/CD, infrastructure, monitoring, rollback, backups, security, and operational reliability in business applications.",
+    "h1": [
+      "DevOps Best Practices for Reliable Business Applications"
+    ]
+  },
+  {
+    "path": "/insights/erp-for-retail-stores/",
+    "status": 200,
+    "title": "ERP for Retail Stores: Inventory, POS & Omnichannel Guide — KP Infotech",
+    "description": "Learn how retail ERP connects POS, inventory, purchasing, finance, CRM, and omnichannel operations to reduce manual reconciliation.",
+    "h1": [
+      "Your Guide to ERP for Retail Stores in India"
+    ]
+  },
+  {
+    "path": "/insights/erp-implementation-cost/",
+    "status": 200,
+    "title": "Understanding ERP Implementation Cost — KP Infotech",
+    "description": "Discover the true ERP implementation cost. Our complete guide breaks down software fees, hidden expenses, and budgeting strategies for your next project.",
+    "h1": [
+      "Understanding ERP Implementation Cost"
+    ]
+  },
+  {
+    "path": "/insights/how-to-choose-erp-system/",
+    "status": 200,
+    "title": "How to Choose an ERP System: Evaluation Checklist — KP Infotech",
+    "description": "Learn how to choose an ERP system by mapping requirements, modules, integrations, costs, deployment options, vendor fit, and implementation readiness.",
+    "h1": [
+      "How to Choose an ERP System: Requirements, Costs, and Evaluation Checklist"
+    ]
+  },
+  {
+    "path": "/insights/inventory-management-best-practices/",
+    "status": 200,
+    "title": "9 Essential Inventory Management Best Practices for 2025 — KP Infotech",
+    "description": "Discover 9 crucial inventory management best practices to optimise stock levels, reduce costs, and streamline your operations for sustainable growth in 2025.",
+    "h1": [
+      "9 Essential Inventory Management Best Practices for 2025"
+    ]
+  },
+  {
+    "path": "/insights/kp-infotech-new-website-custom-software-automation-ai/",
+    "status": 200,
+    "title": "KP Infotech’s Next Chapter: Custom Software, ERP, Automation & AI",
+    "description": "KP Infotech’s new website reflects a sharper focus on custom software, Odoo ERP, business automation, AI agents, and cloud infrastructure for growing businesses.",
+    "h1": [
+      "The Next Chapter of KP Infotech: Building Practical Systems for Growing Businesses",
+      "The Next Chapter of KP Infotech: Building Practical Systems for Growing Businesses"
+    ]
+  },
+  {
+    "path": "/insights/minimum-viable-product-examples/",
+    "status": 200,
+    "title": "Minimum Viable Product Examples for Startup Planning — KP Infotech",
+    "description": "Review practical MVP examples and lessons for validating product ideas, prioritizing features, and avoiding avoidable build cost early.",
+    "h1": [
+      "Top 7 Minimum Viable Product Examples That Succeeded in 2025"
+    ]
+  },
+  {
+    "path": "/insights/mobile-app-monetization-strategies/",
+    "status": 200,
+    "title": "10 Mobile App Monetization Strategies for 2025 — KP Infotech",
+    "description": "Discover the top 10 mobile app monetization strategies for 2025. Learn how to implement freemium, IAP, subscriptions, and more to boost your revenue.",
+    "h1": [
+      "10 Mobile App Monetization Strategies for 2025"
+    ]
+  },
+  {
+    "path": "/insights/node-js-frameworks/",
+    "status": 200,
+    "title": "Best Node.js Frameworks for Scalable Web Applications — KP Infotech",
+    "description": "Compare Node.js frameworks for APIs, web apps, and real-time systems, with practical tradeoffs for performance, maintainability, and team fit.",
+    "h1": [
+      "12 Best Node JS Frameworks & Resources for 2025"
+    ]
+  },
+  {
+    "path": "/insights/odoo-erp-complete-guide/",
+    "status": 200,
+    "title": "Odoo ERP Guide: Features, Modules, Pricing & Fit — KP Infotech",
+    "description": "Understand Odoo ERP modules, implementation considerations, pricing factors, and when it fits growing businesses replacing scattered tools.",
+    "h1": [
+      "Odoo ERP Complete Guide (2025): Features, Benefits & Pricing Explained"
+    ]
+  },
+  {
+    "path": "/insights/on-premise-vs-cloud-erp/",
+    "status": 200,
+    "title": "On-Premise vs Cloud ERP: Key Differences & Fit — KP Infotech",
+    "description": "Compare on-premise ERP and cloud ERP by cost, control, security, access, customization, maintenance, scalability, and fit for growing businesses.",
+    "h1": [
+      "On-Premise vs Cloud ERP: Differences, Costs, Security, and Fit"
+    ]
+  },
+  {
+    "path": "/insights/scalable-system-architecture/",
+    "status": 200,
+    "title": "Building a Scalable System Architecture: Essential Guide — KP Infotech",
+    "description": "Learn how to design a scalable system architecture with key principles and patterns to ensure your systems grow efficiently and reliably.",
+    "h1": [
+      "Building a Scalable System Architecture: Essential Guide"
+    ]
+  },
+  {
+    "path": "/insights/what-is-custom-software/",
+    "status": 200,
+    "title": "What Is Custom Software? Definition, Examples & Fit — KP Infotech",
+    "description": "Learn what custom software is, when it fits growing businesses, and how it compares with off-the-shelf tools for workflows, dashboards, and integrations.",
+    "h1": [
+      "What Is Custom Software? Definition, Examples, and When to Build"
+    ]
+  },
+  {
+    "path": "/work/",
+    "status": 200,
+    "title": "Our Work — KP Infotech",
+    "description": "Explore our portfolio of digital projects. From web applications to mobile apps and enterprise solutions, see how we help businesses grow.",
+    "h1": [
+      "Our Work"
+    ]
+  },
+  {
+    "path": "/work/cloud-cost-optimization-industrial-sme/",
+    "status": 200,
+    "title": "Cloud Cost Optimization Case Study | $17K to $2.8K Monthly Cloud Spend — KP Infotech",
+    "description": "See how KP Infotech helped a European industrial machinery SME reduce cloud infrastructure cost from $17K/month to $2.8K/month through AWS S3 optimization, Docker, Coolify, and infrastructure consolidation.",
+    "h1": [
+      "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month"
+    ]
+  },
+  {
+    "path": "/work/collaboration-platform-distributed-teams/",
+    "status": 200,
+    "title": "Collaboration Platform Case Study — KP Infotech",
+    "description": "How we built a real-time collaboration platform for distributed teams, achieving 25K teams, $3.2M ARR, 98% DAU, and $12M Series A funding.",
+    "h1": [
+      "Real-Time Collaboration Platform for Distributed Teams"
+    ]
+  },
+  {
+    "path": "/work/digital-banking-platform/",
+    "status": 200,
+    "title": "Digital Banking Platform Case Study — KP Infotech",
+    "description": "How we built a modern digital banking platform that increased mobile adoption by 186%, achieved 92% satisfaction, and saved $12M for a regional credit union.",
+    "h1": [
+      "Modern Digital Banking Platform for Regional Credit Union"
+    ]
+  },
+  {
+    "path": "/work/omnichannel-ecommerce-platform/",
+    "status": 200,
+    "title": "Omnichannel E-Commerce Platform Case Study — KP Infotech",
+    "description": "How we built an AI-powered omnichannel e-commerce platform that grew online revenue by 340% to $45M and achieved 28% conversion rate for a fashion retailer.",
+    "h1": [
+      "Omnichannel E-Commerce Platform with AI-Powered Personalization"
+    ]
+  },
+  {
+    "path": "/work/virtual-tours-ai-listings/",
+    "status": 200,
+    "title": "Virtual Tour Platform Case Study — KP Infotech",
+    "description": "Real estate platform case study for 3D virtual tours, AI listing content, lead capture, CRM workflows, and sales pipeline visibility.",
+    "h1": [
+      "3D Virtual Tours & AI Property Listing Platform"
+    ]
+  }
+]
