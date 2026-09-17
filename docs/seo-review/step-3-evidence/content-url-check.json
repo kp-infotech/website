@@ -1,0 +1,885 @@
+{
+  "timestamp": "2026-09-17T06:13:44.931Z",
+  "rows": [
+    {
+      "url": "https://www.klearskill.com/blog-post/best-ats-for-small-business",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "f9e46041eb53"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "9481edf188c2"
+        }
+      ],
+      "status": 301,
+      "location": "https://www.klearskill.com/resources/blog/best-ats-for-small-business",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://www.bamboohr.com",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "97de88688cf6"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "eb07d3a91e1d"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://gusto.com",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "c0ba54da3f08"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "46f924021730"
+        }
+      ],
+      "status": 403,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://www.rippling.com",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "16549967c520"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "e61215cfbc23"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.zoho.com/people",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "41b30b35d164"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "946157804a43"
+        }
+      ],
+      "status": 301,
+      "location": "https://www.zoho.com/people/",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://www.personio.com",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "9cc70032a8f5"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "8bea189f6bdb"
+        }
+      ],
+      "status": 429,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://www.deel.com",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "d55bbe9e782b"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "3800bf5548dc"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.hibob.com",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "100d34ed6bbf"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "92a2782c276c"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://kpinfo.tech/business-process-automation-examples/",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "d8584096d545"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "dd6ec27ebd03"
+        }
+      ],
+      "status": 301,
+      "location": "https://kpinfo.tech/services/business-automation/",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://factorialhr.com",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "e6820bb1fd38"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "dae9a35e13fa"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.freshworks.com/hrms",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "a1d3fed1fc9c"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "bc5a4966673d"
+        }
+      ],
+      "status": 301,
+      "location": "/hrms/",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://www.bitrix24.com",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "3a44ba73260a"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "89b81b9de3b2"
+        }
+      ],
+      "status": 302,
+      "location": "https://www.bitrix24.in/?redirect_from=www.bitrix24.com%2F",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://huntflow.ru",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "850f926359b8"
+        },
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "dbc04e0b5b39"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.capterra.com/human-resource-software",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "66a3492df4b8"
+        }
+      ],
+      "status": 403,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/screenshots/608af824-b8e2-407a-bf7e-8c715aa8d242.jpg",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "c3ba916ad834"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/screenshots/afaf6897-8bfe-4907-afae-e5a1547e3a67.jpg",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "82c071758f8e"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/screenshots/68890a29-3c6c-4b96-a27a-d670bfef2dba.jpg",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "ad22377919ce"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/screenshots/ad13eb01-09e5-41b7-91d2-14a2dfad5a66.jpg",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "f9208c8df009"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/screenshots/4dc6502a-d263-4cb1-aff9-dae470170a1f.jpg",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "b9e7b4bf2916"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/screenshots/bc494766-3aa8-4e15-8406-6c990a4fc340.jpg",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "7f534532d25c"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/screenshots/36292eb5-8a21-4b71-8ac5-d07e4d6472ed.jpg",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "30d0a062da22"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/screenshots/14a02b08-d2d9-4780-a3f2-7979c8b0586e.jpg",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "a8beb0d226bf"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/screenshots/7f6db20f-d204-44fb-a3a3-7552d07ab8e8.jpg",
+      "sources": [
+        {
+          "slug": "best-hr-software-for-startups",
+          "block": "ca11bce35f01"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://laravel.com",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeiYTx"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.djangoproject.com",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeiZib"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://rubyonrails.org",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeiaxF"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://spring.io/spring-framework",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeicIr"
+        }
+      ],
+      "status": 307,
+      "location": "/projects/spring-framework",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet-core",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeidXV"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://angular.dev",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeiem9"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://vuejs.org",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeig0n"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://expressjs.com",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeihFR"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://fastapi.tiangolo.com",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeiiU5"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.udemy.com",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeijij"
+        }
+      ],
+      "status": 403,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://www.coursera.org",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeikxN"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.ozon.ru",
+      "sources": [
+        {
+          "slug": "best-web-application-frameworks",
+          "block": "tQCrbgePRAC9whbqJeimC1"
+        }
+      ],
+      "status": 307,
+      "location": "https://www.ozon.ru/?__rr=1",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://kpinfo.tech/marketing/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GKvR"
+        }
+      ],
+      "status": 404,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://www.semrush.com/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GLNJ"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://ahrefs.com/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GLpB"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://moz.com/products/pro",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GMH3"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://neilpatel.com/ubersuggest/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GMiv"
+        }
+      ],
+      "status": 403,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://yoast.com/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GNAn"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://ads.google.com/home/tools/keyword-planner/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GNcf"
+        }
+      ],
+      "status": 301,
+      "location": "https://business.google.com/in/ad-tools/keyword-planner/",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://seranking.com/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GO4X"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.brightlocal.com/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GOWP"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.spyfu.com/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GOyH"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.screamingfrog.co.uk/seo-spider/",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GPQ9"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://search.google.com/search-console",
+      "sources": [
+        {
+          "slug": "best-seo-tools-for-small-businesses",
+          "block": "LdcrdoovvspBedS9H8GPs1"
+        }
+      ],
+      "status": 302,
+      "location": "https://search.google.com/search-console/about",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://www.npmjs.com/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 403,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://github.com/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://expressjs.com/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://nestjs.com/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://fastify.dev/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://koajs.com/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://adonisjs.com/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://sailsjs.com/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.meteor.com/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://loopback.io/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.udemy.com/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 403,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://stepik.org/",
+      "sources": [
+        {
+          "slug": "node-js-frameworks",
+          "block": null
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/ed2cd72d-3bc6-4bde-bccf-489087d66e73.jpg",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "91396b459c80"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/b0360e7c-bfa5-4db4-a903-a095500904b4.jpg",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "1031001b42c7"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://www.freightquotesnow.com/blog/inventory-management-best-practices",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "399a04f8a005"
+        }
+      ],
+      "status": 404,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://kpinfo.tech/erp-software-odoo/",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "2470d5f981f8"
+        }
+      ],
+      "status": 404,
+      "location": null,
+      "classification": "NEEDS HUMAN REVIEW: HTTP error"
+    },
+    {
+      "url": "https://www.techsciresearch.com/report/india-enterprise-resource-planning-erp-market/9514.html",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "3ece404197d0"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://kpinfo.tech/on-premise-vs-cloud-erp/",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "f2cbc3a4d0f6"
+        }
+      ],
+      "status": 301,
+      "location": "https://kpinfo.tech/services/erp-software/",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://kpinfo.tech/erp-implementation-best-practices/",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "e5e790ed3ee6"
+        }
+      ],
+      "status": 301,
+      "location": "https://kpinfo.tech/services/erp-software/",
+      "classification": "REDIRECT (not assumed broken)"
+    },
+    {
+      "url": "https://cdn.outrank.so/94b93ed1-ed10-4602-a2bd-0c70b9781fa0/26612c47-a7b9-4529-96e6-a14f3fbfabc8.jpg",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "6340131f0fc9"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://querio.ai/articles/how-hybrid-bi-improves-inventory-management",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "31ee771f3956"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    },
+    {
+      "url": "https://kpinfo.tech",
+      "sources": [
+        {
+          "slug": "erp-for-retail-stores",
+          "block": "07c66ce7d684"
+        }
+      ],
+      "status": 200,
+      "location": null,
+      "classification": "REACHABLE"
+    }
+  ]
+}

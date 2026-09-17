@@ -1,5 +1,7 @@
 ---
 import { PortableText } from 'astro-portabletext';
+import { normalizeArticleBody } from '../../lib/article-body.js';
+import ArticleTable from '../ui/ArticleTable.astro';
 import PortableTextImage from '../ui/PortableTextImage.astro';
 import PortableTextHighlight from '../ui/PortableTextHighlight.astro';
 import PortableTextCode from '../ui/PortableTextCode.astro';
@@ -13,6 +15,7 @@ const { content = [] } = Astro.props;
 
 const components = {
   type: {
+    articleTable: ArticleTable,
     image: PortableTextImage,
     code: PortableTextCode,
   },
@@ -30,7 +33,7 @@ const hasContent = content && content.length > 0;
   <section class="blog-content">
     <div class="blog-content__container site-container">
       <article class="blog-content__body">
-        <PortableText value={content} components={components} />
+        <PortableText value={normalizeArticleBody(content)} components={components} />
       </article>
     </div>
   </section>

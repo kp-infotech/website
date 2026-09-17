@@ -1,0 +1,201 @@
+[
+  {
+    "url": "https://kpinfo.tech/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month",
+      "Projects Delivered",
+      "Countries Served",
+      "98%",
+      "Client Satisfaction"
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/about/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "Official Odoo implementation and development partner, delivering enterprise ERP solutions with certified expertise."
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/industries/retail-ecommerce/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "70% of shoppers add items but never check out. Friction in the payment flow, surprise shipping costs, or slow load times kill conversions."
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/insights/angular-vs-react/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "You’re in a market where React jobs and salaries are higher (as in the Russian data cited: ~57% of frontend roles vs ~20% for Angular, with ~15–20% higher pay)"
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/insights/best-hr-software-for-startups/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "Pricing: Public, tiered pricing starting around $40/month + $6/employee ; higher tiers add more HR tools and support.",
+      "It supports compliant hiring, onboarding, and paying contractors or full-time employees in 150+ countries . Deel’s Employer of Record (EOR) service handles local contracts, benefits, payroll, and tax compliance.",
+      "Pricing: Transparent pricing; contractor management can start free, while EOR services start from $599/employee/month .",
+      "Pricing: Starts around $40/month base + $6/employee/month; higher tiers add advanced HR tools and support.",
+      "It supports compliant onboarding, payroll, and management of contractors and full-time employees in 150+ countries. Its core strength is its Employer of Record (EOR) service, which handles local contracts, benefits, payroll, and tax compliance so you can hire globally from day one.",
+      "Pricing: Transparent pricing; contractor management can start free, EOR from ~$599/employee/month."
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/insights/best-seo-tools-for-small-businesses/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "Pricing: Plans start with the \"Pro\" tier at around $129.95/month, scaling up to \"Guru\" and \"Business\" for more extensive needs.",
+      "Pricing: Plans begin with the \"Lite\" tier at around $99/month, with \"Standard,\" \"Advanced,\" and \"Enterprise\" tiers available for larger teams and agencies.",
+      "Pricing: Plans begin with the \"Standard\" tier at approximately $99/month, with \"Medium,\" \"Large,\" and \"Premium\" options available for agencies and larger businesses.",
+      "Pricing: Offers a limited free version. Paid plans are extremely competitive, starting around $12/month for the \"Individual\" plan, with lifetime purchase options also available.",
+      "Pricing: A robust free version is available. Yoast SEO Premium starts at $99/year and adds features like internal linking suggestions and redirect management.",
+      "Pricing: Plans are highly flexible and affordable, starting around $55/month for the \"Essential\" plan, with options to customize based on the frequency of rank tracking checks.",
+      "Pricing: Plans are flexible, starting with the \"Track\" plan at around $39/month. Citation building services are priced separately, typically on a per-campaign basis.",
+      "Pricing: Plans are highly accessible, starting with a \"Basic\" plan at around $39/month and scaling to \"Professional\" and \"Team\" tiers for more data and exports."
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/insights/best-web-application-frameworks/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "While not a framework itself, Ozon is a critical resource hub for developers in specific regions, particularly for those seeking Russian-language educational materials. As a major e-commerce marketplace in Russia and CIS countries, its website, ozon.ru, provides unparalleled access to printed books and resources on frameworks like Django, Laravel, and others, often in their officially translated or locally authored editions. This makes it an invaluable platform for learning the best web application frameworks in one&#39;s native language.",
+      "Localised Fulfilment: It provides convenient domestic shipping and multiple local payment options, simplifying the purchasing process for buyers in Russia and CIS countries."
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/insights/database-design-best-practices/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "Key Insight: Database performance is an integral part of application performance. Designing for efficient queries is not an afterthought; it&#39;s a core design principle that directly impacts scalability, user satisfaction, and operational costs."
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/insights/erp-for-retail-stores/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "This need for a unified approach is fuelling some serious market growth. The Indian ERP market, which includes solutions for retailers, was valued at roughly USD 1.8 billion in 2024 . Projections show it climbing at a rate of 7.2% annually to hit USD 3.6 billion by 2033. This growth is happening for one simple reason: retailers are demanding better ways to manage their operations and serve their customers. You can get more details on the Indian ERP market trends here."
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/insights/erp-implementation-cost/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "Alright, let&#39;s get straight to the point: what&#39;s the real cost of putting an ERP system in place? The numbers can swing wildly. A small business might get started for as little as $10,000 , while a large, global enterprise could see the bill climb past the $1 million mark.",
+      "To give you a realistic starting point, we can look at some industry benchmarks based on company revenue. A small business pulling in between $1 million and $10 million a year is often looking at a first-year cost somewhere between $3,000 to $25,000 . Mid-market companies in the $10 million to $50 million range? Their first-year spend is typically between $20,000 and $125,000 .",
+      "For large enterprises with revenues over $50 million , the initial investment can start at $100,000 and go way, way up—sometimes past $250,000,000 for massive, international rollouts. If you want to dive deeper, Top10erp.org offers some detailed ERP pricing breakdowns .",
+      "Company Size (Annual Revenue) Typical First-Year Cost Range Small Business ($1M – $10M) $3,000 – $25,000 Mid-Market ($10M – $50M) $20,000 – $125,000 Large Enterprise ($50M+) $100,000 – $250,000,000+",
+      "Data migration involves a series of painstaking steps, and it can easily add $5,000 to $25,000+ to your final bill.",
+      "A single third-party integration can cost anywhere from $5,000 to $25,000 , depending on its complexity. Building custom connections using APIs almost always requires more development work than using pre-built connectors.",
+      "A solid change management and training plan isn&#39;t a \"nice-to-have\"—it&#39;s a non-negotiable project expense. These costs typically run between $2,000 and $15,000 and must go far beyond a single, boring software demo. Effective training is tailored to specific job roles, happens continuously, and is backed up by easy-to-find documentation. This is how you ensure everyone, from the shipping dock to the CEO&#39;s office, can do their job effectively and you actually get the ROI you were promised.",
+      "Ongoing Maintenance: Want updates, bug fixes, or tech support? You’ll need to pay an annual maintenance fee. This typically runs between 15% and 22% of the original license cost and becomes a recurring operational expense.",
+      "Industry data shows that for small businesses, this cost averages out to about $7,143 per user . Mid-sized companies tend to see a slightly higher figure, around $8,542 per user . Interestingly, large enterprises often see this number dip back down to about $7,257 per user , likely because they can negotiate better rates and achieve economies of scale. You can dig deeper into these benchmarks with an in-depth analysis from ERPFocus.com .",
+      "For a real-world example, a mid-sized company with 100 users might find itself paying around $170,840 a year once you bundle software licenses with the necessary implementation services. It’s a stark reminder of how quickly those individual user costs add up.",
+      "This gradual expansion of project requirements is so dangerous because it happens slowly. There isn&#39;t a single, dramatic moment of budget failure—just a quiet, steady drain on resources. The stats show just how serious this is. Budget overruns are a constant reality, with an estimated 64% of ERP implementations going over their initial financial plans. This is often driven by a cocktail of underestimated staffing ( 38% ), project scope expansion ( 35% ), and unexpected technical problems ( 34% ). You can dig deeper into these ERP project statistics and challenges on NetSuite.com.",
+      "Underestimating these internal resource needs is a primary reason that only 49% of ERP projects actually go live on schedule. When your team is stretched too thin, decisions get delayed, testing gets rushed, and expensive mistakes are practically guaranteed. A successful, on-budget implementation is a team sport, and it requires 100% commitment from the top all the way down."
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/insights/mobile-app-monetization-strategies/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "Provide both monthly and annual plans; highlight annual savings"
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/insights/scalable-system-architecture/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "The report also found that over 90% of large enterprises are already using containerization and orchestration tools like Docker and Kubernetes. Organizations that adopt this stack report up to a 50% reduction in manual deployment overhead and a 30% increase in infrastructure efficiency. This just goes to show how critical the right tech is for building systems that can truly perform under pressure. You can dive deeper into these findings on data science architecture and what they mean for the industry.",
+      "This proactive mindset is crucial because the stakes are incredibly high. According to insights from Acceldata and Gartner, a staggering 85% of big data analytics projects fail to deliver on their goals. A huge reason for this is poor planning for both scalability and resilience. You can dive deeper into this by reading about designing future-ready platforms to grasp the full scope of the challenge."
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/work/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month"
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/work/cloud-cost-optimization-industrial-sme/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month",
+      "$17K → $2.8K/month",
+      "~$14.2K/month",
+      "Estimated recurring monthly savings",
+      "83%",
+      "Their monthly infrastructure cost was close to $17,000, split mainly between AWS and DigitalOcean. AWS was being used heavily for storage, while DigitalOcean hosted overprovisioned compute resources. Over time, unused resources, unoptimized storage, and manual infrastructure decisions had created a large recurring cost leak.",
+      "The client was spending nearly $17,000 every month on infrastructure. On paper, the setup looked normal: AWS for storage, DigitalOcean for compute, and a mix of systems supporting daily operations.",
+      "The client’s monthly infrastructure cost reduced from approximately $17,000 to around $2,800.",
+      "That created around $14,200 in monthly recurring savings while also giving the client a cleaner, more manageable cloud setup.",
+      "For many SMEs, the biggest savings are not hidden in a new tool. They are hidden in the infrastructure they are already paying for.",
+      "“KP Infotech helped us understand where our infrastructure cost was leaking and rebuilt the setup in a much cleaner way. The savings were significant, but the bigger value was the control and visibility we gained.”"
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/work/collaboration-platform-distributed-teams/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "$3.2M",
+      "Annual recurring revenue (ARR)",
+      "98%",
+      "142%",
+      "We interviewed 120 remote teams to map collaboration workflows. Findings: 67% switched apps 20+ times daily, 54% missed important updates buried in channels, and 72% wanted AI to surface relevant information proactively. We designed a unified interface with three core surfaces: messaging streams, collaborative documents, and video rooms—all accessible within one window, eliminating constant app switching.",
+      "WorkFlow became the collaboration tool of choice for distributed teams, achieving 98% daily active user rate among paying customers. The platform's real-time collaboration features reduced async communication overhead by 54%, while AI productivity insights helped teams identify bottlenecks and optimize workflows. Net Revenue Retention reached 142%, powered by viral team expansion and premium feature adoption. The company raised a $12M Series A led by prominent VCs.",
+      "SSO integration with Okta, Azure AD, and Google Workspace streamlined onboarding. SCIM provisioning automated user lifecycle management. SOC 2 Type II certification, GDPR compliance, and data residency options (US, EU, APAC) satisfied enterprise requirements. Granular permissions controlled access at team, channel, and document levels. Audit logs tracked all security-relevant actions. DLP (Data Loss Prevention) policies prevented sharing of sensitive patterns. Despite enterprise features, the core product remained beautifully simple for small teams.",
+      "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month"
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/work/digital-banking-platform/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "186%",
+      "92%",
+      "Customer satisfaction score (CSAT)",
+      "$12M",
+      "Operational cost savings over 3 years",
+      "Community Trust Credit Union served 75,000 members with assets of $850M but was losing ground to digital-first competitors. Their existing online banking system was built on a 15-year-old platform with poor mobile experience, limited functionality, and frequent outages. Member surveys revealed that 58% were considering switching to competitors due to digital banking frustration, and the credit union was losing 3-5% of accounts annually to millennial and Gen-Z demographics.",
+      "The new digital banking platform revolutionized member experience, attracting 25,000 new accounts in the first year—a 340% increase over the previous year. Mobile banking adoption surged from 28% to 80% of members. Self-service transactions increased by 215%, reducing branch workload and enabling staff to focus on high-value consultative services. The platform won 'Best Digital Banking Experience' at the 2024 Regional Banking Innovation Awards.",
+      "Our design philosophy centered on progressive disclosure: showing members exactly what they need when they need it. The dashboard displayed a real-time balance summary with intelligent alerts ('Your rent payment cleared, current balance $2,847'), upcoming bills, recent transactions, and personalized insights. We reduced the average task completion time from 3m 45s to 42 seconds through simplified navigation and smart defaults. The visual design used calming blues and greens to build trust while maintaining the credit union's brand identity.",
+      "The microservices architecture consisted of 12 independent services (authentication, accounts, transactions, payments, notifications, etc.) deployed on AWS EKS with auto-scaling based on demand. We used Redis for caching frequently accessed data, reducing database load by 73%. The platform achieved 99.97% uptime in its first year, with page load times under 1.2 seconds and mobile app startup in under 800ms. CloudFront CDN distributed assets globally for optimal performance.",
+      "We executed a phased rollout beginning with a 4-week closed beta of 500 tech-savvy members who provided feedback on 47 enhancement requests before public launch. A comprehensive marketing campaign included branch signage, email onboarding sequences, video tutorials, and in-app guided tours. We staffed a dedicated support team for the first 60 days, handling 3,200 calls with an average resolution time of 4 minutes. Member adoption exceeded projections by 45%, reaching 60,000 active digital users within 6 months.",
+      "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month"
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "340%",
+      "$45M",
+      "28%",
+      "Conversion rate (vs 2.1% industry avg)",
+      "47%",
+      "TrendStyle operated 28 retail stores across the Midwest but their e-commerce presence was minimal, contributing only 6% of total revenue. Their website was built on an outdated platform with poor mobile experience, limited product search, no personalization, and completely disconnected from in-store inventory. Customers couldn't check in-store availability online, couldn't return online purchases in stores, and received inconsistent experiences across channels.",
+      "We conducted a 6-week discovery phase including customer journey mapping across both digital and physical touchpoints, competitive analysis of 20 leading fashion e-commerce sites, and stakeholder workshops with store managers, buyers, and marketing teams. Our research revealed that 73% of customers wanted to see real-time in-store inventory before making the trip, and 58% abandoned online carts due to unexpected shipping costs or delays.",
+      "The omnichannel platform unified TrendStyle's 28 retail locations with their online presence, creating a seamless shopping experience. Online revenue grew from $8M to $45M annually, while in-store sales increased 22% through digital integration. The AI personalization engine achieved a 28% conversion rate (vs. 2.1% industry average) and increased average order value by 47%. The platform processed 2.5M orders in its first year with a 4.7/5 customer satisfaction rating.",
+      "The recommendation engine analyzed 50+ data points per customer including browsing behavior, purchase history, size preferences, style affinity, price sensitivity, and seasonal patterns. Machine learning models predicted complementary products with 82% accuracy, powering 'Complete the Look' suggestions that increased cross-selling by 156%. The system A/B tested layouts, product imagery, and messaging in real-time, automatically optimizing for conversion. Personalized email campaigns achieved 42% open rates and 18% click-through rates, both 3x industry averages.",
+      "We implemented comprehensive marketing automation including abandoned cart email sequences (recovering 24% of abandoned carts worth $3.2M annually), post-purchase nurture flows, win-back campaigns for lapsed customers, and VIP segmentation. Dynamic product feeds powered Google Shopping, Facebook, and Instagram ads with real-time inventory and pricing. User-generated content from Instagram was curated and displayed on product pages, increasing social proof and conversion by 31%. Referral program integration drove 18% of new customer acquisitions.",
+      "Mobile accounted for 68% of traffic and 52% of revenue. The responsive design featured thumb-friendly navigation, streamlined checkout (down to 3 steps from 7), and Apple Pay/Google Pay integration. We launched a companion mobile app built with React Native featuring barcode scanning for in-store price checks, digital loyalty cards, exclusive app-only deals, and AR try-on for accessories. The app achieved 42,000 downloads in 6 months with 4.6 App Store rating.",
+      "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month"
+    ]
+  },
+  {
+    "url": "https://kpinfo.tech/work/virtual-tours-ai-listings/",
+    "classification": "BUSINESS EVIDENCE REQUIRED",
+    "claims": [
+      "420%",
+      "$180M",
+      "34%",
+      "LuxeHomes agents wasted time on unqualified showings. Static photos failed to convey atmosphere. Listings lacked compelling descriptions. Buyers struggled across 12K listings. Poor mobile experience. Only 8% lead conversion.",
+      "Platform revolutionized marketing with cinematic 3D tours reducing showings 62% while increasing serious engagement. AI descriptions improved listing quality across 12K properties. Smart matching achieved 34% conversion vs. 8% industry average. Mobile drove 68% traffic.",
+      "Matterport scans created dollhouse views, floor plans, walkthroughs. Users navigated as if present. Measurement tools, virtual staging, VR support. Tours embedded in MLS, social. 420% more views, 2.8x engagement. GPT-4 generated compelling descriptions. Recommendation engine learned preferences, collaborative filtering. Match scores ranked properties. Email digests for new matches. 34% conversion rate.",
+      "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month"
+    ]
+  }
+]

@@ -3,6 +3,7 @@ import { urlFor } from '../../lib/sanity';
 import { formatDate } from '../../lib/utils';
 
 interface Props {
+  headingLevel?: 'h2' | 'h3';
   post: {
     _id: string;
     title: string;
@@ -15,7 +16,7 @@ interface Props {
   };
 }
 
-const { post } = Astro.props;
+const { post, headingLevel: Heading = 'h3' } = Astro.props;
 
 let imageUrl: string | undefined;
 if (post.featuredImage) {
@@ -54,12 +55,12 @@ const formattedDate = post.publishedAt ? formatDate(post.publishedAt) : undefine
     {post.category && (
       <span class="blog-card__category">{post.category.title}</span>
     )}
-    <h3
+    <Heading
       class="blog-card__title"
       style={post.slug?.current ? `view-transition-name: blog-title-${post.slug.current}` : undefined}
     >
       {post.title}
-    </h3>
+    </Heading>
     {post.excerpt && (
       <p class="blog-card__excerpt">{post.excerpt}</p>
     )}

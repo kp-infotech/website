@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-09-17T06:27:44.238Z",
+  "bindings": [
+    {
+      "name": "ASSETS",
+      "type": "assets"
+    },
+    {
+      "name": "EMAIL",
+      "type": "send_email"
+    },
+    {
+      "name": "PUBLIC_CLARITY_ID",
+      "type": "plain_text"
+    },
+    {
+      "name": "PUBLIC_GA_MEASUREMENT_ID",
+      "type": "plain_text"
+    },
+    {
+      "name": "PUBLIC_SANITY_DATASET",
+      "type": "plain_text"
+    },
+    {
+      "name": "PUBLIC_SANITY_PROJECT_ID",
+      "type": "plain_text"
+    },
+    {
+      "name": "SESSION",
+      "type": "kv_namespace",
+      "namespace_id": "2c096c90da704a4fb42c8734ae99cc2e"
+    },
+    {
+      "name": "TURNSTILE_SECRET_KEY ",
+      "type": "secret_text"
+    }
+  ],
+  "deployment": {
+    "id": "3750b8c1-4ca8-427c-8f7f-b490500f3fde",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "poojan@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "8926c1a5-0f7f-4485-92ab-76df3d079a72",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-17T06:18:17.637142Z"
+  }
+}

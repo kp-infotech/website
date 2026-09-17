@@ -1,0 +1,16 @@
+---
+const { node } = Astro.props;
+---
+<div class="article-table" role="region" aria-label="Article comparison table" tabindex="0">
+  <table>
+    <thead><tr>{node.rows[0].map((cell: string) => <th scope="col">{cell}</th>)}</tr></thead>
+    <tbody>{node.rows.slice(1).map((row: string[]) => <tr>{row.map(cell => <td>{cell}</td>)}</tr>)}</tbody>
+  </table>
+</div>
+<style>
+  .article-table { overflow-x: auto; margin: 1.5rem 0; }
+  .article-table:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+  th, td { padding: 1rem; border: 1px solid var(--border-light); text-align: left; vertical-align: top; }
+  th { color: var(--text-primary); font-weight: 500; }
+</style>

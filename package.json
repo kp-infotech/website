@@ -55,6 +55,7 @@
     "@iconify/utils": "3.1.0"
   },
   "devDependencies": {
-    "wrangler": "^4"
+    "wrangler": "^4",
+    "parse5": "^7.3.0"
   }
 }

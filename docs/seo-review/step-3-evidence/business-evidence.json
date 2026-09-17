@@ -1,0 +1,42 @@
+{
+  "authors": [
+    {
+      "_id": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+      "name": "Poojan Patel",
+      "role": "Founder & CEO",
+      "linkedin": "https://www.linkedin.com/in/poojan-patel34/"
+    },
+    {
+      "_id": "ef223482-0edc-4d32-aad6-c87c2bf09432",
+      "name": "Krupa Joshi",
+      "role": "Founder & Director",
+      "linkedin": "https://www.linkedin.com/in/poojan-patel34/"
+    }
+  ],
+  "stats": [
+    {
+      "_key": "187cd7735e7f",
+      "_type": "statItem",
+      "label": "Projects Delivered",
+      "value": "15+"
+    },
+    {
+      "_key": "f2678c4da947",
+      "_type": "statItem",
+      "label": "Countries Served",
+      "value": "3+"
+    },
+    {
+      "_key": "d49c14286b50",
+      "_type": "statItem",
+      "label": "Years Combined Experience",
+      "value": "10+"
+    },
+    {
+      "_key": "a1f8654b62e6",
+      "_type": "statItem",
+      "label": "Client Satisfaction",
+      "value": "98%"
+    }
+  ]
+}

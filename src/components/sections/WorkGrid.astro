@@ -87,12 +87,12 @@ const filterServices = services.length > 0
               {study.client && (
                 <span class="work-card__client">{study.client}</span>
               )}
-              <h3
+              <h2
                 class="work-card__title"
                 style={study.slug?.current ? `view-transition-name: work-title-${study.slug.current}` : undefined}
               >
                 {study.title}
-              </h3>
+              </h2>
               <div class="work-card__footer">
                 {study.services && study.services.length > 0 && (
                   <div class="work-card__tags">

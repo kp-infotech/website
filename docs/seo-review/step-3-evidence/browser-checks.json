@@ -1,0 +1,34 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "routes": [
+    "/insights/best-hr-software-for-startups/",
+    "/insights/angular-vs-react/",
+    "/insights/kp-infotech-new-website-custom-software-automation-ai/",
+    "/insights/2/",
+    "/work/",
+    "/privacy-policy/",
+    "/terms-of-service/",
+    "/about/"
+  ],
+  "result": {
+    "h1PerPage": 1,
+    "horizontalOverflow": false,
+    "missingAlt": 0,
+    "completedBrokenImages": 0
+  },
+  "hrTable": {
+    "columnHeaders": 6,
+    "bodyRows": 3,
+    "containerWidth": 342,
+    "keyboardFocusable": true
+  },
+  "screenshotsInspected": [
+    "mobile HR hero/body",
+    "desktop About hero"
+  ],
+  "viewportReset": true,
+  "limitations": "Full browser image-load completion and comprehensive assistive-technology testing are not claimed."
+}

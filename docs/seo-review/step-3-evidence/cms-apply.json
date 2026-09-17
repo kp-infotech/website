@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-09-17T06:10:37.217Z",
+  "transactionId": "1j9cdcCCDgKVEOlo3ACiYZ",
+  "changes": [
+    {
+      "id": "3e40f487-87db-42d0-a113-86a22fed6393",
+      "slug": "best-hr-software-for-startups",
+      "revision": "RfimE1gVC9ER6WRH4N7CDz",
+      "removed": [
+        {
+          "index": 0,
+          "key": "2dbc6451643b",
+          "block": {
+            "_key": "2dbc6451643b",
+            "_type": "richText",
+            "children": [
+              {
+                "_key": "f2f862732ea7",
+                "_type": "span",
+                "marks": [],
+                "text": "Here’s a concise, cleaned-up version of your article that you can use as a final draft or landing page copy."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        },
+        {
+          "index": 142,
+          "key": "eb48444296f6",
+          "block": {
+            "_key": "eb48444296f6",
+            "_type": "richText",
+            "children": [
+              {
+                "_key": "6bac2f9927d1",
+                "_type": "span",
+                "marks": [],
+                "text": "Here’s a concise, SEO-ready version of your article, preserving structure and intent while tightening language and clarity."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c35f7505-422b-4c6a-aebb-557e383cc66f",
+      "slug": "scalable-system-architecture",
+      "revision": "RfimE1gVC9ER6WRH3eguyV",
+      "removed": [
+        {
+          "index": 72,
+          "key": null,
+          "block": {
+            "_type": "block",
+            "children": [
+              {
+                "_type": "span",
+                "marks": [],
+                "text": "Of course. Here is the rewritten section, crafted to sound like an experienced human expert, following all your specified requirements."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        }
+      ]
+    }
+  ]
+}

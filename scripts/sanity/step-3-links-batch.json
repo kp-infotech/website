@@ -1,0 +1,81 @@
+[
+  {
+    "id": "3e40f487-87db-42d0-a113-86a22fed6393",
+    "slug": "best-hr-software-for-startups",
+    "revision": "1j9cdcCCDgKVEOlo3ACiYZ",
+    "set": {
+      "content[88].children[0].text": "Factorial also focuses on workflow automation. For more on automation concepts, see examples like (https://kpinfo.tech/services/business-automation/).",
+      "content[221].children[0].text": "Factorial also emphasises workflow automation. For more on automation concepts, see these examples: (https://kpinfo.tech/services/business-automation/)."
+    },
+    "unset": [],
+    "details": [
+      {
+        "path": "content[88].children[0].text",
+        "before": "Factorial also focuses on workflow automation. For more on automation concepts, see examples like (https://kpinfo.tech/business-process-automation-examples/).",
+        "after": "Factorial also focuses on workflow automation. For more on automation concepts, see examples like (https://kpinfo.tech/services/business-automation/)."
+      },
+      {
+        "path": "content[221].children[0].text",
+        "before": "Factorial also emphasises workflow automation. For more on automation concepts, see these examples: (https://kpinfo.tech/business-process-automation-examples/).",
+        "after": "Factorial also emphasises workflow automation. For more on automation concepts, see these examples: (https://kpinfo.tech/services/business-automation/)."
+      }
+    ]
+  },
+  {
+    "id": "45e3cd51-1204-4aa9-bc63-7d61683d616a",
+    "slug": "best-seo-tools-for-small-businesses",
+    "revision": "fD2cIDpLRiUd8zI3WWLyEM",
+    "set": {},
+    "unset": [
+      "content[14]"
+    ],
+    "details": [
+      {
+        "path": "content[14]",
+        "before": {
+          "_key": "LdcrdoovvspBedS9H8GKvR",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "LdcrdoovvspBedS9H8GKxB",
+              "_type": "span",
+              "marks": [],
+              "text": "Website: https://kpinfo.tech/marketing/"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": null
+      }
+    ]
+  },
+  {
+    "id": "c78863d6-a962-4365-a153-7e1942d0f0b8",
+    "slug": "erp-for-retail-stores",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "set": {
+      "content[28].children[0].text": "This allows you to do things like send a loyal customer a special birthday discount on items they've previously browsed, forging a stronger connection and turning one-time buyers into repeat business. Platforms like Odoo ERP have incredibly powerful CRM modules built for exactly this kind of customer engagement. For anyone curious, you can see how (https://kpinfo.tech/services/erp-software/).",
+      "content[68].children[2].text": " (often called SaaS) is the ride-sharing option. You pay a subscription fee—usually monthly or annually—to access the software over the internet. The vendor takes care of all the servers, security, and updates behind the scenes. This model gives you lower upfront costs and the freedom to access your business data from anywhere with an internet connection. For a deeper look at this choice, our guide on (https://kpinfo.tech/insights/on-premise-vs-cloud-erp/).",
+      "content[85].children[1].text": "(https://kpinfo.tech/services/erp-software/)"
+    },
+    "unset": [],
+    "details": [
+      {
+        "path": "content[28].children[0].text",
+        "before": "This allows you to do things like send a loyal customer a special birthday discount on items they've previously browsed, forging a stronger connection and turning one-time buyers into repeat business. Platforms like Odoo ERP have incredibly powerful CRM modules built for exactly this kind of customer engagement. For anyone curious, you can see how (https://kpinfo.tech/erp-software-odoo/).",
+        "after": "This allows you to do things like send a loyal customer a special birthday discount on items they've previously browsed, forging a stronger connection and turning one-time buyers into repeat business. Platforms like Odoo ERP have incredibly powerful CRM modules built for exactly this kind of customer engagement. For anyone curious, you can see how (https://kpinfo.tech/services/erp-software/)."
+      },
+      {
+        "path": "content[68].children[2].text",
+        "before": " (often called SaaS) is the ride-sharing option. You pay a subscription fee—usually monthly or annually—to access the software over the internet. The vendor takes care of all the servers, security, and updates behind the scenes. This model gives you lower upfront costs and the freedom to access your business data from anywhere with an internet connection. For a deeper look at this choice, our guide on (https://kpinfo.tech/on-premise-vs-cloud-erp/).",
+        "after": " (often called SaaS) is the ride-sharing option. You pay a subscription fee—usually monthly or annually—to access the software over the internet. The vendor takes care of all the servers, security, and updates behind the scenes. This model gives you lower upfront costs and the freedom to access your business data from anywhere with an internet connection. For a deeper look at this choice, our guide on (https://kpinfo.tech/insights/on-premise-vs-cloud-erp/)."
+      },
+      {
+        "path": "content[85].children[1].text",
+        "before": "(https://kpinfo.tech/erp-implementation-best-practices/)",
+        "after": "(https://kpinfo.tech/services/erp-software/)"
+      }
+    ]
+  }
+]
