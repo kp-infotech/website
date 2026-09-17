@@ -1,0 +1,32 @@
+{
+  "commit": "7d0fd2365d007e5f3e5c1707aba1815e4a41acb5",
+  "deployment": {
+    "id": "44647632-84d9-4b66-b50c-3ad351f16fb2",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "krupa@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "7f7284a8-5710-4bd0-9c35-34f44d52d6f2",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-17T05:07:50.314241Z"
+  },
+  "domains": [
+    {
+      "hostname": "kpinfo.tech",
+      "service": "website"
+    }
+  ],
+  "session": [
+    {
+      "name": "SESSION",
+      "namespace_id": "2c096c90da704a4fb42c8734ae99cc2e"
+    }
+  ],
+  "runtimeSanityTokenPresent": false
+}

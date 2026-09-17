@@ -1,6 +1,6 @@
 # Step 2 — SERP positioning, metadata and company messaging
 
-Status: pre-deployment verification PASS. Production verification pending. Step 3 is not started.
+Status: **PASS WITH WARNINGS** — deployed and production verified. All technical checks pass; the pre-existing Odoo partnership/certification assertion awaits business evidence. Step 3 is not started.
 
 ## GSC Baseline
 
@@ -186,16 +186,40 @@ The exact pre-Step-2 sitemap URL set remains **56 pages** (57 HTML files includi
 
 ## Deployment
 
-Pending final commit, main integration and normal Wrangler deployment. No mixed checkout is used.
+- Application commit: `7d0fd2365d007e5f3e5c1707aba1815e4a41acb5`; reviewed diff committed and pushed to `main` before deployment.
+- Worker: `website` in KP Infotech account `c727a19f93045d1c218d54f510af40c2`.
+- Deployment ID: `44647632-84d9-4b66-b50c-3ad351f16fb2`.
+- Version: `7f7284a8-5710-4bd0-9c35-34f44d52d6f2`, serving 100% at verification.
+- Timestamp: `2026-09-17T05:07:50.314241Z` (**17 September 2026, 10:37:50 IST**).
+- Mechanism: fresh authenticated build, full checks, clean main push, then normal `wrangler deploy` with adapter-generated configuration. A subsequent verification-only commit records final evidence and strengthens schema assertions; application source is unchanged.
+- `kpinfo.tech` custom domain and SESSION namespace `2c096c90da704a4fb42c8734ae99cc2e` preserved. No runtime SANITY_API_TOKEN binding. No generated configuration override.
+- Original mixed workspace was not deployed or altered; a copy of this report/evidence is supplied there for review.
 
 ## Production Verification
 
-Pending final deployment.
+**PASS — zero errors.** Evidence: `step-2-evidence/metadata-production.json`, `step1-production.json`, and `deployment.json`.
+
+| Check | Production result |
+| --- | --- |
+| Nine target pages | 9/9 HTTP 200; exact title/description; one canonical; indexable; OG/Twitter match |
+| Company messaging | Modern eyebrow, Services introduction, About H1/supporting copy, Contact copy and taxonomy verified |
+| H1 structure | One H1 on all nine; homepage and service H1s preserved; About changed intentionally |
+| Schema | Organization identity preserved; five Service URLs and ContactPage URL match their canonical destinations |
+| Layout | Browser checked all nine desktop pages; no horizontal overflow or broken completed images; About screenshot inspected |
+| Restored articles | 6/6 HTTP 200, schema/canonical/indexability pass |
+| Historical migrations | Eight historical migrations preserved; all 32 GET/HEAD/variant redirect checks pass (301 → 200) |
+| Approved work | 5/5 active and in sitemap |
+| Unsupported work | 21/21 absent; all 63 tested path variants return 404 |
+| Sample marketing | Slash, slashless and query variants return 404 with no Location |
+| Sitemap / robots | Exactly 56 canonical, indexable, final HTTP-200 URLs; sitemap matches build; robots valid |
+| Internal links | Zero dead links; zero legacy/nonfinal links |
+
+No URL additions, removals or redirect changes. No Step 3 work.
 
 ## Measurement Checkpoints
 
-Record the final deployment timestamp below before starting comparisons. Planned checks relative to deployment: 7 days crawl/snippet adoption; 14 days early CTR/query signals; 28 days proper GSC comparison; 8 and 12 weeks trend review. Track service-page impressions, non-brand commercial impressions, CTR, clicks, query relevance and brand CTR. No GSC settings were changed and no automatic monitoring task was created.
+Deployment baseline date: **17 September 2026**. Checkpoints: **24 September** (7 days, crawl/snippet adoption); **1 October** (14 days, early CTR/query signals); **15 October** (28 days, proper GSC comparison); **12 November** (8 weeks); **10 December** (12 weeks). Track service-page impressions, non-brand commercial impressions, CTR, clicks, query relevance and brand CTR. No GSC settings were changed and no automatic monitoring task was created.
 
 Google may take days or weeks to recrawl/reprocess pages and may rewrite titles/descriptions. This release establishes relevance and CTR foundations; it does not demonstrate immediate ranking improvement.
 
-STEP 2 IMPLEMENTATION VERIFIED — DEPLOYMENT PENDING
+STEP 2 COMPLETE — AWAITING SEO REVIEW
