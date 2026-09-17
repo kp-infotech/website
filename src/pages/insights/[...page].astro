@@ -23,6 +23,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 }
 
 const { page } = Astro.props;
+const insightsPageUrl = (number: number) => number === 1 ? '/insights/' : `/insights/${number}/`;
 const categories = await client.fetch(allBlogCategoriesQuery);
 
 // Fetch page hero
@@ -161,7 +162,7 @@ const seoDescription =
       {page.lastPage > 1 && (
         <nav class="pagination" aria-label="Article pages">
           <a
-            href={page.url.prev ?? undefined}
+            href={page.url.prev ? insightsPageUrl(page.currentPage - 1) : undefined}
             class:list={['pagination__btn', 'pagination__btn--nav', { 'pagination__btn--disabled': !page.url.prev }]}
             aria-disabled={!page.url.prev ? 'true' : undefined}
             tabindex={!page.url.prev ? -1 : undefined}
@@ -172,7 +173,7 @@ const seoDescription =
 
           {Array.from({ length: page.lastPage }, (_, i) => i + 1).map((num) => (
             <a
-              href={num === 1 ? '/insights/' : `/insights/${num}/`}
+              href={insightsPageUrl(num)}
               class:list={['pagination__btn', { 'pagination__btn--active': num === page.currentPage }]}
               aria-current={num === page.currentPage ? 'page' : undefined}
             >
@@ -181,7 +182,7 @@ const seoDescription =
           ))}
 
           <a
-            href={page.url.next ?? undefined}
+            href={page.url.next ? insightsPageUrl(page.currentPage + 1) : undefined}
             class:list={['pagination__btn', 'pagination__btn--nav', { 'pagination__btn--disabled': !page.url.next }]}
             aria-disabled={!page.url.next ? 'true' : undefined}
             tabindex={!page.url.next ? -1 : undefined}
