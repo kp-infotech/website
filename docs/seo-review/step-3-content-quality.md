@@ -188,12 +188,12 @@ Nine exact approved metadata fixtures pass against build. All 56 baseline page t
 
 ## Deployment
 
-- Application commit: `4b770fe96ec5619e11e32c9b3018819699911624`, pushed to `main` before deployment.
+- Application commit: `6f4f9672237e2e7d8b9d537c626314a946636e07` (includes initial Step 3 commit `4b770fe9`), pushed to `main` before deployment.
 - Canonical repository: `kp-infotech/website`. GitHub confirms the original `Berlin-34/website` remote is a 301 alias of the same repository ID `985697916`; canonical SSH remote used.
 - Worker: `website`, KP Infotech account `c727a19f93045d1c218d54f510af40c2`.
-- Deployment ID: `d143cc21-d2a0-4cf6-b55a-72b2c3924cf3`.
-- Version: `277ba5c5-0659-4759-88ae-eabc7f8bfd18`, serving 100% at verification.
-- Timestamp: **2026-09-17T06:32:13.316911Z** (**17 September 2026, 12:02:13 IST**).
+- Deployment ID: `eab06216-dc84-4ad9-990c-f0f5558a2df9`.
+- Version: `2873a409-ffcf-4510-a856-af80c7e7ce3c`, serving 100% at verification.
+- Timestamp: **2026-09-17T06:38:34.573886Z** (**17 September 2026, 12:08:34 IST**).
 - Mechanism: authenticated production-style build → all checks → main push → normal `wrangler deploy`, selecting the existing KP Infotech account. No generated-config edits.
 - SESSION namespace `2c096c90da704a4fb42c8734ae99cc2e` preserved; no runtime SANITY_API_TOKEN; deployment artifact credential scan clean.
 - A production update occurred during the audit; remote main was re-fetched and still matched the release baseline before push. Predeployment version/binding snapshot retained in `deployment-before.json`.
@@ -210,7 +210,7 @@ Nine exact approved metadata fixtures pass against build. All 56 baseline page t
 | H1/headings | 56/56 one meaningful H1; no body H1; no measurable level skips |
 | Three known articles | H1 counts 1/1/1; browser confirms no body H1 |
 | Editorial residues | All three confirmed instructions absent; 21 CMS documents checked for exact mutation scope |
-| Images | 352/352 have alt; all 56 PageHero backgrounds explicitly empty |
+| Images | 352/352 have alt; all 56 PageHero backgrounds and all 110 classified decorative image occurrences explicitly empty |
 | Metadata | All 56 title/description/canonical/social-meta snapshots unchanged; 9 Step 2 fixtures pass |
 | Odoo | Capability wording live; broad official/certified claim absent, also browser-verified |
 | Restored articles / work | 6/6 restored historical articles; 5/5 approved case studies active and in sitemap |

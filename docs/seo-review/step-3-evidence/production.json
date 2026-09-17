@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-17T06:33:17.018Z",
+  "timestamp": "2026-09-17T06:39:04.795Z",
   "pages": [
     {
       "url": "https://kpinfo.tech/",
@@ -937,25 +937,25 @@
         },
         {
           "src": "https://cdn.sanity.io/images/5rux0mv2/production/54323fb467005e08467ceefabc1ad882957fd43e-500x500.png?w=144&fm=png",
-          "alt": "Craft icon",
+          "alt": "",
           "category": "A",
           "context": "value-card__icon value-card value-card--has-icon values__grid values__container site-container values flex flex-col gap-10 bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased"
         },
         {
           "src": "https://cdn.sanity.io/images/5rux0mv2/production/a7c1500d4a3163bfdd63c42f436ca04b8a976694-500x500.png?w=144&fm=png",
-          "alt": "Partnership icon",
+          "alt": "",
           "category": "A",
           "context": "value-card__icon value-card value-card--has-icon values__grid values__container site-container values flex flex-col gap-10 bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased"
         },
         {
           "src": "https://cdn.sanity.io/images/5rux0mv2/production/411982f27c5e001dc80a5a86120e581837f6d67e-500x500.png?w=144&fm=png",
-          "alt": "Innovation icon",
+          "alt": "",
           "category": "A",
           "context": "value-card__icon value-card value-card--has-icon values__grid values__container site-container values flex flex-col gap-10 bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased"
         },
         {
           "src": "https://cdn.sanity.io/images/5rux0mv2/production/8238e3ec36491ca1b27673c54600688263c1b220-500x500.png?w=144&fm=png",
-          "alt": "Integrity icon",
+          "alt": "",
           "category": "A",
           "context": "value-card__icon value-card value-card--has-icon values__grid values__container site-container values flex flex-col gap-10 bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased"
         },

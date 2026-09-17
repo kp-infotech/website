@@ -43,6 +43,13 @@
     "missingAlt": 0,
     "hrTablePresent": true,
     "odooCapabilityWording": true,
-    "officialClaimAbsent": true
+    "officialClaimAbsent": true,
+    "finalAboutValueIconAlts": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "finalAboutCanonical": "https://kpinfo.tech/about/"
   }
 }
