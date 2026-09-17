@@ -1,0 +1,673 @@
+{
+  "timestamp": "2026-09-17T08:00:49.512Z",
+  "pages": [
+    {
+      "url": "https://kpinfo.tech/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 67,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/about/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 47,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/about/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/careers/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 47,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/careers/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/contact/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 53,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/contact/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/industries/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 55,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/industries/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/industries/education/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/industries/education/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/industries/finance/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/industries/finance/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/industries/healthcare/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/industries/healthcare/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/industries/logistics/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/industries/logistics/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/industries/manufacturing/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/industries/manufacturing/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/industries/real-estate/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/industries/real-estate/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/industries/retail-ecommerce/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/industries/retail-ecommerce/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/industries/startups/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/industries/startups/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 65,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/2/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 65,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/2/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/3/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 65,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/3/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/angular-vs-react/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/angular-vs-react/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-hr-software-for-startups/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 62,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/best-hr-software-for-startups/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-seo-tools-for-small-businesses/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 50,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/best-seo-tools-for-small-businesses/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-web-application-frameworks/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/best-web-application-frameworks/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/business-process-automation-tools/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 53,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/business-process-automation-tools/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/business-process-improvement-methods/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 53,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/business-process-improvement-methods/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/automation-ai/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 56,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/automation-ai/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/cloud-devops/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 56,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/cloud-devops/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/custom-software-development/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 62,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/custom-software-development/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/digital-platforms-ecommerce/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 55,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/digital-platforms-ecommerce/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/erp-business-systems/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 61,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/erp-business-systems/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/cloud-deployment-models-diagram/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 52,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/cloud-deployment-models-diagram/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/database-design-best-practices/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/database-design-best-practices/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/devops-best-practices/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/devops-best-practices/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/erp-for-retail-stores/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 57,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/erp-for-retail-stores/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/erp-implementation-cost/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/erp-implementation-cost/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/how-to-choose-erp-system/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 55,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/how-to-choose-erp-system/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/inventory-management-best-practices/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/inventory-management-best-practices/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/kp-infotech-new-website-custom-software-automation-ai/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 50,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/kp-infotech-new-website-custom-software-automation-ai/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/minimum-viable-product-examples/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/minimum-viable-product-examples/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/mobile-app-monetization-strategies/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 53,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/mobile-app-monetization-strategies/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/node-js-frameworks/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/node-js-frameworks/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/odoo-erp-complete-guide/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/odoo-erp-complete-guide/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 56,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/scalable-system-architecture/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 55,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/scalable-system-architecture/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/insights/what-is-custom-software/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/insights/what-is-custom-software/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/privacy-policy/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 47,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/privacy-policy/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/services/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 52,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/services/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/services/ai-automation-agents/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/services/ai-automation-agents/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/services/business-automation/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 52,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/services/business-automation/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/services/cloud-devops/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 54,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/services/cloud-devops/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/services/custom-software-development/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 56,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/services/custom-software-development/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/services/erp-software/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 52,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/services/erp-software/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/terms-of-service/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 47,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/terms-of-service/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/work/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 52,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/work/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/work/cloud-cost-optimization-industrial-sme/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 52,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/work/cloud-cost-optimization-industrial-sme/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/work/collaboration-platform-distributed-teams/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 53,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/work/collaboration-platform-distributed-teams/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/work/digital-banking-platform/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 53,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/work/digital-banking-platform/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 53,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/work/omnichannel-ecommerce-platform/"
+      ]
+    },
+    {
+      "url": "https://kpinfo.tech/work/virtual-tours-ai-listings/",
+      "status": 200,
+      "h1Count": 1,
+      "linkCount": 53,
+      "noindex": false,
+      "canonical": [
+        "https://kpinfo.tech/work/virtual-tours-ai-listings/"
+      ]
+    }
+  ],
+  "errors": [],
+  "internalLinkOccurrences": 2510,
+  "graphMatchesBuild": true,
+  "pillarSummary": [
+    {
+      "pillar": "custom-software-development",
+      "total": 79,
+      "body": 9,
+      "contextualPages": 9,
+      "global": 56,
+      "caseStudy": 4,
+      "industry": 8,
+      "insight": 9,
+      "uniquePages": 56,
+      "anchors": {
+        "Custom Software Development Custom Business Software That Replaces Manual Work Explore": 9,
+        "Large, long\u2011lived enterprise systems": 1,
+        "custom software development": 2,
+        "enterprise building a complex, microservices-based system": 1,
+        "build applications that can handle increased load": 1,
+        "launching a successful MVP": 1,
+        "building high-performance, scalable web applications": 1,
+        "custom enterprise software": 1,
+        "custom software for growing businesses": 1,
+        "View Service": 1,
+        "Custom Software Development": 4
+      }
+    },
+    {
+      "pillar": "erp-software",
+      "total": 68,
+      "body": 7,
+      "contextualPages": 7,
+      "global": 56,
+      "caseStudy": 0,
+      "industry": 3,
+      "insight": 7,
+      "uniquePages": 56,
+      "anchors": {
+        "ERP & Odoo Solutions Odoo ERP Systems for Growing Operations Explore": 4,
+        "Odoo ERP implementation and customization": 3,
+        "ERP implementation": 1,
+        "Integrate systems with suppliers": 1,
+        "expertise required for successful implementations": 1,
+        "implementation": 1,
+        "View Service": 1
+      }
+    },
+    {
+      "pillar": "business-automation",
+      "total": 69,
+      "body": 4,
+      "contextualPages": 4,
+      "global": 56,
+      "caseStudy": 0,
+      "industry": 7,
+      "insight": 4,
+      "uniquePages": 56,
+      "anchors": {
+        "Business Automation Automate Repetitive Work Across Your Business Explore": 8,
+        "business automation services": 1,
+        "business automation": 3,
+        "View Service": 1
+      }
+    },
+    {
+      "pillar": "ai-automation-agents",
+      "total": 64,
+      "body": 3,
+      "contextualPages": 3,
+      "global": 56,
+      "caseStudy": 2,
+      "industry": 1,
+      "insight": 3,
+      "uniquePages": 56,
+      "anchors": {
+        "AI Automation & Agents AI Agents That Handle Repetitive Operations Work Explore": 2,
+        "AI automation agents": 2,
+        "AI automation and agent systems": 1,
+        "View Service": 1,
+        "AI Automation & Agents": 2
+      }
+    },
+    {
+      "pillar": "cloud-devops",
+      "total": 70,
+      "body": 4,
+      "contextualPages": 4,
+      "global": 56,
+      "caseStudy": 3,
+      "industry": 5,
+      "insight": 4,
+      "uniquePages": 56,
+      "anchors": {
+        "Cloud & DevOps Reliable Cloud Infrastructure for Scalable Operations Explore": 6,
+        "cost management (FinOps)": 1,
+        "Cloud & DevOps services": 1,
+        "cloud and DevOps services": 1,
+        "deployments, monitoring": 1,
+        "View Service": 1,
+        "Cloud & DevOps": 3
+      }
+    }
+  ],
+  "brokenInternalLinks": 0,
+  "legacyInternalLinks": 0,
+  "unsupportedProjectLinks": 0,
+  "changedLinkRedirectHops": 0
+}

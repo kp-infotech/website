@@ -1,6 +1,6 @@
 # Step 4 — Internal authority flow
 
-**Status: release candidate; all build and local HTTP checks pass. Production release/verification pending.**
+**Status: PASS WITH WARNINGS — deployed and production verified.** AI informational coverage remains comparatively limited; earlier editorial/proof follow-ups are unchanged.
 
 Scope: existing 56 sitemap pages only. No page, URL, redirect, metadata, heading, claim or article-prose changes. Isolated checkout `/private/tmp/kp-step4-release`, baseline main `5e342c97ff08b766da66c5a7f92fa457c74be866`; original mixed workspace excluded. No Step 5 work.
 
@@ -220,12 +220,30 @@ All five services have homepage depth 1; `/ → /services/ → service` is a two
 
 ## Deployment
 
-Pending final clean-main push and established Cloudflare Worker deployment.
+- Release commit: `83284ebe915bee5745437b41bfdc2cc537c572d5`, committed on current main and pushed normally.
+- Worker: `website`, existing KP Infotech Cloudflare account and custom domain.
+- Deployment ID: `f04600b7-e106-4d8a-b430-d31b5dedbe1b`.
+- Version: `2f85cc1d-3fac-4f72-b1e5-47424e1fde7c`, serving 100% at verification.
+- Timestamp: **2026-09-17T08:00:10.32644Z — 17 September 2026, 13:30:10 IST**.
+- Mechanism: authenticated production build → full tests/local HTTP checks → normal main push → established `wrangler deploy` using adapter-generated configuration.
+- Credential scan: zero occurrences in generated artifacts/evidence. Existing SESSION, EMAIL and analytics bindings preserved; no runtime Sanity token introduced.
+- Original mixed checkout was not built or deployed. Untracked evidence snapshots and dependency symlink in the isolated checkout do not modify deployment source.
+- Approval review initially rejected the shared-branch push and then full-snapshot export. Full CMS snapshots were excluded from Git, and the user explicitly approved the bounded commit/push before execution. A documentation-only follow-up records final verification.
 
 ## Production Verification
 
-Pending release.
+**PASS — zero errors across all 56 production pages**, including homepage, Services hub, all five services, all five approved case studies, all 21 insights and all eight industries.
+
+- Every production page is HTTP 200, indexable and self-canonical.
+- Exact rendered links match the tested build: **2,510 internal link occurrences**, zero broken/legacy/unsupported-project links and zero changed-link redirect hops.
+- 56/56 metadata snapshots match; 9/9 Step 2 exact fixtures pass.
+- Step 3 semantic checks and exact built heading/image/table/link comparisons pass on all pages; one H1 each.
+- Step 1: 32 redirect checks and 63 unsupported-project variants pass; sitemap/robots/sample 404 pass.
+- Evidence: `step-4-evidence/production-summary.json`, `step1-production.json`, `step2-production.json`, `deployment.json`. Full rendered-page inventory and production graph remain locally available for inspection.
+- No new pages, changed URLs, metadata edits, redirect edits or proof claims.
 
 ## Measurement
 
-Review date: **15 October 2026**, approximately 28 days after planned 17 September release. Evaluate service impressions/clicks, non-brand queries, Top-20 commercial keywords and query relevance. No immediate ranking-success claim. No automation or Step 5 work.
+Review date: **15 October 2026**, approximately 28 days after the 17 September release. Evaluate service impressions/clicks, non-brand queries, Top-20 commercial keywords and query relevance. No immediate ranking-success claim. No automation or Step 5 work.
+
+STEP 4 COMPLETE — AWAITING SEO REVIEW
