@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "c69b5f83-c71d-456c-9d23-60d1dc867fab",
+    "slug": "node-js-frameworks",
+    "type": "blogPost",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "set": {
+      "content[124]": {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Navigating these technical decisions can be complex. If you need an expert partner to help select and implement the perfect Node.js framework for your business needs, the team at KP Infotech is here to guide you. We specialise in ",
+            "_key": "step4m0a"
+          },
+          {
+            "_type": "span",
+            "marks": [
+              "step4m0"
+            ],
+            "text": "building high-performance, scalable web applications",
+            "_key": "step4m0b"
+          },
+          {
+            "_type": "span",
+            "marks": [],
+            "text": " and can help you leverage the right technology to achieve your goals. Visit us at KP Infotech to learn how we can accelerate your digital transformation.",
+            "_key": "step4m0c"
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m0",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[124]",
+        "before": {
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Navigating these technical decisions can be complex. If you need an expert partner to help select and implement the perfect Node.js framework for your business needs, the team at KP Infotech is here to guide you. We specialise in building high-performance, scalable web applications and can help you leverage the right technology to achieve your goals. Visit us at KP Infotech to learn how we can accelerate your digital transformation."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Navigating these technical decisions can be complex. If you need an expert partner to help select and implement the perfect Node.js framework for your business needs, the team at KP Infotech is here to guide you. We specialise in ",
+              "_key": "step4m0a"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "step4m0"
+              ],
+              "text": "building high-performance, scalable web applications",
+              "_key": "step4m0b"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " and can help you leverage the right technology to achieve your goals. Visit us at KP Infotech to learn how we can accelerate your digital transformation.",
+              "_key": "step4m0c"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m0",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Connect the application planning or implementation discussion to the custom software capability."
+      }
+    ]
+  },
+  {
+    "id": "bbc095f6-0148-4f75-8e1a-3dadbab25d1f",
+    "slug": "database-design-best-practices",
+    "type": "blogPost",
+    "revision": "RfimE1gVC9ER6WRH3eguyV",
+    "set": {
+      "content[120]": {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Ultimately, the goal of applying these principles is to achieve sustained performance optimization . A database designed with best practices in mind is inherently faster, more efficient, and more scalable. It empowers you to ",
+            "_key": "step4m1a"
+          },
+          {
+            "_type": "span",
+            "marks": [
+              "step4m1"
+            ],
+            "text": "build applications that can handle increased load",
+            "_key": "step4m1b"
+          },
+          {
+            "_type": "span",
+            "marks": [],
+            "text": ", support complex business logic, and adapt to changing requirements without requiring a complete overhaul.",
+            "_key": "step4m1c"
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m1",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[120]",
+        "before": {
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Ultimately, the goal of applying these principles is to achieve sustained performance optimization . A database designed with best practices in mind is inherently faster, more efficient, and more scalable. It empowers you to build applications that can handle increased load, support complex business logic, and adapt to changing requirements without requiring a complete overhaul."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Ultimately, the goal of applying these principles is to achieve sustained performance optimization . A database designed with best practices in mind is inherently faster, more efficient, and more scalable. It empowers you to ",
+              "_key": "step4m1a"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "step4m1"
+              ],
+              "text": "build applications that can handle increased load",
+              "_key": "step4m1b"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": ", support complex business logic, and adapt to changing requirements without requiring a complete overhaul.",
+              "_key": "step4m1c"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m1",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Connect the application planning or implementation discussion to the custom software capability."
+      }
+    ]
+  },
+  {
+    "id": "439cf1fe-7b82-4d5c-8566-3586e6d1dd72",
+    "slug": "best-web-application-frameworks",
+    "type": "blogPost",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "set": {
+      "content[145]": {
+        "_key": "tQCrbgePRAC9whbqJeimkr",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "step4m2a",
+            "_type": "span",
+            "marks": [],
+            "text": "The core takeaway is that the concept of the single \"best web application framework\" is a myth. The optimal choice is fundamentally situational, tethered directly to your project&#39;s unique requirements, your team&#39;s existing expertise, and your long-term scalability goals. A startup prioritising rapid prototyping might find Ruby on Rails&#39; convention-over-configuration approach invaluable, while an "
+          },
+          {
+            "_key": "step4m2b",
+            "_type": "span",
+            "marks": [
+              "step4m2"
+            ],
+            "text": "enterprise building a complex, microservices-based system"
+          },
+          {
+            "_key": "step4m2c",
+            "_type": "span",
+            "marks": [],
+            "text": " may gravitate towards the robust, type-safe environment of Spring or ASP.NET Core."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m2",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[145]",
+        "before": {
+          "_key": "tQCrbgePRAC9whbqJeimkr",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "tQCrbgePRAC9whbqJeimoL",
+              "_type": "span",
+              "marks": [],
+              "text": "The core takeaway is that the concept of the single \"best web application framework\" is a myth. The optimal choice is fundamentally situational, tethered directly to your project&#39;s unique requirements, your team&#39;s existing expertise, and your long-term scalability goals. A startup prioritising rapid prototyping might find Ruby on Rails&#39; convention-over-configuration approach invaluable, while an enterprise building a complex, microservices-based system may gravitate towards the robust, type-safe environment of Spring or ASP.NET Core."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_key": "tQCrbgePRAC9whbqJeimkr",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "step4m2a",
+              "_type": "span",
+              "marks": [],
+              "text": "The core takeaway is that the concept of the single \"best web application framework\" is a myth. The optimal choice is fundamentally situational, tethered directly to your project&#39;s unique requirements, your team&#39;s existing expertise, and your long-term scalability goals. A startup prioritising rapid prototyping might find Ruby on Rails&#39; convention-over-configuration approach invaluable, while an "
+            },
+            {
+              "_key": "step4m2b",
+              "_type": "span",
+              "marks": [
+                "step4m2"
+              ],
+              "text": "enterprise building a complex, microservices-based system"
+            },
+            {
+              "_key": "step4m2c",
+              "_type": "span",
+              "marks": [],
+              "text": " may gravitate towards the robust, type-safe environment of Spring or ASP.NET Core."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m2",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Connect the application planning or implementation discussion to the custom software capability."
+      }
+    ]
+  },
+  {
+    "id": "b2ca9ea9-cb68-4957-b502-eb0d437deeb7",
+    "slug": "minimum-viable-product-examples",
+    "type": "blogPost",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "set": {
+      "content[2]": {
+        "_key": "f6b97970baa4",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "step4m3a",
+            "_type": "span",
+            "marks": [],
+            "text": "Whether you're a startup founder or a product manager at an established enterprise, these insights will provide a replicable framework for "
+          },
+          {
+            "_key": "step4m3b",
+            "_type": "span",
+            "marks": [
+              "step4m3"
+            ],
+            "text": "launching a successful MVP"
+          },
+          {
+            "_key": "step4m3c",
+            "_type": "span",
+            "marks": [],
+            "text": " that validates your vision and resonates with your target market."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m3",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[2]",
+        "before": {
+          "_key": "f6b97970baa4",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "afa154d11b8d",
+              "_type": "span",
+              "marks": [],
+              "text": "Whether you're a startup founder or a product manager at an established enterprise, these insights will provide a replicable framework for launching a successful MVP that validates your vision and resonates with your target market."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_key": "f6b97970baa4",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step4m3a",
+              "_type": "span",
+              "marks": [],
+              "text": "Whether you're a startup founder or a product manager at an established enterprise, these insights will provide a replicable framework for "
+            },
+            {
+              "_key": "step4m3b",
+              "_type": "span",
+              "marks": [
+                "step4m3"
+              ],
+              "text": "launching a successful MVP"
+            },
+            {
+              "_key": "step4m3c",
+              "_type": "span",
+              "marks": [],
+              "text": " that validates your vision and resonates with your target market."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m3",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Connect the application planning or implementation discussion to the custom software capability."
+      }
+    ]
+  },
+  {
+    "id": "c35f7505-422b-4c6a-aebb-557e383cc66f",
+    "slug": "scalable-system-architecture",
+    "type": "blogPost",
+    "revision": "1j9cdcCCDgKVEOlo3ACiYZ",
+    "set": {
+      "content[87]": {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "At KP Infotech , we specialize in building robust, scalable digital solutions that grow with your business. From high-performance websites and mobile apps to ",
+            "_key": "step4m4a"
+          },
+          {
+            "_type": "span",
+            "marks": [
+              "step4m4"
+            ],
+            "text": "custom enterprise software",
+            "_key": "step4m4b"
+          },
+          {
+            "_type": "span",
+            "marks": [],
+            "text": ", we lay the architectural foundation for long-term success. Discover how our development services can help you build for the future .",
+            "_key": "step4m4c"
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m4",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      "content[79]": {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Suddenly, you&#8217;re juggling ",
+            "_key": "step4m11a"
+          },
+          {
+            "_type": "span",
+            "marks": [
+              "step4m11"
+            ],
+            "text": "deployments, monitoring",
+            "_key": "step4m11b"
+          },
+          {
+            "_type": "span",
+            "marks": [],
+            "text": ", and communication across dozens of services, all while trying to keep data consistent. That takes a ton of expertise and the right tooling. For smaller apps, new projects, or teams without a dedicated DevOps crew, a well-structured monolith can be a much more practical choice. It&#8217;s simpler to build, test, and deploy, and you can easily scale it vertically to handle your initial growth. The right answer really comes down to your project, your team&#8217;s skills, and your vision for the future.",
+            "_key": "step4m11c"
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m11",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[87]",
+        "before": {
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "At KP Infotech , we specialize in building robust, scalable digital solutions that grow with your business. From high-performance websites and mobile apps to custom enterprise software, we lay the architectural foundation for long-term success. Discover how our development services can help you build for the future ."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "At KP Infotech , we specialize in building robust, scalable digital solutions that grow with your business. From high-performance websites and mobile apps to ",
+              "_key": "step4m4a"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "step4m4"
+              ],
+              "text": "custom enterprise software",
+              "_key": "step4m4b"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": ", we lay the architectural foundation for long-term success. Discover how our development services can help you build for the future .",
+              "_key": "step4m4c"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m4",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Connect the application planning or implementation discussion to the custom software capability."
+      },
+      {
+        "path": "content[79]",
+        "before": {
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Suddenly, you&#8217;re juggling deployments, monitoring, and communication across dozens of services, all while trying to keep data consistent. That takes a ton of expertise and the right tooling. For smaller apps, new projects, or teams without a dedicated DevOps crew, a well-structured monolith can be a much more practical choice. It&#8217;s simpler to build, test, and deploy, and you can easily scale it vertically to handle your initial growth. The right answer really comes down to your project, your team&#8217;s skills, and your vision for the future."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Suddenly, you&#8217;re juggling ",
+              "_key": "step4m11a"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "step4m11"
+              ],
+              "text": "deployments, monitoring",
+              "_key": "step4m11b"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": ", and communication across dozens of services, all while trying to keep data consistent. That takes a ton of expertise and the right tooling. For smaller apps, new projects, or teams without a dedicated DevOps crew, a well-structured monolith can be a much more practical choice. It&#8217;s simpler to build, test, and deploy, and you can easily scale it vertically to handle your initial growth. The right answer really comes down to your project, your team&#8217;s skills, and your vision for the future.",
+              "_key": "step4m11c"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m11",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Operational complexity paragraph directly discusses DevOps responsibilities."
+      }
+    ]
+  },
+  {
+    "id": "fc2fe8e6-9359-4626-919e-ec95006b731a",
+    "slug": "angular-vs-react",
+    "type": "blogPost",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "set": {
+      "content[44]": {
+        "_key": "7a814b58aa65",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "step4m5b",
+            "_type": "span",
+            "marks": [
+              "strong",
+              "step4m5"
+            ],
+            "text": "Large, long\u2011lived enterprise systems"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "step4m5",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[44]",
+        "before": {
+          "_key": "7a814b58aa65",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "e540b90908ea",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Large, long\u2011lived enterprise systems"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_key": "7a814b58aa65",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step4m5b",
+              "_type": "span",
+              "marks": [
+                "strong",
+                "step4m5"
+              ],
+              "text": "Large, long\u2011lived enterprise systems"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "_key": "step4m5",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Connect the application planning or implementation discussion to the custom software capability."
+      }
+    ]
+  },
+  {
+    "id": "01edc29a-94b5-4d89-b93c-c519a1addf17",
+    "slug": "erp-implementation-cost",
+    "type": "blogPost",
+    "revision": "tQCrbgePRAC9whbqJe9qZd",
+    "set": {
+      "content[81]": {
+        "_key": "tQCrbgePRAC9whbqJe98IL",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "step4m6a",
+            "_type": "span",
+            "marks": [],
+            "text": "This is a massive issue in the industry, with roughly 45% of organizations performing moderate customizations and another 21% diving into heavy code modifications. The most cost-effective approach is nearly always to adopt the ERP&#39;s built-in, best-practice workflows wherever you can. This strategy keeps your ERP implementation cost down and ensures your system stays stable and easy to maintain for years to come. For companies looking to avoid these traps, it&#39;s vital to understand what a true digital transformation partner brings to the table; you can explore the deep "
+          },
+          {
+            "_key": "step4m6b",
+            "_type": "span",
+            "marks": [
+              "step4m6"
+            ],
+            "text": "expertise required for successful implementations"
+          },
+          {
+            "_key": "step4m6c",
+            "_type": "span",
+            "marks": [],
+            "text": " to see what\u2019s really involved."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m6",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[81]",
+        "before": {
+          "_key": "tQCrbgePRAC9whbqJe98IL",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "tQCrbgePRAC9whbqJe98Lp",
+              "_type": "span",
+              "marks": [],
+              "text": "This is a massive issue in the industry, with roughly 45% of organizations performing moderate customizations and another 21% diving into heavy code modifications. The most cost-effective approach is nearly always to adopt the ERP&#39;s built-in, best-practice workflows wherever you can. This strategy keeps your ERP implementation cost down and ensures your system stays stable and easy to maintain for years to come. For companies looking to avoid these traps, it&#39;s vital to understand what a true digital transformation partner brings to the table; you can explore the deep expertise required for successful implementations to see what\u2019s really involved."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_key": "tQCrbgePRAC9whbqJe98IL",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "step4m6a",
+              "_type": "span",
+              "marks": [],
+              "text": "This is a massive issue in the industry, with roughly 45% of organizations performing moderate customizations and another 21% diving into heavy code modifications. The most cost-effective approach is nearly always to adopt the ERP&#39;s built-in, best-practice workflows wherever you can. This strategy keeps your ERP implementation cost down and ensures your system stays stable and easy to maintain for years to come. For companies looking to avoid these traps, it&#39;s vital to understand what a true digital transformation partner brings to the table; you can explore the deep "
+            },
+            {
+              "_key": "step4m6b",
+              "_type": "span",
+              "marks": [
+                "step4m6"
+              ],
+              "text": "expertise required for successful implementations"
+            },
+            {
+              "_key": "step4m6c",
+              "_type": "span",
+              "marks": [],
+              "text": " to see what\u2019s really involved."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m6",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Implementation planning and customization expertise support the cost decision."
+      }
+    ]
+  },
+  {
+    "id": "22114651-112b-40f6-af14-a6ecdd448dfd",
+    "slug": "odoo-erp-complete-guide",
+    "type": "blogPost",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "set": {
+      "content[2]": {
+        "_key": "38e1ae2d8105",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c9ffcb064cdf",
+            "_type": "span",
+            "marks": [],
+            "text": "Odoo stands out because it combines "
+          },
+          {
+            "_key": "0ea7112fc778",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "affordability, modularity, and depth of functionality"
+          },
+          {
+            "_key": "step4m7a",
+            "_type": "span",
+            "marks": [],
+            "text": ". Instead of forcing you into a massive, all-or-nothing "
+          },
+          {
+            "_key": "step4m7b",
+            "_type": "span",
+            "marks": [
+              "step4m7"
+            ],
+            "text": "implementation"
+          },
+          {
+            "_key": "step4m7c",
+            "_type": "span",
+            "marks": [],
+            "text": ", Odoo lets you start with the essentials and expand as your business grows."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m7",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[2]",
+        "before": {
+          "_key": "38e1ae2d8105",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "c9ffcb064cdf",
+              "_type": "span",
+              "marks": [],
+              "text": "Odoo stands out because it combines "
+            },
+            {
+              "_key": "0ea7112fc778",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "affordability, modularity, and depth of functionality"
+            },
+            {
+              "_key": "0f08c3de55af",
+              "_type": "span",
+              "marks": [],
+              "text": ". Instead of forcing you into a massive, all-or-nothing implementation, Odoo lets you start with the essentials and expand as your business grows."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_key": "38e1ae2d8105",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "c9ffcb064cdf",
+              "_type": "span",
+              "marks": [],
+              "text": "Odoo stands out because it combines "
+            },
+            {
+              "_key": "0ea7112fc778",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "affordability, modularity, and depth of functionality"
+            },
+            {
+              "_key": "step4m7a",
+              "_type": "span",
+              "marks": [],
+              "text": ". Instead of forcing you into a massive, all-or-nothing "
+            },
+            {
+              "_key": "step4m7b",
+              "_type": "span",
+              "marks": [
+                "step4m7"
+              ],
+              "text": "implementation"
+            },
+            {
+              "_key": "step4m7c",
+              "_type": "span",
+              "marks": [],
+              "text": ", Odoo lets you start with the essentials and expand as your business grows."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m7",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "The modular adoption paragraph introduces the Odoo implementation capability."
+      }
+    ]
+  },
+  {
+    "id": "c78863d6-a962-4365-a153-7e1942d0f0b8",
+    "slug": "erp-for-retail-stores",
+    "type": "blogPost",
+    "revision": "Xe0A1k3WLpDZQN3vt6h7Lj",
+    "set": {
+      "content[79]": {
+        "_key": "28ef2408f165",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "step4m8a",
+            "_type": "span",
+            "marks": [],
+            "text": "Choosing the right ERP for your retail stores is a huge step, but the journey doesn't stop there. The implementation phase is where your big-picture strategy turns into a daily reality for your team. Think of it like building a custom home. You wouldn't just show up and start laying bricks without a detailed blueprint, would you? A successful "
+          },
+          {
+            "_key": "step4m8b",
+            "_type": "span",
+            "marks": [
+              "step4m8"
+            ],
+            "text": "ERP implementation"
+          },
+          {
+            "_key": "step4m8c",
+            "_type": "span",
+            "marks": [],
+            "text": " demands that same level of careful planning and execution."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m8",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[79]",
+        "before": {
+          "_key": "28ef2408f165",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "3e44f0ee5176",
+              "_type": "span",
+              "marks": [],
+              "text": "Choosing the right ERP for your retail stores is a huge step, but the journey doesn't stop there. The implementation phase is where your big-picture strategy turns into a daily reality for your team. Think of it like building a custom home. You wouldn't just show up and start laying bricks without a detailed blueprint, would you? A successful ERP implementation demands that same level of careful planning and execution."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_key": "28ef2408f165",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step4m8a",
+              "_type": "span",
+              "marks": [],
+              "text": "Choosing the right ERP for your retail stores is a huge step, but the journey doesn't stop there. The implementation phase is where your big-picture strategy turns into a daily reality for your team. Think of it like building a custom home. You wouldn't just show up and start laying bricks without a detailed blueprint, would you? A successful "
+            },
+            {
+              "_key": "step4m8b",
+              "_type": "span",
+              "marks": [
+                "step4m8"
+              ],
+              "text": "ERP implementation"
+            },
+            {
+              "_key": "step4m8c",
+              "_type": "span",
+              "marks": [],
+              "text": " demands that same level of careful planning and execution."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m8",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Link in the implementation section, not the introductory retail definition."
+      }
+    ]
+  },
+  {
+    "id": "7a6b6881-d12d-4f83-a314-c3f00f8819d2",
+    "slug": "inventory-management-best-practices",
+    "type": "blogPost",
+    "revision": "vv2qDqFzoM9WmQ2If8UhvQ",
+    "set": {
+      "content[21]": {
+        "_key": "4e73f8d02052",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "step4m9b",
+            "_type": "span",
+            "marks": [
+              "strong",
+              "step4m9"
+            ],
+            "text": "Integrate systems with suppliers"
+          },
+          {
+            "_key": "step4m9c",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": ":"
+          },
+          {
+            "_key": "626f60c02dfd",
+            "_type": "span",
+            "marks": [],
+            "text": " Share forecasts, production schedules, and real-time consumption data to improve coordination."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "step4m9",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[21]",
+        "before": {
+          "_key": "4e73f8d02052",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "4dacaf2f2eed",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Integrate systems with suppliers:"
+            },
+            {
+              "_key": "626f60c02dfd",
+              "_type": "span",
+              "marks": [],
+              "text": " Share forecasts, production schedules, and real-time consumption data to improve coordination."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_key": "4e73f8d02052",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step4m9b",
+              "_type": "span",
+              "marks": [
+                "strong",
+                "step4m9"
+              ],
+              "text": "Integrate systems with suppliers"
+            },
+            {
+              "_key": "step4m9c",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": ":"
+            },
+            {
+              "_key": "626f60c02dfd",
+              "_type": "span",
+              "marks": [],
+              "text": " Share forecasts, production schedules, and real-time consumption data to improve coordination."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "_key": "step4m9",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Supplier and inventory integration is an ERP implementation capability."
+      }
+    ]
+  },
+  {
+    "id": "3011f67f-8bba-43b3-b60d-8896384d64a0",
+    "slug": "cloud-deployment-models-diagram",
+    "type": "blogPost",
+    "revision": "ZJzLgKtH0212rQwJxqOiNY",
+    "set": {
+      "content[9]": {
+        "_key": "4a7994cbb2b6",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "step4m10a",
+            "_type": "span",
+            "marks": [],
+            "text": "Risk of bill shock without good "
+          },
+          {
+            "_key": "step4m10b",
+            "_type": "span",
+            "marks": [
+              "step4m10"
+            ],
+            "text": "cost management (FinOps)"
+          },
+          {
+            "_key": "step4m10c",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "step4m10",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[9]",
+        "before": {
+          "_key": "4a7994cbb2b6",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "01072727ec13",
+              "_type": "span",
+              "marks": [],
+              "text": "Risk of bill shock without good cost management (FinOps)."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_key": "4a7994cbb2b6",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step4m10a",
+              "_type": "span",
+              "marks": [],
+              "text": "Risk of bill shock without good "
+            },
+            {
+              "_key": "step4m10b",
+              "_type": "span",
+              "marks": [
+                "step4m10"
+              ],
+              "text": "cost management (FinOps)"
+            },
+            {
+              "_key": "step4m10c",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "_key": "step4m10",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Operational cost control is part of the Cloud & DevOps service."
+      }
+    ]
+  },
+  {
+    "id": "15c6587c-de22-4015-b264-6ceae08c47d6",
+    "slug": "kp-infotech-new-website-custom-software-automation-ai",
+    "type": "blogPost",
+    "revision": "RfimE1gVC9ER6WRH3kXyVX",
+    "set": {
+      "content[40]": {
+        "_key": "022786db252f",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "step4m12a",
+            "_type": "span",
+            "marks": [],
+            "text": "KP Infotech builds "
+          },
+          {
+            "_key": "step4m12b",
+            "_type": "span",
+            "marks": [
+              "step4m12"
+            ],
+            "text": "AI automation and agent systems"
+          },
+          {
+            "_key": "step4m12c",
+            "_type": "span",
+            "marks": [],
+            "text": " with guardrails: approved data sources, role-based access, human review, logging, fallback paths, and testing against real business examples."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "step4m12",
+            "_type": "internalLink",
+            "reference": {
+              "_type": "reference",
+              "_ref": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    },
+    "details": [
+      {
+        "path": "content[40]",
+        "before": {
+          "_key": "022786db252f",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "7e700cc58f56",
+              "_type": "span",
+              "marks": [],
+              "text": "KP Infotech builds AI automation and agent systems with guardrails: approved data sources, role-based access, human review, logging, fallback paths, and testing against real business examples."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        "after": {
+          "_key": "022786db252f",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step4m12a",
+              "_type": "span",
+              "marks": [],
+              "text": "KP Infotech builds "
+            },
+            {
+              "_key": "step4m12b",
+              "_type": "span",
+              "marks": [
+                "step4m12"
+              ],
+              "text": "AI automation and agent systems"
+            },
+            {
+              "_key": "step4m12c",
+              "_type": "span",
+              "marks": [],
+              "text": " with guardrails: approved data sources, role-based access, human review, logging, fallback paths, and testing against real business examples."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "step4m12",
+              "_type": "internalLink",
+              "reference": {
+                "_type": "reference",
+                "_ref": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652"
+              }
+            }
+          ],
+          "style": "normal"
+        },
+        "reason": "Existing guardrails paragraph describes the actual AI offering."
+      }
+    ]
+  },
+  {
+    "id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+    "slug": "cloud-cost-optimization-industrial-sme",
+    "type": "caseStudy",
+    "revision": "TjsscmeD2PKZPEoP8IG1fa",
+    "set": {
+      "services": [
+        {
+          "_key": "step4ref0",
+          "_type": "reference",
+          "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90"
+        }
+      ]
+    },
+    "details": [
+      {
+        "path": "services",
+        "before": [
+          {
+            "_key": "c3f713ed0a21",
+            "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+            "_type": "reference"
+          },
+          {
+            "_key": "d31af637a86f",
+            "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+            "_type": "reference"
+          },
+          {
+            "_key": "45270a2a6761",
+            "_ref": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+            "_type": "reference"
+          }
+        ],
+        "after": [
+          {
+            "_key": "step4ref0",
+            "_type": "reference",
+            "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90"
+          }
+        ],
+        "reason": "Cloud infrastructure cost optimization is the genuine primary capability; remove unrelated ERP/AI references."
+      }
+    ]
+  },
+  {
+    "id": "e907e1d9-f6be-4f56-a048-276e29d2d3fc",
+    "slug": "virtual-tours-ai-listings",
+    "type": "caseStudy",
+    "revision": "TjsscmeD2PKZPEoP8II253",
+    "set": {
+      "services": [
+        {
+          "_key": "step4ref0",
+          "_type": "reference",
+          "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+        },
+        {
+          "_key": "step4ref1",
+          "_type": "reference",
+          "_ref": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652"
+        }
+      ]
+    },
+    "details": [
+      {
+        "path": "services",
+        "before": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQM8pO",
+            "_ref": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+            "_type": "reference"
+          },
+          {
+            "_key": "7fD4tZK73il5cFJVtQM8sV",
+            "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965",
+            "_type": "reference"
+          }
+        ],
+        "after": [
+          {
+            "_key": "step4ref0",
+            "_type": "reference",
+            "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965"
+          },
+          {
+            "_key": "step4ref1",
+            "_type": "reference",
+            "_ref": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652"
+          }
+        ],
+        "reason": "Custom platform and actual AI listing content are the primary and useful secondary capabilities."
+      }
+    ]
+  },
+  {
+    "id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+    "slug": "custom-software-development",
+    "type": "service",
+    "revision": "Xe0A1k3WLpDZQN3vt63OC4",
+    "set": {
+      "relatedWork": [
+        {
+          "_key": "step4proof0",
+          "_type": "reference",
+          "_ref": "347935a0-e177-4e34-b3f9-d413e1a0b3ed"
+        },
+        {
+          "_key": "step4proof1",
+          "_type": "reference",
+          "_ref": "a2255729-fe51-45d5-b190-914ba7f86ea2"
+        },
+        {
+          "_key": "step4proof2",
+          "_type": "reference",
+          "_ref": "3a61f3da-04fa-4f09-95ec-62cb54403e24"
+        }
+      ]
+    },
+    "details": [
+      {
+        "path": "relatedWork",
+        "before": null,
+        "after": [
+          {
+            "_key": "step4proof0",
+            "_type": "reference",
+            "_ref": "347935a0-e177-4e34-b3f9-d413e1a0b3ed"
+          },
+          {
+            "_key": "step4proof1",
+            "_type": "reference",
+            "_ref": "a2255729-fe51-45d5-b190-914ba7f86ea2"
+          },
+          {
+            "_key": "step4proof2",
+            "_type": "reference",
+            "_ref": "3a61f3da-04fa-4f09-95ec-62cb54403e24"
+          }
+        ],
+        "reason": "Use the existing related-work component for genuine proof; no new claims."
+      }
+    ],
+    "append": {
+      "_key": "step4resources",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "text": "Before defining a project, use our ",
+          "marks": []
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "text": "custom software guide",
+          "marks": [
+            "resource0"
+          ]
+        },
+        {
+          "_key": "and1",
+          "_type": "span",
+          "text": " and ",
+          "marks": []
+        },
+        {
+          "_key": "resource1",
+          "_type": "span",
+          "text": "database design best practices",
+          "marks": [
+            "resource1"
+          ]
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "text": " to clarify fit and data requirements.",
+          "marks": []
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_type": "reference",
+            "_ref": "blogPost.what-is-custom-software"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_type": "reference",
+            "_ref": "bbc095f6-0148-4f75-8e1a-3dadbab25d1f"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+    "slug": "cloud-devops",
+    "type": "service",
+    "revision": "Xe0A1k3WLpDZQN3vt63OC4",
+    "set": {
+      "relatedWork": [
+        {
+          "_key": "step4proof0",
+          "_type": "reference",
+          "_ref": "aaab7694-a2ac-4750-8d7e-51366a7ee771"
+        }
+      ]
+    },
+    "details": [
+      {
+        "path": "relatedWork",
+        "before": null,
+        "after": [
+          {
+            "_key": "step4proof0",
+            "_type": "reference",
+            "_ref": "aaab7694-a2ac-4750-8d7e-51366a7ee771"
+          }
+        ],
+        "reason": "Use the existing related-work component for genuine proof; no new claims."
+      }
+    ],
+    "append": {
+      "_key": "step4resources",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "text": "For infrastructure planning, review our ",
+          "marks": []
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "text": "cloud deployment models guide",
+          "marks": [
+            "resource0"
+          ]
+        },
+        {
+          "_key": "and1",
+          "_type": "span",
+          "text": " and ",
+          "marks": []
+        },
+        {
+          "_key": "resource1",
+          "_type": "span",
+          "text": "DevOps best practices",
+          "marks": [
+            "resource1"
+          ]
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "text": " to connect hosting choices with reliable day-to-day delivery.",
+          "marks": []
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_type": "reference",
+            "_ref": "3011f67f-8bba-43b3-b60d-8896384d64a0"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_type": "reference",
+            "_ref": "blogPost.devops-best-practices"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+    "slug": "ai-automation-agents",
+    "type": "service",
+    "revision": "Xe0A1k3WLpDZQN3vt63OC4",
+    "set": {
+      "relatedWork": [
+        {
+          "_key": "step4proof0",
+          "_type": "reference",
+          "_ref": "e907e1d9-f6be-4f56-a048-276e29d2d3fc"
+        },
+        {
+          "_key": "step4proof1",
+          "_type": "reference",
+          "_ref": "3a61f3da-04fa-4f09-95ec-62cb54403e24"
+        }
+      ]
+    },
+    "details": [
+      {
+        "path": "relatedWork",
+        "before": null,
+        "after": [
+          {
+            "_key": "step4proof0",
+            "_type": "reference",
+            "_ref": "e907e1d9-f6be-4f56-a048-276e29d2d3fc"
+          },
+          {
+            "_key": "step4proof1",
+            "_type": "reference",
+            "_ref": "3a61f3da-04fa-4f09-95ec-62cb54403e24"
+          }
+        ],
+        "reason": "Use the existing related-work component for genuine proof; no new claims."
+      }
+    ],
+    "append": {
+      "_key": "step4resources",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "text": "Our ",
+          "marks": []
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "text": "business process automation tools guide",
+          "marks": [
+            "resource0"
+          ]
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "text": " explains where rule-based automation fits and when AI-assisted workflows need human review.",
+          "marks": []
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_type": "reference",
+            "_ref": "blogPost.business-process-automation-tools"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+    "slug": "erp-software",
+    "type": "service",
+    "revision": "Xe0A1k3WLpDZQN3vt63OC4",
+    "set": {},
+    "details": [],
+    "append": {
+      "_key": "step4resources",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "text": "Plan your rollout with our ",
+          "marks": []
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "text": "ERP implementation cost guide",
+          "marks": [
+            "resource0"
+          ]
+        },
+        {
+          "_key": "and1",
+          "_type": "span",
+          "text": " and ",
+          "marks": []
+        },
+        {
+          "_key": "resource1",
+          "_type": "span",
+          "text": "ERP selection checklist",
+          "marks": [
+            "resource1"
+          ]
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "text": " before comparing implementation scope and budgets.",
+          "marks": []
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_type": "reference",
+            "_ref": "01edc29a-94b5-4d89-b93c-c519a1addf17"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_type": "reference",
+            "_ref": "blogPost.how-to-choose-erp-system"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+    "slug": "business-automation",
+    "type": "service",
+    "revision": "Xe0A1k3WLpDZQN3vt63OC4",
+    "set": {},
+    "details": [],
+    "append": {
+      "_key": "step4resources",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "text": "Use our ",
+          "marks": []
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "text": "process improvement methods",
+          "marks": [
+            "resource0"
+          ]
+        },
+        {
+          "_key": "and1",
+          "_type": "span",
+          "text": " and ",
+          "marks": []
+        },
+        {
+          "_key": "resource1",
+          "_type": "span",
+          "text": "automation tools guide",
+          "marks": [
+            "resource1"
+          ]
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "text": " to identify which workflows to simplify before choosing tools.",
+          "marks": []
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_type": "reference",
+            "_ref": "blogPost.business-process-improvement-methods"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_type": "reference",
+            "_ref": "blogPost.business-process-automation-tools"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "99901f6b-55bb-4d05-9bb4-53fbdcd0e92e",
+    "slug": "retail-ecommerce",
+    "type": "industry",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "set": {
+      "relatedServices": [
+        {
+          "_key": "9df28dc90db0",
+          "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965",
+          "_type": "reference"
+        },
+        {
+          "_key": "7dc7bc4cd482",
+          "_ref": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+          "_type": "reference"
+        },
+        {
+          "_key": "70a0fcc94efb",
+          "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+          "_type": "reference"
+        }
+      ]
+    },
+    "details": [
+      {
+        "path": "relatedServices",
+        "before": [
+          {
+            "_key": "9df28dc90db0",
+            "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965",
+            "_type": "reference"
+          },
+          {
+            "_key": "7dc7bc4cd482",
+            "_ref": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+            "_type": "reference"
+          },
+          {
+            "_key": "70a0fcc94efb",
+            "_ref": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+            "_type": "reference"
+          }
+        ],
+        "after": [
+          {
+            "_key": "9df28dc90db0",
+            "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965",
+            "_type": "reference"
+          },
+          {
+            "_key": "7dc7bc4cd482",
+            "_ref": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+            "_type": "reference"
+          },
+          {
+            "_key": "70a0fcc94efb",
+            "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+            "_type": "reference"
+          }
+        ],
+        "reason": "Prioritize ERP inventory and channel integration alongside existing custom software and automation cards."
+      }
+    ]
+  }
+]

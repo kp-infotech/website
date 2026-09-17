@@ -1,0 +1,5 @@
+import {createClient} from '@sanity/client';import {readFileSync,writeFileSync} from 'node:fs';import assert from 'node:assert/strict';
+const c=createClient({projectId:'5rux0mv2',dataset:'production',apiVersion:'2024-01-01',useCdn:false,token:process.env.SANITY_API_TOKEN});
+const before=JSON.parse(readFileSync(process.env.STEP4_SNAPSHOT_PATH)),batch=JSON.parse(readFileSync('scripts/sanity/step-4-links-batch.json'));const after=await c.getDocuments(before.map(d=>d._id));
+for(const b of before){const a=after.find(d=>d._id===b._id),u=batch.find(u=>u.id===b._id),e=structuredClone(b);for(const [p,v] of Object.entries(u.set)){const m=/^content\[(\d+)\]$/.exec(p);if(m)e.content[+m[1]]=v;else e[p]=v;}if(u.append)e.content.push(u.append);for(const k of ['_rev','_updatedAt','_system']){delete e[k];delete a[k];}assert.deepEqual(a,e,'Unexpected CMS edit '+u.slug);}
+writeFileSync('docs/seo-review/step-4-evidence/cms-verification.json',JSON.stringify({timestamp:new Date().toISOString(),documents:after.length,errors:[]},null,2));console.log({documents:after.length,errors:[]});

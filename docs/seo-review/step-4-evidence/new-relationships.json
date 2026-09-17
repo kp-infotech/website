@@ -1,0 +1,182 @@
+[
+  {
+    "source": "node-js-frameworks",
+    "destination": "custom-software-development",
+    "anchor": "building high-performance, scalable web applications",
+    "blockKey": null,
+    "blockIndex": 124,
+    "reason": "Connect the application planning or implementation discussion to the custom software capability.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "database-design-best-practices",
+    "destination": "custom-software-development",
+    "anchor": "build applications that can handle increased load",
+    "blockKey": null,
+    "blockIndex": 120,
+    "reason": "Connect the application planning or implementation discussion to the custom software capability.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "best-web-application-frameworks",
+    "destination": "custom-software-development",
+    "anchor": "enterprise building a complex, microservices-based system",
+    "blockKey": "tQCrbgePRAC9whbqJeimkr",
+    "blockIndex": 145,
+    "reason": "Connect the application planning or implementation discussion to the custom software capability.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "minimum-viable-product-examples",
+    "destination": "custom-software-development",
+    "anchor": "launching a successful MVP",
+    "blockKey": "f6b97970baa4",
+    "blockIndex": 2,
+    "reason": "Connect the application planning or implementation discussion to the custom software capability.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "scalable-system-architecture",
+    "destination": "custom-software-development",
+    "anchor": "custom enterprise software",
+    "blockKey": null,
+    "blockIndex": 87,
+    "reason": "Connect the application planning or implementation discussion to the custom software capability.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "angular-vs-react",
+    "destination": "custom-software-development",
+    "anchor": "Large, long\u2011lived enterprise systems",
+    "blockKey": "7a814b58aa65",
+    "blockIndex": 44,
+    "reason": "Connect the application planning or implementation discussion to the custom software capability.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "erp-implementation-cost",
+    "destination": "erp-software",
+    "anchor": "expertise required for successful implementations",
+    "blockKey": "tQCrbgePRAC9whbqJe98IL",
+    "blockIndex": 81,
+    "reason": "Implementation planning and customization expertise support the cost decision.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "odoo-erp-complete-guide",
+    "destination": "erp-software",
+    "anchor": "implementation",
+    "blockKey": "38e1ae2d8105",
+    "blockIndex": 2,
+    "reason": "The modular adoption paragraph introduces the Odoo implementation capability.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "erp-for-retail-stores",
+    "destination": "erp-software",
+    "anchor": "ERP implementation",
+    "blockKey": "28ef2408f165",
+    "blockIndex": 79,
+    "reason": "Link in the implementation section, not the introductory retail definition.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "inventory-management-best-practices",
+    "destination": "erp-software",
+    "anchor": "Integrate systems with suppliers",
+    "blockKey": "4e73f8d02052",
+    "blockIndex": 21,
+    "reason": "Supplier and inventory integration is an ERP implementation capability.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "cloud-deployment-models-diagram",
+    "destination": "cloud-devops",
+    "anchor": "cost management (FinOps)",
+    "blockKey": "4a7994cbb2b6",
+    "blockIndex": 9,
+    "reason": "Operational cost control is part of the Cloud & DevOps service.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "scalable-system-architecture",
+    "destination": "cloud-devops",
+    "anchor": "deployments, monitoring",
+    "blockKey": null,
+    "blockIndex": 79,
+    "reason": "Operational complexity paragraph directly discusses DevOps responsibilities.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "kp-infotech-new-website-custom-software-automation-ai",
+    "destination": "ai-automation-agents",
+    "anchor": "AI automation and agent systems",
+    "blockKey": "022786db252f",
+    "blockIndex": 40,
+    "reason": "Existing guardrails paragraph describes the actual AI offering.",
+    "relationship": "contextual"
+  },
+  {
+    "source": "custom-software-development",
+    "destination": "what-is-custom-software",
+    "anchor": "custom software guide",
+    "relationship": "educational",
+    "reason": "Decision support within existing service content."
+  },
+  {
+    "source": "custom-software-development",
+    "destination": "database-design-best-practices",
+    "anchor": "database design best practices",
+    "relationship": "educational",
+    "reason": "Decision support within existing service content."
+  },
+  {
+    "source": "erp-software",
+    "destination": "erp-implementation-cost",
+    "anchor": "ERP implementation cost guide",
+    "relationship": "educational",
+    "reason": "Decision support within existing service content."
+  },
+  {
+    "source": "erp-software",
+    "destination": "how-to-choose-erp-system",
+    "anchor": "ERP selection checklist",
+    "relationship": "educational",
+    "reason": "Decision support within existing service content."
+  },
+  {
+    "source": "business-automation",
+    "destination": "business-process-improvement-methods",
+    "anchor": "process improvement methods",
+    "relationship": "educational",
+    "reason": "Decision support within existing service content."
+  },
+  {
+    "source": "business-automation",
+    "destination": "business-process-automation-tools",
+    "anchor": "automation tools guide",
+    "relationship": "educational",
+    "reason": "Decision support within existing service content."
+  },
+  {
+    "source": "cloud-devops",
+    "destination": "cloud-deployment-models-diagram",
+    "anchor": "cloud deployment models guide",
+    "relationship": "educational",
+    "reason": "Decision support within existing service content."
+  },
+  {
+    "source": "cloud-devops",
+    "destination": "devops-best-practices",
+    "anchor": "DevOps best practices",
+    "relationship": "educational",
+    "reason": "Decision support within existing service content."
+  },
+  {
+    "source": "ai-automation-agents",
+    "destination": "business-process-automation-tools",
+    "anchor": "business process automation tools guide",
+    "relationship": "educational",
+    "reason": "Decision support within existing service content."
+  }
+]
