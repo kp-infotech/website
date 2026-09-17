@@ -6,7 +6,7 @@ test('built sitemap pages preserve structural SEO and article contracts',{skip:!
  const known=new Set(['angular-vs-react','best-hr-software-for-startups','kp-infotech-new-website-custom-software-automation-ai']);let articles=0;
  for(const url of urls){const html=fs.readFileSync('dist/client'+new URL(url).pathname+'index.html','utf8');const p=inspect(html,url);
  assert.equal(p.h1.length,1,url);assert.ok(p.h1[0].text&&!p.h1[0].hidden,url);assert.equal(p.titles.length,1,url);assert.deepEqual(p.canonicals,[url]);assert.equal(p.noindex,false,url);assert.equal(p.schemaErrors.length,0,url);assert.deepEqual(p.duplicateIds,[],url);assert.equal(p.emptyButtons,0,url);assert.deepEqual(p.hierarchy,[],url);
- for(const img of p.images){assert.notEqual(img.alt,null,url);if(img.context.includes('page-hero__bg'))assert.equal(img.alt,'',url+' decorative hero');}
+ for(const img of p.images){assert.notEqual(img.alt,null,url);if(img.category==='A')assert.equal(img.alt,'',url+' decorative image');}
  if(new URL(url).pathname==='/insights/best-hr-software-for-startups/')assert.ok(p.tables > 0 && p.columnHeaders > 0, 'HR comparison renders a semantic table');
  if(p.bodyText){articles++;
  const article=p.schemas.flatMap(s=>s['@graph']||[s]).find(s=>s['@type']==='BlogPosting');assert.ok(article,url+' BlogPosting');

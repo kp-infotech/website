@@ -121,7 +121,7 @@ All 352 rendered `<img>` occurrences across 56 pages inspected. Categories: deco
 
 Missing alt attributes before: **0**. After: **0**. All 56 shared PageHero backgrounds already render explicit `alt=""`; no component change was necessary. Tests protect this behavior across all sitemap routes, including Home, services, About, Contact, Industries and Work. Service and industry icons repeating adjacent text are decorative. Logos identify KP Infotech; people identify the CMS-named person.
 
-No fabricated descriptions or keyword alt text added. Twelve migrated image reference URLs (9 HR, 3 retail ERP) require image recovery and human description before being re-embedded; exact URLs and block keys are in `content-inventory.json`. Existing generic story/service-preview and title-based linked-thumbnail alts are candidates for editorial refinement; no visual meaning was inferred from filenames.
+Four decorative About value icons now use explicit empty alt instead of repeating adjacent value names. Regression coverage enforces empty alt for every classified decorative image, not only heroes. No fabricated descriptions or keyword alt text added. Twelve migrated image reference URLs (9 HR, 3 retail ERP) require image recovery and human description before being re-embedded; exact URLs and block keys are in `content-inventory.json`. Existing generic story/service-preview and title-based linked-thumbnail alts are candidates for editorial refinement; no visual meaning was inferred from filenames.
 
 ## Odoo Claim
 
@@ -168,7 +168,7 @@ Zero duplicate IDs, unnamed buttons, duplicate document titles, duplicate canoni
 
 ## Tests
 
-- Authenticated `npm run build`: PASS, final build completed 17 September 2026 at 11:51:52 IST (1m 21s). Existing Sanity Studio bundle-size warning only.
+- Authenticated `npm run build`: PASS, final build completed 17 September 2026 at 12:07:38 IST (1m 37s). Existing Sanity Studio bundle-size warning only.
 - `node --test tests/*.test.mjs`: **65 tests passed, 0 failed, 0 skipped**. Includes five normalization unit tests and whole-sitemap semantic coverage.
 - `node scripts/seo/audit-step3.mjs build ...`: 56 pages; zero H1/hierarchy/alt/ID/button/empty-body errors.
 - `node scripts/seo/verify-step3-metadata.mjs`: 56/56 exact metadata matches.
