@@ -1,6 +1,6 @@
 # Step 3 — Content quality, headings, template hygiene and trust
 
-**Status: PASS WITH WARNINGS — local validation complete; deployment pending.** Safe structural fixes are complete. Editorial and business-evidence follow-ups are explicitly retained below. No Step 4 work.
+**Status: PASS WITH WARNINGS — deployed and production verified.** Safe structural fixes are complete. Editorial and business-evidence follow-ups are explicitly retained below. No Step 4 work.
 
 ## Scope and evidence
 
@@ -180,7 +180,7 @@ Zero duplicate IDs, unnamed buttons, duplicate document titles, duplicate canoni
 
 ## Step 1 Regression
 
-**PASS locally:** all 56 canonical/indexable pages, six restored articles, five approved work pages, 32 migration checks, 63 removed-project variants, sitemap/robots and sample-marketing 404 checks pass. No redirect or route changes.
+**PASS locally and in production:** all 56 canonical/indexable pages, six restored articles, five approved work pages, 32 migration checks, 63 removed-project variants, sitemap/robots and sample-marketing 404 checks pass. No redirect or route changes.
 
 ## Step 2 Regression
 
@@ -188,8 +188,40 @@ Nine exact approved metadata fixtures pass against build. All 56 baseline page t
 
 ## Deployment
 
-Pending.
+- Application commit: `4b770fe96ec5619e11e32c9b3018819699911624`, pushed to `main` before deployment.
+- Canonical repository: `kp-infotech/website`. GitHub confirms the original `Berlin-34/website` remote is a 301 alias of the same repository ID `985697916`; canonical SSH remote used.
+- Worker: `website`, KP Infotech account `c727a19f93045d1c218d54f510af40c2`.
+- Deployment ID: `d143cc21-d2a0-4cf6-b55a-72b2c3924cf3`.
+- Version: `277ba5c5-0659-4759-88ae-eabc7f8bfd18`, serving 100% at verification.
+- Timestamp: **2026-09-17T06:32:13.316911Z** (**17 September 2026, 12:02:13 IST**).
+- Mechanism: authenticated production-style build → all checks → main push → normal `wrangler deploy`, selecting the existing KP Infotech account. No generated-config edits.
+- SESSION namespace `2c096c90da704a4fb42c8734ae99cc2e` preserved; no runtime SANITY_API_TOKEN; deployment artifact credential scan clean.
+- A production update occurred during the audit; remote main was re-fetched and still matched the release baseline before push. Predeployment version/binding snapshot retained in `deployment-before.json`.
+- A verification-only follow-up commit records final production evidence; application source is unchanged.
+- The original mixed workspace was not built or deployed. A copy of this report and evidence is supplied there for review.
 
 ## Production Verification
 
-Pending.
+**PASS — zero technical errors.** `production.json` compares all 56 production pages to the tested build and original approved metadata; `step1-production.json` and `step2-production.json` record independent regressions.
+
+| Check | Result |
+|---|---|
+| Sitemap URLs | 56/56 HTTP 200, indexable, self-canonical; exact sitemap set preserved |
+| H1/headings | 56/56 one meaningful H1; no body H1; no measurable level skips |
+| Three known articles | H1 counts 1/1/1; browser confirms no body H1 |
+| Editorial residues | All three confirmed instructions absent; 21 CMS documents checked for exact mutation scope |
+| Images | 352/352 have alt; all 56 PageHero backgrounds explicitly empty |
+| Metadata | All 56 title/description/canonical/social-meta snapshots unchanged; 9 Step 2 fixtures pass |
+| Odoo | Capability wording live; broad official/certified claim absent, also browser-verified |
+| Restored articles / work | 6/6 restored historical articles; 5/5 approved case studies active and in sitemap |
+| Historical redirects | 32 checks pass, including GET/HEAD and URL variants |
+| Removed work | 63 path-variant checks remain 404 |
+| Sample marketing | Slash, slashless and query variants remain 404 without Location |
+| Sitemap / robots | Pass |
+| Internal links | Zero dead or legacy/nonfinal linked targets |
+| Markup | Single titles/canonicals; valid JSON-LD; no duplicate IDs or unnamed buttons |
+| HR comparison | Semantic table live; 6 column headers, 3 original rows; incomplete source coverage remains editorial follow-up |
+
+Remaining warnings are editorial/business-evidence decisions, not suppressed test failures: overlapping HR drafts and incomplete legacy comparisons, 12 image descriptions/recovery tasks, Krupa's apparent author-profile mismatch, an external 404/access-restricted references, and Step 9 proof substantiation. No Step 4 work.
+
+STEP 3 COMPLETE — AWAITING SEO REVIEW

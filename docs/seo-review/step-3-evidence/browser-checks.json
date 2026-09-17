@@ -30,5 +30,19 @@
     "desktop About hero"
   ],
   "viewportReset": true,
-  "limitations": "Full browser image-load completion and comprehensive assistive-technology testing are not claimed."
+  "limitations": "Full browser image-load completion and comprehensive assistive-technology testing are not claimed.",
+  "production": {
+    "routes": [
+      "/insights/best-hr-software-for-startups/",
+      "/insights/angular-vs-react/",
+      "/insights/kp-infotech-new-website-custom-software-automation-ai/",
+      "/about/"
+    ],
+    "h1PerPage": 1,
+    "bodyH1": 0,
+    "missingAlt": 0,
+    "hrTablePresent": true,
+    "odooCapabilityWording": true,
+    "officialClaimAbsent": true
+  }
 }
