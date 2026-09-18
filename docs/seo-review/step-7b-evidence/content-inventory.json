@@ -1,0 +1,227 @@
+{
+  "beforeWords": 578,
+  "afterWords": 1711,
+  "countScope": "Service-owned title, hero, content, process titles/descriptions/deliverables, technologies and FAQs; excludes shared navigation/footer/CTA and timing labels.",
+  "beforeFAQ": [
+    {
+      "_key": "51729a5d4ed1",
+      "_type": "faqItem",
+      "answer": "Common automation opportunities include approvals, reporting, data entry, CRM updates, inventory alerts, customer follow-ups, document generation, task routing, and recurring admin work.",
+      "question": "What business processes can be automated?"
+    },
+    {
+      "_key": "d9fbacba49bc",
+      "_type": "faqItem",
+      "answer": "Not always. Many automation projects connect your existing tools so data and tasks move automatically without forcing a full system replacement.",
+      "question": "Do we need to replace our current tools?"
+    },
+    {
+      "_key": "0ce7a2491d2f",
+      "_type": "faqItem",
+      "answer": "Yes. We design workflows with human approval, review steps, exception handling, and audit trails wherever business control is required.",
+      "question": "Can humans still approve important steps?"
+    },
+    {
+      "_key": "34dbf3d28ca3",
+      "_type": "faqItem",
+      "answer": "We define measurable outcomes such as hours saved, errors reduced, faster approvals, improved reporting speed, fewer missed follow-ups, and reduced manual rework.",
+      "question": "How do we measure automation ROI?"
+    },
+    {
+      "_key": "fc9562fd49c5",
+      "_type": "faqItem",
+      "answer": "Good automation needs monitoring, error handling, fallback paths, and clear ownership. We design workflows so exceptions can be reviewed and resolved instead of silently breaking the process.",
+      "question": "What happens if an automation fails?"
+    }
+  ],
+  "afterFAQ": [
+    {
+      "_key": "step7bfaq0",
+      "_type": "faqItem",
+      "answer": "Repeatable workflows can include approvals, reporting, data entry, CRM updates, inventory alerts, document generation, task routing and recurring administration. Start with a clear process owner, known rules and measurable outcomes; simplify an unclear process before automating it.",
+      "question": "What business processes can be automated?"
+    },
+    {
+      "_key": "step7bfaq1",
+      "_type": "faqItem",
+      "answer": "Not always. Many projects connect tools you already use. We assess their available interfaces, permissions and data before defining a solution; configuring an existing tool may be enough for a simpler requirement.",
+      "question": "Do we need to replace our current tools?"
+    },
+    {
+      "_key": "step7bfaq2",
+      "_type": "faqItem",
+      "answer": "The agreed scope can cover process discovery, workflow design, integrations, business rules, approvals, exception handling, testing, rollout, training and documentation. Systems, responsibilities, acceptance criteria and ongoing support are agreed before implementation.",
+      "question": "What is included in a business automation project?"
+    },
+    {
+      "_key": "step7bfaq3",
+      "_type": "faqItem",
+      "answer": "Yes. Workflows can pause for human approval or review and route exceptions to a responsible person. Approval permissions, escalation rules and audit records are defined with your process owner so accountability stays clear.",
+      "question": "Can humans still approve important steps?"
+    },
+    {
+      "_key": "step7bfaq4",
+      "_type": "faqItem",
+      "answer": "We plan monitoring, error handling, fallback paths and ownership. The responsible team needs a way to review exceptions, pause work where needed and decide whether to retry a step. Testing includes missing data, duplicate events, unavailable systems and partial completion.",
+      "question": "What happens if an automation fails?"
+    },
+    {
+      "_key": "step7bfaq5",
+      "_type": "faqItem",
+      "answer": "No. Repeatable workflows with defined rules can use standard automation. AI interpretation, retrieval, reasoning or agent actions are a different capability; a new custom application or Odoo implementation may also be more appropriate for requirements that go beyond connecting existing processes.",
+      "question": "Does workflow automation require AI?"
+    },
+    {
+      "_key": "step7bfaq6",
+      "_type": "faqItem",
+      "answer": "Agree a baseline and track relevant measures such as handling time, errors, approval turnaround, reporting effort and missed follow-ups. Compare results after rollout alongside workflow volume and exceptions, and include platform and maintenance costs. Savings and financial returns are not guaranteed.",
+      "question": "How do we measure automation ROI?"
+    },
+    {
+      "_key": "step7bfaq7",
+      "_type": "faqItem",
+      "answer": "Workflow complexity, system interfaces and access, data quality, approvals, custom code, testing and support scope affect the estimate. Client design decisions and user acceptance also affect readiness. Start with a bounded workflow before expanding the plan.",
+      "question": "What affects the cost and timing of automation?"
+    },
+    {
+      "_key": "step7bfaq8",
+      "_type": "faqItem",
+      "answer": "Agree ownership at handover. KP can monitor performance, investigate in-scope issues and refine workflows under the engagement. Your team owns business decisions and helps manage system access, platform accounts and changes to connected applications. Support coverage and response arrangements are agreed separately.",
+      "question": "Who maintains the automation after launch?"
+    }
+  ],
+  "beforeProcess": [
+    {
+      "_key": "d47c1f908da9",
+      "_type": "processStep",
+      "deliverables": [
+        "Workflow inventory",
+        "Automation opportunity list",
+        "Pain point analysis",
+        "Priority matrix"
+      ],
+      "description": "Identify repetitive tasks, manual handoffs, data duplication, approval delays, and reporting bottlenecks across your operations.",
+      "duration": "1 Week",
+      "stepNumber": 1,
+      "title": "Process Audit"
+    },
+    {
+      "_key": "c0dd58c4c7c1",
+      "_type": "processStep",
+      "deliverables": [
+        "Automation blueprint",
+        "Integration map",
+        "Approval rules",
+        "Error-handling plan"
+      ],
+      "description": "Define the automation logic, triggers, approvals, integrations, data rules, exception handling, and success metrics before building.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 2,
+      "title": "Automation Design"
+    },
+    {
+      "_key": "f00d1614ea6f",
+      "_type": "processStep",
+      "deliverables": [
+        "Working automations",
+        "Connected systems",
+        "Dashboards",
+        "Test cases"
+      ],
+      "description": "Connect tools, build workflows, configure dashboards, and test automations against real business scenarios.",
+      "duration": "2-6 Weeks",
+      "stepNumber": 3,
+      "title": "Build & Integrate"
+    },
+    {
+      "_key": "2e5f2cfce0fe",
+      "_type": "processStep",
+      "deliverables": [
+        "Production deployment",
+        "User training",
+        "Documentation",
+        "Access setup"
+      ],
+      "description": "Launch the automation with access controls, documentation, user training, and a clear handoff for day-to-day use.",
+      "duration": "1 Week",
+      "stepNumber": 4,
+      "title": "Deploy & Train"
+    },
+    {
+      "_key": "6aa519a93fd8",
+      "_type": "processStep",
+      "deliverables": [
+        "Performance reports",
+        "Issue monitoring",
+        "Workflow improvements",
+        "Expansion roadmap"
+      ],
+      "description": "Track performance, resolve edge cases, improve reliability, and expand automation as your operations grow.",
+      "duration": "Ongoing",
+      "stepNumber": 5,
+      "title": "Monitor & Improve"
+    }
+  ],
+  "afterProcess": [
+    {
+      "_key": "d47c1f908da9",
+      "_type": "processStep",
+      "deliverables": [
+        "Workflow inventory",
+        "Priority and baseline measures",
+        "Agreed initial process"
+      ],
+      "description": "KP identifies manual tasks, handoffs and bottlenecks. Your process owner explains the current rules, exceptions and business priorities. The checkpoint is an agreed workflow inventory and a bounded process to assess first.",
+      "stepNumber": 1,
+      "title": "Process Audit"
+    },
+    {
+      "_key": "c0dd58c4c7c1",
+      "_type": "processStep",
+      "deliverables": [
+        "Automation blueprint",
+        "Integration and approval map",
+        "Acceptance and error-handling plan"
+      ],
+      "description": "KP maps triggers, rules, data, integrations, approvals and exception paths. Your system and process owners confirm access, responsibilities and expected outcomes. Approve the workflow design and acceptance criteria before implementation.",
+      "stepNumber": 2,
+      "title": "Automation Design"
+    },
+    {
+      "_key": "f00d1614ea6f",
+      "_type": "processStep",
+      "deliverables": [
+        "Working workflow and connections",
+        "Scenario test results",
+        "User validation and issue record"
+      ],
+      "description": "KP builds the agreed connections, workflow logic and reporting, then tests normal and failure scenarios. Your users validate sample inputs and outputs, approvals and exceptions. The checkpoint is a tested workflow and a record of issues to resolve before launch.",
+      "stepNumber": 3,
+      "title": "Build & Integrate"
+    },
+    {
+      "_key": "2e5f2cfce0fe",
+      "_type": "processStep",
+      "deliverables": [
+        "Approved rollout and fallback plan",
+        "Training and workflow documentation",
+        "Ownership and access handover"
+      ],
+      "description": "KP prepares deployment, access setup, documentation and training. Your process owner approves test results, monitoring ownership and the rollout/fallback plan. The checkpoint is an accepted handover with named day-to-day owners.",
+      "stepNumber": 4,
+      "title": "Deploy & Train"
+    },
+    {
+      "_key": "6aa519a93fd8",
+      "_type": "processStep",
+      "deliverables": [
+        "Performance and exception review",
+        "Validated workflow improvements",
+        "Prioritized next steps"
+      ],
+      "description": "KP reviews performance and investigates in-scope issues and edge cases. Your team reports exceptions and compares agreed measures with the baseline. Review completed improvements and approve priorities for any further workflow changes.",
+      "stepNumber": 5,
+      "title": "Monitor & Improve"
+    }
+  ]
+}

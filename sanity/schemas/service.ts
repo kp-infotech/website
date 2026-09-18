@@ -60,6 +60,12 @@ export const service = defineType({
       description: 'Use *asterisks* to highlight a word. E.g., "Featured *Projects*"',
     }),
     defineField({ name: 'relatedWork', type: 'array', title: 'Related Work', of: [{ type: 'reference', to: [{ type: 'caseStudy' }] }] }),
+    defineField({
+      name: 'serviceArea',
+      type: 'string',
+      title: 'Geographic Service Area',
+      description: 'Actual service coverage for Service structured data, e.g. Worldwide. Leave empty to preserve the existing default.',
+    }),
     defineField({ name: 'seoTitle', type: 'string', title: 'SEO Title' }),
     defineField({ name: 'seoDescription', type: 'text', title: 'SEO Description', rows: 2 }),
     defineField({ name: 'order', type: 'number', title: 'Display Order' }),

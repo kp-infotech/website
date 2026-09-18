@@ -156,6 +156,7 @@ export const serviceBySlugQuery = `
     },
     seoTitle,
     seoDescription,
+    serviceArea,
     order
   }
 `;

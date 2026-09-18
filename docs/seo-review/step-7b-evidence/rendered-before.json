@@ -1,0 +1,594 @@
+{
+  "status": 200,
+  "url": "https://kpinfo.tech/services/business-automation/",
+  "tables": 0,
+  "columnHeaders": 0,
+  "h1": [
+    {
+      "level": 1,
+      "text": "Business Automation",
+      "source": "template",
+      "hidden": false
+    }
+  ],
+  "h2": 7,
+  "h3": 9,
+  "headings": [
+    {
+      "level": 1,
+      "text": "Business Automation",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 2,
+      "text": "Automate the Work Slowing Your Team Down",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 2,
+      "text": "What We Automate",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 2,
+      "text": "Automation That Fits Your Existing Systems",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 2,
+      "text": "How We Automate Business Workflows",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 3,
+      "text": "Process Audit",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 3,
+      "text": "Automation Design",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 3,
+      "text": "Build & Integrate",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 3,
+      "text": "Deploy & Train",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 3,
+      "text": "Monitor & Improve",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 2,
+      "text": "Business Automation Stack",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 2,
+      "text": "Business Automation FAQs",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 2,
+      "text": "Ready to discuss your project ?",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 3,
+      "text": "Services",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 3,
+      "text": "Company",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 3,
+      "text": "Industries",
+      "source": "template",
+      "hidden": false
+    },
+    {
+      "level": 3,
+      "text": "Contact",
+      "source": "template",
+      "hidden": false
+    }
+  ],
+  "hierarchy": [],
+  "images": [
+    {
+      "src": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c-395x644.svg",
+      "alt": "KP Infotech",
+      "category": "C",
+      "context": "object-contain logo relative z-10 transition-opacity duration-300 hover:opacity-80 relative mx-auto flex max-w-[1440px] items-center justify-between px-6 py-6 lg:px-12 fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased"
+    },
+    {
+      "src": "/_astro/a0871aff70b5f98c96cef5541cd159fe0c97cde3-5376x3072_ZN42tC.jpg",
+      "alt": "",
+      "category": "A",
+      "context": "page-hero__bg-img  page-hero__bg page-hero page-hero--has-image page-hero--inner flex flex-col gap-10 bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased"
+    },
+    {
+      "src": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c-395x644.svg",
+      "alt": "KP Infotech",
+      "category": "C",
+      "context": "footer-logo inline-block mb-6 footer-brand footer-grid max-w-[1440px] mx-auto px-6 lg:px-12 py-16 lg:py-20 bg-[var(--bg-secondary)] border-t border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased"
+    }
+  ],
+  "duplicateIds": [],
+  "links": [
+    {
+      "href": "tel:+918618279004",
+      "text": "+91 86182 79004",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "mailto:info@kpinfo.tech",
+      "text": "info@kpinfo.tech",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "https://linkedin.com/company/kp-info/",
+      "text": "",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "https://www.instagram.com/kp.infotech/",
+      "text": "",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/",
+      "text": "",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/",
+      "text": "S e r v i c e s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/",
+      "text": "I n d u s t r i e s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/",
+      "text": "W o r k",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/",
+      "text": "I n s i g h t s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/about/",
+      "text": "A b o u t",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/careers/",
+      "text": "C a r e e r s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "Contact",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/",
+      "text": "Services",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/",
+      "text": "Industries",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/",
+      "text": "Work",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/",
+      "text": "Insights",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/about/",
+      "text": "About",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/careers/",
+      "text": "Careers",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "Contact",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/",
+      "text": "Home",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/",
+      "text": "Services",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "Discuss Your Project",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/",
+      "text": "All Services",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/business-process-improvement-methods/",
+      "text": "process improvement methods",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/business-process-automation-tools/",
+      "text": "automation tools guide",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "Start a Conversation",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/",
+      "text": "",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "https://linkedin.com/company/kp-info/",
+      "text": "",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "https://www.instagram.com/kp.infotech/",
+      "text": "",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/custom-software-development/",
+      "text": "C u s t o m S o f t w a r e D e v e l o p m e n t",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/business-automation/",
+      "text": "B u s i n e s s A u t o m a t i o n",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/erp-software/",
+      "text": "O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/ai-automation-agents/",
+      "text": "A I A u t o m a t i o n & A g e n t s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/cloud-devops/",
+      "text": "C l o u d & D e v O p s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/about/",
+      "text": "A b o u t",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/",
+      "text": "W o r k",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/careers/",
+      "text": "C a r e e r s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/",
+      "text": "I n s i g h t s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "C o n t a c t",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/healthcare/",
+      "text": "H e a l t h c a r e",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/retail-ecommerce/",
+      "text": "R e t a i l & E - c o m m e r c e",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/manufacturing/",
+      "text": "M a n u f a c t u r i n g",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/logistics/",
+      "text": "L o g i s t i c s & S u p p l y C h a i n",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/finance/",
+      "text": "F i n a n c e",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/startups/",
+      "text": "S t a r t u p s & S M E s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/real-estate/",
+      "text": "R e a l E s t a t e",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/education/",
+      "text": "E d u c a t i o n",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "mailto:info@kpinfo.tech",
+      "text": "info@kpinfo.tech",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "tel:+918618279004",
+      "text": "+91 86182 79004",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/privacy-policy/",
+      "text": "Privacy Policy",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/terms-of-service/",
+      "text": "Terms of Service",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "https://wa.me/918618279004",
+      "text": "",
+      "body": false,
+      "accessible": true
+    }
+  ],
+  "emptyButtons": 0,
+  "titles": [
+    "Business Process Automation Services | KP Infotech"
+  ],
+  "canonicals": [
+    "https://kpinfo.tech/services/business-automation/"
+  ],
+  "noindex": false,
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://kpinfo.tech/#organization",
+          "name": "KP Infotech",
+          "url": "https://kpinfo.tech",
+          "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+          "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+          "email": "info@kpinfo.tech",
+          "telephone": "+91 86182 79004",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ahmedabad",
+            "addressRegion": "Gujarat",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "telephone": "+91 86182 79004",
+            "email": "info@kpinfo.tech",
+            "areaServed": [
+              "India",
+              "United States",
+              "United Kingdom",
+              "Europe"
+            ],
+            "availableLanguage": [
+              "English"
+            ]
+          },
+          "sameAs": [
+            "https://www.instagram.com/kp.infotech/",
+            "https://linkedin.com/company/kp-info/"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kpinfo.tech/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://kpinfo.tech/services/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Business Automation",
+              "item": "https://kpinfo.tech/services/business-automation/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://kpinfo.tech/services/business-automation/#service",
+          "name": "Business Automation",
+          "description": "Automate workflows, approvals, reporting, documents and system handoffs with practical business automation built around your operations.",
+          "url": "https://kpinfo.tech/services/business-automation/",
+          "provider": {
+            "@id": "https://kpinfo.tech/#organization"
+          },
+          "serviceType": "Business Automation",
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://kpinfo.tech/services/business-automation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What business processes can be automated?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Common automation opportunities include approvals, reporting, data entry, CRM updates, inventory alerts, customer follow-ups, document generation, task routing, and recurring admin work."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do we need to replace our current tools?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not always. Many automation projects connect your existing tools so data and tasks move automatically without forcing a full system replacement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can humans still approve important steps?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We design workflows with human approval, review steps, exception handling, and audit trails wherever business control is required."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do we measure automation ROI?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We define measurable outcomes such as hours saved, errors reduced, faster approvals, improved reporting speed, fewer missed follow-ups, and reduced manual rework."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens if an automation fails?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Good automation needs monitoring, error handling, fallback paths, and clear ownership. We design workflows so exceptions can be reviewed and resolved instead of silently breaking the process."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "schemaErrors": [],
+  "emptyBodyElements": [],
+  "bodyText": "",
+  "proof": []
+}

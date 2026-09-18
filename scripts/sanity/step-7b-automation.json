@@ -1,0 +1,692 @@
+{
+  "id": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+  "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+  "set": {
+    "title": "Business Process Automation Services",
+    "excerpt": "KP Infotech automates repetitive operational workflows by connecting the systems, rules, approvals and data handoffs that teams currently manage manually. We help growing businesses reduce duplicate work, coordinate tasks and keep people in control of important decisions.",
+    "contentHeading": "When business automation is a good *fit*",
+    "content": [
+      {
+        "_key": "step7b0",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b0s",
+            "_type": "span",
+            "marks": [],
+            "text": "Business automation is a useful option when repeatable work stalls between otherwise useful tools: teams re-enter the same data, chase approvals, prepare recurring reports or pass documents and status updates by hand. Start with a specific workflow that has a clear owner, known rules and an outcome you can measure."
+          }
+        ]
+      },
+      {
+        "_key": "step7b1",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b1s",
+            "_type": "span",
+            "marks": [],
+            "text": "Simplify an unclear or inconsistent process before automating it. If the work depends mainly on judgment, keep people in control of those decisions. If an existing tool already handles the requirement, configuring it may be enough; a new cross-system workflow is not always needed."
+          }
+        ]
+      },
+      {
+        "_key": "step7b2",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b2s",
+            "_type": "span",
+            "marks": [],
+            "text": "What our business process automation services include"
+          }
+        ]
+      },
+      {
+        "_key": "step7b3",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b3s",
+            "_type": "span",
+            "marks": [],
+            "text": "We review the current process, agree triggers and business rules, map system handoffs, build the workflow, test real scenarios and prepare deployment, training and documentation. The scope can include approval steps, data validation, exception handling, monitoring and reporting. We agree the systems, workflow boundaries and acceptance criteria before building."
+          }
+        ]
+      },
+      {
+        "_key": "step7b4",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b4s",
+            "_type": "span",
+            "marks": [],
+            "text": "Operational workflows we automate"
+          }
+        ]
+      },
+      {
+        "_key": "142a18626570",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "3b09f6f57f05",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Workflow Automation"
+          },
+          {
+            "_key": "894b77dceaf1",
+            "_type": "span",
+            "marks": [],
+            "text": " \u2014 Approval flows, task routing, reminders, status updates, escalations, and handoffs that keep work moving without manual chasing."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d7e400fd0780",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "86fe8235ed7f",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Data Entry & Reporting Automation"
+          },
+          {
+            "_key": "16ac68d9f992",
+            "_type": "span",
+            "marks": [],
+            "text": " \u2014 Automated reports, dashboard updates, spreadsheet cleanup, form capture, and data movement between systems."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f68c45c216ae",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "14ddd8a874a5",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "CRM & Sales Operations"
+          },
+          {
+            "_key": "810c505d8e61",
+            "_type": "span",
+            "marks": [],
+            "text": " \u2014 Lead routing, follow-up reminders, quotation workflows, customer updates, pipeline visibility, and sales activity tracking."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1110693499be",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "86cd5c7acfaf",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Inventory & Operations"
+          },
+          {
+            "_key": "83d3d652e90c",
+            "_type": "span",
+            "marks": [],
+            "text": " \u2014 Stock alerts, order updates, warehouse workflows, purchase requests, exception reporting, and operational dashboards."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "84c3bdc5295f",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "05e60041ee16",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Document & Admin Automation"
+          },
+          {
+            "_key": "15795933068c",
+            "_type": "span",
+            "marks": [],
+            "text": " \u2014 Invoice handling, form processing, document generation, notifications, file routing, and recurring admin tasks."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "step7b10",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b10s",
+            "_type": "span",
+            "marks": [],
+            "text": "How a cross-system workflow works"
+          }
+        ]
+      },
+      {
+        "_key": "step7b11",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b11s",
+            "_type": "span",
+            "marks": [],
+            "text": "An agreed event starts the workflow: a form submission, record update or scheduled report, for example. Rules validate the inputs and route the next task or data handoff. An approval can pause the process until the responsible person decides; an exception can go to an owner for review instead of continuing with incomplete information."
+          }
+        ]
+      },
+      {
+        "_key": "step7b12",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b12s",
+            "_type": "span",
+            "marks": [],
+            "text": "For example, a purchase request could be checked for required fields, sent to the designated approver, then passed to the agreed operational system with a status update and a review path for failures. This is an illustrative workflow, not a claim about a delivered client project. The rules, access and available integrations must be checked for your systems."
+          }
+        ]
+      },
+      {
+        "_key": "step7b13",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b13s",
+            "_type": "span",
+            "marks": [],
+            "text": "Connecting your existing systems"
+          }
+        ]
+      },
+      {
+        "_key": "step7b14",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b14s",
+            "_type": "span",
+            "marks": [],
+            "text": "We assess the tools and data involved before choosing an automation platform, API connection, webhook or custom code. Confirm what each system can expose or accept, which record is authoritative, how fields map and who maintains access. A tool appearing in our stack does not mean every connector, edition or account configuration supports the required workflow."
+          }
+        ]
+      },
+      {
+        "_key": "step7b15",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b15s",
+            "_type": "span",
+            "marks": [],
+            "text": "Agree how the workflow handles missing fields, duplicate events, unavailable systems and partial completion. Where a retry is appropriate, it should not repeat a completed business action unintentionally. External application owners help test both normal handoffs and failure cases before launch."
+          }
+        ]
+      },
+      {
+        "_key": "step7b16",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b16s",
+            "_type": "span",
+            "marks": [],
+            "text": "Human approvals, access and exception handling"
+          }
+        ]
+      },
+      {
+        "_key": "step7b17",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b17s",
+            "_type": "span",
+            "marks": [],
+            "text": "Keep approvals and review steps wherever business judgment or control is needed. Define who may trigger, approve or change a workflow, what must be recorded in its audit trail, and where exceptions are reviewed. We agree access controls and escalation rules with your process owner; automation does not remove accountability for the decision."
+          }
+        ]
+      },
+      {
+        "_key": "step7b18",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b18s",
+            "_type": "span",
+            "marks": [],
+            "text": "Monitoring should make failures visible to the responsible team. Before launch, agree who investigates an alert, how to pause or use a fallback process, and when a failed step can be retried. Logs and documentation support investigation; they are not a guarantee that every failure will resolve automatically."
+          }
+        ]
+      },
+      {
+        "_key": "step7b19",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b19s",
+            "_type": "span",
+            "marks": [],
+            "text": "Automation, custom software, Odoo or AI?"
+          }
+        ]
+      },
+      {
+        "_key": "step7b20",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b20s",
+            "_type": "span",
+            "marks": [],
+            "text": "Business automation connects repeatable processes across existing systems, rules, people and approvals. Custom software creates a new application or system when the required capability does not exist. Odoo implementation establishes Odoo as the operational ERP platform. AI automation adds interpretation, retrieval, reasoning or agent actions where fixed rules alone are insufficient."
+          }
+        ]
+      },
+      {
+        "_key": "step7b21",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b21s",
+            "_type": "span",
+            "marks": [],
+            "text": "These approaches can work together, but the starting point is the operational problem. A rules-based approval or reporting workflow does not automatically need AI or an ERP replacement. If a requirement crosses those boundaries, we identify that during discovery so the scope and responsible service are clear."
+          }
+        ]
+      },
+      {
+        "_key": "step7b22",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b22s",
+            "_type": "span",
+            "marks": [],
+            "text": "Testing, rollout and handover"
+          }
+        ]
+      },
+      {
+        "_key": "step7b23",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b23s",
+            "_type": "span",
+            "marks": [],
+            "text": "KP tests agreed triggers, rules, field mappings and system handoffs. Your users check representative tasks, approval decisions and exceptions against acceptance criteria. Validate permissions, duplicate-event handling and failure paths as well as successful runs before authorizing rollout."
+          }
+        ]
+      },
+      {
+        "_key": "step7b24",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b24s",
+            "_type": "span",
+            "marks": [],
+            "text": "Agree a rollout plan, access setup, monitoring ownership and a fallback for interrupted work. Training and workflow documentation help your team operate the process and understand when to intervene. Launch timing depends on integration access, complexity, testing and client approvals; no fixed rollout duration applies to every project."
+          }
+        ]
+      },
+      {
+        "_key": "step7b25",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b25s",
+            "_type": "span",
+            "marks": [],
+            "text": "What your team needs to provide"
+          }
+        ]
+      },
+      {
+        "_key": "step7b26",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b26s",
+            "_type": "span",
+            "marks": [],
+            "text": "Nominate a process owner, identify users and system administrators, and provide sample inputs, expected outputs, current rules and known exceptions. Your team arranges approved system access, confirms data ownership and nominates testing users. Process owners approve the workflow design, acceptance results and launch decision."
+          }
+        ]
+      },
+      {
+        "_key": "step7b27",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b27s",
+            "_type": "span",
+            "marks": [],
+            "text": "Measuring value and planning cost"
+          }
+        ]
+      },
+      {
+        "_key": "step7b28",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b28s",
+            "_type": "span",
+            "marks": [],
+            "text": "Establish a baseline before implementation: handling time, approval turnaround, error and rework rates, reporting effort or missed follow-ups. Agree which measures matter and compare them after rollout alongside workflow volume and exceptions. Time saved is a measurement to validate, not a guaranteed financial return."
+          }
+        ]
+      },
+      {
+        "_key": "step7b29",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b29s",
+            "_type": "span",
+            "marks": [],
+            "text": "Scope and cost depend on workflow complexity, number of systems, available interfaces, data quality, approvals, custom code, testing and ongoing support. Start with a bounded process before extending automation across departments. Include platform subscriptions and the effort to operate and maintain the workflow when comparing options."
+          }
+        ]
+      },
+      {
+        "_key": "step4resources",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "intro",
+            "_type": "span",
+            "marks": [],
+            "text": "Use our "
+          },
+          {
+            "_key": "resource0",
+            "_type": "span",
+            "marks": [
+              "resource0"
+            ],
+            "text": "process improvement methods"
+          },
+          {
+            "_key": "and1",
+            "_type": "span",
+            "marks": [],
+            "text": " and "
+          },
+          {
+            "_key": "resource1",
+            "_type": "span",
+            "marks": [
+              "resource1"
+            ],
+            "text": "automation tools guide"
+          },
+          {
+            "_key": "end",
+            "_type": "span",
+            "marks": [],
+            "text": " to identify which workflows to simplify before choosing tools."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "resource0",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "blogPost.business-process-improvement-methods",
+              "_type": "reference"
+            }
+          },
+          {
+            "_key": "resource1",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "blogPost.business-process-automation-tools",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "step7b31",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b31s",
+            "_type": "span",
+            "marks": [],
+            "text": "Support after launch"
+          }
+        ]
+      },
+      {
+        "_key": "step7b32",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b32s",
+            "_type": "span",
+            "marks": [],
+            "text": "Within the agreed engagement, we monitor performance, investigate issues and edge cases, refine workflow rules and prioritize improvements. Confirm responsibility for platform accounts, integration access and changes to connected systems. Support coverage and response arrangements are agreed for the project; they are not an automatic 24/7 service."
+          }
+        ]
+      },
+      {
+        "_key": "step7b33",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7b33s",
+            "_type": "span",
+            "marks": [],
+            "text": "To discuss a workflow, bring the trigger, the systems involved, the approval steps and where manual work causes delays. We can use that starting point to assess whether automation is the right next step."
+          }
+        ]
+      }
+    ],
+    "process": [
+      {
+        "_key": "d47c1f908da9",
+        "_type": "processStep",
+        "deliverables": [
+          "Workflow inventory",
+          "Priority and baseline measures",
+          "Agreed initial process"
+        ],
+        "description": "KP identifies manual tasks, handoffs and bottlenecks. Your process owner explains the current rules, exceptions and business priorities. The checkpoint is an agreed workflow inventory and a bounded process to assess first.",
+        "stepNumber": 1,
+        "title": "Process Audit"
+      },
+      {
+        "_key": "c0dd58c4c7c1",
+        "_type": "processStep",
+        "deliverables": [
+          "Automation blueprint",
+          "Integration and approval map",
+          "Acceptance and error-handling plan"
+        ],
+        "description": "KP maps triggers, rules, data, integrations, approvals and exception paths. Your system and process owners confirm access, responsibilities and expected outcomes. Approve the workflow design and acceptance criteria before implementation.",
+        "stepNumber": 2,
+        "title": "Automation Design"
+      },
+      {
+        "_key": "f00d1614ea6f",
+        "_type": "processStep",
+        "deliverables": [
+          "Working workflow and connections",
+          "Scenario test results",
+          "User validation and issue record"
+        ],
+        "description": "KP builds the agreed connections, workflow logic and reporting, then tests normal and failure scenarios. Your users validate sample inputs and outputs, approvals and exceptions. The checkpoint is a tested workflow and a record of issues to resolve before launch.",
+        "stepNumber": 3,
+        "title": "Build & Integrate"
+      },
+      {
+        "_key": "2e5f2cfce0fe",
+        "_type": "processStep",
+        "deliverables": [
+          "Approved rollout and fallback plan",
+          "Training and workflow documentation",
+          "Ownership and access handover"
+        ],
+        "description": "KP prepares deployment, access setup, documentation and training. Your process owner approves test results, monitoring ownership and the rollout/fallback plan. The checkpoint is an accepted handover with named day-to-day owners.",
+        "stepNumber": 4,
+        "title": "Deploy & Train"
+      },
+      {
+        "_key": "6aa519a93fd8",
+        "_type": "processStep",
+        "deliverables": [
+          "Performance and exception review",
+          "Validated workflow improvements",
+          "Prioritized next steps"
+        ],
+        "description": "KP reviews performance and investigates in-scope issues and edge cases. Your team reports exceptions and compares agreed measures with the baseline. Review completed improvements and approve priorities for any further workflow changes.",
+        "stepNumber": 5,
+        "title": "Monitor & Improve"
+      }
+    ],
+    "faqHeading": "Business automation *FAQs*",
+    "faqs": [
+      {
+        "_key": "step7bfaq0",
+        "_type": "faqItem",
+        "question": "What business processes can be automated?",
+        "answer": "Repeatable workflows can include approvals, reporting, data entry, CRM updates, inventory alerts, document generation, task routing and recurring administration. Start with a clear process owner, known rules and measurable outcomes; simplify an unclear process before automating it."
+      },
+      {
+        "_key": "step7bfaq1",
+        "_type": "faqItem",
+        "question": "Do we need to replace our current tools?",
+        "answer": "Not always. Many projects connect tools you already use. We assess their available interfaces, permissions and data before defining a solution; configuring an existing tool may be enough for a simpler requirement."
+      },
+      {
+        "_key": "step7bfaq2",
+        "_type": "faqItem",
+        "question": "What is included in a business automation project?",
+        "answer": "The agreed scope can cover process discovery, workflow design, integrations, business rules, approvals, exception handling, testing, rollout, training and documentation. Systems, responsibilities, acceptance criteria and ongoing support are agreed before implementation."
+      },
+      {
+        "_key": "step7bfaq3",
+        "_type": "faqItem",
+        "question": "Can humans still approve important steps?",
+        "answer": "Yes. Workflows can pause for human approval or review and route exceptions to a responsible person. Approval permissions, escalation rules and audit records are defined with your process owner so accountability stays clear."
+      },
+      {
+        "_key": "step7bfaq4",
+        "_type": "faqItem",
+        "question": "What happens if an automation fails?",
+        "answer": "We plan monitoring, error handling, fallback paths and ownership. The responsible team needs a way to review exceptions, pause work where needed and decide whether to retry a step. Testing includes missing data, duplicate events, unavailable systems and partial completion."
+      },
+      {
+        "_key": "step7bfaq5",
+        "_type": "faqItem",
+        "question": "Does workflow automation require AI?",
+        "answer": "No. Repeatable workflows with defined rules can use standard automation. AI interpretation, retrieval, reasoning or agent actions are a different capability; a new custom application or Odoo implementation may also be more appropriate for requirements that go beyond connecting existing processes."
+      },
+      {
+        "_key": "step7bfaq6",
+        "_type": "faqItem",
+        "question": "How do we measure automation ROI?",
+        "answer": "Agree a baseline and track relevant measures such as handling time, errors, approval turnaround, reporting effort and missed follow-ups. Compare results after rollout alongside workflow volume and exceptions, and include platform and maintenance costs. Savings and financial returns are not guaranteed."
+      },
+      {
+        "_key": "step7bfaq7",
+        "_type": "faqItem",
+        "question": "What affects the cost and timing of automation?",
+        "answer": "Workflow complexity, system interfaces and access, data quality, approvals, custom code, testing and support scope affect the estimate. Client design decisions and user acceptance also affect readiness. Start with a bounded workflow before expanding the plan."
+      },
+      {
+        "_key": "step7bfaq8",
+        "_type": "faqItem",
+        "question": "Who maintains the automation after launch?",
+        "answer": "Agree ownership at handover. KP can monitor performance, investigate in-scope issues and refine workflows under the engagement. Your team owns business decisions and helps manage system access, platform accounts and changes to connected applications. Support coverage and response arrangements are agreed separately."
+      }
+    ],
+    "serviceArea": "Worldwide"
+  }
+}

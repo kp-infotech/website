@@ -54,10 +54,10 @@ const serviceJsonLd = [
     url: serviceUrl,
     provider: { '@id': ORG_ID },
     serviceType: service.title,
-    areaServed: slug === 'erp-software' ? 'Worldwide' : {
+    areaServed: service.serviceArea || (slug === 'erp-software' ? 'Worldwide' : {
       '@type': 'Country',
       name: 'India',
-    },
+    }),
   },
   service.faqs && service.faqs.length > 0 ? {
     '@type': 'FAQPage',

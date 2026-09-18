@@ -10,7 +10,7 @@ test('ERP mutation preserves metadata, URL, platform list, modules and Step 4 re
  assert.deepEqual(a.process.map(p=>p.title),b.process.map(p=>p.title));assert(a.process.every(p=>!p.duration&&p.deliverables.length===3));
 });
 test('ERP-only global scope leaves other service schema behavior intact',()=>{
- for(const slug of ['custom-software-development','business-automation','ai-automation-agents','cloud-devops']){
+ for(const slug of ['custom-software-development','ai-automation-agents','cloud-devops']){
  const html=readFileSync('dist/client/services/'+slug+'/index.html','utf8');const schemas=[...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs)].flatMap(m=>{const s=JSON.parse(m[1]);return s['@graph']||[s];});
  assert.deepEqual(schemas.find(s=>s['@type']==='Service').areaServed,{'@type':'Country',name:'India'});
  }
