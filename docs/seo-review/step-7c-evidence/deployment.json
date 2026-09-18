@@ -1,0 +1,30 @@
+{
+  "releaseCommit": "a46cc393aa4f1c1a01266e52a3511df589038d61",
+  "worker": "website",
+  "verifiedAt": "2026-09-18T14:29:18.089Z",
+  "manualDeployment": {
+    "id": "9378e4b4-f0c6-4cef-ae5a-7f6706104b44",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "versions": [
+      {
+        "version_id": "e71d62f4-5a33-4b1f-a2c9-34b7dcfddfaf",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-18T14:24:32.871178Z"
+  },
+  "deployment": {
+    "id": "063959be-adc6-4cab-9457-64e9723ebc45",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "versions": [
+      {
+        "version_id": "fcc3e90a-3210-439f-97f6-0275c8193fd3",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-18T14:25:33.663054Z"
+  },
+  "note": "A subsequent deployment became active after the manual release. Full live HTML and regression checks passed again against the active release."
+}

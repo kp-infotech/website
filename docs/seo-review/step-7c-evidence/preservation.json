@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-09-18T14:28:12.359Z",
+  "comparison": "Main text, allowing only the exact Cloud service-reference anchor label update.",
+  "results": [
+    {
+      "path": "/services/erp-software/",
+      "mainTextPreserved": true,
+      "allowedCloudServiceLabelChanges": 0
+    },
+    {
+      "path": "/services/business-automation/",
+      "mainTextPreserved": true,
+      "allowedCloudServiceLabelChanges": 0
+    },
+    {
+      "path": "/services/custom-software-development/",
+      "mainTextPreserved": true,
+      "allowedCloudServiceLabelChanges": 0
+    },
+    {
+      "path": "/services/ai-automation-agents/",
+      "mainTextPreserved": true,
+      "allowedCloudServiceLabelChanges": 0
+    },
+    {
+      "path": "/work/cloud-cost-optimization-industrial-sme/",
+      "mainTextPreserved": true,
+      "allowedCloudServiceLabelChanges": 1
+    },
+    {
+      "path": "/work/collaboration-platform-distributed-teams/",
+      "mainTextPreserved": true,
+      "allowedCloudServiceLabelChanges": 1
+    },
+    {
+      "path": "/work/digital-banking-platform/",
+      "mainTextPreserved": true,
+      "allowedCloudServiceLabelChanges": 1
+    },
+    {
+      "path": "/work/omnichannel-ecommerce-platform/",
+      "mainTextPreserved": true,
+      "allowedCloudServiceLabelChanges": 0
+    },
+    {
+      "path": "/work/virtual-tours-ai-listings/",
+      "mainTextPreserved": true,
+      "allowedCloudServiceLabelChanges": 0
+    }
+  ],
+  "errors": []
+}

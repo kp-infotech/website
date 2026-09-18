@@ -1,6 +1,6 @@
 # Step 7C — Cloud & DevOps money page
 
-Status: automated pre-release checks passed; browser verification unavailable; deployment pending.
+Status: **PASS WITH WARNINGS** — implemented, deployed and production-verified. The existing cost-case claims remain in the Step 9 proof-substantiation backlog. All Step 7C checks completed.
 
 Target: https://kpinfo.tech/services/cloud-devops/
 Scope: Step 7C only. No new page, provider page, FinOps page or Step 7D work. All changes prepared in a clean main checkout at `/private/tmp/kp-step7c-release`, based on `590c888`. The original mixed workspace was not used for release.
@@ -185,11 +185,39 @@ Steps 1–7B automated regression checks pass. All 41 checked CMS content docume
 
 ## Deployment
 
-Pending clean-main commit, normal push and verified Cloudflare release.
+Release commit: `a46cc393aa4f1c1a01266e52a3511df589038d61` on clean main, normally pushed to origin. No shared frontend code or template changes.
+
+Manual Cloudflare Worker deployment:
+
+- Worker: `website`.
+- Deployment ID: `9378e4b4-f0c6-4cef-ae5a-7f6706104b44`.
+- Version: `e71d62f4-5a33-4b1f-a2c9-34b7dcfddfaf`.
+- Timestamp: `2026-09-18T14:24:32.871178Z` (UTC).
+
+Subsequent active deployment verified after the release:
+
+- Deployment ID: `063959be-adc6-4cab-9457-64e9723ebc45`.
+- Version: `fcc3e90a-3210-439f-97f6-0275c8193fd3` at 100%.
+- Timestamp: `2026-09-18T14:25:33.663054Z` (UTC), 19:55:33 IST on 18 September 2026.
+
+The full live regression and build-content comparison were repeated after this active version appeared and passed. Final report/evidence are committed separately; no application rebuild is required for the report itself. Deployment records contain no credentials.
 
 ## Production Verification
 
-Pending desktop/mobile and full live smoke checks.
+**PASS.** Live Cloud returns HTTP 200 with the exact title, description, canonical, one H1, the direct definition, new sections, cost measurement, one cost-case card, nine matching FAQs and Worldwide Service area. Approved metadata is unchanged:
+
+- Title: `Cloud & DevOps Services | KP Infotech`.
+- Description: `Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently.`
+
+Chrome desktop (1440×1000) and mobile (390×844) checks showed no horizontal overflow or broken images. Reviewed hero, cost content, process and FAQ layout; local process tab selection and keyboard ArrowRight passed. Live savings FAQ expanded correctly. Keyboard activation reached `/contact/` and the intended cloud-cost case after navigation settled. Viewport restored; no form submission.
+
+An initial browser connection problem recovered during verification; no visual check remains blocked. The in-app browser native dependency remained unavailable, so Chrome was used.
+
+Live 56-page metadata, headings, images, tables and links matched the tested build. Step 1 live smoke checked 56 sitemap pages, 32 redirects, 63 unsupported-project routes, robots and all three sample-marketing 404 variants; zero errors. All six restored insights and five approved cases remain available. Step 4 production link graph passed. ERP, Business Automation, Custom Software and AI main text remained unchanged; all five case main contents are preserved with only existing Cloud service-reference anchor labels naturally updating. All 41 checked CMS content documents were unchanged except the authorized Cloud fields.
+
+Evidence: `production.json`, `step1-production.json`, `step2-production.json`, `step4-production.json`, `erp-production.json`, `automation-production.json`, `cloud-production.json`, `preservation.json` and `browser-verification.json` in `step-7c-evidence/`.
+
+No Step 7D work or new commercial page.
 
 ## Exact Final Copy
 

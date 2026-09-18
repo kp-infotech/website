@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-09-18T14:29:18.358661+00:00",
+  "tool": "Chrome through cua_repl",
+  "initialConnectionIssue": "Browser unavailable and in-app native module failed; Chrome connection recovered and all checks below completed.",
+  "local": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "scrollWidth": 1440,
+      "brokenImages": 0
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390
+    },
+    "processTab04Click": true,
+    "keyboardArrowRightSelectsTab05": true,
+    "costMeasurementFAQOpens": true
+  },
+  "production": {
+    "url": "https://kpinfo.tech/services/cloud-devops/",
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "scrollWidth": 1440,
+      "brokenImages": 0
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "brokenImages": 0,
+      "h1Count": 1
+    },
+    "costSectionVisuallyInspected": true,
+    "costMeasurementFAQOpens": true,
+    "contactCTADestination": "https://kpinfo.tech/contact/",
+    "proofCardDestination": "https://kpinfo.tech/work/cloud-cost-optimization-industrial-sme/",
+    "navigationMethod": "Keyboard Enter, verified destination after navigation settled",
+    "formsSubmitted": false
+  },
+  "viewportReset": true,
+  "errors": []
+}
