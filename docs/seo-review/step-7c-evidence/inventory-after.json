@@ -1,0 +1,20 @@
+{
+  "h1": "Cloud & DevOps Services",
+  "hero": "KP Infotech designs, deploys and improves cloud infrastructure and DevOps workflows for business teams that need reliable releases, monitoring, recovery and controlled infrastructure costs. We help make applications and operational systems easier to run as requirements change.",
+  "wordCount": 1691,
+  "wordCountScope": "Service title, excerpt, content and section headings, process titles/descriptions/deliverables, technologies and FAQs. Excludes navigation/footer, CTA, process durations and related-case content.",
+  "bodyHeadings": [
+    "Who this service is for",
+    "Cloud infrastructure and deployment",
+    "Cloud migration",
+    "CI/CD and infrastructure automation",
+    "Monitoring, backups and recovery",
+    "Cloud cost optimization",
+    "How cost changes are measured",
+    "Access and client responsibilities",
+    "Support after deployment",
+    "Cloud, hosting and application development"
+  ],
+  "faqCount": 9,
+  "serviceArea": "Worldwide"
+}

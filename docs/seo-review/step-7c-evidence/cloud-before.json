@@ -1,0 +1,461 @@
+{
+  "_createdAt": "2026-02-02T05:16:49Z",
+  "_id": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+  "_rev": "Xe0A1k3WLpDZQN3vt7JBHA",
+  "_system": {
+    "base": {
+      "id": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+      "rev": "tQCrbgePRAC9whbqJdIf97"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-09-17T07:49:05Z",
+  "content": [
+    {
+      "_key": "1070ef6cfd6d",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "c6f6a4ac2401",
+          "_type": "span",
+          "marks": [],
+          "text": "Business software is only useful when it is reliable. Slow deployments, unstable hosting, missing backups, weak monitoring, unclear access controls, and rising cloud bills can quietly create operational risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aef828632eff",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "13aa36c06680",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Cloud and DevOps services"
+        },
+        {
+          "_key": "85021e3d3706",
+          "_type": "span",
+          "marks": [],
+          "text": " help businesses deploy, monitor, secure, scale, and maintain software systems reliably. KP Infotech helps growing businesses set up infrastructure and delivery workflows that make applications, ERP systems, APIs, databases, and automation platforms easier to operate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bcf21d601ed7",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "7de1cc7cfdf8",
+          "_type": "span",
+          "marks": [],
+          "text": "What We Help With"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "7a848b5a4cdb",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "babd8b297644",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Cloud Architecture"
+        },
+        {
+          "_key": "9da6fd7c8fe3",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Infrastructure planning for web apps, ERP systems, APIs, databases, storage, background jobs, automation platforms, and business portals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "05c80d28ca30",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "9f2669664f25",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Deployment Pipelines"
+        },
+        {
+          "_key": "6e6b19f35edd",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 CI/CD workflows that reduce manual deployment steps, lower release risk, improve rollback readiness, and make updates easier to manage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1f5d15ec1dc3",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "c4e02993e82d",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Cloud Hosting & Migration"
+        },
+        {
+          "_key": "847375481cba",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Hosting setup, cloud migration, server configuration, container deployment, database deployment, DNS, SSL, and environment management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1a69195c77bd",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "a055c4f19b24",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Monitoring, Backups & Reliability"
+        },
+        {
+          "_key": "3ef147f0911a",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Uptime monitoring, logs, alerts, backups, recovery planning, error tracking, and performance checks so issues are easier to detect and resolve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0e1db2f14e38",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "dd284a7809fe",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Cloud Cost Optimization"
+        },
+        {
+          "_key": "40609208dced",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Infrastructure reviews, right-sizing, hosting improvements, usage visibility, and architecture changes that help reduce unnecessary cloud spend."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bab02672e725",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "f15e8e180677",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Security & Access Controls"
+        },
+        {
+          "_key": "e3c52100a4c2",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Environment separation, secrets management, access controls, SSL, backup policies, infrastructure permissions, and deployment practices that reduce operational risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "608c50a337e7",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "3d65265cdd21",
+          "_type": "span",
+          "marks": [],
+          "text": "Built for Business Continuity"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "17afb00864eb",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "044d72d01352",
+          "_type": "span",
+          "marks": [],
+          "text": "Cloud and DevOps work should make your systems calmer, not more complex. We focus on practical infrastructure that matches your stage, traffic, budget, data needs, and support capacity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e855620893ff",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "88c2c62ce832",
+          "_type": "span",
+          "marks": [],
+          "text": "Whether you are launching a new platform, stabilizing an existing application, preparing Odoo ERP for production, or improving cloud costs, KP Infotech helps create a reliable foundation for business operations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step4resources",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "marks": [],
+          "text": "For infrastructure planning, review our "
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "marks": [
+            "resource0"
+          ],
+          "text": "cloud deployment models guide"
+        },
+        {
+          "_key": "and1",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "resource1",
+          "_type": "span",
+          "marks": [
+            "resource1"
+          ],
+          "text": "DevOps best practices"
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "marks": [],
+          "text": " to connect hosting choices with reliable day-to-day delivery."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "3011f67f-8bba-43b3-b60d-8896384d64a0",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "blogPost.devops-best-practices",
+            "_type": "reference"
+          }
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "contentHeading": "Cloud Infrastructure That Keeps Your Systems Reliable",
+  "excerpt": "KP Infotech designs, deploys, and supports cloud infrastructure, CI/CD pipelines, monitoring, backups, hosting, security controls, and DevOps workflows for business systems that need to stay reliable, secure, and cost-efficient as they grow.",
+  "faqHeading": "Cloud & DevOps FAQs",
+  "faqs": [
+    {
+      "_key": "803db71faa52",
+      "_type": "faqItem",
+      "answer": "Yes. We set up hosting, servers, databases, environments, SSL, DNS, backups, deployment workflows, and monitoring based on the needs of your system.",
+      "question": "Can you set up cloud hosting for our application or ERP?"
+    },
+    {
+      "_key": "5bd31b90f2cd",
+      "_type": "faqItem",
+      "answer": "Yes. We can audit your current infrastructure, identify reliability risks, improve deployment practices, add monitoring, review backups, and create a practical stabilization plan.",
+      "question": "Can you improve an existing unstable cloud setup?"
+    },
+    {
+      "_key": "1cdab3fa74d7",
+      "_type": "faqItem",
+      "answer": "Yes. We review infrastructure usage, hosting choices, database resources, storage, traffic patterns, and deployment architecture to identify unnecessary spend and right-sizing opportunities.",
+      "question": "Do you help reduce cloud costs?"
+    },
+    {
+      "_key": "3fb9008f49d9",
+      "_type": "faqItem",
+      "answer": "Yes. We can set up monitoring, alerts, logs, backup policies, recovery workflows, and operational runbooks so your team has clearer visibility when issues happen.",
+      "question": "Do you provide monitoring, backups, and disaster recovery planning?"
+    },
+    {
+      "_key": "f485e014fa0e",
+      "_type": "faqItem",
+      "answer": "Yes. We can support monitoring, deployments, infrastructure updates, performance improvements, cost reviews, security updates, and operational troubleshooting after launch.",
+      "question": "Do you provide ongoing DevOps support?"
+    }
+  ],
+  "heroImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744-jpg",
+      "_type": "reference"
+    }
+  },
+  "iconCustom": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-c993393a9e7fefeac4cf2a4ff5d3680889086ab7-510x510-svg",
+      "_type": "reference"
+    }
+  },
+  "iconName": "cloud",
+  "order": 5,
+  "process": [
+    {
+      "_key": "c6ea693f33da",
+      "_type": "processStep",
+      "deliverables": [
+        "Infrastructure review",
+        "Risk list",
+        "Cost review",
+        "Improvement priorities"
+      ],
+      "description": "Review hosting, deployments, databases, security, monitoring, backups, access controls, cost patterns, and current operational risks.",
+      "duration": "1 Week",
+      "stepNumber": 1,
+      "title": "Infrastructure Audit"
+    },
+    {
+      "_key": "3e0024c85dfe",
+      "_type": "processStep",
+      "deliverables": [
+        "Cloud architecture",
+        "Environment plan",
+        "Security recommendations",
+        "Migration roadmap"
+      ],
+      "description": "Design a cloud setup that fits your application, traffic, data, security, scaling needs, budget, and support model.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 2,
+      "title": "Architecture Plan"
+    },
+    {
+      "_key": "d4b98faa1b4a",
+      "_type": "processStep",
+      "deliverables": [
+        "Cloud setup",
+        "Deployment pipeline",
+        "Configured environments",
+        "Access controls"
+      ],
+      "description": "Set up infrastructure, CI/CD, hosting, databases, containers, access controls, and deployment workflows.",
+      "duration": "2-6 Weeks",
+      "stepNumber": 3,
+      "title": "Implementation"
+    },
+    {
+      "_key": "2fd395ddb9c4",
+      "_type": "processStep",
+      "deliverables": [
+        "Monitoring setup",
+        "Alert rules",
+        "Backup plan",
+        "Runbook"
+      ],
+      "description": "Add monitoring, alerts, logs, backups, recovery practices, and runbooks so the system is easier to operate after launch.",
+      "duration": "1 Week",
+      "stepNumber": 4,
+      "title": "Monitoring & Reliability"
+    },
+    {
+      "_key": "52bcfdce3cd6",
+      "_type": "processStep",
+      "deliverables": [
+        "Performance reports",
+        "Cost optimization",
+        "Security updates",
+        "Support recommendations"
+      ],
+      "description": "Improve performance, reduce unnecessary spend, support deployments, review reliability, and update infrastructure as the business grows.",
+      "duration": "Ongoing",
+      "stepNumber": 5,
+      "title": "Optimize & Support"
+    }
+  ],
+  "processHeading": "Cloud & DevOps Delivery Process",
+  "relatedWork": [
+    {
+      "_key": "step4proof0",
+      "_ref": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+      "_type": "reference"
+    }
+  ],
+  "seoDescription": "Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently.",
+  "seoTitle": "Cloud & DevOps Services | KP Infotech",
+  "slug": {
+    "_type": "slug",
+    "current": "cloud-devops"
+  },
+  "tagline": "Reliable Cloud Infrastructure for Scalable Operations",
+  "techHeading": "Cloud & DevOps Stack",
+  "technologies": [
+    "AWS",
+    "Google Cloud",
+    "Azure",
+    "Vercel",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "Linux",
+    "Nginx",
+    "GitHub Actions",
+    "PostgreSQL",
+    "Firebase",
+    "Supabase",
+    "Cloudflare",
+    "Grafana",
+    "Prometheus",
+    "Sentry",
+    "Datadog",
+    "CI/CD",
+    "Monitoring"
+  ],
+  "title": "Cloud & DevOps",
+  "workHeading": "Cloud Infrastructure Examples"
+}

@@ -1,0 +1,15 @@
+import {createClient} from '@sanity/client';
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+if (!process.env.SANITY_API_TOKEN) throw Error('Authenticated token required');
+const c=createClient({projectId:'5rux0mv2',dataset:'production',apiVersion:'2024-01-01',useCdn:false,perspective:'published',token:process.env.SANITY_API_TOKEN});
+const dir='docs/seo-review/step-7c-evidence';
+const docs=await c.fetch('*[!(_id in path("drafts.**"))]');
+writeFileSync('/private/tmp/kp-step7c-cms-before.json',JSON.stringify(docs,null,2));
+const posts=docs.filter(d=>d._type==='blogPost');
+writeFileSync('/private/tmp/kp-step7c-cms-articles-before.json',JSON.stringify(posts,null,2));
+const sm=await fetch('https://kpinfo.tech/sitemap-0.xml').then(r=>r.text());
+writeFileSync(dir+'/sitemap-before.xml',sm);
+const urls=[...sm.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);
+const pages=[];for(let i=0;i<urls.length;i+=6)pages.push(...await Promise.all(urls.slice(i,i+6).map(async url=>{const r=await fetch(url,{redirect:'manual'});return{url,status:r.status,headers:Object.fromEntries(r.headers),html:await r.text()};})));
+writeFileSync('/private/tmp/kp-step7c-live-before.json',JSON.stringify(pages));
+console.log(JSON.stringify({documents:docs.length,posts:posts.length,pages:pages.length,types:[...new Set(docs.map(d=>d._type))]}));

@@ -1,0 +1,638 @@
+{
+  "id": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+  "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+  "set": {
+    "title": "Cloud & DevOps Services",
+    "excerpt": "KP Infotech designs, deploys and improves cloud infrastructure and DevOps workflows for business teams that need reliable releases, monitoring, recovery and controlled infrastructure costs. We help make applications and operational systems easier to run as requirements change.",
+    "contentHeading": "What our Cloud & DevOps services include",
+    "content": [
+      {
+        "_key": "step7c00",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c00s",
+            "_type": "span",
+            "marks": [],
+            "text": "Who this service is for"
+          }
+        ]
+      },
+      {
+        "_key": "step7c01",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c01s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud & DevOps services suit teams launching or running business applications, APIs, databases and operational platforms. A useful starting point is a specific problem: manual deployments, unreliable releases, inconsistent environments, missing logs, unclear recovery procedures or a cloud bill that no one can explain."
+          }
+        ]
+      },
+      {
+        "_key": "step7c02",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c02s",
+            "_type": "span",
+            "marks": [],
+            "text": "We assess the current setup before proposing a redesign. Better release steps, corrected configuration, a restore check or removal of unused resources may be enough. A stable workload does not automatically need a cloud migration, Kubernetes or a larger infrastructure project."
+          }
+        ]
+      },
+      {
+        "_key": "step7c03",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c03s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud infrastructure and deployment"
+          }
+        ]
+      },
+      {
+        "_key": "step7c04",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c04s",
+            "_type": "span",
+            "marks": [],
+            "text": "Our cloud infrastructure services cover environment planning, hosting and server configuration, database deployment, storage, DNS, SSL and access controls within the agreed application scope. We review capacity, dependencies and environment separation against traffic, data needs, budget and the team responsible for operations."
+          }
+        ]
+      },
+      {
+        "_key": "step7c05",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c05s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud infrastructure consulting can start with an existing environment or a new deployment. The outcome is an agreed architecture and improvement plan, with configuration changes and operational responsibilities made explicit. Provider and tool choices follow the workload; the stack below is not a requirement to adopt every platform."
+          }
+        ]
+      },
+      {
+        "_key": "step7c06",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c06s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud migration"
+          }
+        ]
+      },
+      {
+        "_key": "step7c07",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c07s",
+            "_type": "span",
+            "marks": [],
+            "text": "Migration starts with the current applications, data, integrations and dependencies. We establish what should move, what should remain, and which business activities a cutover could affect. The plan covers data and application movement, testing, an agreed cutover window, fallback steps and post-migration monitoring."
+          }
+        ]
+      },
+      {
+        "_key": "step7c08",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c08s",
+            "_type": "span",
+            "marks": [],
+            "text": "Your application owners validate critical workflows and data checks before accepting the move. Downtime tolerance, rollback limits and recovery responsibilities are agreed for the workload rather than assumed."
+          }
+        ]
+      },
+      {
+        "_key": "step7c09",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c09s",
+            "_type": "span",
+            "marks": [],
+            "text": "CI/CD and infrastructure automation"
+          }
+        ]
+      },
+      {
+        "_key": "step7c10",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c10s",
+            "_type": "span",
+            "marks": [],
+            "text": "Our DevOps services connect build, test and deployment steps into a repeatable release workflow. CI/CD implementation can include testing gates, environment promotion, deployment logs and approval points, so teams can see what changed, where it was deployed and whether the release passed its checks."
+          }
+        ]
+      },
+      {
+        "_key": "step7c11",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c11s",
+            "_type": "span",
+            "marks": [],
+            "text": "Rollback readiness includes retaining the required release artifacts and agreeing how application, configuration and database changes can be reversed or recovered. The release process must reflect the application’s actual constraints."
+          }
+        ]
+      },
+      {
+        "_key": "step7c12",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c12s",
+            "_type": "span",
+            "marks": [],
+            "text": "Repeatable server configuration and container deployment support environment consistency and make changes easier to review. We scope infrastructure automation around maintainable setup and reduced configuration drift. Where infrastructure-as-code is appropriate, the required tooling and ownership are assessed during planning; a technology listing alone does not define the engagement."
+          }
+        ]
+      },
+      {
+        "_key": "step7c13",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c13s",
+            "_type": "span",
+            "marks": [],
+            "text": "Monitoring, backups and recovery"
+          }
+        ]
+      },
+      {
+        "_key": "step7c14",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c14s",
+            "_type": "span",
+            "marks": [],
+            "text": "Monitoring should make service health, resource utilization, application errors, deployment failures and capacity signals visible. We scope logs, health checks and alerts around the systems that matter to operations. Each alert needs a named recipient and an agreed route for investigating and escalating issues."
+          }
+        ]
+      },
+      {
+        "_key": "step7c15",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c15s",
+            "_type": "span",
+            "marks": [],
+            "text": "Backup planning identifies critical data and configuration, what is included, retention needs and who owns recovery. Restore validation checks that a backup can be used and that the recovery procedure is understandable. Your team confirms data priorities and acceptance checks; recovery targets and response arrangements are defined for the engagement."
+          }
+        ]
+      },
+      {
+        "_key": "step7c16",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c16s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud cost optimization"
+          }
+        ]
+      },
+      {
+        "_key": "step7c17",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c17s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud cost optimization is an engineering review of what infrastructure is doing and what the business needs from it. We examine billing alongside resource utilization and workload patterns to find avoidable spend, rather than choosing hosting on price alone."
+          }
+        ]
+      },
+      {
+        "_key": "step7c18",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c18s",
+            "_type": "span",
+            "marks": [],
+            "text": "Review areas include idle or oversized compute, unused environments, database capacity, storage tiers and retention, data-transfer patterns and duplicated infrastructure. Architecture simplification, containerization or consolidation may help where they reduce overhead without creating unacceptable operational dependencies."
+          }
+        ]
+      },
+      {
+        "_key": "step7c19",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c19s",
+            "_type": "span",
+            "marks": [],
+            "text": "Each recommendation weighs cost against performance, reliability, recovery, operational effort and future growth. A resource that appears underused may still be necessary for a peak period or recovery. Changes need an owner, a validation plan and approval before implementation."
+          }
+        ]
+      },
+      {
+        "_key": "step7c20",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c20s",
+            "_type": "span",
+            "marks": [],
+            "text": "The delivery process below incorporates cost work: establish the billing and infrastructure baseline, understand workload requirements, prioritize opportunities, implement agreed changes, validate service behavior and measure the result. A cost review can be a focused engagement within this service; it does not require a migration or complete rebuild."
+          }
+        ]
+      },
+      {
+        "_key": "step7c21",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c21s",
+            "_type": "span",
+            "marks": [],
+            "text": "How cost changes are measured"
+          }
+        ]
+      },
+      {
+        "_key": "step7c22",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c22s",
+            "_type": "span",
+            "marks": [],
+            "text": "Compare an agreed baseline with a representative post-change billing period, using the same accounts, services, currency and cost scope. Record changes in traffic, storage, workload, rates, credits and one-off charges so a lower bill is not mistaken for an engineering saving when usage simply fell."
+          }
+        ]
+      },
+      {
+        "_key": "step7c23",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c23s",
+            "_type": "span",
+            "marks": [],
+            "text": "Report recurring infrastructure cost separately from implementation fees and temporary migration costs. Check performance, errors and recovery requirements alongside the bill before accepting a change. The published industrial SME case in Related Work illustrates one project’s approach and outcome; it is not an expected saving for another environment."
+          }
+        ]
+      },
+      {
+        "_key": "step7c24",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c24s",
+            "_type": "span",
+            "marks": [],
+            "text": "Access and client responsibilities"
+          }
+        ]
+      },
+      {
+        "_key": "step7c25",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c25s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud accounts should remain under the client’s control, with access granted through agreed permissions. Limit production access to the people who need it, use the agreed secrets-management method and review changes before release. Credentials should not be copied into messages, source code or shared documents."
+          }
+        ]
+      },
+      {
+        "_key": "step7c26",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c26s",
+            "_type": "span",
+            "marks": [],
+            "text": "Your team provides application knowledge, account and billing access appropriate to the review, traffic patterns, deployment constraints and business-critical requirements. Name the people who approve infrastructure changes, test workflows, receive alerts and own backups and recovery. These responsibilities become part of the delivery and handover plan."
+          }
+        ]
+      },
+      {
+        "_key": "step7c27",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c27s",
+            "_type": "span",
+            "marks": [],
+            "text": "Support after deployment"
+          }
+        ]
+      },
+      {
+        "_key": "step7c28",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c28s",
+            "_type": "span",
+            "marks": [],
+            "text": "Agreed cloud support can cover deployment troubleshooting, monitoring review, backup checks, infrastructure and capacity changes, performance checks and further cost reviews. DevOps consulting services can also help an internal team prioritize improvements and maintain its release process."
+          }
+        ]
+      },
+      {
+        "_key": "step7c29",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c29s",
+            "_type": "span",
+            "marks": [],
+            "text": "The support scope, hours, escalation contacts and response arrangements are agreed separately. Ongoing work is planned around the systems and responsibilities covered by that agreement."
+          }
+        ]
+      },
+      {
+        "_key": "step7c30",
+        "_type": "richText",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c30s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud, hosting and application development"
+          }
+        ]
+      },
+      {
+        "_key": "step7c31",
+        "_type": "richText",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "step7c31s",
+            "_type": "span",
+            "marks": [],
+            "text": "Hosting provides the environment in which software runs. A Cloud & DevOps engagement also addresses architecture, releases, monitoring, recovery and infrastructure operations. Custom Software builds or changes the application itself; Cloud & DevOps deploys and operates the infrastructure supporting it. The two scopes can work together while keeping responsibilities clear."
+          }
+        ]
+      },
+      {
+        "_key": "step4resources",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "intro",
+            "_type": "span",
+            "marks": [],
+            "text": "For infrastructure planning, review our "
+          },
+          {
+            "_key": "resource0",
+            "_type": "span",
+            "marks": [
+              "resource0"
+            ],
+            "text": "cloud deployment models guide"
+          },
+          {
+            "_key": "and1",
+            "_type": "span",
+            "marks": [],
+            "text": " and "
+          },
+          {
+            "_key": "resource1",
+            "_type": "span",
+            "marks": [
+              "resource1"
+            ],
+            "text": "DevOps best practices"
+          },
+          {
+            "_key": "end",
+            "_type": "span",
+            "marks": [],
+            "text": " to connect hosting choices with reliable day-to-day delivery."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "resource0",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "3011f67f-8bba-43b3-b60d-8896384d64a0",
+              "_type": "reference"
+            }
+          },
+          {
+            "_key": "resource1",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "blogPost.devops-best-practices",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "process": [
+      {
+        "_key": "c6ea693f33da",
+        "_type": "processStep",
+        "deliverables": [
+          "Infrastructure and billing baseline",
+          "Risks and workload requirements",
+          "Client-approved review priorities"
+        ],
+        "description": "KP reviews infrastructure, deployments, dependencies, monitoring and recovery. For cost work, we establish billing and utilization baselines. Your team provides agreed access, workload patterns and critical requirements, then confirms the findings and priorities.",
+        "stepNumber": 1,
+        "title": "Infrastructure Audit"
+      },
+      {
+        "_key": "3e0024c85dfe",
+        "_type": "processStep",
+        "deliverables": [
+          "Architecture and improvement plan",
+          "Prioritized changes and fallback plan",
+          "Approved scope and acceptance criteria"
+        ],
+        "description": "KP proposes scoped architecture, release and optimization changes with trade-offs, expected costs and validation steps. Your owners confirm deployment constraints, recovery needs and acceptance criteria before approving the plan.",
+        "stepNumber": 2,
+        "title": "Architecture Plan"
+      },
+      {
+        "_key": "d4b98faa1b4a",
+        "_type": "processStep",
+        "deliverables": [
+          "Configured environments and release workflow",
+          "Test and migration checks where in scope",
+          "Client-approved release checkpoint"
+        ],
+        "description": "KP implements agreed configuration, containers and release automation, with testing gates and reviewed access. Your team validates application and data checks and authorizes any migration or production cutover against the agreed checkpoint.",
+        "stepNumber": 3,
+        "title": "Implementation"
+      },
+      {
+        "_key": "2fd395ddb9c4",
+        "_type": "processStep",
+        "deliverables": [
+          "Monitoring and alert ownership",
+          "Backup scope and restore validation",
+          "Accepted recovery and operating runbook"
+        ],
+        "description": "KP configures agreed logs, health checks, alerts and backups, and validates restore procedures. Your team confirms alert recipients, critical-data checks and recovery ownership before accepting the operational handover.",
+        "stepNumber": 4,
+        "title": "Monitoring & Reliability"
+      },
+      {
+        "_key": "52bcfdce3cd6",
+        "_type": "processStep",
+        "deliverables": [
+          "Performance and cost comparison",
+          "Accepted improvements and next priorities",
+          "Agreed support responsibilities"
+        ],
+        "description": "KP reviews service behavior and representative post-change costs against the baseline, accounting for workload changes. Your team accepts validated improvements and agrees further changes or support scope, hours and escalation arrangements.",
+        "stepNumber": 5,
+        "title": "Optimize & Support"
+      }
+    ],
+    "faqs": [
+      {
+        "_key": "step7cfaq1",
+        "_type": "faqItem",
+        "question": "What is included in Cloud & DevOps services?",
+        "answer": "The agreed scope can include cloud infrastructure planning, hosting configuration, CI/CD, migration, monitoring, backups, recovery planning and cost optimization. We start with the operational problem and define which systems, changes and handover responsibilities the engagement covers."
+      },
+      {
+        "_key": "step7cfaq2",
+        "_type": "faqItem",
+        "question": "Can you improve an existing cloud environment?",
+        "answer": "Yes. We can review the current setup and prioritize deployment, configuration, visibility, reliability or cost improvements. A focused change may be sufficient; a large redesign or provider move is not assumed."
+      },
+      {
+        "_key": "step7cfaq3",
+        "_type": "faqItem",
+        "question": "Can you migrate an existing application?",
+        "answer": "We assess the application, data and dependencies before agreeing a migration. The scope includes testing, cutover and fallback planning, with application owners validating critical workflows. Any downtime constraints and recovery requirements need to be agreed for that workload."
+      },
+      {
+        "_key": "step7cfaq4",
+        "_type": "faqItem",
+        "question": "Do you set up CI/CD?",
+        "answer": "Yes. We can automate agreed build, test and deployment steps, including environment promotion, release visibility and approval gates. Rollback planning depends on how the application, configuration and database can safely be restored or changed."
+      },
+      {
+        "_key": "step7cfaq5",
+        "_type": "faqItem",
+        "question": "How do you approach cloud cost optimization?",
+        "answer": "We review bills, utilization and workload requirements together, then prioritize changes such as right-sizing, storage adjustments or removing unused resources. Your team approves changes after reviewing performance, reliability, recovery and operating-effort trade-offs. Savings depend on the environment."
+      },
+      {
+        "_key": "step7cfaq6",
+        "_type": "faqItem",
+        "question": "How do you measure cloud savings?",
+        "answer": "We compare a defined baseline and representative post-change period for the same cost scope, explaining workload changes, rates, credits and one-off charges. Recurring cost changes are reported separately from implementation costs and checked alongside service performance and recovery requirements."
+      },
+      {
+        "_key": "step7cfaq7",
+        "_type": "faqItem",
+        "question": "What if an infrastructure change affects reliability?",
+        "answer": "Agree validation checks and fallback steps before the change. If a check fails, investigate with the application owner and use the agreed recovery or reversal procedure where applicable. A lower bill alone is not acceptance of a change that fails critical service requirements."
+      },
+      {
+        "_key": "step7cfaq8",
+        "_type": "faqItem",
+        "question": "Do you support backups and recovery?",
+        "answer": "Yes, within the agreed scope. We define backup coverage and retention considerations, validate restore procedures and document recovery responsibilities. Your team identifies critical data and confirms the checks needed to accept a recovery."
+      },
+      {
+        "_key": "step7cfaq9",
+        "_type": "faqItem",
+        "question": "What happens after deployment?",
+        "answer": "We hand over the agreed configuration, operating guidance and ownership of alerts and recovery. Further support can cover deployments, monitoring review, backup checks, capacity changes and optimization. Support hours, escalation and response arrangements are defined in the agreement; this page does not offer a 24/7 support commitment."
+      }
+    ],
+    "workHeading": "Cloud Cost Optimization Example",
+    "serviceArea": "Worldwide"
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "errors": [],
+  "articles": [
+    {
+      "path": "/insights/business-process-automation-tools/",
+      "canonical": "https://kpinfo.tech/insights/business-process-automation-tools/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true,
+      "httpStatus": 200
+    },
+    {
+      "path": "/insights/business-process-improvement-methods/",
+      "canonical": "https://kpinfo.tech/insights/business-process-improvement-methods/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true,
+      "httpStatus": 200
+    },
+    {
+      "path": "/insights/devops-best-practices/",
+      "canonical": "https://kpinfo.tech/insights/devops-best-practices/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true,
+      "httpStatus": 200
+    },
+    {
+      "path": "/insights/how-to-choose-erp-system/",
+      "canonical": "https://kpinfo.tech/insights/how-to-choose-erp-system/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true,
+      "httpStatus": 200
+    },
+    {
+      "path": "/insights/on-premise-vs-cloud-erp/",
+      "canonical": "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true,
+      "httpStatus": 200
+    },
+    {
+      "path": "/insights/what-is-custom-software/",
+      "canonical": "https://kpinfo.tech/insights/what-is-custom-software/",
+      "blogPosting": 1,
+      "breadcrumbs": true,
+      "articleElements": 1,
+      "h1Count": 1,
+      "inSitemap": true,
+      "httpStatus": 200
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/blogs/business-process-automation-tools/",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/business-process-automation-tools/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/business-process-automation-tools/",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/business-process-automation-tools/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/business-process-automation-tools",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/business-process-automation-tools/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/business-process-automation-tools",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/business-process-automation-tools/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/business-process-improvement-methods/",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/business-process-improvement-methods/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/business-process-improvement-methods/",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/business-process-improvement-methods/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/business-process-improvement-methods",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/business-process-improvement-methods/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/business-process-improvement-methods",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/business-process-improvement-methods/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/devops-best-practices/",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/devops-best-practices/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/devops-best-practices/",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/devops-best-practices/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/devops-best-practices",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/devops-best-practices/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/devops-best-practices",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/devops-best-practices/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/devops-best-practices/",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/devops-best-practices/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/devops-best-practices/",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/devops-best-practices/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/devops-best-practices",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/devops-best-practices/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/devops-best-practices",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/devops-best-practices/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/how-to-choose-erp-system/",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/how-to-choose-erp-system/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/how-to-choose-erp-system/",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/how-to-choose-erp-system/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/how-to-choose-erp-system",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/how-to-choose-erp-system/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/how-to-choose-erp-system",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/how-to-choose-erp-system/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/on-premise-vs-cloud-erp/",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/on-premise-vs-cloud-erp/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/on-premise-vs-cloud-erp/",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/on-premise-vs-cloud-erp/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/on-premise-vs-cloud-erp",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/on-premise-vs-cloud-erp/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/on-premise-vs-cloud-erp",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/on-premise-vs-cloud-erp/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/what-is-custom-software/",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/what-is-custom-software/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/what-is-custom-software/",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/what-is-custom-software/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/what-is-custom-software",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/what-is-custom-software/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/blogs/what-is-custom-software",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/what-is-custom-software/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/what-is-custom-software/",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/what-is-custom-software/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/what-is-custom-software/",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/what-is-custom-software/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/what-is-custom-software",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/what-is-custom-software/",
+      "finalStatus": 200
+    },
+    {
+      "source": "/what-is-custom-software",
+      "method": "HEAD",
+      "status": 301,
+      "location": "http://127.0.0.1:8800/insights/what-is-custom-software/",
+      "finalStatus": 200
+    }
+  ],
+  "deadInternalLinks": [],
+  "checkedAt": "2026-09-18T14:19:55.136Z",
+  "htmlFilesScanned": 57,
+  "sitemapPageCount": 56
+}

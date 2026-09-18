@@ -1,0 +1,1359 @@
+{
+  "_createdAt": "2026-06-30T08:58:10Z",
+  "_id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+  "_rev": "Xe0A1k3WLpDZQN3vt7JBHA",
+  "_system": {
+    "base": {
+      "id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+      "rev": "1rt65YukpwbJFhGzTwt101"
+    }
+  },
+  "_type": "caseStudy",
+  "_updatedAt": "2026-09-17T07:49:05Z",
+  "approach": [
+    {
+      "_key": "f651e087b55b",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "fb24aacfc629",
+          "_type": "span",
+          "marks": [],
+          "text": "KP Infotech started with a complete infrastructure audit instead of immediately suggesting a migration. The goal was to understand where the money was going, which resources were business-critical, and which parts of the setup were unnecessary or oversized."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1b495cb07c45",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "cf5bebc35613",
+          "_type": "span",
+          "marks": [],
+          "text": "The work was handled in four major phases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c1ebd0787b4c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "5b18902c7620",
+          "_type": "span",
+          "marks": [],
+          "text": "1. Cloud Cost Audit"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "92cc04cb1a55",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "ed91d3d9906f",
+          "_type": "span",
+          "marks": [],
+          "text": "We reviewed the existing AWS and DigitalOcean usage, including compute, storage, backups, inactive resources, deployment flow, and monthly billing patterns."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c377b812cb6d",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "f1e7f9c4561d",
+          "_type": "span",
+          "marks": [],
+          "text": "This helped us identify the biggest cost drivers:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ceeb7e5cfd52",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "2030d9cf6164",
+          "_type": "span",
+          "marks": [],
+          "text": "Overpowered servers"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fed241f0d53a",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "5e7bee566d45",
+          "_type": "span",
+          "marks": [],
+          "text": "Poor storage tiering"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "99eddef75e01",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "753f3dcef185",
+          "_type": "span",
+          "marks": [],
+          "text": "Unused or rarely accessed data stored in expensive layers"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c94b00b3259c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "bf3b90cf2f1c",
+          "_type": "span",
+          "marks": [],
+          "text": "Missing cleanup rules"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ac48cb9042ba",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "55d532327c52",
+          "_type": "span",
+          "marks": [],
+          "text": "Manual deployment dependencies"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2f62c6815134",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "83d6d66186e3",
+          "_type": "span",
+          "marks": [],
+          "text": "Infrastructure that had grown without cost governance"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aa95dee7e905",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "74743df2aff1",
+          "_type": "span",
+          "marks": [],
+          "text": "2. Infrastructure Consolidation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "db5c8aba51d6",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "4361e1332e6f",
+          "_type": "span",
+          "marks": [],
+          "text": "After the audit, we planned a leaner setup that would reduce recurring spend without affecting the client\u2019s live systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "057862d90905",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "c853122359a4",
+          "_type": "span",
+          "marks": [],
+          "text": "The DigitalOcean compute layer was reviewed and replaced with a more cost-effective hosting structure where suitable. The goal was not just to move servers, but to simplify operations and reduce unnecessary compute cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "63adc698280f",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "f42afa64e361",
+          "_type": "span",
+          "marks": [],
+          "text": "3. Docker and Coolify Implementation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "2c5ec1986aa5",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "258b5a20ce9e",
+          "_type": "span",
+          "marks": [],
+          "text": "We containerized the application environment using Docker and introduced Coolify to manage deployments more cleanly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e16fb3821be7",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "eb50b8014b93",
+          "_type": "span",
+          "marks": [],
+          "text": "This gave the client a more predictable infrastructure setup with:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1f11db10960c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "2e71d2212dcd",
+          "_type": "span",
+          "marks": [],
+          "text": "Easier deployments"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0cd862b189d9",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "3b74111b4dd7",
+          "_type": "span",
+          "marks": [],
+          "text": "Cleaner environment management"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e93170e65945",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "6b22fd111d53",
+          "_type": "span",
+          "marks": [],
+          "text": "Reduced manual server work"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ac042fd059a7",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "5edcdec6f458",
+          "_type": "span",
+          "marks": [],
+          "text": "Better maintainability"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0b57980300d5",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "b24e0edf1b77",
+          "_type": "span",
+          "marks": [],
+          "text": "Simpler scaling path"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a8a5c2512b5f",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "bc5db2419897",
+          "_type": "span",
+          "marks": [],
+          "text": "Lower dependency on complex server-level configuration"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ff3569a800a2",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "54eb2a858159",
+          "_type": "span",
+          "marks": [],
+          "text": "4. AWS S3 Storage Optimization"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "e8b0d0607c3a",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "cf4036ea5e18",
+          "_type": "span",
+          "marks": [],
+          "text": "AWS storage was one of the key areas of hidden waste. We implemented S3 lifecycle policies, intelligent tiering, and cleanup rules to move older or less frequently accessed files into more cost-effective storage classes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f22b8b4326aa",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "36ddb9e0295e",
+          "_type": "span",
+          "marks": [],
+          "text": "This helped reduce AWS cost while keeping the required data accessible and secure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c1a1b9bbe7fc",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "35c9e7e71376",
+          "_type": "span",
+          "marks": [],
+          "text": "The optimization included:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c9dfdedb8335",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "90c241401098",
+          "_type": "span",
+          "marks": [],
+          "text": "S3 lifecycle policy setup"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ff0d7533e654",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "955b5d639380",
+          "_type": "span",
+          "marks": [],
+          "text": "Intelligent storage tiering"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c37252b6240b",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "d0c0045d8475",
+          "_type": "span",
+          "marks": [],
+          "text": "Removal of unnecessary storage waste"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0dfb56f55c1f",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "9f5dffce3f7f",
+          "_type": "span",
+          "marks": [],
+          "text": "Better file retention strategy"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2d2dbf6657f9",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "1637510d0516",
+          "_type": "span",
+          "marks": [],
+          "text": "Cleanup of unused or outdated data"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "34cb68e65220",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "1b7d000b2b58",
+          "_type": "span",
+          "marks": [],
+          "text": "Lower long-term storage cost"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "7cc25aa0372f",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "73ea9d028611",
+          "_type": "span",
+          "marks": [],
+          "text": "Throughout the project, the focus was simple: reduce cost without creating operational risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "cardSize": "large",
+  "challenge": [
+    {
+      "_key": "50c33fe98482",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "b1ca55be446e",
+          "_type": "span",
+          "marks": [],
+          "text": "The client was a European SME in the industrial machinery sector with a growing digital operation, but their cloud infrastructure had become expensive, fragmented, and difficult to manage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8c02d9bd6c91",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "65e343051db7",
+          "_type": "span",
+          "marks": [],
+          "text": "Their monthly infrastructure cost was close to $17,000, split mainly between AWS and DigitalOcean. AWS was being used heavily for storage, while DigitalOcean hosted overprovisioned compute resources. Over time, unused resources, unoptimized storage, and manual infrastructure decisions had created a large recurring cost leak."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2b8ce82dac9e",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "1b67f462f86f",
+          "_type": "span",
+          "marks": [],
+          "text": "The main issue was not one single expensive service. It was the absence of infrastructure discipline."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "efa073d2c7a2",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "c7d78c63d153",
+          "_type": "span",
+          "marks": [],
+          "text": "The client faced several challenges:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5a9d7d53c05d",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "04eaa40fe961",
+          "_type": "span",
+          "marks": [],
+          "text": "Overprovisioned virtual machines running on DigitalOcean"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "088a285d5795",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "e5ede4480dd0",
+          "_type": "span",
+          "marks": [],
+          "text": "AWS S3 storage without proper lifecycle management"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8248a730d005",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "4f1926268d9f",
+          "_type": "span",
+          "marks": [],
+          "text": "Old files and unused storage increasing monthly cost"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e57faa6cedc4",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "43a3010b965a",
+          "_type": "span",
+          "marks": [],
+          "text": "No automated cleanup or storage movement strategy"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6bdcf54011b6",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "819664ef0eea",
+          "_type": "span",
+          "marks": [],
+          "text": "No containerized deployment structure"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f2680ba7a57d",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "9249313bd39f",
+          "_type": "span",
+          "marks": [],
+          "text": "Manual maintenance and deployment complexity"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b2f73f6bfae9",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "720ccc078c9f",
+          "_type": "span",
+          "marks": [],
+          "text": "Infrastructure spread across services without clear ownership"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "d2cc4ad77c3e",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "8282da67f20c",
+          "_type": "span",
+          "marks": [],
+          "text": "High monthly cloud spend with limited visibility into what was actually necessary"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8b04dc812aed",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "ee363a4c9214",
+          "_type": "span",
+          "marks": [],
+          "text": "The biggest risk was that this waste had become normal. The business was paying for infrastructure every month without knowing which part was essential and which part was silently draining budget."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "client": "European Industrial Machinery Manufacturer",
+  "content": [
+    {
+      "_key": "8b064c7bf12f",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "049c4aeae649",
+          "_type": "span",
+          "marks": [],
+          "text": "The Problem Was Not the Cloud. The Problem Was the Waste Inside It."
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "fa7577d976ce",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "39f41e9c93d9",
+          "_type": "span",
+          "marks": [],
+          "text": "Cloud infrastructure is supposed to help a business scale. But when it is not reviewed regularly, it can quietly become one of the biggest cost leaks in the company."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9052ee39b01",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "eb19445d9edd",
+          "_type": "span",
+          "marks": [],
+          "text": "That is what happened with this European industrial machinery manufacturer."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2a8de893cdd1",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "1fb2b84f9c69",
+          "_type": "span",
+          "marks": [],
+          "text": "The client was spending nearly $17,000 every month on infrastructure. On paper, the setup looked normal: AWS for storage, DigitalOcean for compute, and a mix of systems supporting daily operations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "63142145e32b",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "15e67a496d9c",
+          "_type": "span",
+          "marks": [],
+          "text": "But once we started reviewing the environment, the real problem became clear."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "286798082af8",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "5fbe4b1b9d62",
+          "_type": "span",
+          "marks": [],
+          "text": "The company was not paying for growth.\nThey were paying for unmanaged cloud decisions that had accumulated over time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fb828b60f06d",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "0264b320629a",
+          "_type": "span",
+          "marks": [],
+          "text": "Servers had been provisioned with more capacity than required. Storage was growing without lifecycle rules. Old files were sitting in expensive storage classes. Deployment processes were manual and harder to maintain. The infrastructure worked, but it was not financially efficient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1843d0e7176e",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "284f914ec93f",
+          "_type": "span",
+          "marks": [],
+          "text": "For a growing SME, this kind of cost leakage becomes dangerous because it does not look like a sudden failure. It looks like a normal monthly bill."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "22d8d6f7f4e6",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "ea7debe80dd8",
+          "_type": "span",
+          "marks": [],
+          "text": "And that is exactly why it keeps happening."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "929bb24bd6a7",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "666c1aa6eaad",
+          "_type": "span",
+          "marks": [],
+          "text": "What We Found"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "f58345f447ec",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "a78b6c78c16e",
+          "_type": "span",
+          "marks": [],
+          "text": "During the audit, we identified that the client\u2019s cost problem was spread across multiple areas."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "adec6ebba2e4",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "3494a2c5e7a8",
+          "_type": "span",
+          "marks": [],
+          "text": "DigitalOcean resources were oversized for the actual workload. AWS S3 storage had no proper lifecycle policy. Some files were being stored in expensive layers even though they were rarely accessed. There was no structured cleanup process. The deployment setup also lacked containerization, which made maintenance more manual and less predictable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "9cd29ca89044",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "403c972a62e3",
+          "_type": "span",
+          "marks": [],
+          "text": "The issue was not technical complexity alone. It was a lack of visibility and control."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bbffc60ace86",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "226860ab9817",
+          "_type": "span",
+          "marks": [],
+          "text": "When cloud infrastructure grows without a clear process, businesses often lose track of what they are paying for and why."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b3defbb01d59",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "a06cee5bd86b",
+          "_type": "span",
+          "marks": [],
+          "text": "What KP Infotech Did"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "82b4c63c79c7",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "fa70235e0e3e",
+          "_type": "span",
+          "marks": [],
+          "text": "KP Infotech redesigned the infrastructure with a cost-first and operations-first mindset."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fc59aec866ad",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "6f297e7802ab",
+          "_type": "span",
+          "marks": [],
+          "text": "We started by separating what was essential from what was waste. Every major cloud resource was reviewed based on usage, business need, cost impact, and operational risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "088d13d1a0bb",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "a985e784d41d",
+          "_type": "span",
+          "marks": [],
+          "text": "Then we consolidated the compute environment, removed unnecessary overhead, and shifted the deployment setup toward Docker-based containerization. Coolify was introduced to simplify deployment management and reduce manual server maintenance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "608fd291d2a3",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "d9753df28a3c",
+          "_type": "span",
+          "marks": [],
+          "text": "For AWS S3, we implemented storage lifecycle policies and intelligent tiering so that data could move into the right storage class based on access patterns. This helped reduce storage cost without deleting important business data or affecting availability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1dc7ad098f02",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "eb1e24e1ab10",
+          "_type": "span",
+          "marks": [],
+          "text": "The goal was not to make the infrastructure cheaper at the cost of quality.\nThe goal was to make it lean, controlled, maintainable, and scalable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "045c6b660f39",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "a3ba93531b92",
+          "_type": "span",
+          "marks": [],
+          "text": "Why This Worked"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "34a780ffafbd",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "bf9ca1038db9",
+          "_type": "span",
+          "marks": [],
+          "text": "The biggest improvement came from treating cloud cost as a business control problem, not just an IT problem."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "3ecac65fd4b9",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "5182e852891e",
+          "_type": "span",
+          "marks": [],
+          "text": "Instead of simply asking, \u201cWhich server is expensive?\u201d we asked:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "65d92500e996",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "61881a0b1fa9",
+          "_type": "span",
+          "marks": [],
+          "text": "Which resources are actually needed?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "acbc67bec405",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "800e4de7c55a",
+          "_type": "span",
+          "marks": [],
+          "text": "Which services are overprovisioned?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "600e51a6582d",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "4def3bc44052",
+          "_type": "span",
+          "marks": [],
+          "text": "Which storage is active and which is rarely accessed?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1396eed0639a",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "91454eba361d",
+          "_type": "span",
+          "marks": [],
+          "text": "Which files should move to lower-cost storage?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "134bcb17e487",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "a44f74af17a8",
+          "_type": "span",
+          "marks": [],
+          "text": "Which deployment steps can be simplified?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c82b135e227a",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "9cf1e9a90c95",
+          "_type": "span",
+          "marks": [],
+          "text": "Which infrastructure decisions are creating recurring waste?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f669bbc0ffd1",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "500438f0eff8",
+          "_type": "span",
+          "marks": [],
+          "text": "This approach helped us reduce cost while also improving the way the client managed their infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bd4ac52ed769",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "155dd52e058d",
+          "_type": "span",
+          "marks": [],
+          "text": "The Result"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "2cbd210ee891",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "e7285fbff272",
+          "_type": "span",
+          "marks": [],
+          "text": "The client\u2019s monthly infrastructure cost reduced from approximately $17,000 to around $2,800."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f9c6e0201c44",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "73b1456d30f7",
+          "_type": "span",
+          "marks": [],
+          "text": "That created around $14,200 in monthly recurring savings while also giving the client a cleaner, more manageable cloud setup."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6233522f8ef6",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "ee9beb4ca148",
+          "_type": "span",
+          "marks": [],
+          "text": "The final infrastructure was easier to maintain, more predictable to deploy, and better prepared for future scaling."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "16a37cd879fe",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "67cd8410870f",
+          "_type": "span",
+          "marks": [],
+          "text": "Most importantly, the client no longer had to accept high cloud cost as \u201cnormal.\u201d"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5a8f92e6deaf",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "216b42e61c39",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Takeaway"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "b557efe20094",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "b932c2e1f7c2",
+          "_type": "span",
+          "marks": [],
+          "text": "Cloud cost optimization is not just about reducing bills."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b4ef1a48a70c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "7e2c7a15f211",
+          "_type": "span",
+          "marks": [],
+          "text": "It is about understanding where your business is leaking money every month, then building the right infrastructure process to stop that leak permanently."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5602a4693a02",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "0fdff77f1bc8",
+          "_type": "span",
+          "marks": [],
+          "text": "For many SMEs, the biggest savings are not hidden in a new tool.\nThey are hidden in the infrastructure they are already paying for."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "excerpt": "A European industrial machinery manufacturer was spending nearly $17,000 every month on cloud infrastructure across AWS and DigitalOcean. KP Infotech audited the setup, removed hidden waste, optimized storage, containerized deployments, and reduced the monthly bill to around $2,800 without disrupting operations.",
+  "featured": true,
+  "heroImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-cf0ab8f82f57cf375dc8d9d3b8f4a684f40446e8-1491x1055-png",
+      "_type": "reference"
+    }
+  },
+  "industries": [
+    {
+      "_key": "e7cd1cdf30ba",
+      "_ref": "49adddf8-8b71-409e-af3c-09871f25696a",
+      "_type": "reference"
+    }
+  ],
+  "order": 1,
+  "results": [
+    {
+      "_key": "37a2cfc3c5b9",
+      "_type": "resultMetric",
+      "label": "Monthly cloud cost reduced",
+      "metric": "$17K \u2192 $2.8K/month"
+    },
+    {
+      "_key": "1b024f6303c9",
+      "_type": "resultMetric",
+      "label": "Estimated recurring monthly savings",
+      "metric": "~$14.2K/month"
+    },
+    {
+      "_key": "01e09a6f9dc8",
+      "_type": "resultMetric",
+      "label": "Reduction in infrastructure spend",
+      "metric": "83%"
+    },
+    {
+      "_key": "8bac11df8e46",
+      "_type": "resultMetric",
+      "label": "Cleaner containerized deployment setup",
+      "metric": "Docker + Coolify"
+    }
+  ],
+  "resultsSummary": "The client\u2019s cloud bill was not high because the business had outgrown its infrastructure. It was high because years of unmanaged cloud usage had created silent waste. Servers were overprovisioned, storage was not lifecycle-managed, deployments were difficult to maintain, and the infrastructure had no clear cost-control process.\n\nKP Infotech reviewed the complete setup, identified unnecessary spend, migrated workloads into a leaner environment, introduced Docker-based deployment management with Coolify, and optimized AWS S3 storage using lifecycle policies and intelligent tiering.\n\nThe result was a major reduction in recurring cloud cost, better infrastructure control, easier deployments, and a setup the client could maintain and scale with more confidence.",
+  "seoDescription": "See how KP Infotech helped a European industrial machinery SME reduce cloud infrastructure cost from $17K/month to $2.8K/month through AWS S3 optimization, Docker, Coolify, and infrastructure consolidation.",
+  "seoTitle": "Cloud Cost Optimization Case Study | $17K to $2.8K Monthly Cloud Spend",
+  "services": [
+    {
+      "_key": "step4ref0",
+      "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+      "_type": "reference"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "cloud-cost-optimization-industrial-sme"
+  },
+  "testimonial": {
+    "_ref": "a627f209-9bf7-421b-8416-286e9cd0a33e",
+    "_type": "reference"
+  },
+  "thumbnailImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-cf0ab8f82f57cf375dc8d9d3b8f4a684f40446e8-1491x1055-png",
+      "_type": "reference"
+    }
+  },
+  "title": "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month",
+  "year": "2024"
+}
