@@ -1,0 +1,1349 @@
+{
+  "timestamp": "2026-09-18T14:40:02.200Z",
+  "origin": "build",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://kpinfo.tech/#organization",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+              "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+              "email": "info@kpinfo.tech",
+              "telephone": "+91 86182 79004",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+91 86182 79004",
+                "email": "info@kpinfo.tech",
+                "areaServed": [
+                  "India",
+                  "United States",
+                  "United Kingdom",
+                  "Europe"
+                ],
+                "availableLanguage": [
+                  "English"
+                ]
+              },
+              "sameAs": [
+                "https://www.instagram.com/kp.infotech/",
+                "https://linkedin.com/company/kp-info/"
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://kpinfo.tech/#website",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "publisher": {
+                "@id": "https://kpinfo.tech/#organization"
+              }
+            }
+          ]
+        }
+      ],
+      "titles": [
+        "Custom Software, Odoo ERP & Automation | KP Infotech"
+      ],
+      "descriptions": [
+        "KP Infotech builds custom software, Odoo ERP, business automation, AI agents and cloud systems that reduce manual work and improve operations."
+      ],
+      "canonicals": [
+        "https://kpinfo.tech/"
+      ],
+      "h1": [
+        "Custom Software, ERP & Automation Systems for Growing Businesses"
+      ],
+      "noindex": false,
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "Custom Software, Odoo ERP & Automation | KP Infotech",
+        "description": "KP Infotech builds custom software, Odoo ERP, business automation, AI agents and cloud systems that reduce manual work and improve operations.",
+        "og:type": "website",
+        "og:url": "https://kpinfo.tech/",
+        "og:title": "Custom Software, Odoo ERP & Automation | KP Infotech",
+        "og:description": "KP Infotech builds custom software, Odoo ERP, business automation, AI agents and cloud systems that reduce manual work and improve operations.",
+        "og:image": "https://cdn.sanity.io/images/5rux0mv2/production/a37ee26cd2d87c4e24dca70a38950b90d1456d04-5504x3072.png?w=1920&fm=webp",
+        "og:site_name": "KP Infotech",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://kpinfo.tech/",
+        "twitter:title": "Custom Software, Odoo ERP & Automation | KP Infotech",
+        "twitter:description": "KP Infotech builds custom software, Odoo ERP, business automation, AI agents and cloud systems that reduce manual work and improve operations.",
+        "twitter:image": "https://cdn.sanity.io/images/5rux0mv2/production/a37ee26cd2d87c4e24dca70a38950b90d1456d04-5504x3072.png?w=1920&fm=webp",
+        "theme-color": "#0a0a0a",
+        "generator": "Astro v6.4.8",
+        "astro-view-transitions-enabled": "true",
+        "astro-view-transitions-fallback": "animate"
+      },
+      "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t S e r v i c e s B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+      "errors": []
+    },
+    {
+      "path": "/services/",
+      "status": 200,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://kpinfo.tech/#organization",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+              "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+              "email": "info@kpinfo.tech",
+              "telephone": "+91 86182 79004",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+91 86182 79004",
+                "email": "info@kpinfo.tech",
+                "areaServed": [
+                  "India",
+                  "United States",
+                  "United Kingdom",
+                  "Europe"
+                ],
+                "availableLanguage": [
+                  "English"
+                ]
+              },
+              "sameAs": [
+                "https://www.instagram.com/kp.infotech/",
+                "https://linkedin.com/company/kp-info/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://kpinfo.tech/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Services",
+                  "item": "https://kpinfo.tech/services/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "titles": [
+        "Custom Software, ERP, AI & Cloud Services | KP Infotech"
+      ],
+      "descriptions": [
+        "Explore custom software, Odoo ERP, business automation, AI agents and cloud infrastructure that reduce manual work and improve business operations."
+      ],
+      "canonicals": [
+        "https://kpinfo.tech/services/"
+      ],
+      "h1": [
+        "What We Do"
+      ],
+      "noindex": false,
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "Custom Software, ERP, AI & Cloud Services | KP Infotech",
+        "description": "Explore custom software, Odoo ERP, business automation, AI agents and cloud infrastructure that reduce manual work and improve business operations.",
+        "og:type": "website",
+        "og:url": "https://kpinfo.tech/services/",
+        "og:title": "Custom Software, ERP, AI & Cloud Services | KP Infotech",
+        "og:description": "Explore custom software, Odoo ERP, business automation, AI agents and cloud infrastructure that reduce manual work and improve business operations.",
+        "og:image": "https://kpinfo.tech/_astro/hero-placeholder.CGEJ-DYQ.jpg",
+        "og:site_name": "KP Infotech",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://kpinfo.tech/services/",
+        "twitter:title": "Custom Software, ERP, AI & Cloud Services | KP Infotech",
+        "twitter:description": "Explore custom software, Odoo ERP, business automation, AI agents and cloud infrastructure that reduce manual work and improve business operations.",
+        "twitter:image": "https://kpinfo.tech/_astro/hero-placeholder.CGEJ-DYQ.jpg",
+        "theme-color": "#0a0a0a",
+        "generator": "Astro v6.4.8",
+        "astro-view-transitions-enabled": "true",
+        "astro-view-transitions-fallback": "animate"
+      },
+      "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t S e r v i c e s B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+      "errors": []
+    },
+    {
+      "path": "/services/custom-software-development/",
+      "status": 200,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://kpinfo.tech/#organization",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+              "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+              "email": "info@kpinfo.tech",
+              "telephone": "+91 86182 79004",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+91 86182 79004",
+                "email": "info@kpinfo.tech",
+                "areaServed": [
+                  "India",
+                  "United States",
+                  "United Kingdom",
+                  "Europe"
+                ],
+                "availableLanguage": [
+                  "English"
+                ]
+              },
+              "sameAs": [
+                "https://www.instagram.com/kp.infotech/",
+                "https://linkedin.com/company/kp-info/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://kpinfo.tech/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Services",
+                  "item": "https://kpinfo.tech/services/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Custom Software Development Services",
+                  "item": "https://kpinfo.tech/services/custom-software-development/"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://kpinfo.tech/services/custom-software-development/#service",
+              "name": "Custom Software Development Services",
+              "description": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+              "url": "https://kpinfo.tech/services/custom-software-development/",
+              "provider": {
+                "@id": "https://kpinfo.tech/#organization"
+              },
+              "serviceType": "Custom Software Development Services",
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://kpinfo.tech/services/custom-software-development/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When should we build custom software instead of buying a tool?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Build when an important workflow, interface or data model does not fit suitable existing products. If a standard tool, Odoo configuration or automation across current systems meets the need, that may be the more practical choice. Clarify an unstable process before committing to a build."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What types of custom software do you build?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We build internal tools, business applications, customer and partner portals, SaaS MVPs and application integrations. The scope follows the users, operational tasks and data involved, including responsive interfaces where they are needed."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can you integrate with our existing systems?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We assess API availability, permissions, data ownership, mapping and synchronization needs before agreeing an integration. Error handling and duplicate prevention are part of the design. Odoo-specific integrations belong with ERP work; cross-tool workflow orchestration may suit Business Automation."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can we start with an MVP?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. For a new product or uncertain workflow, define the core user journeys and minimum useful scope, test them with intended users and use the findings to prioritize expansion. The first release should validate the problem and approach without assuming the full future platform."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do you define scope and handle changing requirements?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Discovery turns workflows, roles, data, rules, exceptions and integration needs into a prioritized scope and acceptance criteria. When requirements change, review their effect on effort, cost and timing before agreeing revised delivery priorities."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do testing and UAT work?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KP tests the agreed behavior, including critical journeys, permissions, integrations and representative data. Your nominated users validate the application against acceptance criteria. Unresolved issues and deployment readiness are reviewed before release acceptance."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What affects custom software cost and timeline?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Key factors include workflows, user roles, UX and data complexity, integrations, security requirements, testing, migration, deployment and support. Estimates depend on the agreed scope, dependencies and required validation; a generic duration would not reflect those differences."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Who manages hosting and deployment?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Application delivery and infrastructure operations have different responsibilities. We agree the hosting environment, deployment access, release steps and operating owner during planning. Cloud & DevOps work can support deployment and operations when included in the engagement."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How are ownership and handover handled?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The project agreement and applicable third-party licenses determine intellectual-property rights. Agree repository access, dependencies, documentation, deployment ownership, credentials and support responsibilities explicitly. The page does not promise ownership of every component or all third-party code."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What happens after release?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The agreed handover covers access, documentation, operating responsibilities and the remaining backlog. Further support can include issue investigation, maintenance, integration changes and improvements within the agreed scope. Hours and response arrangements are defined separately."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "titles": [
+        "Custom Software Development Company | KP Infotech"
+      ],
+      "descriptions": [
+        "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility."
+      ],
+      "canonicals": [
+        "https://kpinfo.tech/services/custom-software-development/"
+      ],
+      "h1": [
+        "Custom Software Development Services"
+      ],
+      "noindex": false,
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "Custom Software Development Company | KP Infotech",
+        "description": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+        "og:type": "website",
+        "og:url": "https://kpinfo.tech/services/custom-software-development/",
+        "og:title": "Custom Software Development Company | KP Infotech",
+        "og:description": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+        "og:image": "https://cdn.sanity.io/images/5rux0mv2/production/f342ad70f5bd90b79cf2bd1f54220da3989b9f2a-4015x2745.jpg?w=1920&fm=webp",
+        "og:site_name": "KP Infotech",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://kpinfo.tech/services/custom-software-development/",
+        "twitter:title": "Custom Software Development Company | KP Infotech",
+        "twitter:description": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+        "twitter:image": "https://cdn.sanity.io/images/5rux0mv2/production/f342ad70f5bd90b79cf2bd1f54220da3989b9f2a-4015x2745.jpg?w=1920&fm=webp",
+        "theme-color": "#0a0a0a",
+        "generator": "Astro v6.4.8",
+        "astro-view-transitions-enabled": "true",
+        "astro-view-transitions-fallback": "animate"
+      },
+      "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t S e r v i c e s B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+      "errors": []
+    },
+    {
+      "path": "/services/business-automation/",
+      "status": 200,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://kpinfo.tech/#organization",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+              "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+              "email": "info@kpinfo.tech",
+              "telephone": "+91 86182 79004",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+91 86182 79004",
+                "email": "info@kpinfo.tech",
+                "areaServed": [
+                  "India",
+                  "United States",
+                  "United Kingdom",
+                  "Europe"
+                ],
+                "availableLanguage": [
+                  "English"
+                ]
+              },
+              "sameAs": [
+                "https://www.instagram.com/kp.infotech/",
+                "https://linkedin.com/company/kp-info/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://kpinfo.tech/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Services",
+                  "item": "https://kpinfo.tech/services/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Business Process Automation Services",
+                  "item": "https://kpinfo.tech/services/business-automation/"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://kpinfo.tech/services/business-automation/#service",
+              "name": "Business Process Automation Services",
+              "description": "Automate workflows, approvals, reporting, documents and system handoffs with practical business automation built around your operations.",
+              "url": "https://kpinfo.tech/services/business-automation/",
+              "provider": {
+                "@id": "https://kpinfo.tech/#organization"
+              },
+              "serviceType": "Business Process Automation Services",
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://kpinfo.tech/services/business-automation/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What business processes can be automated?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Repeatable workflows can include approvals, reporting, data entry, CRM updates, inventory alerts, document generation, task routing and recurring administration. Start with a clear process owner, known rules and measurable outcomes; simplify an unclear process before automating it."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do we need to replace our current tools?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Not always. Many projects connect tools you already use. We assess their available interfaces, permissions and data before defining a solution; configuring an existing tool may be enough for a simpler requirement."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is included in a business automation project?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The agreed scope can cover process discovery, workflow design, integrations, business rules, approvals, exception handling, testing, rollout, training and documentation. Systems, responsibilities, acceptance criteria and ongoing support are agreed before implementation."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can humans still approve important steps?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Workflows can pause for human approval or review and route exceptions to a responsible person. Approval permissions, escalation rules and audit records are defined with your process owner so accountability stays clear."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What happens if an automation fails?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We plan monitoring, error handling, fallback paths and ownership. The responsible team needs a way to review exceptions, pause work where needed and decide whether to retry a step. Testing includes missing data, duplicate events, unavailable systems and partial completion."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does workflow automation require AI?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Repeatable workflows with defined rules can use standard automation. AI interpretation, retrieval, reasoning or agent actions are a different capability; a new custom application or Odoo implementation may also be more appropriate for requirements that go beyond connecting existing processes."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do we measure automation ROI?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Agree a baseline and track relevant measures such as handling time, errors, approval turnaround, reporting effort and missed follow-ups. Compare results after rollout alongside workflow volume and exceptions, and include platform and maintenance costs. Savings and financial returns are not guaranteed."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What affects the cost and timing of automation?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Workflow complexity, system interfaces and access, data quality, approvals, custom code, testing and support scope affect the estimate. Client design decisions and user acceptance also affect readiness. Start with a bounded workflow before expanding the plan."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Who maintains the automation after launch?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Agree ownership at handover. KP can monitor performance, investigate in-scope issues and refine workflows under the engagement. Your team owns business decisions and helps manage system access, platform accounts and changes to connected applications. Support coverage and response arrangements are agreed separately."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "titles": [
+        "Business Process Automation Services | KP Infotech"
+      ],
+      "descriptions": [
+        "Automate workflows, approvals, reporting, documents and system handoffs with practical business automation built around your operations."
+      ],
+      "canonicals": [
+        "https://kpinfo.tech/services/business-automation/"
+      ],
+      "h1": [
+        "Business Process Automation Services"
+      ],
+      "noindex": false,
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "Business Process Automation Services | KP Infotech",
+        "description": "Automate workflows, approvals, reporting, documents and system handoffs with practical business automation built around your operations.",
+        "og:type": "website",
+        "og:url": "https://kpinfo.tech/services/business-automation/",
+        "og:title": "Business Process Automation Services | KP Infotech",
+        "og:description": "Automate workflows, approvals, reporting, documents and system handoffs with practical business automation built around your operations.",
+        "og:image": "https://cdn.sanity.io/images/5rux0mv2/production/a0871aff70b5f98c96cef5541cd159fe0c97cde3-5376x3072.jpg?w=1920&fm=webp",
+        "og:site_name": "KP Infotech",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://kpinfo.tech/services/business-automation/",
+        "twitter:title": "Business Process Automation Services | KP Infotech",
+        "twitter:description": "Automate workflows, approvals, reporting, documents and system handoffs with practical business automation built around your operations.",
+        "twitter:image": "https://cdn.sanity.io/images/5rux0mv2/production/a0871aff70b5f98c96cef5541cd159fe0c97cde3-5376x3072.jpg?w=1920&fm=webp",
+        "theme-color": "#0a0a0a",
+        "generator": "Astro v6.4.8",
+        "astro-view-transitions-enabled": "true",
+        "astro-view-transitions-fallback": "animate"
+      },
+      "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t S e r v i c e s B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+      "errors": []
+    },
+    {
+      "path": "/services/erp-software/",
+      "status": 200,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://kpinfo.tech/#organization",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+              "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+              "email": "info@kpinfo.tech",
+              "telephone": "+91 86182 79004",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+91 86182 79004",
+                "email": "info@kpinfo.tech",
+                "areaServed": [
+                  "India",
+                  "United States",
+                  "United Kingdom",
+                  "Europe"
+                ],
+                "availableLanguage": [
+                  "English"
+                ]
+              },
+              "sameAs": [
+                "https://www.instagram.com/kp.infotech/",
+                "https://linkedin.com/company/kp-info/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://kpinfo.tech/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Services",
+                  "item": "https://kpinfo.tech/services/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Odoo ERP Implementation & Customization Services",
+                  "item": "https://kpinfo.tech/services/erp-software/"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://kpinfo.tech/services/erp-software/#service",
+              "name": "Odoo ERP Implementation & Customization Services",
+              "description": "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech.",
+              "url": "https://kpinfo.tech/services/erp-software/",
+              "provider": {
+                "@id": "https://kpinfo.tech/#organization"
+              },
+              "serviceType": "Odoo ERP Implementation & Customization Services",
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://kpinfo.tech/services/erp-software/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Is Odoo right for our business?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Consider Odoo when connected sales, purchasing, inventory and finance workflows would address duplicate work or limited visibility. Assess module fit, data readiness and adoption effort with your process owners. A smaller integration or custom system may be more appropriate if the ERP model does not fit."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is included in an Odoo implementation?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The agreed scope can include discovery, module selection, configuration, roles, migration, customization, integrations, testing, deployment, training and handover. The module plan and acceptance criteria establish what is included before implementation."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can KP Infotech customize Odoo for our workflows?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We configure existing modules and can build custom modules, reports and integrations where needed. We first assess standard functionality; if core requirements do not fit the ERP model, a separate custom system may be more appropriate."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do we choose modules for manufacturing, inventory and purchasing?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Start with the workflows and information that must connect. We map requirements to the supported sales, purchasing, inventory, accounting, manufacturing and HR areas, then agree priorities and acceptance criteria with your process owners."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can you migrate data from spreadsheets or legacy software?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We assess source exports and agree the records, formats and history to import. KP maps and tests migration; your data owners clean source records and reconcile agreed counts, balances and samples before approving cutover. Compatibility is assessed for each source."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can Odoo integrate with our existing systems?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We assess Odoo API connections and third-party integrations against your workflow needs and the external systems’ available interfaces. Agree access, source-of-truth rules, data mapping, failure handling and test cases before implementation."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you support cloud and on-premise Odoo deployments?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The choice depends on operational requirements, control, infrastructure responsibility, security and governance, and maintenance ownership. Deployment responsibilities and validation checks are agreed before rollout."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What affects implementation cost and timing?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Modules, user and workflow complexity, data readiness, migration, integrations, customization, deployment and support scope all affect the plan. Client approvals and testing readiness also matter. Scope must be agreed before estimating cost or rollout timing."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What happens after go-live?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Within the agreed support scope, KP can resolve issues, adjust workflows, improve reports, support users and updates, and plan incremental module improvements. Handover establishes ongoing responsibilities and how work will be prioritized."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "titles": [
+        "Odoo ERP Implementation Services | KP Infotech"
+      ],
+      "descriptions": [
+        "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech."
+      ],
+      "canonicals": [
+        "https://kpinfo.tech/services/erp-software/"
+      ],
+      "h1": [
+        "Odoo ERP Implementation & Customization Services"
+      ],
+      "noindex": false,
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "Odoo ERP Implementation Services | KP Infotech",
+        "description": "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech.",
+        "og:type": "website",
+        "og:url": "https://kpinfo.tech/services/erp-software/",
+        "og:title": "Odoo ERP Implementation Services | KP Infotech",
+        "og:description": "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech.",
+        "og:image": "https://cdn.sanity.io/images/5rux0mv2/production/ff878cc57741ae7eaaa97d4c7e61fc2b5585712e-3242x2431.jpg?w=1920&fm=webp",
+        "og:site_name": "KP Infotech",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://kpinfo.tech/services/erp-software/",
+        "twitter:title": "Odoo ERP Implementation Services | KP Infotech",
+        "twitter:description": "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech.",
+        "twitter:image": "https://cdn.sanity.io/images/5rux0mv2/production/ff878cc57741ae7eaaa97d4c7e61fc2b5585712e-3242x2431.jpg?w=1920&fm=webp",
+        "theme-color": "#0a0a0a",
+        "generator": "Astro v6.4.8",
+        "astro-view-transitions-enabled": "true",
+        "astro-view-transitions-fallback": "animate"
+      },
+      "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t S e r v i c e s B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+      "errors": []
+    },
+    {
+      "path": "/services/ai-automation-agents/",
+      "status": 200,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://kpinfo.tech/#organization",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+              "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+              "email": "info@kpinfo.tech",
+              "telephone": "+91 86182 79004",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+91 86182 79004",
+                "email": "info@kpinfo.tech",
+                "areaServed": [
+                  "India",
+                  "United States",
+                  "United Kingdom",
+                  "Europe"
+                ],
+                "availableLanguage": [
+                  "English"
+                ]
+              },
+              "sameAs": [
+                "https://www.instagram.com/kp.infotech/",
+                "https://linkedin.com/company/kp-info/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://kpinfo.tech/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Services",
+                  "item": "https://kpinfo.tech/services/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "AI Automation & Agents",
+                  "item": "https://kpinfo.tech/services/ai-automation-agents/"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://kpinfo.tech/services/ai-automation-agents/#service",
+              "name": "AI Automation & Agents",
+              "description": "Build AI agents and automation for document processing, operational knowledge, task routing and repetitive workflows with human oversight.",
+              "url": "https://kpinfo.tech/services/ai-automation-agents/",
+              "provider": {
+                "@id": "https://kpinfo.tech/#organization"
+              },
+              "serviceType": "AI Automation & Agents",
+              "areaServed": {
+                "@type": "Country",
+                "name": "India"
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://kpinfo.tech/services/ai-automation-agents/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What can AI agents do for business operations?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI agents can help answer internal questions, summarize documents, classify requests, draft responses, update systems, generate reports, route tasks, and trigger workflow actions."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can AI agents connect with our ERP, CRM, or internal documents?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We can connect AI workflows with approved data sources such as ERPs, CRMs, databases, helpdesks, spreadsheets, emails, APIs, SOPs, and internal documents where secure integration is available."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do you reduce AI mistakes?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We use approved data sources, clear prompts, validation checks, evaluation examples, human review for sensitive actions, logging, and fallback paths when confidence is low."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is business data safe in AI automation workflows?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI workflows should be designed with access control, approved data sources, logging, and clear boundaries. We plan data access carefully and avoid unnecessary exposure of sensitive information."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do we need technical staff to manage AI automations?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. We build user-friendly workflows, provide documentation, and set up monitoring so your team can use the system without managing the technical details day to day."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "titles": [
+        "AI Agent Development & Automation Services | KP Infotech"
+      ],
+      "descriptions": [
+        "Build AI agents and automation for document processing, operational knowledge, task routing and repetitive workflows with human oversight."
+      ],
+      "canonicals": [
+        "https://kpinfo.tech/services/ai-automation-agents/"
+      ],
+      "h1": [
+        "AI Automation & Agents"
+      ],
+      "noindex": false,
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "AI Agent Development & Automation Services | KP Infotech",
+        "description": "Build AI agents and automation for document processing, operational knowledge, task routing and repetitive workflows with human oversight.",
+        "og:type": "website",
+        "og:url": "https://kpinfo.tech/services/ai-automation-agents/",
+        "og:title": "AI Agent Development & Automation Services | KP Infotech",
+        "og:description": "Build AI agents and automation for document processing, operational knowledge, task routing and repetitive workflows with human oversight.",
+        "og:image": "https://cdn.sanity.io/images/5rux0mv2/production/c0da0dda6b1a819626ddd55ff17c8c923e7e5906-5824x3264.jpg?w=1920&fm=webp",
+        "og:site_name": "KP Infotech",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://kpinfo.tech/services/ai-automation-agents/",
+        "twitter:title": "AI Agent Development & Automation Services | KP Infotech",
+        "twitter:description": "Build AI agents and automation for document processing, operational knowledge, task routing and repetitive workflows with human oversight.",
+        "twitter:image": "https://cdn.sanity.io/images/5rux0mv2/production/c0da0dda6b1a819626ddd55ff17c8c923e7e5906-5824x3264.jpg?w=1920&fm=webp",
+        "theme-color": "#0a0a0a",
+        "generator": "Astro v6.4.8",
+        "astro-view-transitions-enabled": "true",
+        "astro-view-transitions-fallback": "animate"
+      },
+      "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t S e r v i c e s B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+      "errors": []
+    },
+    {
+      "path": "/services/cloud-devops/",
+      "status": 200,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://kpinfo.tech/#organization",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+              "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+              "email": "info@kpinfo.tech",
+              "telephone": "+91 86182 79004",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+91 86182 79004",
+                "email": "info@kpinfo.tech",
+                "areaServed": [
+                  "India",
+                  "United States",
+                  "United Kingdom",
+                  "Europe"
+                ],
+                "availableLanguage": [
+                  "English"
+                ]
+              },
+              "sameAs": [
+                "https://www.instagram.com/kp.infotech/",
+                "https://linkedin.com/company/kp-info/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://kpinfo.tech/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Services",
+                  "item": "https://kpinfo.tech/services/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Cloud & DevOps Services",
+                  "item": "https://kpinfo.tech/services/cloud-devops/"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://kpinfo.tech/services/cloud-devops/#service",
+              "name": "Cloud & DevOps Services",
+              "description": "Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently.",
+              "url": "https://kpinfo.tech/services/cloud-devops/",
+              "provider": {
+                "@id": "https://kpinfo.tech/#organization"
+              },
+              "serviceType": "Cloud & DevOps Services",
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://kpinfo.tech/services/cloud-devops/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is included in Cloud & DevOps services?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The agreed scope can include cloud infrastructure planning, hosting configuration, CI/CD, migration, monitoring, backups, recovery planning and cost optimization. We start with the operational problem and define which systems, changes and handover responsibilities the engagement covers."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can you improve an existing cloud environment?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We can review the current setup and prioritize deployment, configuration, visibility, reliability or cost improvements. A focused change may be sufficient; a large redesign or provider move is not assumed."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can you migrate an existing application?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We assess the application, data and dependencies before agreeing a migration. The scope includes testing, cutover and fallback planning, with application owners validating critical workflows. Any downtime constraints and recovery requirements need to be agreed for that workload."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you set up CI/CD?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We can automate agreed build, test and deployment steps, including environment promotion, release visibility and approval gates. Rollback planning depends on how the application, configuration and database can safely be restored or changed."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do you approach cloud cost optimization?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We review bills, utilization and workload requirements together, then prioritize changes such as right-sizing, storage adjustments or removing unused resources. Your team approves changes after reviewing performance, reliability, recovery and operating-effort trade-offs. Savings depend on the environment."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do you measure cloud savings?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We compare a defined baseline and representative post-change period for the same cost scope, explaining workload changes, rates, credits and one-off charges. Recurring cost changes are reported separately from implementation costs and checked alongside service performance and recovery requirements."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What if an infrastructure change affects reliability?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Agree validation checks and fallback steps before the change. If a check fails, investigate with the application owner and use the agreed recovery or reversal procedure where applicable. A lower bill alone is not acceptance of a change that fails critical service requirements."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you support backups and recovery?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, within the agreed scope. We define backup coverage and retention considerations, validate restore procedures and document recovery responsibilities. Your team identifies critical data and confirms the checks needed to accept a recovery."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What happens after deployment?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We hand over the agreed configuration, operating guidance and ownership of alerts and recovery. Further support can cover deployments, monitoring review, backup checks, capacity changes and optimization. Support hours, escalation and response arrangements are defined in the agreement; this page does not offer a 24/7 support commitment."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "titles": [
+        "Cloud & DevOps Services | KP Infotech"
+      ],
+      "descriptions": [
+        "Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently."
+      ],
+      "canonicals": [
+        "https://kpinfo.tech/services/cloud-devops/"
+      ],
+      "h1": [
+        "Cloud & DevOps Services"
+      ],
+      "noindex": false,
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "Cloud & DevOps Services | KP Infotech",
+        "description": "Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently.",
+        "og:type": "website",
+        "og:url": "https://kpinfo.tech/services/cloud-devops/",
+        "og:title": "Cloud & DevOps Services | KP Infotech",
+        "og:description": "Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently.",
+        "og:image": "https://cdn.sanity.io/images/5rux0mv2/production/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744.jpg?w=1920&fm=webp",
+        "og:site_name": "KP Infotech",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://kpinfo.tech/services/cloud-devops/",
+        "twitter:title": "Cloud & DevOps Services | KP Infotech",
+        "twitter:description": "Design reliable cloud infrastructure, CI/CD, monitoring and cost optimization for business systems that need to scale securely and efficiently.",
+        "twitter:image": "https://cdn.sanity.io/images/5rux0mv2/production/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744.jpg?w=1920&fm=webp",
+        "theme-color": "#0a0a0a",
+        "generator": "Astro v6.4.8",
+        "astro-view-transitions-enabled": "true",
+        "astro-view-transitions-fallback": "animate"
+      },
+      "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t S e r v i c e s B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+      "errors": []
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://kpinfo.tech/#organization",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+              "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+              "email": "info@kpinfo.tech",
+              "telephone": "+91 86182 79004",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+91 86182 79004",
+                "email": "info@kpinfo.tech",
+                "areaServed": [
+                  "India",
+                  "United States",
+                  "United Kingdom",
+                  "Europe"
+                ],
+                "availableLanguage": [
+                  "English"
+                ]
+              },
+              "sameAs": [
+                "https://www.instagram.com/kp.infotech/",
+                "https://linkedin.com/company/kp-info/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://kpinfo.tech/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "About",
+                  "item": "https://kpinfo.tech/about/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "titles": [
+        "About KP Infotech | B2B Technology & Automation Partner"
+      ],
+      "descriptions": [
+        "Learn how KP Infotech helps growing businesses replace manual work and disconnected systems with software, ERP, automation, AI and cloud solutions."
+      ],
+      "canonicals": [
+        "https://kpinfo.tech/about/"
+      ],
+      "h1": [
+        "Technology Built Around Better Business Operations"
+      ],
+      "noindex": false,
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "About KP Infotech | B2B Technology & Automation Partner",
+        "description": "Learn how KP Infotech helps growing businesses replace manual work and disconnected systems with software, ERP, automation, AI and cloud solutions.",
+        "og:type": "website",
+        "og:url": "https://kpinfo.tech/about/",
+        "og:title": "About KP Infotech | B2B Technology & Automation Partner",
+        "og:description": "Learn how KP Infotech helps growing businesses replace manual work and disconnected systems with software, ERP, automation, AI and cloud solutions.",
+        "og:image": "https://kpinfo.tech/_astro/hero-placeholder.CGEJ-DYQ.jpg",
+        "og:site_name": "KP Infotech",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://kpinfo.tech/about/",
+        "twitter:title": "About KP Infotech | B2B Technology & Automation Partner",
+        "twitter:description": "Learn how KP Infotech helps growing businesses replace manual work and disconnected systems with software, ERP, automation, AI and cloud solutions.",
+        "twitter:image": "https://kpinfo.tech/_astro/hero-placeholder.CGEJ-DYQ.jpg",
+        "theme-color": "#0a0a0a",
+        "generator": "Astro v6.4.8",
+        "astro-view-transitions-enabled": "true",
+        "astro-view-transitions-fallback": "animate"
+      },
+      "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t S e r v i c e s B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+      "errors": []
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://kpinfo.tech/#organization",
+              "name": "KP Infotech",
+              "url": "https://kpinfo.tech",
+              "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+              "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+              "email": "info@kpinfo.tech",
+              "telephone": "+91 86182 79004",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+91 86182 79004",
+                "email": "info@kpinfo.tech",
+                "areaServed": [
+                  "India",
+                  "United States",
+                  "United Kingdom",
+                  "Europe"
+                ],
+                "availableLanguage": [
+                  "English"
+                ]
+              },
+              "sameAs": [
+                "https://www.instagram.com/kp.infotech/",
+                "https://linkedin.com/company/kp-info/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://kpinfo.tech/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Contact",
+                  "item": "https://kpinfo.tech/contact/"
+                }
+              ]
+            },
+            {
+              "@type": "ContactPage",
+              "name": "Contact KP Infotech",
+              "description": "Discuss your operations challenge with KP Infotech and plan the right mix of custom software, Odoo ERP, automation, AI and cloud infrastructure.",
+              "url": "https://kpinfo.tech/contact/",
+              "mainEntity": {
+                "@id": "https://kpinfo.tech/#organization"
+              }
+            }
+          ]
+        }
+      ],
+      "titles": [
+        "Contact KP Infotech | Discuss Your Operations Challenge"
+      ],
+      "descriptions": [
+        "Discuss your operations challenge with KP Infotech and plan the right mix of custom software, Odoo ERP, automation, AI and cloud infrastructure."
+      ],
+      "canonicals": [
+        "https://kpinfo.tech/contact/"
+      ],
+      "h1": [
+        "Let's Build Something Great"
+      ],
+      "noindex": false,
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "Contact KP Infotech | Discuss Your Operations Challenge",
+        "description": "Discuss your operations challenge with KP Infotech and plan the right mix of custom software, Odoo ERP, automation, AI and cloud infrastructure.",
+        "og:type": "website",
+        "og:url": "https://kpinfo.tech/contact/",
+        "og:title": "Contact KP Infotech | Discuss Your Operations Challenge",
+        "og:description": "Discuss your operations challenge with KP Infotech and plan the right mix of custom software, Odoo ERP, automation, AI and cloud infrastructure.",
+        "og:image": "https://kpinfo.tech/_astro/hero-placeholder.CGEJ-DYQ.jpg",
+        "og:site_name": "KP Infotech",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://kpinfo.tech/contact/",
+        "twitter:title": "Contact KP Infotech | Discuss Your Operations Challenge",
+        "twitter:description": "Discuss your operations challenge with KP Infotech and plan the right mix of custom software, Odoo ERP, automation, AI and cloud infrastructure.",
+        "twitter:image": "https://kpinfo.tech/_astro/hero-placeholder.CGEJ-DYQ.jpg",
+        "theme-color": "#0a0a0a",
+        "generator": "Astro v6.4.8",
+        "astro-view-transitions-enabled": "true",
+        "astro-view-transitions-fallback": "animate"
+      },
+      "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t S e r v i c e s B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+      "errors": []
+    }
+  ],
+  "errors": []
+}

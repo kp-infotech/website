@@ -1,0 +1,695 @@
+{
+  "id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+  "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+  "h1": "Custom Software Development",
+  "hero": "We build custom business software for growing teams that have outgrown spreadsheets, disconnected tools, and manual workflows. From internal tools and dashboards to portals, SaaS MVPs, workflow systems, and API integrations, KP Infotech creates practical software that improves visibility and helps operations move faster.",
+  "contentHeading": "Build the Software Your Operations Actually Need",
+  "body": [
+    {
+      "style": "normal",
+      "text": "Most growing businesses reach a point where spreadsheets, shared inboxes, and disconnected tools can no longer support daily operations. Reports take too long, approvals get missed, data is duplicated, and teams lose visibility into what is actually happening.",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "Custom software development is the process of designing and building business-specific applications, portals, dashboards, and workflow systems around the way your company actually works. KP Infotech builds practical software that replaces manual work, connects data, and gives teams a clearer operating system for growth.",
+      "links": []
+    },
+    {
+      "style": "h2",
+      "text": "What We Build",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "Internal Tools & Admin Systems — Custom systems for approvals, operations tracking, task management, user management, reporting, customer management, and team coordination.",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "Dashboards & Business Portals — Real-time dashboards, customer portals, vendor portals, partner portals, and role-based interfaces that make operational data easier to access and act on.",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "Workflow Systems — Software that standardizes repeatable processes across sales, inventory, support, finance, HR, field teams, and management.",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "SaaS MVPs & Product Platforms — Focused MVPs and scalable product platforms for founders and teams that need to validate, launch, and improve software without overbuilding.",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "API Integrations — Connections between ERP, CRM, payment systems, databases, cloud tools, websites, and third-party platforms so data moves without manual copying.",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "Web & Mobile Interfaces — Responsive web apps and mobile-friendly interfaces for customers, staff, and field teams when operational access is needed across devices.",
+      "links": []
+    },
+    {
+      "style": "h2",
+      "text": "Built Around Business Outcomes",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "We do not start with technology for its own sake. We start by understanding your process, the people using it, the data behind it, and the business outcome you want to improve.",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "The result is custom business software that reduces manual work, improves operational visibility, supports better decisions, and gives your team a system that can evolve as the business grows.",
+      "links": []
+    },
+    {
+      "style": "normal",
+      "text": "Before defining a project, use our custom software guide and database design best practices to clarify fit and data requirements.",
+      "links": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "blogPost.what-is-custom-software",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "bbc095f6-0148-4f75-8e1a-3dadbab25d1f",
+            "_type": "reference"
+          }
+        }
+      ]
+    }
+  ],
+  "process": [
+    {
+      "_key": "c8dacc41fcb9",
+      "_type": "processStep",
+      "deliverables": [
+        "Workflow map",
+        "Requirements document",
+        "User roles and permissions",
+        "Success metrics"
+      ],
+      "description": "Understand your business process, users, data flow, operational bottlenecks, and success metrics before deciding what to build.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 1,
+      "title": "Discovery & Workflow Mapping"
+    },
+    {
+      "_key": "9555ea2ef453",
+      "_type": "processStep",
+      "deliverables": [
+        "System architecture",
+        "Feature roadmap",
+        "Database plan",
+        "Integration plan"
+      ],
+      "description": "Define the application structure, database model, integrations, permission logic, and delivery roadmap around your business goals.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 2,
+      "title": "Architecture & Product Planning"
+    },
+    {
+      "_key": "fe0bca4c6c7e",
+      "_type": "processStep",
+      "deliverables": [
+        "Sprint releases",
+        "Code reviews",
+        "Working modules",
+        "Progress demos"
+      ],
+      "description": "Build the software in focused sprints with regular demos, feedback loops, code reviews, and visible progress.",
+      "duration": "4-10 Weeks",
+      "stepNumber": 3,
+      "title": "Agile Development"
+    },
+    {
+      "_key": "6884bf0b8516",
+      "_type": "processStep",
+      "deliverables": [
+        "QA reports",
+        "Bug fixes",
+        "Performance checks",
+        "Production deployment"
+      ],
+      "description": "Validate performance, security, usability, data flows, integrations, and cross-device behavior before production launch.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 4,
+      "title": "Testing & Deployment"
+    },
+    {
+      "_key": "f95e30a82f1a",
+      "_type": "processStep",
+      "deliverables": [
+        "Documentation",
+        "Monitoring setup",
+        "Support handoff",
+        "Improvement roadmap"
+      ],
+      "description": "Monitor usage, improve workflows, add features, and keep the system aligned as your operations evolve.",
+      "duration": "Ongoing",
+      "stepNumber": 5,
+      "title": "Support & Iteration"
+    }
+  ],
+  "technologies": [
+    "Next.js",
+    "React",
+    "Node.js",
+    "TypeScript",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "Supabase",
+    "Sanity CMS",
+    "REST APIs",
+    "GraphQL",
+    "AWS",
+    "Vercel",
+    "Docker",
+    "Cloudflare"
+  ],
+  "faqs": [
+    {
+      "_key": "cce5a7193750",
+      "_type": "faqItem",
+      "answer": "Custom software makes sense when your team is forcing spreadsheets, disconnected tools, or manual workarounds to manage a process that is central to your business and difficult to fit into standard software.",
+      "question": "When should we build custom software instead of using off-the-shelf tools?"
+    },
+    {
+      "_key": "41743e7d77a0",
+      "_type": "faqItem",
+      "answer": "Yes. We build internal tools, customer portals, admin dashboards, reporting systems, approval workflows, and operational platforms tailored to your process.",
+      "question": "Can you build internal dashboards, portals, and workflow tools?"
+    },
+    {
+      "_key": "87fb6c1414d0",
+      "_type": "faqItem",
+      "answer": "Yes. We connect software with ERPs, CRMs, payment systems, databases, third-party APIs, spreadsheets, and cloud services where reliable integration is possible.",
+      "question": "Do you integrate custom software with our existing systems?"
+    },
+    {
+      "_key": "95daf1ff1ee3",
+      "_type": "faqItem",
+      "answer": "Yes. For new products or uncertain workflows, we usually recommend a focused MVP so you can validate the core process before expanding the system.",
+      "question": "Can you start with an MVP before building the full system?"
+    },
+    {
+      "_key": "2edd512de0ce",
+      "_type": "faqItem",
+      "answer": "Ownership depends on the project agreement, but we typically build with clear handoff, documentation, deployment access, and support options so your business is not locked into an unclear setup.",
+      "question": "Who owns the custom software after development?"
+    }
+  ],
+  "relatedWork": [
+    {
+      "_key": "step4proof0",
+      "_ref": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+      "_type": "reference"
+    },
+    {
+      "_key": "step4proof1",
+      "_ref": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+      "_type": "reference"
+    },
+    {
+      "_key": "step4proof2",
+      "_ref": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+      "_type": "reference"
+    }
+  ],
+  "workHeading": "Related Software Projects",
+  "serviceArea": null,
+  "wordCount": 702,
+  "wordCountScope": "Service title, excerpt, content and section headings, process titles/descriptions/deliverables, technologies and FAQs. Excludes navigation/footer, CTA, process durations and related-case content.",
+  "httpStatus": 200,
+  "metadata": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://kpinfo.tech/#organization",
+            "name": "KP Infotech",
+            "url": "https://kpinfo.tech",
+            "logo": "https://cdn.sanity.io/images/5rux0mv2/production/4b37e44f6cf2fce06dbf07a45db2dc3b95252a0c.svg",
+            "description": "KP Infotech is a B2B operations technology partner building custom software, business automation, ERP & Odoo solutions, AI automation & agents, and cloud & DevOps for growing businesses.",
+            "email": "info@kpinfo.tech",
+            "telephone": "+91 86182 79004",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ahmedabad",
+              "addressRegion": "Gujarat",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "sales",
+              "telephone": "+91 86182 79004",
+              "email": "info@kpinfo.tech",
+              "areaServed": [
+                "India",
+                "United States",
+                "United Kingdom",
+                "Europe"
+              ],
+              "availableLanguage": [
+                "English"
+              ]
+            },
+            "sameAs": [
+              "https://www.instagram.com/kp.infotech/",
+              "https://linkedin.com/company/kp-info/"
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://kpinfo.tech/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://kpinfo.tech/services/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Custom Software Development",
+                "item": "https://kpinfo.tech/services/custom-software-development/"
+              }
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://kpinfo.tech/services/custom-software-development/#service",
+            "name": "Custom Software Development",
+            "description": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+            "url": "https://kpinfo.tech/services/custom-software-development/",
+            "provider": {
+              "@id": "https://kpinfo.tech/#organization"
+            },
+            "serviceType": "Custom Software Development",
+            "areaServed": {
+              "@type": "Country",
+              "name": "India"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://kpinfo.tech/services/custom-software-development/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When should we build custom software instead of using off-the-shelf tools?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Custom software makes sense when your team is forcing spreadsheets, disconnected tools, or manual workarounds to manage a process that is central to your business and difficult to fit into standard software."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you build internal dashboards, portals, and workflow tools?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We build internal tools, customer portals, admin dashboards, reporting systems, approval workflows, and operational platforms tailored to your process."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you integrate custom software with our existing systems?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We connect software with ERPs, CRMs, payment systems, databases, third-party APIs, spreadsheets, and cloud services where reliable integration is possible."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you start with an MVP before building the full system?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. For new products or uncertain workflows, we usually recommend a focused MVP so you can validate the core process before expanding the system."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who owns the custom software after development?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ownership depends on the project agreement, but we typically build with clear handoff, documentation, deployment access, and support options so your business is not locked into an unclear setup."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "titles": [
+      "Custom Software Development Company | KP Infotech"
+    ],
+    "descriptions": [
+      "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility."
+    ],
+    "canonicals": [
+      "https://kpinfo.tech/services/custom-software-development/"
+    ],
+    "h1": [
+      "Custom Software Development"
+    ],
+    "noindex": false,
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "title": "Custom Software Development Company | KP Infotech",
+      "description": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+      "og:type": "website",
+      "og:url": "https://kpinfo.tech/services/custom-software-development/",
+      "og:title": "Custom Software Development Company | KP Infotech",
+      "og:description": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+      "og:image": "https://cdn.sanity.io/images/5rux0mv2/production/f342ad70f5bd90b79cf2bd1f54220da3989b9f2a-4015x2745.jpg?w=1920&fm=webp",
+      "og:site_name": "KP Infotech",
+      "twitter:card": "summary_large_image",
+      "twitter:url": "https://kpinfo.tech/services/custom-software-development/",
+      "twitter:title": "Custom Software Development Company | KP Infotech",
+      "twitter:description": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+      "twitter:image": "https://cdn.sanity.io/images/5rux0mv2/production/f342ad70f5bd90b79cf2bd1f54220da3989b9f2a-4015x2745.jpg?w=1920&fm=webp",
+      "theme-color": "#0a0a0a",
+      "generator": "Astro v6.4.8",
+      "astro-view-transitions-enabled": "true",
+      "astro-view-transitions-fallback": "animate"
+    },
+    "footer": "We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service",
+    "body": "@font-face { font-family: 'Playfair Display'; font-style: normal; font-display: swap; font-weight: 500; src: url(/_astro/playfair-display-latin-500-normal.DIxvyhka.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; } @font-face { font-family: 'Outfit'; font-style: normal; font-display: swap; font-weight: 400; src: url(/_astro/outfit-latin-400-normal.BGsTXAXT.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; } :root { --font-display: 'Playfair Display', serif; --font-body: 'Outfit', sans-serif; } Custom Software Development Company | KP Infotech .astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,:before,:after,::backdrop{--tw-translate-x:0;--tw-translate-y:0;--tw-translate-z:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scale-z:1;--tw-rotate-x:initial;--tw-rotate-y:initial;--tw-rotate-z:initial;--tw-skew-x:initial;--tw-skew-y:initial;--tw-space-y-reverse:0;--tw-border-style:solid;--tw-leading:initial;--tw-font-weight:initial;--tw-tracking:initial;--tw-shadow:0 0 #0000;--tw-shadow-color:initial;--tw-shadow-alpha:100%;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-color:initial;--tw-inset-shadow-alpha:100%;--tw-ring-color:initial;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-color:initial;--tw-inset-ring-shadow:0 0 #0000;--tw-ring-inset:initial;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000;--tw-outline-style:solid;--tw-blur:initial;--tw-brightness:initial;--tw-contrast:initial;--tw-grayscale:initial;--tw-hue-rotate:initial;--tw-invert:initial;--tw-opacity:initial;--tw-saturate:initial;--tw-sepia:initial;--tw-drop-shadow:initial;--tw-drop-shadow-color:initial;--tw-drop-shadow-alpha:100%;--tw-drop-shadow-size:initial;--tw-backdrop-blur:initial;--tw-backdrop-brightness:initial;--tw-backdrop-contrast:initial;--tw-backdrop-grayscale:initial;--tw-backdrop-hue-rotate:initial;--tw-backdrop-invert:initial;--tw-backdrop-opacity:initial;--tw-backdrop-saturate:initial;--tw-backdrop-sepia:initial;--tw-duration:initial;--tw-ease:initial}}}@font-face{font-family:Playfair Display;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/playfair-display-cyrillic-400-normal.CjW2EstV.woff2)format(\"woff2\"),url(/_astro/playfair-display-cyrillic-400-normal.ZiRag6zj.woff)format(\"woff\");unicode-range:U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116}@font-face{font-family:Playfair Display;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/playfair-display-vietnamese-400-normal.BV2APVTb.woff2)format(\"woff2\"),url(/_astro/playfair-display-vietnamese-400-normal.BbvUAu4N.woff)format(\"woff\");unicode-range:U+102-103,U+110-111,U+128-129,U+168-169,U+1A0-1A1,U+1AF-1B0,U+300-301,U+303-304,U+308-309,U+323,U+329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Playfair Display;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/playfair-display-latin-ext-400-normal.BxlSGspa.woff2)format(\"woff2\"),url(/_astro/playfair-display-latin-ext-400-normal.qdZwdvNS.woff)format(\"woff\");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Playfair Display;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/playfair-display-latin-400-normal.CFtfchNt.woff2)format(\"woff2\"),url(/_astro/playfair-display-latin-400-normal.DHYHbkg3.woff)format(\"woff\");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Playfair Display;font-style:normal;font-display:swap;font-weight:500;src:url(/_astro/playfair-display-cyrillic-500-normal.GO7-LTbC.woff2)format(\"woff2\"),url(/_astro/playfair-display-cyrillic-500-normal.DmDODJdV.woff)format(\"woff\");unicode-range:U+301,U+400-45F,U+490-491,U+4B0-4B1,U+2116}@font-face{font-family:Playfair Display;font-style:normal;font-display:swap;font-weight:500;src:url(/_astro/playfair-display-vietnamese-500-normal.Jyt54flB.woff2)format(\"woff2\"),url(/_astro/playfair-display-vietnamese-500-normal._Z41d-72.woff)format(\"woff\");unicode-range:U+102-103,U+110-111,U+128-129,U+168-169,U+1A0-1A1,U+1AF-1B0,U+300-301,U+303-304,U+308-309,U+323,U+329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Playfair Display;font-style:normal;font-display:swap;font-weight:500;src:url(/_astro/playfair-display-latin-ext-500-normal.DE-Iylxw.woff2)format(\"woff2\"),url(/_astro/playfair-display-latin-ext-500-normal.CFxFMdkY.woff)format(\"woff\");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Playfair Display;font-style:normal;font-display:swap;font-weight:500;src:url(/_astro/playfair-display-latin-500-normal.DIxvyhka.woff2)format(\"woff2\"),url(/_astro/playfair-display-latin-500-normal.BScSeVwi.woff)format(\"woff\");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Outfit;font-style:normal;font-display:swap;font-weight:300;src:url(/_astro/outfit-latin-ext-300-normal.BYS6Dpvq.woff2)format(\"woff2\"),url(/_astro/outfit-latin-ext-300-normal.CMIMshEd.woff)format(\"woff\");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Outfit;font-style:normal;font-display:swap;font-weight:300;src:url(/_astro/outfit-latin-300-normal.CRYTwY6m.woff2)format(\"woff2\"),url(/_astro/outfit-latin-300-normal.AWLfuCom.woff)format(\"woff\");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Outfit;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/outfit-latin-ext-400-normal.5tcqmc2S.woff2)format(\"woff2\"),url(/_astro/outfit-latin-ext-400-normal.DHm7mdGe.woff)format(\"woff\");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Outfit;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/outfit-latin-400-normal.BGsTXAXT.woff2)format(\"woff2\"),url(/_astro/outfit-latin-400-normal.DMwTpYkH.woff)format(\"woff\");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@layer theme{:root,:host{--font-sans:ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";--font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;--color-yellow-200:oklch(94.5% .129 101.54);--color-blue-500:oklch(62.3% .214 259.815);--color-blue-600:oklch(54.6% .245 262.881);--color-gray-50:oklch(98.5% .002 247.839);--color-gray-600:oklch(44.6% .03 256.802);--color-white:#fff;--spacing:.25rem;--container-xs:20rem;--container-md:28rem;--container-2xl:42rem;--container-7xl:80rem;--text-xs:.75rem;--text-xs--line-height:calc(1 / .75);--text-sm:.875rem;--text-sm--line-height:calc(1.25 / .875);--text-lg:1.125rem;--text-lg--line-height:calc(1.75 / 1.125);--text-xl:1.25rem;--text-xl--line-height:calc(1.75 / 1.25);--text-2xl:1.5rem;--text-2xl--line-height:calc(2 / 1.5);--text-3xl:1.875rem;--text-3xl--line-height: 1.2 ;--text-4xl:2.25rem;--text-4xl--line-height:calc(2.5 / 2.25);--text-5xl:3rem;--text-5xl--line-height:1;--text-6xl:3.75rem;--text-6xl--line-height:1;--font-weight-normal:400;--font-weight-medium:500;--font-weight-bold:700;--tracking-wide:.025em;--tracking-widest:.1em;--leading-tight:1.25;--leading-relaxed:1.625;--ease-in-out:cubic-bezier(.4, 0, .2, 1);--blur-lg:16px;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4, 0, .2, 1);--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono);--font-display:\"Playfair Display\", serif;--font-body:\"Outfit\", sans-serif;--color-bg-primary:#0a0a0a;--color-bg-secondary:#0f0f0f;--color-text-primary:#fff;--color-text-secondary:#ffffff80;--color-text-muted:#3a3a3a;--color-accent:#c9a87c;--color-border:#1a1a1a}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--default-font-family,ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:currentColor}@supports (color:color-mix(in lab,red,red)){::placeholder{color:color-mix(in oklab,currentcolor 50%,transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::file-selector-button{appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer components;@layer utilities{.pointer-events-none{pointer-events:none}.invisible{visibility:hidden}.visible{visibility:visible}.absolute{position:absolute}.fixed{position:fixed}.relative{position:relative}.static{position:static}.inset-0{inset:calc(var(--spacing) * 0)}.start{inset-inline-start:var(--spacing)}.end{inset-inline-end:var(--spacing)}.top-0{top:calc(var(--spacing) * 0)}.right-0{right:calc(var(--spacing) * 0)}.right-4{right:calc(var(--spacing) * 4)}.bottom-0{bottom:calc(var(--spacing) * 0)}.bottom-4{bottom:calc(var(--spacing) * 4)}.left-0{left:calc(var(--spacing) * 0)}.isolate{isolation:isolate}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.container{width:100%}@media(min-width:40rem){.container{max-width:40rem}}@media(min-width:48rem){.container{max-width:48rem}}@media(min-width:64rem){.container{max-width:64rem}}@media(min-width:80rem){.container{max-width:80rem}}@media(min-width:96rem){.container{max-width:96rem}}.mx-auto{margin-inline:auto}.my-8{margin-block:calc(var(--spacing) * 8)}.mt-2{margin-top:calc(var(--spacing) * 2)}.mt-4{margin-top:calc(var(--spacing) * 4)}.mt-6{margin-top:calc(var(--spacing) * 6)}.mt-8{margin-top:calc(var(--spacing) * 8)}.mt-10{margin-top:calc(var(--spacing) * 10)}.mt-16{margin-top:calc(var(--spacing) * 16)}.mb-4{margin-bottom:calc(var(--spacing) * 4)}.mb-6{margin-bottom:calc(var(--spacing) * 6)}.mb-8{margin-bottom:calc(var(--spacing) * 8)}.ml-4{margin-left:calc(var(--spacing) * 4)}.block{display:block}.contents{display:contents}.flex{display:flex}.grid{display:grid}.hidden{display:none}.inline{display:inline}.inline-block{display:inline-block}.inline-flex{display:inline-flex}.table{display:table}.h-4{height:calc(var(--spacing) * 4)}.h-5{height:calc(var(--spacing) * 5)}.h-10{height:calc(var(--spacing) * 10)}.h-full{height:100%}.h-px{height:1px}.min-h-screen{min-height:100vh}.w-0{width:calc(var(--spacing) * 0)}.w-4{width:calc(var(--spacing) * 4)}.w-5{width:calc(var(--spacing) * 5)}.w-6{width:calc(var(--spacing) * 6)}.w-10{width:calc(var(--spacing) * 10)}.w-full{width:100%}.max-w-2xl{max-width:var(--container-2xl)}.max-w-7xl{max-width:var(--container-7xl)}.max-w-\\[1440px\\]{max-width:1440px}.max-w-md{max-width:var(--container-md)}.max-w-xs{max-width:var(--container-xs)}.flex-1{flex:1}.flex-shrink,.shrink{flex-shrink:1}.grow{flex-grow:1}.border-collapse{border-collapse:collapse}.origin-left{transform-origin:0}.translate-x-full{--tw-translate-x:100%;translate:var(--tw-translate-x) var(--tw-translate-y)}.-translate-y-2{--tw-translate-y:calc(var(--spacing) * -2);translate:var(--tw-translate-x) var(--tw-translate-y)}.translate-y-2{--tw-translate-y:calc(var(--spacing) * 2);translate:var(--tw-translate-x) var(--tw-translate-y)}.translate-y-8{--tw-translate-y:calc(var(--spacing) * 8);translate:var(--tw-translate-x) var(--tw-translate-y)}.scale-x-0{--tw-scale-x:0%;scale:var(--tw-scale-x) var(--tw-scale-y)}.-rotate-45{rotate:-45deg}.rotate-45{rotate:45deg}.transform{transform:var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,)}.resize{resize:both}.list-decimal{list-style-type:decimal}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.gap-1{gap:calc(var(--spacing) * 1)}.gap-1\\.5{gap:calc(var(--spacing) * 1.5)}.gap-2{gap:calc(var(--spacing) * 2)}.gap-3{gap:calc(var(--spacing) * 3)}.gap-4{gap:calc(var(--spacing) * 4)}.gap-6{gap:calc(var(--spacing) * 6)}.gap-8{gap:calc(var(--spacing) * 8)}.gap-10{gap:calc(var(--spacing) * 10)}.gap-12{gap:calc(var(--spacing) * 12)}:where(.space-y-3>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)))}:where(.space-y-4>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)))}.overflow-hidden{overflow:hidden}.rounded{border-radius:.25rem}.border{border-style:var(--tw-border-style);border-width:1px}.border-t{border-top-style:var(--tw-border-style);border-top-width:1px}.border-b{border-bottom-style:var(--tw-border-style);border-bottom-width:1px}.border-l-4{border-left-style:var(--tw-border-style);border-left-width:4px}.border-\\[var\\(--border\\)\\]{border-color:var(--border)}.border-accent{border-color:var(--color-accent)}.border-border{border-color:var(--color-border)}.bg-\\[var\\(--bg-primary\\)\\]{background-color:var(--bg-primary)}.bg-\\[var\\(--bg-secondary\\)\\]{background-color:var(--bg-secondary)}.bg-accent{background-color:var(--color-accent)}.bg-bg-primary{background-color:var(--color-bg-primary)}.bg-bg-primary\\/90{background-color:#0a0a0ae6}@supports (color:color-mix(in lab,red,red)){.bg-bg-primary\\/90{background-color:color-mix(in oklab,var(--color-bg-primary) 90%,transparent)}}.bg-bg-secondary{background-color:var(--color-bg-secondary)}.bg-blue-500{background-color:var(--color-blue-500)}.bg-gray-50{background-color:var(--color-gray-50)}.bg-text-primary{background-color:var(--color-text-primary)}.bg-yellow-200{background-color:var(--color-yellow-200)}.object-contain{object-fit:contain}.p-2{padding:calc(var(--spacing) * 2)}.p-10{padding:calc(var(--spacing) * 10)}.px-4{padding-inline:calc(var(--spacing) * 4)}.px-6{padding-inline:calc(var(--spacing) * 6)}.px-8{padding-inline:calc(var(--spacing) * 8)}.py-2{padding-block:calc(var(--spacing) * 2)}.py-2\\.5{padding-block:calc(var(--spacing) * 2.5)}.py-3{padding-block:calc(var(--spacing) * 3)}.py-4{padding-block:calc(var(--spacing) * 4)}.py-5{padding-block:calc(var(--spacing) * 5)}.py-6{padding-block:calc(var(--spacing) * 6)}.py-7{padding-block:calc(var(--spacing) * 7)}.py-16{padding-block:calc(var(--spacing) * 16)}.py-24{padding-block:calc(var(--spacing) * 24)}.pt-8{padding-top:calc(var(--spacing) * 8)}.pl-4{padding-left:calc(var(--spacing) * 4)}.text-center{text-align:center}.text-left{text-align:left}.text-right{text-align:right}.font-body{font-family:var(--font-body)}.font-display{font-family:var(--font-display)}.text-2xl{font-size:var(--text-2xl);line-height:var(--tw-leading,var(--text-2xl--line-height))}.text-3xl{font-size:var(--text-3xl);line-height:var(--tw-leading,var(--text-3xl--line-height))}.text-4xl{font-size:var(--text-4xl);line-height:var(--tw-leading,var(--text-4xl--line-height))}.text-5xl{font-size:var(--text-5xl);line-height:var(--tw-leading,var(--text-5xl--line-height))}.text-6xl{font-size:var(--text-6xl);line-height:var(--tw-leading,var(--text-6xl--line-height))}.text-lg{font-size:var(--text-lg);line-height:var(--tw-leading,var(--text-lg--line-height))}.text-sm{font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height))}.text-xl{font-size:var(--text-xl);line-height:var(--tw-leading,var(--text-xl--line-height))}.text-xs{font-size:var(--text-xs);line-height:var(--tw-leading,var(--text-xs--line-height))}.leading-relaxed{--tw-leading:var(--leading-relaxed);line-height:var(--leading-relaxed)}.leading-tight{--tw-leading:var(--leading-tight);line-height:var(--leading-tight)}.font-bold{--tw-font-weight:var(--font-weight-bold);font-weight:var(--font-weight-bold)}.font-medium{--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}.font-normal{--tw-font-weight:var(--font-weight-normal);font-weight:var(--font-weight-normal)}.tracking-wide{--tw-tracking:var(--tracking-wide);letter-spacing:var(--tracking-wide)}.tracking-widest{--tw-tracking:var(--tracking-widest);letter-spacing:var(--tracking-widest)}.whitespace-pre-line{white-space:pre-line}.text-\\[var\\(--accent\\)\\]{color:var(--accent)}.text-\\[var\\(--text-primary\\)\\]{color:var(--text-primary)}.text-\\[var\\(--text-secondary\\)\\]{color:var(--text-secondary)}.text-accent{color:var(--color-accent)}.text-blue-600{color:var(--color-blue-600)}.text-gray-600{color:var(--color-gray-600)}.text-text-muted{color:var(--color-text-muted)}.text-text-primary{color:var(--color-text-primary)}.text-text-secondary{color:var(--color-text-secondary)}.text-white{color:var(--color-white)}.lowercase{text-transform:lowercase}.uppercase{text-transform:uppercase}.italic{font-style:italic}.not-italic{font-style:normal}.underline{text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.ring{--tw-ring-shadow:var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color,currentcolor);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.outline{outline-style:var(--tw-outline-style);outline-width:1px}.blur{--tw-blur:blur(8px);filter:var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,)}.filter{filter:var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,)}.backdrop-blur-lg{--tw-backdrop-blur:blur(var(--blur-lg));-webkit-backdrop-filter:var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);backdrop-filter:var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,)}.backdrop-filter{-webkit-backdrop-filter:var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);backdrop-filter:var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,)}.transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,-webkit-backdrop-filter,backdrop-filter,display,content-visibility,overlay,pointer-events;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-all{transition-property:all;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-colors{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-opacity{transition-property:opacity;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-transform{transition-property:transform,translate,scale,rotate;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.duration-300{--tw-duration:.3s;transition-duration:.3s}.ease-in-out{--tw-ease:var(--ease-in-out);transition-timing-function:var(--ease-in-out)}@media(hover:hover){.hover\\:bg-accent:hover{background-color:var(--color-accent)}.hover\\:text-\\[var\\(--accent\\)\\]:hover{color:var(--accent)}.hover\\:text-accent:hover{color:var(--color-accent)}.hover\\:text-bg-primary:hover{color:var(--color-bg-primary)}.hover\\:text-text-primary:hover{color:var(--color-text-primary)}.hover\\:text-text-secondary:hover{color:var(--color-text-secondary)}.hover\\:opacity-80:hover{opacity:.8}}@media(min-width:40rem){.sm\\:flex-row{flex-direction:row}}@media(min-width:48rem){.md\\:flex{display:flex}.md\\:hidden{display:none}.md\\:inline-flex{display:inline-flex}.md\\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:flex-row{flex-direction:row}.md\\:items-center{align-items:center}.md\\:justify-between{justify-content:space-between}.md\\:px-12{padding-inline:calc(var(--spacing) * 12)}.md\\:py-24{padding-block:calc(var(--spacing) * 24)}.md\\:text-6xl{font-size:var(--text-6xl);line-height:var(--tw-leading,var(--text-6xl--line-height))}}@media(min-width:64rem){.lg\\:col-span-1{grid-column:span 1/span 1}.lg\\:block{display:block}.lg\\:flex{display:flex}.lg\\:hidden{display:none}.lg\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\\:gap-8{gap:calc(var(--spacing) * 8)}.lg\\:px-12{padding-inline:calc(var(--spacing) * 12)}.lg\\:px-24{padding-inline:calc(var(--spacing) * 24)}.lg\\:py-20{padding-block:calc(var(--spacing) * 20)}}}:root{--bg-primary:#0a0a0a;--bg-secondary:#0f0f0f;--bg-tertiary:#161616;--text-primary:#fff;--text-secondary:#ffffff80;--text-muted:#3a3a3a;--accent:#c9a87c;--accent-light:#e4d4bc;--accent-dim:#8b7355;--border:#1a1a1a;--border-light:#2a2a2a;--success:#4ade80;--error:#f87171}*{box-sizing:border-box}html{scroll-behavior:smooth}body{background-color:var(--bg-primary);color:var(--text-primary);font-family:var(--font-body);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0;font-weight:300;line-height:1.6}h1,h2,h3,h4,h5,h6{font-family:var(--font-display);font-weight:500;line-height:1.1}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto}.site-container{max-width:1440px;margin-left:auto;margin-right:auto;padding-left:1.5rem;padding-right:1.5rem}@media(min-width:1024px){.site-container{padding-left:3rem;padding-right:3rem}}@property --tw-translate-x{syntax:\"*\";inherits:false;initial-value:0}@property --tw-translate-y{syntax:\"*\";inherits:false;initial-value:0}@property --tw-translate-z{syntax:\"*\";inherits:false;initial-value:0}@property --tw-scale-x{syntax:\"*\";inherits:false;initial-value:1}@property --tw-scale-y{syntax:\"*\";inherits:false;initial-value:1}@property --tw-scale-z{syntax:\"*\";inherits:false;initial-value:1}@property --tw-rotate-x{syntax:\"*\";inherits:false}@property --tw-rotate-y{syntax:\"*\";inherits:false}@property --tw-rotate-z{syntax:\"*\";inherits:false}@property --tw-skew-x{syntax:\"*\";inherits:false}@property --tw-skew-y{syntax:\"*\";inherits:false}@property --tw-space-y-reverse{syntax:\"*\";inherits:false;initial-value:0}@property --tw-border-style{syntax:\"*\";inherits:false;initial-value:solid}@property --tw-leading{syntax:\"*\";inherits:false}@property --tw-font-weight{syntax:\"*\";inherits:false}@property --tw-tracking{syntax:\"*\";inherits:false}@property --tw-shadow{syntax:\"*\";inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:\"*\";inherits:false}@property --tw-shadow-alpha{syntax:\" \";inherits:false;initial-value:100%}@property --tw-inset-shadow{syntax:\"*\";inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:\"*\";inherits:false}@property --tw-inset-shadow-alpha{syntax:\" \";inherits:false;initial-value:100%}@property --tw-ring-color{syntax:\"*\";inherits:false}@property --tw-ring-shadow{syntax:\"*\";inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:\"*\";inherits:false}@property --tw-inset-ring-shadow{syntax:\"*\";inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:\"*\";inherits:false}@property --tw-ring-offset-width{syntax:\" \";inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:\"*\";inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:\"*\";inherits:false;initial-value:0 0 #0000}@property --tw-outline-style{syntax:\"*\";inherits:false;initial-value:solid}@property --tw-blur{syntax:\"*\";inherits:false}@property --tw-brightness{syntax:\"*\";inherits:false}@property --tw-contrast{syntax:\"*\";inherits:false}@property --tw-grayscale{syntax:\"*\";inherits:false}@property --tw-hue-rotate{syntax:\"*\";inherits:false}@property --tw-invert{syntax:\"*\";inherits:false}@property --tw-opacity{syntax:\"*\";inherits:false}@property --tw-saturate{syntax:\"*\";inherits:false}@property --tw-sepia{syntax:\"*\";inherits:false}@property --tw-drop-shadow{syntax:\"*\";inherits:false}@property --tw-drop-shadow-color{syntax:\"*\";inherits:false}@property --tw-drop-shadow-alpha{syntax:\" \";inherits:false;initial-value:100%}@property --tw-drop-shadow-size{syntax:\"*\";inherits:false}@property --tw-backdrop-blur{syntax:\"*\";inherits:false}@property --tw-backdrop-brightness{syntax:\"*\";inherits:false}@property --tw-backdrop-contrast{syntax:\"*\";inherits:false}@property --tw-backdrop-grayscale{syntax:\"*\";inherits:false}@property --tw-backdrop-hue-rotate{syntax:\"*\";inherits:false}@property --tw-backdrop-invert{syntax:\"*\";inherits:false}@property --tw-backdrop-opacity{syntax:\"*\";inherits:false}@property --tw-backdrop-saturate{syntax:\"*\";inherits:false}@property --tw-backdrop-sepia{syntax:\"*\";inherits:false}@property --tw-duration{syntax:\"*\";inherits:false}@property --tw-ease{syntax:\"*\";inherits:false}.utility-bar[data-astro-cid-pux6a34n]{position:relative;z-index:1;background:transparent;border-bottom:1px solid rgba(255,255,255,.08);padding:8px 0;max-height:40px;overflow:hidden;transition:max-height .4s cubic-bezier(.25,.1,.25,1),opacity .3s ease,padding .4s cubic-bezier(.25,.1,.25,1),border-color .3s ease}.utility-bar--hidden[data-astro-cid-pux6a34n]{max-height:0;opacity:0;padding:0;border-bottom-color:transparent}.utility-link[data-astro-cid-pux6a34n]{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-body, \"Outfit\", sans-serif);font-size:.875rem;font-weight:400;letter-spacing:.05em;color:var(--text-primary);text-decoration:none;transition:color .3s ease}.utility-link[data-astro-cid-pux6a34n]:hover{color:var(--accent)}.utility-social[data-astro-cid-pux6a34n]{display:inline-flex;align-items:center;justify-content:center;color:var(--text-primary);transition:color .3s ease}.utility-social[data-astro-cid-pux6a34n]:hover{color:var(--accent)}.nav-backdrop[data-astro-cid-pux6a34n]{background-color:#0a0a0a8c;backdrop-filter:blur(24px) saturate(1.4);-webkit-backdrop-filter:blur(24px) saturate(1.4);border-bottom:1px solid transparent}.header-scrolled[data-astro-cid-pux6a34n] .nav-backdrop[data-astro-cid-pux6a34n]{opacity:1;border-bottom-color:var(--border)}.nav-link__letters[data-astro-cid-pux6a34n]{display:inline-flex}.nav-link__letter[data-astro-cid-pux6a34n]{display:inline-block;transition:transform .3s calc(var(--letter-i) * 25ms) cubic-bezier(.25,.1,.25,1),color .3s calc(var(--letter-i) * 25ms)}.nav-link[data-astro-cid-pux6a34n]:hover .nav-link__letter[data-astro-cid-pux6a34n]{transform:translateY(-3px);color:var(--text-primary)}.nav-link[data-astro-cid-pux6a34n]:hover .nav-underline[data-astro-cid-pux6a34n],.nav-link[data-astro-cid-pux6a34n][aria-current=page] .nav-underline[data-astro-cid-pux6a34n]{width:100%}.contact-btn[data-astro-cid-pux6a34n]:hover .btn-fill[data-astro-cid-pux6a34n]{transform:scaleX(1)}.mobile-menu-open[data-astro-cid-pux6a34n]{opacity:1;pointer-events:auto}.mobile-menu-open[data-astro-cid-pux6a34n] .mobile-nav-link[data-astro-cid-pux6a34n]{transform:translateY(0);opacity:1;transition-delay:var(--delay)}.menu-open[data-astro-cid-pux6a34n] #menu-icon[data-astro-cid-pux6a34n]{opacity:0}.menu-open[data-astro-cid-pux6a34n] #close-icon[data-astro-cid-pux6a34n]{opacity:1}.nav-link[data-astro-cid-pux6a34n]:focus-visible,.contact-btn[data-astro-cid-pux6a34n]:focus-visible,.mobile-nav-link[data-astro-cid-pux6a34n]:focus-visible,#mobile-menu-toggle[data-astro-cid-pux6a34n]:focus-visible{outline:2px solid var(--accent);outline-offset:4px}@media(prefers-reduced-motion:reduce){.utility-bar[data-astro-cid-pux6a34n],.nav-backdrop[data-astro-cid-pux6a34n],.nav-link[data-astro-cid-pux6a34n],.nav-underline[data-astro-cid-pux6a34n],.nav-link__letter[data-astro-cid-pux6a34n],.contact-btn[data-astro-cid-pux6a34n],.btn-fill[data-astro-cid-pux6a34n],.hamburger-line[data-astro-cid-pux6a34n],.mobile-nav-link[data-astro-cid-pux6a34n],#mobile-menu[data-astro-cid-pux6a34n]{transition:none!important}.mobile-menu-open[data-astro-cid-pux6a34n] .mobile-nav-link[data-astro-cid-pux6a34n]{transition-delay:0s}}.footer-logo[data-astro-cid-sz7xmlte]{height:80px;width:auto}.footer-grid[data-astro-cid-sz7xmlte]{display:grid;grid-template-columns:1fr;gap:3rem}.footer-label[data-astro-cid-sz7xmlte]{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:4px;color:var(--accent);margin-bottom:1.5rem}.footer-nav-link[data-astro-cid-sz7xmlte]{display:inline-block;text-decoration:none}.footer-link__letters[data-astro-cid-sz7xmlte]{display:inline-flex}.footer-link__letter[data-astro-cid-sz7xmlte]{display:inline-block;transition:transform .3s calc(var(--letter-i) * 25ms) cubic-bezier(.25,.1,.25,1),color .3s calc(var(--letter-i) * 25ms)}.footer-nav-link[data-astro-cid-sz7xmlte]:hover .footer-link__letter[data-astro-cid-sz7xmlte]{transform:translateY(-2px);color:var(--accent)}.footer-double-col[data-astro-cid-sz7xmlte]{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.footer-contact-link[data-astro-cid-sz7xmlte]{display:flex;align-items:flex-start;gap:.625rem;color:var(--text-secondary);font-size:.875rem;text-decoration:none;transition:color .3s ease}.footer-contact-link[data-astro-cid-sz7xmlte]:hover{color:var(--accent)}.footer-contact-link--static[data-astro-cid-sz7xmlte]{cursor:default}.footer-contact-link--static[data-astro-cid-sz7xmlte]:hover{color:var(--text-secondary)}.footer-contact-icon[data-astro-cid-sz7xmlte]{flex-shrink:0;margin-top:2px;color:var(--accent);opacity:.6}@media(min-width:640px){.footer-grid[data-astro-cid-sz7xmlte]{grid-template-columns:1fr 1fr;gap:3rem}}@media(min-width:1024px){.footer-grid[data-astro-cid-sz7xmlte]{grid-template-columns:1.5fr 1fr 1.5fr 1fr;gap:2rem}}.custom-cursor[data-astro-cid-bfc23fge]{display:none;opacity:1;transition:opacity .2s ease}@media(pointer:fine)and (prefers-reduced-motion:no-preference){.custom-cursor[data-astro-cid-bfc23fge]{display:block}html,a,button,[role=button],input,textarea,select,label{cursor:none!important}:is([class^=cky-],[class*=\" cky-\"]),:is([class^=cky-],[class*=\" cky-\"]) *{cursor:auto!important}:is([class^=cky-],[class*=\" cky-\"]) :is(a,button,[role=button],label,input){cursor:pointer!important}body:has(:is([class^=cky-],[class*=\" cky-\"]):hover) .custom-cursor[data-astro-cid-bfc23fge]{opacity:0}}.custom-cursor__dot[data-astro-cid-bfc23fge]{position:fixed;top:0;left:0;width:6px;height:6px;background:var(--accent);border-radius:50%;pointer-events:none;z-index:10001;transform:translate(-50%,-50%);transition:opacity .2s,transform .15s}.custom-cursor__ring[data-astro-cid-bfc23fge]{position:fixed;top:0;left:0;width:36px;height:36px;border:1.5px solid rgba(201,168,124,.5);border-radius:50%;pointer-events:none;z-index:10000;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;transition:width .35s cubic-bezier(.25,.1,.25,1),height .35s cubic-bezier(.25,.1,.25,1),background .3s,border-color .3s,opacity .2s}.custom-cursor__label[data-astro-cid-bfc23fge]{font-family:var(--font-body, \"Outfit\", sans-serif);font-size:0;color:var(--accent);letter-spacing:1px;text-transform:uppercase;font-weight:400;opacity:0;transition:font-size .3s,opacity .3s;white-space:nowrap;pointer-events:none}.custom-cursor__beam[data-astro-cid-bfc23fge]{position:fixed;top:0;left:0;width:2px;height:20px;background:var(--accent);pointer-events:none;z-index:10001;opacity:0;transform:translate(-50%,-50%);transition:opacity .2s}.custom-cursor--hidden[data-astro-cid-bfc23fge] .custom-cursor__dot[data-astro-cid-bfc23fge],.custom-cursor--hidden[data-astro-cid-bfc23fge] .custom-cursor__ring[data-astro-cid-bfc23fge],.custom-cursor--hidden[data-astro-cid-bfc23fge] .custom-cursor__beam[data-astro-cid-bfc23fge]{opacity:0}.scroll-progress[data-astro-cid-b5wm3okc]{position:fixed;top:0;left:0;right:0;height:2px;z-index:9999;pointer-events:none;opacity:0;transition:opacity .2s ease}.scroll-progress--visible[data-astro-cid-b5wm3okc]{opacity:1}.scroll-progress__bar[data-astro-cid-b5wm3okc]{height:100%;width:0%;background-color:var(--accent);will-change:width}@media(prefers-reduced-motion:reduce){.scroll-progress[data-astro-cid-b5wm3okc]{display:none}}.whatsapp-btn[data-astro-cid-a3mtbhax]{position:fixed;bottom:2rem;right:2rem;z-index:40;display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;box-shadow:0 4px 12px #25d3664d;transition:transform .3s ease,box-shadow .3s ease}.whatsapp-btn[data-astro-cid-a3mtbhax]:hover{transform:scale(1.08);box-shadow:0 6px 20px #25d36666}.whatsapp-btn[data-astro-cid-a3mtbhax]:focus-visible{outline:2px solid var(--accent);outline-offset:4px}@media(max-width:640px){.whatsapp-btn[data-astro-cid-a3mtbhax]{bottom:1.25rem;right:1.25rem;width:48px;height:48px}.whatsapp-btn[data-astro-cid-a3mtbhax] svg[data-astro-cid-a3mtbhax]{width:24px;height:24px}}@media(prefers-reduced-motion:reduce){.whatsapp-btn[data-astro-cid-a3mtbhax]{transition:none}}.grain-overlay[data-astro-cid-37fxchfa]{position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.025;background-image:url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\");background-repeat:repeat;background-size:256px 256px}@media(prefers-reduced-motion:reduce){.grain-overlay[data-astro-cid-37fxchfa]{display:none}} .breadcrumbs[data-astro-cid-licbrrf5]{font-family:var(--font-body);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--text-secondary)}.breadcrumbs__link[data-astro-cid-licbrrf5]{color:var(--text-secondary);text-decoration:none;transition:color .2s}.breadcrumbs__link[data-astro-cid-licbrrf5]:hover{color:var(--accent)}.breadcrumbs__link[data-astro-cid-licbrrf5]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.breadcrumbs__sep[data-astro-cid-licbrrf5]{margin:0 8px;color:var(--text-muted)}.breadcrumbs__current[data-astro-cid-licbrrf5]{color:var(--accent);display:inline-block;max-width:min(60vw,420px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom}@media(max-width:768px){.breadcrumbs[data-astro-cid-licbrrf5]{font-size:10px}.breadcrumbs__current[data-astro-cid-licbrrf5]{max-width:200px}}@media(max-width:480px){.breadcrumbs[data-astro-cid-licbrrf5]{display:none}}.page-hero[data-astro-cid-4xq3sbmz]{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--bg-primary)}.page-hero--inner[data-astro-cid-4xq3sbmz]{min-height:75vh;align-items:center}.page-hero__bg[data-astro-cid-4xq3sbmz]{position:absolute;inset:0;z-index:0}.page-hero__bg[data-astro-cid-4xq3sbmz] picture,.page-hero__bg[data-astro-cid-4xq3sbmz] img{width:100%;height:100%;object-fit:cover;object-position:center}.page-hero__bg[data-astro-cid-4xq3sbmz]:after{content:\"\";position:absolute;inset:0;background:#0a0a0aa6;pointer-events:none;z-index:1}.page-hero--inner[data-astro-cid-4xq3sbmz] .page-hero__bg[data-astro-cid-4xq3sbmz]:after{background:linear-gradient(to right,#0a0a0af2 40%,#0a0a0a66)}.page-hero__container[data-astro-cid-4xq3sbmz]{position:relative;z-index:2;width:100%;max-width:1440px;margin:0 auto;padding:6rem 1.5rem 3rem}.page-hero__content[data-astro-cid-4xq3sbmz]{display:flex;flex-direction:column;gap:1.5rem;max-width:800px}.page-hero__content[data-astro-cid-4xq3sbmz] h1{font-family:var(--font-display);font-size:clamp(3rem,8vw,5.5rem);font-weight:500;line-height:1.05;color:var(--text-primary);margin:0}.page-hero__content[data-astro-cid-4xq3sbmz] .page-hero__description{font-family:var(--font-body);font-size:1rem;font-weight:300;line-height:1.7;color:var(--text-secondary);margin:0;max-width:600px}.page-hero__content[data-astro-cid-4xq3sbmz] .page-hero__actions{display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;margin-top:.5rem}@media(max-width:767px){.page-hero__bg[data-astro-cid-4xq3sbmz]:after,.page-hero--inner[data-astro-cid-4xq3sbmz] .page-hero__bg[data-astro-cid-4xq3sbmz]:after{background:#0a0a0acc}.page-hero__content[data-astro-cid-4xq3sbmz]{padding-top:2rem}}@media(min-width:768px){.page-hero__container[data-astro-cid-4xq3sbmz]{padding:8rem 2.5rem 4rem}.page-hero__content[data-astro-cid-4xq3sbmz]{gap:1.75rem}.page-hero__content[data-astro-cid-4xq3sbmz] .page-hero__description{font-size:1.0625rem}}@media(min-width:1024px){.page-hero__container[data-astro-cid-4xq3sbmz]{padding:0 3rem;display:flex;align-items:center;min-height:100vh}.page-hero--inner[data-astro-cid-4xq3sbmz] .page-hero__container[data-astro-cid-4xq3sbmz]{min-height:75vh}.page-hero__content[data-astro-cid-4xq3sbmz]{gap:2rem}.page-hero__content[data-astro-cid-4xq3sbmz] .page-hero__description{font-size:1.125rem}.page-hero__content[data-astro-cid-4xq3sbmz] .page-hero__actions{gap:2rem;margin-top:1rem}}@media(min-width:1024px)and (max-height:1050px){.page-hero--inner[data-astro-cid-4xq3sbmz],.page-hero--inner[data-astro-cid-4xq3sbmz] .page-hero__container[data-astro-cid-4xq3sbmz]{min-height:100vh}.page-hero__content[data-astro-cid-4xq3sbmz]{gap:1.25rem}.page-hero__content[data-astro-cid-4xq3sbmz] h1{font-size:clamp(2.25rem,5.5vh,4rem);line-height:1.08}.page-hero__content[data-astro-cid-4xq3sbmz] .page-hero__description{font-size:1rem}} .service-content[data-astro-cid-lgk3kk4u]{padding:6rem 0;background:var(--bg-secondary)}.service-content__container[data-astro-cid-lgk3kk4u]{width:100%;max-width:800px;margin:0 auto;padding:0 1.5rem}@media(min-width:1024px){.service-content__container[data-astro-cid-lgk3kk4u]{padding-left:3rem;padding-right:3rem}}.service-content__title[data-astro-cid-lgk3kk4u]{font-family:var(--font-display);font-size:clamp(2rem,5vw,3rem);font-weight:500;line-height:1.1;color:var(--text-primary);margin:1.5rem 0 3rem}.service-content__body[data-astro-cid-lgk3kk4u]{font-family:var(--font-body);font-size:1.125rem;font-weight:300;line-height:1.8;color:var(--text-secondary)}.service-content__body[data-astro-cid-lgk3kk4u] p{margin-bottom:1.5rem}.service-content__body[data-astro-cid-lgk3kk4u] p:last-child{margin-bottom:0}.service-content__body[data-astro-cid-lgk3kk4u] strong{font-weight:500;color:var(--text-primary)}.service-content__body[data-astro-cid-lgk3kk4u] a{color:var(--accent);text-decoration:underline;text-underline-offset:4px;transition:color .2s}.service-content__body[data-astro-cid-lgk3kk4u] a:hover{color:var(--accent-light)}.service-content__body[data-astro-cid-lgk3kk4u] ul{margin:1.5rem 0;padding-left:1.5rem;list-style:none}.service-content__body[data-astro-cid-lgk3kk4u] ol{margin:1.5rem 0;padding-left:1.5rem;list-style:decimal;color:var(--accent)}.service-content__body[data-astro-cid-lgk3kk4u] ol>li{padding-left:.5rem;color:var(--text-secondary)}.service-content__body[data-astro-cid-lgk3kk4u] li{margin-bottom:.5rem}.service-content__body[data-astro-cid-lgk3kk4u] ul>li{position:relative;padding-left:1.25rem}.service-content__body[data-astro-cid-lgk3kk4u] ul>li:before{content:\"\";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--accent)}.service-content__body[data-astro-cid-lgk3kk4u] h2,.service-content__body[data-astro-cid-lgk3kk4u] h3{font-family:var(--font-display);font-weight:500;color:var(--text-primary);margin:2.5rem 0 1rem;line-height:1.2}.service-content__body[data-astro-cid-lgk3kk4u] h2{font-size:1.75rem}.service-content__body[data-astro-cid-lgk3kk4u] h3{font-size:1.375rem}.service-content__body[data-astro-cid-lgk3kk4u] .portable-text-image{margin:2.5rem 0}.service-content__body[data-astro-cid-lgk3kk4u] .portable-text-image img{width:100%;height:auto;border:1px solid var(--border-light)}.service-content__body[data-astro-cid-lgk3kk4u] .portable-text-image figcaption{font-size:.8125rem;color:var(--text-muted);margin-top:.75rem;font-style:italic}@media(max-width:768px){.service-content[data-astro-cid-lgk3kk4u]{padding:4rem 0}.service-content__title[data-astro-cid-lgk3kk4u]{margin:1rem 0 2rem}.service-content__body[data-astro-cid-lgk3kk4u]{font-size:1rem}}@media(max-width:480px){.service-content[data-astro-cid-lgk3kk4u]{padding:3rem 0}}.how-we-build[data-astro-cid-bo6np7wo]{padding:6rem 0;background:var(--bg-primary)}.how-we-build__header[data-astro-cid-bo6np7wo]{margin-bottom:4rem;text-align:center}.how-we-build__title[data-astro-cid-bo6np7wo]{font-family:var(--font-display);font-size:clamp(2rem,5vw,3rem);font-weight:500;line-height:1.1;color:var(--text-primary);margin-top:1.5rem}.hwb-rail[data-astro-cid-bo6np7wo]{position:relative;display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:3.25rem}.hwb-rail__track[data-astro-cid-bo6np7wo],.hwb-rail__progress[data-astro-cid-bo6np7wo]{position:absolute;top:21px;left:9%;height:1px}.hwb-rail__track[data-astro-cid-bo6np7wo]{right:9%;background:var(--border-light)}.hwb-rail__progress[data-astro-cid-bo6np7wo]{width:calc((100% - 18%) * var(--hwb-progress));background:var(--accent);transition:width .5s cubic-bezier(.22,1,.36,1)}.hwb-node[data-astro-cid-bo6np7wo]{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0;background:none;border:none;cursor:pointer;text-align:center;font-family:inherit}.hwb-node__marker[data-astro-cid-bo6np7wo]{width:42px;height:42px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1rem;border-radius:2px;background:var(--bg-primary);color:var(--accent);border:1px solid var(--border-light);transition:background .4s cubic-bezier(.22,1,.36,1),color .4s cubic-bezier(.22,1,.36,1),border-color .4s cubic-bezier(.22,1,.36,1)}.hwb-node[data-astro-cid-bo6np7wo]:hover .hwb-node__marker[data-astro-cid-bo6np7wo]{border-color:var(--accent)}.hwb-node[data-astro-cid-bo6np7wo].is-active .hwb-node__marker[data-astro-cid-bo6np7wo]{background:var(--accent);color:var(--bg-primary);border-color:var(--accent)}.hwb-node__title[data-astro-cid-bo6np7wo]{max-width:120px;font-family:var(--font-body);font-size:.72rem;font-weight:600;letter-spacing:.1em;line-height:1.3;text-transform:uppercase;color:var(--text-secondary);transition:color .4s}.hwb-node[data-astro-cid-bo6np7wo].is-active .hwb-node__title[data-astro-cid-bo6np7wo]{color:var(--text-primary)}.hwb-node[data-astro-cid-bo6np7wo]:focus-visible{outline:none}.hwb-node[data-astro-cid-bo6np7wo]:focus-visible .hwb-node__marker[data-astro-cid-bo6np7wo]{outline:2px solid var(--accent);outline-offset:3px}.hwb-panels[data-astro-cid-bo6np7wo]{position:relative}.hwb-panel[data-astro-cid-bo6np7wo]{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;padding:2.5rem 2.75rem;border:1px solid var(--border);background:var(--bg-secondary);animation:hwb-fade .4s ease}.hwb-panel[data-astro-cid-bo6np7wo][hidden]{display:none}@keyframes hwb-fade{0%{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.hwb-panel__heading[data-astro-cid-bo6np7wo]{display:flex;align-items:baseline;gap:1rem;margin-bottom:1rem}.hwb-panel__num[data-astro-cid-bo6np7wo]{font-family:var(--font-display);font-size:2.2rem;line-height:1;color:var(--accent)}.hwb-panel__title[data-astro-cid-bo6np7wo]{margin:0;font-family:var(--font-display);font-size:1.5rem;font-weight:500;line-height:1.2;color:var(--text-primary)}.hwb-panel__desc[data-astro-cid-bo6np7wo]{margin:0 0 1.25rem;font-family:var(--font-body);font-size:1rem;font-weight:300;line-height:1.7;color:var(--text-secondary)}.hwb-panel__duration[data-astro-cid-bo6np7wo]{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-body);font-size:.66rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-dim)}.hwb-panel__duration[data-astro-cid-bo6np7wo]:before{content:\"\";width:20px;height:1px;background:var(--accent-dim)}.hwb-panel__aside-label[data-astro-cid-bo6np7wo]{display:block;margin-bottom:1.125rem;font-family:var(--font-body);font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}.hwb-panel__deliverables[data-astro-cid-bo6np7wo]{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.875rem}.hwb-panel__deliverable[data-astro-cid-bo6np7wo]{display:flex;align-items:center;gap:12px;padding-bottom:.875rem;border-bottom:1px solid var(--border);font-family:var(--font-body);font-size:.95rem;color:var(--text-primary)}.hwb-panel__arrow[data-astro-cid-bo6np7wo]{color:var(--accent);font-size:.9rem;flex-shrink:0}@media(max-width:768px){.how-we-build[data-astro-cid-bo6np7wo]{padding:4rem 0}.how-we-build__header[data-astro-cid-bo6np7wo]{margin-bottom:3rem}.hwb-rail[data-astro-cid-bo6np7wo]{margin-bottom:2.5rem}.hwb-panel[data-astro-cid-bo6np7wo]{grid-template-columns:1fr;gap:2rem;padding:2rem 1.5rem}}@media(max-width:560px){.hwb-node__title[data-astro-cid-bo6np7wo]{display:none}}@media(max-width:480px){.how-we-build[data-astro-cid-bo6np7wo]{padding:3rem 0}.hwb-panel__desc[data-astro-cid-bo6np7wo]{font-size:.9375rem}}@media(prefers-reduced-motion:reduce){.hwb-rail__progress[data-astro-cid-bo6np7wo],.hwb-node__marker[data-astro-cid-bo6np7wo],.hwb-node__title[data-astro-cid-bo6np7wo]{transition:none}.hwb-panel[data-astro-cid-bo6np7wo]{animation:none}}.marquee[data-astro-cid-bj3sqa3e]{--marquee-gap: 2rem;width:100%;overflow:hidden;mask-image:linear-gradient(to right,transparent 0%,black 10%,black 90%,transparent 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,black 10%,black 90%,transparent 100%)}.marquee__track[data-astro-cid-bj3sqa3e]{display:flex;animation:marquee-scroll var(--marquee-speed, 30s) linear infinite}.marquee[data-astro-cid-bj3sqa3e]:hover .marquee__track[data-astro-cid-bj3sqa3e]{animation-play-state:paused}.marquee__group[data-astro-cid-bj3sqa3e]{display:flex;align-items:center;flex-shrink:0;gap:var(--marquee-gap);padding-right:var(--marquee-gap)}.marquee__item[data-astro-cid-bj3sqa3e]{white-space:nowrap;cursor:default;transition:opacity .3s ease,color .3s ease}.marquee__separator[data-astro-cid-bj3sqa3e]{flex-shrink:0;user-select:none}@keyframes marquee-scroll{0%{transform:translate(0)}to{transform:translate(-50%)}}@media(prefers-reduced-motion:reduce){.marquee__track[data-astro-cid-bj3sqa3e]{animation:none}}.service-tech[data-astro-cid-6wbt5b4y]{padding:6rem 0;background:var(--bg-secondary);overflow:hidden}.service-tech__header[data-astro-cid-6wbt5b4y]{margin-bottom:3rem}.service-tech__title[data-astro-cid-6wbt5b4y]{font-family:var(--font-display);font-size:clamp(2rem,5vw,3rem);font-weight:500;line-height:1.1;color:var(--text-primary);margin-top:1.5rem}.service-tech[data-astro-cid-6wbt5b4y] .marquee__item{font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem);font-weight:500;color:var(--text-muted);opacity:.35}.service-tech[data-astro-cid-6wbt5b4y] .marquee__item:hover{color:var(--accent);opacity:1}.service-tech[data-astro-cid-6wbt5b4y] .marquee__separator{font-size:clamp(1.5rem,3vw,2.5rem);color:var(--accent);opacity:.25}@media(max-width:768px){.service-tech[data-astro-cid-6wbt5b4y]{padding:4rem 0}.service-tech__header[data-astro-cid-6wbt5b4y]{margin-bottom:2rem}}@media(max-width:480px){.service-tech[data-astro-cid-6wbt5b4y]{padding:3rem 0}}.service-faq[data-astro-cid-mrfiepao]{padding:6rem 0;background:var(--bg-secondary)}.service-faq__layout[data-astro-cid-mrfiepao]{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;align-items:start}.service-faq__sidebar[data-astro-cid-mrfiepao]{position:sticky;top:6rem}.service-faq__title[data-astro-cid-mrfiepao]{font-family:var(--font-display);font-size:clamp(2rem,5vw,3rem);font-weight:500;line-height:1.1;color:var(--text-primary);margin:1.5rem 0}.service-faq__description[data-astro-cid-mrfiepao]{font-family:var(--font-body);font-size:1rem;font-weight:300;line-height:1.7;color:var(--text-secondary)}.service-faq__list[data-astro-cid-mrfiepao]{display:flex;flex-direction:column}.faq-item[data-astro-cid-mrfiepao]{border-bottom:1px solid var(--border)}.faq-item[data-astro-cid-mrfiepao]:first-child{border-top:1px solid var(--border)}.faq-item__question[data-astro-cid-mrfiepao]{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.5rem 0;cursor:pointer;list-style:none;font-family:var(--font-display);font-size:1.125rem;font-weight:500;color:var(--text-primary);transition:color .3s ease}.faq-item__question[data-astro-cid-mrfiepao]::-webkit-details-marker{display:none}.faq-item__question[data-astro-cid-mrfiepao]::marker{display:none;content:\"\"}.faq-item__question[data-astro-cid-mrfiepao]:hover{color:var(--accent)}.faq-item__question[data-astro-cid-mrfiepao]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.faq-item__chevron[data-astro-cid-mrfiepao]{flex-shrink:0;color:var(--text-secondary);transition:transform .3s ease}.faq-item[data-astro-cid-mrfiepao][open] .faq-item__chevron[data-astro-cid-mrfiepao]{transform:rotate(180deg)}.faq-item__answer[data-astro-cid-mrfiepao]{padding-bottom:1.5rem}.faq-item__answer[data-astro-cid-mrfiepao] p[data-astro-cid-mrfiepao]{font-family:var(--font-body);font-size:1rem;font-weight:300;line-height:1.7;color:var(--text-secondary)}@media(max-width:1024px){.service-faq__layout[data-astro-cid-mrfiepao]{grid-template-columns:1fr;gap:3rem}.service-faq__sidebar[data-astro-cid-mrfiepao]{position:static}}@media(max-width:768px){.service-faq[data-astro-cid-mrfiepao]{padding:4rem 0}.faq-item__question[data-astro-cid-mrfiepao]{font-size:1rem}}@media(max-width:480px){.service-faq[data-astro-cid-mrfiepao]{padding:3rem 0}.faq-item__question[data-astro-cid-mrfiepao]{padding:1.25rem 0}} .text-highlight[data-astro-cid-4wic5mdb]{color:var(--accent)} .btn[data-astro-cid-6ygtcg62]{position:relative;display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-body),\"Outfit\",sans-serif;font-size:.75rem;font-weight:400;letter-spacing:.1875em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:all .3s ease}.btn__text[data-astro-cid-6ygtcg62]{position:relative;z-index:1}.btn--primary[data-astro-cid-6ygtcg62]{padding:1rem 2rem;background:transparent;border:1px solid rgba(255,255,255,.15);color:var(--accent)}.btn--primary[data-astro-cid-6ygtcg62]:hover{color:var(--accent-light, #e4d4bc);border-color:transparent}.btn__draw[data-astro-cid-6ygtcg62]{position:absolute;background:var(--accent);z-index:2;pointer-events:none}.btn__draw--top[data-astro-cid-6ygtcg62]{top:-1px;left:-1px;height:1px;width:0;transition:width .15s cubic-bezier(.65,0,.35,1) .45s}.btn__draw--right[data-astro-cid-6ygtcg62]{top:-1px;right:-1px;width:1px;height:0;transition:height .15s cubic-bezier(.65,0,.35,1) .3s}.btn__draw--bottom[data-astro-cid-6ygtcg62]{bottom:-1px;right:-1px;height:1px;width:0;transition:width .15s cubic-bezier(.65,0,.35,1) .15s}.btn__draw--left[data-astro-cid-6ygtcg62]{bottom:-1px;left:-1px;width:1px;height:0;transition:height .15s cubic-bezier(.65,0,.35,1) 0s}.btn--primary[data-astro-cid-6ygtcg62]:hover .btn__draw--top[data-astro-cid-6ygtcg62]{width:calc(100% + 2px);transition:width .2s cubic-bezier(.65,0,.35,1) 0s}.btn--primary[data-astro-cid-6ygtcg62]:hover .btn__draw--right[data-astro-cid-6ygtcg62]{height:calc(100% + 2px);transition:height .2s cubic-bezier(.65,0,.35,1) .15s}.btn--primary[data-astro-cid-6ygtcg62]:hover .btn__draw--bottom[data-astro-cid-6ygtcg62]{width:calc(100% + 2px);transition:width .2s cubic-bezier(.65,0,.35,1) .3s}.btn--primary[data-astro-cid-6ygtcg62]:hover .btn__draw--left[data-astro-cid-6ygtcg62]{height:calc(100% + 2px);transition:height .2s cubic-bezier(.65,0,.35,1) .45s}.btn--secondary[data-astro-cid-6ygtcg62]{padding:1rem 2rem;background:var(--accent);border:1px solid var(--accent);color:var(--bg-primary)}.btn--secondary[data-astro-cid-6ygtcg62]:hover{background:var(--accent-light, #e4d4bc);border-color:var(--accent-light, #e4d4bc)}.btn--text[data-astro-cid-6ygtcg62]{padding:.5rem 0;background:transparent;border:none;color:var(--text-primary)}.btn--text[data-astro-cid-6ygtcg62] .btn__arrow[data-astro-cid-6ygtcg62]{transition:transform .3s ease}.btn--text[data-astro-cid-6ygtcg62]:hover{color:var(--accent)}.btn--text[data-astro-cid-6ygtcg62]:hover .btn__arrow[data-astro-cid-6ygtcg62]{transform:translate(4px)}.btn[data-astro-cid-6ygtcg62]:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.cta-section[data-astro-cid-coyjnsii]{padding:6rem 0;background:var(--bg-primary)}.cta-section__card[data-astro-cid-coyjnsii]{padding:5rem 4rem;background:var(--bg-secondary);border:1px solid var(--accent);text-align:center;display:flex;flex-direction:column;align-items:center}.cta-section__headline[data-astro-cid-coyjnsii]{font-family:var(--font-display),\"Playfair Display\",serif;font-size:clamp(2rem,4vw,3rem);font-weight:500;line-height:1.2;color:var(--text-primary);margin:0 0 1.5rem}.cta-section__description[data-astro-cid-coyjnsii]{font-family:var(--font-body),\"Outfit\",sans-serif;font-size:1.125rem;line-height:1.7;color:var(--text-secondary);max-width:500px;margin:0 0 2.5rem}@media(max-width:768px){.cta-section[data-astro-cid-coyjnsii]{padding:4rem 0}.cta-section__card[data-astro-cid-coyjnsii]{padding:3rem 2rem}.cta-section__headline[data-astro-cid-coyjnsii]{font-size:clamp(1.75rem,5vw,2.25rem)}.cta-section__description[data-astro-cid-coyjnsii]{font-size:1rem}}@media(max-width:480px){.cta-section__card[data-astro-cid-coyjnsii]{padding:2.5rem 1.5rem}} .service-work[data-astro-cid-qxnm73qk]{padding:6rem 0;background:var(--bg-primary)}.service-work__header[data-astro-cid-qxnm73qk]{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:4rem}.service-work__title[data-astro-cid-qxnm73qk]{font-family:var(--font-display);font-size:clamp(2rem,5vw,3rem);font-weight:500;line-height:1.1;color:var(--text-primary);margin-top:1.5rem}.service-work__grid[data-astro-cid-qxnm73qk]{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.work-card--featured[data-astro-cid-qxnm73qk]{grid-column:1 / -1;display:grid;grid-template-columns:1.2fr 1fr;background:var(--bg-secondary);border:1px solid var(--border);border-left:3px solid transparent;overflow:hidden;transition:border-color .3s ease,transform .3s ease;text-decoration:none;color:inherit}.work-card--featured[data-astro-cid-qxnm73qk]:hover{border-left-color:var(--accent)}.work-card--featured[data-astro-cid-qxnm73qk]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.work-card--featured[data-astro-cid-qxnm73qk] .work-card__image[data-astro-cid-qxnm73qk]{position:relative;aspect-ratio:16/10;overflow:hidden}.work-card--featured[data-astro-cid-qxnm73qk] .work-card__image[data-astro-cid-qxnm73qk] picture{position:absolute;inset:0}.work-card--featured[data-astro-cid-qxnm73qk] .work-card__image[data-astro-cid-qxnm73qk] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}.work-card--featured[data-astro-cid-qxnm73qk]:hover .work-card__image[data-astro-cid-qxnm73qk] img{transform:scale(1.03)}.work-card--featured[data-astro-cid-qxnm73qk] .work-card__content[data-astro-cid-qxnm73qk]{padding:3rem;display:flex;flex-direction:column;justify-content:center}.work-card--featured[data-astro-cid-qxnm73qk] .work-card__title[data-astro-cid-qxnm73qk]{font-size:1.75rem;margin-bottom:1rem}.work-card--featured[data-astro-cid-qxnm73qk] .work-card__excerpt[data-astro-cid-qxnm73qk]{font-family:var(--font-body);font-size:1rem;font-weight:300;line-height:1.7;color:var(--text-secondary);margin-bottom:1.5rem}.work-card--small[data-astro-cid-qxnm73qk]{display:block;background:var(--bg-secondary);border:1px solid var(--border);border-left:3px solid transparent;overflow:hidden;transition:border-color .3s ease,transform .3s ease;text-decoration:none;color:inherit}.work-card--small[data-astro-cid-qxnm73qk]:hover{border-left-color:var(--accent);transform:translateY(-4px)}.work-card--small[data-astro-cid-qxnm73qk]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.work-card--small[data-astro-cid-qxnm73qk] .work-card__image[data-astro-cid-qxnm73qk]{position:relative;aspect-ratio:16/10;overflow:hidden}.work-card--small[data-astro-cid-qxnm73qk] .work-card__image[data-astro-cid-qxnm73qk] picture{position:absolute;inset:0}.work-card--small[data-astro-cid-qxnm73qk] .work-card__image[data-astro-cid-qxnm73qk] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}.work-card--small[data-astro-cid-qxnm73qk]:hover .work-card__image[data-astro-cid-qxnm73qk] img{transform:scale(1.05)}.work-card--small[data-astro-cid-qxnm73qk] .work-card__content[data-astro-cid-qxnm73qk]{padding:1.5rem}.work-card__client[data-astro-cid-qxnm73qk]{display:block;font-family:var(--font-body);font-size:.6875rem;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem}.work-card__title[data-astro-cid-qxnm73qk]{font-family:var(--font-display);font-size:1.25rem;font-weight:500;color:var(--text-primary);line-height:1.3}.work-card__link[data-astro-cid-qxnm73qk]{font-family:var(--font-body);font-size:.75rem;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--accent);transition:color .2s}.work-card--featured[data-astro-cid-qxnm73qk]:hover .work-card__link[data-astro-cid-qxnm73qk]{color:var(--accent-light)}.work-card__placeholder[data-astro-cid-qxnm73qk]{width:100%;height:100%;min-height:200px;background:linear-gradient(135deg,var(--bg-tertiary),var(--bg-secondary));display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:12px;letter-spacing:2px;text-transform:uppercase}@media(max-width:1024px){.work-card--featured[data-astro-cid-qxnm73qk]{grid-template-columns:1fr}.work-card--featured[data-astro-cid-qxnm73qk] .work-card__content[data-astro-cid-qxnm73qk]{padding:2rem}.work-card--featured[data-astro-cid-qxnm73qk] .work-card__title[data-astro-cid-qxnm73qk]{font-size:1.5rem}}@media(max-width:768px){.service-work[data-astro-cid-qxnm73qk]{padding:4rem 0}.service-work__header[data-astro-cid-qxnm73qk]{flex-direction:column;align-items:flex-start;gap:1.5rem;margin-bottom:3rem}.service-work__grid[data-astro-cid-qxnm73qk]{grid-template-columns:1fr}}@media(max-width:480px){.service-work[data-astro-cid-qxnm73qk]{padding:3rem 0}.work-card--featured[data-astro-cid-qxnm73qk] .work-card__content[data-astro-cid-qxnm73qk]{padding:1.5rem}}@media(prefers-reduced-motion:reduce){.work-card--featured[data-astro-cid-qxnm73qk] .work-card__image[data-astro-cid-qxnm73qk] img,.work-card--small[data-astro-cid-qxnm73qk] .work-card__image[data-astro-cid-qxnm73qk] img,.work-card--small[data-astro-cid-qxnm73qk],.work-card--featured[data-astro-cid-qxnm73qk]{transition:none}} +91 86182 79004 info@kpinfo.tech S e r v i c e s I n d u s t r i e s W o r k I n s i g h t s A b o u t C a r e e r s Contact Services Industries Work Insights About Careers Contact Home / Services / Custom Software Development Service Custom Software Development We build custom business software for growing teams that have outgrown spreadsheets, disconnected tools, and manual workflows. From internal tools and dashboards to portals, SaaS MVPs, workflow systems, and API integrations, KP Infotech creates practical software that improves visibility and helps operations move faster. Discuss Your Project All Services What We Do Build the Software Your Operations Actually Need Most growing businesses reach a point where spreadsheets, shared inboxes, and disconnected tools can no longer support daily operations. Reports take too long, approvals get missed, data is duplicated, and teams lose visibility into what is actually happening. Custom software development is the process of designing and building business-specific applications, portals, dashboards, and workflow systems around the way your company actually works. KP Infotech builds practical software that replaces manual work, connects data, and gives teams a clearer operating system for growth. What We Build Internal Tools & Admin Systems — Custom systems for approvals, operations tracking, task management, user management, reporting, customer management, and team coordination. Dashboards & Business Portals — Real-time dashboards, customer portals, vendor portals, partner portals, and role-based interfaces that make operational data easier to access and act on. Workflow Systems — Software that standardizes repeatable processes across sales, inventory, support, finance, HR, field teams, and management. SaaS MVPs & Product Platforms — Focused MVPs and scalable product platforms for founders and teams that need to validate, launch, and improve software without overbuilding. API Integrations — Connections between ERP, CRM, payment systems, databases, cloud tools, websites, and third-party platforms so data moves without manual copying. Web & Mobile Interfaces — Responsive web apps and mobile-friendly interfaces for customers, staff, and field teams when operational access is needed across devices. Built Around Business Outcomes We do not start with technology for its own sake. We start by understanding your process, the people using it, the data behind it, and the business outcome you want to improve. The result is custom business software that reduces manual work, improves operational visibility, supports better decisions, and gives your team a system that can evolve as the business grows. Before defining a project, use our custom software guide and database design best practices to clarify fit and data requirements. Our Process How We Build Custom Software 01 Discovery & Workflow Mapping 02 Architecture & Product Planning 03 Agile Development 04 Testing & Deployment 05 Support & Iteration 01 Discovery & Workflow Mapping Understand your business process, users, data flow, operational bottlenecks, and success metrics before deciding what to build. 1-2 Weeks What you get &#8594; Workflow map &#8594; Requirements document &#8594; User roles and permissions &#8594; Success metrics 02 Architecture & Product Planning Define the application structure, database model, integrations, permission logic, and delivery roadmap around your business goals. 1-2 Weeks What you get &#8594; System architecture &#8594; Feature roadmap &#8594; Database plan &#8594; Integration plan 03 Agile Development Build the software in focused sprints with regular demos, feedback loops, code reviews, and visible progress. 4-10 Weeks What you get &#8594; Sprint releases &#8594; Code reviews &#8594; Working modules &#8594; Progress demos 04 Testing & Deployment Validate performance, security, usability, data flows, integrations, and cross-device behavior before production launch. 1-2 Weeks What you get &#8594; QA reports &#8594; Bug fixes &#8594; Performance checks &#8594; Production deployment 05 Support & Iteration Monitor usage, improve workflows, add features, and keep the system aligned as your operations evolve. Ongoing What you get &#8594; Documentation &#8594; Monitoring setup &#8594; Support handoff &#8594; Improvement roadmap Tools & Technologies Custom Software Technology Stack Next.js • React • Node.js • TypeScript • Python • FastAPI • PostgreSQL • Supabase • Sanity CMS • REST APIs • GraphQL • AWS • Vercel • Docker • Cloudflare • Next.js • React • Node.js • TypeScript • Python • FastAPI • PostgreSQL • Supabase • Sanity CMS • REST APIs • GraphQL • AWS • Vercel • Docker • Cloudflare • Related Work Related Software Projects View All Work WorkFlow (SaaS Startup) Real-Time Collaboration Platform for Distributed Teams Built a next-generation team collaboration platform with real-time co-editing, video conferencing, and AI-powered productivity insights, scaling to 25,000 teams and $3.2M ARR within 18 months. View Project &rarr; Community Trust Credit Union Modern Digital Banking Platform for Regional Credit Union TrendStyle Fashion Retailer Omnichannel E-Commerce Platform with AI-Powered Personalization FAQ Custom Software Development FAQs Everything you need to know about working with us. When should we build custom software instead of using off-the-shelf tools? Custom software makes sense when your team is forcing spreadsheets, disconnected tools, or manual workarounds to manage a process that is central to your business and difficult to fit into standard software. Can you build internal dashboards, portals, and workflow tools? Yes. We build internal tools, customer portals, admin dashboards, reporting systems, approval workflows, and operational platforms tailored to your process. Do you integrate custom software with our existing systems? Yes. We connect software with ERPs, CRMs, payment systems, databases, third-party APIs, spreadsheets, and cloud services where reliable integration is possible. Can you start with an MVP before building the full system? Yes. For new products or uncertain workflows, we usually recommend a focused MVP so you can validate the core process before expanding the system. Who owns the custom software after development? Ownership depends on the project agreement, but we typically build with clear handoff, documentation, deployment access, and support options so your business is not locked into an unclear setup. Ready to discuss your project ? Let's discuss the systems and workflows your business needs to run better. Start a Conversation We build custom software, ERP, automation, AI, and cloud systems for growing businesses that need better operations and less manual work. Services C u s t o m S o f t w a r e D e v e l o p m e n t B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s A I A u t o m a t i o n & A g e n t s C l o u d & D e v O p s S e r v i c e s Company A b o u t W o r k C a r e e r s I n s i g h t s C o n t a c t Industries H e a l t h c a r e R e t a i l & E - c o m m e r c e M a n u f a c t u r i n g L o g i s t i c s & S u p p l y C h a i n F i n a n c e S t a r t u p s & S M E s R e a l E s t a t e E d u c a t i o n Contact info@kpinfo.tech +91 86182 79004 Ahmedabad, Gujarat, India &copy; 2026 KP Infotech. All rights reserved. Privacy Policy Terms of Service"
+  },
+  "internalLinks": [
+    {
+      "href": "/",
+      "text": "",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/",
+      "text": "S e r v i c e s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/",
+      "text": "I n d u s t r i e s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/",
+      "text": "W o r k",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/",
+      "text": "I n s i g h t s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/about/",
+      "text": "A b o u t",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/careers/",
+      "text": "C a r e e r s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "Contact",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/",
+      "text": "Services",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/",
+      "text": "Industries",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/",
+      "text": "Work",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/",
+      "text": "Insights",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/about/",
+      "text": "About",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/careers/",
+      "text": "Careers",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "Contact",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/",
+      "text": "Home",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/",
+      "text": "Services",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "Discuss Your Project",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/",
+      "text": "All Services",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/what-is-custom-software/",
+      "text": "custom software guide",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/database-design-best-practices/",
+      "text": "database design best practices",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/",
+      "text": "View All Work",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/collaboration-platform-distributed-teams/",
+      "text": "WorkFlow (SaaS Startup) Real-Time Collaboration Platform for Distributed Teams Built a next-generation team collaboration platform with real-time co-editing, video conferencing, and AI-powered productivity insights, scaling to 25,000 teams and $3.2M ARR within 18 months. View Project →",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/digital-banking-platform/",
+      "text": "Community Trust Credit Union Modern Digital Banking Platform for Regional Credit Union",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/omnichannel-ecommerce-platform/",
+      "text": "TrendStyle Fashion Retailer Omnichannel E-Commerce Platform with AI-Powered Personalization",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "Start a Conversation",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/",
+      "text": "",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/custom-software-development/",
+      "text": "C u s t o m S o f t w a r e D e v e l o p m e n t",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/business-automation/",
+      "text": "B u s i n e s s P r o c e s s A u t o m a t i o n S e r v i c e s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/erp-software/",
+      "text": "O d o o E R P I m p l e m e n t a t i o n & C u s t o m i z a t i o n S e r v i c e s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/ai-automation-agents/",
+      "text": "A I A u t o m a t i o n & A g e n t s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/services/cloud-devops/",
+      "text": "C l o u d & D e v O p s S e r v i c e s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/about/",
+      "text": "A b o u t",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/work/",
+      "text": "W o r k",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/careers/",
+      "text": "C a r e e r s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/insights/",
+      "text": "I n s i g h t s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/contact/",
+      "text": "C o n t a c t",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/healthcare/",
+      "text": "H e a l t h c a r e",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/retail-ecommerce/",
+      "text": "R e t a i l & E - c o m m e r c e",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/manufacturing/",
+      "text": "M a n u f a c t u r i n g",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/logistics/",
+      "text": "L o g i s t i c s & S u p p l y C h a i n",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/finance/",
+      "text": "F i n a n c e",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/startups/",
+      "text": "S t a r t u p s & S M E s",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/real-estate/",
+      "text": "R e a l E s t a t e",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/industries/education/",
+      "text": "E d u c a t i o n",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/privacy-policy/",
+      "text": "Privacy Policy",
+      "body": false,
+      "accessible": true
+    },
+    {
+      "href": "/terms-of-service/",
+      "text": "Terms of Service",
+      "body": false,
+      "accessible": true
+    }
+  ],
+  "cta": {
+    "hero": [
+      "Discuss Your Project",
+      "/contact/"
+    ],
+    "secondary": [
+      "All Services",
+      "/services/"
+    ],
+    "closing": [
+      "Start a Conversation",
+      "/contact/"
+    ]
+  }
+}

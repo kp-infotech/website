@@ -1,0 +1,889 @@
+{
+  "_createdAt": "2026-02-02T05:21:23Z",
+  "_id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+  "_rev": "A6JmRqck7kLIEdXR31fWy5",
+  "_system": {
+    "base": {
+      "id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+      "rev": "B6ToKvE444MxmYEiOih5qi"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-09-18T14:36:34Z",
+  "content": [
+    {
+      "_key": "step7d00",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d00s",
+          "_type": "span",
+          "marks": [],
+          "text": "When custom software is the right fit"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d01",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d01s",
+          "_type": "span",
+          "marks": [],
+          "text": "Custom software development services are useful when a business-critical workflow, interface or data model cannot be supported adequately by existing products. Typical starting points include spreadsheets acting as the operational system, repeated reconciliation between applications, or customers and partners needing a dedicated place to request work and see its status."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d02",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d02s",
+          "_type": "span",
+          "marks": [],
+          "text": "The goal is less manual work, clearer operational visibility and software your team can maintain. If the process is still changing or requirements are unclear, start by defining the problem and testing a smaller scope. Writing a new application too early can make an unsettled process harder to improve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d03",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d03s",
+          "_type": "span",
+          "marks": [],
+          "text": "Build, buy, configure or automate?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d04",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d04l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Use existing software. "
+        },
+        {
+          "_key": "step7d04s",
+          "_type": "span",
+          "marks": [],
+          "text": "Choose a standard product when it meets the important requirements and its operating costs and constraints are acceptable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d05",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d05l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Configure a platform. "
+        },
+        {
+          "_key": "step7d05s",
+          "_type": "span",
+          "marks": [],
+          "text": "Odoo or another configurable platform may already support the operation with reasonable adaptation. Implementing Odoo belongs in an ERP engagement; a new custom system should not duplicate capabilities a suitable platform already provides."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d06",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d06l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Automate existing tools. "
+        },
+        {
+          "_key": "step7d06s",
+          "_type": "span",
+          "marks": [],
+          "text": "When the core applications are adequate but people manually move information or chase approvals, Business Automation can coordinate those handoffs across tools and rules."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d07",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d07l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Build custom software. "
+        },
+        {
+          "_key": "step7d07s",
+          "_type": "span",
+          "marks": [],
+          "text": "Choose a new application when a distinct workflow, user interface, data model or product capability is necessary. Compare the value of that fit with the work needed to build, operate and maintain it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d08",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d08s",
+          "_type": "span",
+          "marks": [],
+          "text": "Types of software we build"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d09",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d09l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Internal tools and admin systems. "
+        },
+        {
+          "_key": "step7d09s",
+          "_type": "span",
+          "marks": [],
+          "text": "Staff applications for approvals, reporting, data reconciliation, task coordination and operational tracking. Internal tool development centers on the people doing the work: the information they need, the actions they can take and the exceptions they must resolve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d10",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d10l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Business applications and operational systems. "
+        },
+        {
+          "_key": "step7d10s",
+          "_type": "span",
+          "marks": [],
+          "text": "Custom business software for department-specific workflows, shared records and management visibility. A system may include ERP-like functions when a suitable packaged platform does not fit. Replacing an old internal tool starts with understanding its data, dependencies and the work it still needs to support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d11",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d11l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Customer, partner and vendor portals. "
+        },
+        {
+          "_key": "step7d11s",
+          "_type": "span",
+          "marks": [],
+          "text": "Dedicated interfaces for requests, orders, document exchange, status visibility and reporting, with access appropriate to each user’s role. Portal scope depends on which records users can see or change and how their actions reach the internal team."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d12",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d12l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "SaaS products and MVPs. "
+        },
+        {
+          "_key": "step7d12s",
+          "_type": "span",
+          "marks": [],
+          "text": "Focused multi-user products that start with a validated business problem and core user journeys. We define the minimum useful release, choose architecture appropriate to the current stage and test the experience before expanding the feature set."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d13",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d13l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Application and API integrations. "
+        },
+        {
+          "_key": "step7d13s",
+          "_type": "span",
+          "marks": [],
+          "text": "Connections and, where appropriate, custom middleware between the application and existing business systems. Integration work accounts for data ownership, interface availability and what happens when an exchange fails."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d14",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d14l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Web and mobile-friendly interfaces. "
+        },
+        {
+          "_key": "step7d14s",
+          "_type": "span",
+          "marks": [],
+          "text": "Responsive access for staff, customers and field teams where their tasks require it. Supported browsers and devices are part of project scope and acceptance rather than an assumption that every interface is needed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d15",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d15s",
+          "_type": "span",
+          "marks": [],
+          "text": "Discovery and requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d16",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d16s",
+          "_type": "span",
+          "marks": [],
+          "text": "We map the business problem, current workflow, users and roles before deciding what to build. Discovery covers existing systems, data sources, business rules, permissions, exceptions, integration needs and reporting. Relevant performance, availability and operating constraints are recorded alongside functional requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d17",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d17s",
+          "_type": "span",
+          "marks": [],
+          "text": "KP and your process owners turn this into a prioritized scope, representative user journeys and acceptance criteria. Examples of real work and edge cases help reveal missing decisions early. The checkpoint is agreement on the problem, the first useful release and how its behavior will be accepted."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d18",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d18s",
+          "_type": "span",
+          "marks": [],
+          "text": "Architecture and maintainability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d19",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d19s",
+          "_type": "span",
+          "marks": [],
+          "text": "Architecture defines application boundaries, data storage, APIs, authentication, permissions and environments. We consider expected usage, operational requirements and the people who will maintain the system. Capacity planning follows the workload; complexity is added where a requirement justifies it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d20",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d20s",
+          "_type": "span",
+          "marks": [],
+          "text": "Custom Software builds the application. Cloud & DevOps covers the infrastructure used to deploy and operate it, with those responsibilities agreed together when needed. If a feature requires AI interpretation, retrieval, reasoning or bounded agent actions, that capability needs its own defined scope and evaluation rather than being assumed in every application."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d21",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d21s",
+          "_type": "span",
+          "marks": [],
+          "text": "Data and system integrations"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d22",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d22s",
+          "_type": "span",
+          "marks": [],
+          "text": "For each integration, identify the system of record and who owns the data. Review available APIs, access permissions, field mapping, synchronization direction and timing, error handling and duplicate prevention. We confirm what the existing system can reliably expose before committing to an integration design."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d23",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d23s",
+          "_type": "span",
+          "marks": [],
+          "text": "Application/API integration is part of custom software when it supports the new application. Odoo-specific connections sit with ERP implementation; coordinating repeatable processes across otherwise adequate existing tools sits with Business Automation. Your system owners help validate mappings, exceptions and recovery from failed exchanges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d24",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d24s",
+          "_type": "span",
+          "marks": [],
+          "text": "Testing and user acceptance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d25",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d25s",
+          "_type": "span",
+          "marks": [],
+          "text": "Acceptance checks cover critical user journeys, business rules, permissions, integrations and representative data, including relevant edge cases. Browser/device coverage and performance checks follow the agreed requirements. KP investigates issues and presents the working release for review against those checks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d26",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d26s",
+          "_type": "span",
+          "marks": [],
+          "text": "Your nominated users carry out user acceptance testing, confirm that the software supports the intended work and identify gaps. Release readiness includes reviewing unresolved issues, deployment steps, data movement where needed and recovery arrangements. Acceptance is based on agreed behavior, not a promise of defect-free software."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d27",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d27s",
+          "_type": "span",
+          "marks": [],
+          "text": "Practical security responsibilities"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d28",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d28s",
+          "_type": "span",
+          "marks": [],
+          "text": "Project planning should address authentication, role-based authorization, input validation, secrets handling, dependency management and environment separation. Limit access to the people and systems that need it. Agree backup and recovery responsibilities where the application stores operational data; specialist security requirements need explicit scope and validation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d29",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d29s",
+          "_type": "span",
+          "marks": [],
+          "text": "What your team provides"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d30",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d30s",
+          "_type": "span",
+          "marks": [],
+          "text": "A business/process owner and decision-maker keep priorities clear. Subject-matter experts explain the work, provide representative data through agreed access methods and help review exceptions. Existing-system owners support integration access; testing users provide feedback and acceptance decisions. Scope approval and timely review checkpoints make delivery decisions visible to both teams."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d31",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d31s",
+          "_type": "span",
+          "marks": [],
+          "text": "Scope, cost and delivery planning"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d32",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d32s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cost and timing depend on user roles, workflows, UX complexity, integrations, data quality and migration, access requirements, testing, deployment and support. We use discovery to distinguish what is essential for the first release from what can wait. No fixed price or delivery duration is assumed before the scope and dependencies are understood."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d33",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d33s",
+          "_type": "span",
+          "marks": [],
+          "text": "New requirements, integrations, roles or acceptance conditions can change the work involved. Discuss the effect on scope, cost and timing before adding them to delivery, and agree the revised priorities. A visible feature backlog helps keep improvements connected to the operational problem."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d34",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d34s",
+          "_type": "span",
+          "marks": [],
+          "text": "Ownership and handover"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d35",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d35s",
+          "_type": "span",
+          "marks": [],
+          "text": "Project agreements should define code and repository access, third-party dependencies and licenses, deployment ownership, credentials, documentation, handover responsibilities and ongoing support. Intellectual-property rights depend on the agreement and applicable licenses; ownership of all source code is not assumed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d36",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d36s",
+          "_type": "span",
+          "marks": [],
+          "text": "Handover should leave named owners able to access the agreed repositories and environments, understand configuration and integration dependencies, and follow operating guidance. Confirm what has been delivered, what remains in the backlog and who is responsible for running the application."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7d37",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d37s",
+          "_type": "span",
+          "marks": [],
+          "text": "Support after release"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7d38",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7d38s",
+          "_type": "span",
+          "marks": [],
+          "text": "Agreed support can cover issue investigation, technical maintenance, integration changes, deployment support, monitoring coordination and small improvements. Larger features are reviewed through the backlog. Support scope, hours and response arrangements are defined for the engagement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step4resources",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "marks": [],
+          "text": "Before defining a project, use our "
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "marks": [
+            "resource0"
+          ],
+          "text": "custom software guide"
+        },
+        {
+          "_key": "and1",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "resource1",
+          "_type": "span",
+          "marks": [
+            "resource1"
+          ],
+          "text": "database design best practices"
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "marks": [],
+          "text": " to clarify fit and data requirements."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "blogPost.what-is-custom-software",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "bbc095f6-0148-4f75-8e1a-3dadbab25d1f",
+            "_type": "reference"
+          }
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "contentHeading": "What custom software development includes",
+  "excerpt": "KP Infotech designs and builds custom business software for companies whose workflows no longer fit spreadsheets, disconnected tools or off-the-shelf products. We create internal tools, business applications, portals, SaaS MVPs and integrations around the operational capabilities your team needs.",
+  "faqHeading": "Custom Software Development FAQs",
+  "faqs": [
+    {
+      "_key": "step7dfaq1",
+      "_type": "faqItem",
+      "answer": "Build when an important workflow, interface or data model does not fit suitable existing products. If a standard tool, Odoo configuration or automation across current systems meets the need, that may be the more practical choice. Clarify an unstable process before committing to a build.",
+      "question": "When should we build custom software instead of buying a tool?"
+    },
+    {
+      "_key": "step7dfaq2",
+      "_type": "faqItem",
+      "answer": "We build internal tools, business applications, customer and partner portals, SaaS MVPs and application integrations. The scope follows the users, operational tasks and data involved, including responsive interfaces where they are needed.",
+      "question": "What types of custom software do you build?"
+    },
+    {
+      "_key": "step7dfaq3",
+      "_type": "faqItem",
+      "answer": "We assess API availability, permissions, data ownership, mapping and synchronization needs before agreeing an integration. Error handling and duplicate prevention are part of the design. Odoo-specific integrations belong with ERP work; cross-tool workflow orchestration may suit Business Automation.",
+      "question": "Can you integrate with our existing systems?"
+    },
+    {
+      "_key": "step7dfaq4",
+      "_type": "faqItem",
+      "answer": "Yes. For a new product or uncertain workflow, define the core user journeys and minimum useful scope, test them with intended users and use the findings to prioritize expansion. The first release should validate the problem and approach without assuming the full future platform.",
+      "question": "Can we start with an MVP?"
+    },
+    {
+      "_key": "step7dfaq5",
+      "_type": "faqItem",
+      "answer": "Discovery turns workflows, roles, data, rules, exceptions and integration needs into a prioritized scope and acceptance criteria. When requirements change, review their effect on effort, cost and timing before agreeing revised delivery priorities.",
+      "question": "How do you define scope and handle changing requirements?"
+    },
+    {
+      "_key": "step7dfaq6",
+      "_type": "faqItem",
+      "answer": "KP tests the agreed behavior, including critical journeys, permissions, integrations and representative data. Your nominated users validate the application against acceptance criteria. Unresolved issues and deployment readiness are reviewed before release acceptance.",
+      "question": "How do testing and UAT work?"
+    },
+    {
+      "_key": "step7dfaq7",
+      "_type": "faqItem",
+      "answer": "Key factors include workflows, user roles, UX and data complexity, integrations, security requirements, testing, migration, deployment and support. Estimates depend on the agreed scope, dependencies and required validation; a generic duration would not reflect those differences.",
+      "question": "What affects custom software cost and timeline?"
+    },
+    {
+      "_key": "step7dfaq8",
+      "_type": "faqItem",
+      "answer": "Application delivery and infrastructure operations have different responsibilities. We agree the hosting environment, deployment access, release steps and operating owner during planning. Cloud & DevOps work can support deployment and operations when included in the engagement.",
+      "question": "Who manages hosting and deployment?"
+    },
+    {
+      "_key": "step7dfaq9",
+      "_type": "faqItem",
+      "answer": "The project agreement and applicable third-party licenses determine intellectual-property rights. Agree repository access, dependencies, documentation, deployment ownership, credentials and support responsibilities explicitly. The page does not promise ownership of every component or all third-party code.",
+      "question": "How are ownership and handover handled?"
+    },
+    {
+      "_key": "step7dfaq10",
+      "_type": "faqItem",
+      "answer": "The agreed handover covers access, documentation, operating responsibilities and the remaining backlog. Further support can include issue investigation, maintenance, integration changes and improvements within the agreed scope. Hours and response arrangements are defined separately.",
+      "question": "What happens after release?"
+    }
+  ],
+  "heroImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-f342ad70f5bd90b79cf2bd1f54220da3989b9f2a-4015x2745-jpg",
+      "_type": "reference"
+    }
+  },
+  "iconCustom": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-4e255f24f7bc0117a7c07ca43aa035094486a67c-512x512-svg",
+      "_type": "reference"
+    }
+  },
+  "iconName": "code",
+  "order": 1,
+  "process": [
+    {
+      "_key": "c8dacc41fcb9",
+      "_type": "processStep",
+      "deliverables": [
+        "Workflow and requirements map",
+        "Prioritized scope and acceptance criteria",
+        "Client-approved discovery checkpoint"
+      ],
+      "description": "KP maps workflows, roles, data, rules and exceptions with your process owners. Your team provides representative examples and existing-system knowledge. Together we confirm the first-release scope and acceptance criteria before planning the solution.",
+      "stepNumber": 1,
+      "title": "Discovery & Workflow Mapping"
+    },
+    {
+      "_key": "9555ea2ef453",
+      "_type": "processStep",
+      "deliverables": [
+        "Solution and user-journey plan",
+        "Architecture, data and integration plan",
+        "Approved release scope"
+      ],
+      "description": "KP defines the user journeys, application boundaries, data model, integrations and access approach. Your decision-makers review the proposed experience, dependencies and delivery priorities before approving the plan.",
+      "stepNumber": 2,
+      "title": "Architecture & Product Planning"
+    },
+    {
+      "_key": "fe0bca4c6c7e",
+      "_type": "processStep",
+      "deliverables": [
+        "Working modules and progress demos",
+        "Reviewed changes and test findings",
+        "Agreed feedback and updated priorities"
+      ],
+      "description": "KP builds working modules with code review, regular demos and agreed testing. Your team reviews the behavior against requirements and helps resolve questions; new requirements are assessed for their effect on scope before priorities change.",
+      "stepNumber": 3,
+      "title": "Agile Development"
+    },
+    {
+      "_key": "6884bf0b8516",
+      "_type": "processStep",
+      "deliverables": [
+        "Test results and issue review",
+        "Client UAT and release acceptance",
+        "Agreed deployment and recovery plan"
+      ],
+      "description": "KP tests critical workflows, permissions, integrations and relevant device/performance requirements. Your users perform UAT and accept the release against agreed checks. Deployment and any data-movement or recovery steps are reviewed with the responsible owners.",
+      "stepNumber": 4,
+      "title": "Testing & Deployment"
+    },
+    {
+      "_key": "f95e30a82f1a",
+      "_type": "processStep",
+      "deliverables": [
+        "Documentation and access handover",
+        "Accepted operating and support responsibilities",
+        "Prioritized improvement backlog"
+      ],
+      "description": "KP provides the agreed documentation and handover, then investigates issues and plans improvements within the support scope. Your owners confirm repository/environment access, operating responsibilities and the priority of future work.",
+      "stepNumber": 5,
+      "title": "Support & Iteration"
+    }
+  ],
+  "processHeading": "How We Build Custom Software",
+  "relatedWork": [
+    {
+      "_key": "step4proof0",
+      "_ref": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+      "_type": "reference"
+    },
+    {
+      "_key": "step4proof1",
+      "_ref": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+      "_type": "reference"
+    },
+    {
+      "_key": "step4proof2",
+      "_ref": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+      "_type": "reference"
+    }
+  ],
+  "seoDescription": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+  "seoTitle": "Custom Software Development Company | KP Infotech",
+  "serviceArea": "Worldwide",
+  "slug": {
+    "_type": "slug",
+    "current": "custom-software-development"
+  },
+  "tagline": "Custom Business Software That Replaces Manual Work",
+  "techHeading": "Custom Software Technology Stack",
+  "technologies": [
+    "Next.js",
+    "React",
+    "Node.js",
+    "TypeScript",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "Supabase",
+    "Sanity CMS",
+    "REST APIs",
+    "GraphQL",
+    "AWS",
+    "Vercel",
+    "Docker",
+    "Cloudflare"
+  ],
+  "title": "Custom Software Development Services",
+  "workHeading": "Related Software Projects"
+}

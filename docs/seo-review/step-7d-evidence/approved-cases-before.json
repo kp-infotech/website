@@ -1,0 +1,2293 @@
+[
+  {
+    "_createdAt": "2026-02-11T11:53:07Z",
+    "_id": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+    "_rev": "1rt65YukpwbJFhGzTx8VaX",
+    "_system": {
+      "base": {
+        "id": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+        "rev": "1vrKYyivYDFpMmlY0wfPYq"
+      }
+    },
+    "_type": "caseStudy",
+    "_updatedAt": "2026-06-30T09:27:25Z",
+    "approach": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMYQy",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMYU5",
+            "_type": "span",
+            "text": "We interviewed 120 remote teams to map collaboration workflows. Findings: 67% switched apps 20+ times daily, 54% missed important updates buried in channels, and 72% wanted AI to surface relevant information proactively. We designed a unified interface with three core surfaces: messaging streams, collaborative documents, and video rooms\u2014all accessible within one window, eliminating constant app switching."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMYXC",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMYaJ",
+            "_type": "span",
+            "text": "The platform used a microservices architecture: Next.js frontend, Elixir for real-time messaging (leveraging Phoenix Channels), Yjs CRDT for collaborative editing, WebRTC mesh architecture for peer-to-peer video (fallback to SFU for large calls), PostgreSQL for persistent data, and Elasticsearch for search. The real-time sync layer achieved sub-100ms message delivery and conflict-free document editing even with 30+ simultaneous collaborators."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMYdQ",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMYgX",
+            "_type": "span",
+            "text": "AI features used GPT-4 for smart summaries of long threads, automatic meeting notes with action item extraction, and intelligent search that understood context ('find that proposal Jane shared last week'). The AI assistant could answer questions by querying the team's knowledge base, suggest relevant docs while composing messages, and detect when conversations should spawn tasks or calendar events."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "cardSize": "large",
+    "challenge": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZXS",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMZaZ",
+            "_type": "span",
+            "text": "The remote work revolution created demand for collaboration tools beyond Slack and Zoom. Existing solutions fragmented workflows across chat, video calls, doc editing, and project management. Teams wasted hours context-switching between 5-8 tools daily. The founders envisioned an all-in-one workspace combining real-time messaging, video, collaborative docs, task management, and knowledge base\u2014with seamless integration eliminating app fatigue."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZdg",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMZgn",
+            "_type": "span",
+            "text": "Technical requirements included: real-time collaborative editing with Google Docs-level performance, HD video conferencing for up to 50 participants, message sync across devices in <100ms, powerful search across all content types, granular permissions and team hierarchies, extensive third-party integrations (GitHub, Jira, Figma), and a design that felt delightful rather than overwhelming. The platform needed enterprise-grade security (SSO, audit logs, data residency) while remaining simple enough for small teams."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "client": "WorkFlow (SaaS Startup)",
+    "content": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMYje",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMYml",
+            "_type": "span",
+            "text": "Real-Time Collaborative Editing"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMYps",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMYsz",
+            "_type": "span",
+            "text": "Documents supported real-time co-editing with cursor positions and selections visible for all collaborators. Yjs CRDT ensured conflict-free merges even with offline edits. Rich formatting, embeds, slash commands, and @mentions created a Notion-like experience. Version history tracked every change with rollback capability. Templates accelerated common workflows (meeting notes, RFCs, sprint planning). Export to PDF/Markdown maintained formatting. Documents lived alongside relevant messages, eliminating the 'where did we save that?' problem."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMYw6",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMYzD",
+            "_type": "span",
+            "text": "Integrated Video Conferencing"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZ2K",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMZ5R",
+            "_type": "span",
+            "text": "One-click video calls from any message thread\u2014no separate links or scheduling. P2P WebRTC for 2-5 participants provided crystal-clear quality with <200ms latency. Larger calls used SFU (Selective Forwarding Unit) architecture supporting up to 50 participants. Screen sharing included annotation tools for collaborative design reviews. Background blur and virtual backgrounds maintained professionalism from anywhere. Post-call transcripts with speaker identification and searchable content turned meetings into searchable knowledge."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZ8Y",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMZBf",
+            "_type": "span",
+            "text": "AI-Powered Productivity"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZEm",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMZHt",
+            "_type": "span",
+            "text": "The AI assistant automatically summarized long threads when users caught up after being away, extracting key decisions and action items. Meeting transcripts were processed to generate action items assigned to specific team members. Intelligent search understood natural language ('pricing discussion with Sarah in March') and ranked by relevance considering recency, participant involvement, and user behavior. Weekly team digests highlighted accomplishments, bottlenecks, and suggested process improvements. Privacy controls let users opt-out of AI features if desired."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZL0",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMZO7",
+            "_type": "span",
+            "text": "Enterprise Features & Security"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZRE",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMZUL",
+            "_type": "span",
+            "text": "SSO integration with Okta, Azure AD, and Google Workspace streamlined onboarding. SCIM provisioning automated user lifecycle management. SOC 2 Type II certification, GDPR compliance, and data residency options (US, EU, APAC) satisfied enterprise requirements. Granular permissions controlled access at team, channel, and document levels. Audit logs tracked all security-relevant actions. DLP (Data Loss Prevention) policies prevented sharing of sensitive patterns. Despite enterprise features, the core product remained beautifully simple for small teams."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "excerpt": "Built a next-generation team collaboration platform with real-time co-editing, video conferencing, and AI-powered productivity insights, scaling to 25,000 teams and $3.2M ARR within 18 months.",
+    "featured": true,
+    "heroImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d10f047fc49ecb1cdcc483e501b7a0292ef4dd74-5376x3584-jpg",
+        "_type": "reference"
+      }
+    },
+    "industries": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZwM",
+        "_ref": "8df4b488-255f-42de-bf15-fef756dbc300",
+        "_type": "reference"
+      }
+    ],
+    "order": 5,
+    "results": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZju",
+        "_type": "resultMetric",
+        "label": "Teams on the platform",
+        "metric": "25K"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZn1",
+        "_type": "resultMetric",
+        "label": "Annual recurring revenue (ARR)",
+        "metric": "$3.2M"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZq8",
+        "_type": "resultMetric",
+        "label": "Daily active user rate",
+        "metric": "98%"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZtF",
+        "_type": "resultMetric",
+        "label": "Net revenue retention",
+        "metric": "142%"
+      }
+    ],
+    "resultsSummary": "WorkFlow became the collaboration tool of choice for distributed teams, achieving 98% daily active user rate among paying customers. The platform's real-time collaboration features reduced async communication overhead by 54%, while AI productivity insights helped teams identify bottlenecks and optimize workflows. Net Revenue Retention reached 142%, powered by viral team expansion and premium feature adoption. The company raised a $12M Series A led by prominent VCs.",
+    "seoDescription": "How we built a real-time collaboration platform for distributed teams, achieving 25K teams, $3.2M ARR, 98% DAU, and $12M Series A funding.",
+    "seoTitle": "Collaboration Platform Case Study \u2014 KP Infotech",
+    "services": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMZzT",
+        "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965",
+        "_type": "reference"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMa2a",
+        "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+        "_type": "reference"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "collaboration-platform-distributed-teams"
+    },
+    "thumbnailImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-d10f047fc49ecb1cdcc483e501b7a0292ef4dd74-5376x3584-jpg",
+        "_type": "reference"
+      }
+    },
+    "title": "Real-Time Collaboration Platform for Distributed Teams",
+    "year": "2025"
+  },
+  {
+    "_createdAt": "2026-02-11T11:47:47Z",
+    "_id": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+    "_rev": "5qm2Uv3IEjX8kJ803xMHV6",
+    "_system": {
+      "base": {
+        "id": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+        "rev": "1vrKYyivYDFpMmlY0wfSQy"
+      }
+    },
+    "_type": "caseStudy",
+    "_updatedAt": "2026-06-30T09:26:47Z",
+    "approach": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMR9b",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMRCi",
+            "_type": "span",
+            "text": "We conducted a 6-week discovery phase including customer journey mapping across both digital and physical touchpoints, competitive analysis of 20 leading fashion e-commerce sites, and stakeholder workshops with store managers, buyers, and marketing teams. Our research revealed that 73% of customers wanted to see real-time in-store inventory before making the trip, and 58% abandoned online carts due to unexpected shipping costs or delays."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMRFp",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMRIw",
+            "_type": "span",
+            "text": "The platform was built on Shopify Plus for rapid deployment and scalability, with custom integrations and headless architecture using Next.js for the frontend, enabling superior performance and SEO. We implemented Algolia for lightning-fast product search with typo-tolerance and synonym detection. The AI personalization engine used collaborative filtering and customer behavior analysis to power product recommendations, achieving 6.2x higher click-through rates than generic featured products."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMRM3",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMRPA",
+            "_type": "span",
+            "text": "Critical integrations included: Lightspeed POS for real-time inventory sync across all 28 locations, Klaviyo for email marketing automation and abandoned cart recovery, Yotpo for reviews and UGC, and ShipStation for order fulfillment. We built a custom mobile POS app for store associates to access customer purchase history and online browsing data, enabling personalized in-store service."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "cardSize": "large",
+    "challenge": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMQx9",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMR0G",
+            "_type": "span",
+            "text": "TrendStyle operated 28 retail stores across the Midwest but their e-commerce presence was minimal, contributing only 6% of total revenue. Their website was built on an outdated platform with poor mobile experience, limited product search, no personalization, and completely disconnected from in-store inventory. Customers couldn't check in-store availability online, couldn't return online purchases in stores, and received inconsistent experiences across channels."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMR3N",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMR6U",
+            "_type": "span",
+            "text": "The company needed a complete e-commerce transformation: a modern, mobile-first website with AI-powered product recommendations, real-time inventory visibility across all locations, buy-online-pickup-in-store (BOPIS) capability, unified customer profiles tracking both online and in-store purchases, abandoned cart recovery, and integrated digital marketing tools. The solution needed to integrate with their existing retail POS system (Lightspeed) and handle seasonal traffic spikes of 10x normal volume during Black Friday and holiday periods."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "client": "TrendStyle Fashion Retailer",
+    "content": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMRVO",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMRYV",
+            "_type": "span",
+            "text": "AI-Powered Personalization Engine"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMRbc",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMRej",
+            "_type": "span",
+            "text": "The recommendation engine analyzed 50+ data points per customer including browsing behavior, purchase history, size preferences, style affinity, price sensitivity, and seasonal patterns. Machine learning models predicted complementary products with 82% accuracy, powering 'Complete the Look' suggestions that increased cross-selling by 156%. The system A/B tested layouts, product imagery, and messaging in real-time, automatically optimizing for conversion. Personalized email campaigns achieved 42% open rates and 18% click-through rates, both 3x industry averages."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMRhq",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMRkx",
+            "_type": "span",
+            "text": "Omnichannel Features & Integration"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMRo4",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMRrB",
+            "_type": "span",
+            "text": "Real-time inventory visibility showed exact stock levels at each store location, with estimated availability times. BOPIS orders were ready for pickup within 2 hours with SMS notifications. The 'Reserve & Try In Store' feature let customers hold items for 24-hour in-store try-on before purchasing. Unified customer profiles tracked all interactions: a customer who browsed winter coats online would receive personalized recommendations when visiting any retail location. Returns were seamless across channels\u2014online purchases could be returned in any store with instant credit."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMRuI",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMRxP",
+            "_type": "span",
+            "text": "Performance & Technical Excellence"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMS0W",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMS3d",
+            "_type": "span",
+            "text": "The Next.js frontend achieved 95+ Lighthouse scores across all metrics. Server-side rendering (SSR) and static site generation (SSG) ensured fast page loads and excellent SEO performance. Product pages loaded in under 1.2s, with image lazy loading and modern WebP format. The platform handled 45,000 concurrent users during Black Friday without performance degradation through auto-scaling on Vercel's edge network. We implemented progressive web app (PWA) capabilities, enabling offline browsing and native app-like experiences."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMS6k",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMS9r",
+            "_type": "span",
+            "text": "Digital Marketing Integration"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMSCy",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMSG5",
+            "_type": "span",
+            "text": "We implemented comprehensive marketing automation including abandoned cart email sequences (recovering 24% of abandoned carts worth $3.2M annually), post-purchase nurture flows, win-back campaigns for lapsed customers, and VIP segmentation. Dynamic product feeds powered Google Shopping, Facebook, and Instagram ads with real-time inventory and pricing. User-generated content from Instagram was curated and displayed on product pages, increasing social proof and conversion by 31%. Referral program integration drove 18% of new customer acquisitions."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMSJC",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMSMJ",
+            "_type": "span",
+            "text": "Mobile Experience & App"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMSPQ",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMSSX",
+            "_type": "span",
+            "text": "Mobile accounted for 68% of traffic and 52% of revenue. The responsive design featured thumb-friendly navigation, streamlined checkout (down to 3 steps from 7), and Apple Pay/Google Pay integration. We launched a companion mobile app built with React Native featuring barcode scanning for in-store price checks, digital loyalty cards, exclusive app-only deals, and AR try-on for accessories. The app achieved 42,000 downloads in 6 months with 4.6 App Store rating."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "excerpt": "Transformed a traditional brick-and-mortar fashion retailer into an omnichannel powerhouse, increasing online revenue by 340% and achieving $45M in annual e-commerce sales through AI-driven personalization and seamless in-store integration.",
+    "featured": true,
+    "heroImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0b42083a9e8fe39c630e6efc563a758353cd6f15-5376x3072-jpg",
+        "_type": "reference"
+      }
+    },
+    "industries": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMRSH",
+        "_ref": "99901f6b-55bb-4d05-9bb4-53fbdcd0e92e",
+        "_type": "reference"
+      }
+    ],
+    "order": 4,
+    "results": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMQkh",
+        "_type": "resultMetric",
+        "label": "Increase in online revenue",
+        "metric": "340%"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMQno",
+        "_type": "resultMetric",
+        "label": "Annual e-commerce sales achieved",
+        "metric": "$45M"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMQqv",
+        "_type": "resultMetric",
+        "label": "Conversion rate (vs 2.1% industry avg)",
+        "metric": "28%"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMQu2",
+        "_type": "resultMetric",
+        "label": "Increase in average order value",
+        "metric": "47%"
+      }
+    ],
+    "resultsSummary": "The omnichannel platform unified TrendStyle's 28 retail locations with their online presence, creating a seamless shopping experience. Online revenue grew from $8M to $45M annually, while in-store sales increased 22% through digital integration. The AI personalization engine achieved a 28% conversion rate (vs. 2.1% industry average) and increased average order value by 47%. The platform processed 2.5M orders in its first year with a 4.7/5 customer satisfaction rating.",
+    "seoDescription": "How we built an AI-powered omnichannel e-commerce platform that grew online revenue by 340% to $45M and achieved 28% conversion rate for a fashion retailer.",
+    "seoTitle": "Omnichannel E-Commerce Platform Case Study \u2014 KP Infotech",
+    "services": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMQeT",
+        "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965",
+        "_type": "reference"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMQha",
+        "_ref": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+        "_type": "reference"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "omnichannel-ecommerce-platform"
+    },
+    "thumbnailImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0b42083a9e8fe39c630e6efc563a758353cd6f15-5376x3072-jpg",
+        "_type": "reference"
+      }
+    },
+    "title": "Omnichannel E-Commerce Platform with AI-Powered Personalization",
+    "year": "2023"
+  },
+  {
+    "_createdAt": "2026-02-11T11:46:46Z",
+    "_id": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+    "_rev": "1rt65YukpwbJFhGzTx7SoP",
+    "_system": {
+      "base": {
+        "id": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+        "rev": "1vrKYyivYDFpMmlY0wfarD"
+      }
+    },
+    "_type": "caseStudy",
+    "_updatedAt": "2026-06-30T09:26:27Z",
+    "approach": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMY8I",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMYBP",
+            "_type": "span",
+            "text": "We led a comprehensive 8-week discovery and design sprint, conducting 85 member interviews, analyzing 2 years of support tickets, and benchmarking 12 best-in-class digital banking experiences. Our research identified key pain points: complex navigation (avg 5.2 clicks for basic transfers), unclear error messages, lack of spending insights, and slow load times (avg 7.3s for account summary). We created persona-driven user journeys for 5 key member segments and validated designs through 4 rounds of usability testing."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMYEW",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMYHd",
+            "_type": "span",
+            "text": "The new platform was built using a modern tech stack: React.js with TypeScript for web, Swift for iOS, Kotlin for Android, and a Node.js microservices backend. We implemented a design system with 45 reusable components ensuring consistency across platforms. The architecture used RESTful APIs to integrate with Symitar core banking, with a custom middleware layer handling data transformation and business logic. Real-time features were powered by WebSockets for instant balance updates and transaction notifications."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMYKk",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMYNr",
+            "_type": "span",
+            "text": "Security was paramount: we implemented OAuth 2.0 with PKCE for authentication, biometric login (Face ID/Touch ID/fingerprint), device binding, anomaly detection for fraud prevention, and end-to-end encryption for sensitive transactions. The platform achieved PCI DSS Level 1 compliance and passed rigorous penetration testing by third-party security firms."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "cardSize": "large",
+    "challenge": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMWZn",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMWcu",
+            "_type": "span",
+            "text": "Community Trust Credit Union served 75,000 members with assets of $850M but was losing ground to digital-first competitors. Their existing online banking system was built on a 15-year-old platform with poor mobile experience, limited functionality, and frequent outages. Member surveys revealed that 58% were considering switching to competitors due to digital banking frustration, and the credit union was losing 3-5% of accounts annually to millennial and Gen-Z demographics."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMWg1",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMWj8",
+            "_type": "span",
+            "text": "The organization needed a complete digital transformation: a modern web platform, native mobile apps for iOS and Android, real-time account notifications, mobile check deposit, peer-to-peer payments, personal financial management tools, and integration with their core banking system (Symitar). The solution needed to meet stringent banking security requirements, support multi-factor authentication, and provide a seamless experience across all channels while maintaining compatibility with existing backend systems."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "client": "Community Trust Credit Union",
+    "content": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMWpM",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMWsT",
+            "_type": "span",
+            "text": "User-Centered Design Process"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMWva",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMWyh",
+            "_type": "span",
+            "text": "Our design philosophy centered on progressive disclosure: showing members exactly what they need when they need it. The dashboard displayed a real-time balance summary with intelligent alerts ('Your rent payment cleared, current balance $2,847'), upcoming bills, recent transactions, and personalized insights. We reduced the average task completion time from 3m 45s to 42 seconds through simplified navigation and smart defaults. The visual design used calming blues and greens to build trust while maintaining the credit union's brand identity."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMX1o",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMX4v",
+            "_type": "span",
+            "text": "Key Platform Features"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMX82",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMXB9",
+            "_type": "span",
+            "text": "Mobile Check Deposit: Advanced OCR technology with automatic amount extraction and fraud detection, processing 95% of deposits without manual review. P2P Payments: Zelle integration enabling instant transfers to any U.S. bank account. Bill Pay: Automated bill detection from transaction history with one-tap setup. Spending Insights: AI-powered categorization showing spending by category with month-over-month trends and budget alerts. Savings Goals: Visual progress tracking with automatic round-up transfers to goals. Card Controls: Real-time ability to freeze/unfreeze cards, set spending limits, and block specific merchant categories."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXEG",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMXHN",
+            "_type": "span",
+            "text": "Technical Architecture & Performance"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXKU",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMXNb",
+            "_type": "span",
+            "text": "The microservices architecture consisted of 12 independent services (authentication, accounts, transactions, payments, notifications, etc.) deployed on AWS EKS with auto-scaling based on demand. We used Redis for caching frequently accessed data, reducing database load by 73%. The platform achieved 99.97% uptime in its first year, with page load times under 1.2 seconds and mobile app startup in under 800ms. CloudFront CDN distributed assets globally for optimal performance."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXQi",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMXTp",
+            "_type": "span",
+            "text": "Core Banking Integration"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXWw",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMXa3",
+            "_type": "span",
+            "text": "Integration with Symitar Episys required building a robust API layer that transformed legacy system data into modern JSON formats. We implemented event-driven synchronization using Apache Kafka, ensuring real-time consistency between core banking and digital channels. The middleware handled complex business rules (overdraft protection, hold calculations, available vs. ledger balance) while providing a clean API for frontend consumption. Batch processes reconciled data nightly, with automated alerting for any discrepancies."
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXdA",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMXgH",
+            "_type": "span",
+            "text": "Rollout Strategy & Adoption"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXjO",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQMXmV",
+            "_type": "span",
+            "text": "We executed a phased rollout beginning with a 4-week closed beta of 500 tech-savvy members who provided feedback on 47 enhancement requests before public launch. A comprehensive marketing campaign included branch signage, email onboarding sequences, video tutorials, and in-app guided tours. We staffed a dedicated support team for the first 60 days, handling 3,200 calls with an average resolution time of 4 minutes. Member adoption exceeded projections by 45%, reaching 60,000 active digital users within 6 months."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "excerpt": "Redesigned and rebuilt a digital banking platform from the ground up, resulting in 186% increase in mobile banking adoption, 92% customer satisfaction score, and $12M in operational cost savings over 3 years.",
+    "featured": true,
+    "heroImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ee3c016942f80c6e684cb15835246cd9c6a8e176-6048x4032-jpg",
+        "_type": "reference"
+      }
+    },
+    "industries": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMWmF",
+        "_ref": "5807cc3f-6fa8-4352-b644-b61820dad506",
+        "_type": "reference"
+      }
+    ],
+    "order": 3,
+    "results": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXpc",
+        "_type": "resultMetric",
+        "label": "Increase in mobile banking adoption",
+        "metric": "186%"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXsj",
+        "_type": "resultMetric",
+        "label": "New accounts in first year",
+        "metric": "25K"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXvq",
+        "_type": "resultMetric",
+        "label": "Customer satisfaction score (CSAT)",
+        "metric": "92%"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMXyx",
+        "_type": "resultMetric",
+        "label": "Operational cost savings over 3 years",
+        "metric": "$12M"
+      }
+    ],
+    "resultsSummary": "The new digital banking platform revolutionized member experience, attracting 25,000 new accounts in the first year\u2014a 340% increase over the previous year. Mobile banking adoption surged from 28% to 80% of members. Self-service transactions increased by 215%, reducing branch workload and enabling staff to focus on high-value consultative services. The platform won 'Best Digital Banking Experience' at the 2024 Regional Banking Innovation Awards.",
+    "seoDescription": "How we built a modern digital banking platform that increased mobile adoption by 186%, achieved 92% satisfaction, and saved $12M for a regional credit union.",
+    "seoTitle": "Digital Banking Platform Case Study \u2014 KP Infotech",
+    "services": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQMY24",
+        "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965",
+        "_type": "reference"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQMY5B",
+        "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+        "_type": "reference"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "digital-banking-platform"
+    },
+    "thumbnailImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ee3c016942f80c6e684cb15835246cd9c6a8e176-6048x4032-jpg",
+        "_type": "reference"
+      }
+    },
+    "title": "Modern Digital Banking Platform for Regional Credit Union",
+    "year": "2023"
+  },
+  {
+    "_createdAt": "2026-06-30T08:58:10Z",
+    "_id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+    "_rev": "Xe0A1k3WLpDZQN3vt7JBHA",
+    "_system": {
+      "base": {
+        "id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+        "rev": "1rt65YukpwbJFhGzTwt101"
+      }
+    },
+    "_type": "caseStudy",
+    "_updatedAt": "2026-09-17T07:49:05Z",
+    "approach": [
+      {
+        "_key": "f651e087b55b",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "fb24aacfc629",
+            "_type": "span",
+            "marks": [],
+            "text": "KP Infotech started with a complete infrastructure audit instead of immediately suggesting a migration. The goal was to understand where the money was going, which resources were business-critical, and which parts of the setup were unnecessary or oversized."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1b495cb07c45",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "cf5bebc35613",
+            "_type": "span",
+            "marks": [],
+            "text": "The work was handled in four major phases."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c1ebd0787b4c",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "5b18902c7620",
+            "_type": "span",
+            "marks": [],
+            "text": "1. Cloud Cost Audit"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "92cc04cb1a55",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "ed91d3d9906f",
+            "_type": "span",
+            "marks": [],
+            "text": "We reviewed the existing AWS and DigitalOcean usage, including compute, storage, backups, inactive resources, deployment flow, and monthly billing patterns."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c377b812cb6d",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "f1e7f9c4561d",
+            "_type": "span",
+            "marks": [],
+            "text": "This helped us identify the biggest cost drivers:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ceeb7e5cfd52",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "2030d9cf6164",
+            "_type": "span",
+            "marks": [],
+            "text": "Overpowered servers"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "fed241f0d53a",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "5e7bee566d45",
+            "_type": "span",
+            "marks": [],
+            "text": "Poor storage tiering"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "99eddef75e01",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "753f3dcef185",
+            "_type": "span",
+            "marks": [],
+            "text": "Unused or rarely accessed data stored in expensive layers"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c94b00b3259c",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "bf3b90cf2f1c",
+            "_type": "span",
+            "marks": [],
+            "text": "Missing cleanup rules"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ac48cb9042ba",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "55d532327c52",
+            "_type": "span",
+            "marks": [],
+            "text": "Manual deployment dependencies"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2f62c6815134",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "83d6d66186e3",
+            "_type": "span",
+            "marks": [],
+            "text": "Infrastructure that had grown without cost governance"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "aa95dee7e905",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "74743df2aff1",
+            "_type": "span",
+            "marks": [],
+            "text": "2. Infrastructure Consolidation"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "db5c8aba51d6",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "4361e1332e6f",
+            "_type": "span",
+            "marks": [],
+            "text": "After the audit, we planned a leaner setup that would reduce recurring spend without affecting the client\u2019s live systems."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "057862d90905",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c853122359a4",
+            "_type": "span",
+            "marks": [],
+            "text": "The DigitalOcean compute layer was reviewed and replaced with a more cost-effective hosting structure where suitable. The goal was not just to move servers, but to simplify operations and reduce unnecessary compute cost."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "63adc698280f",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "f42afa64e361",
+            "_type": "span",
+            "marks": [],
+            "text": "3. Docker and Coolify Implementation"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "2c5ec1986aa5",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "258b5a20ce9e",
+            "_type": "span",
+            "marks": [],
+            "text": "We containerized the application environment using Docker and introduced Coolify to manage deployments more cleanly."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e16fb3821be7",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "eb50b8014b93",
+            "_type": "span",
+            "marks": [],
+            "text": "This gave the client a more predictable infrastructure setup with:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1f11db10960c",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "2e71d2212dcd",
+            "_type": "span",
+            "marks": [],
+            "text": "Easier deployments"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0cd862b189d9",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "3b74111b4dd7",
+            "_type": "span",
+            "marks": [],
+            "text": "Cleaner environment management"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e93170e65945",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "6b22fd111d53",
+            "_type": "span",
+            "marks": [],
+            "text": "Reduced manual server work"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ac042fd059a7",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "5edcdec6f458",
+            "_type": "span",
+            "marks": [],
+            "text": "Better maintainability"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0b57980300d5",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b24e0edf1b77",
+            "_type": "span",
+            "marks": [],
+            "text": "Simpler scaling path"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a8a5c2512b5f",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "bc5db2419897",
+            "_type": "span",
+            "marks": [],
+            "text": "Lower dependency on complex server-level configuration"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ff3569a800a2",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "54eb2a858159",
+            "_type": "span",
+            "marks": [],
+            "text": "4. AWS S3 Storage Optimization"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "e8b0d0607c3a",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "cf4036ea5e18",
+            "_type": "span",
+            "marks": [],
+            "text": "AWS storage was one of the key areas of hidden waste. We implemented S3 lifecycle policies, intelligent tiering, and cleanup rules to move older or less frequently accessed files into more cost-effective storage classes."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f22b8b4326aa",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "36ddb9e0295e",
+            "_type": "span",
+            "marks": [],
+            "text": "This helped reduce AWS cost while keeping the required data accessible and secure."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c1a1b9bbe7fc",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "35c9e7e71376",
+            "_type": "span",
+            "marks": [],
+            "text": "The optimization included:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c9dfdedb8335",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "90c241401098",
+            "_type": "span",
+            "marks": [],
+            "text": "S3 lifecycle policy setup"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ff0d7533e654",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "955b5d639380",
+            "_type": "span",
+            "marks": [],
+            "text": "Intelligent storage tiering"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c37252b6240b",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "d0c0045d8475",
+            "_type": "span",
+            "marks": [],
+            "text": "Removal of unnecessary storage waste"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0dfb56f55c1f",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "9f5dffce3f7f",
+            "_type": "span",
+            "marks": [],
+            "text": "Better file retention strategy"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2d2dbf6657f9",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "1637510d0516",
+            "_type": "span",
+            "marks": [],
+            "text": "Cleanup of unused or outdated data"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "34cb68e65220",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "1b7d000b2b58",
+            "_type": "span",
+            "marks": [],
+            "text": "Lower long-term storage cost"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7cc25aa0372f",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "73ea9d028611",
+            "_type": "span",
+            "marks": [],
+            "text": "Throughout the project, the focus was simple: reduce cost without creating operational risk."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "cardSize": "large",
+    "challenge": [
+      {
+        "_key": "50c33fe98482",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b1ca55be446e",
+            "_type": "span",
+            "marks": [],
+            "text": "The client was a European SME in the industrial machinery sector with a growing digital operation, but their cloud infrastructure had become expensive, fragmented, and difficult to manage."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8c02d9bd6c91",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "65e343051db7",
+            "_type": "span",
+            "marks": [],
+            "text": "Their monthly infrastructure cost was close to $17,000, split mainly between AWS and DigitalOcean. AWS was being used heavily for storage, while DigitalOcean hosted overprovisioned compute resources. Over time, unused resources, unoptimized storage, and manual infrastructure decisions had created a large recurring cost leak."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2b8ce82dac9e",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "1b67f462f86f",
+            "_type": "span",
+            "marks": [],
+            "text": "The main issue was not one single expensive service. It was the absence of infrastructure discipline."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "efa073d2c7a2",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c7d78c63d153",
+            "_type": "span",
+            "marks": [],
+            "text": "The client faced several challenges:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5a9d7d53c05d",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "04eaa40fe961",
+            "_type": "span",
+            "marks": [],
+            "text": "Overprovisioned virtual machines running on DigitalOcean"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "088a285d5795",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "e5ede4480dd0",
+            "_type": "span",
+            "marks": [],
+            "text": "AWS S3 storage without proper lifecycle management"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8248a730d005",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "4f1926268d9f",
+            "_type": "span",
+            "marks": [],
+            "text": "Old files and unused storage increasing monthly cost"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e57faa6cedc4",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "43a3010b965a",
+            "_type": "span",
+            "marks": [],
+            "text": "No automated cleanup or storage movement strategy"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6bdcf54011b6",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "819664ef0eea",
+            "_type": "span",
+            "marks": [],
+            "text": "No containerized deployment structure"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f2680ba7a57d",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "9249313bd39f",
+            "_type": "span",
+            "marks": [],
+            "text": "Manual maintenance and deployment complexity"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b2f73f6bfae9",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "720ccc078c9f",
+            "_type": "span",
+            "marks": [],
+            "text": "Infrastructure spread across services without clear ownership"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d2cc4ad77c3e",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "8282da67f20c",
+            "_type": "span",
+            "marks": [],
+            "text": "High monthly cloud spend with limited visibility into what was actually necessary"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8b04dc812aed",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "ee363a4c9214",
+            "_type": "span",
+            "marks": [],
+            "text": "The biggest risk was that this waste had become normal. The business was paying for infrastructure every month without knowing which part was essential and which part was silently draining budget."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "client": "European Industrial Machinery Manufacturer",
+    "content": [
+      {
+        "_key": "8b064c7bf12f",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "049c4aeae649",
+            "_type": "span",
+            "marks": [],
+            "text": "The Problem Was Not the Cloud. The Problem Was the Waste Inside It."
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "fa7577d976ce",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "39f41e9c93d9",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud infrastructure is supposed to help a business scale. But when it is not reviewed regularly, it can quietly become one of the biggest cost leaks in the company."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e9052ee39b01",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "eb19445d9edd",
+            "_type": "span",
+            "marks": [],
+            "text": "That is what happened with this European industrial machinery manufacturer."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2a8de893cdd1",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "1fb2b84f9c69",
+            "_type": "span",
+            "marks": [],
+            "text": "The client was spending nearly $17,000 every month on infrastructure. On paper, the setup looked normal: AWS for storage, DigitalOcean for compute, and a mix of systems supporting daily operations."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "63142145e32b",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "15e67a496d9c",
+            "_type": "span",
+            "marks": [],
+            "text": "But once we started reviewing the environment, the real problem became clear."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "286798082af8",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "5fbe4b1b9d62",
+            "_type": "span",
+            "marks": [],
+            "text": "The company was not paying for growth.\nThey were paying for unmanaged cloud decisions that had accumulated over time."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "fb828b60f06d",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "0264b320629a",
+            "_type": "span",
+            "marks": [],
+            "text": "Servers had been provisioned with more capacity than required. Storage was growing without lifecycle rules. Old files were sitting in expensive storage classes. Deployment processes were manual and harder to maintain. The infrastructure worked, but it was not financially efficient."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1843d0e7176e",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "284f914ec93f",
+            "_type": "span",
+            "marks": [],
+            "text": "For a growing SME, this kind of cost leakage becomes dangerous because it does not look like a sudden failure. It looks like a normal monthly bill."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "22d8d6f7f4e6",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "ea7debe80dd8",
+            "_type": "span",
+            "marks": [],
+            "text": "And that is exactly why it keeps happening."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "929bb24bd6a7",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "666c1aa6eaad",
+            "_type": "span",
+            "marks": [],
+            "text": "What We Found"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "f58345f447ec",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "a78b6c78c16e",
+            "_type": "span",
+            "marks": [],
+            "text": "During the audit, we identified that the client\u2019s cost problem was spread across multiple areas."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "adec6ebba2e4",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "3494a2c5e7a8",
+            "_type": "span",
+            "marks": [],
+            "text": "DigitalOcean resources were oversized for the actual workload. AWS S3 storage had no proper lifecycle policy. Some files were being stored in expensive layers even though they were rarely accessed. There was no structured cleanup process. The deployment setup also lacked containerization, which made maintenance more manual and less predictable."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "9cd29ca89044",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "403c972a62e3",
+            "_type": "span",
+            "marks": [],
+            "text": "The issue was not technical complexity alone. It was a lack of visibility and control."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bbffc60ace86",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "226860ab9817",
+            "_type": "span",
+            "marks": [],
+            "text": "When cloud infrastructure grows without a clear process, businesses often lose track of what they are paying for and why."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b3defbb01d59",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "a06cee5bd86b",
+            "_type": "span",
+            "marks": [],
+            "text": "What KP Infotech Did"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "82b4c63c79c7",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "fa70235e0e3e",
+            "_type": "span",
+            "marks": [],
+            "text": "KP Infotech redesigned the infrastructure with a cost-first and operations-first mindset."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "fc59aec866ad",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "6f297e7802ab",
+            "_type": "span",
+            "marks": [],
+            "text": "We started by separating what was essential from what was waste. Every major cloud resource was reviewed based on usage, business need, cost impact, and operational risk."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "088d13d1a0bb",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "a985e784d41d",
+            "_type": "span",
+            "marks": [],
+            "text": "Then we consolidated the compute environment, removed unnecessary overhead, and shifted the deployment setup toward Docker-based containerization. Coolify was introduced to simplify deployment management and reduce manual server maintenance."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "608fd291d2a3",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "d9753df28a3c",
+            "_type": "span",
+            "marks": [],
+            "text": "For AWS S3, we implemented storage lifecycle policies and intelligent tiering so that data could move into the right storage class based on access patterns. This helped reduce storage cost without deleting important business data or affecting availability."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1dc7ad098f02",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "eb1e24e1ab10",
+            "_type": "span",
+            "marks": [],
+            "text": "The goal was not to make the infrastructure cheaper at the cost of quality.\nThe goal was to make it lean, controlled, maintainable, and scalable."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "045c6b660f39",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "a3ba93531b92",
+            "_type": "span",
+            "marks": [],
+            "text": "Why This Worked"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "34a780ffafbd",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "bf9ca1038db9",
+            "_type": "span",
+            "marks": [],
+            "text": "The biggest improvement came from treating cloud cost as a business control problem, not just an IT problem."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3ecac65fd4b9",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "5182e852891e",
+            "_type": "span",
+            "marks": [],
+            "text": "Instead of simply asking, \u201cWhich server is expensive?\u201d we asked:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "65d92500e996",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "61881a0b1fa9",
+            "_type": "span",
+            "marks": [],
+            "text": "Which resources are actually needed?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "acbc67bec405",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "800e4de7c55a",
+            "_type": "span",
+            "marks": [],
+            "text": "Which services are overprovisioned?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "600e51a6582d",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "4def3bc44052",
+            "_type": "span",
+            "marks": [],
+            "text": "Which storage is active and which is rarely accessed?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1396eed0639a",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "91454eba361d",
+            "_type": "span",
+            "marks": [],
+            "text": "Which files should move to lower-cost storage?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "134bcb17e487",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "a44f74af17a8",
+            "_type": "span",
+            "marks": [],
+            "text": "Which deployment steps can be simplified?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c82b135e227a",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "9cf1e9a90c95",
+            "_type": "span",
+            "marks": [],
+            "text": "Which infrastructure decisions are creating recurring waste?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f669bbc0ffd1",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "500438f0eff8",
+            "_type": "span",
+            "marks": [],
+            "text": "This approach helped us reduce cost while also improving the way the client managed their infrastructure."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bd4ac52ed769",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "155dd52e058d",
+            "_type": "span",
+            "marks": [],
+            "text": "The Result"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "2cbd210ee891",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "e7285fbff272",
+            "_type": "span",
+            "marks": [],
+            "text": "The client\u2019s monthly infrastructure cost reduced from approximately $17,000 to around $2,800."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f9c6e0201c44",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "73b1456d30f7",
+            "_type": "span",
+            "marks": [],
+            "text": "That created around $14,200 in monthly recurring savings while also giving the client a cleaner, more manageable cloud setup."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6233522f8ef6",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "ee9beb4ca148",
+            "_type": "span",
+            "marks": [],
+            "text": "The final infrastructure was easier to maintain, more predictable to deploy, and better prepared for future scaling."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "16a37cd879fe",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "67cd8410870f",
+            "_type": "span",
+            "marks": [],
+            "text": "Most importantly, the client no longer had to accept high cloud cost as \u201cnormal.\u201d"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5a8f92e6deaf",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "216b42e61c39",
+            "_type": "span",
+            "marks": [],
+            "text": "Key Takeaway"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b557efe20094",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b932c2e1f7c2",
+            "_type": "span",
+            "marks": [],
+            "text": "Cloud cost optimization is not just about reducing bills."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b4ef1a48a70c",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7e2c7a15f211",
+            "_type": "span",
+            "marks": [],
+            "text": "It is about understanding where your business is leaking money every month, then building the right infrastructure process to stop that leak permanently."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5602a4693a02",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "0fdff77f1bc8",
+            "_type": "span",
+            "marks": [],
+            "text": "For many SMEs, the biggest savings are not hidden in a new tool.\nThey are hidden in the infrastructure they are already paying for."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "excerpt": "A European industrial machinery manufacturer was spending nearly $17,000 every month on cloud infrastructure across AWS and DigitalOcean. KP Infotech audited the setup, removed hidden waste, optimized storage, containerized deployments, and reduced the monthly bill to around $2,800 without disrupting operations.",
+    "featured": true,
+    "heroImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-cf0ab8f82f57cf375dc8d9d3b8f4a684f40446e8-1491x1055-png",
+        "_type": "reference"
+      }
+    },
+    "industries": [
+      {
+        "_key": "e7cd1cdf30ba",
+        "_ref": "49adddf8-8b71-409e-af3c-09871f25696a",
+        "_type": "reference"
+      }
+    ],
+    "order": 1,
+    "results": [
+      {
+        "_key": "37a2cfc3c5b9",
+        "_type": "resultMetric",
+        "label": "Monthly cloud cost reduced",
+        "metric": "$17K \u2192 $2.8K/month"
+      },
+      {
+        "_key": "1b024f6303c9",
+        "_type": "resultMetric",
+        "label": "Estimated recurring monthly savings",
+        "metric": "~$14.2K/month"
+      },
+      {
+        "_key": "01e09a6f9dc8",
+        "_type": "resultMetric",
+        "label": "Reduction in infrastructure spend",
+        "metric": "83%"
+      },
+      {
+        "_key": "8bac11df8e46",
+        "_type": "resultMetric",
+        "label": "Cleaner containerized deployment setup",
+        "metric": "Docker + Coolify"
+      }
+    ],
+    "resultsSummary": "The client\u2019s cloud bill was not high because the business had outgrown its infrastructure. It was high because years of unmanaged cloud usage had created silent waste. Servers were overprovisioned, storage was not lifecycle-managed, deployments were difficult to maintain, and the infrastructure had no clear cost-control process.\n\nKP Infotech reviewed the complete setup, identified unnecessary spend, migrated workloads into a leaner environment, introduced Docker-based deployment management with Coolify, and optimized AWS S3 storage using lifecycle policies and intelligent tiering.\n\nThe result was a major reduction in recurring cloud cost, better infrastructure control, easier deployments, and a setup the client could maintain and scale with more confidence.",
+    "seoDescription": "See how KP Infotech helped a European industrial machinery SME reduce cloud infrastructure cost from $17K/month to $2.8K/month through AWS S3 optimization, Docker, Coolify, and infrastructure consolidation.",
+    "seoTitle": "Cloud Cost Optimization Case Study | $17K to $2.8K Monthly Cloud Spend",
+    "services": [
+      {
+        "_key": "step4ref0",
+        "_ref": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+        "_type": "reference"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "cloud-cost-optimization-industrial-sme"
+    },
+    "testimonial": {
+      "_ref": "a627f209-9bf7-421b-8416-286e9cd0a33e",
+      "_type": "reference"
+    },
+    "thumbnailImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-cf0ab8f82f57cf375dc8d9d3b8f4a684f40446e8-1491x1055-png",
+        "_type": "reference"
+      }
+    },
+    "title": "How We Reduced Cloud Infrastructure Cost from $17K/month to $2.8K/month",
+    "year": "2024"
+  },
+  {
+    "_createdAt": "2026-02-11T11:59:34Z",
+    "_id": "e907e1d9-f6be-4f56-a048-276e29d2d3fc",
+    "_rev": "Xe0A1k3WLpDZQN3vt7JBHA",
+    "_system": {
+      "base": {
+        "id": "e907e1d9-f6be-4f56-a048-276e29d2d3fc",
+        "rev": "RfimE1gVC9ER6WRH4N7CDz"
+      }
+    },
+    "_type": "caseStudy",
+    "_updatedAt": "2026-09-17T07:49:05Z",
+    "approach": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQM9BB",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQM9EI",
+            "_type": "span",
+            "text": "Built platform (Next.js + Python ML) with Matterport 3D integration, GPT-4 descriptions, recommendation engine. React Native apps. Map search. Virtual open houses via WebRTC. Salesforce CRM integration."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "cardSize": "large",
+    "challenge": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQM9Tr",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQM9Wy",
+            "_type": "span",
+            "text": "LuxeHomes agents wasted time on unqualified showings. Static photos failed to convey atmosphere. Listings lacked compelling descriptions. Buyers struggled across 12K listings. Poor mobile experience. Only 8% lead conversion."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "client": "LuxeHomes Realty Network",
+    "content": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQM9HP",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQM9KW",
+            "_type": "span",
+            "text": "3D Tours & AI Matching"
+          }
+        ],
+        "style": "h2"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQM9Nd",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "7fD4tZK73il5cFJVtQM9Qk",
+            "_type": "span",
+            "text": "Matterport scans created dollhouse views, floor plans, walkthroughs. Users navigated as if present. Measurement tools, virtual staging, VR support. Tours embedded in MLS, social. 420% more views, 2.8x engagement. GPT-4 generated compelling descriptions. Recommendation engine learned preferences, collaborative filtering. Match scores ranked properties. Email digests for new matches. 34% conversion rate."
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "excerpt": "Launched real estate platform with 3D tours, AI descriptions, smart matching generating 85K leads, 420% more views, $180M sales in year one.",
+    "featured": true,
+    "heroImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-8b28e30deb07f242471d717e283beda738108237-5824x3264-jpg",
+        "_type": "reference"
+      }
+    },
+    "industries": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQM984",
+        "_ref": "3250b94d-c394-461e-a8b8-61307d9eaf18",
+        "_type": "reference"
+      }
+    ],
+    "order": 2,
+    "results": [
+      {
+        "_key": "7fD4tZK73il5cFJVtQM8vc",
+        "_type": "resultMetric",
+        "label": "Qualified leads",
+        "metric": "85K"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQM8yj",
+        "_type": "resultMetric",
+        "label": "More views with 3D",
+        "metric": "420%"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQM91q",
+        "_type": "resultMetric",
+        "label": "Sales year one",
+        "metric": "$180M"
+      },
+      {
+        "_key": "7fD4tZK73il5cFJVtQM94x",
+        "_type": "resultMetric",
+        "label": "Conversion rate",
+        "metric": "34%"
+      }
+    ],
+    "resultsSummary": "Platform revolutionized marketing with cinematic 3D tours reducing showings 62% while increasing serious engagement. AI descriptions improved listing quality across 12K properties. Smart matching achieved 34% conversion vs. 8% industry average. Mobile drove 68% traffic.",
+    "seoDescription": "Real estate platform case study for 3D virtual tours, AI listing content, lead capture, CRM workflows, and sales pipeline visibility.",
+    "seoTitle": "Virtual Tour Platform Case Study \u2014 KP Infotech",
+    "services": [
+      {
+        "_key": "step4ref0",
+        "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965",
+        "_type": "reference"
+      },
+      {
+        "_key": "step4ref1",
+        "_ref": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+        "_type": "reference"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "virtual-tours-ai-listings"
+    },
+    "thumbnailImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-8b28e30deb07f242471d717e283beda738108237-5824x3264-jpg",
+        "_type": "reference"
+      }
+    },
+    "title": "3D Virtual Tours & AI Property Listing Platform",
+    "year": "2025"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "h1": "Custom Software Development Services",
+  "hero": "KP Infotech designs and builds custom business software for companies whose workflows no longer fit spreadsheets, disconnected tools or off-the-shelf products. We create internal tools, business applications, portals, SaaS MVPs and integrations around the operational capabilities your team needs.",
+  "wordCount": 1936,
+  "wordCountScope": "Service title, excerpt, content and section headings, process titles/descriptions/deliverables, technologies and FAQs. Excludes navigation/footer, CTA, process durations and related-case content.",
+  "bodyHeadings": [
+    "When custom software is the right fit",
+    "Build, buy, configure or automate?",
+    "Types of software we build",
+    "Discovery and requirements",
+    "Architecture and maintainability",
+    "Data and system integrations",
+    "Testing and user acceptance",
+    "Practical security responsibilities",
+    "What your team provides",
+    "Scope, cost and delivery planning",
+    "Ownership and handover",
+    "Support after release"
+  ],
+  "faqCount": 10,
+  "serviceArea": "Worldwide"
+}

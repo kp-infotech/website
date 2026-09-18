@@ -1,0 +1,466 @@
+{
+  "_createdAt": "2026-02-02T05:21:23Z",
+  "_id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+  "_rev": "Xe0A1k3WLpDZQN3vt7JBHA",
+  "_system": {
+    "base": {
+      "id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+      "rev": "B6ToKvE444MxmYEiOih5qi"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-09-17T07:49:05Z",
+  "content": [
+    {
+      "_key": "d63ecdc44242",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "52b760b68610",
+          "_type": "span",
+          "marks": [],
+          "text": "Most growing businesses reach a point where spreadsheets, shared inboxes, and disconnected tools can no longer support daily operations. Reports take too long, approvals get missed, data is duplicated, and teams lose visibility into what is actually happening."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "052c43d4fe6b",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "90398ed82395",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Custom software development"
+        },
+        {
+          "_key": "7008bb6dfeae",
+          "_type": "span",
+          "marks": [],
+          "text": " is the process of designing and building business-specific applications, portals, dashboards, and workflow systems around the way your company actually works. KP Infotech builds practical software that replaces manual work, connects data, and gives teams a clearer operating system for growth."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "10a913bf8e9a",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "8880a978776a",
+          "_type": "span",
+          "marks": [],
+          "text": "What We Build"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "84f54c45f0a5",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "019f1cff1d3c",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Internal Tools & Admin Systems"
+        },
+        {
+          "_key": "4c340c3f3ca8",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Custom systems for approvals, operations tracking, task management, user management, reporting, customer management, and team coordination."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e4dca0a46dbf",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "9abd8f887780",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Dashboards & Business Portals"
+        },
+        {
+          "_key": "8028417c7940",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Real-time dashboards, customer portals, vendor portals, partner portals, and role-based interfaces that make operational data easier to access and act on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "af676da95f96",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "b5b5a446d375",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Workflow Systems"
+        },
+        {
+          "_key": "992ebc48138a",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Software that standardizes repeatable processes across sales, inventory, support, finance, HR, field teams, and management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c7d3b6f8199c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "800a2157cfef",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "SaaS MVPs & Product Platforms"
+        },
+        {
+          "_key": "b319ca753378",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Focused MVPs and scalable product platforms for founders and teams that need to validate, launch, and improve software without overbuilding."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "3a40e6fbc626",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "4ab54ca9535d",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "API Integrations"
+        },
+        {
+          "_key": "08584437c5a5",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Connections between ERP, CRM, payment systems, databases, cloud tools, websites, and third-party platforms so data moves without manual copying."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "65fb6bea5f84",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "873aef7a212b",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Web & Mobile Interfaces"
+        },
+        {
+          "_key": "909979f35a2d",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Responsive web apps and mobile-friendly interfaces for customers, staff, and field teams when operational access is needed across devices."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "587b5d68d5d5",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "47d0c64a1211",
+          "_type": "span",
+          "marks": [],
+          "text": "Built Around Business Outcomes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "44004e713cf2",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "78ca3002292a",
+          "_type": "span",
+          "marks": [],
+          "text": "We do not start with technology for its own sake. We start by understanding your process, the people using it, the data behind it, and the business outcome you want to improve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "d60cc77fa874",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "5c405dfba5ee",
+          "_type": "span",
+          "marks": [],
+          "text": "The result is custom business software that reduces manual work, improves operational visibility, supports better decisions, and gives your team a system that can evolve as the business grows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step4resources",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "marks": [],
+          "text": "Before defining a project, use our "
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "marks": [
+            "resource0"
+          ],
+          "text": "custom software guide"
+        },
+        {
+          "_key": "and1",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "resource1",
+          "_type": "span",
+          "marks": [
+            "resource1"
+          ],
+          "text": "database design best practices"
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "marks": [],
+          "text": " to clarify fit and data requirements."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "blogPost.what-is-custom-software",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "bbc095f6-0148-4f75-8e1a-3dadbab25d1f",
+            "_type": "reference"
+          }
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "contentHeading": "Build the Software Your Operations Actually Need",
+  "excerpt": "We build custom business software for growing teams that have outgrown spreadsheets, disconnected tools, and manual workflows. From internal tools and dashboards to portals, SaaS MVPs, workflow systems, and API integrations, KP Infotech creates practical software that improves visibility and helps operations move faster.",
+  "faqHeading": "Custom Software Development FAQs",
+  "faqs": [
+    {
+      "_key": "cce5a7193750",
+      "_type": "faqItem",
+      "answer": "Custom software makes sense when your team is forcing spreadsheets, disconnected tools, or manual workarounds to manage a process that is central to your business and difficult to fit into standard software.",
+      "question": "When should we build custom software instead of using off-the-shelf tools?"
+    },
+    {
+      "_key": "41743e7d77a0",
+      "_type": "faqItem",
+      "answer": "Yes. We build internal tools, customer portals, admin dashboards, reporting systems, approval workflows, and operational platforms tailored to your process.",
+      "question": "Can you build internal dashboards, portals, and workflow tools?"
+    },
+    {
+      "_key": "87fb6c1414d0",
+      "_type": "faqItem",
+      "answer": "Yes. We connect software with ERPs, CRMs, payment systems, databases, third-party APIs, spreadsheets, and cloud services where reliable integration is possible.",
+      "question": "Do you integrate custom software with our existing systems?"
+    },
+    {
+      "_key": "95daf1ff1ee3",
+      "_type": "faqItem",
+      "answer": "Yes. For new products or uncertain workflows, we usually recommend a focused MVP so you can validate the core process before expanding the system.",
+      "question": "Can you start with an MVP before building the full system?"
+    },
+    {
+      "_key": "2edd512de0ce",
+      "_type": "faqItem",
+      "answer": "Ownership depends on the project agreement, but we typically build with clear handoff, documentation, deployment access, and support options so your business is not locked into an unclear setup.",
+      "question": "Who owns the custom software after development?"
+    }
+  ],
+  "heroImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-f342ad70f5bd90b79cf2bd1f54220da3989b9f2a-4015x2745-jpg",
+      "_type": "reference"
+    }
+  },
+  "iconCustom": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-4e255f24f7bc0117a7c07ca43aa035094486a67c-512x512-svg",
+      "_type": "reference"
+    }
+  },
+  "iconName": "code",
+  "order": 1,
+  "process": [
+    {
+      "_key": "c8dacc41fcb9",
+      "_type": "processStep",
+      "deliverables": [
+        "Workflow map",
+        "Requirements document",
+        "User roles and permissions",
+        "Success metrics"
+      ],
+      "description": "Understand your business process, users, data flow, operational bottlenecks, and success metrics before deciding what to build.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 1,
+      "title": "Discovery & Workflow Mapping"
+    },
+    {
+      "_key": "9555ea2ef453",
+      "_type": "processStep",
+      "deliverables": [
+        "System architecture",
+        "Feature roadmap",
+        "Database plan",
+        "Integration plan"
+      ],
+      "description": "Define the application structure, database model, integrations, permission logic, and delivery roadmap around your business goals.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 2,
+      "title": "Architecture & Product Planning"
+    },
+    {
+      "_key": "fe0bca4c6c7e",
+      "_type": "processStep",
+      "deliverables": [
+        "Sprint releases",
+        "Code reviews",
+        "Working modules",
+        "Progress demos"
+      ],
+      "description": "Build the software in focused sprints with regular demos, feedback loops, code reviews, and visible progress.",
+      "duration": "4-10 Weeks",
+      "stepNumber": 3,
+      "title": "Agile Development"
+    },
+    {
+      "_key": "6884bf0b8516",
+      "_type": "processStep",
+      "deliverables": [
+        "QA reports",
+        "Bug fixes",
+        "Performance checks",
+        "Production deployment"
+      ],
+      "description": "Validate performance, security, usability, data flows, integrations, and cross-device behavior before production launch.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 4,
+      "title": "Testing & Deployment"
+    },
+    {
+      "_key": "f95e30a82f1a",
+      "_type": "processStep",
+      "deliverables": [
+        "Documentation",
+        "Monitoring setup",
+        "Support handoff",
+        "Improvement roadmap"
+      ],
+      "description": "Monitor usage, improve workflows, add features, and keep the system aligned as your operations evolve.",
+      "duration": "Ongoing",
+      "stepNumber": 5,
+      "title": "Support & Iteration"
+    }
+  ],
+  "processHeading": "How We Build Custom Software",
+  "relatedWork": [
+    {
+      "_key": "step4proof0",
+      "_ref": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+      "_type": "reference"
+    },
+    {
+      "_key": "step4proof1",
+      "_ref": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+      "_type": "reference"
+    },
+    {
+      "_key": "step4proof2",
+      "_ref": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+      "_type": "reference"
+    }
+  ],
+  "seoDescription": "Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.",
+  "seoTitle": "Custom Software Development Company | KP Infotech",
+  "slug": {
+    "_type": "slug",
+    "current": "custom-software-development"
+  },
+  "tagline": "Custom Business Software That Replaces Manual Work",
+  "techHeading": "Custom Software Technology Stack",
+  "technologies": [
+    "Next.js",
+    "React",
+    "Node.js",
+    "TypeScript",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "Supabase",
+    "Sanity CMS",
+    "REST APIs",
+    "GraphQL",
+    "AWS",
+    "Vercel",
+    "Docker",
+    "Cloudflare"
+  ],
+  "title": "Custom Software Development",
+  "workHeading": "Related Software Projects"
+}
