@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-09-18T04:53:16.501Z",
+  "releaseCommit": "3f531f840161a03f96fcdf46b3a9c25c4e881ef9",
+  "worker": "website",
+  "deployment": {
+    "id": "1be472fa-454b-4ce7-9584-0522460f7809",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "8c716789-771d-4b11-9a56-2125e2d24036",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-18T04:52:39.751794Z"
+  }
+}

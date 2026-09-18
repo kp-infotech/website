@@ -1,0 +1,27 @@
+{
+  "production": {
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "brokenImages": 0
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "brokenImages": 0
+      }
+    ],
+    "faqExpansion": true,
+    "ctaDestination": "https://kpinfo.tech/contact/",
+    "formSubmitted": false
+  },
+  "local": {
+    "processArrowKeyNavigation": true,
+    "rolloutAndSupportPanels": true,
+    "siblingCompared": "/services/custom-software-development/"
+  },
+  "viewportReset": true
+}

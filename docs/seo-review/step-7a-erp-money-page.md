@@ -1,6 +1,6 @@
 # Step 7A — ERP/Odoo commercial page
 
-Status: pre-deployment checks PASS; final deployment and production results pending. Scope: existing /services/erp-software/ only. No Step 7B and no new pages.
+Status: **PASS WITH WARNINGS — deployed and production verified.** The only content-proof warning is the absence of a verified Odoo implementation case study. Scope: existing /services/erp-software/ only. No Step 7B and no new pages.
 
 ## ERP Page Before
 
@@ -117,11 +117,22 @@ Step 1C/1E built checks PASS; full local HTTP audit: 56 pages, 32 redirect check
 
 ## Deployment
 
-Pending clean main commit/push and normal Cloudflare Worker deployment; final IDs will be recorded after release.
+- Application/content/test commit: `b4044a7`; release HEAD (build-log whitespace normalization): `3f531f840161a03f96fcdf46b3a9c25c4e881ef9`.
+- Clean `main` pushed normally; existing Cloudflare `wrangler deploy` workflow used with the established KP Infotech account. The original mixed workspace was excluded.
+- Worker: `website`.
+- Deployment ID: `1be472fa-454b-4ce7-9584-0522460f7809`.
+- Version: `8c716789-771d-4b11-9a56-2125e2d24036`, serving 100% at verification.
+- Timestamp: `2026-09-18T04:52:39.751794Z` (**18 September 2026, 10:22:39 IST**).
+- First CLI deployment attempt requested selection between two accounts; rerun explicitly selected the same account used in Steps 1–4. No account or binding configuration changed. Existing SESSION/EMAIL/ASSETS bindings and custom domain preserved; no runtime Sanity token binding.
+- A subsequent evidence-only commit records these results; no additional application changes.
 
 ## Production Verification
 
-Pending post-deployment checks. Local browser: 390px mobile and 1440px desktop, no horizontal overflow or broken completed images; hero, process panel and expanded FAQ inspected; process arrow-key navigation works. CTAs retain operations copy and contact paths. Final production results will replace this paragraph.
+**PASS, zero errors.** Production ERP audit at 2026-09-18T04:53:16.501Z: HTTP 200, indexable, exact approved title/description, unchanged self-canonical, one new H1, nine FAQs equal to schema, global Service schema and all required buyer sections/links present. Full production-vs-build checks pass on 56 pages with unchanged metadata and expected headings/images/links. Step 2 production fixtures pass 9/9; Step 4 production graph has no errors.
+
+Production smoke coverage includes homepage, other four services, all six restored articles, all five approved case studies, sitemap and robots, 32 legacy redirects and 63 removed-project paths. All three sample-marketing variants return normal 404 without a Location header. No broken or legacy internal links.
+
+Browser: live ERP verified at 390px mobile and 1440px desktop, no horizontal overflow or broken completed images. Mobile FAQ expands correctly; closing CTA navigates to /contact/ with the existing operations-focused form, without submitting an inquiry. Local process arrow-key navigation and rollout/support panels passed; sibling Custom Software desktop comparison confirms shared visual language. Temporary viewport override reset. Browser plugin initialization failed; supported Chrome computer-use fallback completed verification. No ranking or post-release GSC performance improvement is claimed.
 
 ## Future Odoo Subpage Recommendation
 
@@ -133,3 +144,5 @@ Pending post-deployment checks. Local browser: 390px mobile and 1440px desktop, 
 | Support | KEEP ON PARENT | Existing post-launch scope is covered, without verified standalone SLAs or proof to justify a dedicated page. |
 
 Migration, Integration and Support can be reconsidered at P2 only if new non-brand demand and distinct verified delivery evidence justify a separate owner. None created.
+
+STEP 7A COMPLETE — AWAITING SEO REVIEW
