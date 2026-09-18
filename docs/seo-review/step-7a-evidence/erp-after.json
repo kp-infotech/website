@@ -1,0 +1,816 @@
+{
+  "_createdAt": "2026-02-02T05:27:55Z",
+  "_id": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+  "_rev": "Z6DF4Qvbo8ZQguhgGWhxI7",
+  "_system": {
+    "base": {
+      "id": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+      "rev": "m1CkiLgE6BNX5yOzVn027H"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-09-18T04:45:42Z",
+  "content": [
+    {
+      "_key": "step7a2",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Odoo is worth evaluating when duplicate data entry, spreadsheet-heavy operations, unclear stock levels or disconnected sales, purchasing and accounting slow daily work. It can also be an option when an existing ERP no longer matches your processes. Start with the workflows that need a shared operational system, rather than replacing every tool at once."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a3",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Odoo may not be the right fit if your existing tools already meet the need, a small integration would solve the problem, or your core requirements would require extensive changes to the ERP model. Your process owners should assess fit, data readiness and the effort needed for users to adopt new ways of working."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a4",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a4s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Odoo ERP implementation includes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7a5",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a5s",
+          "_type": "span",
+          "marks": [],
+          "text": "The agreed scope can cover process discovery, module selection, workflow design, configuration, user roles and permissions, data preparation and migration, custom modules or reports, integrations, testing, deployment, training and handover. We define which of these are needed before implementation; not every project needs every module or a custom build."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a6",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a6s",
+          "_type": "span",
+          "marks": [],
+          "text": "Configuration vs customization vs custom software"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7a7",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a7s",
+          "_type": "span",
+          "marks": [],
+          "text": "Configuration uses standard Odoo functionality and settings to support your workflows. Start here: module settings, user roles and approval rules may meet the requirement without new code."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a8",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a8s",
+          "_type": "span",
+          "marks": [],
+          "text": "Customization adapts modules, workflows, reports or integrations where configuration is insufficient. Agree the business need and acceptance criteria first, and consider how each change affects testing, maintenance and future updates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a9",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a90",
+          "_type": "span",
+          "marks": [],
+          "text": "Custom software is a separate system built around unique requirements when the core process does not fit the ERP model. Our "
+        },
+        {
+          "_key": "step7a91",
+          "_type": "span",
+          "marks": [
+            "link"
+          ],
+          "text": "custom software development service"
+        },
+        {
+          "_key": "step7a92",
+          "_type": "span",
+          "marks": [],
+          "text": " covers that route; adding more Odoo customization is not always the right decision."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "link",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "2466d2a2-9084-4ae5-b347-291ba5475965",
+            "_type": "reference"
+          }
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a10",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a10s",
+          "_type": "span",
+          "marks": [],
+          "text": "Business automation connects and executes workflows across existing tools. Odoo implementation establishes Odoo as the operational system; generic application or API integration can remain part of a custom software project. Choose the approach around the problem your team needs to solve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a11",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a11s",
+          "_type": "span",
+          "marks": [],
+          "text": "Modules organized around business workflows"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "f82c7d479a65",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "9b215c0d7e60",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "CRM & Sales"
+        },
+        {
+          "_key": "c189833330c0",
+          "_type": "span",
+          "marks": [],
+          "text": " — Pipeline management, quotations, customer records, sales activities, follow-up workflows, and sales reporting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "21660cdff18d",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "6c2fa1737961",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Purchase & Procurement"
+        },
+        {
+          "_key": "045ffcd3867c",
+          "_type": "span",
+          "marks": [],
+          "text": " — Vendor management, purchase requests, RFQs, purchase orders, approval flows, pricing, and procurement visibility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5672bd0c3e1c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "21181afb6f48",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Inventory & Warehouse"
+        },
+        {
+          "_key": "5007e71fe88c",
+          "_type": "span",
+          "marks": [],
+          "text": " — Real-time stock visibility, barcode operations, multi-warehouse management, reorder rules, stock transfers, and inventory reporting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e1718bc535d1",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "9d6017070d4f",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Accounting & Finance"
+        },
+        {
+          "_key": "9761afcf3e56",
+          "_type": "span",
+          "marks": [],
+          "text": " — Invoicing, reconciliation, tax workflows, payment tracking, receivables, payables, and financial reporting connected to operations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0d5a74ba330b",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "3a2e230ecd05",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Manufacturing & MRP"
+        },
+        {
+          "_key": "048191fcf70a",
+          "_type": "span",
+          "marks": [],
+          "text": " — Bills of materials, production planning, work orders, quality checks, material requirement planning, and shop-floor visibility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1165a7646220",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "897f8d1882d9",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "HR, Payroll & Administration"
+        },
+        {
+          "_key": "da7f3336ab24",
+          "_type": "span",
+          "marks": [],
+          "text": " — Employee records, attendance, leave workflows, payroll support, recruitment, approvals, and internal requests."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6cc2db268b49",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "e92e84282105",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Custom Odoo Modules & Integrations"
+        },
+        {
+          "_key": "693816532e2b",
+          "_type": "span",
+          "marks": [],
+          "text": " — Custom modules, reports, dashboards, third-party integrations, API connections, and workflows built around your business needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a19",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a19s",
+          "_type": "span",
+          "marks": [],
+          "text": "Data migration and validation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7a20",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a20s",
+          "_type": "span",
+          "marks": [],
+          "text": "We assess exports from spreadsheets and existing ERP, CRM, accounting or inventory systems. Candidate data may include customers, suppliers, products, stock and agreed financial or transaction records. Supported fields, formats, history and import methods are confirmed after reviewing the source; compatibility with every legacy system is not assumed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a21",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a21s",
+          "_type": "span",
+          "marks": [],
+          "text": "Your data owners provide accessible exports, explain field meanings, resolve duplicates and approve the records to move. KP maps and tests the imports; your operational and finance owners reconcile agreed counts, balances and sample transactions against the source before approving cutover. Poor source data can carry errors into stock, reporting and daily work, so migration validation is an implementation checkpoint."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a22",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a22s",
+          "_type": "span",
+          "marks": [],
+          "text": "Odoo integration with existing systems"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7a23",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a23s",
+          "_type": "span",
+          "marks": [],
+          "text": "We scope Odoo-specific API connections and third-party integrations around the data your workflows need. For each connection, agree the source of truth, fields, transfer direction, access requirements and how failures will be identified and resolved. Feasibility depends on the external system’s interfaces and permissions; confirm these before committing to the connection."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a24",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a24s",
+          "_type": "span",
+          "marks": [],
+          "text": "Your team provides system access and an owner for each external application. KP implements the agreed connection and tests representative records and failure cases with those owners. Acceptance should demonstrate that the connected workflow works, not just that an API responds."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a25",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a25s",
+          "_type": "span",
+          "marks": [],
+          "text": "Testing, UAT and go-live"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7a26",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a26s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before rollout, KP and your testing users validate the agreed end-to-end workflows, permissions, reports, migrated records and integrations. User acceptance testing (UAT) gives process owners a chance to identify issues and approve the system against the agreed requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a27",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a27s",
+          "_type": "span",
+          "marks": [],
+          "text": "Plan cutover around data readiness and operational constraints: agree final imports, validation checks, deployment responsibilities and what to do if a critical check fails. Training, user guides and administrator documentation support handover. Go-live follows the agreed acceptance decision; rollout timing and any service interruption depend on the project."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a28",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a28s",
+          "_type": "span",
+          "marks": [],
+          "text": "Support after implementation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7a29",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a29s",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-launch work can include issue resolution, workflow adjustments, report improvements, user support, updates and incremental module expansion. Agree the support scope, ownership of integrations and update responsibilities as part of handover. Response arrangements and ongoing work depend on the agreed engagement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a30",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a30s",
+          "_type": "span",
+          "marks": [],
+          "text": "What your team needs to provide"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7a31",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a31s",
+          "_type": "span",
+          "marks": [],
+          "text": "Assign process and data owners, describe business requirements and exceptions, provide agreed system access, and nominate users for testing and training. Timely decisions on scope, data reconciliation and UAT help keep implementation moving. Your team approves the module plan, validates business records and authorizes go-live."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a32",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a32s",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation cost and deployment choices"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "step7a33",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a33s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cost depends on module coverage, users and workflow complexity, data preparation, migration, integrations, customization, deployment and support scope. Define the required workflows and acceptance criteria before comparing proposals; we do not use a single price or rollout duration for every implementation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step4resources",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "marks": [],
+          "text": "Plan your rollout with our "
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "marks": [
+            "resource0"
+          ],
+          "text": "ERP implementation cost guide"
+        },
+        {
+          "_key": "and1",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "resource1",
+          "_type": "span",
+          "marks": [
+            "resource1"
+          ],
+          "text": "ERP selection checklist"
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "marks": [],
+          "text": " before comparing implementation scope and budgets."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "01edc29a-94b5-4d89-b93c-c519a1addf17",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "blogPost.how-to-choose-erp-system",
+            "_type": "reference"
+          }
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a35",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a350",
+          "_type": "span",
+          "marks": [],
+          "text": "Cloud and on-premise choices depend on operational requirements, control, infrastructure responsibility, security and governance, and the maintenance model. Review our "
+        },
+        {
+          "_key": "step7a351",
+          "_type": "span",
+          "marks": [
+            "link"
+          ],
+          "text": "cloud vs on-premise ERP comparison"
+        },
+        {
+          "_key": "step7a352",
+          "_type": "span",
+          "marks": [],
+          "text": " when planning who will operate and maintain the environment."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "link",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "blogPost.on-premise-vs-cloud-erp",
+            "_type": "reference"
+          }
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "step7a36",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "step7a36s",
+          "_type": "span",
+          "marks": [],
+          "text": "To discuss implementation, bring a short description of your current systems, workflows and the operational problem you want to solve. Contact KP Infotech to plan the next step."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "contentHeading": "Who Odoo is a good *fit* for",
+  "excerpt": "KP Infotech implements and adapts Odoo ERP for growing businesses whose sales, purchasing, inventory, finance and manufacturing workflows are spread across disconnected tools. We configure modules, migrate agreed data and connect systems so teams can work from shared operational information.",
+  "faqHeading": "Odoo implementation *FAQs*",
+  "faqs": [
+    {
+      "_key": "step7afaq0",
+      "_type": "faqItem",
+      "answer": "Consider Odoo when connected sales, purchasing, inventory and finance workflows would address duplicate work or limited visibility. Assess module fit, data readiness and adoption effort with your process owners. A smaller integration or custom system may be more appropriate if the ERP model does not fit.",
+      "question": "Is Odoo right for our business?"
+    },
+    {
+      "_key": "step7afaq1",
+      "_type": "faqItem",
+      "answer": "The agreed scope can include discovery, module selection, configuration, roles, migration, customization, integrations, testing, deployment, training and handover. The module plan and acceptance criteria establish what is included before implementation.",
+      "question": "What is included in an Odoo implementation?"
+    },
+    {
+      "_key": "step7afaq2",
+      "_type": "faqItem",
+      "answer": "Yes. We configure existing modules and can build custom modules, reports and integrations where needed. We first assess standard functionality; if core requirements do not fit the ERP model, a separate custom system may be more appropriate.",
+      "question": "Can KP Infotech customize Odoo for our workflows?"
+    },
+    {
+      "_key": "step7afaq3",
+      "_type": "faqItem",
+      "answer": "Start with the workflows and information that must connect. We map requirements to the supported sales, purchasing, inventory, accounting, manufacturing and HR areas, then agree priorities and acceptance criteria with your process owners.",
+      "question": "How do we choose modules for manufacturing, inventory and purchasing?"
+    },
+    {
+      "_key": "step7afaq4",
+      "_type": "faqItem",
+      "answer": "We assess source exports and agree the records, formats and history to import. KP maps and tests migration; your data owners clean source records and reconcile agreed counts, balances and samples before approving cutover. Compatibility is assessed for each source.",
+      "question": "Can you migrate data from spreadsheets or legacy software?"
+    },
+    {
+      "_key": "step7afaq5",
+      "_type": "faqItem",
+      "answer": "We assess Odoo API connections and third-party integrations against your workflow needs and the external systems’ available interfaces. Agree access, source-of-truth rules, data mapping, failure handling and test cases before implementation.",
+      "question": "Can Odoo integrate with our existing systems?"
+    },
+    {
+      "_key": "step7afaq6",
+      "_type": "faqItem",
+      "answer": "Yes. The choice depends on operational requirements, control, infrastructure responsibility, security and governance, and maintenance ownership. Deployment responsibilities and validation checks are agreed before rollout.",
+      "question": "Do you support cloud and on-premise Odoo deployments?"
+    },
+    {
+      "_key": "step7afaq7",
+      "_type": "faqItem",
+      "answer": "Modules, user and workflow complexity, data readiness, migration, integrations, customization, deployment and support scope all affect the plan. Client approvals and testing readiness also matter. Scope must be agreed before estimating cost or rollout timing.",
+      "question": "What affects implementation cost and timing?"
+    },
+    {
+      "_key": "step7afaq8",
+      "_type": "faqItem",
+      "answer": "Within the agreed support scope, KP can resolve issues, adjust workflows, improve reports, support users and updates, and plan incremental module improvements. Handover establishes ongoing responsibilities and how work will be prioritized.",
+      "question": "What happens after go-live?"
+    }
+  ],
+  "heroImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-ff878cc57741ae7eaaa97d4c7e61fc2b5585712e-3242x2431-jpg",
+      "_type": "reference"
+    }
+  },
+  "iconCustom": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-04157f67e30114d83210d092468d95ea8b5c853c-512x512-svg",
+      "_type": "reference"
+    }
+  },
+  "iconName": "database",
+  "order": 3,
+  "process": [
+    {
+      "_key": "2d6a462cf4a8",
+      "_type": "processStep",
+      "deliverables": [
+        "Current workflow map",
+        "Data readiness assessment",
+        "Client-approved requirements"
+      ],
+      "description": "KP maps current workflows, reporting needs, data quality and operational gaps. Your process and data owners explain exceptions and priorities, then approve the requirements map before solution planning.",
+      "stepNumber": 1,
+      "title": "Operations Audit"
+    },
+    {
+      "_key": "02226111e1dd",
+      "_type": "processStep",
+      "deliverables": [
+        "Module and workflow plan",
+        "Migration and integration scope",
+        "Agreed acceptance criteria"
+      ],
+      "description": "KP proposes modules, target workflows, migration scope and integrations, separating configuration from justified customization. Your team confirms priorities and access constraints; the checkpoint is an agreed implementation scope and acceptance criteria.",
+      "stepNumber": 2,
+      "title": "Solution Planning"
+    },
+    {
+      "_key": "7cfd49ae4239",
+      "_type": "processStep",
+      "deliverables": [
+        "Configured workflows and agreed customizations",
+        "Trial migration reconciliation",
+        "Integration test results"
+      ],
+      "description": "KP configures Odoo, develops agreed changes and reports, tests imports and connects systems. Your owners review working workflows and reconcile trial data; the checkpoint is a tested system ready for user acceptance.",
+      "stepNumber": 3,
+      "title": "Configuration & Customization"
+    },
+    {
+      "_key": "07a06d447ccf",
+      "_type": "processStep",
+      "deliverables": [
+        "UAT acceptance record",
+        "Cutover and validation plan",
+        "Training and handover documentation"
+      ],
+      "description": "KP supports user acceptance testing, resolves agreed launch issues, prepares training and documentation, and plans deployment. Your testing users validate real tasks and process owners approve cutover after reviewing readiness checks.",
+      "stepNumber": 4,
+      "title": "Training & Rollout"
+    },
+    {
+      "_key": "34428e5b1eae",
+      "_type": "processStep",
+      "deliverables": [
+        "Issue and change review",
+        "Validated workflow improvements",
+        "Prioritized improvement backlog"
+      ],
+      "description": "KP resolves in-scope issues and refines workflows, reports and modules after launch. Your team reports issues and prioritizes improvements; review completed changes and agree the next backlog within the support arrangement.",
+      "stepNumber": 5,
+      "title": "Support & Optimization"
+    }
+  ],
+  "processHeading": "Odoo ERP Implementation Roadmap",
+  "seoDescription": "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech.",
+  "seoTitle": "Odoo ERP Implementation Services | KP Infotech",
+  "slug": {
+    "_type": "slug",
+    "current": "erp-software"
+  },
+  "tagline": "Odoo ERP Systems for Growing Operations",
+  "techHeading": "ERP Platform & Infrastructure",
+  "technologies": [
+    "Odoo",
+    "Python",
+    "PostgreSQL",
+    "JavaScript",
+    "XML",
+    "REST APIs",
+    "Docker",
+    "Linux",
+    "Nginx",
+    "AWS",
+    "Google Cloud",
+    "Azure",
+    "Odoo.sh",
+    "Cloudflare"
+  ],
+  "title": "Odoo ERP Implementation & Customization Services",
+  "workHeading": "ERP Transformation Examples"
+}

@@ -54,7 +54,7 @@ const serviceJsonLd = [
     url: serviceUrl,
     provider: { '@id': ORG_ID },
     serviceType: service.title,
-    areaServed: {
+    areaServed: slug === 'erp-software' ? 'Worldwide' : {
       '@type': 'Country',
       name: 'India',
     },

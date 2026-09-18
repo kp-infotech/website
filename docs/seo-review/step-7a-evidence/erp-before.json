@@ -1,0 +1,484 @@
+{
+  "_createdAt": "2026-02-02T05:27:55Z",
+  "_id": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+  "_rev": "Xe0A1k3WLpDZQN3vt7JBHA",
+  "_system": {
+    "base": {
+      "id": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+      "rev": "m1CkiLgE6BNX5yOzVn027H"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-09-17T07:49:05Z",
+  "content": [
+    {
+      "_key": "30f30a9c354c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "d59a9523ff71",
+          "_type": "span",
+          "marks": [],
+          "text": "Most growing businesses eventually hit the same problem: sales, inventory, purchase, accounting, HR, manufacturing, and operations are running in separate tools that do not talk to each other."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8bd2f8abbd60",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "58d333d646fc",
+          "_type": "span",
+          "marks": [],
+          "text": "Data gets duplicated. Reports take hours. Stock visibility is unclear. Purchase decisions are delayed. Finance waits for operational updates. Managers make decisions from incomplete information."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b4bb446b80fd",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "6020f6bdaa21",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Odoo ERP"
+        },
+        {
+          "_key": "320c4e39b763",
+          "_type": "span",
+          "marks": [],
+          "text": " is an integrated business system that connects CRM, sales, purchase, inventory, accounting, manufacturing, HR, and operations in one platform. KP Infotech implements and customizes Odoo so it fits your real workflows, reporting needs, and growth stage instead of forcing your team into a generic template."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "874838bea012",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "1ae2cf58c337",
+          "_type": "span",
+          "marks": [],
+          "text": "Odoo Modules We Implement"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "f82c7d479a65",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "9b215c0d7e60",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "CRM & Sales"
+        },
+        {
+          "_key": "c189833330c0",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Pipeline management, quotations, customer records, sales activities, follow-up workflows, and sales reporting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "21660cdff18d",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "6c2fa1737961",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Purchase & Procurement"
+        },
+        {
+          "_key": "045ffcd3867c",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Vendor management, purchase requests, RFQs, purchase orders, approval flows, pricing, and procurement visibility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5672bd0c3e1c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "21181afb6f48",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Inventory & Warehouse"
+        },
+        {
+          "_key": "5007e71fe88c",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Real-time stock visibility, barcode operations, multi-warehouse management, reorder rules, stock transfers, and inventory reporting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e1718bc535d1",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "9d6017070d4f",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Accounting & Finance"
+        },
+        {
+          "_key": "9761afcf3e56",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Invoicing, reconciliation, tax workflows, payment tracking, receivables, payables, and financial reporting connected to operations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0d5a74ba330b",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "3a2e230ecd05",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Manufacturing & MRP"
+        },
+        {
+          "_key": "048191fcf70a",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Bills of materials, production planning, work orders, quality checks, material requirement planning, and shop-floor visibility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1165a7646220",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "897f8d1882d9",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "HR, Payroll & Administration"
+        },
+        {
+          "_key": "da7f3336ab24",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Employee records, attendance, leave workflows, payroll support, recruitment, approvals, and internal requests."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6cc2db268b49",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "e92e84282105",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Custom Odoo Modules & Integrations"
+        },
+        {
+          "_key": "693816532e2b",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Custom modules, reports, dashboards, third-party integrations, API connections, and workflows built around your business needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a01654a98776",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "ebcf8a17a51e",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation That Focuses on Adoption"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "356e8e411bbe",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "a043329881c0",
+          "_type": "span",
+          "marks": [],
+          "text": "ERP success is not just configuration. It requires clean data, mapped workflows, clear user roles, training, reporting, and ongoing support. We help teams move from scattered operations to a system they can actually use every day."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "22fd926a7703",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "a5bd809477b7",
+          "_type": "span",
+          "marks": [],
+          "text": "Whether you are starting from spreadsheets, legacy software, or disconnected SaaS tools, KP Infotech plans the migration carefully and protects business continuity during the transition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step4resources",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "marks": [],
+          "text": "Plan your rollout with our "
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "marks": [
+            "resource0"
+          ],
+          "text": "ERP implementation cost guide"
+        },
+        {
+          "_key": "and1",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "resource1",
+          "_type": "span",
+          "marks": [
+            "resource1"
+          ],
+          "text": "ERP selection checklist"
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "marks": [],
+          "text": " before comparing implementation scope and budgets."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "01edc29a-94b5-4d89-b93c-c519a1addf17",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "resource1",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "blogPost.how-to-choose-erp-system",
+            "_type": "reference"
+          }
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "contentHeading": "Odoo ERP Implementation for Sales, Inventory, Finance, and Operations",
+  "excerpt": "KP Infotech implements, customizes, migrates, and supports Odoo ERP systems that connect sales, CRM, purchase, inventory, warehouse, accounting, manufacturing, HR, and operations in one reliable platform.",
+  "faqHeading": "ERP & Odoo FAQs",
+  "faqs": [
+    {
+      "_key": "888673f0db03",
+      "_type": "faqItem",
+      "answer": "Odoo offers a wide set of business modules with strong customization flexibility, making it useful for growing companies that need ERP without the cost and complexity of many large enterprise systems.",
+      "question": "Why choose Odoo ERP for a growing business?"
+    },
+    {
+      "_key": "4d60b2ef073a",
+      "_type": "faqItem",
+      "answer": "Yes. We configure existing modules, build custom modules, create reports, and integrate Odoo with other systems when standard functionality does not fully match your process.",
+      "question": "Can KP Infotech customize Odoo for our workflows?"
+    },
+    {
+      "_key": "c4535f7d5a03",
+      "_type": "faqItem",
+      "answer": "Yes. Odoo can support manufacturing, MRP, inventory, warehouse, purchase, vendor management, production planning, and stock visibility workflows when implemented around the right process design.",
+      "question": "Can Odoo support manufacturing, inventory, and purchase workflows?"
+    },
+    {
+      "_key": "54e09e374ced",
+      "_type": "faqItem",
+      "answer": "Yes. We plan and validate data migration from spreadsheets, legacy ERPs, CRMs, accounting tools, inventory systems, and other operational databases.",
+      "question": "Can you migrate data from spreadsheets or legacy software?"
+    },
+    {
+      "_key": "a9f90e62e005",
+      "_type": "faqItem",
+      "answer": "Yes. We can support cloud deployments for most businesses and on-premise setups where data control, compliance, or infrastructure requirements make that necessary.",
+      "question": "Do you support cloud and on-premise Odoo deployments?"
+    }
+  ],
+  "heroImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-ff878cc57741ae7eaaa97d4c7e61fc2b5585712e-3242x2431-jpg",
+      "_type": "reference"
+    }
+  },
+  "iconCustom": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-04157f67e30114d83210d092468d95ea8b5c853c-512x512-svg",
+      "_type": "reference"
+    }
+  },
+  "iconName": "database",
+  "order": 3,
+  "process": [
+    {
+      "_key": "2d6a462cf4a8",
+      "_type": "processStep",
+      "deliverables": [
+        "Current state analysis",
+        "Gap assessment",
+        "Requirements map",
+        "ROI opportunities"
+      ],
+      "description": "Understand current workflows, department-level pain points, data quality, reporting needs, users, approvals, and gaps across the business.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 1,
+      "title": "Operations Audit"
+    },
+    {
+      "_key": "02226111e1dd",
+      "_type": "processStep",
+      "deliverables": [
+        "Implementation plan",
+        "Module map",
+        "Data migration strategy",
+        "Integration architecture"
+      ],
+      "description": "Select Odoo modules, define target workflows, plan data migration, map integrations, and decide what should be configured versus customized.",
+      "duration": "2-3 Weeks",
+      "stepNumber": 2,
+      "title": "Solution Planning"
+    },
+    {
+      "_key": "7cfd49ae4239",
+      "_type": "processStep",
+      "deliverables": [
+        "Configured ERP",
+        "Custom modules",
+        "Migrated data",
+        "Integration testing"
+      ],
+      "description": "Configure Odoo, build custom modules, migrate data, create reports, and connect systems around your operations.",
+      "duration": "8-16 Weeks",
+      "stepNumber": 3,
+      "title": "Configuration & Customization"
+    },
+    {
+      "_key": "07a06d447ccf",
+      "_type": "processStep",
+      "deliverables": [
+        "Training sessions",
+        "User guides",
+        "Admin documentation",
+        "Go-live support"
+      ],
+      "description": "Train users, validate workflows, prepare documentation, resolve adoption issues, and support go-live.",
+      "duration": "2 Weeks",
+      "stepNumber": 4,
+      "title": "Training & Rollout"
+    },
+    {
+      "_key": "34428e5b1eae",
+      "_type": "processStep",
+      "deliverables": [
+        "Support reports",
+        "Workflow improvements",
+        "System updates",
+        "Expansion roadmap"
+      ],
+      "description": "Improve reports, refine workflows, resolve issues, support updates, and expand ERP capabilities over time.",
+      "duration": "Ongoing",
+      "stepNumber": 5,
+      "title": "Support & Optimization"
+    }
+  ],
+  "processHeading": "Odoo ERP Implementation Roadmap",
+  "seoDescription": "Implement, customize, migrate and integrate Odoo ERP across sales, inventory, manufacturing, finance and operations with KP Infotech.",
+  "seoTitle": "Odoo ERP Implementation Services | KP Infotech",
+  "slug": {
+    "_type": "slug",
+    "current": "erp-software"
+  },
+  "tagline": "Odoo ERP Systems for Growing Operations",
+  "techHeading": "ERP Platform & Infrastructure",
+  "technologies": [
+    "Odoo",
+    "Python",
+    "PostgreSQL",
+    "JavaScript",
+    "XML",
+    "REST APIs",
+    "Docker",
+    "Linux",
+    "Nginx",
+    "AWS",
+    "Google Cloud",
+    "Azure",
+    "Odoo.sh",
+    "Cloudflare"
+  ],
+  "title": "ERP & Odoo Solutions",
+  "workHeading": "ERP Transformation Examples"
+}

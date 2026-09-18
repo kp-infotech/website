@@ -1,0 +1,23 @@
+{
+  "contentWordCount": 1627,
+  "headings": [
+    "What Odoo ERP implementation includes",
+    "Configuration vs customization vs custom software",
+    "Modules organized around business workflows",
+    "Data migration and validation",
+    "Odoo integration with existing systems",
+    "Testing, UAT and go-live",
+    "Support after implementation",
+    "What your team needs to provide",
+    "Implementation cost and deployment choices"
+  ],
+  "changedFields": [
+    "title",
+    "excerpt",
+    "contentHeading",
+    "content",
+    "process",
+    "faqHeading",
+    "faqs"
+  ]
+}
