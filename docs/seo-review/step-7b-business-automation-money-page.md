@@ -2,7 +2,7 @@
 
 ## Status and scope
 
-Pre-deployment verification in progress. Target: https://kpinfo.tech/services/business-automation/. No new URL, no Step 7C, and no Cloud, Custom Software, AI or ERP content optimization.
+**PASS WITH WARNINGS — deployed and production verified.** The content-proof warning is the absence of a verified standalone Business Automation case study or measured client outcome. Target: https://kpinfo.tech/services/business-automation/. No new URL, no Step 7C, and no Cloud, Custom Software, AI or ERP content optimization.
 
 The supplied brief ended during Task 4. When asked for the remainder, the user instructed: “please check from your end with full report i will give it to chatgpt”. Work therefore follows the supplied ownership/metadata/source rules plus the established Step 7A safeguards. No missing task text is claimed to have been supplied. This report includes the final visible copy for independent review.
 
@@ -137,17 +137,30 @@ All 363 published-perspective CMS documents were captured locally before mutatio
 
 ## Technical tests and regression
 
-Authenticated production-style build PASS. Full test suite: **75/75 passed, 0 failures, 0 skips**, including four new Step 7B tests and all four Step 7A ERP tests. Step 2 exact metadata: 9/9 pages, zero errors. Step 3 semantics: 56 pages, 358 images, zero H1/hierarchy/missing-alt/duplicate-ID/empty-button errors. Step 4 internal-link checks and sitemap preservation PASS. Step 7A ERP audit PASS with unchanged H1, metadata, nine FAQs and global schema. Business Automation audit PASS with nine matching FAQ answers. Step 1C built checks and Step 1E restored-article HTTP checks PASS. Full local HTTP regression: 56 pages, 32 redirect checks, 63 removed-project checks, zero broken/legacy internal links, correct sitemap/robots and sample-marketing 404. Deployment dry run PASS; git diff --check PASS. Production checks pending deployment. Focused checks cover exact metadata, one H1, content coverage, schema/visible FAQ equality, canonical links, unsupported claims, field preservation, prior service coverage and negative regressions. Step 7A ERP checks remain in the full suite. The Step 2 H1 fixture adds only the intentional Business Automation H1; approved metadata fixtures remain unchanged.
+Authenticated production-style build PASS. Full test suite: **75/75 passed, 0 failures, 0 skips**, including four new Step 7B tests and all four Step 7A ERP tests. Step 2 exact metadata: 9/9 pages, zero errors. Step 3 semantics: 56 pages, 358 images, zero H1/hierarchy/missing-alt/duplicate-ID/empty-button errors. Step 4 internal-link checks and sitemap preservation PASS. Step 7A ERP audit PASS with unchanged H1, metadata, nine FAQs and global schema. Business Automation audit PASS with nine matching FAQ answers. Step 1C built checks and Step 1E restored-article HTTP checks PASS. Full local HTTP regression: 56 pages, 32 redirect checks, 63 removed-project checks, zero broken/legacy internal links, correct sitemap/robots and sample-marketing 404. Deployment dry run PASS; git diff --check PASS. Production checks also passed; see below. Focused checks cover exact metadata, one H1, content coverage, schema/visible FAQ equality, canonical links, unsupported claims, field preservation, prior service coverage and negative regressions. Step 7A ERP checks remain in the full suite. The Step 2 H1 fixture adds only the intentional Business Automation H1; approved metadata fixtures remain unchanged.
 
 Strict UI static audit: zero findings. Existing design system and components retained. No standalone formatter/typecheck command is configured. An initial build was stopped while the new field’s explicit query projection was completed; only the final completed build is eligible for release.
 
 ## Deployment
 
-Pending tested clean-main release. No production success claimed before deployment verification.
+- Release commit: `d4ff3a3445a92dd5790fc0db447265533eccf78a`.
+- Clean main pushed normally from the isolated checkout; original mixed workspace excluded.
+- Worker: `website`, existing KP Infotech account and normal Wrangler deployment workflow.
+- Deployment ID: `e5041029-dc76-4542-afba-aa63d3497321`.
+- Version: `48e90deb-4422-47ec-abd4-fb2912461383`, serving 100% at verification.
+- Timestamp: `2026-09-18T14:03:33.217172Z` (**18 September 2026, 19:33:33 IST**).
+- Existing custom domain, SESSION, EMAIL and ASSETS bindings preserved. No runtime Sanity token binding or secret exposure introduced.
+- A follow-up evidence-only commit records the final report and production results; application code is unchanged.
 
 ## Production verification
 
-Pending full HTTP/schema/link regression and desktop/mobile review.
+**PASS — zero errors.** Live Business Automation check at `2026-09-18T14:04:10.744Z`: HTTP 200, indexable, exact approved title/description, one self-canonical, one H1, expected buyer sections, nine FAQ answers equal to schema, global Service coverage and correct educational/contact links.
+
+Full live-vs-build verification: 56/56 pages, zero metadata/heading/image/link/semantic mismatches. Step 2: 9/9 exact fixtures. Step 7A ERP: unchanged metadata/H1, nine matching FAQs and Worldwide schema. Step 4 link graph: zero errors. The full Step 1 HTTP audit confirms 56 pages, 32 redirects, 63 removed-project paths, no broken/legacy internal links, all six restored articles, five approved case studies, homepage and other four services, sitemap/robots and all three sample-marketing 404 variants.
+
+Browser: 390×844 mobile and 1440×1000 desktop, matching document widths and zero broken completed images. Mobile/desktop hero inspected; mobile process keyboard navigation and failure FAQ verified locally. Live FAQ expansion works; keyboard activation of “Start a Conversation” reaches /contact/ and its operations-focused form. No inquiry submitted. Temporary viewport override reset. An initial pointer activation during viewport work did not navigate; the subsequent keyboard activation was verified. The existing shared CTA code was not changed.
+
+No assertion of rankings, traffic gains or guaranteed conversion improvements. Those require later Search Console measurement.
 
 ## Final visible copy for ChatGPT review
 
@@ -316,3 +329,5 @@ Ready to discuss your project?
 Let’s discuss the systems and workflows your business needs to run better.
 
 Start a Conversation → /contact/
+
+STEP 7B COMPLETE — AWAITING SEO REVIEW
