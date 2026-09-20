@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-09-20T07:57:37.055Z",
+  "origin": null,
+  "errors": [],
+  "sitemapIndex": [
+    "https://kpinfo.tech/sitemap-0.xml"
+  ],
+  "sitemapPageCount": 56,
+  "sitemapCaseStudies": [
+    "/work/cloud-cost-optimization-industrial-sme/",
+    "/work/collaboration-platform-distributed-teams/",
+    "/work/digital-banking-platform/",
+    "/work/omnichannel-ecommerce-platform/",
+    "/work/virtual-tours-ai-listings/"
+  ],
+  "htmlFilesScanned": 57,
+  "deadInternalLinks": [],
+  "legacyInternalLinks": [],
+  "hubCards": [
+    "/work/cloud-cost-optimization-industrial-sme/",
+    "/work/collaboration-platform-distributed-teams/",
+    "/work/digital-banking-platform/",
+    "/work/omnichannel-ecommerce-platform/",
+    "/work/virtual-tours-ai-listings/"
+  ]
+}

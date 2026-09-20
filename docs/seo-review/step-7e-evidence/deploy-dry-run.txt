@@ -1,0 +1,46 @@
+
+ ⛅️ wrangler 4.104.0
+────────────────────
+Using redirected Wrangler configuration.
+ - Configuration being used: "dist/server/wrangler.json"
+ - Original user's configuration: "wrangler.toml"
+ - Deploy configuration file: ".wrangler/deploy/config.json"
+Attaching additional modules:
+┌───────────────────────────────────────────────────────────┬──────┬────────────┐
+│ Name                                                      │ Type │ Size       │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/_virtual_astro_server-island-manifest_CFl7y3Qj.mjs │ esm  │ 0.22 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/_virtual_astro_session-driver_Csu6PJY6.mjs         │ esm  │ 2.92 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/apply_CfDpfpb1.mjs                                 │ esm  │ 6.58 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/contact_Bh-l5HPl.mjs                               │ esm  │ 4.66 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/form-utils_Ct76WZ--.mjs                            │ esm  │ 1.51 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/image-passthrough-endpoint_DEqyigIv.mjs            │ esm  │ 77.90 KiB  │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/image-service-workerd_6pZz29zb.mjs                 │ esm  │ 0.37 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/noop-entrypoint_DsBX4kaI.mjs                       │ esm  │ 0.10 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/worker-entry_gWEDD0-b.mjs                          │ esm  │ 515.45 KiB │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ virtual_astro_middleware.mjs                              │ esm  │ 0.12 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ Total (10 modules)                                        │      │ 609.83 KiB │
+└───────────────────────────────────────────────────────────┴──────┴────────────┘
+✨ Read 853 files from the assets directory /private/tmp/kp-step7e-release/dist/client
+Total Upload: 610.00 KiB / gzip: 149.10 KiB
+Your Worker has access to the following bindings:
+Binding                                            Resource
+env.SESSION                                        KV Namespace
+env.EMAIL (unrestricted)                           Send Email
+env.ASSETS                                         Assets
+env.PUBLIC_SANITY_PROJECT_ID ("5rux0mv2")          Environment Variable
+env.PUBLIC_SANITY_DATASET ("production")           Environment Variable
+env.PUBLIC_GA_MEASUREMENT_ID ("G-7K17R4CWQ7")      Environment Variable
+env.PUBLIC_CLARITY_ID ("pqpi438d1f")               Environment Variable
+
+--dry-run: exiting now.

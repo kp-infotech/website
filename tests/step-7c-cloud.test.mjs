@@ -14,7 +14,7 @@ test('Cloud update preserves unrelated fields, technology list, stage identities
 test('Cloud global scope preserves ERP, Automation, Custom Software and AI coverage',()=>{
  for(const slug of ['erp-software','business-automation','cloud-devops','custom-software-development','ai-automation-agents']){
  const m=metadata(readFileSync('dist/client/services/'+slug+'/index.html','utf8'));const service=m.schemas.flatMap(s=>s['@graph']||[s]).find(s=>s['@type']==='Service');
- assert.deepEqual(service.areaServed,['erp-software','business-automation','cloud-devops','custom-software-development'].includes(slug)?'Worldwide':{'@type':'Country',name:'India'});
+ assert.deepEqual(service.areaServed,'Worldwide');
  }
 });
 test('Cloud audit rejects FAQ mismatches, invented partner claims, generalized savings and lost proof',()=>{

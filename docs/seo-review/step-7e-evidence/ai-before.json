@@ -1,0 +1,418 @@
+{
+  "_createdAt": "2026-02-02T05:31:03Z",
+  "_id": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+  "_rev": "Xe0A1k3WLpDZQN3vt7JBHA",
+  "_system": {
+    "base": {
+      "id": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+      "rev": "B6ToKvE444MxmYEiOih5qi"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-09-17T07:49:05Z",
+  "content": [
+    {
+      "_key": "6fb8c4254c2b",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "6a49f3ed6a5a",
+          "_type": "span",
+          "marks": [],
+          "text": "AI is most useful when it is connected to real business workflows. Not as a gimmick, but as a practical layer that helps your team answer questions, process information, draft outputs, trigger actions, and reduce repetitive work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a92513537a2c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "505f3dfab71a",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "AI agents"
+        },
+        {
+          "_key": "52e1e8bc4df4",
+          "_type": "span",
+          "marks": [],
+          "text": " are software workflows that use approved business data and connected tools to answer questions, process documents, summarize information, draft responses, update systems, and escalate edge cases to humans. KP Infotech builds AI automation for operations teams that need speed and visibility without losing control."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1057225f5d69",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "8a4504e7ac9a",
+          "_type": "span",
+          "marks": [],
+          "text": "AI Systems We Build"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "cc658e62f514",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "b4a981a05560",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Internal Operations Assistants"
+        },
+        {
+          "_key": "a6037a62ebdd",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 AI assistants that answer questions from documents, SOPs, policies, project data, customer records, ERP data, or operational knowledge bases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "9193b035ae4c",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "13710f850097",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Document Processing Agents"
+        },
+        {
+          "_key": "409d78628f6e",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 AI workflows that extract, classify, summarize, and route information from invoices, forms, PDFs, emails, reports, claims, and support requests."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b418be5dade8",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "094d55033570",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Customer Support & Sales Agents"
+        },
+        {
+          "_key": "2bc30e3eb762",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 AI-assisted support, lead qualification, response drafting, follow-up workflows, and knowledge-base chat experiences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "735d5ebfa99f",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "b8c940edd7d9",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Reporting & Insight Agents"
+        },
+        {
+          "_key": "c58c29ff8a8a",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Agents that summarize operational data, flag exceptions, generate reports, explain trends, and help teams understand what needs attention."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5b9f784e11a6",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "824d61ffb459",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Workflow Automation with AI"
+        },
+        {
+          "_key": "625e73562e68",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 AI-powered automations that classify work, trigger tasks, draft messages, update systems, route approvals, and escalate sensitive actions for human review."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fb1bbb0da3a0",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "a13113fcc648",
+          "_type": "span",
+          "marks": [],
+          "text": "Built With Guardrails"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "1760cb0101b8",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "1d335f7a52b5",
+          "_type": "span",
+          "marks": [],
+          "text": "We design AI systems with clear boundaries: approved data sources, role-based access, human review for sensitive actions, logging, testing, fallback paths, and evaluation against real examples before launch."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "056854929558",
+      "_type": "richText",
+      "children": [
+        {
+          "_key": "73f30b0d2b2d",
+          "_type": "span",
+          "marks": [],
+          "text": "The goal is not to replace judgment. The goal is to remove repetitive work, improve response speed, make information easier to use, and give your team better operational leverage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "step4resources",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro",
+          "_type": "span",
+          "marks": [],
+          "text": "Our "
+        },
+        {
+          "_key": "resource0",
+          "_type": "span",
+          "marks": [
+            "resource0"
+          ],
+          "text": "business process automation tools guide"
+        },
+        {
+          "_key": "end",
+          "_type": "span",
+          "marks": [],
+          "text": " explains where rule-based automation fits and when AI-assisted workflows need human review."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "resource0",
+          "_type": "internalLink",
+          "reference": {
+            "_ref": "blogPost.business-process-automation-tools",
+            "_type": "reference"
+          }
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "contentHeading": "Put AI Agents to Work Inside Your Operations",
+  "excerpt": "KP Infotech builds AI agents and AI automation systems that help teams process documents, answer operational questions, summarize data, route tasks, support customers, and reduce repetitive work with clear guardrails and human oversight.",
+  "faqHeading": "AI Automation & Agents FAQs",
+  "faqs": [
+    {
+      "_key": "1e9fb09ba48c",
+      "_type": "faqItem",
+      "answer": "AI agents can help answer internal questions, summarize documents, classify requests, draft responses, update systems, generate reports, route tasks, and trigger workflow actions.",
+      "question": "What can AI agents do for business operations?"
+    },
+    {
+      "_key": "c4ed64a5f491",
+      "_type": "faqItem",
+      "answer": "Yes. We can connect AI workflows with approved data sources such as ERPs, CRMs, databases, helpdesks, spreadsheets, emails, APIs, SOPs, and internal documents where secure integration is available.",
+      "question": "Can AI agents connect with our ERP, CRM, or internal documents?"
+    },
+    {
+      "_key": "8a7482779119",
+      "_type": "faqItem",
+      "answer": "We use approved data sources, clear prompts, validation checks, evaluation examples, human review for sensitive actions, logging, and fallback paths when confidence is low.",
+      "question": "How do you reduce AI mistakes?"
+    },
+    {
+      "_key": "bf19d0fdd244",
+      "_type": "faqItem",
+      "answer": "AI workflows should be designed with access control, approved data sources, logging, and clear boundaries. We plan data access carefully and avoid unnecessary exposure of sensitive information.",
+      "question": "Is business data safe in AI automation workflows?"
+    },
+    {
+      "_key": "cc728582ad61",
+      "_type": "faqItem",
+      "answer": "No. We build user-friendly workflows, provide documentation, and set up monitoring so your team can use the system without managing the technical details day to day.",
+      "question": "Do we need technical staff to manage AI automations?"
+    }
+  ],
+  "heroImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-c0da0dda6b1a819626ddd55ff17c8c923e7e5906-5824x3264-jpg",
+      "_type": "reference"
+    }
+  },
+  "iconCustom": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-50b37218ac5f41ff6d1ea9f4ce8c05e8866e9297-512x512-svg",
+      "_type": "reference"
+    }
+  },
+  "iconName": "bot",
+  "order": 4,
+  "process": [
+    {
+      "_key": "9618270c8b1d",
+      "_type": "processStep",
+      "deliverables": [
+        "Use case map",
+        "Workflow analysis",
+        "Data source review",
+        "ROI estimate"
+      ],
+      "description": "Identify high-value AI opportunities where automation can reduce manual work, improve response speed, or make operational data easier to use.",
+      "duration": "1 Week",
+      "stepNumber": 1,
+      "title": "Use Case Discovery"
+    },
+    {
+      "_key": "d6a085c7b1be",
+      "_type": "processStep",
+      "deliverables": [
+        "Agent architecture",
+        "Prompt strategy",
+        "Guardrail plan",
+        "Integration map"
+      ],
+      "description": "Define the AI agent role, approved data sources, tool access, prompts, human approvals, confidence thresholds, and escalation paths.",
+      "duration": "1-2 Weeks",
+      "stepNumber": 2,
+      "title": "Agent & Guardrail Design"
+    },
+    {
+      "_key": "acb97df319b7",
+      "_type": "processStep",
+      "deliverables": [
+        "Working prototype",
+        "Evaluation results",
+        "Edge case handling",
+        "Security review"
+      ],
+      "description": "Develop the AI workflow, connect tools, create an evaluation set, test edge cases, and validate outputs against real business examples.",
+      "duration": "2-6 Weeks",
+      "stepNumber": 3,
+      "title": "Build, Test & Evaluate"
+    },
+    {
+      "_key": "c30cc65a9ad7",
+      "_type": "processStep",
+      "deliverables": [
+        "Production deployment",
+        "Team training",
+        "Usage documentation",
+        "Monitoring setup"
+      ],
+      "description": "Launch the AI system with user training, usage documentation, monitoring, and human-in-the-loop workflows where needed.",
+      "duration": "1 Week",
+      "stepNumber": 4,
+      "title": "Deploy & Train"
+    },
+    {
+      "_key": "cb037168bd84",
+      "_type": "processStep",
+      "deliverables": [
+        "Quality reports",
+        "Prompt improvements",
+        "New use cases",
+        "Optimization roadmap"
+      ],
+      "description": "Track quality, review logs, improve prompts, expand data coverage, and refine automations based on real usage.",
+      "duration": "Ongoing",
+      "stepNumber": 5,
+      "title": "Monitor & Improve"
+    }
+  ],
+  "processHeading": "How We Build AI Automation Systems",
+  "relatedWork": [
+    {
+      "_key": "step4proof0",
+      "_ref": "e907e1d9-f6be-4f56-a048-276e29d2d3fc",
+      "_type": "reference"
+    },
+    {
+      "_key": "step4proof1",
+      "_ref": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+      "_type": "reference"
+    }
+  ],
+  "seoDescription": "Build AI agents and automation for document processing, operational knowledge, task routing and repetitive workflows with human oversight.",
+  "seoTitle": "AI Agent Development & Automation Services | KP Infotech",
+  "slug": {
+    "_type": "slug",
+    "current": "ai-automation-agents"
+  },
+  "tagline": "AI Agents That Handle Repetitive Operations Work",
+  "techHeading": "AI Automation Stack",
+  "technologies": [
+    "Python",
+    "LangChain",
+    "LangGraph",
+    "LlamaIndex",
+    "OpenAI API",
+    "Claude API",
+    "FastAPI",
+    "n8n",
+    "Make",
+    "Vector Databases",
+    "Pinecone",
+    "PostgreSQL",
+    "Embeddings",
+    "RAG",
+    "REST APIs",
+    "Firebase"
+  ],
+  "title": "AI Automation & Agents",
+  "workHeading": "AI Automation Examples"
+}

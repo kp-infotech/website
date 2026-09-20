@@ -12,7 +12,7 @@ test('Business Automation mutation preserves other fields, categories, process s
 test('CMS service-area override preserves ERP and all other existing service coverage',()=>{
  for(const slug of ['erp-software','custom-software-development','ai-automation-agents','cloud-devops']){
  const m=metadata(readFileSync('dist/client/services/'+slug+'/index.html','utf8'));const service=m.schemas.flatMap(s=>s['@graph']||[s]).find(s=>s['@type']==='Service');
- assert.deepEqual(service.areaServed,['erp-software','cloud-devops','custom-software-development'].includes(slug)?'Worldwide':{'@type':'Country',name:'India'});
+ assert.deepEqual(service.areaServed,'Worldwide');
  }
 });
 test('Business Automation audit catches FAQ mismatches and unsupported claims',()=>{

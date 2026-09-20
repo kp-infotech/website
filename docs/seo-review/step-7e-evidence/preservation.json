@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-09-20T08:01:13.986Z",
+  "comparison": "Main text, allowing only the exact AI service-reference anchor label update.",
+  "results": [
+    {
+      "path": "/services/erp-software/",
+      "mainTextPreserved": true,
+      "allowedAIServiceLabelChanges": 0
+    },
+    {
+      "path": "/services/business-automation/",
+      "mainTextPreserved": true,
+      "allowedAIServiceLabelChanges": 0
+    },
+    {
+      "path": "/services/cloud-devops/",
+      "mainTextPreserved": true,
+      "allowedAIServiceLabelChanges": 0
+    },
+    {
+      "path": "/services/custom-software-development/",
+      "mainTextPreserved": true,
+      "allowedAIServiceLabelChanges": 0
+    },
+    {
+      "path": "/work/cloud-cost-optimization-industrial-sme/",
+      "mainTextPreserved": true,
+      "allowedAIServiceLabelChanges": 0
+    },
+    {
+      "path": "/work/collaboration-platform-distributed-teams/",
+      "mainTextPreserved": true,
+      "allowedAIServiceLabelChanges": 0
+    },
+    {
+      "path": "/work/digital-banking-platform/",
+      "mainTextPreserved": true,
+      "allowedAIServiceLabelChanges": 0
+    },
+    {
+      "path": "/work/omnichannel-ecommerce-platform/",
+      "mainTextPreserved": true,
+      "allowedAIServiceLabelChanges": 1
+    },
+    {
+      "path": "/work/virtual-tours-ai-listings/",
+      "mainTextPreserved": true,
+      "allowedAIServiceLabelChanges": 1
+    }
+  ],
+  "errors": []
+}

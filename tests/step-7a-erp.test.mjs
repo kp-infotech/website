@@ -9,10 +9,10 @@ test('ERP mutation preserves metadata, URL, platform list, modules and Step 4 re
  for(const module of b.content.slice(4,11))assert.deepEqual(a.content.find(b=>b._key===module._key),module);
  assert.deepEqual(a.process.map(p=>p.title),b.process.map(p=>p.title));assert(a.process.every(p=>!p.duration&&p.deliverables.length===3));
 });
-test('AI retains its existing service scope',()=>{
+test('AI has authorized global scope following Step 7E',()=>{
  for(const slug of ['ai-automation-agents']){
  const html=readFileSync('dist/client/services/'+slug+'/index.html','utf8');const schemas=[...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs)].flatMap(m=>{const s=JSON.parse(m[1]);return s['@graph']||[s];});
- assert.deepEqual(schemas.find(s=>s['@type']==='Service').areaServed,{'@type':'Country',name:'India'});
+ assert.deepEqual(schemas.find(s=>s['@type']==='Service').areaServed,'Worldwide');
  }
 });
 test('ERP audit detects FAQ and claim regressions',()=>{
