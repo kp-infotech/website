@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-09-20T08:06:55.946506+00:00",
+  "origin": "https://kpinfo.tech",
+  "browser": "Chrome",
+  "desktop": {
+    "width": 1440,
+    "height": 900,
+    "scrollWidth": 1440,
+    "brokenImages": 0,
+    "heroVisualReview": "pass",
+    "bodyPermissionsReview": "pass",
+    "proofCardReview": "pass"
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "h1Count": 1,
+    "brokenImages": 0,
+    "heroVisualReview": "pass",
+    "humanApprovalFAQExpanded": true,
+    "processTab04ThenArrowRightSelects05": true
+  },
+  "navigation": {
+    "propertyCase": "https://kpinfo.tech/work/virtual-tours-ai-listings/",
+    "closingCTA": "https://kpinfo.tech/contact/"
+  },
+  "viewportReset": true,
+  "errors": []
+}

@@ -1,6 +1,6 @@
 # Step 7E — AI Automation & Agents money page
 
-Status: pre-deployment verification complete; production verification pending.
+Status: **PASS WITH WARNINGS**. Published and production-verified. The warnings are evidence limitations: no verified public production action-taking-agent case, and the existing case-claim review backlog. No technical acceptance check remains failed or pending.
 
 Scope: only `/services/ai-automation-agents/`. No new service or insight page. No Step 8 work. Clean release checkout `/private/tmp/kp-step7e-release`, based on main `bf59a95`. The original mixed working checkout was not used to build or deploy.
 
@@ -172,7 +172,7 @@ Zero pages created or reserved by this step.
 - Step 4: 56-page link graph, no errors.
 - Step 7A/7B/7C/7D/7E audits: PASS.
 - CMS comparison: 41 relevant published documents checked; exactly one changed document, limited to the eight authorized fields.
-- Strict static UI audit: no findings. Deployment dry run and whitespace checks recorded separately.
+- Strict static UI audit: no findings. Deployment dry run and final whitespace checks: PASS.
 
 Prior tests expecting India for AI were updated solely for the authorized Step 7E global scope. Their coverage remains; other service schema assertions are unchanged.
 
@@ -182,11 +182,33 @@ Steps 1–4 architecture, redirects, metadata, semantics and links were rechecke
 
 ## Deployment
 
-Pending release from clean main after final readiness checks. Production commit, deployment ID, version and time will be added after successful deployment.
+Application/content release commit: `f7ebda78fb179b34af12eab3d198046724c41f07`, normally pushed to `origin/main` from the clean release checkout. Authenticated build deployed through the existing Cloudflare Worker `website` workflow.
+
+| Record | Value |
+|---|---|
+| Manual deployment ID | `8ab34c99-b238-4590-b620-65f57c55340f` |
+| Manual version | `ea98802d-5819-4d2d-b4c5-7dfaa25a94d3` |
+| Manual deployment time | `2026-09-20T08:02:29.822684Z` (13:32:29 IST) |
+| Subsequent automatic deployment ID | `afa0625e-0891-4f5a-9aa0-2ebfc1f146f5` |
+| Active version at production verification | `35bc8ae5-e5c3-4583-bd40-6e43f576a462` at 100% |
+| Automatic deployment time | `2026-09-20T08:03:32.897932Z` (13:33:32 IST) |
+| Production | `https://kpinfo.tech` |
+
+The full 56-page match and Step 1 production smoke test were rerun after the automatic rollout; both passed. Final report/evidence are recorded in a separate documentation commit. A documentation push can trigger another equivalent build; deployment identifiers above identify the versions actually checked, not a promise that the ID never changes.
 
 ## Production Verification
 
-Pending live HTTP, desktop/mobile and full regression verification. Do not interpret the pre-deployment test pass as production completion.
+**PASS.** Live AI page: HTTP 200, indexable, unchanged approved title/description/canonical, one expected H1, all buyer sections, ten visible/schema-matched FAQs, two original proof cards, working contact CTA and Worldwide Service scope.
+
+Desktop at 1440×900 and mobile at 390×844 were visually checked. Both had zero horizontal overflow and zero broken images. Mobile human-approval FAQ expansion passed; process tab 04 followed by ArrowRight selected 05 with the expected content. The featured property-case link opened the correct case; Start a Conversation opened `/contact/`. Viewport override was reset. No form was submitted.
+
+All 56 sitemap pages returned 200 and matched the built headings, images, tables and link structure after the latest automatic rollout. Approved metadata matched the baseline; no semantic errors. Main-copy preservation passed for four other services and five cases, allowing only the exact dynamic AI service-reference label update. The four other services’ H1, title, description, canonical and complete schema remained exact.
+
+The production smoke included homepage, four other pillars, six restored insights, five cases, sitemap, robots, 32 redirect checks and 63 removed-project checks. All three sample-marketing URL variants remained 404. The production internal-link graph had no errors. Final CMS comparison at `2026-09-20T08:06:03.857Z` still showed only the intended AI document changes.
+
+Tooling note: the older Step 1E command rejects non-local origins by design. It passed locally; production article/redirect verification used the production-capable Step 1G audit and the full 56-page verifier. This was an audit invocation limitation, not a website failure.
+
+Evidence is retained alongside this report in `step-7e-evidence/`, including before/after snapshots, inventories, build/test output, local and production audits, preservation results, browser checks and sanitized deployment records.
 
 ## Final visible copy
 
