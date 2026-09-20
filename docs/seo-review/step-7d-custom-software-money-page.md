@@ -1,6 +1,6 @@
 # Step 7D — Custom Software money page
 
-Status: implementation and pre-release checks passed; production deployment pending.
+Status: **PASS WITH WARNINGS** — implemented, deployed and production-verified. Existing case-study claims remain in the Step 9 substantiation backlog. All Step 7D checks completed.
 
 Target: https://kpinfo.tech/services/custom-software-development/
 Scope: Step 7D only. No AI optimization, Step 7E work or new URL. Release prepared in clean main checkout `/private/tmp/kp-step7d-release`, based on `ae225fc`; the original mixed workspace is not used for release.
@@ -228,11 +228,38 @@ Steps 1–7C automated checks passed. CMS verification confirmed only the author
 
 ## Deployment
 
-Pending clean-main commit, normal push and established Cloudflare deployment.
+Release commit: `e4c20adcae5e6d57ce00c1b86e299b62769c382d`, normally pushed from the clean main checkout. Worker: `website`. No application/template changes outside CMS content.
+
+Manual deployment:
+
+- ID: `f1e5a3b5-6826-48e6-9b0e-94ea9039f5ef`.
+- Version: `2981ed5d-c139-4bba-9fd2-72b730d39909`.
+- Timestamp: `2026-09-18T14:43:09.32341Z` (18 September 2026, 20:13:09 IST).
+
+Active deployment verified on 20 September 2026:
+
+- ID: `fb064101-19c5-4900-9a6a-d7a200011dfc`.
+- Version: `52acc42b-7ba8-42de-887b-01b8427fb882`, 100%.
+- Timestamp: `2026-09-18T14:44:40.824423Z` (18 September 2026, 20:14:40 IST).
+
+The original deployment had completed before the pause. On continuation, live output matched the tested build. Wrangler refreshed its expired session to read deployment records; no repeat deployment was needed. Final report and verification evidence are committed separately. No credentials are included.
 
 ## Production Verification
 
-Pending live desktop/mobile and full HTTP regression checks.
+**PASS, verified 20 September 2026.** Custom Software returns HTTP 200, is indexable, has one H1 and the correct canonical, visible buyer content, three existing proof cards, two educational links, ten matching FAQ/schema entries and Worldwide service area.
+
+Approved metadata remains exact:
+
+- Title: `Custom Software Development Company | KP Infotech`.
+- Description: `Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.`
+
+Chrome desktop 1440×1000 and mobile 390×844 checks showed no horizontal overflow or broken images. The build/buy/configure section was reviewed on mobile; the ownership FAQ opened. Keyboard activation reached `/contact/` and the featured collaboration case. The case navigation initially exceeded the wait timeout but the subsequent DOM/URL check confirmed the correct destination. Viewport reset; no forms submitted.
+
+Full production checks: 56 sitemap pages matched tested build headings, images, tables and links while preserving metadata; 32 redirect checks, 63 unsupported-case checks, robots and all three sample-marketing 404 variants passed. Six restored insights and five approved cases remain available. Step 4 production graph passed. ERP, Automation, Cloud and AI main content is preserved; all five case main contents are preserved, allowing only the exact existing Custom Software service-reference anchor label to update naturally.
+
+CMS verification checked 41 content documents and found only the authorized Custom Software fields changed. No Step 7E work or new URL.
+
+Evidence files: `production.json`, `preservation.json`, `step1-production.json`, `step2-production.json`, `step4-production.json`, `erp-production.json`, `automation-production.json`, `cloud-production.json`, `software-production.json`, `browser-verification.json`, `cms-verification.json` and `deployment.json` in `step-7d-evidence/`.
 
 ## Exact Final Copy
 

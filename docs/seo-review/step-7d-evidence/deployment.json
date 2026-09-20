@@ -1,0 +1,28 @@
+{
+  "releaseCommit": "e4c20adcae5e6d57ce00c1b86e299b62769c382d",
+  "worker": "website",
+  "verifiedAt": "2026-09-20T07:45:01.902165+00:00",
+  "manualDeployment": {
+    "id": "f1e5a3b5-6826-48e6-9b0e-94ea9039f5ef",
+    "source": "wrangler",
+    "versions": [
+      {
+        "version_id": "2981ed5d-c139-4bba-9fd2-72b730d39909",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-18T14:43:09.32341Z"
+  },
+  "deployment": {
+    "id": "fb064101-19c5-4900-9a6a-d7a200011dfc",
+    "source": "wrangler",
+    "versions": [
+      {
+        "version_id": "52acc42b-7ba8-42de-887b-01b8427fb882",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-18T14:44:40.824423Z"
+  },
+  "note": "Deployment completed on 18 September; live verification resumed and passed on 20 September. Active version content matches the tested build."
+}

@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-09-20T07:45:01.902466+00:00",
+  "tool": "Chrome via cua_repl",
+  "local": {
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "noHorizontalOverflow": true,
+    "brokenImages": 0,
+    "processTab04Click": true,
+    "keyboardArrowRightSelects05": true,
+    "ownershipFAQOpens": true
+  },
+  "production": {
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "noHorizontalOverflow": true,
+    "brokenImages": 0,
+    "h1Count": 1,
+    "buyerDecisionSectionVisuallyInspected": true,
+    "ownershipFAQOpens": true,
+    "contactDestination": "https://kpinfo.tech/contact/",
+    "proofDestination": "https://kpinfo.tech/work/collaboration-platform-distributed-teams/",
+    "navigationMethod": "Keyboard Enter; proof destination confirmed after navigation settled following wait timeout",
+    "formsSubmitted": false
+  },
+  "viewportReset": true,
+  "errors": []
+}
