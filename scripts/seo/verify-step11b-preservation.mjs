@@ -1,0 +1,10 @@
+import fs from 'node:fs';import {isDeepStrictEqual} from 'node:util';import {execFileSync} from 'node:child_process';
+const {pageFacts}=await import(process.cwd()+'/scripts/seo/audit-step10b.mjs');const {inspect}=await import(process.cwd()+'/scripts/seo/audit-step3.mjs');
+const phase=process.argv[2]||'build',before=JSON.parse(fs.readFileSync('docs/seo-review/step-11b-evidence/baseline-page-facts.json'));
+const after=phase==='build'?before.map(p=>({url:p.url,html:fs.readFileSync('dist/client'+new URL(p.url).pathname+'index.html','utf8')})):JSON.parse(fs.readFileSync('/private/tmp/kp-step11b-production-pages.json'));
+const errors=[];for(const p of before){const a=after.find(x=>x.url===p.url);if(!a){errors.push(p.url+' missing');continue;}const b=p.facts,f=JSON.parse(JSON.stringify(pageFacts(a.html,p.url)));for(const k of Object.keys(b))if(!isDeepStrictEqual(b[k],f[k]))errors.push(p.url+' '+k);const bi=p,ai=inspect(a.html,p.url);for(const k of ['headings','images','bodyText'])if(!isDeepStrictEqual(bi[k],ai[k]))errors.push(p.url+' '+k);}
+const original=JSON.parse(execFileSync('git',['show','a60f117:tests/fixtures/legacy-redirects.json'],{encoding:'utf8'}));const current=JSON.parse(fs.readFileSync('tests/fixtures/legacy-redirects.json'));
+const changes=original.worker.filter(r=>current.worker.find(x=>x.source===r.source)?.target!==r.target).map(r=>({source:r.source,before:r.target,after:current.worker.find(x=>x.source===r.source)?.target}));
+if(!isDeepStrictEqual(changes.map(r=>r.source).sort(),['/business-process-improvement-methods/','/how-to-choose-erp-system/','/on-premise-vs-cloud-erp/'].sort()))errors.push('fixture scope');
+if(!isDeepStrictEqual(original.staticRules,current.staticRules))errors.push('static rules');
+const result={phase,pagesCompared:before.length,scopeChanges:changes,errors};fs.writeFileSync('docs/seo-review/step-11b-evidence/preservation-'+phase+'.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));if(errors.length)process.exitCode=1;

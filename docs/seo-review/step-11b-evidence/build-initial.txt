@@ -1,0 +1,15 @@
+
+> kpinfotech-website@0.0.1 build
+> astro build
+
+[astro] Unable to load your Astro config
+
+PUBLIC_SANITY_PROJECT_ID is not defined. Ensure it is set in your .env file locally or in your hosting provider's dashboard.
+  Location:
+    /Users/krupa/Projects/KP/website/node_modules/vite/dist/node/module-runner.js:913:3
+  Stack trace:
+    at eval (/Users/krupa/.codex/worktrees/step-11b-reclamation/website/astro.config.mjs:36:9)
+    at async ModuleRunner.directRequest (file:///Users/krupa/Projects/KP/website/node_modules/vite/dist/node/module-runner.js:1146:59)
+    at async ModuleRunner.import (file:///Users/krupa/Projects/KP/website/node_modules/vite/dist/node/module-runner.js:1014:10)
+    at async loadConfig (file:///Users/krupa/Projects/KP/website/node_modules/astro/dist/core/config/config.js:57:12)
+    at async build (file:///Users/krupa/Projects/KP/website/node_modules/astro/dist/core/build/index.js:30:39)

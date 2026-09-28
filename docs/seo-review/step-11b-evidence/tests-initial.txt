@@ -1,0 +1,733 @@
+✔ article normalization reserves H1 without shifting existing levels or mutating CMS data (2.878625ms)
+✔ empty spans are omitted but inline objects, marks, IDs and code survive (0.102416ms)
+✔ migration punctuation remains escaped text rather than injected HTML (0.103875ms)
+✔ strict plain Markdown tables become semantic data without losing cells (0.58125ms)
+✔ malformed migrated image references preserve URL without inventing image descriptions (0.095167ms)
+✖ rendered insights pagination links use only canonical paths and preserve boundaries (0.469459ms)
+✔ all 96 retained historical Worker migrations retain their destinations, queries and 301 status (5.027042ms)
+✔ every non-wildcard legacy static source is retained as a 301 and overlapping targets agree with Worker (0.371958ms)
+✔ unknown case studies have no Worker or static wildcard migration (0.086167ms)
+✔ existing routing precedence is retained without the unapproved sample-marketing override (0.541208ms)
+✔ Worker emits 301 with Location before Astro for GET and HEAD across the retained baseline (4.896542ms)
+✔ SEO-pending sample marketing keeps normal 404 semantics without a redirect or 410 (2.669917ms)
+✔ Step 1C removes exactly the 21 unsupported project migrations, without adding Gone responses (1.584167ms)
+▶ migration redirects
+  ✔ uses permanent redirects (1.712125ms)
+  ✔ redirects old service slugs to current service routes (0.213042ms)
+  ✔ falls ambiguous removed service pages back to existing current service routes (0.084875ms)
+  ✔ preserves query strings while normalizing trailing slashes (0.164208ms)
+  ✔ redirects only known migrated blog and case-study slugs (0.076459ms)
+  ✔ redirects Batch 1 hard 404 recovery URLs to approved current routes (0.208917ms)
+  ✔ does not redirect manual review URLs before approval (0.058791ms)
+  ✔ does not redirect current target routes back to old routes (0.11875ms)
+  ✔ does not introduce redirect chains for Batch 1 targets (0.096958ms)
+✔ migration redirects (3.708375ms)
+✔ P0 insight draft batch file exists and targets only production Sanity (0.869167ms)
+✔ P0 insight draft batch includes exactly the six reviewed articles (0.369666ms)
+✔ P0 insight slugs are explicitly included in the public blog allowlist (0.111583ms)
+✔ P0 insight route, listing, and sitemap generation use the public blog query path (0.166792ms)
+✔ Sanity build client can read published private-id P0 documents without drafts (0.176042ms)
+✔ P0 insight draft batch never uses published Sanity IDs (0.207791ms)
+✔ P0 insight draft slugs are unique (0.051375ms)
+✔ P0 insight draft batch has required article fields and existing category slugs (0.815ms)
+✔ P0 insight draft SEO titles and descriptions stay within reviewed lengths (0.070667ms)
+✔ P0 insight draft batch excludes manual-review URLs (1.082958ms)
+✔ P0 insight draft batch contains no redirect mutations (0.400375ms)
+✔ P0 insight import script has no publish operation (0.2245ms)
+✔ P0 insight import script defaults to dry-run and gates draft updates (0.198417ms)
+✔ P0 insight import does not change legacy redirect targets yet (0.3975ms)
+﹣ built sitemap includes all P0 insight URLs when build output exists (0.087167ms) # dist/client/sitemap-0.xml does not exist; run npm run build for sitemap output verification.
+node:fs:484
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/index.html'
+    at readFileSync (node:fs:484:20)
+    at file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/performance-critical-path.test.mjs:6:22
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/index.html'
+}
+
+Node.js v24.20.0
+✖ tests/performance-critical-path.test.mjs (63.755333ms)
+✔ the active policy exactly matches the five reviewed published projects (0.620208ms)
+✔ all work routes exclude unknown, draft, release and private documents even with raw CMS access (149.416584ms)
+✔ homepage, featured work and next project use only reviewed published projects (46.617292ms)
+✔ service and industry related work cannot expose unknown or unpublished projects (8.776709ms)
+✔ SEO metadata batch targets only the production Sanity project (0.388375ms)
+✔ SEO metadata batch is limited to P0 and P1 items (0.36475ms)
+✔ SEO metadata batch includes the first-batch industry scope (0.065166ms)
+✔ SEO metadata batch includes only P1 blog posts from the inventory (0.05825ms)
+✔ SEO metadata batch only patches the guarded virtual tour case-study description (0.064375ms)
+✔ SEO metadata batch does not update default OG image without a reviewed asset (0.070459ms)
+✔ SEO metadata script targets published documents, not drafts (0.104542ms)
+✔ accepts canonical company and Krupa without invented social identity (2.304708ms)
+✔ rejects duplicate and competing company entity architecture (0.156375ms)
+✔ rejects unverified/namesake sameAs https://www.instagram.com/kp.infotech/ (0.07575ms)
+✔ rejects unverified/namesake sameAs https://github.com/kp-infotech (0.116208ms)
+✔ rejects unverified/namesake sameAs https://kpinfotech.co.in (0.059167ms)
+✔ rejects unverified/namesake sameAs https://kpinfotech.ca (0.047292ms)
+✔ rejects unverified/namesake sameAs https://kp-infotech.com (0.055708ms)
+✔ rejects unverified/namesake sameAs https://kpinfosystems.com (0.049458ms)
+✔ rejects unverified/namesake sameAs https://linkedin.com/company/kp-infotech-solutions (0.545792ms)
+✔ rejects Krupa linked to Poojan in schema and visible author block (0.213334ms)
+✔ rejects guessed Krupa replacement (0.076292ms)
+✔ requires correct Poojan profile in schema and display (0.106459ms)
+✔ rejects missing/wrong mainEntityOfPage and publisher (0.136584ms)
+✔ rejects unverified founding/legal fields and canonical drift (0.065959ms)
+✔ rejects office invitation and directions while retaining required contact routes (0.225458ms)
+✔ rejects unsupported Insights experience claims (0.082209ms)
+✖ Step 11B: business-process-improvement-methods root and blogs go directly to the canonical Insight (4.438042ms)
+✖ Step 11B: how-to-choose-erp-system root and blogs go directly to the canonical Insight (0.243667ms)
+✖ Step 11B: on-premise-vs-cloud-erp root and blogs go directly to the canonical Insight (0.156875ms)
+✔ Step 11B preserves excluded redirect /business-process-automation-tools/ (0.243792ms)
+✔ Step 11B preserves excluded redirect /what-is-customised-software/ (0.152625ms)
+✔ Step 11B preserves excluded redirect /data-visualization-best-practices/ (0.161333ms)
+✔ Step 11B preserves excluded redirect /best-ecommerce-platform-for-small-business/ (0.115833ms)
+✖ Step 11B leaves linked 404 /how-to-choose-the-right-digital-marketing-channels-for-your-business/ to normal not-found handling (0.089458ms)
+✖ Step 11B leaves linked 404 /graphics-design/ to normal not-found handling (0.069292ms)
+✖ Step 11B leaves linked 404 /how-to-create-brand-guidelines/ to normal not-found handling (0.094416ms)
+✖ Step 11B leaves linked 404 /b-2-b-lead-generation-strategies/ to normal not-found handling (0.060208ms)
+✔ Step 11B fixture explicitly records all three approved root and blogs targets (0.194625ms)
+✖ built sitemap and rendered work links contain only current reviewed case studies (50.045333ms)
+Cloudflare Email send error (contact): undefined Mock failure
+(node:52392) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ All six current contact choices reach email payload without a real send (30.115292ms)
+✔ Contact validation and send failure remain recoverable (5.880125ms)
+✖ Step 2 rendered metadata / (0.464125ms)
+✖ Step 2 rendered metadata /services/ (0.063083ms)
+✖ Step 2 rendered metadata /services/custom-software-development/ (0.044541ms)
+✖ Step 2 rendered metadata /services/business-automation/ (0.044458ms)
+✖ Step 2 rendered metadata /services/erp-software/ (0.0465ms)
+✖ Step 2 rendered metadata /services/ai-automation-agents/ (0.041375ms)
+✖ Step 2 rendered metadata /services/cloud-devops/ (0.039208ms)
+✖ Step 2 rendered metadata /about/ (0.034792ms)
+✖ Step 2 rendered metadata /contact/ (0.062916ms)
+✔ Step 2 titles uniquely own their intent (0.138916ms)
+✖ Step 2 preserves the exact 56-page production sitemap (0.37325ms)
+﹣ built sitemap pages preserve structural SEO and article contracts (0.324792ms) # SKIP
+✖ all rendered internal links use canonical indexable destinations and accessible anchors (0.653583ms)
+✔ Step 4 changes are field-specific and preserve article text, headings and metadata (0.713125ms)
+✖ ERP rendered commercial content, metadata, schema, FAQs and links (0.428917ms)
+✔ ERP mutation preserves metadata, URL, platform list, modules and Step 4 resources (1.565208ms)
+✖ AI has authorized global scope following Step 7E (0.098208ms)
+✖ ERP audit detects FAQ and claim regressions (0.064667ms)
+✖ Business Automation buyer content, exact metadata, schema, FAQs and links (0.365667ms)
+✔ Business Automation mutation preserves other fields, categories, process stages and educational references (1.528667ms)
+✖ CMS service-area override preserves ERP and all other existing service coverage (0.086625ms)
+✖ Business Automation audit catches FAQ mismatches and unsupported claims (0.060834ms)
+✖ Cloud buyer scope, cost measurement, exact metadata, proof component and FAQ schema (0.406583ms)
+✔ Cloud update preserves unrelated fields, technology list, stage identities and Step 4 references (1.631542ms)
+✖ Cloud global scope preserves ERP, Automation, Custom Software and AI coverage (0.166416ms)
+✖ Cloud audit rejects FAQ mismatches, invented partner claims, generalized savings and lost proof (0.071541ms)
+✖ Custom Software buyer guidance, requirements, UAT, handover, metadata, proof and FAQs (0.371875ms)
+✔ Custom Software mutation preserves metadata, references, technology list and process stage identities (1.533333ms)
+✖ Custom Software global scope preserves ERP, Automation and Cloud with AI global scope authorized in Step 7E (0.0885ms)
+✖ Custom Software audit rejects FAQ mismatch, IP guarantees, certifications and generalized metrics (0.066458ms)
+✖ AI fit, bounded actions, evaluation, failure handling, metadata, proof and FAQs (0.372167ms)
+✔ AI mutation preserves metadata, references, technology list and process stage identities (1.439209ms)
+✖ All five service pillars have authorized Worldwide scope (0.070917ms)
+✖ AI audit rejects FAQ mismatch, autonomy and accuracy guarantees, certifications and generalized metrics (0.057791ms)
+✖ all 56 production-build pages exclude removed proof claims (0.464375ms)
+✔ proof scanner rejects an old certification in schema and visible markup (4.596875ms)
+✔ technical numbers alone are not outcome claims (1.160583ms)
+✔ all contradicted Step 9A occurrences have explicit remediation (1.664625ms)
+✔ verified publication requires both approvals for every status combination (0.769875ms)
+✔ missing state and legacy presentation toggle never authorize publication (0.096458ms)
+✔ technical overview tolerates but never exposes historical hidden proof (1.042083ms)
+✔ verified results require an individual review and non-empty value/label (0.106167ms)
+✔ year, summary and testimonial require separate affirmative review (0.084ms)
+✔ revoked permission suppresses all proof even when individual markers remain approved (0.0515ms)
+✔ work queries protect client identity and year on every card surface (9.142583ms)
+✔ detail GROQ removes historical proof and helper prevents a second leak (0.939542ms)
+✔ valid synthetic verified detail projects only reviewed proof (1.505833ms)
+✔ sensitive assertions in technical copy are flagged without scanning educational documents (0.927209ms)
+✔ homepage queries expose neither stats nor testimonials even when CMS is populated (0.518291ms)
+✔ production build enforces both input review and emitted proof audit (0.703333ms)
+✔ governance output audit rejects a new delivery year and hidden state leakage (9.001708ms)
+✔ Studio document validation enforces the same publication rule (1726.198166ms)
+✔ Studio result validation allows hidden historical entries but blocks unreviewed public results (5.29975ms)
+✔ build output permits educational certification concepts while protecting proof surfaces (5.94425ms)
+ℹ tests 134
+ℹ suites 1
+ℹ pass 95
+ℹ fail 37
+ℹ cancelled 0
+ℹ skipped 2
+ℹ todo 0
+ℹ duration_ms 2128.455208
+
+✖ failing tests:
+
+test at tests/insights-pagination-artifacts.test.mjs:5:1
+✖ rendered insights pagination links use only canonical paths and preserve boundaries (0.469459ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/insights/index.html'
+      at Object.readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/insights-pagination-artifacts.test.mjs:8:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/insights/index.html'
+  }
+
+test at tests/performance-critical-path.test.mjs:1:1
+✖ tests/performance-critical-path.test.mjs (63.755333ms)
+  'test failed'
+
+test at tests/step-11b-redirects.test.mjs:10:25
+✖ Step 11B: business-process-improvement-methods root and blogs go directly to the canonical Insight (4.438042ms)
+  TypeError: migration.isRetiredGoneUrl is not a function
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-11b-redirects.test.mjs:17:98)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests/step-11b-redirects.test.mjs:10:25
+✖ Step 11B: how-to-choose-erp-system root and blogs go directly to the canonical Insight (0.243667ms)
+  TypeError: migration.isRetiredGoneUrl is not a function
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-11b-redirects.test.mjs:17:98)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests/step-11b-redirects.test.mjs:10:25
+✖ Step 11B: on-premise-vs-cloud-erp root and blogs go directly to the canonical Insight (0.156875ms)
+  TypeError: migration.isRetiredGoneUrl is not a function
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-11b-redirects.test.mjs:17:98)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests/step-11b-redirects.test.mjs:27:188
+✖ Step 11B leaves linked 404 /how-to-choose-the-right-digital-marketing-channels-for-your-business/ to normal not-found handling (0.089458ms)
+  TypeError: migration.isRetiredGoneUrl is not a function
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-11b-redirects.test.mjs:29:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests/step-11b-redirects.test.mjs:27:188
+✖ Step 11B leaves linked 404 /graphics-design/ to normal not-found handling (0.069292ms)
+  TypeError: migration.isRetiredGoneUrl is not a function
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-11b-redirects.test.mjs:29:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests/step-11b-redirects.test.mjs:27:188
+✖ Step 11B leaves linked 404 /how-to-create-brand-guidelines/ to normal not-found handling (0.094416ms)
+  TypeError: migration.isRetiredGoneUrl is not a function
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-11b-redirects.test.mjs:29:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests/step-11b-redirects.test.mjs:27:188
+✖ Step 11B leaves linked 404 /b-2-b-lead-generation-strategies/ to normal not-found handling (0.060208ms)
+  TypeError: migration.isRetiredGoneUrl is not a function
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-11b-redirects.test.mjs:29:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests/step-1c-case-study-artifacts.test.mjs:5:1
+✖ built sitemap and rendered work links contain only current reviewed case studies (50.045333ms)
+  AssertionError [ERR_ASSERTION]: 
+  node:fs:484
+      return binding.readFileUtf8(path, stringToFlags(options.flag));
+                     ^
+  
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/sitemap-index.xml'
+      at readFileSync (node:fs:484:20)
+      at read (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/scripts/seo/audit-step1c.mjs:19:18)
+      at file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/scripts/seo/audit-step1c.mjs:23:13
+      at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+      at async node:internal/modules/esm/loader:647:26
+      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/sitemap-index.xml'
+  }
+  
+  Node.js v24.20.0
+  
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-1c-case-study-artifacts.test.mjs:9:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/step-2-metadata.test.mjs:3:29
+✖ Step 2 rendered metadata / (0.464125ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:3:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/index.html'
+  }
+
+test at tests/step-2-metadata.test.mjs:3:29
+✖ Step 2 rendered metadata /services/ (0.063083ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:3:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/index.html'
+  }
+
+test at tests/step-2-metadata.test.mjs:3:29
+✖ Step 2 rendered metadata /services/custom-software-development/ (0.044541ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/custom-software-development/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:3:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/custom-software-development/index.html'
+  }
+
+test at tests/step-2-metadata.test.mjs:3:29
+✖ Step 2 rendered metadata /services/business-automation/ (0.044458ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/business-automation/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:3:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/business-automation/index.html'
+  }
+
+test at tests/step-2-metadata.test.mjs:3:29
+✖ Step 2 rendered metadata /services/erp-software/ (0.0465ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/erp-software/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:3:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/erp-software/index.html'
+  }
+
+test at tests/step-2-metadata.test.mjs:3:29
+✖ Step 2 rendered metadata /services/ai-automation-agents/ (0.041375ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/ai-automation-agents/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:3:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/ai-automation-agents/index.html'
+  }
+
+test at tests/step-2-metadata.test.mjs:3:29
+✖ Step 2 rendered metadata /services/cloud-devops/ (0.039208ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/cloud-devops/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:3:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/services/cloud-devops/index.html'
+  }
+
+test at tests/step-2-metadata.test.mjs:3:29
+✖ Step 2 rendered metadata /about/ (0.034792ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/about/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:3:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/about/index.html'
+  }
+
+test at tests/step-2-metadata.test.mjs:3:29
+✖ Step 2 rendered metadata /contact/ (0.062916ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/contact/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:3:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/contact/index.html'
+  }
+
+test at tests/step-2-metadata.test.mjs:5:1
+✖ Step 2 preserves the exact 56-page production sitemap (0.37325ms)
+  Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/sitemap-0.xml'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-2-metadata.test.mjs:5:316)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/sitemap-0.xml'
+  }
+
+test at tests/step-4-internal-links.test.mjs:7:1
+✖ all rendered internal links use canonical indexable destinations and accessible anchors (0.653583ms)
+  AssertionError [ERR_ASSERTION]: Production build required
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-4-internal-links.test.mjs:8:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/step-7a-erp.test.mjs:4:1
+✖ ERP rendered commercial content, metadata, schema, FAQs and links (0.428917ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/erp-software/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7a-erp.test.mjs:4:107)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/erp-software/index.html'
+  }
+
+test at tests/step-7a-erp.test.mjs:12:1
+✖ AI has authorized global scope following Step 7E (0.098208ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/ai-automation-agents/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7a-erp.test.mjs:14:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/ai-automation-agents/index.html'
+  }
+
+test at tests/step-7a-erp.test.mjs:18:1
+✖ ERP audit detects FAQ and claim regressions (0.064667ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/erp-software/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7a-erp.test.mjs:19:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/erp-software/index.html'
+  }
+
+test at tests/step-7b-automation.test.mjs:4:1
+✖ Business Automation buyer content, exact metadata, schema, FAQs and links (0.365667ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/business-automation/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7b-automation.test.mjs:4:122)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/business-automation/index.html'
+  }
+
+test at tests/step-7b-automation.test.mjs:12:1
+✖ CMS service-area override preserves ERP and all other existing service coverage (0.086625ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/erp-software/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7b-automation.test.mjs:14:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/erp-software/index.html'
+  }
+
+test at tests/step-7b-automation.test.mjs:18:1
+✖ Business Automation audit catches FAQ mismatches and unsupported claims (0.060834ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/business-automation/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7b-automation.test.mjs:19:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/business-automation/index.html'
+  }
+
+test at tests/step-7c-cloud.test.mjs:4:1
+✖ Cloud buyer scope, cost measurement, exact metadata, proof component and FAQ schema (0.406583ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/cloud-devops/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7c-cloud.test.mjs:4:127)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/cloud-devops/index.html'
+  }
+
+test at tests/step-7c-cloud.test.mjs:14:1
+✖ Cloud global scope preserves ERP, Automation, Custom Software and AI coverage (0.166416ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/erp-software/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7c-cloud.test.mjs:16:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/erp-software/index.html'
+  }
+
+test at tests/step-7c-cloud.test.mjs:20:1
+✖ Cloud audit rejects FAQ mismatches, invented partner claims, generalized savings and lost proof (0.071541ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/cloud-devops/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7c-cloud.test.mjs:21:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/cloud-devops/index.html'
+  }
+
+test at tests/step-7d-software.test.mjs:4:1
+✖ Custom Software buyer guidance, requirements, UAT, handover, metadata, proof and FAQs (0.371875ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/custom-software-development/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7d-software.test.mjs:4:132)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/custom-software-development/index.html'
+  }
+
+test at tests/step-7d-software.test.mjs:13:1
+✖ Custom Software global scope preserves ERP, Automation and Cloud with AI global scope authorized in Step 7E (0.0885ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/erp-software/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7d-software.test.mjs:15:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/erp-software/index.html'
+  }
+
+test at tests/step-7d-software.test.mjs:19:1
+✖ Custom Software audit rejects FAQ mismatch, IP guarantees, certifications and generalized metrics (0.066458ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/custom-software-development/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7d-software.test.mjs:20:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/custom-software-development/index.html'
+  }
+
+test at tests/step-7e-ai.test.mjs:4:1
+✖ AI fit, bounded actions, evaluation, failure handling, metadata, proof and FAQs (0.372167ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/ai-automation-agents/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7e-ai.test.mjs:4:120)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/ai-automation-agents/index.html'
+  }
+
+test at tests/step-7e-ai.test.mjs:13:1
+✖ All five service pillars have authorized Worldwide scope (0.070917ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/erp-software/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7e-ai.test.mjs:15:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/erp-software/index.html'
+  }
+
+test at tests/step-7e-ai.test.mjs:19:1
+✖ AI audit rejects FAQ mismatch, autonomy and accuracy guarantees, certifications and generalized metrics (0.057791ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/services/ai-automation-agents/index.html'
+      at readFileSync (node:fs:484:20)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-7e-ai.test.mjs:20:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/services/ai-automation-agents/index.html'
+  }
+
+test at tests/step-9b-proof-risk.test.mjs:2:1
+✖ all 56 production-build pages exclude removed proof claims (0.464375ms)
+  Error: ENOENT: no such file or directory, open 'dist/client/sitemap-0.xml'
+      at readFileSync (node:fs:484:20)
+      at audit (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/scripts/seo/audit-step9b.mjs:26:108)
+      at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-9b-proof-risk.test.mjs:2:91)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'dist/client/sitemap-0.xml'
+  }

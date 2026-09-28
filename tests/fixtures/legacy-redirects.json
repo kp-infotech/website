@@ -1,6 +1,6 @@
 {
   "captured": "2026-09-16",
-  "note": "Pre-Step-1 working-tree behavior snapshot; protects existing mappings, does not approve their intent or guarantee live target health.",
+  "note": "Pre-Step-1 working-tree behavior snapshot; protects existing mappings, does not approve their intent or guarantee live target health. Step 11B (2026-09-28) explicitly approves only the process-improvement, ERP-selection and ERP-deployment root targets changing to their matching Insights.",
   "exactCount": 56,
   "blogSlugs": [
     "angular-vs-react",
@@ -118,7 +118,7 @@
     },
     {
       "source": "/business-process-improvement-methods/",
-      "target": "/services/business-automation/"
+      "target": "/insights/business-process-improvement-methods/"
     },
     {
       "source": "/best-ecommerce-platform-for-small-business/",
@@ -130,7 +130,7 @@
     },
     {
       "source": "/on-premise-vs-cloud-erp/",
-      "target": "/services/erp-software/"
+      "target": "/insights/on-premise-vs-cloud-erp/"
     },
     {
       "source": "/web-design-company/",
@@ -138,7 +138,7 @@
     },
     {
       "source": "/how-to-choose-erp-system/",
-      "target": "/services/erp-software/"
+      "target": "/insights/how-to-choose-erp-system/"
     },
     {
       "source": "/how-to-make-a-website-mobile-friendly/",

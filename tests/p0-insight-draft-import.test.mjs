@@ -77,9 +77,9 @@ const forbiddenManualReviewUrls = [
 const legacyRedirectTargets = new Map([
   ['/what-is-customised-software', '/services/custom-software-development/'],
   ['/business-process-automation-tools', '/services/business-automation/'],
-  ['/business-process-improvement-methods', '/services/business-automation/'],
-  ['/how-to-choose-erp-system', '/services/erp-software/'],
-  ['/on-premise-vs-cloud-erp', '/services/erp-software/'],
+  ['/business-process-improvement-methods', '/insights/business-process-improvement-methods/'],
+  ['/how-to-choose-erp-system', '/insights/how-to-choose-erp-system/'],
+  ['/on-premise-vs-cloud-erp', '/insights/on-premise-vs-cloud-erp/'],
   ['/best-practices-for-devops', '/services/cloud-devops/'],
 ]);
 
