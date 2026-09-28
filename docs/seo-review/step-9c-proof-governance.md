@@ -1,6 +1,6 @@
 # Step 9C — Public proof governance
 
-Status: BUILD, STUDIO AND REGRESSION PASS; deployment and production verification pending. Step 10 is out of scope.
+Status: **PASS WITH WARNINGS** — governance implemented, deployed and verified. Remaining warnings are the existing business-proof backlog and the need for honest authorized review; no release check is failing. Step 10 is out of scope.
 
 ## Current Public Proof State
 
@@ -130,8 +130,26 @@ Steps 1C, 2, 3, 4, 7A–7E, 9B and 9C build validators: PASS. Local Step 1G: 56 
 
 ## Deployment
 
-Pending application and established Sanity Studio/schema deployment.
+Application release commits: `e1d42a96d55b9a8c15780bf007e1dafa6be8bd37` (governance) and `f17ead4b58fd35e8bcebc7c6728f71e1c5f0f23f` (educational-context refinement), normally pushed to `origin/main` from the isolated release checkout.
+
+- Cloudflare Worker `website`, production `https://kpinfo.tech`.
+- Final manually deployed and verified version: `e11755db-64b1-4e3e-89e7-a3b235cce096` at 100%; deployed `2026-09-28T10:29:29.240Z` (15:59:29 IST).
+- Existing Sanity app `nrhngkka32o4vdxu667lovc8`, hostname `https://kpinfotech.sanity.studio/`; schema `_.schemas.kp-infotech` deployed successfully (1/1).
+- Studio deployment command completed `2026-09-28T10:23:14.985370Z` (15:53:14 IST). Bundle `sanity-B31IL5JN.js` matches the hosted JavaScript byte-for-byte; its SHA-256 is recorded in `studio-release.json`.
+- The Studio hostname intentionally redirects into the existing managed Sanity dashboard. Its asset is HTTP 200 and matches the approved build; this is not a deployment failure.
+- Studio used a separate clean checkout/default `dist` directory because this CLI version prompts on a non-empty custom directory even with unattended mode. Its supported authentication environment variable used the existing project token; no new credential or access permission was created.
+- Final report/evidence are committed separately. An automatic equivalent Cloudflare deployment may replace a recorded version ID; these records identify the versions actually verified.
 
 ## Production Verification
 
-Pending final live comparison. CMS editorial `dateModified` will advance because statuses changed; this is the only expected semantic timestamp difference from Step 9B.
+PASS. All 56 live pages match the final validated build (body, headings, title/description, canonical and schema); the build matches Step 9B public content and images/alt apart from the five CMS editorial `dateModified` advances. This does not imply a project completion date.
+
+Production Step 1G: 56 sitemap pages, 32 redirect checks, 63 unsupported-project 404 checks, zero dead/legacy links. Robots, restored articles and sample-marketing 404 pass. Steps 2, 3, 4, 7A–7E, 9B and 9C production checks pass. Homepage/work hub, five services, five work pages and finance/healthcare/startups remain clean. All five cases are 200, indexable, self-canonical and still Technical Overviews; no result strips, unverified years, client Organization, testimonials, homepage stats or internal governance properties leak.
+
+Fresh authenticated CMS verification confirms all five remain `technicalOverview / pending / unknown`. No fake verified record was created. See `studio-production.json`, `production-match.json`, `production-regression-exits.json` and `step1-production.json`.
+
+## Step 9 Overall Readiness
+
+Step 9's audit, risk remediation and governance implementation can be closed after SEO review. Closing this implementation does not verify any engagement or outcome; the documented ERP/BPA/AI/software/cloud/homepage/testimonial evidence backlog remains open. Step 10 was not started.
+
+STEP 9C COMPLETE — AWAITING SEO REVIEW

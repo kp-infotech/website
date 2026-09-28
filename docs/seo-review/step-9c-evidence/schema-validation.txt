@@ -4,5 +4,3 @@
 Validation results:
 ✖ Errors:   0 errors
 ⚠ Warnings: 0 warnings
-
-

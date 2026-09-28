@@ -1,0 +1,18 @@
+{
+  "status": "PASS WITH WARNINGS",
+  "releaseCommit": "f17ead4b58fd35e8bcebc7c6728f71e1c5f0f23f",
+  "cloudflareVersion": "e11755db-64b1-4e3e-89e7-a3b235cce096",
+  "deploymentTime": "2026-09-28T10:29:29.240Z",
+  "studioAppId": "nrhngkka32o4vdxu667lovc8",
+  "studioBundle": "sanity-B31IL5JN.js",
+  "tests": {
+    "pass": 107,
+    "fail": 0,
+    "skip": 0,
+    "focused": 16
+  },
+  "productionPages": 56,
+  "cmsStates": "all five technicalOverview / pending / unknown",
+  "publicCopyChanges": 0,
+  "step10Started": false
+}

@@ -1,0 +1,92 @@
+
+ ⛅️ wrangler 4.104.0 (update available 4.142.0)
+───────────────────────────────────────────────
+Created:     2026-09-20T08:03:32.897Z
+Author:      poojan@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) 35bc8ae5-e5c3-4583-bd40-6e43f576a462
+                 Created:  2026-09-20T08:03:32.370Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-09-20T08:09:10.891Z
+Author:      poojan@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) ce932c86-9b74-497e-bfdf-d8e3a13d6ab8
+                 Created:  2026-09-20T08:09:10.379Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-09-28T09:14:28.572Z
+Author:      poojan@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) d3feabc2-d020-464c-a530-cc4ce30efede
+                 Created:  2026-09-28T09:14:28.087Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-09-28T09:21:37.108Z
+Author:      krupa@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) 4e12a44f-cd34-4023-ab96-5082e7800453
+                 Created:  2026-09-28T09:21:35.337Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-09-28T09:23:10.974Z
+Author:      poojan@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) 080e543b-b8db-46e7-913d-2d359f234e5f
+                 Created:  2026-09-28T09:23:10.026Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-09-28T09:25:22.675Z
+Author:      poojan@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) 0f6ad855-7268-4677-8af3-29e38452b858
+                 Created:  2026-09-28T09:25:22.188Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-09-28T10:11:34.040Z
+Author:      poojan@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) c7e1ada5-3113-4b0d-a6b0-3723cd35313a
+                 Created:  2026-09-28T10:11:33.370Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-09-28T10:21:00.332Z
+Author:      krupa@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) 09ad3e0a-cbf2-4a27-8ce9-1c897e5aee9f
+                 Created:  2026-09-28T10:20:58.771Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-09-28T10:22:13.272Z
+Author:      poojan@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) 7bc1cef0-8631-4fd0-ac08-5d6fa069874b
+                 Created:  2026-09-28T10:22:12.707Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-09-28T10:29:29.240Z
+Author:      krupa@kpinfo.tech
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) e11755db-64b1-4e3e-89e7-a3b235cce096
+                 Created:  2026-09-28T10:29:27.741Z
+                     Tag:  -
+                 Message:  -

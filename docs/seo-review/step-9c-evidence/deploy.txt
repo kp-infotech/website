@@ -38,14 +38,14 @@ No updated asset files to upload. Proceeding with deployment...
 Total Upload: 609.75 KiB / gzip: 149.07 KiB
 Worker Startup Time: 7 ms
 Your Worker has access to the following bindings:
-Binding                                            Resource                  
-env.SESSION (inherited)                            KV Namespace              
-env.EMAIL (unrestricted)                           Send Email                
-env.ASSETS                                         Assets                    
-env.PUBLIC_SANITY_PROJECT_ID ("5rux0mv2")          Environment Variable      
-env.PUBLIC_SANITY_DATASET ("production")           Environment Variable      
-env.PUBLIC_GA_MEASUREMENT_ID ("G-7K17R4CWQ7")      Environment Variable      
-env.PUBLIC_CLARITY_ID ("pqpi438d1f")               Environment Variable      
+Binding                                            Resource
+env.SESSION (inherited)                            KV Namespace
+env.EMAIL (unrestricted)                           Send Email
+env.ASSETS                                         Assets
+env.PUBLIC_SANITY_PROJECT_ID ("5rux0mv2")          Environment Variable
+env.PUBLIC_SANITY_DATASET ("production")           Environment Variable
+env.PUBLIC_GA_MEASUREMENT_ID ("G-7K17R4CWQ7")      Environment Variable
+env.PUBLIC_CLARITY_ID ("pqpi438d1f")               Environment Variable
 
 Uploaded website (11.38 sec)
 Deployed website triggers (3.90 sec)
