@@ -2,7 +2,7 @@
 
 ## Step 11B Status
 
-Pre-release validation PASS; deployment and production verification pending below. Exactly three historical root targets changed. No Step 11C work.
+**PASS — deployed and production verified.** Exactly three historical root targets changed. No Step 11C work.
 
 ## Baseline
 
@@ -74,11 +74,25 @@ No Sanity mutations occurred. No Insight, service, author, work, site-settings o
 
 ## Deployment
 
-Pending release record.
+Release commit: `841c1aba1cb5f499808836aaf7121f6d02bdbad1` (runtime change commit `775c27732d502dcbc81b8b4fe1be97e1aefd8317`). Both were normally fast-forward pushed to `main`. The second commit only normalizes evidence-log whitespace; the complete base-to-release diff check passes.
+
+Cloudflare Worker: `website`, KP Infotech account. Deployment ID: `2a3831b2-bc4d-478f-922b-88b4289cab34`. Version: `df310b9f-e155-48e1-8194-5a1fda9df89b`, active at 100%. Deployed **2026-09-28 12:08:13.917 UTC (17:38:13.917 IST)**. [Deployment log](step-11b-evidence/deploy.txt), [verified deployment history](step-11b-evidence/deployments-verified.json).
+
+The first manual deploy attempt required explicit account selection because two accounts were available. The existing Worker history confirmed the KP Infotech account; deployment then succeeded with that account selected via environment variable. No source configuration change was needed. No Sanity Studio deployment occurred. A follow-up documentation commit records completed production evidence without runtime changes.
 
 ## Production Verification
 
-Pending fresh post-deployment verification.
+**PASS.** Fresh production checks completed at 2026-09-28T12:08:40.847Z.
+
+| Source | Status | Location / final URL | Hops | Final status | Final canonical |
+|---|---:|---|---:|---:|---|
+| `/business-process-improvement-methods/` | 301 | `https://kpinfo.tech/insights/business-process-improvement-methods/` | 1 | 200 | `https://kpinfo.tech/insights/business-process-improvement-methods/` |
+| `/how-to-choose-erp-system/` | 301 | `https://kpinfo.tech/insights/how-to-choose-erp-system/` | 1 | 200 | `https://kpinfo.tech/insights/how-to-choose-erp-system/` |
+| `/on-premise-vs-cloud-erp/` | 301 | `https://kpinfo.tech/insights/on-premise-vs-cloud-erp/` | 1 | 200 | `https://kpinfo.tech/insights/on-premise-vs-cloud-erp/` |
+
+Slash and no-slash roots pass. All three blog equivalents remain direct 301s. Four excluded redirects are unchanged; the four linked 404s and both marketing samples remain 404. All 56 sitemap URLs return canonical, indexable 200s. Robots passes; historical roots are absent from sitemap. The three destinations have one H1 each; all 72 checked internal resources/links return direct 200s. Zero internal links point at the old roots. [Exact HTTP evidence](step-11b-evidence/production.json).
+
+Production Steps 1C, 1G, 2, 3, 4, 7A–7E, 9B/9C and 10B all pass. Step 1G checks 32 redirects and 63 removed-project URLs. Step 3 checks 353 images with zero missing-alt, heading, duplicate-ID or empty-control issues. Step 10B preserves 21 article author entities (3 Krupa, 12 Poojan, 6 company fallbacks). All 56 pages match baseline content/metadata/schema/link facts. [Production regression exits](step-11b-evidence/production-regression-exits.json), [Step 1G production](step-11b-evidence/step1g-production.json), [production preservation](step-11b-evidence/preservation-production.json).
 
 ## Historical Backlink Evidence
 

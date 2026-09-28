@@ -1,0 +1,17 @@
+
+ ⛅️ wrangler 4.104.0 (update available 4.142.0)
+───────────────────────────────────────────────
+Using redirected Wrangler configuration.
+ - Configuration being used: "dist/server/wrangler.json"
+ - Original user's configuration: "wrangler.toml"
+ - Deploy configuration file: ".wrangler/deploy/config.json"
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mMore than one account available but unable to select one in non-interactive mode.[0m
+
+  Please set the appropriate `account_id` in your Wrangler configuration file or assign it to the `CLOUDFLARE_ACCOUNT_ID` environment variable.
+  Available accounts are (`<name>`: `<account_id>`):
+    `KP Infotech`: `c727a19f93045d1c218d54f510af40c2`
+    `Krupa@kpinfo.tech's Account`: `6d4d4cc521d6a5aa022eb0acc600febf`
+
+
+🪵  Logs were written to "/Users/krupa/Library/Preferences/.wrangler/logs/wrangler-2026-09-28_12-07-12_253.log"

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "f2b94321-5561-422a-b9f3-da1974350ea5",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "poojan@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "c7e1ada5-3113-4b0d-a6b0-3723cd35313a",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T10:11:34.040609Z"
+  },
+  {
+    "id": "b922428b-cf45-4d0d-9915-6995e0b715db",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "krupa@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "09ad3e0a-cbf2-4a27-8ce9-1c897e5aee9f",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T10:21:00.332258Z"
+  },
+  {
+    "id": "a4b98865-1abb-4105-ab33-7bfe92df44db",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "poojan@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "7bc1cef0-8631-4fd0-ac08-5d6fa069874b",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T10:22:13.272145Z"
+  },
+  {
+    "id": "9ec53838-db81-41f1-ba65-055b11f6c021",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "krupa@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "e11755db-64b1-4e3e-89e7-a3b235cce096",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T10:29:29.240681Z"
+  },
+  {
+    "id": "7cc86ee7-4449-4755-a3b3-22af3ab33814",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "poojan@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "11cec75f-cb1d-4ee8-85ea-de8f086694d2",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T10:31:22.49938Z"
+  },
+  {
+    "id": "3852cbd2-e2c0-4481-b898-5e5fe6251e56",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "poojan@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "9529616a-7e0e-4928-8c49-9e7d62b442d5",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T10:36:59.81962Z"
+  },
+  {
+    "id": "88d670ff-d603-4795-a1a3-7b19308605de",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "poojan@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "0b39dff5-d258-4ab4-abc7-48f74601d11f",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T11:06:26.325911Z"
+  },
+  {
+    "id": "8386fd52-adc7-4c53-bff2-cf4e52592d6e",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "krupa@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "dc07e26f-7357-4ee4-a4d1-15ff90b0a532",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T11:12:05.86027Z"
+  },
+  {
+    "id": "97470084-822e-4dec-b9fd-c86b9f6105f9",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "poojan@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "52bb3fb0-fb15-4c5c-a88b-3671b0f33abc",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T11:13:26.966112Z"
+  },
+  {
+    "id": "670a1d5e-1ae5-4413-9346-51fc01dce0aa",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "poojan@kpinfo.tech",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "6f7357ac-b9e0-4dd0-8a85-5f3fa6900db7",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-28T11:18:44.973019Z"
+  }
+]

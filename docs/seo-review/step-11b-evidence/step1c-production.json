@@ -1,0 +1,318 @@
+{
+  "checkedAt": "2026-09-28T12:08:40.925Z",
+  "origin": "https://kpinfo.tech",
+  "errors": [],
+  "sitemapIndex": [
+    "https://kpinfo.tech/sitemap-0.xml"
+  ],
+  "sitemapPageCount": 56,
+  "sitemapCaseStudies": [
+    "/work/cloud-cost-optimization-industrial-sme/",
+    "/work/collaboration-platform-distributed-teams/",
+    "/work/digital-banking-platform/",
+    "/work/omnichannel-ecommerce-platform/",
+    "/work/virtual-tours-ai-listings/"
+  ],
+  "htmlFilesScanned": 57,
+  "deadInternalLinks": [],
+  "legacyInternalLinks": [],
+  "hubCards": [
+    "/work/cloud-cost-optimization-industrial-sme/",
+    "/work/collaboration-platform-distributed-teams/",
+    "/work/digital-banking-platform/",
+    "/work/omnichannel-ecommerce-platform/",
+    "/work/virtual-tours-ai-listings/"
+  ],
+  "http": [
+    {
+      "path": "/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/careers/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/education/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/finance/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/healthcare/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/logistics/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/manufacturing/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/real-estate/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/retail-ecommerce/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/startups/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/2/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/3/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/angular-vs-react/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/best-hr-software-for-startups/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/best-seo-tools-for-small-businesses/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/best-web-application-frameworks/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/business-process-automation-tools/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/business-process-improvement-methods/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/category/automation-ai/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/category/cloud-devops/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/category/custom-software-development/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/category/digital-platforms-ecommerce/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/category/erp-business-systems/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/cloud-deployment-models-diagram/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/database-design-best-practices/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/devops-best-practices/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/erp-for-retail-stores/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/erp-implementation-cost/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/how-to-choose-erp-system/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/inventory-management-best-practices/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/kp-infotech-new-website-custom-software-automation-ai/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/minimum-viable-product-examples/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/mobile-app-monetization-strategies/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/node-js-frameworks/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/odoo-erp-complete-guide/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/on-premise-vs-cloud-erp/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/scalable-system-architecture/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/what-is-custom-software/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/privacy-policy/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/ai-automation-agents/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/business-automation/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/cloud-devops/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/custom-software-development/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/erp-software/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/sitemap-0.xml",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/sitemap-index.xml",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/terms-of-service/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/work/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/work/cloud-cost-optimization-industrial-sme/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/work/collaboration-platform-distributed-teams/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/work/digital-banking-platform/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/work/omnichannel-ecommerce-platform/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/work/virtual-tours-ai-listings/",
+      "status": 200,
+      "location": null
+    }
+  ]
+}

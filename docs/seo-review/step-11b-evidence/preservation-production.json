@@ -1,0 +1,22 @@
+{
+  "phase": "production",
+  "pagesCompared": 56,
+  "scopeChanges": [
+    {
+      "source": "/business-process-improvement-methods/",
+      "before": "/services/business-automation/",
+      "after": "/insights/business-process-improvement-methods/"
+    },
+    {
+      "source": "/on-premise-vs-cloud-erp/",
+      "before": "/services/erp-software/",
+      "after": "/insights/on-premise-vs-cloud-erp/"
+    },
+    {
+      "source": "/how-to-choose-erp-system/",
+      "before": "/services/erp-software/",
+      "after": "/insights/how-to-choose-erp-system/"
+    }
+  ],
+  "errors": []
+}

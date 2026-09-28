@@ -1,0 +1,106 @@
+{
+  "pages": 56,
+  "summary": [
+    {
+      "pillar": "custom-software-development",
+      "total": 80,
+      "body": 10,
+      "contextualPages": 10,
+      "global": 56,
+      "caseStudy": 4,
+      "industry": 8,
+      "insight": 9,
+      "uniquePages": 56,
+      "anchors": {
+        "Custom Software Development Services Custom Business Software That Replaces Manual Work Explore": 9,
+        "Large, long‑lived enterprise systems": 1,
+        "enterprise building a complex, microservices-based system": 1,
+        "custom software development": 2,
+        "build applications that can handle increased load": 1,
+        "launching a successful MVP": 1,
+        "building high-performance, scalable web applications": 1,
+        "custom enterprise software": 1,
+        "custom software for growing businesses": 1,
+        "View Service": 1,
+        "custom software development service": 1,
+        "Custom Software Development Services": 4
+      }
+    },
+    {
+      "pillar": "erp-software",
+      "total": 68,
+      "body": 7,
+      "contextualPages": 7,
+      "global": 56,
+      "caseStudy": 0,
+      "industry": 3,
+      "insight": 7,
+      "uniquePages": 56,
+      "anchors": {
+        "Odoo ERP Implementation & Customization Services Odoo ERP Systems for Growing Operations Explore": 4,
+        "Odoo ERP implementation and customization": 3,
+        "expertise required for successful implementations": 1,
+        "ERP implementation": 1,
+        "Integrate systems with suppliers": 1,
+        "implementation": 1,
+        "View Service": 1
+      }
+    },
+    {
+      "pillar": "business-automation",
+      "total": 69,
+      "body": 4,
+      "contextualPages": 4,
+      "global": 56,
+      "caseStudy": 0,
+      "industry": 7,
+      "insight": 4,
+      "uniquePages": 56,
+      "anchors": {
+        "Business Process Automation Services Automate Repetitive Work Across Your Business Explore": 8,
+        "business automation": 3,
+        "business automation services": 1,
+        "View Service": 1
+      }
+    },
+    {
+      "pillar": "ai-automation-agents",
+      "total": 64,
+      "body": 3,
+      "contextualPages": 3,
+      "global": 56,
+      "caseStudy": 2,
+      "industry": 1,
+      "insight": 3,
+      "uniquePages": 56,
+      "anchors": {
+        "AI Agent Development & Automation Services AI Agents That Handle Repetitive Operations Work Explore": 2,
+        "AI automation agents": 2,
+        "AI automation and agent systems": 1,
+        "View Service": 1,
+        "AI Agent Development & Automation Services": 2
+      }
+    },
+    {
+      "pillar": "cloud-devops",
+      "total": 70,
+      "body": 4,
+      "contextualPages": 4,
+      "global": 56,
+      "caseStudy": 3,
+      "industry": 5,
+      "insight": 4,
+      "uniquePages": 56,
+      "anchors": {
+        "Cloud & DevOps Services Reliable Cloud Infrastructure for Scalable Operations Explore": 6,
+        "cost management (FinOps)": 1,
+        "Cloud & DevOps services": 1,
+        "cloud and DevOps services": 1,
+        "deployments, monitoring": 1,
+        "View Service": 1,
+        "Cloud & DevOps Services": 3
+      }
+    }
+  ],
+  "errors": []
+}
