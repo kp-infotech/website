@@ -6,6 +6,7 @@ import cloudflare from '@astrojs/cloudflare';
 import react from '@astrojs/react';
 import sanity from '@sanity/astro';
 import icon from 'astro-icon';
+import proofGovernance from './scripts/seo/proof-governance-integration.mjs';
 
 // Load environment variables from .env files (for local dev)
 const env = loadEnv(
@@ -45,6 +46,7 @@ export default defineConfig({
   },
   integrations: [
     sitemap(),
+    proofGovernance({ projectId: PUBLIC_SANITY_PROJECT_ID, dataset: PUBLIC_SANITY_DATASET, token: process.env.SANITY_API_TOKEN || env.SANITY_API_TOKEN }),
     react(),
     icon({
       include: {

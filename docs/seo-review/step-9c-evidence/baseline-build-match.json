@@ -1,0 +1,231 @@
+{
+  "timestamp": "2026-09-28T10:18:59.388Z",
+  "pages": [
+    {
+      "path": "/",
+      "differences": []
+    },
+    {
+      "path": "/about/",
+      "differences": []
+    },
+    {
+      "path": "/careers/",
+      "differences": []
+    },
+    {
+      "path": "/contact/",
+      "differences": []
+    },
+    {
+      "path": "/industries/",
+      "differences": []
+    },
+    {
+      "path": "/industries/education/",
+      "differences": []
+    },
+    {
+      "path": "/industries/finance/",
+      "differences": []
+    },
+    {
+      "path": "/industries/healthcare/",
+      "differences": []
+    },
+    {
+      "path": "/industries/logistics/",
+      "differences": []
+    },
+    {
+      "path": "/industries/manufacturing/",
+      "differences": []
+    },
+    {
+      "path": "/industries/real-estate/",
+      "differences": []
+    },
+    {
+      "path": "/industries/retail-ecommerce/",
+      "differences": []
+    },
+    {
+      "path": "/industries/startups/",
+      "differences": []
+    },
+    {
+      "path": "/insights/",
+      "differences": []
+    },
+    {
+      "path": "/insights/2/",
+      "differences": []
+    },
+    {
+      "path": "/insights/3/",
+      "differences": []
+    },
+    {
+      "path": "/insights/angular-vs-react/",
+      "differences": []
+    },
+    {
+      "path": "/insights/best-hr-software-for-startups/",
+      "differences": []
+    },
+    {
+      "path": "/insights/best-seo-tools-for-small-businesses/",
+      "differences": []
+    },
+    {
+      "path": "/insights/best-web-application-frameworks/",
+      "differences": []
+    },
+    {
+      "path": "/insights/business-process-automation-tools/",
+      "differences": []
+    },
+    {
+      "path": "/insights/business-process-improvement-methods/",
+      "differences": []
+    },
+    {
+      "path": "/insights/category/automation-ai/",
+      "differences": []
+    },
+    {
+      "path": "/insights/category/cloud-devops/",
+      "differences": []
+    },
+    {
+      "path": "/insights/category/custom-software-development/",
+      "differences": []
+    },
+    {
+      "path": "/insights/category/digital-platforms-ecommerce/",
+      "differences": []
+    },
+    {
+      "path": "/insights/category/erp-business-systems/",
+      "differences": []
+    },
+    {
+      "path": "/insights/cloud-deployment-models-diagram/",
+      "differences": []
+    },
+    {
+      "path": "/insights/database-design-best-practices/",
+      "differences": []
+    },
+    {
+      "path": "/insights/devops-best-practices/",
+      "differences": []
+    },
+    {
+      "path": "/insights/erp-for-retail-stores/",
+      "differences": []
+    },
+    {
+      "path": "/insights/erp-implementation-cost/",
+      "differences": []
+    },
+    {
+      "path": "/insights/how-to-choose-erp-system/",
+      "differences": []
+    },
+    {
+      "path": "/insights/inventory-management-best-practices/",
+      "differences": []
+    },
+    {
+      "path": "/insights/kp-infotech-new-website-custom-software-automation-ai/",
+      "differences": []
+    },
+    {
+      "path": "/insights/minimum-viable-product-examples/",
+      "differences": []
+    },
+    {
+      "path": "/insights/mobile-app-monetization-strategies/",
+      "differences": []
+    },
+    {
+      "path": "/insights/node-js-frameworks/",
+      "differences": []
+    },
+    {
+      "path": "/insights/odoo-erp-complete-guide/",
+      "differences": []
+    },
+    {
+      "path": "/insights/on-premise-vs-cloud-erp/",
+      "differences": []
+    },
+    {
+      "path": "/insights/scalable-system-architecture/",
+      "differences": []
+    },
+    {
+      "path": "/insights/what-is-custom-software/",
+      "differences": []
+    },
+    {
+      "path": "/privacy-policy/",
+      "differences": []
+    },
+    {
+      "path": "/services/",
+      "differences": []
+    },
+    {
+      "path": "/services/ai-automation-agents/",
+      "differences": []
+    },
+    {
+      "path": "/services/business-automation/",
+      "differences": []
+    },
+    {
+      "path": "/services/cloud-devops/",
+      "differences": []
+    },
+    {
+      "path": "/services/custom-software-development/",
+      "differences": []
+    },
+    {
+      "path": "/services/erp-software/",
+      "differences": []
+    },
+    {
+      "path": "/terms-of-service/",
+      "differences": []
+    },
+    {
+      "path": "/work/",
+      "differences": []
+    },
+    {
+      "path": "/work/cloud-cost-optimization-industrial-sme/",
+      "differences": []
+    },
+    {
+      "path": "/work/collaboration-platform-distributed-teams/",
+      "differences": []
+    },
+    {
+      "path": "/work/digital-banking-platform/",
+      "differences": []
+    },
+    {
+      "path": "/work/omnichannel-ecommerce-platform/",
+      "differences": []
+    },
+    {
+      "path": "/work/virtual-tours-ai-listings/",
+      "differences": []
+    }
+  ],
+  "expectedDifference": "Only CMS dateModified advances on the five patched records",
+  "errors": []
+}

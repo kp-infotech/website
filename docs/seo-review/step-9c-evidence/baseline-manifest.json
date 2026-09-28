@@ -1,0 +1,367 @@
+{
+  "release": "aae8d23ec236a59a8f4f5c129df1c4b0fdb31df4",
+  "capturedAt": "2026-09-28T10:07:38.649Z",
+  "records": [
+    {
+      "id": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+      "revision": "IVLcVaE7g6HuAB08OUm0ER",
+      "slug": "collaboration-platform-distributed-teams"
+    },
+    {
+      "id": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+      "revision": "IVLcVaE7g6HuAB08OUm0ER",
+      "slug": "omnichannel-ecommerce-platform"
+    },
+    {
+      "id": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+      "revision": "IVLcVaE7g6HuAB08OUm0ER",
+      "slug": "digital-banking-platform"
+    },
+    {
+      "id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+      "revision": "IVLcVaE7g6HuAB08OUm0ER",
+      "slug": "cloud-cost-optimization-industrial-sme"
+    },
+    {
+      "id": "e907e1d9-f6be-4f56-a048-276e29d2d3fc",
+      "revision": "IVLcVaE7g6HuAB08OUm0ER",
+      "slug": "virtual-tours-ai-listings"
+    }
+  ],
+  "source": [
+    {
+      "path": "sanity/schemas/caseStudy.ts",
+      "sha256": "c4a2c37489e8c77c8d96b7b0f7deb5cc363770f027654830c580f053f233c631"
+    },
+    {
+      "path": "sanity/schemas/objects/resultMetric.ts",
+      "sha256": "4bd496f1be3ac990a786339ae214c803b4ebd1177264c719262133008b5d7ebb"
+    },
+    {
+      "path": "src/pages/work/[slug].astro",
+      "sha256": "fa07fc0b98570c8d7b34ea6c48346b08ab7012c35bcd7d151c06c066986716cc"
+    },
+    {
+      "path": "src/components/sections/CaseStudyHero.astro",
+      "sha256": "4705db1db522f6375d255be693124ae271f835fa44eed4c483f3394c056fdf19"
+    },
+    {
+      "path": "src/components/sections/WorkGrid.astro",
+      "sha256": "ab1cd5a8be629188ef6c112e4605ac969c8175582510e8d03412600128b22799"
+    },
+    {
+      "path": "src/pages/work/index.astro",
+      "sha256": "c943552714139fb9280d358f89463933d81bdc6b437b7021e623da244a93fbeb"
+    },
+    {
+      "path": "src/pages/index.astro",
+      "sha256": "e954cef12f02ebb23c3a0a1b5d82e6e8086561bb7d02033af5030693cb86dc52"
+    },
+    {
+      "path": "src/components/sections/FeaturedWork.astro",
+      "sha256": "1a65a12f835075a7e85b96fe143d36eae550a745003edba0a8b0ced5d5fb1e0e"
+    },
+    {
+      "path": "src/components/sections/ServiceWork.astro",
+      "sha256": "962f420f34de901e0b500c4314065003d69955539fbba4a3a435105eb4e3e495"
+    },
+    {
+      "path": "src/components/sections/NextProject.astro",
+      "sha256": "eeac530a02b7d9ca1ed8e6b3a227dd0e59f9eecf878a9786f26abfea3ae121a2"
+    },
+    {
+      "path": "src/lib/queries.ts",
+      "sha256": "b1ce9923c6c5c7724d1e8305c9166c090aa1fac6497dd8cf09b60d36ad388a72"
+    },
+    {
+      "path": "scripts/seo/audit-step9b.mjs",
+      "sha256": "0d1d077f4c3410cdf39db5a593e899ac54e23fd50db475759b4e31d8c717acc7"
+    },
+    {
+      "path": "tests/step-9b-proof-risk.test.mjs",
+      "sha256": "01f854d9647f23481c577036b20bda3aec2059fbdf290374209374fdbcb9a9d0"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://kpinfo.tech/",
+      "status": 200,
+      "sha256": "e3c14d3fd78316a2e7217a56dca5fdad4fdce9474f2ee0b1d10180291aa91680"
+    },
+    {
+      "url": "https://kpinfo.tech/about/",
+      "status": 200,
+      "sha256": "7606586fc912e4f6978d9f32de080bcd46b6fdbbcee886711da52f42563e9f2b"
+    },
+    {
+      "url": "https://kpinfo.tech/careers/",
+      "status": 200,
+      "sha256": "53e0c2e82fde832a32fcf7e724c9cb33f808864e57ceb170271c0a5f1563ff10"
+    },
+    {
+      "url": "https://kpinfo.tech/contact/",
+      "status": 200,
+      "sha256": "827f5f78d7336c5c047d756ddfa39043d5ccd79b7084da6298bfa361b5f5bdc2"
+    },
+    {
+      "url": "https://kpinfo.tech/industries/",
+      "status": 200,
+      "sha256": "431266a6872959f788e0daa175a9a2056ca1f6492beacd6719cff43b23ca6c60"
+    },
+    {
+      "url": "https://kpinfo.tech/industries/education/",
+      "status": 200,
+      "sha256": "596eb8557704985bcee20a861a4b33547f662157c20f0791b2f47e34459ef26b"
+    },
+    {
+      "url": "https://kpinfo.tech/industries/finance/",
+      "status": 200,
+      "sha256": "1f9ef59f2109507235a9915a2bc891c3b88dfa0d52db6863a03b8f52bdae1fe4"
+    },
+    {
+      "url": "https://kpinfo.tech/industries/healthcare/",
+      "status": 200,
+      "sha256": "f7543952ab4098a9af684f0632dbd9d408f7561487fba935cc03f31ae200922f"
+    },
+    {
+      "url": "https://kpinfo.tech/industries/logistics/",
+      "status": 200,
+      "sha256": "c737c43a27f2f072bdd2c2778e5bc37cc11c8f79893ed22c5871ef3cb700d485"
+    },
+    {
+      "url": "https://kpinfo.tech/industries/manufacturing/",
+      "status": 200,
+      "sha256": "6bfad8ff20d5c0f88068847ecdbdb23aa96b856fe373c8761e935d00180421c5"
+    },
+    {
+      "url": "https://kpinfo.tech/industries/real-estate/",
+      "status": 200,
+      "sha256": "7025a265769c5a552296e3d6c5897be2ed556a0e9f9fbd66df360c80df73642a"
+    },
+    {
+      "url": "https://kpinfo.tech/industries/retail-ecommerce/",
+      "status": 200,
+      "sha256": "f9f1e7311aac696c32f925f38496aa2ae449ff76252c07f524e68d6fb1c25c8a"
+    },
+    {
+      "url": "https://kpinfo.tech/industries/startups/",
+      "status": 200,
+      "sha256": "dfb82f61a5f740c52bf39c8ced5690065620c8e75759fae1b521d3432202e9f7"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/",
+      "status": 200,
+      "sha256": "fdd08ebb12386a0f98b9650c83b72187b62d5146f4673a53181e877cfd68d307"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/2/",
+      "status": 200,
+      "sha256": "acd2e87e8b48ba08386ddaef8b96867b0acf114aa7b2d06c7fda3771d7e8db35"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/3/",
+      "status": 200,
+      "sha256": "b19f8e4e034b471501d224202e54fedf6427962ae1400bec641df583cb91f87f"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/angular-vs-react/",
+      "status": 200,
+      "sha256": "ab31ba9d392310c206ff2cd28249f9882de74167e91948dad67dae02426bb4be"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-hr-software-for-startups/",
+      "status": 200,
+      "sha256": "81025fccfa781a5235f45aff11e22f70c432bb75c54e52466d1881195b214d73"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-seo-tools-for-small-businesses/",
+      "status": 200,
+      "sha256": "a5c94384dbb353939f6d48e3b66503e008c094e47a3e5000eb9b21bcbbe96315"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-web-application-frameworks/",
+      "status": 200,
+      "sha256": "3f426c1c5c902b2d1ef91e295c395e466de84dc8403157a2a600341af97f2e34"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/business-process-automation-tools/",
+      "status": 200,
+      "sha256": "029183fdcd19167d49bd7f32afbdbc4fcdf1de06d9fd697f95826f0dabede0ec"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/business-process-improvement-methods/",
+      "status": 200,
+      "sha256": "b9a17344cfa4712872ef0cd8970785db785820c433f8be09e523ac023d0344fd"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/automation-ai/",
+      "status": 200,
+      "sha256": "a7773d37f0a31ba7dfe44f8b7e561d79bfffae56e12672b1449984c496ffbf10"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/cloud-devops/",
+      "status": 200,
+      "sha256": "98eff5ccac8ce0a6c36e60617b13d3b041f2b03d1984074047e92e534e4f24cf"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/custom-software-development/",
+      "status": 200,
+      "sha256": "0ddc6c4b62e7b64a31a384bbeef767ec43b91efcf38dc8c571d56d9e940a8228"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/digital-platforms-ecommerce/",
+      "status": 200,
+      "sha256": "63b21ee4b58f2ff829ad991b12812ac0f44179e9e8228eac4f38a7353724123c"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/erp-business-systems/",
+      "status": 200,
+      "sha256": "c0e1fa806155d33f5f082a79af907ddd32780e2e72a5b58ee0d4825eb4599e14"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/cloud-deployment-models-diagram/",
+      "status": 200,
+      "sha256": "63b4f349626b522061f64ed790a783bb019437344e52efcd3e345da09d9a0245"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/database-design-best-practices/",
+      "status": 200,
+      "sha256": "c963d4d1ee5e7baef0b0a342be4f0e51dd5d21220e920e152d8ad7c6a69b4d8e"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/devops-best-practices/",
+      "status": 200,
+      "sha256": "b41c34354153f24255e359c5e602d2426a338993cae96b36d5129124437ac54a"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/erp-for-retail-stores/",
+      "status": 200,
+      "sha256": "1c0ce15db2d44da893314175d843a541a81cd5c015cb289ae884effc6b093c1a"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/erp-implementation-cost/",
+      "status": 200,
+      "sha256": "64b7928d82e07df098280d178e794b3818bbdd7ab2500855e322815cce552556"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/how-to-choose-erp-system/",
+      "status": 200,
+      "sha256": "6a5f3e4d627fec8ec2b4d55244ccd7bcae59dbaf23d18e292b5e82f7adc57e34"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/inventory-management-best-practices/",
+      "status": 200,
+      "sha256": "af3eec05d0e1437c6f534daabb93cb1a4ee794deb9105805cfb57390be32e9bf"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/kp-infotech-new-website-custom-software-automation-ai/",
+      "status": 200,
+      "sha256": "bf354533ee5adb8056d13b79ac8de9ed633959c4261850c6ad0179bb54caefa0"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/minimum-viable-product-examples/",
+      "status": 200,
+      "sha256": "904cd55db877d76c67bfd0e332e0f6238c4206587fda58f726890fc37a134ce6"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/mobile-app-monetization-strategies/",
+      "status": 200,
+      "sha256": "f9adbd2eb48883bda9e24bdd6a073e0255e12de1d9232da3aae308c62cf0a918"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/node-js-frameworks/",
+      "status": 200,
+      "sha256": "39fcfb2280195c7d1be4c64d614b04b6139de83b19f7bc86536cbdf53868e9be"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/odoo-erp-complete-guide/",
+      "status": 200,
+      "sha256": "dac1902c4ccd406eeb1a4b14e67699eeba4842928f89d88e65f6cdc4ec87e10e"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/",
+      "status": 200,
+      "sha256": "d2df715c6aa7cf046a3cb446ca7bd7bc31f091a01b265df58e5dcf1c74a6478d"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/scalable-system-architecture/",
+      "status": 200,
+      "sha256": "721ef4559ee781f19d981fb21b24a019b11fb0491b7307359ae68f69421ce9a8"
+    },
+    {
+      "url": "https://kpinfo.tech/insights/what-is-custom-software/",
+      "status": 200,
+      "sha256": "dff273d66063da539cbb096f7e68a07da1418131d3b812f454a4023d84c96a55"
+    },
+    {
+      "url": "https://kpinfo.tech/privacy-policy/",
+      "status": 200,
+      "sha256": "453545780f35af6bc1c0caec369394a1d74b75076535eb354ea22b8aa3ff036a"
+    },
+    {
+      "url": "https://kpinfo.tech/services/",
+      "status": 200,
+      "sha256": "39c70bffeb2763d6b58288aaa7ff076cf470e8707d8d5fc8ef394aee3750dd83"
+    },
+    {
+      "url": "https://kpinfo.tech/services/ai-automation-agents/",
+      "status": 200,
+      "sha256": "8802cf70a5c0029e3df4e4be467113f768b9571c350bdb8783305b991e8378e1"
+    },
+    {
+      "url": "https://kpinfo.tech/services/business-automation/",
+      "status": 200,
+      "sha256": "48251eb5c0c673382998fad82b6946b293649e238bbb9905104fabdb694156b6"
+    },
+    {
+      "url": "https://kpinfo.tech/services/cloud-devops/",
+      "status": 200,
+      "sha256": "5efb6fa9904305761bd6e814d898540266ecd629be101fb6d1fca49031529b58"
+    },
+    {
+      "url": "https://kpinfo.tech/services/custom-software-development/",
+      "status": 200,
+      "sha256": "cca3586c53bbdd15ec267acb0980f83e05979206bc77ad6296d44f82c404b643"
+    },
+    {
+      "url": "https://kpinfo.tech/services/erp-software/",
+      "status": 200,
+      "sha256": "fc53bdde3a5615d222757b88ed3bc26319b6459f829c03059748fa2eea81f6c6"
+    },
+    {
+      "url": "https://kpinfo.tech/terms-of-service/",
+      "status": 200,
+      "sha256": "7243cbdbbe9b683203717776ed33f5c4135889381a99c4f1f822b6146e652d0c"
+    },
+    {
+      "url": "https://kpinfo.tech/work/",
+      "status": 200,
+      "sha256": "0cc6343af538eba2df1a97a9fe4ab6c1055ad8eeabc9021f90395b1cef4a47c8"
+    },
+    {
+      "url": "https://kpinfo.tech/work/cloud-cost-optimization-industrial-sme/",
+      "status": 200,
+      "sha256": "47039722ec206ec7d319eb7ad1177b7f470123cdb4c639ec353b0707a2194c3e"
+    },
+    {
+      "url": "https://kpinfo.tech/work/collaboration-platform-distributed-teams/",
+      "status": 200,
+      "sha256": "b5632bbb70c6dbb98dd000c8284b983f69d96cc74e7c18acd51b2fa2dedae2e9"
+    },
+    {
+      "url": "https://kpinfo.tech/work/digital-banking-platform/",
+      "status": 200,
+      "sha256": "4bf9474216765648beefc77fb623cfbd4e3c14795cca918a95b6b04b011177b3"
+    },
+    {
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "status": 200,
+      "sha256": "d887e544582dce8305b14e50a7ab378763fbc80b8d129a12b97a2f4666e488f8"
+    },
+    {
+      "url": "https://kpinfo.tech/work/virtual-tours-ai-listings/",
+      "status": 200,
+      "sha256": "164681e8bdaa2c019aba2ed58630d1d0b298ac8bc47c901b5d9509a7e85ef218"
+    }
+  ]
+}

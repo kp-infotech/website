@@ -1,0 +1,54 @@
+{
+  "transactionId": "IVLcVaE7g6HuAB08OV78Zk",
+  "changed": [
+    "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+    "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+    "a2255729-fe51-45d5-b190-914ba7f86ea2",
+    "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+    "e907e1d9-f6be-4f56-a048-276e29d2d3fc"
+  ],
+  "unchanged": 358,
+  "errors": [],
+  "states": [
+    {
+      "id": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+      "revision": "IVLcVaE7g6HuAB08OV78Zk",
+      "slug": "collaboration-platform-distributed-teams",
+      "publicProofType": "technicalOverview",
+      "evidenceStatus": "pending",
+      "publicationPermission": "unknown"
+    },
+    {
+      "id": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+      "revision": "IVLcVaE7g6HuAB08OV78Zk",
+      "slug": "omnichannel-ecommerce-platform",
+      "publicProofType": "technicalOverview",
+      "evidenceStatus": "pending",
+      "publicationPermission": "unknown"
+    },
+    {
+      "id": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+      "revision": "IVLcVaE7g6HuAB08OV78Zk",
+      "slug": "digital-banking-platform",
+      "publicProofType": "technicalOverview",
+      "evidenceStatus": "pending",
+      "publicationPermission": "unknown"
+    },
+    {
+      "id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+      "revision": "IVLcVaE7g6HuAB08OV78Zk",
+      "slug": "cloud-cost-optimization-industrial-sme",
+      "publicProofType": "technicalOverview",
+      "evidenceStatus": "pending",
+      "publicationPermission": "unknown"
+    },
+    {
+      "id": "e907e1d9-f6be-4f56-a048-276e29d2d3fc",
+      "revision": "IVLcVaE7g6HuAB08OV78Zk",
+      "slug": "virtual-tours-ai-listings",
+      "publicProofType": "technicalOverview",
+      "evidenceStatus": "pending",
+      "publicationPermission": "unknown"
+    }
+  ]
+}

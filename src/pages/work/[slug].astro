@@ -9,6 +9,7 @@ import NextProject from '../../components/sections/NextProject.astro';
 import CTASection from '../../components/sections/CTASection.astro';
 import { client, urlFor } from '../../lib/sanity';
 import { allCaseStudiesQuery, caseStudyBySlugQuery } from '../../lib/queries';
+import { publicProof } from '../../lib/proof-governance.js';
 import { breadcrumbSchema, canonicalUrl, ORG_ID } from '../../lib/seo';
 
 export async function getStaticPaths() {
@@ -37,7 +38,8 @@ if (study.heroImage) {
   }
 }
 
-const isTechnicalOverview = study.presentationType !== 'caseStudy';
+const proof = publicProof(study);
+const isTechnicalOverview = !proof.verified;
 
 const seoTitle = study.seoTitle || study.title;
 const seoDescription = study.seoDescription || study.excerpt;
@@ -64,9 +66,9 @@ const caseStudyJsonLd = [
       ...(study.services || []).map((service: any) => service?.title).filter(Boolean),
       ...(study.industries || []).map((industry: any) => industry?.title).filter(Boolean),
     ],
-    client: !isTechnicalOverview && study.client ? {
+    client: proof.verified && proof.client ? {
       '@type': 'Organization',
-      name: study.client,
+      name: proof.client,
     } : undefined,
   },
 ];
@@ -81,30 +83,30 @@ const caseStudyJsonLd = [
   <CaseStudyHero
     technicalOverview={isTechnicalOverview}
     title={study.title}
-    client={study.client}
-    year={isTechnicalOverview ? undefined : study.year}
+    client={proof.client}
+    year={proof.year}
     services={study.services}
     heroImageUrl={heroImageUrl}
     slug={slug}
   />
 
-  {!isTechnicalOverview && study.results && study.results.length > 0 && (
-    <ResultsStrip results={study.results} />
+  {proof.results.length > 0 && (
+    <ResultsStrip results={proof.results} />
   )}
 
   <ProjectOverview
     technicalOverview={isTechnicalOverview}
     challenge={study.challenge}
     approach={study.approach}
-    resultsSummary={isTechnicalOverview ? undefined : study.resultsSummary}
+    resultsSummary={proof.resultsSummary}
   />
 
   {study.content && study.content.length > 0 && (
     <CaseStudyContent content={study.content} />
   )}
 
-  {!isTechnicalOverview && study.testimonial?.quote && (
-    <ProjectTestimonial testimonial={study.testimonial} />
+  {proof.testimonial?.quote && (
+    <ProjectTestimonial testimonial={proof.testimonial} />
   )}
 
   {study.nextProject && (

@@ -1,0 +1,4 @@
+- Clean output folder
+✔ Clean output folder (3ms)
+- Build Sanity Studio
+✔ Build Sanity Studio (13096ms)

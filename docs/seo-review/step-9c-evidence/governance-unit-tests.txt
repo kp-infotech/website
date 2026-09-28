@@ -1,0 +1,23 @@
+✔ verified publication requires both approvals for every status combination (0.669792ms)
+✔ missing state and legacy presentation toggle never authorize publication (0.081708ms)
+✔ technical overview tolerates but never exposes historical hidden proof (0.94975ms)
+✔ verified results require an individual review and non-empty value/label (0.098209ms)
+✔ year, summary and testimonial require separate affirmative review (0.074459ms)
+✔ revoked permission suppresses all proof even when individual markers remain approved (0.046167ms)
+✔ work queries protect client identity and year on every card surface (9.380417ms)
+✔ detail GROQ removes historical proof and helper prevents a second leak (1.119042ms)
+✔ valid synthetic verified detail projects only reviewed proof (0.892584ms)
+✔ sensitive assertions in technical copy are flagged without scanning educational documents (0.773458ms)
+✔ homepage queries expose neither stats nor testimonials even when CMS is populated (0.676625ms)
+✔ production build enforces both input review and emitted proof audit (0.576125ms)
+✔ governance output audit rejects a new delivery year and hidden state leakage (16.2635ms)
+✔ Studio document validation enforces the same publication rule (1208.172042ms)
+✔ Studio result validation allows hidden historical entries but blocks unreviewed public results (12.293ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1343.657417

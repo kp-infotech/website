@@ -1,4 +1,5 @@
 // GROQ Queries for KP Infotech website
+import { PUBLIC_CLIENT_GROQ, PUBLIC_YEAR_GROQ, PUBLIC_RESULTS_GROQ, PUBLIC_SUMMARY_GROQ, PUBLIC_TESTIMONIAL_GROQ } from './proof-governance.js';
 
 import { PUBLIC_CASE_STUDY_GROQ_FILTER } from './public-case-study-policy.js';
 
@@ -81,7 +82,7 @@ export const homepageDataQuery = `
     _id,
     title,
     slug,
-    client,
+    ${PUBLIC_CLIENT_GROQ},
     thumbnailImage
   }
 }
@@ -141,7 +142,7 @@ export const serviceBySlugQuery = `
       _id,
       title,
       slug,
-      client,
+      ${PUBLIC_CLIENT_GROQ},
       thumbnailImage,
       excerpt
     },
@@ -216,7 +217,7 @@ export const industryBySlugQuery = `
       _id,
       title,
       slug,
-      client,
+      ${PUBLIC_CLIENT_GROQ},
       thumbnailImage,
       excerpt
     },
@@ -242,8 +243,8 @@ export const allCaseStudiesQuery = `
     _id,
     title,
     slug,
-    client,
-    year,
+    ${PUBLIC_CLIENT_GROQ},
+    ${PUBLIC_YEAR_GROQ},
     excerpt,
     cardSize,
     thumbnailImage,
@@ -266,7 +267,7 @@ export const featuredCaseStudiesQuery = `
     _id,
     title,
     slug,
-    client,
+    ${PUBLIC_CLIENT_GROQ},
     thumbnailImage,
     industries[]->{
       _id,
@@ -281,11 +282,16 @@ export const caseStudyBySlugQuery = `
     _id,
     _createdAt,
     _updatedAt,
-    presentationType,
+    publicProofType,
+    evidenceStatus,
+    publicationPermission,
+    projectDateReviewed,
+    resultsSummaryReviewed,
+    testimonialReviewed,
     title,
     slug,
-    client,
-    year,
+    ${PUBLIC_CLIENT_GROQ},
+    ${PUBLIC_YEAR_GROQ},
     excerpt,
     thumbnailImage,
     heroImage,
@@ -327,7 +333,7 @@ export const caseStudyBySlugQuery = `
         }
       }
     },
-    resultsSummary,
+    ${PUBLIC_SUMMARY_GROQ},
     content[]{
       ...,
       markDefs[]{
@@ -342,16 +348,8 @@ export const caseStudyBySlugQuery = `
         }
       }
     },
-    results,
-    testimonial->{
-      _id,
-      quote,
-      authorName,
-      authorRole,
-      company,
-      companyLogo,
-      authorPhoto
-    },
+    ${PUBLIC_RESULTS_GROQ},
+    ${PUBLIC_TESTIMONIAL_GROQ},
     seoTitle,
     seoDescription,
     order,
@@ -359,7 +357,7 @@ export const caseStudyBySlugQuery = `
       _id,
       title,
       slug,
-      client,
+      ${PUBLIC_CLIENT_GROQ},
       thumbnailImage
     }
   }
