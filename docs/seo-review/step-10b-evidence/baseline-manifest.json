@@ -1,0 +1,239 @@
+{
+  "timestamp": "2026-09-28T11:02:48.630Z",
+  "commit": "ed85e2fda0daa8e258cc44e666c9e11aeb4c8419",
+  "docs": 363,
+  "pages": 56,
+  "revisions": [
+    {
+      "id": "01edc29a-94b5-4d89-b93c-c519a1addf17",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-07-14T08:41:00",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "15c6587c-de22-4015-b264-6ceae08c47d6",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "ef223482-0edc-4d32-aad6-c87c2bf09432",
+        "_type": "reference"
+      },
+      "publishedAt": "2026-06-25T14:12:00.000Z",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "22114651-112b-40f6-af14-a6ecdd448dfd",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-09-12T08:47:03Z",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "3011f67f-8bba-43b3-b60d-8896384d64a0",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-10-13T07:19:26",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "376db61e-bc91-4f7f-8a3c-a2c3b7ef60b9",
+      "revision": "Xe0A1k3WLpDZQN3vt63OC4",
+      "type": "siteSettings",
+      "updatedAt": "2026-09-17T04:55:49Z"
+    },
+    {
+      "id": "3e40f487-87db-42d0-a113-86a22fed6393",
+      "revision": "Xe0A1k3WLpDZQN3vt6h7Lj",
+      "type": "blogPost",
+      "author": {
+        "_ref": "ef223482-0edc-4d32-aad6-c87c2bf09432",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-09-20T07:22:54",
+      "updatedAt": "2026-09-17T06:16:19Z"
+    },
+    {
+      "id": "439cf1fe-7b82-4d5c-8566-3586e6d1dd72",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-09-18T07:09:15",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "45e3cd51-1204-4aa9-bc63-7d61683d616a",
+      "revision": "Xe0A1k3WLpDZQN3vt6h7Lj",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-07-09T08:52:06",
+      "updatedAt": "2026-09-17T06:16:19Z"
+    },
+    {
+      "id": "7a6b6881-d12d-4f83-a314-c3f00f8819d2",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-09-12T06:57:29Z",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "b2ca9ea9-cb68-4957-b502-eb0d437deeb7",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-09-08T06:57:00Z",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "bbc095f6-0148-4f75-8e1a-3dadbab25d1f",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-08-16T06:48:00",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "blogPost.business-process-automation-tools",
+      "revision": "TjsscmeD2PKZPEoP8NRK53",
+      "type": "blogPost",
+      "publishedAt": "2025-11-06T06:31:00.000Z",
+      "updatedAt": "2026-07-01T06:31:57Z"
+    },
+    {
+      "id": "blogPost.business-process-improvement-methods",
+      "revision": "TjsscmeD2PKZPEoP8NRKqI",
+      "type": "blogPost",
+      "publishedAt": "2025-11-26T06:32:00.000Z",
+      "updatedAt": "2026-07-01T06:32:12Z"
+    },
+    {
+      "id": "blogPost.devops-best-practices",
+      "revision": "1rt65YukpwbJFhGzUE3m3V",
+      "type": "blogPost",
+      "publishedAt": "2026-03-12T06:32:00.000Z",
+      "updatedAt": "2026-07-01T06:32:45Z"
+    },
+    {
+      "id": "blogPost.how-to-choose-erp-system",
+      "revision": "1rt65YukpwbJFhGzUE3cD3",
+      "type": "blogPost",
+      "publishedAt": "2025-12-12T06:32:00.000Z",
+      "updatedAt": "2026-07-01T06:32:23Z"
+    },
+    {
+      "id": "blogPost.on-premise-vs-cloud-erp",
+      "revision": "TjsscmeD2PKZPEoP8NRNRZ",
+      "type": "blogPost",
+      "publishedAt": "2026-01-12T06:32:00.000Z",
+      "updatedAt": "2026-07-01T06:32:35Z"
+    },
+    {
+      "id": "blogPost.what-is-custom-software",
+      "revision": "ZJzLgKtH0212rQwJy1jNa0",
+      "type": "blogPost",
+      "publishedAt": "2025-10-12T06:31:00.000Z",
+      "updatedAt": "2026-07-01T06:31:42Z"
+    },
+    {
+      "id": "c35f7505-422b-4c6a-aebb-557e383cc66f",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-07-11T09:34:12",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "c69b5f83-c71d-456c-9d23-60d1dc867fab",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-09-28T06:29:08",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "c78863d6-a962-4365-a153-7e1942d0f0b8",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "ef223482-0edc-4d32-aad6-c87c2bf09432",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-10-12T07:19:38",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    },
+    {
+      "id": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+      "revision": "RfimE1gVC9ER6WRH3kjbQf",
+      "type": "teamMember",
+      "updatedAt": "2026-06-25T14:28:39Z"
+    },
+    {
+      "id": "ef223482-0edc-4d32-aad6-c87c2bf09432",
+      "revision": "FLWOnYzhRkuT5CLpJU4eX2",
+      "type": "teamMember",
+      "updatedAt": "2026-06-25T14:27:31Z"
+    },
+    {
+      "id": "ef89f4cb-8421-46ff-9ba6-628fd3647e1e",
+      "revision": "Z2CLvEAU9G6vkSOHo6CUdJ",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-08-29T10:28:50Z",
+      "updatedAt": "2026-06-25T12:14:43Z"
+    },
+    {
+      "id": "fc2fe8e6-9359-4626-919e-ec95006b731a",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+      "type": "blogPost",
+      "author": {
+        "_ref": "d18b9ffb-f3a0-448c-97a6-59a4e14e027d",
+        "_type": "reference"
+      },
+      "publishedAt": "2025-09-29T06:35:17",
+      "updatedAt": "2026-09-17T07:49:05Z"
+    }
+  ],
+  "sha256": {
+    "cms-before.json": "17c8480520566f958f937aa9be862f4fdb7fcb86161f590d4a2906897fb9085d",
+    "live-before.json": "e6bd664e55e1e81371e7b65552b233c1a1e4f640f56bab99a7cee584f1f20421",
+    "sitemap-before.xml": "43cc086f8e1961aee92d40157a1317c76b0bf05906d2db5baf5f90ea535a8f1c",
+    "sources-before.json": "63d0d2400df2cd3a10014896f0807496540c745db688b096e6bfe3c5e1ab76b3"
+  }
+}

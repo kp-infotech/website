@@ -18,13 +18,13 @@ interface Props {
 }
 
 const {
-  title = "Visit Our Office",
+  title = "Location",
   companyName = "KP Infotech",
   address = "Ahmedabad, Gujarat",
   addressLine2,
   country = "India",
   socialLinks = {},
-  // Default map embed for Ahmedabad - replace with actual coordinates/embed
+  // General Ahmedabad city map, not a verified business office or visitor address.
   mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235014.26177924953!2d72.41493074437965!3d23.020157782934894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1707000000000!5m2!1sen!2sin"
 } = Astro.props;
 
@@ -35,9 +35,6 @@ const socials = [
   socialLinks?.instagram && { name: 'Instagram', href: socialLinks.instagram, icon: 'fa6-brands:instagram' },
 ].filter(Boolean) as Array<{ name: string; href: string; icon: string }>;
 
-// Google Maps directions URL
-const fullAddress = [companyName, address, country].filter(Boolean).join(' ');
-const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`;
 ---
 
 <section class="contact-map">
@@ -47,7 +44,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
       class="contact-map__iframe"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
-      title="KP Infotech Office Location"
+      title="General map of Ahmedabad, Gujarat, India"
       allowfullscreen
     ></iframe>
 
@@ -60,10 +57,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
         {address}{country && <><br />{country}</>}
       </address>
 
-      <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="contact-map__directions">
-        <span>Get Directions</span>
-        <Icon name="fa6-solid:arrow-up-right-from-square" size={12} />
-      </a>
+      <p class="contact-map__address">General city map</p>
 
       {socials.length > 0 && (
         <div class="contact-map__social">
@@ -147,32 +141,6 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
     color: var(--text-primary);
   }
 
-  .contact-map__directions {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--accent);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-bottom: 2rem;
-  }
-
-  .contact-map__directions:hover {
-    color: var(--accent-light);
-  }
-
-  .contact-map__directions:hover svg {
-    transform: translate(2px, -2px);
-  }
-
-  .contact-map__directions svg {
-    transition: transform 0.3s ease;
-  }
-
   .contact-map__social {
     display: flex;
     gap: 0.75rem;
@@ -252,10 +220,6 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
     .contact-map__title {
       font-size: 1.25rem;
       margin-bottom: 1rem;
-    }
-
-    .contact-map__directions {
-      margin-bottom: 1.5rem;
     }
 
     .contact-map__social {

@@ -139,10 +139,6 @@ export function breadcrumbSchema(items: BreadcrumbItem[]): JsonLdNode | undefine
 }
 
 export function organizationSchema(settings?: any): JsonLdNode {
-  const socialLinks = settings?.socialLinks
-    ? Object.values(settings.socialLinks).filter((url): url is string => typeof url === 'string' && url.length > 0)
-    : [];
-
   const email = settings?.contactEmail || ORG_EMAIL;
   const telephone = settings?.contactPhone || ORG_PHONE;
 
@@ -169,7 +165,9 @@ export function organizationSchema(settings?: any): JsonLdNode {
       areaServed: ['India', 'United States', 'United Kingdom', 'Europe'],
       availableLanguage: ['English'],
     },
-    sameAs: socialLinks,
+    // Entity equivalence requires verified ownership, not merely a visible social link.
+    // Step 10A verified this company profile; Instagram/GitHub remain pending.
+    sameAs: ['https://www.linkedin.com/company/kp-info'],
   };
 }
 

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-09-28T11:04:12.738Z",
+  "transactionId": "331r9LTHpoLfChrVYBxIhD",
+  "beforeRevision": "FLWOnYzhRkuT5CLpJU4eX2",
+  "afterRevision": "331r9LTHpoLfChrVYBxIhD",
+  "changed": [
+    {
+      "id": "ef223482-0edc-4d32-aad6-c87c2bf09432",
+      "fields": [
+        "_rev",
+        "_updatedAt",
+        "linkedin"
+      ]
+    }
+  ],
+  "unchanged": 362,
+  "errors": []
+}

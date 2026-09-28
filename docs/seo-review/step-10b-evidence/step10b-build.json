@@ -1,0 +1,366 @@
+{
+  "timestamp": "2026-09-28T11:07:00.732Z",
+  "counts": {
+    "pages": 56,
+    "articles": 21,
+    "krupa": 3,
+    "poojan": 12,
+    "organization": 6
+  },
+  "pages": [
+    {
+      "url": "https://kpinfo.tech/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/about/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/careers/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/contact/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/industries/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/industries/education/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/industries/finance/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/industries/healthcare/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/industries/logistics/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/industries/manufacturing/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/industries/real-estate/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/industries/retail-ecommerce/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/industries/startups/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/insights/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/insights/2/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/insights/3/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/insights/angular-vs-react/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-hr-software-for-startups/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Krupa Joshi",
+        "jobTitle": "Founder & Director"
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-seo-tools-for-small-businesses/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-web-application-frameworks/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/business-process-automation-tools/",
+      "errors": [],
+      "author": {
+        "@id": "https://kpinfo.tech/#organization"
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/business-process-improvement-methods/",
+      "errors": [],
+      "author": {
+        "@id": "https://kpinfo.tech/#organization"
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/automation-ai/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/cloud-devops/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/custom-software-development/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/digital-platforms-ecommerce/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/erp-business-systems/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/insights/cloud-deployment-models-diagram/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/database-design-best-practices/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/devops-best-practices/",
+      "errors": [],
+      "author": {
+        "@id": "https://kpinfo.tech/#organization"
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/erp-for-retail-stores/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Krupa Joshi",
+        "jobTitle": "Founder & Director"
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/erp-implementation-cost/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/how-to-choose-erp-system/",
+      "errors": [],
+      "author": {
+        "@id": "https://kpinfo.tech/#organization"
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/inventory-management-best-practices/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/kp-infotech-new-website-custom-software-automation-ai/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Krupa Joshi",
+        "jobTitle": "Founder & Director"
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/minimum-viable-product-examples/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/mobile-app-monetization-strategies/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/node-js-frameworks/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/odoo-erp-complete-guide/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/",
+      "errors": [],
+      "author": {
+        "@id": "https://kpinfo.tech/#organization"
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/scalable-system-architecture/",
+      "errors": [],
+      "author": {
+        "@type": "Person",
+        "name": "Poojan Patel",
+        "jobTitle": "Founder & CEO",
+        "sameAs": [
+          "https://www.linkedin.com/in/poojan-patel34/"
+        ]
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/insights/what-is-custom-software/",
+      "errors": [],
+      "author": {
+        "@id": "https://kpinfo.tech/#organization"
+      }
+    },
+    {
+      "url": "https://kpinfo.tech/privacy-policy/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/services/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/services/ai-automation-agents/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/services/business-automation/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/services/cloud-devops/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/services/custom-software-development/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/services/erp-software/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/terms-of-service/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/work/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/work/cloud-cost-optimization-industrial-sme/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/work/collaboration-platform-distributed-teams/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/work/digital-banking-platform/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "errors": []
+    },
+    {
+      "url": "https://kpinfo.tech/work/virtual-tours-ai-listings/",
+      "errors": []
+    }
+  ],
+  "errors": []
+}
