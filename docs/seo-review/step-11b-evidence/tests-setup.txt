@@ -152,9 +152,9 @@ Cloudflare Email send error (contact): undefined Mock failure
 test at tests/performance-critical-path.test.mjs:15:1
 ✖ production utility and analytics scripts wait until after initial render (12.545958ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
-  
+
     assert.ok(insertedSources.some((src) => src?.includes('googletagmanager.com')))
-  
+
       at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/performance-critical-path.test.mjs:94:10)
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1397:25)

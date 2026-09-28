@@ -251,11 +251,11 @@ test at tests/step-11b-redirects.test.mjs:27:188
 
 test at tests/step-1c-case-study-artifacts.test.mjs:5:1
 ✖ built sitemap and rendered work links contain only current reviewed case studies (50.045333ms)
-  AssertionError [ERR_ASSERTION]: 
+  AssertionError [ERR_ASSERTION]:
   node:fs:484
       return binding.readFileUtf8(path, stringToFlags(options.flag));
                      ^
-  
+
   Error: ENOENT: no such file or directory, open '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/sitemap-index.xml'
       at readFileSync (node:fs:484:20)
       at read (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/scripts/seo/audit-step1c.mjs:19:18)
@@ -268,12 +268,12 @@ test at tests/step-1c-case-study-artifacts.test.mjs:5:1
     syscall: 'open',
     path: '/Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client/sitemap-index.xml'
   }
-  
+
   Node.js v24.20.0
-  
-  
+
+
   1 !== 0
-  
+
       at TestContext.<anonymous> (file:///Users/krupa/.codex/worktrees/step-11b-reclamation/website/tests/step-1c-case-study-artifacts.test.mjs:9:10)
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1397:25)

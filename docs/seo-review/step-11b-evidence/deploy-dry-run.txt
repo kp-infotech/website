@@ -34,13 +34,13 @@ Attaching additional modules:
 ✨ Read 839 files from the assets directory /Users/krupa/.codex/worktrees/step-11b-reclamation/website/dist/client
 Total Upload: 610.91 KiB / gzip: 149.10 KiB
 Your Worker has access to the following bindings:
-Binding                                            Resource                  
-env.SESSION                                        KV Namespace              
-env.EMAIL (unrestricted)                           Send Email                
-env.ASSETS                                         Assets                    
-env.PUBLIC_SANITY_PROJECT_ID ("5rux0mv2")          Environment Variable      
-env.PUBLIC_SANITY_DATASET ("production")           Environment Variable      
-env.PUBLIC_GA_MEASUREMENT_ID ("G-7K17R4CWQ7")      Environment Variable      
-env.PUBLIC_CLARITY_ID ("pqpi438d1f")               Environment Variable      
+Binding                                            Resource
+env.SESSION                                        KV Namespace
+env.EMAIL (unrestricted)                           Send Email
+env.ASSETS                                         Assets
+env.PUBLIC_SANITY_PROJECT_ID ("5rux0mv2")          Environment Variable
+env.PUBLIC_SANITY_DATASET ("production")           Environment Variable
+env.PUBLIC_GA_MEASUREMENT_ID ("G-7K17R4CWQ7")      Environment Variable
+env.PUBLIC_CLARITY_ID ("pqpi438d1f")               Environment Variable
 
 --dry-run: exiting now.
