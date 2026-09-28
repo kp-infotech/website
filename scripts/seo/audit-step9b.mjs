@@ -8,7 +8,9 @@ const ledger=JSON.parse(readFileSync(new URL('../../docs/seo-review/step-9b-evid
 export const cases=plan.filter(p=>p.set.presentationType==='technicalOverview');
 export function validateProof(html,path){
  const errors=[];const check=(ok,m)=>{if(!ok)errors.push(path+': '+m)};const m=metadata(html.replace(/<style\b[^]*?<\/style>/gi,''));const s=semantics(html,'https://kpinfo.tech'+path);
- for(const pattern of [/SOC 2 Type II certification/i,/PCI DSS Level 1/i,/Best Digital Banking Experience/i,/\$12M Series A/i,/instant transfers to any U\.S\. bank/i,/\$(?:17K|2\.8K|14\.2K|204K|33\.6K|17,000|2,800)\b/i,/WorkFlow \(SaaS Startup\)/,/Community Trust Credit Union/,/TrendStyle/,/LuxeHomes/,/Mark L\b/,/Grace O\b/,/Daniel T\b/,/Lucas M\b/,/Ahmed K\b/,/Herve F\b/])check(!pattern.test(html),'removed claim '+pattern.source);
+ // Certification concepts in educational articles are not client attestations.
+ if(!path.startsWith('/insights/')) for(const pattern of [/SOC 2 Type II certification/i,/PCI DSS Level 1/i,/Best Digital Banking Experience/i,/\$12M Series A/i,/instant transfers to any U\.S\. bank/i])check(!pattern.test(html),'removed proof assertion '+pattern.source);
+ for(const pattern of [/\$(?:17K|2\.8K|14\.2K|204K|33\.6K|17,000|2,800)\b/i,/WorkFlow \(SaaS Startup\)/,/Community Trust Credit Union/,/TrendStyle/,/LuxeHomes/,/Mark L\b/,/Grace O\b/,/Daniel T\b/,/Lucas M\b/,/Ahmed K\b/,/Herve F\b/])check(!pattern.test(html),'removed claim '+pattern.source);
  check(!html.includes(removed.oldCloudImageHash),'claim-bearing cloud image');
  for(const quote of removed.quotes)check(!m.body.includes(quote),'unverified testimonial text');
  const normalized=(m.body+' '+JSON.stringify(m.schemas)+' '+JSON.stringify(m.meta)).replace(/\s+/g,' ');

@@ -1,0 +1,12 @@
+- Checking project info
+✔ Checking project info
+- Generating studio manifest
+✔ Deployed 1/1 schemas
+✔ Generated studio manifest
+↳ List deployed schemas with: sanity schema list
+- Verifying local content
+✔ Verifying local content
+- Deploying to sanity.studio
+✔ Deploying to sanity.studio
+
+Success! Studio deployed to https://kpinfotech.sanity.studio/

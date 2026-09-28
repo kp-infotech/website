@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-09-28T10:25:53.051Z",
+  "url": "https://kpinfotech.sanity.studio/",
+  "status": 302,
+  "location": "https://www.sanity.io/@o6DXnL4SP/studio/nrhngkka32o4vdxu667lovc8",
+  "assets": [
+    {
+      "path": "/static/sanity-B31IL5JN.js",
+      "status": 200,
+      "matchesLocal": true,
+      "hasGovernance": true
+    }
+  ],
+  "states": [
+    {
+      "_id": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+      "_rev": "IVLcVaE7g6HuAB08OV78Zk",
+      "evidenceStatus": "pending",
+      "publicProofType": "technicalOverview",
+      "publicationPermission": "unknown",
+      "slug": "collaboration-platform-distributed-teams"
+    },
+    {
+      "_id": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+      "_rev": "IVLcVaE7g6HuAB08OV78Zk",
+      "evidenceStatus": "pending",
+      "publicProofType": "technicalOverview",
+      "publicationPermission": "unknown",
+      "slug": "omnichannel-ecommerce-platform"
+    },
+    {
+      "_id": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+      "_rev": "IVLcVaE7g6HuAB08OV78Zk",
+      "evidenceStatus": "pending",
+      "publicProofType": "technicalOverview",
+      "publicationPermission": "unknown",
+      "slug": "digital-banking-platform"
+    },
+    {
+      "_id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+      "_rev": "IVLcVaE7g6HuAB08OV78Zk",
+      "evidenceStatus": "pending",
+      "publicProofType": "technicalOverview",
+      "publicationPermission": "unknown",
+      "slug": "cloud-cost-optimization-industrial-sme"
+    },
+    {
+      "_id": "e907e1d9-f6be-4f56-a048-276e29d2d3fc",
+      "_rev": "IVLcVaE7g6HuAB08OV78Zk",
+      "evidenceStatus": "pending",
+      "publicProofType": "technicalOverview",
+      "publicationPermission": "unknown",
+      "slug": "virtual-tours-ai-listings"
+    }
+  ],
+  "errors": []
+}

@@ -72,3 +72,8 @@ test('Studio document validation enforces the same publication rule',async()=>{
 test('Studio result validation allows hidden historical entries but blocks unreviewed public results',async()=>{
  const {resultMetric}=await import('../sanity/schemas/objects/resultMetric.ts');for(const field of resultMetric.fields){const validate=field.validation({custom:fn=>fn});assert.equal(validate(undefined,{document:overview}),true);assert.notEqual(validate(undefined,{document:verified}),true);}
 });
+
+
+test('build output permits educational certification concepts while protecting proof surfaces',async()=>{
+ const {validateProof}=await import('../scripts/seo/audit-step9b.mjs');const article='<h1>Understanding SOC 2 Type II certification</h1><p>PCI DSS Level 1 requirements depend on the assessed scope.</p>';assert.deepEqual(validateProof(article,'/insights/synthetic-educational-fixture/'),[]);assert.ok(validateProof(article,'/services/cloud-devops/').length);
+});

@@ -50,7 +50,7 @@ Technical Overviews do not project or render `year`, including on cards. A verif
 
 Every future assertion requires private review of the exact legal entity, certification/relationship, scope, issuer/provider, status/date and publication evidence. This includes SOC 2, PCI DSS, ISO, HIPAA and Odoo/AWS/Azure/Google Cloud partner assertions. A general verified flag is not independent substantiation of every sentence.
 
-Technical-overview public copy is scanned for precise financial/percentage claims, performance/timeline guarantees, certification/compliance assurances, award/funding assertions and proof-backed marketing labels. Hidden historic fields are excluded. Ordinary requirements discussion such as “SOC 2 and PCI DSS requirements need scoped review” is allowed, and educational articles are not scanned by this record-specific rule. Existing Step 9B banned-claim output checks remain in force site-wide.
+Technical-overview public copy is scanned for precise financial/percentage claims, performance/timeline guarantees, certification/compliance assurances, award/funding assertions and proof-backed marketing labels. Hidden historic fields are excluded. Ordinary requirements discussion such as “SOC 2 and PCI DSS requirements need scoped review” is allowed, and educational articles are not scanned by this record-specific rule. Step 9B identity, testimonial, old-image and removed-occurrence checks remain in force. Its inherited certification/award/funding phrase checks are scoped to proof surfaces rather than educational insight articles; a regression test confirms that an educational certification discussion is allowed while the same wording on a service proof surface is rejected.
 
 ## Privacy Rule
 
@@ -122,7 +122,7 @@ Studio labels and descriptions explain technical versus verified content, status
 
 ## Tests
 
-Authenticated production build: PASS, including mandatory build-start input validation and build-end checks for all 56 pages. Full suite: 106 passed, 0 failed, 0 skipped; 15 focused governance tests cover invalid/missing/revoked states, hidden historical proof, per-item reviews, GROQ card/detail projections, synthetic verified behavior, sensitive copy, Studio rules and output leakage. Studio build: PASS. Schema validation: 0 errors, 0 warnings. Synthetic fixtures only exercise verified behavior; no fake verified record is created in production. Credential scan: zero occurrences in website, Studio and evidence artifacts. `git diff --check`: PASS. The initial build-hook ordering defect was fixed by running output validation after sitemap generation; final builds pass.
+Authenticated production build: PASS, including mandatory build-start input validation and build-end checks for all 56 pages. Full suite: 107 passed, 0 failed, 0 skipped; 16 focused governance tests cover invalid/missing/revoked states, hidden historical proof, per-item reviews, GROQ card/detail projections, synthetic verified behavior, sensitive copy, Studio rules and output leakage. Studio build: PASS. Schema validation: 0 errors, 0 warnings. Synthetic fixtures only exercise verified behavior; no fake verified record is created in production. Credential scan: zero occurrences in website, Studio and evidence artifacts. `git diff --check`: PASS. The initial build-hook ordering defect was fixed by running output validation after sitemap generation; final builds pass.
 
 ## Regression
 

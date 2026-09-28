@@ -1,0 +1,26 @@
+{
+  "errors": [],
+  "sitemapCount": 56,
+  "pages": 56,
+  "redirectChecks": 32,
+  "removedProjectChecks": 63,
+  "deadLinks": 0,
+  "legacyLinks": 0,
+  "sampleMarketing": [
+    {
+      "path": "/sample-digital-marketing-strategy/",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/sample-digital-marketing-strategy",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/sample-digital-marketing-strategy/?ref=legacy",
+      "status": 404,
+      "location": null
+    }
+  ]
+}
