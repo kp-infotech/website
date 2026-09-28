@@ -1,0 +1,18 @@
+{
+  "releaseCommit": "720b774810520186728490b824e8d3cce72e1ab6",
+  "version": "4e12a44f-cd34-4023-ab96-5082e7800453",
+  "deploymentTime": "2026-09-28T09:21:37.108Z",
+  "production": "https://kpinfo.tech",
+  "status": "PASS WITH WARNINGS",
+  "tests": {
+    "passed": 91,
+    "failed": 0,
+    "skipped": 0
+  },
+  "mappedOccurrences": 396,
+  "removedOrReplaced": 360,
+  "qualified": 9,
+  "deferred": 27,
+  "contradictedRemediated": 8,
+  "productionPages": 56
+}

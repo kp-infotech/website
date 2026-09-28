@@ -1,0 +1,128 @@
+
+ ⛅️ wrangler 4.104.0 (update available 4.142.0)
+───────────────────────────────────────────────
+Using redirected Wrangler configuration.
+ - Configuration being used: "dist/server/wrangler.json"
+ - Original user's configuration: "wrangler.toml"
+ - Deploy configuration file: ".wrangler/deploy/config.json"
+Attaching additional modules:
+┌───────────────────────────────────────────────────────────┬──────┬────────────┐
+│ Name                                                      │ Type │ Size       │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/_virtual_astro_server-island-manifest_CFl7y3Qj.mjs │ esm  │ 0.22 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/_virtual_astro_session-driver_Csu6PJY6.mjs         │ esm  │ 2.92 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/apply_CfDpfpb1.mjs                                 │ esm  │ 6.58 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/contact_Bh-l5HPl.mjs                               │ esm  │ 4.66 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/form-utils_Ct76WZ--.mjs                            │ esm  │ 1.51 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/image-passthrough-endpoint_COhgbF9h.mjs            │ esm  │ 77.91 KiB  │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/image-service-workerd_DVKiF_P4.mjs                 │ esm  │ 0.37 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/noop-entrypoint_DsBX4kaI.mjs                       │ esm  │ 0.10 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ chunks/worker-entry_DEMgJg_A.mjs                          │ esm  │ 515.17 KiB │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ virtual_astro_middleware.mjs                              │ esm  │ 0.12 KiB   │
+├───────────────────────────────────────────────────────────┼──────┼────────────┤
+│ Total (10 modules)                                        │      │ 609.56 KiB │
+└───────────────────────────────────────────────────────────┴──────┴────────────┘
+🌀 Building list of assets...
+✨ Read 839 files from the assets directory /private/tmp/kp-step9b-recovery/dist/client
+🌀 Starting asset upload...
+🌀 Found 70 new or modified static assets to upload. Proceeding with upload...
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_ZsaW8E.avif
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_gF4hF.avif
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_ZyPKl9.webp
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_Z1Tep31.avif
++ /404.html
++ /privacy-policy/index.html
++ /insights/category/cloud-devops/index.html
++ /industries/index.html
++ /insights/category/erp-business-systems/index.html
++ /insights/3/index.html
++ /insights/index.html
++ /work/collaboration-platform-distributed-teams/index.html
++ /insights/minimum-viable-product-examples/index.html
++ /insights/kp-infotech-new-website-custom-software-automation-ai/index.html
++ /insights/inventory-management-best-practices/index.html
++ /insights/what-is-custom-software/index.html
++ /industries/startups/index.html
++ /industries/education/index.html
++ /industries/real-estate/index.html
++ /insights/erp-implementation-cost/index.html
++ /insights/erp-for-retail-stores/index.html
++ /insights/best-web-application-frameworks/index.html
++ /services/cloud-devops/index.html
++ /index.html
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_ZrsiMB.avif
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_YNrmW.avif
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_1qlIU4.avif
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_2u50Sj.avif
++ /_astro/BaseLayout.astro_astro_type_script_index_0_lang.d0wMrYq9.js
++ /insights/category/digital-platforms-ecommerce/index.html
++ /insights/category/automation-ai/index.html
++ /about/index.html
++ /insights/cloud-deployment-models-diagram/index.html
++ /insights/2/index.html
++ /work/digital-banking-platform/index.html
++ /work/omnichannel-ecommerce-platform/index.html
++ /insights/devops-best-practices/index.html
++ /insights/business-process-improvement-methods/index.html
++ /insights/how-to-choose-erp-system/index.html
++ /services/index.html
++ /industries/retail-ecommerce/index.html
++ /industries/healthcare/index.html
++ /insights/mobile-app-monetization-strategies/index.html
++ /insights/best-seo-tools-for-small-businesses/index.html
++ /insights/database-design-best-practices/index.html
++ /services/erp-software/index.html
++ /services/ai-automation-agents/index.html
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_Z2qrhza.avif
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_Z2pUM7J.avif
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_Z2fJC2L.avif
++ /_astro/11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744_Z14Dex9.jpg
++ /terms-of-service/index.html
++ /careers/index.html
++ /work/index.html
++ /contact/index.html
++ /insights/category/custom-software-development/index.html
++ /work/virtual-tours-ai-listings/index.html
++ /work/cloud-cost-optimization-industrial-sme/index.html
++ /insights/odoo-erp-complete-guide/index.html
++ /insights/business-process-automation-tools/index.html
++ /insights/angular-vs-react/index.html
++ /insights/on-premise-vs-cloud-erp/index.html
++ /industries/manufacturing/index.html
++ /industries/finance/index.html
++ /industries/logistics/index.html
++ /insights/scalable-system-architecture/index.html
++ /insights/node-js-frameworks/index.html
++ /insights/best-hr-software-for-startups/index.html
++ /services/business-automation/index.html
++ /services/custom-software-development/index.html
+Uploaded 23 of 70 assets
+Uploaded 46 of 70 assets
+Uploaded 70 of 70 assets
+✨ Success! Uploaded 70 files (708 already uploaded) (3.79 sec)
+
+Total Upload: 609.72 KiB / gzip: 149.06 KiB
+Worker Startup Time: 7 ms
+Your Worker has access to the following bindings:
+Binding                                            Resource                  
+env.SESSION (inherited)                            KV Namespace              
+env.EMAIL (unrestricted)                           Send Email                
+env.ASSETS                                         Assets                    
+env.PUBLIC_SANITY_PROJECT_ID ("5rux0mv2")          Environment Variable      
+env.PUBLIC_SANITY_DATASET ("production")           Environment Variable      
+env.PUBLIC_GA_MEASUREMENT_ID ("G-7K17R4CWQ7")      Environment Variable      
+env.PUBLIC_CLARITY_ID ("pqpi438d1f")               Environment Variable      
+
+Uploaded website (14.80 sec)
+Deployed website triggers (3.41 sec)
+  https://website.kp-infotech.workers.dev
+Current Version ID: 4e12a44f-cd34-4023-ab96-5082e7800453

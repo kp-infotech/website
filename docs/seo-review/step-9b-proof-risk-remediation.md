@@ -1,6 +1,6 @@
 # Step 9B — Public Proof Risk Remediation & Trust Cleanup
 
-Status: BUILD AND REGRESSION PASS; production deployment pending.
+Status: **PASS WITH WARNINGS** — implemented, deployed and verified. Warnings concern missing business substantiation and deferred lower-risk claims; no failed release checks.
 
 The current public claims are not adequately substantiated by the evidence available to this audit. This does not establish that the projects were fictitious or that evidence does not exist. No new Tier 1/2 evidence was supplied. An owner must confirm the actual engagements and publication permission before these pages can be represented as client case studies.
 
@@ -92,4 +92,21 @@ Restoration requires a new review of the exact claim, scope, period, source and 
 
 ## Tests, regression, deployment and production verification
 
-Authenticated build: PASS. Node tests: 91 passed, 0 failed/skipped. Step 1C, Step 2 (nine fixtures), Step 3 (56 pages: zero H1, heading hierarchy, alt, duplicate-ID or empty-control defects), Step 4 (56 pages, zero graph errors), Step 7A–7E and Step 9B (56 pages, zero proof errors): PASS. Local Worker Step 1G route/redirect/robots/restored-article/404 checks: PASS. Deployment dry run and whitespace check: PASS. Local visual review at 390px and 1440px checked overview headings/body and work-card layout. The first local Step 1G attempt used a port occupied by another process; rerunning on this task’s preview port passed. The audit allowlist now also accepts port 8799. Production verification and deployment record remain pending. Steps 5/6 classifications and ownership and Step 8 zero-new-page decision are preserved; no changes to those artifacts or the URL inventory are authorized by this step.
+Authenticated build: PASS. Node tests: 91 passed, 0 failed/skipped. Step 1C, Step 2 (nine fixtures), Step 3 (56 pages: zero H1, heading hierarchy, alt, duplicate-ID or empty-control defects), Step 4 (56 pages, zero graph errors), Step 7A–7E and Step 9B (56 pages, zero proof errors): PASS. Local Worker Step 1G route/redirect/robots/restored-article/404 checks: PASS. Deployment dry run and whitespace check: PASS. Local visual review at 390px and 1440px checked overview headings/body and work-card layout. The first local Step 1G attempt used a port occupied by another process; rerunning on this task’s preview port passed. The audit allowlist now also accepts port 8799. Production checks also passed: all 56 pages match build body, title, description, canonical, H1 and schema; Step 2, Step 3, Step 4, Step 7A–7E and Step 9B validators report zero errors. Step 1G: 56 pages, 32 redirect checks, 63 unsupported-project 404 checks, zero dead/legacy links, robots and all sample-marketing variants passed. All five work pages remain HTTP 200, indexable, self-canonical and in the 56-URL sitemap. The six restored articles remain live. Browser verification confirms homepage proof sections absent and cleaned work titles visible. Steps 5/6 classifications and ownership and Step 8 zero-new-page decision are preserved; no changes to those artifacts or the URL inventory are authorized by this step.
+
+
+## Deployment record
+
+- Application/content release commit: `720b774810520186728490b824e8d3cce72e1ab6`, pushed normally to `origin/main`.
+- Cloudflare Worker: `website`; production: https://kpinfo.tech.
+- Verified version: `4e12a44f-cd34-4023-ab96-5082e7800453`, at 100%.
+- Deployment time: `2026-09-28T09:21:37.108Z` (14:51:37 IST).
+- Production match and regression outputs: [production-match.json](step-9b-evidence/production-match.json), [production-regression-exits.json](step-9b-evidence/production-regression-exits.json), [step1-production.json](step-9b-evidence/step1-production.json).
+- Build bundle and committed evidence were scanned for the build credential: zero occurrences. No runtime token binding was added. Existing SESSION and EMAIL bindings were retained.
+- Final report/evidence are committed separately. Documentation pushes may trigger an equivalent automated deployment; the version above identifies the release actually verified.
+
+## Stop
+
+No Step 9C work was undertaken.
+
+STEP 9B COMPLETE — AWAITING SEO REVIEW
