@@ -2,7 +2,7 @@
 
 ## Step 10B Status
 
-Pre-deployment checks PASS; deployment and production verification pending. Scope is limited to the authorized Step 10A P0/P1 corrections. No Step 11 work.
+PASS — authorized corrections deployed and production verified. Scope is limited to the authorized Step 10A P0/P1 corrections. No Step 11 work.
 
 Clean release checkout: `/private/tmp/kp-step10b-release`, based on current `origin/main` commit `ed85e2fda0daa8e258cc44e666c9e11aeb4c8419`. The mixed original workspace is not the release source and remains untouched. [Step 10A audit](step-10a-company-entity-eeat-audit.md) accompanies this release as supporting documentation.
 
@@ -35,7 +35,7 @@ After: **only `https://www.linkedin.com/company/kp-info`**. The schema helper no
 
 Email, phone, form markup, WhatsApp route, visible social links and office hours are preserved. The retained city label is a coarse declared location, not a verified visitor or registered office. Form delivery/phone reachability were not transaction-tested and are not claimed operationally verified.
 
-Desktop (1440×1000) and mobile (390×844) checks show readable location content and no horizontal overflow. The external Google map did not render tiles in the verification browser; the retained location text and social links remain visible. No claim of third-party map availability is made. Existing design-system tokens, fonts, responsive structure and reduced-motion behavior are retained; no UI redesign or new DESIGN.md contract was needed for this content-site correction.
+Desktop (1440×1000) and mobile (390×844) checks show readable location content and no horizontal overflow. The external Google map initially remained blank locally, then loaded successfully on production at both viewport sizes. It shows the general Ahmedabad city area; it does not establish a visitor-office address. Existing design-system tokens, fonts, responsive structure and reduced-motion behavior are retained; no UI redesign or new DESIGN.md contract was needed for this content-site correction.
 
 ## Insights Positioning
 
@@ -69,7 +69,7 @@ No publishedAt, article datePublished/dateModified or visible article date was c
 
 ## Proof Governance
 
-Step 9B/9C validators pass on all 56 built pages. All five published work records remain `technicalOverview / pending / unknown`, and their complete CMS records are unchanged. Five Technical Overviews remain live in the candidate; homepage numeric proof and testimonials remain hidden; no new client Organization, Review, metric, award or certification claim appears. No verified Odoo, BPA or production action-taking AI-agent case is asserted.
+Step 9B/9C validators pass on all 56 built pages. All five published work records remain `technicalOverview / pending / unknown`, and their complete CMS records are unchanged. Five Technical Overviews remain live in production; homepage numeric proof and testimonials remain hidden; no new client Organization, Review, metric, award or certification claim appears. No verified Odoo, BPA or production action-taking AI-agent case is asserted.
 
 ## Tests
 
@@ -90,11 +90,15 @@ Step 9B/9C validators pass on all 56 built pages. All five published work record
 
 ## Deployment
 
-Pending authorized commit, normal push and established Cloudflare Worker deployment after completed checks. No Sanity Studio schema changed; no Studio deployment is planned.
+Release commit: `d0498257674e71d4c1dfe2e4e1ff3fb4105bfdf3`, committed and normally pushed to `main` after all checks. Manual Worker deployment succeeded with version `dc07e26f-7357-4ee4-a4d1-15ff90b0a532` created **2026-09-28 11:12:04 UTC**. The push-triggered deployment subsequently became active at 100%: version `52bb3fb0-fb15-4c5c-a88b-3671b0f33abc`, deployed **2026-09-28 11:13:26 UTC (16:43:26 IST)**. Fresh production checks below verify the resulting live output. [Deployment log](step-10b-evidence/deploy.txt), [version history](step-10b-evidence/deployments-after.txt). No Sanity Studio schema changed or Studio deployment occurred. The follow-up documentation commit contains only this completed report and verification evidence.
 
 ## Production Verification
 
-Pending deployment. Local candidate verification and desktop/mobile Contact/Insights checks completed. Post-deployment verification will cover all 56 pages, live/build matching, author mappings, metadata, dates, schema, proof, robots and retired routes.
+**PASS.** All 56 sitemap pages return 200 and match the tested build’s extracted page facts exactly. The only baseline changes are the authorized entity, author-link, Contact and Insights corrections. All 21 articles retain authors, dates, metadata and content: 3 Krupa with no profile, 12 Poojan with the existing correct LinkedIn, and 6 Organization fallbacks. All 363 CMS records remain identical to the verified post-patch snapshot. [Production comparison](step-10b-evidence/step10b-production.json).
+
+Production Step 1, 2, 7A–7E, 9B and 9C validators all exit zero. Step 3 confirms 353 images with zero missing alt, H1/hierarchy, duplicate-ID or empty-control issues; Step 4 confirms the 56-page link graph with zero errors. The Step 1 run covers all 32 redirects and 63 removed-project checks; `/sample-marketing/` also returns 404. Robots, sitemap, canonical and indexability checks pass. Prior safeguards from Steps 1–10A remain intact; Step 5/6/8 content, dates and legacy rules are also covered by the complete baseline/build comparison and 123-test suite. [Regression exits](step-10b-evidence/production-regression-exits.json).
+
+Production Contact and Insights were visually checked at 1440×1000 and 390×844; mobile document width equals viewport width, with no horizontal overflow. City-map tiles loaded; contact channels, hours and the form remain rendered, with no form submission performed. [Contact desktop](step-10b-evidence/production-contact-desktop.png), [Contact mobile](step-10b-evidence/production-contact-mobile.png), [Insights desktop](step-10b-evidence/production-insights-desktop.png), [Insights mobile](step-10b-evidence/production-insights-mobile.png).
 
 ## Remaining Step 10 Data Gaps
 
