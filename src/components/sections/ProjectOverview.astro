@@ -5,12 +5,13 @@ import PortableTextHighlight from '../ui/PortableTextHighlight.astro';
 import PortableTextLink from '../ui/PortableTextLink.astro';
 
 interface Props {
+  technicalOverview?: boolean;
   challenge?: any[];
   approach?: any[];
   resultsSummary?: string;
 }
 
-const { challenge, approach, resultsSummary } = Astro.props;
+const { technicalOverview = false, challenge, approach, resultsSummary } = Astro.props;
 
 const components = {
   mark: {
@@ -21,8 +22,8 @@ const components = {
 };
 
 const blocks = [
-  { number: '01', heading: 'The Challenge', content: challenge, type: 'portable' as const },
-  { number: '02', heading: 'Our Approach', content: approach, type: 'portable' as const },
+  { number: '01', heading: technicalOverview ? 'Context' : 'The Challenge', content: challenge, type: 'portable' as const },
+  { number: '02', heading: technicalOverview ? 'Technical Considerations' : 'Our Approach', content: approach, type: 'portable' as const },
   { number: '03', heading: 'The Results', content: resultsSummary, type: 'text' as const },
 ].filter((b) => (b.type === 'portable' ? b.content && (b.content as any[]).length > 0 : !!b.content));
 
@@ -32,15 +33,15 @@ const hasContent = blocks.length > 0;
 {hasContent && (
   <section class="project-overview">
     <div class="project-overview__container site-container">
-      <SectionLabel text="Project Overview" />
-      <h2 class="project-overview__title">How we got there</h2>
+      <SectionLabel text={technicalOverview ? "Technical Scope" : "Project Overview"} />
+      <h2 class="project-overview__title">{technicalOverview ? "Scope and considerations" : "How we got there"}</h2>
 
       <div class="overview-stack">
         {blocks.map((block) => (
-          <div class="overview-block">
-            <div class="overview-block__number-col">
+          <div class:list={["overview-block", { "overview-block--technical": technicalOverview }]}>
+            {!technicalOverview && <div class="overview-block__number-col">
               <span class="overview-block__number">{block.number}</span>
-            </div>
+            </div>}
             <div class="overview-block__content">
               <h3 class="overview-block__heading">{block.heading}</h3>
               <div class="overview-block__body">
@@ -90,6 +91,10 @@ const hasContent = blocks.length > 0;
     gap: 2rem;
     padding: 3rem 0 3rem 3rem;
     border-bottom: 1px solid var(--border);
+  }
+
+  .overview-block--technical {
+    grid-template-columns: 1fr;
   }
 
   .overview-block:last-child {

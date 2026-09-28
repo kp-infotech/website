@@ -8,19 +8,17 @@ import Hero from '../components/sections/Hero.astro';
 import ServicesMarquee from '../components/sections/ServicesMarquee.astro';
 import FeaturedWork from '../components/sections/FeaturedWork.astro';
 import RelatedServicesGrid from '../components/sections/RelatedServicesGrid.astro';
-import StatsSection from '../components/sections/StatsSection.astro';
 import IndustriesBento from '../components/sections/IndustriesBento.astro';
-import Testimonials from '../components/sections/Testimonials.astro';
 import CTASection from '../components/sections/CTASection.astro';
 import { websiteSchema } from '../lib/seo';
 
 // Fetch all homepage data from Sanity
 const data = await client.fetch(homepageDataQuery);
 const pageHeroes = await client.fetch<Record<string, any> | null>(
-  `*[_type == "pageHeroes"][0] { homeHero, homeServicesBg, homeStatsBg, homeIndustriesBg }`
+  `*[_type == "pageHeroes"][0] { homeHero, homeServicesBg, homeIndustriesBg }`
 );
 
-const { siteSettings, services, industries, featuredWork, testimonials } = data;
+const { siteSettings, services, industries, featuredWork } = data;
 
 // Build hero image URL if available
 let homeHeroUrl: string | undefined;
@@ -37,7 +35,6 @@ function safeBgUrl(source: any): string | undefined {
   catch { return undefined; }
 }
 const servicesBgUrl = safeBgUrl(pageHeroes?.homeServicesBg);
-const statsBgUrl = safeBgUrl(pageHeroes?.homeStatsBg);
 const industriesBgUrl = safeBgUrl(pageHeroes?.homeIndustriesBg);
 
 // Tech stack slugs for marquee (simple-icons slugs — see https://simpleicons.org)
@@ -52,12 +49,6 @@ const techSlugs = siteSettings?.techStack || [
   'postgresql', 'mongodb', 'docker', 'git',
   'supabase', 'firebase', 'cloudflare', 'sanity',
 ];
-
-// Prepare stats data
-const stats = siteSettings?.stats?.map((stat: any) => ({
-  value: stat.value,
-  label: stat.label
-})) || [];
 
 // Default description for hero
 const heroDescription = "KP Infotech helps growing B2B teams replace spreadsheets, manual workflows, and disconnected tools with custom software, Odoo ERP, business automation, AI agents, and cloud infrastructure built around how their operations actually work.";
@@ -96,20 +87,14 @@ const homeJsonLd = [
     <RelatedServicesGrid services={services} backgroundImage={servicesBgUrl} />
   )}
 
-  <!-- Stats Section -->
-  {stats && stats.length > 0 && (
-    <StatsSection stats={stats} backgroundImage={statsBgUrl} />
-  )}
+  <!-- Public statistics require evidence and owner review before restoration. -->
 
   <!-- Industries Bento -->
   {industries && industries.length > 0 && (
     <IndustriesBento industries={industries} backgroundImage={industriesBgUrl} />
   )}
 
-  <!-- Testimonials Carousel -->
-  {testimonials && testimonials.length > 0 && (
-    <Testimonials testimonials={testimonials} />
-  )}
+  <!-- Testimonials remain unpublished pending source and consent review. -->
 
   <!-- CTA Section -->
   <CTASection />

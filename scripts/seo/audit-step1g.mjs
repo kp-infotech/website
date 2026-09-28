@@ -4,7 +4,7 @@ import {getMigrationRedirectLocation} from '../../src/worker/migration-redirects
 const root=fileURLToPath(new URL('../../',import.meta.url)).replace(/\/$/,'');
 const args=Object.fromEntries(process.argv.slice(2).map(arg=>arg.replace(/^--/,'').split(/=(.*)/s).slice(0,2)));
 const requestOrigin=args.origin || 'https://kpinfo.tech';
-if (!['https://kpinfo.tech','http://127.0.0.1:8789'].includes(requestOrigin)) throw new Error('Unsupported audit origin');
+if (!['https://kpinfo.tech','http://127.0.0.1:8789','http://127.0.0.1:8799'].includes(requestOrigin)) throw new Error('Unsupported audit origin');
 const origin='https://kpinfo.tech';
 const decisions=JSON.parse(fs.readFileSync(root+'/tests/fixtures/step-1c-case-study-decisions.json'));
 const slugs=['business-process-automation-tools','business-process-improvement-methods','devops-best-practices','how-to-choose-erp-system','on-premise-vs-cloud-erp','what-is-custom-software'];

@@ -1,0 +1,38 @@
+[
+  {
+    "check": "1c",
+    "exit": 0
+  },
+  {
+    "check": "2",
+    "exit": 0
+  },
+  {
+    "check": "7a",
+    "exit": 0
+  },
+  {
+    "check": "7b",
+    "exit": 0
+  },
+  {
+    "check": "7c",
+    "exit": 0
+  },
+  {
+    "check": "7d",
+    "exit": 0
+  },
+  {
+    "check": "7e",
+    "exit": 0
+  },
+  {
+    "check": "3",
+    "exit": 0
+  },
+  {
+    "check": "4",
+    "exit": 0
+  }
+]

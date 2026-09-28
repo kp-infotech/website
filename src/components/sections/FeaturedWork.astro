@@ -36,7 +36,7 @@ function getImageUrl(image: any): string | null {
   <div class="featured-work__container site-container">
     <header class="featured-work__header">
       <SectionLabel text="Selected Work" />
-      <h2 class="featured-work__title"><HighlightedText text="Featured *Projects*" /></h2>
+      <h2 class="featured-work__title"><HighlightedText text="Technical *Overviews*" /></h2>
     </header>
 
     {hasCaseStudies ? (
@@ -50,7 +50,7 @@ function getImageUrl(image: any): string | null {
               {imageUrl ? (
                 <SanityPicture
                   src={imageUrl}
-                  alt={caseStudy.title}
+                  alt=""
                   width={800}
                   height={500}
                   sizes="(max-width: 768px) calc(100vw - 3rem), (max-width: 1023px) calc((100vw - 5rem) / 2), (max-width: 1440px) calc((100vw - 8rem) / 2), 656px"

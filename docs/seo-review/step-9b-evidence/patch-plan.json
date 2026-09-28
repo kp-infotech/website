@@ -1,0 +1,1953 @@
+[
+  {
+    "id": "17978c9d-b513-4597-9d8c-4360c05f925a",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "slug": "healthcare",
+    "set": {
+      "excerpt": "Patient portals, telemedicine workflows and practice management tools with privacy, access and security requirements scoped to the engagement.",
+      "solutionStatement": "We scope healthcare software around care-team workflows, patient access and *privacy requirements* for the specific engagement.",
+      "solutions": [
+        {
+          "_key": "de2162f156f1",
+          "_type": "solutionItem",
+          "description": "Single interface for appointments, records, prescriptions, and billing. Mobile-first design that patients actually want to use.",
+          "title": "Unified Patient Portals"
+        },
+        {
+          "_key": "a1ba671b6657",
+          "_type": "solutionItem",
+          "description": "Healthcare software can require role-based access, auditability, encryption and privacy controls. Scope these requirements and implementation responsibilities for the specific engagement.",
+          "title": "Privacy & Access Requirements"
+        },
+        {
+          "_key": "7fff2007eb43",
+          "_type": "solutionItem",
+          "description": "Real-time dashboards, secure messaging, and workflow automation that reduce admin burden and improve coordination.",
+          "title": "Care Team Collaboration Tools"
+        },
+        {
+          "_key": "9beeac69a0a1",
+          "_type": "solutionItem",
+          "description": "HL7, FHIR, and custom API integrations that connect your systems and break down data silos.",
+          "title": "Integration & Interoperability"
+        }
+      ]
+    },
+    "unset": []
+  },
+  {
+    "id": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+    "revision": "1rt65YukpwbJFhGzTx8VaX",
+    "slug": "collaboration-platform-distributed-teams",
+    "set": {
+      "title": "Real-Time Collaboration Platform: Technical Overview",
+      "client": "SaaS Collaboration Platform",
+      "excerpt": "Technical overview of co-editing, video, search and AI-assisted summaries for a distributed-team collaboration platform.",
+      "seoTitle": "Real-Time Collaboration Platform: Technical Overview | KP Infotech",
+      "seoDescription": "Technical overview of co-editing, video, search and AI-assisted summaries for a distributed-team collaboration platform.",
+      "challenge": [
+        {
+          "_type": "block",
+          "_key": "context",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "contexts",
+              "marks": [],
+              "text": "Distributed teams may need shared editing, conversations and knowledge search in a coherent product. The anonymized platform context here supports a technical discussion; it does not establish a delivered client engagement, adoption or commercial results."
+            }
+          ]
+        }
+      ],
+      "approach": [
+        {
+          "_type": "block",
+          "_key": "considerations",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "considerationss",
+              "marks": [],
+              "text": "Relevant design considerations include synchronization, permissions, connection recovery and accessible interfaces. Co-editing and video require testing under representative network and device conditions before performance claims can be made."
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "_type": "block",
+          "_key": "h0",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h0s",
+              "marks": [],
+              "text": "Collaboration and knowledge"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p0",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p0s",
+              "marks": [],
+              "text": "Shared documents, video and search can be scoped around team workflows, permission boundaries and content ownership. Retention and residency requirements need explicit review for the specific deployment."
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "h1",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h1s",
+              "marks": [],
+              "text": "AI-assisted summaries"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p1",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p1s",
+              "marks": [],
+              "text": "Summaries and task suggestions require user review and checks against source content. These are assistive product features; they do not demonstrate an evaluated action-taking business agent."
+            }
+          ]
+        }
+      ],
+      "results": [],
+      "presentationType": "technicalOverview"
+    },
+    "unset": [
+      "year",
+      "resultsSummary",
+      "testimonial"
+    ]
+  },
+  {
+    "id": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+    "revision": "5qm2Uv3IEjX8kJ803xMHV6",
+    "slug": "omnichannel-ecommerce-platform",
+    "set": {
+      "title": "Omnichannel Commerce & Personalization: Technical Overview",
+      "client": "Multi-Store Fashion Retailer",
+      "excerpt": "Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.",
+      "seoTitle": "Omnichannel Commerce & Personalization: Technical Overview | KP Infotech",
+      "seoDescription": "Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.",
+      "challenge": [
+        {
+          "_type": "block",
+          "_key": "context",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "contexts",
+              "marks": [],
+              "text": "Retailers operating online and in stores may need consistent product, inventory and customer information. This anonymized context illustrates technical scope without asserting a delivered engagement, revenue growth or conversion results."
+            }
+          ]
+        }
+      ],
+      "approach": [
+        {
+          "_type": "block",
+          "_key": "considerations",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "considerationss",
+              "marks": [],
+              "text": "Scope may include storefronts, inventory and POS integration, buy-online-pick-up-in-store workflows and customer profiles. Each requires agreed data ownership, synchronization rules and exception handling."
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "_type": "block",
+          "_key": "h0",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h0s",
+              "marks": [],
+              "text": "Connected retail workflows"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p0",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p0s",
+              "marks": [],
+              "text": "Inventory availability, store pickup and order updates should be designed around actual operating processes. Mobile experiences and customer profiles require accessibility, privacy and integration decisions."
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "h1",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h1s",
+              "marks": [],
+              "text": "Personalization as a product feature"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p1",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p1s",
+              "marks": [],
+              "text": "Recommendation and personalization functionality can be evaluated against representative data and user needs. This does not establish autonomous agent delivery or measured commercial uplift."
+            }
+          ]
+        }
+      ],
+      "results": [],
+      "presentationType": "technicalOverview"
+    },
+    "unset": [
+      "year",
+      "resultsSummary",
+      "testimonial"
+    ]
+  },
+  {
+    "id": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+    "revision": "3YuHhCM2aS4wIXM3jQdW7U",
+    "slug": "ai-automation-agents",
+    "set": {
+      "faqs": [
+        {
+          "_key": "1e9fb09ba48c",
+          "_type": "faqItem",
+          "answer": "An AI agent receives context and uses a model to choose a next step from permitted tools or actions. It proposes or performs an allowed action and returns a result or status within defined permissions, limits and approval rules. A summary or generated response alone is not an agent.",
+          "question": "What is an AI agent?"
+        },
+        {
+          "_key": "c4ed64a5f491",
+          "_type": "faqItem",
+          "answer": "Use AI when interpretation, extraction, classification or retrieval adds value to a defined business task. Prefer rules, ordinary search or a normal integration when those are sufficient. Data restrictions, unacceptable uncertainty or an unclear process can make AI unsuitable.",
+          "question": "When should we use AI instead of normal automation?"
+        },
+        {
+          "_key": "8a7482779119",
+          "_type": "faqItem",
+          "answer": "Potential scopes include document interpretation, internal knowledge assistance, task preparation and routing, operational summaries, and reviewed customer-support drafts. Start with one task and evaluate its data, output quality and review requirements before expanding.",
+          "question": "What business tasks can AI automation support?"
+        },
+        {
+          "_key": "bf19d0fdd244",
+          "_type": "faqItem",
+          "answer": "Connections depend on available APIs, approved data access and the actions a system permits. Begin with read-only access or proposed actions for review. Writes require a separately agreed scope, permissions, tests and approvals; our public AI feature overviews do not prove a production ERP- or CRM-writing agent.",
+          "question": "Can AI agents connect to our existing systems?"
+        },
+        {
+          "_key": "cc728582ad61",
+          "_type": "faqItem",
+          "answer": "Define who reviews uncertain extraction, approves generated content and authorizes sensitive financial or customer changes. Named owners resolve exceptions and can override results, revoke access or stop the workflow. Tool permissions and action limits are agreed before release.",
+          "question": "How do you keep people in control?"
+        },
+        {
+          "_key": "step7efaq5",
+          "_type": "faqItem",
+          "answer": "We agree representative examples, expected outputs or actions and acceptance criteria with your experts. Tests cover ambiguous and invalid inputs, retrieval relevance, unanswerable questions, tool restrictions, denied access, approvals and failure paths. Recheck the examples when prompts, models or workflow logic change.",
+          "question": "How do you test an AI workflow?"
+        },
+        {
+          "_key": "step7efaq6",
+          "_type": "faqItem",
+          "answer": "Validation and review rules determine whether to stop, return an unresolved status or route the item to a person. Logs where supported help the owner investigate incorrect interpretation, unsupported answers, format errors or failed tool calls. AI outputs still need evaluation and appropriate review.",
+          "question": "What happens when an output is incorrect or uncertain?"
+        },
+        {
+          "_key": "step7efaq7",
+          "_type": "faqItem",
+          "answer": "The workflow needs approved sources and representative examples relevant to the task. Your data and system owners authorize access and sensitive-data handling. Third-party model/API use, retention, processing location and privacy arrangements depend on the selected architecture, provider settings and contract.",
+          "question": "What data and access does the system need?"
+        },
+        {
+          "_key": "step7efaq8",
+          "_type": "faqItem",
+          "answer": "Workflow complexity, data readiness, document volume, model usage, retrieval requirements, integrations, permissions, evaluation and human-review needs affect delivery. Latency, monitoring and support requirements also matter. Discovery defines the initial scope and checkpoints; there is no universal delivery duration.",
+          "question": "What affects AI project cost and timeline?"
+        },
+        {
+          "_key": "step7efaq9",
+          "_type": "faqItem",
+          "answer": "Your named operational owner and KP agree support responsibilities, review cadence and monitoring scope. Reviews can cover failures, API errors, quality feedback, approval rates, cost, latency, provider changes and source freshness. Further use cases follow evaluation and a separate scope decision.",
+          "question": "What happens after deployment?"
+        }
+      ],
+      "content": [
+        {
+          "_key": "step7e0",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e0s",
+              "_type": "span",
+              "marks": [],
+              "text": "Start with one document type, one knowledge domain or one team task. We scope the data, permitted actions, review points and acceptance criteria before building, then evaluate whether the workflow is useful enough to launch or expand."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e1",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e1s",
+              "_type": "span",
+              "marks": [],
+              "text": "When AI is the right fit"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e2",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e2s",
+              "_type": "span",
+              "marks": [],
+              "text": "AI can help when a task needs interpretation of variable text, document classification, information extraction, operational summaries or retrieval from internal knowledge. Contextual task routing may also benefit when fixed rules cannot cover the requests reliably."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e3",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e3s",
+              "_type": "span",
+              "marks": [],
+              "text": "Use a normal integration or rules-based workflow when the steps are predictable, and ordinary search or filters when they answer the question. AI may be unsuitable where accuracy requirements cannot tolerate model uncertainty, data access is inappropriate or the business process is not yet clear. Discovery can lead to a simpler solution or a decision not to proceed."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e4",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e4s",
+              "_type": "span",
+              "marks": [],
+              "text": "Rules-based automation vs AI agents"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e5",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e5l",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Rules-based automation. "
+            },
+            {
+              "_key": "step7e5s",
+              "_type": "span",
+              "marks": [],
+              "text": "A known trigger meets a defined condition and runs a defined action, such as routing an approved request to a named team."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e6",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e6l",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Workflow automation. "
+            },
+            {
+              "_key": "step7e6s",
+              "_type": "span",
+              "marks": [],
+              "text": "Coordinates tasks, data and approvals across people and systems. This is the focus of our Business Automation service; adding a model is optional."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e7",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e7l",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "AI-assisted automation. "
+            },
+            {
+              "_key": "step7e7s",
+              "_type": "span",
+              "marks": [],
+              "text": "Uses a model to interpret, extract, classify or generate information inside a controlled process. A document summary or draft response alone is not an agent."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e8",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e8l",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "An AI agent. "
+            },
+            {
+              "_key": "step7e8s",
+              "_type": "span",
+              "marks": [],
+              "text": "Receives context, uses a model to select a next step, accesses only permitted data and tools, and proposes or executes an allowed action. It returns a result or status within defined limits and approval rules. Not every workflow needs this ability to choose actions."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e9",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e9s",
+              "_type": "span",
+              "marks": [],
+              "text": "AI use cases for business operations"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e10",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e10l",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Document processing. "
+            },
+            {
+              "_key": "step7e10s",
+              "_type": "span",
+              "marks": [],
+              "text": "Extract, classify or summarize information from agreed document types, with exceptions routed to a reviewer."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e11",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e11l",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Internal knowledge assistance. "
+            },
+            {
+              "_key": "step7e11s",
+              "_type": "span",
+              "marks": [],
+              "text": "Help staff find answers in approved policies, procedures and operational references, subject to source access and freshness."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e12",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e12l",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Operational task assistance. "
+            },
+            {
+              "_key": "step7e12s",
+              "_type": "span",
+              "marks": [],
+              "text": "Interpret a request, prepare a task, suggest a next action or route work for approval. Any tool action needs a specific permitted scope."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e13",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e13l",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Reporting and information synthesis. "
+            },
+            {
+              "_key": "step7e13s",
+              "_type": "span",
+              "marks": [],
+              "text": "Combine available operational information into summaries for recurring reviews. People check the underlying figures and conclusions before decisions."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e14",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e14l",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Customer and support assistance. "
+            },
+            {
+              "_key": "step7e14s",
+              "_type": "span",
+              "marks": [],
+              "text": "Draft replies, summarize requests or assist lead qualification using approved information. Review and escalation rules determine what may reach a customer."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e15",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e15s",
+              "_type": "span",
+              "marks": [],
+              "text": "Document processing with validation and review"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e16",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e16s",
+              "_type": "span",
+              "marks": [],
+              "text": "We agree the input source and document types, define the fields or categories needed, then test extraction and classification against representative examples. Validation checks required fields, formats and business rules; quality or confidence checks are used where meaningful. Missing, conflicting or uncertain information goes to a reviewer before a structured output is handed to the next system."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e17",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e17s",
+              "_type": "span",
+              "marks": [],
+              "text": "Supported formats, languages and scan quality must be established for the specific workflow. Fixed-rule document creation and routing belong in Business Automation; this service covers the interpretation step when AI is justified."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e18",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e18s",
+              "_type": "span",
+              "marks": [],
+              "text": "Knowledge assistants and RAG"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e19",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e19s",
+              "_type": "span",
+              "marks": [],
+              "text": "Retrieval-augmented generation, or RAG, retrieves relevant material from approved sources to help a model answer a question. The design must respect source permissions, define how documents are updated and test whether retrieved context supports the answer. Source references can be included where implemented so staff can check the material."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e20",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e20s",
+              "_type": "span",
+              "marks": [],
+              "text": "We evaluate relevant, stale, conflicting and inaccessible sources as well as questions the material cannot answer. An assistant should acknowledge missing information or refer the user to an owner instead of presenting an unsupported answer as fact. Retrieval does not remove the need to evaluate outputs."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e21",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e21s",
+              "_type": "span",
+              "marks": [],
+              "text": "Tool access and human approvals"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e22",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e22s",
+              "_type": "span",
+              "marks": [],
+              "text": "Begin with read-only access or proposed actions for review. Each tool needs a defined purpose, a limited action set and the least-necessary permissions. Enabling writes is a separate scope decision, dependent on integration feasibility, testing and approval rules; our public AI feature overviews do not establish a production ERP- or CRM-writing agent."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e23",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e23s",
+              "_type": "span",
+              "marks": [],
+              "text": "People review uncertain extractions, confirm generated content and approve sensitive financial or customer changes before execution. The design identifies who can resolve an exception, override a result, revoke access or stop a workflow. Keep credentials outside prompts and user-facing outputs, and record tool requests, approvals and outcomes where the connected systems support logging. Assign an owner for failed or incomplete actions."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e24",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e24s",
+              "_type": "span",
+              "marks": [],
+              "text": "Data sources and access decisions"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e25",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e25s",
+              "_type": "span",
+              "marks": [],
+              "text": "Your data and system owners approve the sources a workflow may use, the people who may access them and any sensitive fields that need exclusion or special handling. We map the information needed for each task and review access boundaries before connecting documents, databases or APIs."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e26",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e26s",
+              "_type": "span",
+              "marks": [],
+              "text": "Third-party models or APIs may receive information as part of the chosen design. Provider settings, hosting architecture and contract terms determine retention, data use, processing location and privacy arrangements. These need agreement for the actual implementation before sensitive sources are enabled."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e27",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e27s",
+              "_type": "span",
+              "marks": [],
+              "text": "How we evaluate AI workflows"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e28",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e28s",
+              "_type": "span",
+              "marks": [],
+              "text": "A successful API call is not enough: a model can return a valid-looking but incorrect answer. KP and your subject-matter experts agree representative examples, expected outputs or actions and quality criteria. Evaluation includes ambiguous or invalid input, missing context, conflicting information, retrieval relevance and questions that cannot be answered."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e29",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e29s",
+              "_type": "span",
+              "marks": [],
+              "text": "We test tool restrictions, denied access, approval requirements and failure paths alongside normal cases. Your reviewers assess results against the agreed acceptance criteria before release. Changes to prompts, models, sources or workflow logic need regression checks against those examples; an unresolved failure can narrow or stop the proposed rollout."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e30",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e30s",
+              "_type": "span",
+              "marks": [],
+              "text": "Failure handling and monitoring"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e31",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e31s",
+              "_type": "span",
+              "marks": [],
+              "text": "Incorrect interpretation, unsupported answers, wrong tool selection, unexpected output formats and unavailable APIs need explicit handling. Use validation and permission checks, restrict the action scope, and define whether an unsuccessful step stops, returns a clear status or moves to human review. Logs, where supported, help the owner investigate; these controls reduce exposure but errors can still occur."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e32",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e32s",
+              "_type": "span",
+              "marks": [],
+              "text": "After launch, the agreed monitoring scope can include workflow failures, tool/API errors, review and approval rates, user quality feedback, unexpected outputs, usage cost and latency. Assign owners to review model or provider changes and knowledge-source freshness. Support hours, review cadence and response responsibilities are agreed for the engagement."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e33",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e33s",
+              "_type": "span",
+              "marks": [],
+              "text": "How AI fits with your existing systems"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e34",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e34s",
+              "_type": "span",
+              "marks": [],
+              "text": "Choose this service when interpretation, retrieval or bounded model-selected actions are central. Business Automation coordinates deterministic handoffs and approvals. Custom Software covers general application and API engineering; ERP covers Odoo implementation and Odoo-specific integration; Cloud & DevOps covers infrastructure and runtime operation. A project may need more than one discipline, with responsibilities defined during discovery."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e35",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e35s",
+              "_type": "span",
+              "marks": [],
+              "text": "What your team provides"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e36",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e36s",
+              "_type": "span",
+              "marks": [],
+              "text": "Nominate a business owner, subject-matter experts and an operational owner for after launch. Provide representative examples, approved data access, tool and system owners, rules for sensitive actions and named reviewers or approvers. Agree acceptance criteria, make time to review outputs and supply feedback before expanding the workflow."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e37",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e37s",
+              "_type": "span",
+              "marks": [],
+              "text": "Scope, cost and rollout planning"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e38",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e38s",
+              "_type": "span",
+              "marks": [],
+              "text": "Scope and cost depend on workflow complexity, data sources, document volume, model/provider usage, retrieval and indexing needs, integrations, permissions and evaluation effort. Human review, latency requirements and ongoing monitoring or support also affect the plan. We establish these during discovery rather than assuming AI will reduce costs."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e39",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e39s",
+              "_type": "span",
+              "marks": [],
+              "text": "Launch decisions follow evaluation of a bounded first use case. Expand to another document type, knowledge domain or action only after its data, permissions, quality and operating responsibilities have been checked."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7e40",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e40s",
+              "_type": "span",
+              "marks": [],
+              "text": "What the related work demonstrates"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7e41",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7e41s",
+              "_type": "span",
+              "marks": [],
+              "text": "The related property overview discusses AI-assisted listing content and recommendation features. The commerce overview discusses personalization. They describe technical feature scope without establishing delivered engagements or measured outcomes; they do not demonstrate an evaluated action-taking business agent or a permission-aware RAG assistant."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step4resources",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "intro",
+              "_type": "span",
+              "marks": [],
+              "text": "Our "
+            },
+            {
+              "_key": "resource0",
+              "_type": "span",
+              "marks": [
+                "resource0"
+              ],
+              "text": "business process automation tools guide"
+            },
+            {
+              "_key": "end",
+              "_type": "span",
+              "marks": [],
+              "text": " explains where rule-based automation fits and when AI-assisted workflows need human review."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "resource0",
+              "_type": "internalLink",
+              "reference": {
+                "_ref": "blogPost.business-process-automation-tools",
+                "_type": "reference"
+              }
+            }
+          ],
+          "style": "normal"
+        }
+      ]
+    },
+    "unset": []
+  },
+  {
+    "id": "5807cc3f-6fa8-4352-b644-b61820dad506",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "slug": "finance",
+    "set": {
+      "excerpt": "Financial applications, payment integrations and reporting dashboards with security, access and auditability requirements scoped to the application.",
+      "solutionStatement": "We scope financial applications around *security and auditability requirements*, access controls and integration needs for the specific engagement.",
+      "solutions": [
+        {
+          "_key": "f314d20faecc",
+          "_type": "solutionItem",
+          "description": "Mobile-first customer portals with biometric auth, instant transfers, and the UX that consumers expect in 2026.",
+          "title": "Modern Banking Interfaces"
+        },
+        {
+          "_key": "41a508d45c9b",
+          "_type": "solutionItem",
+          "description": "Connect legacy systems to modern applications via secure APIs, enabling innovation without ripping out core infrastructure.",
+          "title": "API-First Architecture"
+        },
+        {
+          "_key": "1ec2c74aa65f",
+          "_type": "solutionItem",
+          "description": "Scope payment security, hosting controls and audit trails against the specific system, responsibilities and applicable requirements. Compliance assessment requires a separate, qualified review.",
+          "title": "Security & Auditability Requirements"
+        },
+        {
+          "_key": "de1db05bd738",
+          "_type": "solutionItem",
+          "description": "Machine learning models that flag suspicious activity in real time without adding friction to legitimate transactions.",
+          "title": "Fraud Detection Systems"
+        }
+      ]
+    },
+    "unset": []
+  },
+  {
+    "id": "8df4b488-255f-42de-bf15-fef756dbc300",
+    "revision": "RfimE1gVC9ER6WRH4N7CDz",
+    "slug": "startups",
+    "set": {
+      "solutions": [
+        {
+          "_key": "3116a250d79c",
+          "_type": "solutionItem",
+          "description": "Delivery timing depends on validated scope, integrations, review cycles and acceptance requirements. Validate assumptions before expanding the product.",
+          "title": "Lean MVP Development"
+        },
+        {
+          "_key": "1106bf9f66b4",
+          "_type": "solutionItem",
+          "description": "Architecture that starts simple but can grow. No premature optimization, but no technical dead-ends either.",
+          "title": "Scalable Foundation"
+        },
+        {
+          "_key": "9811560a4160",
+          "_type": "solutionItem",
+          "description": "Weekly demos, rapid pivots, and the flexibility to adjust scope as you learn what users actually want.",
+          "title": "Agile Iteration Sprints"
+        },
+        {
+          "_key": "854dfd9cd452",
+          "_type": "solutionItem",
+          "description": "We act as your technical co-founder\u2014advising on architecture, security, scaling, and helping you hire your first eng team when you're ready.",
+          "title": "Technical Partnership"
+        }
+      ]
+    },
+    "unset": []
+  },
+  {
+    "id": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+    "revision": "1rt65YukpwbJFhGzTx7SoP",
+    "slug": "digital-banking-platform",
+    "set": {
+      "title": "Digital Banking Interfaces & Integration: Technical Overview",
+      "client": "Regional Credit Union",
+      "excerpt": "Technical overview of digital banking interfaces, core-system integration, access controls, data transformation and reconciliation.",
+      "seoTitle": "Digital Banking Interfaces & Integration: Technical Overview | KP Infotech",
+      "seoDescription": "Technical overview of digital banking interfaces, core-system integration, access controls, data transformation and reconciliation.",
+      "challenge": [
+        {
+          "_type": "block",
+          "_key": "context",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "contexts",
+              "marks": [],
+              "text": "A regional financial institution may need clearer digital interfaces and connections to existing core systems. This anonymized context is a technical overview, not confirmation of a delivered engagement, financial results or security attestation."
+            }
+          ]
+        }
+      ],
+      "approach": [
+        {
+          "_type": "block",
+          "_key": "considerations",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "considerationss",
+              "marks": [],
+              "text": "Scope can include authentication, role-based access, core-system interfaces, data transformation and reconciliation. Payment integration depends on provider availability, recipient eligibility and the institution\u2019s approved requirements."
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "_type": "block",
+          "_key": "h0",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h0s",
+              "marks": [],
+              "text": "Integration and reconciliation"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p0",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p0s",
+              "marks": [],
+              "text": "Map system ownership, data formats and error handling before connecting customer interfaces to core services. Reconciliation and exception handling need explicit acceptance criteria and operational owners."
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "h1",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h1s",
+              "marks": [],
+              "text": "Security and rollout requirements"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p1",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p1s",
+              "marks": [],
+              "text": "Access controls, security review and phased rollout are requirements to agree and validate for a specific system. No certification, penetration-test result or award is asserted by this overview."
+            }
+          ]
+        }
+      ],
+      "results": [],
+      "presentationType": "technicalOverview"
+    },
+    "unset": [
+      "year",
+      "resultsSummary",
+      "testimonial"
+    ]
+  },
+  {
+    "id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+    "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+    "slug": "cloud-cost-optimization-industrial-sme",
+    "set": {
+      "title": "Cloud Infrastructure Review & Cost-Control Considerations",
+      "client": "European Industrial Machinery Manufacturer",
+      "excerpt": "Technical overview of cloud resource utilization, storage lifecycle, containerized deployment and operational ownership for an industrial business.",
+      "seoTitle": "Cloud Infrastructure Review & Cost-Control Considerations | KP Infotech",
+      "seoDescription": "Technical overview of cloud resource utilization, storage lifecycle, containerized deployment and operational ownership for an industrial business.",
+      "challenge": [
+        {
+          "_type": "block",
+          "_key": "context",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "contexts",
+              "marks": [],
+              "text": "Industrial cloud environments can accumulate unused resources, unclear storage policies and deployment complexity. This overview uses anonymized industry context to discuss areas for review; it does not present a verified engagement or measured savings."
+            }
+          ]
+        }
+      ],
+      "approach": [
+        {
+          "_type": "block",
+          "_key": "considerations",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "considerationss",
+              "marks": [],
+              "text": "A review can map resource utilization, storage retention and deployment dependencies against operating requirements. Cost-control decisions need workload context, recovery requirements and an accountable operational owner."
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "_type": "block",
+          "_key": "h0",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h0s",
+              "marks": [],
+              "text": "Resource and storage review"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p0",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p0s",
+              "marks": [],
+              "text": "Review resource allocation alongside utilization, retention rules and recovery needs. A proposed change should be evaluated against representative billing and workload data before drawing financial conclusions."
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "h1",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h1s",
+              "marks": [],
+              "text": "Deployment and operational ownership"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p1",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p1s",
+              "marks": [],
+              "text": "Containerized deployment can be considered alongside configuration management, monitoring and rollback responsibilities. Assign ownership for ongoing review and validate changes against service requirements."
+            }
+          ]
+        }
+      ],
+      "results": [],
+      "presentationType": "technicalOverview",
+      "heroImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744-jpg",
+          "_type": "reference"
+        }
+      },
+      "thumbnailImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-11563ac0b428d6223411aa21a0cbb5e25a9ac80a-5616x3744-jpg",
+          "_type": "reference"
+        }
+      }
+    },
+    "unset": [
+      "year",
+      "resultsSummary",
+      "testimonial"
+    ]
+  },
+  {
+    "id": "e907e1d9-f6be-4f56-a048-276e29d2d3fc",
+    "revision": "Xe0A1k3WLpDZQN3vt7JBHA",
+    "slug": "virtual-tours-ai-listings",
+    "set": {
+      "title": "3D Tours & AI-Assisted Listings: Technical Overview",
+      "client": "Real Estate Network",
+      "excerpt": "Technical overview of 3D tours, listing workflows, AI-assisted descriptions, recommendations, CRM integration and mobile property search.",
+      "seoTitle": "3D Tours & AI-Assisted Listings: Technical Overview | KP Infotech",
+      "seoDescription": "Technical overview of 3D tours, listing workflows, AI-assisted descriptions, recommendations, CRM integration and mobile property search.",
+      "challenge": [
+        {
+          "_type": "block",
+          "_key": "context",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "contexts",
+              "marks": [],
+              "text": "A real estate network may need a consistent way to present properties and manage listing information. This anonymized context supports a technical overview; it does not confirm a delivered engagement, lead volume, property sales or conversion performance."
+            }
+          ]
+        }
+      ],
+      "approach": [
+        {
+          "_type": "block",
+          "_key": "considerations",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "considerationss",
+              "marks": [],
+              "text": "Relevant scope includes 3D tours, listing workflows, mobile search and CRM integration. Content ownership, listing accuracy and human review need to be defined before publishing or routing information."
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "_type": "block",
+          "_key": "h0",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h0s",
+              "marks": [],
+              "text": "Listing and search workflow"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p0",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p0s",
+              "marks": [],
+              "text": "Tour media, property details and inquiry routing need consistent publishing and update processes. Mobile navigation and search should be evaluated with representative users and content."
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "h1",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "h1s",
+              "marks": [],
+              "text": "AI-assisted content and recommendations"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "p1",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "p1s",
+              "marks": [],
+              "text": "Generated descriptions need checks against approved property facts. Recommendations require appropriate data and evaluation. These assistive features do not demonstrate a production action-taking agent."
+            }
+          ]
+        }
+      ],
+      "results": [],
+      "presentationType": "technicalOverview"
+    },
+    "unset": [
+      "year",
+      "resultsSummary",
+      "testimonial"
+    ]
+  },
+  {
+    "id": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+    "revision": "E86H3egt6xuNMJG8vjUwpG",
+    "slug": "cloud-devops",
+    "set": {
+      "content": [
+        {
+          "_key": "step7c00",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c00s",
+              "_type": "span",
+              "marks": [],
+              "text": "Who this service is for"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c01",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c01s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cloud & DevOps services suit teams launching or running business applications, APIs, databases and operational platforms. A useful starting point is a specific problem: manual deployments, unreliable releases, inconsistent environments, missing logs, unclear recovery procedures or a cloud bill that no one can explain."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c02",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c02s",
+              "_type": "span",
+              "marks": [],
+              "text": "We assess the current setup before proposing a redesign. Better release steps, corrected configuration, a restore check or removal of unused resources may be enough. A stable workload does not automatically need a cloud migration, Kubernetes or a larger infrastructure project."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c03",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c03s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cloud infrastructure and deployment"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c04",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c04s",
+              "_type": "span",
+              "marks": [],
+              "text": "Our cloud infrastructure services cover environment planning, hosting and server configuration, database deployment, storage, DNS, SSL and access controls within the agreed application scope. We review capacity, dependencies and environment separation against traffic, data needs, budget and the team responsible for operations."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c05",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c05s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cloud infrastructure consulting can start with an existing environment or a new deployment. The outcome is an agreed architecture and improvement plan, with configuration changes and operational responsibilities made explicit. Provider and tool choices follow the workload; the stack below is not a requirement to adopt every platform."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c06",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c06s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cloud migration"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c07",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c07s",
+              "_type": "span",
+              "marks": [],
+              "text": "Migration starts with the current applications, data, integrations and dependencies. We establish what should move, what should remain, and which business activities a cutover could affect. The plan covers data and application movement, testing, an agreed cutover window, fallback steps and post-migration monitoring."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c08",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c08s",
+              "_type": "span",
+              "marks": [],
+              "text": "Your application owners validate critical workflows and data checks before accepting the move. Downtime tolerance, rollback limits and recovery responsibilities are agreed for the workload rather than assumed."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c09",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c09s",
+              "_type": "span",
+              "marks": [],
+              "text": "CI/CD and infrastructure automation"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c10",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c10s",
+              "_type": "span",
+              "marks": [],
+              "text": "Our DevOps services connect build, test and deployment steps into a repeatable release workflow. CI/CD implementation can include testing gates, environment promotion, deployment logs and approval points, so teams can see what changed, where it was deployed and whether the release passed its checks."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c11",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c11s",
+              "_type": "span",
+              "marks": [],
+              "text": "Rollback readiness includes retaining the required release artifacts and agreeing how application, configuration and database changes can be reversed or recovered. The release process must reflect the application\u2019s actual constraints."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c12",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c12s",
+              "_type": "span",
+              "marks": [],
+              "text": "Repeatable server configuration and container deployment support environment consistency and make changes easier to review. We scope infrastructure automation around maintainable setup and reduced configuration drift. Where infrastructure-as-code is appropriate, the required tooling and ownership are assessed during planning; a technology listing alone does not define the engagement."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c13",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c13s",
+              "_type": "span",
+              "marks": [],
+              "text": "Monitoring, backups and recovery"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c14",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c14s",
+              "_type": "span",
+              "marks": [],
+              "text": "Monitoring should make service health, resource utilization, application errors, deployment failures and capacity signals visible. We scope logs, health checks and alerts around the systems that matter to operations. Each alert needs a named recipient and an agreed route for investigating and escalating issues."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c15",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c15s",
+              "_type": "span",
+              "marks": [],
+              "text": "Backup planning identifies critical data and configuration, what is included, retention needs and who owns recovery. Restore validation checks that a backup can be used and that the recovery procedure is understandable. Your team confirms data priorities and acceptance checks; recovery targets and response arrangements are defined for the engagement."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c16",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c16s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cloud cost optimization"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c17",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c17s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cloud cost optimization is an engineering review of what infrastructure is doing and what the business needs from it. We examine billing alongside resource utilization and workload patterns to find avoidable spend, rather than choosing hosting on price alone."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c18",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c18s",
+              "_type": "span",
+              "marks": [],
+              "text": "Review areas include idle or oversized compute, unused environments, database capacity, storage tiers and retention, data-transfer patterns and duplicated infrastructure. Architecture simplification, containerization or consolidation may help where they reduce overhead without creating unacceptable operational dependencies."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c19",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c19s",
+              "_type": "span",
+              "marks": [],
+              "text": "Each recommendation weighs cost against performance, reliability, recovery, operational effort and future growth. A resource that appears underused may still be necessary for a peak period or recovery. Changes need an owner, a validation plan and approval before implementation."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c20",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c20s",
+              "_type": "span",
+              "marks": [],
+              "text": "The delivery process below incorporates cost work: establish the billing and infrastructure baseline, understand workload requirements, prioritize opportunities, implement agreed changes, validate service behavior and measure the result. A cost review can be a focused engagement within this service; it does not require a migration or complete rebuild."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c21",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c21s",
+              "_type": "span",
+              "marks": [],
+              "text": "How cost changes are measured"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c22",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c22s",
+              "_type": "span",
+              "marks": [],
+              "text": "Compare an agreed baseline with a representative post-change billing period, using the same accounts, services, currency and cost scope. Record changes in traffic, storage, workload, rates, credits and one-off charges so a lower bill is not mistaken for an engineering saving when usage simply fell."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c23",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c23s",
+              "_type": "span",
+              "marks": [],
+              "text": "Report recurring infrastructure cost separately from implementation fees and temporary migration costs. Check performance, errors and recovery requirements alongside the bill before accepting a change. The industrial cloud overview in Related Work describes technical considerations; it does not establish a verified engagement or measured savings."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c24",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c24s",
+              "_type": "span",
+              "marks": [],
+              "text": "Access and client responsibilities"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c25",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c25s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cloud accounts should remain under the client\u2019s control, with access granted through agreed permissions. Limit production access to the people who need it, use the agreed secrets-management method and review changes before release. Credentials should not be copied into messages, source code or shared documents."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c26",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c26s",
+              "_type": "span",
+              "marks": [],
+              "text": "Your team provides application knowledge, account and billing access appropriate to the review, traffic patterns, deployment constraints and business-critical requirements. Name the people who approve infrastructure changes, test workflows, receive alerts and own backups and recovery. These responsibilities become part of the delivery and handover plan."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c27",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c27s",
+              "_type": "span",
+              "marks": [],
+              "text": "Support after deployment"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c28",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c28s",
+              "_type": "span",
+              "marks": [],
+              "text": "Agreed cloud support can cover deployment troubleshooting, monitoring review, backup checks, infrastructure and capacity changes, performance checks and further cost reviews. DevOps consulting services can also help an internal team prioritize improvements and maintain its release process."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c29",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c29s",
+              "_type": "span",
+              "marks": [],
+              "text": "The support scope, hours, escalation contacts and response arrangements are agreed separately. Ongoing work is planned around the systems and responsibilities covered by that agreement."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step7c30",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c30s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cloud, hosting and application development"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "step7c31",
+          "_type": "richText",
+          "children": [
+            {
+              "_key": "step7c31s",
+              "_type": "span",
+              "marks": [],
+              "text": "Hosting provides the environment in which software runs. A Cloud & DevOps engagement also addresses architecture, releases, monitoring, recovery and infrastructure operations. Custom Software builds or changes the application itself; Cloud & DevOps deploys and operates the infrastructure supporting it. The two scopes can work together while keeping responsibilities clear."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "step4resources",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "intro",
+              "_type": "span",
+              "marks": [],
+              "text": "For infrastructure planning, review our "
+            },
+            {
+              "_key": "resource0",
+              "_type": "span",
+              "marks": [
+                "resource0"
+              ],
+              "text": "cloud deployment models guide"
+            },
+            {
+              "_key": "and1",
+              "_type": "span",
+              "marks": [],
+              "text": " and "
+            },
+            {
+              "_key": "resource1",
+              "_type": "span",
+              "marks": [
+                "resource1"
+              ],
+              "text": "DevOps best practices"
+            },
+            {
+              "_key": "end",
+              "_type": "span",
+              "marks": [],
+              "text": " to connect hosting choices with reliable day-to-day delivery."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "resource0",
+              "_type": "internalLink",
+              "reference": {
+                "_ref": "3011f67f-8bba-43b3-b60d-8896384d64a0",
+                "_type": "reference"
+              }
+            },
+            {
+              "_key": "resource1",
+              "_type": "internalLink",
+              "reference": {
+                "_ref": "blogPost.devops-best-practices",
+                "_type": "reference"
+              }
+            }
+          ],
+          "style": "normal"
+        }
+      ]
+    },
+    "unset": []
+  }
+]

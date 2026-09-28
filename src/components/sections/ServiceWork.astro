@@ -66,7 +66,7 @@ function getImageUrl(image: any): string | null {
               {getImageUrl(featured.thumbnailImage) ? (
                 <SanityPicture
                   src={getImageUrl(featured.thumbnailImage)!}
-                  alt={featured.title}
+                  alt=""
                   width={800}
                   height={500}
                   sizes="(max-width: 1024px) 100vw, 60vw"
@@ -99,7 +99,7 @@ function getImageUrl(image: any): string | null {
               {getImageUrl(project.thumbnailImage) ? (
                 <SanityPicture
                   src={getImageUrl(project.thumbnailImage)!}
-                  alt={project.title}
+                  alt=""
                   width={800}
                   height={500}
                   sizes="(max-width: 768px) 100vw, 50vw"

@@ -1,0 +1,308 @@
+{
+  "source_sha256": "8fff5724d00deba820c1602fd6fe79a4df79f59fb965cb0bf3fb76d1d8fa0511",
+  "occurrences": 396,
+  "contradicted": [
+    {
+      "claim_id": "C0283",
+      "url": "https://kpinfo.tech/work/digital-banking-platform/",
+      "old_wording": "Mobile Check Deposit: Advanced OCR technology with automatic amount extraction and fraud detection, processing 95% of deposits without manual review. P2P Payments: Zelle integration enabling instant transfers to any U.S. bank account. Bill Pay: Automated bill detection from transaction history with one-tap setup. Spending Insights: AI-powered categorization showing spending by category with month-over-month trends and budget alerts. Savings Goals: Visual progress tracking with automatic round-up transfers to goals. Card Controls: Real-time ability to freeze/unfreeze cards, set spending limits, and block specific merchant categories.",
+      "action": "REMOVE / REPLACE",
+      "new_wording_or_removal": "{\"digital-banking-platform\": {\"title\": \"Digital Banking Interfaces & Integration: Technical Overview\", \"client\": \"Regional Credit Union\", \"excerpt\": \"Technical overview of digital banking interfaces, core-system integration, access controls, data transformation and reconciliation.\", \"seoTitle\": \"Digital Banking Interfaces & Integration: Technical Overview | KP Infotech\", \"seoDescription\": \"Technical overview of digital banking interfaces, core-system integration, access controls, data transformation and reconciliation.\", \"challenge\": [{\"_type\": \"block\", \"_key\": \"context\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"contexts\", \"marks\": [], \"text\": \"A regional financial institution may need clearer digital interfaces and connections to existing core systems. This anonymized context is a technical overview, not confirmation of a delivered engagement, financial results or security attestation.\"}]}], \"approach\": [{\"_type\": \"block\", \"_key\": \"considerations\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"considerationss\", \"marks\": [], \"text\": \"Scope can include authentication, role-based access, core-system interfaces, data transformation and reconciliation. Payment integration depends on provider availability, recipient eligibility and the institution\u2019s approved requirements.\"}]}], \"content\": [{\"_type\": \"block\", \"_key\": \"h0\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h0s\", \"marks\": [], \"text\": \"Integration and reconciliation\"}]}, {\"_type\": \"block\", \"_key\": \"p0\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p0s\", \"marks\": [], \"text\": \"Map system ownership, data formats and error handling before connecting customer interfaces to core services. Reconciliation and exception handling need explicit acceptance criteria and operational owners.\"}]}, {\"_type\": \"block\", \"_key\": \"h1\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h1s\", \"marks\": [], \"text\": \"Security and rollout requirements\"}]}, {\"_type\": \"block\", \"_key\": \"p1\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p1s\", \"marks\": [], \"text\": \"Access controls, security review and phased rollout are requirements to agree and validate for a specific system. No certification, penetration-test result or award is asserted by this overview.\"}]}], \"results\": [], \"presentationType\": \"technicalOverview\"}}",
+      "reason": "No Tier 1/2 evidence supplied; publication confidence must match available substantiation",
+      "cms_field": "a2255729-fe51-45d5-b190-914ba7f86ea2.content[3].children[].text",
+      "occurrence": "/html[1]/body[2]/main[17]/section[7]/div[0]/div[0]/p[3]",
+      "schema_metadata_image": "Affected through shared CMS projections where applicable",
+      "evidence_status": "CONTRADICTED / UNSUPPORTED"
+    },
+    {
+      "claim_id": "C0324",
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "old_wording": "The omnichannel platform unified TrendStyle's 28 retail locations with their online presence, creating a seamless shopping experience. Online revenue grew from $8M to $45M annually, while in-store sales increased 22% through digital integration. The AI personalization engine achieved a 28% conversion rate (vs. 2.1% industry average) and increased average order value by 47%. The platform processed 2.5M orders in its first year with a 4.7/5 customer satisfaction rating.",
+      "action": "REMOVE / REPLACE",
+      "new_wording_or_removal": "{\"omnichannel-ecommerce-platform\": {\"title\": \"Omnichannel Commerce & Personalization: Technical Overview\", \"client\": \"Multi-Store Fashion Retailer\", \"excerpt\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"seoTitle\": \"Omnichannel Commerce & Personalization: Technical Overview | KP Infotech\", \"seoDescription\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"challenge\": [{\"_type\": \"block\", \"_key\": \"context\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"contexts\", \"marks\": [], \"text\": \"Retailers operating online and in stores may need consistent product, inventory and customer information. This anonymized context illustrates technical scope without asserting a delivered engagement, revenue growth or conversion results.\"}]}], \"approach\": [{\"_type\": \"block\", \"_key\": \"considerations\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"considerationss\", \"marks\": [], \"text\": \"Scope may include storefronts, inventory and POS integration, buy-online-pick-up-in-store workflows and customer profiles. Each requires agreed data ownership, synchronization rules and exception handling.\"}]}], \"content\": [{\"_type\": \"block\", \"_key\": \"h0\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h0s\", \"marks\": [], \"text\": \"Connected retail workflows\"}]}, {\"_type\": \"block\", \"_key\": \"p0\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p0s\", \"marks\": [], \"text\": \"Inventory availability, store pickup and order updates should be designed around actual operating processes. Mobile experiences and customer profiles require accessibility, privacy and integration decisions.\"}]}, {\"_type\": \"block\", \"_key\": \"h1\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h1s\", \"marks\": [], \"text\": \"Personalization as a product feature\"}]}, {\"_type\": \"block\", \"_key\": \"p1\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p1s\", \"marks\": [], \"text\": \"Recommendation and personalization functionality can be evaluated against representative data and user needs. This does not establish autonomous agent delivery or measured commercial uplift.\"}]}], \"results\": [], \"presentationType\": \"technicalOverview\"}}",
+      "reason": "No Tier 1/2 evidence supplied; publication confidence must match available substantiation",
+      "cms_field": "3a61f3da-04fa-4f09-95ec-62cb54403e24.resultsSummary",
+      "occurrence": "/html[1]/body[2]/main[17]/section[5]/div[0]/div[2]/div[2]/div[1]/div[1]/p[0]",
+      "schema_metadata_image": "Affected through shared CMS projections where applicable",
+      "evidence_status": "CONTRADICTED / UNSUPPORTED"
+    },
+    {
+      "claim_id": "C0338",
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "old_wording": "340% Increase in online revenue",
+      "action": "REMOVE / REPLACE",
+      "new_wording_or_removal": "{\"omnichannel-ecommerce-platform\": {\"title\": \"Omnichannel Commerce & Personalization: Technical Overview\", \"client\": \"Multi-Store Fashion Retailer\", \"excerpt\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"seoTitle\": \"Omnichannel Commerce & Personalization: Technical Overview | KP Infotech\", \"seoDescription\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"challenge\": [{\"_type\": \"block\", \"_key\": \"context\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"contexts\", \"marks\": [], \"text\": \"Retailers operating online and in stores may need consistent product, inventory and customer information. This anonymized context illustrates technical scope without asserting a delivered engagement, revenue growth or conversion results.\"}]}], \"approach\": [{\"_type\": \"block\", \"_key\": \"considerations\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"considerationss\", \"marks\": [], \"text\": \"Scope may include storefronts, inventory and POS integration, buy-online-pick-up-in-store workflows and customer profiles. Each requires agreed data ownership, synchronization rules and exception handling.\"}]}], \"content\": [{\"_type\": \"block\", \"_key\": \"h0\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h0s\", \"marks\": [], \"text\": \"Connected retail workflows\"}]}, {\"_type\": \"block\", \"_key\": \"p0\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p0s\", \"marks\": [], \"text\": \"Inventory availability, store pickup and order updates should be designed around actual operating processes. Mobile experiences and customer profiles require accessibility, privacy and integration decisions.\"}]}, {\"_type\": \"block\", \"_key\": \"h1\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h1s\", \"marks\": [], \"text\": \"Personalization as a product feature\"}]}, {\"_type\": \"block\", \"_key\": \"p1\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p1s\", \"marks\": [], \"text\": \"Recommendation and personalization functionality can be evaluated against representative data and user needs. This does not establish autonomous agent delivery or measured commercial uplift.\"}]}], \"results\": [], \"presentationType\": \"technicalOverview\"}}",
+      "reason": "No Tier 1/2 evidence supplied; publication confidence must match available substantiation",
+      "cms_field": "3a61f3da-04fa-4f09-95ec-62cb54403e24.results[0]",
+      "occurrence": "/html[1]/body[2]/main[17]/section[3]/div[0]/div[0]",
+      "schema_metadata_image": "Affected through shared CMS projections where applicable",
+      "evidence_status": "CONTRADICTED / UNSUPPORTED"
+    },
+    {
+      "claim_id": "C0345",
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "old_wording": "How we built an AI-powered omnichannel e-commerce platform that grew online revenue by 340% to $45M and achieved 28% conversion rate for a fashion retailer.",
+      "action": "REMOVE / REPLACE",
+      "new_wording_or_removal": "{\"omnichannel-ecommerce-platform\": {\"title\": \"Omnichannel Commerce & Personalization: Technical Overview\", \"client\": \"Multi-Store Fashion Retailer\", \"excerpt\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"seoTitle\": \"Omnichannel Commerce & Personalization: Technical Overview | KP Infotech\", \"seoDescription\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"challenge\": [{\"_type\": \"block\", \"_key\": \"context\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"contexts\", \"marks\": [], \"text\": \"Retailers operating online and in stores may need consistent product, inventory and customer information. This anonymized context illustrates technical scope without asserting a delivered engagement, revenue growth or conversion results.\"}]}], \"approach\": [{\"_type\": \"block\", \"_key\": \"considerations\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"considerationss\", \"marks\": [], \"text\": \"Scope may include storefronts, inventory and POS integration, buy-online-pick-up-in-store workflows and customer profiles. Each requires agreed data ownership, synchronization rules and exception handling.\"}]}], \"content\": [{\"_type\": \"block\", \"_key\": \"h0\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h0s\", \"marks\": [], \"text\": \"Connected retail workflows\"}]}, {\"_type\": \"block\", \"_key\": \"p0\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p0s\", \"marks\": [], \"text\": \"Inventory availability, store pickup and order updates should be designed around actual operating processes. Mobile experiences and customer profiles require accessibility, privacy and integration decisions.\"}]}, {\"_type\": \"block\", \"_key\": \"h1\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h1s\", \"marks\": [], \"text\": \"Personalization as a product feature\"}]}, {\"_type\": \"block\", \"_key\": \"p1\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p1s\", \"marks\": [], \"text\": \"Recommendation and personalization functionality can be evaluated against representative data and user needs. This does not establish autonomous agent delivery or measured commercial uplift.\"}]}], \"results\": [], \"presentationType\": \"technicalOverview\"}}",
+      "reason": "No Tier 1/2 evidence supplied; publication confidence must match available substantiation",
+      "cms_field": "3a61f3da-04fa-4f09-95ec-62cb54403e24.seoDescription",
+      "occurrence": "meta[3].description",
+      "schema_metadata_image": "Affected through shared CMS projections where applicable",
+      "evidence_status": "CONTRADICTED / UNSUPPORTED"
+    },
+    {
+      "claim_id": "C0347",
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "old_wording": "How we built an AI-powered omnichannel e-commerce platform that grew online revenue by 340% to $45M and achieved 28% conversion rate for a fashion retailer.",
+      "action": "REMOVE / REPLACE",
+      "new_wording_or_removal": "{\"omnichannel-ecommerce-platform\": {\"title\": \"Omnichannel Commerce & Personalization: Technical Overview\", \"client\": \"Multi-Store Fashion Retailer\", \"excerpt\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"seoTitle\": \"Omnichannel Commerce & Personalization: Technical Overview | KP Infotech\", \"seoDescription\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"challenge\": [{\"_type\": \"block\", \"_key\": \"context\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"contexts\", \"marks\": [], \"text\": \"Retailers operating online and in stores may need consistent product, inventory and customer information. This anonymized context illustrates technical scope without asserting a delivered engagement, revenue growth or conversion results.\"}]}], \"approach\": [{\"_type\": \"block\", \"_key\": \"considerations\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"considerationss\", \"marks\": [], \"text\": \"Scope may include storefronts, inventory and POS integration, buy-online-pick-up-in-store workflows and customer profiles. Each requires agreed data ownership, synchronization rules and exception handling.\"}]}], \"content\": [{\"_type\": \"block\", \"_key\": \"h0\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h0s\", \"marks\": [], \"text\": \"Connected retail workflows\"}]}, {\"_type\": \"block\", \"_key\": \"p0\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p0s\", \"marks\": [], \"text\": \"Inventory availability, store pickup and order updates should be designed around actual operating processes. Mobile experiences and customer profiles require accessibility, privacy and integration decisions.\"}]}, {\"_type\": \"block\", \"_key\": \"h1\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h1s\", \"marks\": [], \"text\": \"Personalization as a product feature\"}]}, {\"_type\": \"block\", \"_key\": \"p1\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p1s\", \"marks\": [], \"text\": \"Recommendation and personalization functionality can be evaluated against representative data and user needs. This does not establish autonomous agent delivery or measured commercial uplift.\"}]}], \"results\": [], \"presentationType\": \"technicalOverview\"}}",
+      "reason": "No Tier 1/2 evidence supplied; publication confidence must match available substantiation",
+      "cms_field": "3a61f3da-04fa-4f09-95ec-62cb54403e24.seoDescription",
+      "occurrence": "meta[7].og:description",
+      "schema_metadata_image": "Affected through shared CMS projections where applicable",
+      "evidence_status": "CONTRADICTED / UNSUPPORTED"
+    },
+    {
+      "claim_id": "C0349",
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "old_wording": "How we built an AI-powered omnichannel e-commerce platform that grew online revenue by 340% to $45M and achieved 28% conversion rate for a fashion retailer.",
+      "action": "REMOVE / REPLACE",
+      "new_wording_or_removal": "{\"omnichannel-ecommerce-platform\": {\"title\": \"Omnichannel Commerce & Personalization: Technical Overview\", \"client\": \"Multi-Store Fashion Retailer\", \"excerpt\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"seoTitle\": \"Omnichannel Commerce & Personalization: Technical Overview | KP Infotech\", \"seoDescription\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"challenge\": [{\"_type\": \"block\", \"_key\": \"context\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"contexts\", \"marks\": [], \"text\": \"Retailers operating online and in stores may need consistent product, inventory and customer information. This anonymized context illustrates technical scope without asserting a delivered engagement, revenue growth or conversion results.\"}]}], \"approach\": [{\"_type\": \"block\", \"_key\": \"considerations\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"considerationss\", \"marks\": [], \"text\": \"Scope may include storefronts, inventory and POS integration, buy-online-pick-up-in-store workflows and customer profiles. Each requires agreed data ownership, synchronization rules and exception handling.\"}]}], \"content\": [{\"_type\": \"block\", \"_key\": \"h0\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h0s\", \"marks\": [], \"text\": \"Connected retail workflows\"}]}, {\"_type\": \"block\", \"_key\": \"p0\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p0s\", \"marks\": [], \"text\": \"Inventory availability, store pickup and order updates should be designed around actual operating processes. Mobile experiences and customer profiles require accessibility, privacy and integration decisions.\"}]}, {\"_type\": \"block\", \"_key\": \"h1\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h1s\", \"marks\": [], \"text\": \"Personalization as a product feature\"}]}, {\"_type\": \"block\", \"_key\": \"p1\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p1s\", \"marks\": [], \"text\": \"Recommendation and personalization functionality can be evaluated against representative data and user needs. This does not establish autonomous agent delivery or measured commercial uplift.\"}]}], \"results\": [], \"presentationType\": \"technicalOverview\"}}",
+      "reason": "No Tier 1/2 evidence supplied; publication confidence must match available substantiation",
+      "cms_field": "3a61f3da-04fa-4f09-95ec-62cb54403e24.seoDescription",
+      "occurrence": "meta[13].twitter:description",
+      "schema_metadata_image": "Affected through shared CMS projections where applicable",
+      "evidence_status": "CONTRADICTED / UNSUPPORTED"
+    },
+    {
+      "claim_id": "C0353",
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "old_wording": "How we built an AI-powered omnichannel e-commerce platform that grew online revenue by 340% to $45M and achieved 28% conversion rate for a fashion retailer.",
+      "action": "REMOVE / REPLACE",
+      "new_wording_or_removal": "{\"omnichannel-ecommerce-platform\": {\"title\": \"Omnichannel Commerce & Personalization: Technical Overview\", \"client\": \"Multi-Store Fashion Retailer\", \"excerpt\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"seoTitle\": \"Omnichannel Commerce & Personalization: Technical Overview | KP Infotech\", \"seoDescription\": \"Technical overview of an omnichannel storefront, inventory and POS integration, customer profiles, personalization and mobile commerce.\", \"challenge\": [{\"_type\": \"block\", \"_key\": \"context\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"contexts\", \"marks\": [], \"text\": \"Retailers operating online and in stores may need consistent product, inventory and customer information. This anonymized context illustrates technical scope without asserting a delivered engagement, revenue growth or conversion results.\"}]}], \"approach\": [{\"_type\": \"block\", \"_key\": \"considerations\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"considerationss\", \"marks\": [], \"text\": \"Scope may include storefronts, inventory and POS integration, buy-online-pick-up-in-store workflows and customer profiles. Each requires agreed data ownership, synchronization rules and exception handling.\"}]}], \"content\": [{\"_type\": \"block\", \"_key\": \"h0\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h0s\", \"marks\": [], \"text\": \"Connected retail workflows\"}]}, {\"_type\": \"block\", \"_key\": \"p0\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p0s\", \"marks\": [], \"text\": \"Inventory availability, store pickup and order updates should be designed around actual operating processes. Mobile experiences and customer profiles require accessibility, privacy and integration decisions.\"}]}, {\"_type\": \"block\", \"_key\": \"h1\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h1s\", \"marks\": [], \"text\": \"Personalization as a product feature\"}]}, {\"_type\": \"block\", \"_key\": \"p1\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p1s\", \"marks\": [], \"text\": \"Recommendation and personalization functionality can be evaluated against representative data and user needs. This does not establish autonomous agent delivery or measured commercial uplift.\"}]}], \"results\": [], \"presentationType\": \"technicalOverview\"}}",
+      "reason": "No Tier 1/2 evidence supplied; publication confidence must match available substantiation",
+      "cms_field": "3a61f3da-04fa-4f09-95ec-62cb54403e24.seoDescription",
+      "occurrence": "jsonLd[0].@graph[2].description",
+      "schema_metadata_image": "jsonLd[0].@graph[2].description",
+      "evidence_status": "CONTRADICTED / UNSUPPORTED"
+    },
+    {
+      "claim_id": "C0366",
+      "url": "https://kpinfo.tech/work/virtual-tours-ai-listings/",
+      "old_wording": "Platform revolutionized marketing with cinematic 3D tours reducing showings 62% while increasing serious engagement. AI descriptions improved listing quality across 12K properties. Smart matching achieved 34% conversion vs. 8% industry average. Mobile drove 68% traffic.",
+      "action": "REMOVE / REPLACE",
+      "new_wording_or_removal": "{\"virtual-tours-ai-listings\": {\"title\": \"3D Tours & AI-Assisted Listings: Technical Overview\", \"client\": \"Real Estate Network\", \"excerpt\": \"Technical overview of 3D tours, listing workflows, AI-assisted descriptions, recommendations, CRM integration and mobile property search.\", \"seoTitle\": \"3D Tours & AI-Assisted Listings: Technical Overview | KP Infotech\", \"seoDescription\": \"Technical overview of 3D tours, listing workflows, AI-assisted descriptions, recommendations, CRM integration and mobile property search.\", \"challenge\": [{\"_type\": \"block\", \"_key\": \"context\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"contexts\", \"marks\": [], \"text\": \"A real estate network may need a consistent way to present properties and manage listing information. This anonymized context supports a technical overview; it does not confirm a delivered engagement, lead volume, property sales or conversion performance.\"}]}], \"approach\": [{\"_type\": \"block\", \"_key\": \"considerations\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"considerationss\", \"marks\": [], \"text\": \"Relevant scope includes 3D tours, listing workflows, mobile search and CRM integration. Content ownership, listing accuracy and human review need to be defined before publishing or routing information.\"}]}], \"content\": [{\"_type\": \"block\", \"_key\": \"h0\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h0s\", \"marks\": [], \"text\": \"Listing and search workflow\"}]}, {\"_type\": \"block\", \"_key\": \"p0\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p0s\", \"marks\": [], \"text\": \"Tour media, property details and inquiry routing need consistent publishing and update processes. Mobile navigation and search should be evaluated with representative users and content.\"}]}, {\"_type\": \"block\", \"_key\": \"h1\", \"style\": \"h2\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"h1s\", \"marks\": [], \"text\": \"AI-assisted content and recommendations\"}]}, {\"_type\": \"block\", \"_key\": \"p1\", \"style\": \"normal\", \"markDefs\": [], \"children\": [{\"_type\": \"span\", \"_key\": \"p1s\", \"marks\": [], \"text\": \"Generated descriptions need checks against approved property facts. Recommendations require appropriate data and evaluation. These assistive features do not demonstrate a production action-taking agent.\"}]}], \"results\": [], \"presentationType\": \"technicalOverview\"}}",
+      "reason": "No Tier 1/2 evidence supplied; publication confidence must match available substantiation",
+      "cms_field": "e907e1d9-f6be-4f56-a048-276e29d2d3fc.resultsSummary",
+      "occurrence": "/html[1]/body[2]/main[17]/section[5]/div[0]/div[2]/div[2]/div[1]/div[1]/p[0]",
+      "schema_metadata_image": "Affected through shared CMS projections where applicable",
+      "evidence_status": "CONTRADICTED / UNSUPPORTED"
+    }
+  ],
+  "revisions": [
+    {
+      "id": "01edc29a-94b5-4d89-b93c-c519a1addf17",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "0fac7cf1-d3d5-4ac0-aa1d-79dbe2514117",
+      "revision": "bcEtLt2KUOoFblJ0t22JRm"
+    },
+    {
+      "id": "11cb3700-a502-496e-9ccd-163fc7c5439d",
+      "revision": "RfimE1gVC9ER6WRH4N7CDz"
+    },
+    {
+      "id": "15c6587c-de22-4015-b264-6ceae08c47d6",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "17978c9d-b513-4597-9d8c-4360c05f925a",
+      "revision": "RfimE1gVC9ER6WRH4N7CDz"
+    },
+    {
+      "id": "22114651-112b-40f6-af14-a6ecdd448dfd",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "2466d2a2-9084-4ae5-b347-291ba5475965",
+      "revision": "A6JmRqck7kLIEdXR31fWy5"
+    },
+    {
+      "id": "3011f67f-8bba-43b3-b60d-8896384d64a0",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "3250b94d-c394-461e-a8b8-61307d9eaf18",
+      "revision": "RfimE1gVC9ER6WRH4N7CDz"
+    },
+    {
+      "id": "347935a0-e177-4e34-b3f9-d413e1a0b3ed",
+      "revision": "1rt65YukpwbJFhGzTx8VaX"
+    },
+    {
+      "id": "376db61e-bc91-4f7f-8a3c-a2c3b7ef60b9",
+      "revision": "Xe0A1k3WLpDZQN3vt63OC4"
+    },
+    {
+      "id": "3a61f3da-04fa-4f09-95ec-62cb54403e24",
+      "revision": "5qm2Uv3IEjX8kJ803xMHV6"
+    },
+    {
+      "id": "3e40f487-87db-42d0-a113-86a22fed6393",
+      "revision": "Xe0A1k3WLpDZQN3vt6h7Lj"
+    },
+    {
+      "id": "40f3b0b2-7fd2-4269-9113-42497cbb98df",
+      "revision": "xkrVPVG26PQUUMCDEmVpBM"
+    },
+    {
+      "id": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+      "revision": "3YuHhCM2aS4wIXM3jQdW7U"
+    },
+    {
+      "id": "437cf364-87e6-48b3-9bdd-89b54fef33c0",
+      "revision": "bcEtLt2KUOoFblJ0t21eRR"
+    },
+    {
+      "id": "439cf1fe-7b82-4d5c-8566-3586e6d1dd72",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "45e3cd51-1204-4aa9-bc63-7d61683d616a",
+      "revision": "Xe0A1k3WLpDZQN3vt6h7Lj"
+    },
+    {
+      "id": "49adddf8-8b71-409e-af3c-09871f25696a",
+      "revision": "RfimE1gVC9ER6WRH4N7CDz"
+    },
+    {
+      "id": "56f63e27-3ab0-4753-b16e-9fe2c6c02fa3",
+      "revision": "do8F83s5S3gztBe8X5nnrh"
+    },
+    {
+      "id": "5807cc3f-6fa8-4352-b644-b61820dad506",
+      "revision": "RfimE1gVC9ER6WRH4N7CDz"
+    },
+    {
+      "id": "5f939107-9e75-4d8c-87ed-fa0b49281797",
+      "revision": "pi0720IE0IYwfjwgv67j3A"
+    },
+    {
+      "id": "66848ea2-f18f-4b7b-89ef-d8a3482e5d70",
+      "revision": "bcEtLt2KUOoFblJ0t21rID"
+    },
+    {
+      "id": "7a6b6881-d12d-4f83-a314-c3f00f8819d2",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "8df4b488-255f-42de-bf15-fef756dbc300",
+      "revision": "RfimE1gVC9ER6WRH4N7CDz"
+    },
+    {
+      "id": "954a76ed-0ab9-48f7-b71c-b76a8146a4d3",
+      "revision": "do8F83s5S3gztBe8X62jkb"
+    },
+    {
+      "id": "99901f6b-55bb-4d05-9bb4-53fbdcd0e92e",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "a2255729-fe51-45d5-b190-914ba7f86ea2",
+      "revision": "1rt65YukpwbJFhGzTx7SoP"
+    },
+    {
+      "id": "a627f209-9bf7-421b-8416-286e9cd0a33e",
+      "revision": "1rt65YukpwbJFhGzTwh9Or"
+    },
+    {
+      "id": "aaab7694-a2ac-4750-8d7e-51366a7ee771",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "aabd5e4a-a558-4b10-805f-8c1f28862cd2",
+      "revision": "do8F83s5S3gztBe8X5nmMb"
+    },
+    {
+      "id": "b2ca9ea9-cb68-4957-b502-eb0d437deeb7",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "bbc095f6-0148-4f75-8e1a-3dadbab25d1f",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "bc273397-0f42-4ecd-b232-ea8cc5f65343",
+      "revision": "do8F83s5S3gztBe8X5nkzr"
+    },
+    {
+      "id": "blogPost.business-process-automation-tools",
+      "revision": "TjsscmeD2PKZPEoP8NRK53"
+    },
+    {
+      "id": "blogPost.business-process-improvement-methods",
+      "revision": "TjsscmeD2PKZPEoP8NRKqI"
+    },
+    {
+      "id": "blogPost.devops-best-practices",
+      "revision": "1rt65YukpwbJFhGzUE3m3V"
+    },
+    {
+      "id": "blogPost.how-to-choose-erp-system",
+      "revision": "1rt65YukpwbJFhGzUE3cD3"
+    },
+    {
+      "id": "blogPost.on-premise-vs-cloud-erp",
+      "revision": "TjsscmeD2PKZPEoP8NRNRZ"
+    },
+    {
+      "id": "blogPost.what-is-custom-software",
+      "revision": "ZJzLgKtH0212rQwJy1jNa0"
+    },
+    {
+      "id": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+      "revision": "E86H3egt6xuNMJG8vjRBjx"
+    },
+    {
+      "id": "c35f7505-422b-4c6a-aebb-557e383cc66f",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "c69b5f83-c71d-456c-9d23-60d1dc867fab",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "c78863d6-a962-4365-a153-7e1942d0f0b8",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "c9646449-428c-4014-8455-3fd26abe5fca",
+      "revision": "pi0720IE0IYwfjwgv67miU"
+    },
+    {
+      "id": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+      "revision": "Z6DF4Qvbo8ZQguhgGWhxI7"
+    },
+    {
+      "id": "d290902d-4d69-4914-9d20-7906d6bbfb82",
+      "revision": "RfimE1gVC9ER6WRH4N7CDz"
+    },
+    {
+      "id": "e907e1d9-f6be-4f56-a048-276e29d2d3fc",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    },
+    {
+      "id": "eb52ce75-c590-42ea-9cad-00708b98fe90",
+      "revision": "E86H3egt6xuNMJG8vjUwpG"
+    },
+    {
+      "id": "ef89f4cb-8421-46ff-9ba6-628fd3647e1e",
+      "revision": "Z2CLvEAU9G6vkSOHo6CUdJ"
+    },
+    {
+      "id": "fc2fe8e6-9359-4626-919e-ec95006b731a",
+      "revision": "Xe0A1k3WLpDZQN3vt7JBHA"
+    }
+  ]
+}

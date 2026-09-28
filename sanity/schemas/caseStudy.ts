@@ -5,6 +5,7 @@ export const caseStudy = defineType({
   title: 'Case Study',
   type: 'document',
   fields: [
+    defineField({ name: 'presentationType', type: 'string', title: 'Content Classification', description: 'Use Technical Overview until engagement evidence and publication permission have been reviewed. Changing this field alone does not substantiate outcomes.', options: { list: [{ title: 'Technical Overview', value: 'technicalOverview' }, { title: 'Case Study (owner-approved engagement)', value: 'caseStudy' }] }, initialValue: 'technicalOverview' }),
     defineField({ name: 'title', type: 'string', title: 'Project Title', validation: (Rule) => Rule.required() }),
     defineField({ name: 'slug', type: 'slug', title: 'Slug', options: { source: 'title' }, validation: (Rule) => Rule.required() }),
     defineField({ name: 'client', type: 'string', title: 'Client Name' }),

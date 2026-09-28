@@ -4,6 +4,7 @@ import SectionLabel from '../ui/SectionLabel.astro';
 import Button from '../ui/Button.astro';
 
 interface Props {
+  technicalOverview?: boolean;
   title: string;
   client?: string;
   year?: string;
@@ -12,7 +13,7 @@ interface Props {
   slug?: string;
 }
 
-const { title, client, year, services, heroImageUrl, slug } = Astro.props;
+const { technicalOverview = false, title, client, year, services, heroImageUrl, slug } = Astro.props;
 ---
 
 <PageHero
@@ -25,7 +26,7 @@ const { title, client, year, services, heroImageUrl, slug } = Astro.props;
     { name: title },
   ]}
 >
-  <SectionLabel text="Case Study" />
+  <SectionLabel text={technicalOverview ? "Technical Overview" : "Case Study"} />
 
   <h1 style={slug ? `view-transition-name: work-title-${slug}` : undefined}>{title}</h1>
 

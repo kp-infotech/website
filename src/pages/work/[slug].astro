@@ -37,6 +37,8 @@ if (study.heroImage) {
   }
 }
 
+const isTechnicalOverview = study.presentationType !== 'caseStudy';
+
 const seoTitle = study.seoTitle || study.title;
 const seoDescription = study.seoDescription || study.excerpt;
 const studyUrl = canonicalUrl(`/work/${slug}/`);
@@ -54,7 +56,7 @@ const caseStudyJsonLd = [
     description: seoDescription,
     image: heroImageUrl,
     url: studyUrl,
-    dateCreated: study._createdAt,
+    // CMS timestamps describe editorial changes, never project completion.
     dateModified: study._updatedAt,
     creator: { '@id': ORG_ID },
     publisher: { '@id': ORG_ID },
@@ -62,7 +64,7 @@ const caseStudyJsonLd = [
       ...(study.services || []).map((service: any) => service?.title).filter(Boolean),
       ...(study.industries || []).map((industry: any) => industry?.title).filter(Boolean),
     ],
-    client: study.client ? {
+    client: !isTechnicalOverview && study.client ? {
       '@type': 'Organization',
       name: study.client,
     } : undefined,
@@ -77,29 +79,31 @@ const caseStudyJsonLd = [
   jsonLd={caseStudyJsonLd}
 >
   <CaseStudyHero
+    technicalOverview={isTechnicalOverview}
     title={study.title}
     client={study.client}
-    year={study.year}
+    year={isTechnicalOverview ? undefined : study.year}
     services={study.services}
     heroImageUrl={heroImageUrl}
     slug={slug}
   />
 
-  {study.results && study.results.length > 0 && (
+  {!isTechnicalOverview && study.results && study.results.length > 0 && (
     <ResultsStrip results={study.results} />
   )}
 
   <ProjectOverview
+    technicalOverview={isTechnicalOverview}
     challenge={study.challenge}
     approach={study.approach}
-    resultsSummary={study.resultsSummary}
+    resultsSummary={isTechnicalOverview ? undefined : study.resultsSummary}
   />
 
   {study.content && study.content.length > 0 && (
     <CaseStudyContent content={study.content} />
   )}
 
-  {study.testimonial?.quote && (
+  {!isTechnicalOverview && study.testimonial?.quote && (
     <ProjectTestimonial testimonial={study.testimonial} />
   )}
 

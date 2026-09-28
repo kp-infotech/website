@@ -1,0 +1,14 @@
+{
+  "cloudImage": "visually inspected neutral existing CMS photo; no financial text",
+  "viewports": [
+    390,
+    1440
+  ],
+  "checked": [
+    "cloud overview hero",
+    "technical overview body",
+    "work hub and cards"
+  ],
+  "findings": [],
+  "browserFallback": "legacy browser skill initialization failed native dependency; CUA browser succeeded"
+}

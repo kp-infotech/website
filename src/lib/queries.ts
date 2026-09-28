@@ -57,8 +57,7 @@ export const homepageDataQuery = `
     defaultSeoTitle,
     defaultSeoDescription,
     defaultOgImage,
-    techStack,
-    stats
+    techStack
   },
   "services": *[_type == "service"] | order(order asc) {
     _id,
@@ -84,14 +83,6 @@ export const homepageDataQuery = `
     slug,
     client,
     thumbnailImage
-  },
-  "testimonials": *[_type == "testimonial" && featured == true] | order(_createdAt desc)[0...5] {
-    _id,
-    quote,
-    "clientName": authorName,
-    "clientRole": authorRole,
-    "clientCompany": company,
-    "clientPhoto": authorPhoto
   }
 }
 `;
@@ -290,6 +281,7 @@ export const caseStudyBySlugQuery = `
     _id,
     _createdAt,
     _updatedAt,
+    presentationType,
     title,
     slug,
     client,
