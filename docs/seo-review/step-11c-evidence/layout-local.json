@@ -1,0 +1,128 @@
+[
+  {
+    "overflow": false,
+    "tables": [
+      {
+        "columns": 3,
+        "containerWidth": 820,
+        "contentWidth": 820,
+        "overflowX": "auto",
+        "rows": 11
+      },
+      {
+        "columns": 3,
+        "containerWidth": 820,
+        "contentWidth": 820,
+        "overflowX": "auto",
+        "rows": 6
+      },
+      {
+        "columns": 3,
+        "containerWidth": 820,
+        "contentWidth": 820,
+        "overflowX": "auto",
+        "rows": 6
+      },
+      {
+        "columns": 7,
+        "containerWidth": 820,
+        "contentWidth": 821,
+        "overflowX": "auto",
+        "rows": 4
+      },
+      {
+        "columns": 2,
+        "containerWidth": 820,
+        "contentWidth": 820,
+        "overflowX": "auto",
+        "rows": 9
+      }
+    ],
+    "url": "http://127.0.0.1:8799/insights/business-process-improvement-methods/",
+    "width": 1440
+  },
+  {
+    "overflow": false,
+    "tables": [
+      {
+        "columns": 3,
+        "containerWidth": 342,
+        "contentWidth": 397,
+        "overflowX": "auto",
+        "rows": 11
+      },
+      {
+        "columns": 3,
+        "containerWidth": 342,
+        "contentWidth": 435,
+        "overflowX": "auto",
+        "rows": 6
+      },
+      {
+        "columns": 3,
+        "containerWidth": 342,
+        "contentWidth": 357,
+        "overflowX": "auto",
+        "rows": 6
+      },
+      {
+        "columns": 7,
+        "containerWidth": 342,
+        "contentWidth": 821,
+        "overflowX": "auto",
+        "rows": 4
+      },
+      {
+        "columns": 2,
+        "containerWidth": 342,
+        "contentWidth": 342,
+        "overflowX": "auto",
+        "rows": 9
+      }
+    ],
+    "url": "http://127.0.0.1:8799/insights/business-process-improvement-methods/",
+    "width": 390
+  },
+  {
+    "overflow": false,
+    "tables": [
+      {
+        "columns": 3,
+        "containerWidth": 342,
+        "contentWidth": 468,
+        "overflowX": "auto",
+        "rows": 10
+      },
+      {
+        "columns": 9,
+        "containerWidth": 342,
+        "contentWidth": 1084,
+        "overflowX": "auto",
+        "rows": 3
+      }
+    ],
+    "url": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/",
+    "width": 390
+  },
+  {
+    "overflow": false,
+    "tables": [
+      {
+        "columns": 3,
+        "containerWidth": 820,
+        "contentWidth": 820,
+        "overflowX": "auto",
+        "rows": 10
+      },
+      {
+        "columns": 9,
+        "containerWidth": 820,
+        "contentWidth": 1084,
+        "overflowX": "auto",
+        "rows": 3
+      }
+    ],
+    "url": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/",
+    "width": 1440
+  }
+]

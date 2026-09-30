@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-09-30T06:35:15.819Z",
+  "transactionId": "3PbNCBB2cZv8B31WUrIWHD",
+  "documents": [
+    "blogPost.business-process-improvement-methods",
+    "blogPost.how-to-choose-erp-system"
+  ],
+  "fields": [
+    "content"
+  ],
+  "revisionGuards": [
+    {
+      "id": "blogPost.business-process-improvement-methods",
+      "revision": "TjsscmeD2PKZPEoP8NRKqI"
+    },
+    {
+      "id": "blogPost.how-to-choose-erp-system",
+      "revision": "1rt65YukpwbJFhGzUE3cD3"
+    }
+  ]
+}

@@ -1,0 +1,1287 @@
+{
+  "timestamp": "2026-09-30T06:38:41.045Z",
+  "base": "http://127.0.0.1:8799",
+  "redirects": [
+    {
+      "path": "/business-process-improvement-methods/",
+      "target": "/insights/business-process-improvement-methods/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/insights/business-process-improvement-methods/",
+          "url": "http://127.0.0.1:8799/business-process-improvement-methods/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/insights/business-process-improvement-methods/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/insights/business-process-improvement-methods/",
+      "canonical": [
+        "https://kpinfo.tech/insights/business-process-improvement-methods/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/business-process-improvement-methods",
+      "target": "/insights/business-process-improvement-methods/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/insights/business-process-improvement-methods/",
+          "url": "http://127.0.0.1:8799/business-process-improvement-methods",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/insights/business-process-improvement-methods/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/insights/business-process-improvement-methods/",
+      "canonical": [
+        "https://kpinfo.tech/insights/business-process-improvement-methods/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/blogs/business-process-improvement-methods/",
+      "target": "/insights/business-process-improvement-methods/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/insights/business-process-improvement-methods/",
+          "url": "http://127.0.0.1:8799/blogs/business-process-improvement-methods/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/insights/business-process-improvement-methods/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/insights/business-process-improvement-methods/",
+      "canonical": [
+        "https://kpinfo.tech/insights/business-process-improvement-methods/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/how-to-choose-erp-system/",
+      "target": "/insights/how-to-choose-erp-system/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/",
+          "url": "http://127.0.0.1:8799/how-to-choose-erp-system/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/",
+      "canonical": [
+        "https://kpinfo.tech/insights/how-to-choose-erp-system/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/how-to-choose-erp-system",
+      "target": "/insights/how-to-choose-erp-system/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/",
+          "url": "http://127.0.0.1:8799/how-to-choose-erp-system",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/",
+      "canonical": [
+        "https://kpinfo.tech/insights/how-to-choose-erp-system/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/blogs/how-to-choose-erp-system/",
+      "target": "/insights/how-to-choose-erp-system/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/",
+          "url": "http://127.0.0.1:8799/blogs/how-to-choose-erp-system/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/insights/how-to-choose-erp-system/",
+      "canonical": [
+        "https://kpinfo.tech/insights/how-to-choose-erp-system/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/on-premise-vs-cloud-erp/",
+      "target": "/insights/on-premise-vs-cloud-erp/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/insights/on-premise-vs-cloud-erp/",
+          "url": "http://127.0.0.1:8799/on-premise-vs-cloud-erp/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/insights/on-premise-vs-cloud-erp/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/insights/on-premise-vs-cloud-erp/",
+      "canonical": [
+        "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/on-premise-vs-cloud-erp",
+      "target": "/insights/on-premise-vs-cloud-erp/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/insights/on-premise-vs-cloud-erp/",
+          "url": "http://127.0.0.1:8799/on-premise-vs-cloud-erp",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/insights/on-premise-vs-cloud-erp/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/insights/on-premise-vs-cloud-erp/",
+      "canonical": [
+        "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/blogs/on-premise-vs-cloud-erp/",
+      "target": "/insights/on-premise-vs-cloud-erp/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/insights/on-premise-vs-cloud-erp/",
+          "url": "http://127.0.0.1:8799/blogs/on-premise-vs-cloud-erp/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/insights/on-premise-vs-cloud-erp/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/insights/on-premise-vs-cloud-erp/",
+      "canonical": [
+        "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/business-process-automation-tools/",
+      "target": "/services/business-automation/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/services/business-automation/",
+          "url": "http://127.0.0.1:8799/business-process-automation-tools/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/services/business-automation/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/services/business-automation/",
+      "canonical": [
+        "https://kpinfo.tech/services/business-automation/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/what-is-customised-software/",
+      "target": "/services/custom-software-development/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/services/custom-software-development/",
+          "url": "http://127.0.0.1:8799/what-is-customised-software/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/services/custom-software-development/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/services/custom-software-development/",
+      "canonical": [
+        "https://kpinfo.tech/services/custom-software-development/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/data-visualization-best-practices/",
+      "target": "/services/custom-software-development/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/services/custom-software-development/",
+          "url": "http://127.0.0.1:8799/data-visualization-best-practices/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/services/custom-software-development/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/services/custom-software-development/",
+      "canonical": [
+        "https://kpinfo.tech/services/custom-software-development/"
+      ],
+      "indexable": true
+    },
+    {
+      "path": "/best-ecommerce-platform-for-small-business/",
+      "target": "/industries/retail-ecommerce/",
+      "hops": [
+        {
+          "status": 301,
+          "location": "http://127.0.0.1:8799/industries/retail-ecommerce/",
+          "url": "http://127.0.0.1:8799/best-ecommerce-platform-for-small-business/",
+          "canonical": [],
+          "linkHeader": null
+        },
+        {
+          "status": 200,
+          "location": null,
+          "url": "http://127.0.0.1:8799/industries/retail-ecommerce/"
+        }
+      ],
+      "finalStatus": 200,
+      "finalUrl": "http://127.0.0.1:8799/industries/retail-ecommerce/",
+      "canonical": [
+        "https://kpinfo.tech/industries/retail-ecommerce/"
+      ],
+      "indexable": true
+    }
+  ],
+  "notFound": [
+    {
+      "path": "/how-to-choose-the-right-digital-marketing-channels-for-your-business/",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/graphics-design/",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/how-to-create-brand-guidelines/",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/b-2-b-lead-generation-strategies/",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/sample-marketing/",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/sample-digital-marketing-strategy/",
+      "status": 404,
+      "location": null
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://kpinfo.tech/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/careers/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/careers/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/contact/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/contact/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/about/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/about/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/industries/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/industries/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/industries/education/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/industries/education/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/industries/finance/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/industries/finance/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/industries/retail-ecommerce/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/industries/retail-ecommerce/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/industries/healthcare/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/industries/healthcare/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/industries/logistics/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/industries/logistics/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/industries/manufacturing/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/industries/manufacturing/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/industries/real-estate/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/industries/real-estate/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/industries/startups/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/industries/startups/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/3/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/3/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/2/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/2/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/angular-vs-react/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/angular-vs-react/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/business-process-improvement-methods/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/business-process-improvement-methods/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-hr-software-for-startups/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/best-hr-software-for-startups/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-seo-tools-for-small-businesses/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/best-seo-tools-for-small-businesses/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/automation-ai/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/automation-ai/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/business-process-automation-tools/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/business-process-automation-tools/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/best-web-application-frameworks/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/best-web-application-frameworks/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/cloud-devops/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/cloud-devops/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/custom-software-development/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/custom-software-development/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/digital-platforms-ecommerce/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/digital-platforms-ecommerce/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/cloud-deployment-models-diagram/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/cloud-deployment-models-diagram/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/category/erp-business-systems/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/category/erp-business-systems/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/how-to-choose-erp-system/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/how-to-choose-erp-system/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/devops-best-practices/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/devops-best-practices/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/database-design-best-practices/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/database-design-best-practices/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/erp-for-retail-stores/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/erp-for-retail-stores/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/erp-implementation-cost/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/erp-implementation-cost/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/inventory-management-best-practices/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/inventory-management-best-practices/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/kp-infotech-new-website-custom-software-automation-ai/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/kp-infotech-new-website-custom-software-automation-ai/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/minimum-viable-product-examples/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/minimum-viable-product-examples/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/mobile-app-monetization-strategies/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/mobile-app-monetization-strategies/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/node-js-frameworks/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/node-js-frameworks/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/odoo-erp-complete-guide/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/odoo-erp-complete-guide/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/scalable-system-architecture/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/scalable-system-architecture/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/services/business-automation/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/services/business-automation/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/insights/what-is-custom-software/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/insights/what-is-custom-software/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/services/custom-software-development/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/services/custom-software-development/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/privacy-policy/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/privacy-policy/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/services/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/services/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/services/ai-automation-agents/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/services/ai-automation-agents/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/services/cloud-devops/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/services/cloud-devops/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/terms-of-service/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/terms-of-service/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/services/erp-software/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/services/erp-software/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/work/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/work/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/work/cloud-cost-optimization-industrial-sme/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/work/cloud-cost-optimization-industrial-sme/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/work/collaboration-platform-distributed-teams/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/work/collaboration-platform-distributed-teams/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/work/digital-banking-platform/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/work/digital-banking-platform/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/work/omnichannel-ecommerce-platform/"
+      ],
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "url": "https://kpinfo.tech/work/virtual-tours-ai-listings/",
+      "status": 200,
+      "canonical": [
+        "https://kpinfo.tech/work/virtual-tours-ai-listings/"
+      ],
+      "h1": 1,
+      "noindex": false
+    }
+  ],
+  "urls": [
+    "https://kpinfo.tech/",
+    "https://kpinfo.tech/about/",
+    "https://kpinfo.tech/careers/",
+    "https://kpinfo.tech/contact/",
+    "https://kpinfo.tech/industries/",
+    "https://kpinfo.tech/industries/education/",
+    "https://kpinfo.tech/industries/finance/",
+    "https://kpinfo.tech/industries/healthcare/",
+    "https://kpinfo.tech/industries/logistics/",
+    "https://kpinfo.tech/industries/manufacturing/",
+    "https://kpinfo.tech/industries/real-estate/",
+    "https://kpinfo.tech/industries/retail-ecommerce/",
+    "https://kpinfo.tech/industries/startups/",
+    "https://kpinfo.tech/insights/",
+    "https://kpinfo.tech/insights/2/",
+    "https://kpinfo.tech/insights/3/",
+    "https://kpinfo.tech/insights/angular-vs-react/",
+    "https://kpinfo.tech/insights/best-hr-software-for-startups/",
+    "https://kpinfo.tech/insights/best-seo-tools-for-small-businesses/",
+    "https://kpinfo.tech/insights/best-web-application-frameworks/",
+    "https://kpinfo.tech/insights/business-process-automation-tools/",
+    "https://kpinfo.tech/insights/business-process-improvement-methods/",
+    "https://kpinfo.tech/insights/category/automation-ai/",
+    "https://kpinfo.tech/insights/category/cloud-devops/",
+    "https://kpinfo.tech/insights/category/custom-software-development/",
+    "https://kpinfo.tech/insights/category/digital-platforms-ecommerce/",
+    "https://kpinfo.tech/insights/category/erp-business-systems/",
+    "https://kpinfo.tech/insights/cloud-deployment-models-diagram/",
+    "https://kpinfo.tech/insights/database-design-best-practices/",
+    "https://kpinfo.tech/insights/devops-best-practices/",
+    "https://kpinfo.tech/insights/erp-for-retail-stores/",
+    "https://kpinfo.tech/insights/erp-implementation-cost/",
+    "https://kpinfo.tech/insights/how-to-choose-erp-system/",
+    "https://kpinfo.tech/insights/inventory-management-best-practices/",
+    "https://kpinfo.tech/insights/kp-infotech-new-website-custom-software-automation-ai/",
+    "https://kpinfo.tech/insights/minimum-viable-product-examples/",
+    "https://kpinfo.tech/insights/mobile-app-monetization-strategies/",
+    "https://kpinfo.tech/insights/node-js-frameworks/",
+    "https://kpinfo.tech/insights/odoo-erp-complete-guide/",
+    "https://kpinfo.tech/insights/on-premise-vs-cloud-erp/",
+    "https://kpinfo.tech/insights/scalable-system-architecture/",
+    "https://kpinfo.tech/insights/what-is-custom-software/",
+    "https://kpinfo.tech/privacy-policy/",
+    "https://kpinfo.tech/services/",
+    "https://kpinfo.tech/services/ai-automation-agents/",
+    "https://kpinfo.tech/services/business-automation/",
+    "https://kpinfo.tech/services/cloud-devops/",
+    "https://kpinfo.tech/services/custom-software-development/",
+    "https://kpinfo.tech/services/erp-software/",
+    "https://kpinfo.tech/terms-of-service/",
+    "https://kpinfo.tech/work/",
+    "https://kpinfo.tech/work/cloud-cost-optimization-industrial-sme/",
+    "https://kpinfo.tech/work/collaboration-platform-distributed-teams/",
+    "https://kpinfo.tech/work/digital-banking-platform/",
+    "https://kpinfo.tech/work/omnichannel-ecommerce-platform/",
+    "https://kpinfo.tech/work/virtual-tours-ai-listings/"
+  ],
+  "oldLinks": [],
+  "resourceChecks": [
+    {
+      "path": "/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/work/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/careers/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/category/automation-ai/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/business-process-automation-tools/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/business-automation/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/ai-automation-agents/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/erp-software/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/custom-software-development/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/services/cloud-devops/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/healthcare/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/retail-ecommerce/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/manufacturing/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/logistics/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/finance/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/startups/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/real-estate/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/industries/education/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/privacy-policy/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/terms-of-service/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/playfair-display-latin-500-normal.DIxvyhka.woff2",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/outfit-latin-400-normal.BGsTXAXT.woff2",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.4nu6hubr.js",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_Z2lw21H.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_1kJbFD.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_2bJD49.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_ZeYQkh.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_XlVII.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_Z2l0sTL.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_Z1u01wg.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_2umOYv.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_Z1sgYRE.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_Zbzvpu.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_2hnmW6.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941_Z1VNjtk.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.d0wMrYq9.js",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/category/erp-business-systems/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/odoo-erp-complete-guide/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/erp-implementation-cost/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/on-premise-vs-cloud-erp/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/erp-for-retail-stores/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/best-hr-software-for-startups/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_Z1SjzUH.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_pswgP.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_1gsXEl.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_Z1agvJ5.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_1qynOI.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_1NU0um.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_Z2pgFV4.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_1z6azH.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_Z2nxEhs.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_gBUFv.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_1m6Hxi.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941_2d79UN.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/cloud-deployment-models-diagram/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/insights/how-to-choose-erp-system/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_2tpq10.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_Z1k1Sux.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_Zt1r72.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_2aqcit.avif",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_I6fWu.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_4pzHY.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_Uq26u.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_ZaofbF.webp",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_W93K6.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_ZqPcbI.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_ZnnHe5.jpg",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/_astro/d338a840d5a852bde3139c42e1bd304de893e0b1-1672x941_sBJ9q.jpg",
+      "status": 200,
+      "location": null
+    }
+  ],
+  "robots": {
+    "status": 200,
+    "body": "# robots.txt for https://kpinfo.tech\n\nUser-agent: *\nAllow: /\n\n# Sitemap\nSitemap: https://kpinfo.tech/sitemap-index.xml\n"
+  },
+  "errors": []
+}

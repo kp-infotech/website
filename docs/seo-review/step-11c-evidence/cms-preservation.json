@@ -1,0 +1,23 @@
+{
+  "beforeCount": 349,
+  "afterCount": 349,
+  "changed": [
+    {
+      "id": "blogPost.business-process-improvement-methods",
+      "fields": [
+        "_rev",
+        "_updatedAt",
+        "content"
+      ]
+    },
+    {
+      "id": "blogPost.how-to-choose-erp-system",
+      "fields": [
+        "_rev",
+        "_updatedAt",
+        "content"
+      ]
+    }
+  ],
+  "unchanged": 347
+}

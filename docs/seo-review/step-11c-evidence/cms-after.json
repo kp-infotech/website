@@ -1,0 +1,4244 @@
+[
+  {
+    "_createdAt": "2026-06-30T08:34:04Z",
+    "_id": "blogPost.business-process-improvement-methods",
+    "_rev": "3PbNCBB2cZv8B31WUrIWHD",
+    "_system": {
+      "base": {
+        "id": "blogPost.business-process-improvement-methods",
+        "rev": "1rt65YukpwbJFhGzTwZUHt"
+      }
+    },
+    "_type": "blogPost",
+    "_updatedAt": "2026-09-30T06:35:14Z",
+    "category": {
+      "_ref": "blogCategory-automation-ai",
+      "_type": "reference"
+    },
+    "content": [
+      {
+        "_key": "b0000",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0000s0",
+            "_type": "span",
+            "marks": [],
+            "text": "What is business process improvement?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0001",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0001s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Business process improvement is the structured work of understanding how a process operates today, identifying delays, duplication, unnecessary handoffs and unclear ownership, then redesigning the process before deciding what should be automated or replaced."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0002",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0002s0",
+            "_type": "span",
+            "marks": [],
+            "text": "For growing B2B companies, process improvement often starts when spreadsheet tracking, manual approvals, repeated status calls, or disconnected tools make daily operations harder to control. Improvement does not always mean immediate automation. First, the process needs to be understood and simplified. Then automation, ERP workflows, dashboards, integrations, or AI agents can support it."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0003",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0003s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Why process improvement matters before automation"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0004",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0004s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Automation makes a workflow faster, but it does not automatically make the workflow better. If the process is unclear, duplicated, or poorly owned, automation can simply move confusion faster."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0001",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0001s",
+            "_type": "span",
+            "marks": [],
+            "text": "A reusable process diagnosis framework"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0002",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0002s",
+            "_type": "span",
+            "marks": [],
+            "text": "Use this audit structure with the people who do the work. Follow a recent normal request and an exception from start to finish; record what happens rather than relying only on the documented procedure. Confirm the map with the accountable owner."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0003",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0003s",
+            "_type": "span",
+            "marks": [],
+            "text": "This is an editorial worksheet, not proprietary research or a scoring model. For each dimension, record the current state, supporting observation, open question and person responsible for resolving it."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0004",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0004s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Dimension | Question to answer | Record or inspect |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0005",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0005s",
+            "_type": "span",
+            "marks": [],
+            "text": "| --- | --- | --- |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0006",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0006s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Trigger | What starts the process? | Event, requester and entry channel |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0007",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0007s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Inputs | What information is required? | Required fields, documents and validation rules |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0008",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0008s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Owner | Who is accountable end to end? | Named role, decision rights and deputy |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0009",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0009s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Steps | What actually happens? | Normal sequence and unnecessary repeat work |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0010",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0010s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Systems | Which tools hold the records? | Source of truth, copies and integration boundaries |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0011",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0011s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Handoffs | Where does responsibility move? | Sending/receiving roles and acceptance condition |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0012",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0012s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Approvals | Where does work wait? | Decision rule, authority and escalation route |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0013",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0013s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Exceptions | What breaks the normal path? | Missing inputs, rejected requests and recovery owner |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0014",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0014s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Output | What marks completion? | Accepted result, record update and notification |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0015",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0015s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Measure | How will improvement be evaluated? | Baseline definition, data source and comparison period |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0015",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0015s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Practical business process improvement methods"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0016",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0016s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Method: Process mapping; What it helps with: Makes steps, owners, inputs, and outputs visible; Example: Map purchase approval from request to payment"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0017",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0017s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Method: Bottleneck analysis; What it helps with: Finds where work waits, repeats, or gets blocked; Example: Identify approval queues that delay procurement"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0018",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0018s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Method: Standard operating procedure review; What it helps with: Removes unclear or inconsistent steps; Example: Standardize how support tickets are categorized"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0019",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0019s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Method: Waste reduction; What it helps with: Removes duplicate entry, unnecessary approvals, and manual status checks; Example: Stop entering the same order data in two systems"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0020",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0020s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Method: Root cause analysis; What it helps with: Finds why errors repeat instead of fixing symptoms; Example: Trace inventory mismatch back to delayed stock updates"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0021",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0021s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Method: KPI and dashboard design; What it helps with: Defines what should be measured; Example: Track cycle time, open approvals, overdue tasks, and exceptions"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0022",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0022s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Method: Automation readiness review; What it helps with: Decides what can be automated safely; Example: Separate rule-based routing from manager approval decisions"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0023",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0023s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Most teams do not need a formal methodology-heavy program to begin. They need a clear map, business ownership, and a prioritized list of friction points."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0016",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0016s",
+            "_type": "span",
+            "marks": [],
+            "text": "Turn the diagnosis into practical changes"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0017",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0017s",
+            "_type": "span",
+            "marks": [],
+            "text": "Remove steps that neither change a decision nor satisfy a real control requirement. Confirm the purpose before removing a check."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0018",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0018s",
+            "_type": "span",
+            "marks": [],
+            "text": "Reduce handoffs by grouping related work; name one accountable owner and a deputy so a queue does not depend on one person."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0019",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0019s",
+            "_type": "span",
+            "marks": [],
+            "text": "Standardize required inputs and move completeness checks to intake, before approval work begins."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0020",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0020s",
+            "_type": "span",
+            "marks": [],
+            "text": "Simplify approvals by documenting who must decide, under which conditions, and where unresolved requests escalate."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0021",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0021s",
+            "_type": "span",
+            "marks": [],
+            "text": "Eliminate duplicate entry by choosing a source of truth and agreeing who maintains it."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0022",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0022s",
+            "_type": "span",
+            "marks": [],
+            "text": "Create an explicit exception path with an owner, return reason and re-entry point; do not silently force exceptions through the normal route."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0023",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0023s",
+            "_type": "span",
+            "marks": [],
+            "text": "Make status and the next action visible to the requester. Automate coordination only after the rules are stable."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0024",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0024s",
+            "_type": "span",
+            "marks": [],
+            "text": "A process audit checklist"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0025",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0025s",
+            "_type": "span",
+            "marks": [],
+            "text": "Copy this checklist into your working notes. Answer each question with evidence, an owner and a next action; an unchecked item is a discussion point, not an automatic reason to buy software."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0026",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0026s",
+            "_type": "span",
+            "marks": [],
+            "text": "Is the trigger clear, with one agreed intake channel?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0027",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0027s",
+            "_type": "span",
+            "marks": [],
+            "text": "Is one owner accountable for the complete process?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0028",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0028s",
+            "_type": "span",
+            "marks": [],
+            "text": "Are required inputs standardized and checked early?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0029",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0029s",
+            "_type": "span",
+            "marks": [],
+            "text": "Is the same data entered more than once?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0030",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0030s",
+            "_type": "span",
+            "marks": [],
+            "text": "Which steps add no decision, control or useful output?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0031",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0031s",
+            "_type": "span",
+            "marks": [],
+            "text": "Where does work wait, and can we distinguish waiting from active work?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0032",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0032s",
+            "_type": "span",
+            "marks": [],
+            "text": "Which approvals are truly required, and who can act when an approver is unavailable?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0033",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0033s",
+            "_type": "span",
+            "marks": [],
+            "text": "What common exceptions occur, and who resolves them?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0034",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0034s",
+            "_type": "span",
+            "marks": [],
+            "text": "Which system is the source of truth?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0035",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0035s",
+            "_type": "span",
+            "marks": [],
+            "text": "Can users see the current status and next owner?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0036",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0036s",
+            "_type": "span",
+            "marks": [],
+            "text": "What should be measured before changing the process?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0037",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0037s",
+            "_type": "span",
+            "marks": [],
+            "text": "Which steps are deterministic enough to automate, and which need human judgment?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0038",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0038s",
+            "_type": "span",
+            "marks": [],
+            "text": "Illustrative purchase-request workflow"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0039",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0039s",
+            "_type": "span",
+            "marks": [],
+            "text": "Illustrative example only: this is a hypothetical workflow for diagnosis, not a KP Infotech client project or a claim of delivered results."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0040",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0040s",
+            "_type": "span",
+            "marks": [],
+            "text": "Request submitted → validation → manager approval → finance/procurement review → approved or rejected → system update → requester notification."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0041",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0041s",
+            "_type": "span",
+            "marks": [],
+            "text": "An incomplete request returns to the requester for correction before manager review. A rejection records its reason and notifies the requester; an approved request proceeds to procurement. Both outcomes update the request record."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0042",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0042s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Point in the flow | Friction to investigate | Possible improvement |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0043",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0043s",
+            "_type": "span",
+            "marks": [],
+            "text": "| --- | --- | --- |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0044",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0044s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Validation | Missing supplier details cause repeated email exchanges | Use agreed required fields and return a precise correction request |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0045",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0045s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Manager approval | Work waits when the approver is absent | Name a deputy and an escalation rule |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0046",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0046s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Finance/procurement review | Nobody knows who owns the next decision | Define who checks budget and who checks purchasing conditions |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0047",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0047s",
+            "_type": "span",
+            "marks": [],
+            "text": "| System update | Request details are typed again in a spreadsheet and ERP | Choose an authoritative record and avoid unnecessary copies |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0048",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0048s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Exceptions | Urgent, over-budget or rejected requests have no route | Document the exception owner, decision and return path |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0049",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0049s",
+            "_type": "span",
+            "marks": [],
+            "text": "Use actual request records to test whether these issues occur in your organization. The example supplies questions, not measured findings or promised savings."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0041",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0041s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Process improvement vs process automation"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0042",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0042s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Process improvement decides how the workflow should work. Process automation helps the workflow run with less manual effort."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0043",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0043s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Question: Main purpose; Process improvement: Make the workflow clearer and better; Process automation: Reduce manual execution"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0044",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0044s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Question: Typical output; Process improvement: Process map, simplified steps, ownership, KPIs; Process automation: Workflow rules, integrations, dashboards, notifications"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0045",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0045s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Question: Best timing; Process improvement: Before tool selection or rebuild; Process automation: After the workflow is defined"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0046",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0046s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Question: Risk if skipped; Process improvement: Automating confusion; Process automation: Building the wrong workflow faster"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0047",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0047s0",
+            "_type": "span",
+            "marks": [],
+            "text": "The two should work together. A strong automation project usually begins with a process improvement exercise."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0050",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0050s",
+            "_type": "span",
+            "marks": [],
+            "text": "Before automation: choose the appropriate response"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0051",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0051s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Response | When it fits | Next decision |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0052",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0052s",
+            "_type": "span",
+            "marks": [],
+            "text": "| --- | --- | --- |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0053",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0053s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Improve manually first | Rules, ownership or exceptions are unclear | Test a simpler procedure with the people doing the work |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0054",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0054s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Configure an existing system | A current tool already supports the needed capability | Confirm fit, permissions and maintenance ownership |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0055",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0055s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Automate the workflow | Steps are repeatable but manually coordinated | Specify triggers, checks, exception routing and human decisions |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0056",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0056s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Implement ERP | Fragmented operational records need a shared system of record | Agree data ownership and cross-department requirements |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0057",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0057s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Build custom software | Required workflow or interface does not fit existing tools | Validate the gap and long-term support responsibility |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0058",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0058s",
+            "_type": "span",
+            "marks": [],
+            "text": "Once the process is clear, the "
+          },
+          {
+            "_key": "c11_0058l",
+            "_type": "span",
+            "marks": [
+              "c11_0058m"
+            ],
+            "text": "automation tools guide"
+          },
+          {
+            "_key": "c11_0058e",
+            "_type": "span",
+            "marks": [],
+            "text": " can help compare tool categories. Choose the response that fits the diagnosed problem, rather than starting with a product."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "c11_0058m",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "blogPost.business-process-automation-tools",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0059",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0059s",
+            "_type": "span",
+            "marks": [],
+            "text": "Prioritize process candidates"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0060",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0060s",
+            "_type": "span",
+            "marks": [],
+            "text": "Complete this table with observations from a consistent period. Use descriptive notes or your own measured values; leave unknowns marked for investigation. The rows below are illustrative, not research findings."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0061",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0061s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Process candidate | Frequency | Manual effort | Error/rework | Waiting time | Rule clarity | Improvement priority |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0062",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0062s",
+            "_type": "span",
+            "marks": [],
+            "text": "| --- | --- | --- | --- | --- | --- | --- |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0063",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0063s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Purchase requests (illustrative) | Recurring | Repeated entry | Missing fields | Approval queue | Mostly clear | Investigate intake and routing first |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0064",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0064s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Unusual supplier disputes (illustrative) | Occasional | Case-specific | Unknown | External dependency | Unclear | Clarify decisions before automation |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0065",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0065s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Your process | Record volume | Record touches/time | Record returns | Record queue time | List unknown rules | Agree next action and owner |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0066",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0066s",
+            "_type": "span",
+            "marks": [],
+            "text": "High-frequency, high-friction processes with clear rules often make stronger automation candidates. Unclear rules can still make a process a high priority for manual improvement. Consider operational impact, risk and dependencies; there is no universal weighting or numerical score."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0067",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0067s",
+            "_type": "span",
+            "marks": [],
+            "text": "Measure before and after the change"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0068",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0068s",
+            "_type": "span",
+            "marks": [],
+            "text": "Define the start and end of a completed case before collecting a baseline. Compare similar types of work over comparable periods, use the same definitions, and record changes in workload or exception mix. Keep incomplete cases visible so difficult work is not excluded from the result."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0069",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0069s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Measure | Working definition |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0070",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0070s",
+            "_type": "span",
+            "marks": [],
+            "text": "| --- | --- |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0071",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0071s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Cycle time | Elapsed time from agreed trigger to accepted completion |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0072",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0072s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Waiting time | Time in queues, separated from active processing |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0073",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0073s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Manual touches | Human entries, checks or updates per case |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0074",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0074s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Error/rework rate | Cases requiring correction divided by reviewed cases; state the denominator |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0075",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0075s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Approval delay | Time from decision request to recorded decision |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0076",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0076s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Exception volume | Count and type of cases outside the normal path |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0077",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0077s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Report preparation effort | Time spent collecting, checking and assembling the report |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0078",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0078s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Number of handoffs | Transfers of responsibility per case |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0079",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0079s",
+            "_type": "span",
+            "marks": [],
+            "text": "Review results with the process owner and users. A faster cycle is not an improvement if errors or unresolved exceptions rise. Record what changed, what remains uncertain and whether to retain, revise or reverse the change; do not infer a savings percentage from a single example."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0048",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0048s0",
+            "_type": "span",
+            "marks": [],
+            "text": "How KP Infotech helps"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0049",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0049s0",
+            "_type": "span",
+            "marks": [],
+            "text": "KP Infotech helps growing teams turn operational friction into practical systems through "
+          },
+          {
+            "_key": "b0049s1",
+            "_type": "span",
+            "marks": [
+              "b0049m0"
+            ],
+            "text": "business automation"
+          },
+          {
+            "_key": "b0049s2",
+            "_type": "span",
+            "marks": [],
+            "text": ", ERP and Odoo workflows, custom internal tools, dashboards, integrations, and "
+          },
+          {
+            "_key": "b0049s3",
+            "_type": "span",
+            "marks": [
+              "b0049m1"
+            ],
+            "text": "AI automation agents"
+          },
+          {
+            "_key": "b0049s4",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "b0049m0",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+              "_type": "reference"
+            }
+          },
+          {
+            "_key": "b0049m1",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "414efdd8-f4ce-4d84-bdaa-a28b7b4fa652",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "b0050",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0050s0",
+            "_type": "span",
+            "marks": [],
+            "text": "The work starts by understanding the current process: who does the work, where data lives, what repeats, where approvals slow down, and what visibility leaders need. From there, KP Infotech can help simplify the workflow and build the right system around it. For ERP-heavy processes, "
+          },
+          {
+            "_key": "b0050s1",
+            "_type": "span",
+            "marks": [
+              "b0050m0"
+            ],
+            "text": "Odoo ERP implementation and customization"
+          },
+          {
+            "_key": "b0050s2",
+            "_type": "span",
+            "marks": [],
+            "text": " can become part of the improvement path."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "b0050m0",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "b0051",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0051s0",
+            "_type": "span",
+            "marks": [],
+            "text": "FAQs"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0052",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0052s0",
+            "_type": "span",
+            "marks": [],
+            "text": "What is business process improvement?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0053",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0053s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Business process improvement is the practice of reviewing and changing a workflow so it becomes clearer, faster, more accurate, and easier to measure."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0054",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0054s0",
+            "_type": "span",
+            "marks": [],
+            "text": "What are common business process improvement methods?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0055",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0055s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Common methods include process mapping, bottleneck analysis, root cause analysis, SOP review, waste reduction, KPI design, and automation-readiness assessment."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0056",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0056s0",
+            "_type": "span",
+            "marks": [],
+            "text": "How do you improve a process before automating it?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0057",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0057s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Map the workflow, identify owners and handoffs, remove duplicate steps, define rules and exceptions, decide what should be measured, and then choose automation only for the parts that are stable enough."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0058",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0058s0",
+            "_type": "span",
+            "marks": [],
+            "text": "What is the difference between process improvement and process automation?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0059",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0059s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Process improvement decides what the workflow should be. Process automation uses tools, rules, integrations, and notifications to reduce manual work inside that workflow."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0060",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0060s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Which business processes should be improved first?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0061",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0061s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Start with processes that repeat often, affect customers or revenue, create manual rework, delay decisions, or prevent leaders from seeing operational status."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0062",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0062s0",
+            "_type": "span",
+            "marks": [],
+            "text": "How can KP Infotech support process improvement?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0063",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "b0063s0",
+            "_type": "span",
+            "marks": [],
+            "text": "KP Infotech can help map workflows, identify automation opportunities, connect systems, configure ERP workflows, build dashboards, and develop custom tools around the improved process."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "excerpt": "Business process improvement helps growing companies remove bottlenecks before they automate. This guide covers practical methods, examples, and a process audit checklist.",
+    "featured": false,
+    "featuredImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-bdb9bb15eea5dc8ab91536a79b36f257e0b4b192-1672x941-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2025-11-26T06:32:00.000Z",
+    "readTime": "5 min",
+    "seoDescription": "Learn practical business process improvement methods for reducing manual work, improving visibility, simplifying workflows, and preparing for automation.",
+    "seoTitle": "Business Process Improvement Methods for Growing Teams",
+    "slug": {
+      "_type": "slug",
+      "current": "business-process-improvement-methods"
+    },
+    "tags": [
+      "Process Improvement",
+      "Business Automation",
+      "Operations"
+    ],
+    "title": "Business Process Improvement Methods for Growing Companies"
+  },
+  {
+    "_createdAt": "2026-06-30T08:34:04Z",
+    "_id": "blogPost.how-to-choose-erp-system",
+    "_rev": "3PbNCBB2cZv8B31WUrIWHD",
+    "_system": {
+      "base": {
+        "id": "blogPost.how-to-choose-erp-system",
+        "rev": "ZJzLgKtH0212rQwJxq4CLc"
+      }
+    },
+    "_type": "blogPost",
+    "_updatedAt": "2026-09-30T06:35:14Z",
+    "category": {
+      "_ref": "blogCategory-erp-business-systems",
+      "_type": "reference"
+    },
+    "content": [
+      {
+        "_key": "b0000",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0000s0",
+            "_type": "span",
+            "marks": [],
+            "text": "How do you choose an ERP system?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0001",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0001s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Choose an ERP system by mapping your business requirements first, then evaluating software fit, module coverage, implementation effort, integrations, reporting needs, deployment model, support model, and total cost. ERP selection should start with operations, not with a vendor demo."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0002",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0002s0",
+            "_type": "span",
+            "marks": [],
+            "text": "For growing companies, ERP usually becomes urgent when finance, sales, purchase, inventory, manufacturing, HR, and operations depend on spreadsheets or disconnected tools. The goal is to create one reliable operating backbone that supports daily work and management visibility."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0080",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0080s",
+            "_type": "span",
+            "marks": [],
+            "text": "A requirements-first selection sequence"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0081",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0081s",
+            "_type": "span",
+            "marks": [],
+            "text": "Use the same agreed requirements and evidence requests for every shortlisted option. Assign a decision owner and have process owners validate the requirements before comparing platforms."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0082",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0082s",
+            "_type": "span",
+            "marks": [],
+            "text": "Map business processes, including normal and exception paths."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0083",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0083s",
+            "_type": "span",
+            "marks": [],
+            "text": "Identify which records need a shared system of record and who owns them."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0084",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0084s",
+            "_type": "span",
+            "marks": [],
+            "text": "Define must-have capabilities as outcomes with acceptance conditions."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0085",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0085s",
+            "_type": "span",
+            "marks": [],
+            "text": "Document integrations, data direction and failure handling."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0086",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0086s",
+            "_type": "span",
+            "marks": [],
+            "text": "Define users, roles, permissions and approval authority."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0087",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0087s",
+            "_type": "span",
+            "marks": [],
+            "text": "Identify reporting needs, definitions and source data."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0088",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0088s",
+            "_type": "span",
+            "marks": [],
+            "text": "Define migration scope, record quality and validation responsibility."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0089",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0089s",
+            "_type": "span",
+            "marks": [],
+            "text": "Define operational and security constraints, including availability and access needs."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0090",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0090s",
+            "_type": "span",
+            "marks": [],
+            "text": "Evaluate implementation dependencies, training and support requirements."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0091",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0091s",
+            "_type": "span",
+            "marks": [],
+            "text": "Compare vendors and platforms against the agreed requirements."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0003",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0003s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Step 1: Define the business problem"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0004",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0004s0",
+            "_type": "span",
+            "marks": [],
+            "text": "When the goal is vague, teams cannot reliably judge whether an ERP fits. Start by writing the operational problems the ERP must solve."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0005",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0005s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Examples:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0006",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0006s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Inventory numbers are unreliable across warehouses or sales channels."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0007",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0007s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Purchase approvals and vendor follow-ups are handled manually."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0008",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0008s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Finance closes reports late because data comes from multiple spreadsheets."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0009",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0009s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Sales, stock, billing, and dispatch teams do not share the same status view."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0010",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0010s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Manufacturing or service teams cannot track work-in-progress clearly."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0011",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0011s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Management cannot see cash flow, order status, stock, or delivery risk in one place."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0012",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0012s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Clear problems lead to clearer ERP requirements."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0092",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0092s",
+            "_type": "span",
+            "marks": [],
+            "text": "Step 2: ERP requirements checklist by business area"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0093",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0093s",
+            "_type": "span",
+            "marks": [],
+            "text": "Use only the areas relevant to your operations. Not every ERP selection needs manufacturing, payroll or every capability below. Turn each selected item into a requirement with an owner, an example transaction and a pass condition."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0094",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0094s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Business area | Requirements to confirm | Evidence to request |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0095",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0095s",
+            "_type": "span",
+            "marks": [],
+            "text": "| --- | --- | --- |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0096",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0096s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Sales / CRM | Customer records, quotations/orders, pipeline and pricing | Run an order with your pricing and customer conditions |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0097",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0097s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Purchasing | Supplier records, requests/orders and approval authority | Show a request, approval and purchase order |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0098",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0098s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Inventory | Locations, movements, reordering and traceability | Trace a receipt, transfer and stock adjustment |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0099",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0099s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Finance | Invoicing, accounting needs and tax/reporting dependencies | Have the finance owner validate relevant postings and reports |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0100",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0100s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Manufacturing (if relevant) | BOM, work orders, planning and quality | Follow a representative production order and exception |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0101",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0101s",
+            "_type": "span",
+            "marks": [],
+            "text": "| HR / payroll (if relevant) | Employee records, attendance, leave and payroll integration | Confirm which system owns each record and calculation |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0102",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0102s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Users / access | Roles, permissions and approval authority | Show permitted actions and an attempted unauthorized action |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0103",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0103s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Reporting | Operational dashboards and management/financial reports | Trace a report value back to its source transaction |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0104",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0104s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Integration | E-commerce, CRM, payments, shipping and other systems | Explain direction, timing, failures and reconciliation |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0105",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0105s",
+            "_type": "span",
+            "marks": [],
+            "text": "Do not buy modules because they sound useful. Prioritize capabilities that support an agreed operating need."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0106",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0106s",
+            "_type": "span",
+            "marks": [],
+            "text": "Prioritize: must, should, could, not required now"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0107",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0107s",
+            "_type": "span",
+            "marks": [],
+            "text": "MUST HAVE: essential to the agreed operating scope. State the acceptance condition and who can approve an exception."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0108",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0108s",
+            "_type": "span",
+            "marks": [],
+            "text": "SHOULD HAVE: valuable, but a documented workaround is acceptable for the initial rollout."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0109",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0109s",
+            "_type": "span",
+            "marks": [],
+            "text": "COULD HAVE: useful if time and budget permit after higher-priority requirements are met."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0110",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0110s",
+            "_type": "span",
+            "marks": [],
+            "text": "NOT REQUIRED NOW: deliberately excluded from this selection or rollout; record the reason and any later review trigger."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0111",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0111s",
+            "_type": "span",
+            "marks": [],
+            "text": "This simple prioritization prevents feature-shopping from expanding the scope. Challenge requests without a process owner or acceptance condition before they become customizations. It is not a proprietary KP framework."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0024",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0024s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Step 3: Compare ERP fit, not only features"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0025",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0025s0",
+            "_type": "span",
+            "marks": [],
+            "text": "A feature checklist is useful, but fit matters more. A system may technically have a feature and still be difficult for your team to use."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0026",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0026s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Evaluate:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0027",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0027s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Workflow fit: Does the ERP match how the business should operate?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0028",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0028s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Configuration flexibility: Can fields, approvals, roles, and reports be adjusted?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0029",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0029s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Integration needs: Can it connect with existing systems?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0030",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0030s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Data model: Can current data be migrated cleanly?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0031",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0031s0",
+            "_type": "span",
+            "marks": [],
+            "text": "User experience: Will teams use it daily without workarounds?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0032",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0032s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Reporting: Can managers see the right KPIs and exceptions?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0033",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0033s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Partner capability: Can the implementation team handle process design, customization, migration, training, and support?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0034",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0034s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Odoo can be evaluated alongside other ERP options using the same process-fit criteria. For product-specific context, see the "
+          },
+          {
+            "_key": "b0034s1",
+            "_type": "span",
+            "marks": [
+              "b0034m0"
+            ],
+            "text": "Odoo ERP guide"
+          },
+          {
+            "_key": "b0034s2",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "b0034m0",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "22114651-112b-40f6-af14-a6ecdd448dfd",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0112",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0112s",
+            "_type": "span",
+            "marks": [],
+            "text": "Reusable ERP evaluation matrix"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0113",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0113s",
+            "_type": "span",
+            "marks": [],
+            "text": "Copy one row per requirement for each option. Record observed evidence rather than a vendor score. Separate what works as standard from configuration, custom code and integration; more than one route may be needed. Leave unproven items open and assign a validation owner."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0114",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0114s",
+            "_type": "span",
+            "marks": [],
+            "text": "Illustrative row only: the example describes what to ask and record, not a tested vendor capability or ranking."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0115",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0115s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Requirement | Priority | Standard support | Configuration needed | Customization needed | Integration needed | Vendor evidence | Implementation risk | Owner |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0116",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0116s",
+            "_type": "span",
+            "marks": [],
+            "text": "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0117",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0117s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Purchase approval by role (illustrative) | Must have | Unverified | Ask about routing rules | Only if a demonstrated gap remains | Check purchasing-system boundary | Record demo steps and limitations | Deputy/exception path untested | Purchasing owner |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0118",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0118s",
+            "_type": "span",
+            "marks": [],
+            "text": "| Your requirement | Must / should / could | Record proof or gap | List settings | Describe code and maintainer | Name systems/data flow | Demo reference and result | Dependency and mitigation | Named role |"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0119",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0119s",
+            "_type": "span",
+            "marks": [],
+            "text": "A promised feature is not demonstrated support. Record product version, deployment assumptions and limitations with each evidence item, then ask the requirement owner to accept or reject the fit."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0120",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0120s",
+            "_type": "span",
+            "marks": [],
+            "text": "Demo checklist: show our process, not just the product"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0121",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0121s",
+            "_type": "span",
+            "marks": [],
+            "text": "Give shortlisted vendors the same representative scenario and acceptance conditions. Use synthetic or appropriately redacted data. A polished generic demo is less useful than showing the buyer’s actual workflow, including what happens when something goes wrong."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0122",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0122s",
+            "_type": "span",
+            "marks": [],
+            "text": "Run an order from quotation through fulfilment and invoicing; show the resulting records."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0123",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0123s",
+            "_type": "span",
+            "marks": [],
+            "text": "Show inventory movement, an adjustment and traceability where required."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0124",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0124s",
+            "_type": "span",
+            "marks": [],
+            "text": "Demonstrate approvals, delegation and a rejected or incomplete request."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0125",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0125s",
+            "_type": "span",
+            "marks": [],
+            "text": "Run a required report and explain the source of its figures."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0126",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0126s",
+            "_type": "span",
+            "marks": [],
+            "text": "Show role permissions, including an action the user must not perform."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0127",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0127s",
+            "_type": "span",
+            "marks": [],
+            "text": "Show exception handling and how the responsible person discovers a failure."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0128",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0128s",
+            "_type": "span",
+            "marks": [],
+            "text": "Explain the integration method, retry behaviour, reconciliation and ownership."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0129",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0129s",
+            "_type": "span",
+            "marks": [],
+            "text": "Walk through migration mapping and the plan for a trial migration."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0130",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0130s",
+            "_type": "span",
+            "marks": [],
+            "text": "Identify every step requiring custom code and who will test and maintain it."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0131",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0131s",
+            "_type": "span",
+            "marks": [],
+            "text": "Record pass, gap or unresolved for each acceptance condition. Do not treat a successful demo as completed user acceptance testing (UAT): users must later test the configured solution and migrated data against agreed scenarios."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0132",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0132s",
+            "_type": "span",
+            "marks": [],
+            "text": "Evaluate the implementation partner"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0133",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0133s",
+            "_type": "span",
+            "marks": [],
+            "text": "Assess the delivery approach separately from product fit. Request relevant, verifiable evidence where available and confirm what the team actually delivered; a general claim is not a substitute for evidence. This is buyer guidance, not a claim about KP project results."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0134",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0134s",
+            "_type": "span",
+            "marks": [],
+            "text": "Discovery: how will process owners confirm scope, requirements and unresolved decisions?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0135",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0135s",
+            "_type": "span",
+            "marks": [],
+            "text": "Configuration versus customization: who challenges a custom-code request and documents alternatives?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0136",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0136s",
+            "_type": "span",
+            "marks": [],
+            "text": "Migration: who cleans, maps, imports and validates data?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0137",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0137s",
+            "_type": "span",
+            "marks": [],
+            "text": "Integrations: who owns each side, credentials, monitoring and failure resolution?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0138",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0138s",
+            "_type": "span",
+            "marks": [],
+            "text": "Testing / UAT: who writes scenarios, resolves defects and signs off acceptance?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0139",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0139s",
+            "_type": "span",
+            "marks": [],
+            "text": "Training: how will each user role practise the work it must perform?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0140",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0140s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cutover: what are the dependencies, readiness checks, fallback plan and go/no-go authority?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0141",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0141s",
+            "_type": "span",
+            "marks": [],
+            "text": "Post-launch support: who handles incidents, changes and upgrades, under what agreed responsibilities?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0142",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0142s",
+            "_type": "span",
+            "marks": [],
+            "text": "Data migration questions"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0143",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0143s",
+            "_type": "span",
+            "marks": [],
+            "text": "What master data, open transactions and balances must move?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0144",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0144s",
+            "_type": "span",
+            "marks": [],
+            "text": "How clean is the source data, and who owns cleanup?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0145",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0145s",
+            "_type": "span",
+            "marks": [],
+            "text": "How much history is needed for operations and reporting?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0146",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0146s",
+            "_type": "span",
+            "marks": [],
+            "text": "Who validates balances and record completeness against the source?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0147",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0147s",
+            "_type": "span",
+            "marks": [],
+            "text": "What can be archived rather than imported?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0148",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0148s",
+            "_type": "span",
+            "marks": [],
+            "text": "How will duplicates, missing identifiers and conflicting values be resolved?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0149",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0149s",
+            "_type": "span",
+            "marks": [],
+            "text": "How will a trial migration be tested, reconciled and signed off before cutover?"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0150",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0150s",
+            "_type": "span",
+            "marks": [],
+            "text": "Agree validation criteria and how rejected records will be handled. A migration plan should identify risks and reconciliation work, not promise zero data loss."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0151",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0151s",
+            "_type": "span",
+            "marks": [],
+            "text": "Choose configuration, customization, integration or an outside tool"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0152",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0152s",
+            "_type": "span",
+            "marks": [],
+            "text": "More custom code can increase implementation effort, upgrade complexity, testing requirements and maintenance responsibility. For each gap, ask: should this requirement be configured, customized, integrated or handled outside the ERP?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0153",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0153s",
+            "_type": "span",
+            "marks": [],
+            "text": "Check standard configuration first. If another system already owns the function, evaluate an integration and its failure handling. If custom code remains justified, document why, its owner, upgrade testing and support cost. Avoid changing the ERP just to reproduce an unnecessary legacy step."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0035",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0035s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Step 4: Understand ERP costs"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0036",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0036s0",
+            "_type": "span",
+            "marks": [],
+            "text": "ERP cost includes more than license fees."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0037",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0037s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Review these cost areas:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0038",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0038s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Software licensing or subscription"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0039",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0039s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Implementation and configuration"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0040",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0040s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Data cleanup and migration"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0041",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0041s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Customization and development"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0042",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0042s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Integrations with existing systems"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0043",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0043s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Reports and dashboards"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0044",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0044s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Training and change management"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0045",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0045s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Hosting, cloud infrastructure, backups, and security"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0046",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0046s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Ongoing support and improvements"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0047",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0047s0",
+            "_type": "span",
+            "marks": [],
+            "text": "A lower software subscription can still become expensive if the system needs heavy customization or if the implementation partner does not understand the process."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0154",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0154s",
+            "_type": "span",
+            "marks": [],
+            "text": "Include future upgrades and regression testing in the same planning horizon. Document assumptions about users, modules, environments and support so proposals are comparable."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0155",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0155s",
+            "_type": "span",
+            "marks": [],
+            "text": "For cost categories and planning detail, use the "
+          },
+          {
+            "_key": "c11_0155l",
+            "_type": "span",
+            "marks": [
+              "c11_0155m"
+            ],
+            "text": "ERP implementation cost guide"
+          },
+          {
+            "_key": "c11_0155e",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "c11_0155m",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "01edc29a-94b5-4d89-b93c-c519a1addf17",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0156",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0156s",
+            "_type": "span",
+            "marks": [],
+            "text": "Review operational responsibilities separately in the "
+          },
+          {
+            "_key": "c11_0156l",
+            "_type": "span",
+            "marks": [
+              "c11_0156m"
+            ],
+            "text": "on-premise vs cloud ERP comparison"
+          },
+          {
+            "_key": "c11_0156e",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "c11_0156m",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "blogPost.on-premise-vs-cloud-erp",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0157",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0157s",
+            "_type": "span",
+            "marks": [],
+            "text": "ERP selection red flags"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0158",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0158s",
+            "_type": "span",
+            "marks": [],
+            "text": "Requirements exist only as a feature list with no process examples or acceptance conditions."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0159",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0159s",
+            "_type": "span",
+            "marks": [],
+            "text": "The vendor cannot demonstrate a critical workflow or explain a limitation."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0160",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0160s",
+            "_type": "span",
+            "marks": [],
+            "text": "Heavy customization is proposed before standard fit is established."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0161",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0161s",
+            "_type": "span",
+            "marks": [],
+            "text": "Migration is treated as an afterthought or no data owner is named."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0162",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0162s",
+            "_type": "span",
+            "marks": [],
+            "text": "There is no UAT plan, acceptance owner or defect-resolution process."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0163",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0163s",
+            "_type": "span",
+            "marks": [],
+            "text": "Support and integration responsibilities remain unclear."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0164",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0164s",
+            "_type": "span",
+            "marks": [],
+            "text": "A fixed timeline is offered without reviewing scope, dependencies and readiness."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0165",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0165s",
+            "_type": "span",
+            "marks": [],
+            "text": "Use these signs to ask for missing evidence or revise the plan. They are reasons to investigate, not a substitute for evaluating a specific proposal."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0166",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0166s",
+            "_type": "span",
+            "marks": [],
+            "text": "Final selection checklist before signing"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c11_0167",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0167s",
+            "_type": "span",
+            "marks": [],
+            "text": "Have the decision owners review this list and record any unresolved condition in the agreed scope."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0168",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0168s",
+            "_type": "span",
+            "marks": [],
+            "text": "Requirements and priorities are documented and approved by process owners."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0169",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0169s",
+            "_type": "span",
+            "marks": [],
+            "text": "Critical workflows and exceptions have been demonstrated; remaining gaps are recorded."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0170",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0170s",
+            "_type": "span",
+            "marks": [],
+            "text": "Data migration scope, cleanup and validation ownership have been reviewed."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0171",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0171s",
+            "_type": "span",
+            "marks": [],
+            "text": "Integration ownership, data direction and failure handling are agreed."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0172",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0172s",
+            "_type": "span",
+            "marks": [],
+            "text": "Customizations are identified with a reason, maintenance owner and upgrade implications."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0173",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0173s",
+            "_type": "span",
+            "marks": [],
+            "text": "User roles, permissions and approval authority are understood."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0174",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0174s",
+            "_type": "span",
+            "marks": [],
+            "text": "A UAT plan, acceptance criteria and sign-off owners are agreed."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0175",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0175s",
+            "_type": "span",
+            "marks": [],
+            "text": "Cost assumptions, exclusions and change-control responsibilities are documented."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0176",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0176s",
+            "_type": "span",
+            "marks": [],
+            "text": "Deployment, training, cutover and post-launch support responsibilities are understood."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c11_0177",
+        "_type": "richText",
+        "children": [
+          {
+            "_key": "c11_0177s",
+            "_type": "span",
+            "marks": [],
+            "text": "Decision owners and the conditions for proceeding are identified."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0060",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0060s0",
+            "_type": "span",
+            "marks": [],
+            "text": "How KP Infotech helps"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0061",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0061s0",
+            "_type": "span",
+            "marks": [],
+            "text": "KP Infotech provides "
+          },
+          {
+            "_key": "b0061s1",
+            "_type": "span",
+            "marks": [
+              "b0061m0"
+            ],
+            "text": "Odoo ERP implementation and customization"
+          },
+          {
+            "_key": "b0061s2",
+            "_type": "span",
+            "marks": [],
+            "text": " for growing businesses that need connected operations across CRM, sales, purchase, inventory, accounting, manufacturing, HR, and reporting."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "b0061m0",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "cb963b5c-1e52-4e05-95cf-a279e6e1dcb7",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "b0062",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0062s0",
+            "_type": "span",
+            "marks": [],
+            "text": "The work can include requirements mapping, module selection, Odoo configuration, custom workflows, integrations, data migration, dashboards, user training, cloud hosting, and post-launch support. If the ERP project also requires process redesign or workflow automation outside ERP, KP Infotech can connect it with "
+          },
+          {
+            "_key": "b0062s1",
+            "_type": "span",
+            "marks": [
+              "b0062m0"
+            ],
+            "text": "business automation"
+          },
+          {
+            "_key": "b0062s2",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "b0062m0",
+            "_type": "internalLink",
+            "reference": {
+              "_ref": "c2a4f544-4355-4d9b-b7f3-782259fd26e2",
+              "_type": "reference"
+            }
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "b0063",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0063s0",
+            "_type": "span",
+            "marks": [],
+            "text": "FAQs"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b0064",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0064s0",
+            "_type": "span",
+            "marks": [],
+            "text": "How do I choose the right ERP system?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0065",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0065s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Start with your operating requirements, not the software demo. Map workflows, required modules, integrations, reporting needs, users, data migration, and support expectations before comparing vendors."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0066",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0066s0",
+            "_type": "span",
+            "marks": [],
+            "text": "What requirements should be documented before ERP selection?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0067",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0067s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Document departments, workflows, approvals, reports, user roles, integrations, data sources, compliance needs, and pain points that the ERP must solve."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0068",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0068s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Is Odoo a good ERP option for growing businesses?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0069",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0069s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Odoo can be evaluated alongside other ERP options. Fit depends on process requirements, implementation needs, data readiness and support expectations; assess those requirements before choosing a platform."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0070",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0070s0",
+            "_type": "span",
+            "marks": [],
+            "text": "What are the hidden costs of ERP implementation?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0071",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0071s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Hidden costs often include data cleanup, migration, custom reports, integrations, workflow changes, training, cloud hosting, and support after go-live."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0072",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0072s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Should I choose cloud ERP or on-premise ERP?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0073",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0073s0",
+            "_type": "span",
+            "marks": [],
+            "text": "The right deployment model depends on control, compliance, internet reliability, internal IT capacity, customization needs, and long-term maintenance expectations."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b0074",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0074s0",
+            "_type": "span",
+            "marks": [],
+            "text": "What should I ask an ERP implementation partner?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "b0075",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b0075s0",
+            "_type": "span",
+            "marks": [],
+            "text": "Ask how they handle requirements, data migration, customization, integrations, training, change requests, support, cloud infrastructure, and post-launch improvements."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "excerpt": "Choosing an ERP system is an operations decision, not only a software purchase. This guide explains how to evaluate requirements, costs, modules, vendors, and rollout risk.",
+    "featured": false,
+    "featuredImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-7849cda6cd8a650d5f42b6f39564be978f5801fc-1672x941-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2025-12-12T06:32:00.000Z",
+    "readTime": "4 min",
+    "seoDescription": "Learn how to choose an ERP system by mapping requirements, modules, integrations, costs, deployment options, vendor fit, and implementation readiness.",
+    "seoTitle": "How to Choose an ERP System: Evaluation Checklist",
+    "slug": {
+      "_type": "slug",
+      "current": "how-to-choose-erp-system"
+    },
+    "tags": [
+      "ERP",
+      "Odoo",
+      "Business Systems"
+    ],
+    "title": "How to Choose an ERP System: Requirements, Costs, and Evaluation Checklist"
+  }
+]
