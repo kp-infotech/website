@@ -2,7 +2,7 @@
 
 ## Step 11C Status
 
-Pre-release checks PASS. Deployment and live verification pending below. Scope: only the body content of the Process Improvement and ERP Selection Insights. No new pages, outreach, Printcubator contact or Step 11D work.
+**PASS — deployed and production verified.** Scope: only the body content of the Process Improvement and ERP Selection Insights. No new pages, outreach, Printcubator contact or Step 11D work.
 
 Clean isolated checkout reused at main `533d3e561966a0e96f73cde3773199bf8c18fb59`. The original stale, dirty checkout remains untouched. No redirect, schema, component, CSS or service source changes were needed.
 
@@ -92,11 +92,23 @@ Browser verification at **1440×1000 desktop** and **390×844 mobile** passes fo
 
 ## Deployment
 
-Pending release record.
+Release commit: `ef27818e9bf18b0ac229b61767a259801f8062d3`, normally pushed to `main`. Worker `website` deployed in the existing KP Infotech Cloudflare account. Deployment ID: `0730ee07-2fcb-4087-9312-63dc98d4e2c0`. Version: `9d4565c2-b333-4f70-b781-ddb6121c0290`, active at 100%. Timestamp: **2026-09-30 06:42:31.401 UTC / 12:12:31.401 IST**.
+
+[Deployment log](step-11c-evidence/deploy.txt), [verified deployment history](step-11c-evidence/deployments-verified.json). No Studio deployment. A follow-up documentation commit records the completed production checks and screenshots; it changes no article or runtime source.
 
 ## Production Verification
 
-Pending fresh verification after release.
+**PASS.** Both live articles return 200, are indexable/self-canonical and have one H1. Visible content, seven semantic tables, reusable lists, author fallback, unchanged publication dates and the expected technical dateModified all pass. All prior contextual links remain; the three useful new links resolve to canonical destinations. [Article quality and preservation](step-11c-evidence/quality-production.json).
+
+All 56 sitemap pages pass, including the five service pages, five Technical Overviews and homepage. Robots passes; sample marketing and all four preserved linked 404s remain 404. All three reclaimed roots and blog equivalents are one-hop 301s to their corresponding 200 Insights. All 73 checked internal links/resources are direct 200s. No internal links to historical roots. [HTTP evidence](step-11c-evidence/production.json), [Step 1G](step-11c-evidence/step1g-production.json).
+
+Production Steps 1C/1G, 2, 3, 4, 7A–7E, 9B/9C and 10B pass. Step 3 verifies 353 images with zero missing-alt, H1, hierarchy, duplicate-ID or empty-control issues. Step 10B preserves the 21 article author assignments (3 Krupa, 12 Poojan, 6 Organization fallbacks). All 54 other pages retain their baseline content, metadata, schema and links. [Production regression exits](step-11c-evidence/production-regression-exits.json).
+
+Live browser checks at 1440×1000 and 390×844 show no page-wide overflow. Tables scroll within their existing accessible regions; the ERP matrix was scrolled to reach its later columns. [Layout measurements](step-11c-evidence/layout-production.json).
+
+![Live process diagnosis worksheet, desktop](step-11c-evidence/step11c-process-desktop.png)
+
+[Process mobile screenshot](step-11c-evidence/step11c-process-mobile.png), [ERP desktop screenshot](step-11c-evidence/step11c-erp-desktop.png), [ERP mobile screenshot](step-11c-evidence/step11c-erp-mobile.png).
 
 ## Remaining Step 11 Queue
 

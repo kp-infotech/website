@@ -1,0 +1,55 @@
+[
+  {
+    "name": "step1c",
+    "exit": 0
+  },
+  {
+    "name": "step2",
+    "exit": 0
+  },
+  {
+    "name": "step7a",
+    "exit": 0
+  },
+  {
+    "name": "step7b",
+    "exit": 0
+  },
+  {
+    "name": "step7c",
+    "exit": 0
+  },
+  {
+    "name": "step7d",
+    "exit": 0
+  },
+  {
+    "name": "step7e",
+    "exit": 0
+  },
+  {
+    "name": "step9b",
+    "exit": 0
+  },
+  {
+    "name": "step9c",
+    "exit": 0
+  },
+  {
+    "name": "step3",
+    "exit": 0
+  },
+  {
+    "name": "step4",
+    "exit": 0
+  },
+  {
+    "name": "step10b",
+    "exit": 0
+  },
+  {
+    "name": "step3-explicit-error-gate",
+    "exit": 0,
+    "errors": []
+  }
+]
