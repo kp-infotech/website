@@ -42,6 +42,7 @@ PUBLIC_SANITY_DATASET = "production"
 # Build-time inlined; the local `astro build` reads these from .env, so keep both in sync.
 PUBLIC_GA_MEASUREMENT_ID = "G-7K17R4CWQ7"
 PUBLIC_CLARITY_ID = "pqpi438d1f"
+PUBLIC_TURNSTILE_SITE_KEY = "0x4AAAAAADqzKn4tiPyk5S8v"
 
 # Cloudflare Email Sending — exposes env.EMAIL.send() to the Worker (no API key needed).
 # Onboard the sending domain once: `npx wrangler email sending enable kpinfo.tech`
