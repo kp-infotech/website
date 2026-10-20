@@ -112,7 +112,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 </BaseLayout>
 
 <script>
-  import { trackEvent } from '../lib/analytics';
+  import { trackContactLead } from '../lib/analytics';
 
   // Re-init on every load + ClientRouter navigation: Astro module scripts run
   // once, but the form is re-created on view-transition swaps, so the submit
@@ -123,6 +123,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
     form.dataset.bound = 'true';
 
     const statusEl = document.getElementById('contact-status');
+    let submitting = false;
 
     function setStatus(message: string, type: 'success' | 'error' | '') {
       if (!statusEl) return;
@@ -137,6 +138,8 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      if (submitting) return;
+      submitting = true;
 
       const submitButton = form.querySelector('.form-submit') as HTMLButtonElement;
       const textSpan = submitButton?.querySelector('.form-submit__text');
@@ -147,9 +150,10 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
       setStatus('', '');
 
       try {
+        const submission = new FormData(form);
         const response = await fetch('/api/contact', {
           method: 'POST',
-          body: new FormData(form),
+          body: submission,
         });
         const result = await response.json().catch(() => ({ success: false }));
 
@@ -159,21 +163,20 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 
         if (textSpan) textSpan.textContent = 'Message Sent!';
         setStatus("Thanks — we've received your message and will be in touch.", 'success');
-        trackEvent('generate_lead', {
-          form_id: 'contact',
-          project_type: (form.querySelector('#project-type') as HTMLSelectElement | null)?.value || '',
-        });
+        trackContactLead(result, String(submission.get('project_type') || ''));
         form.reset();
         resetTurnstile();
 
         setTimeout(() => {
           if (textSpan) textSpan.textContent = originalText;
           submitButton.disabled = false;
+          submitting = false;
         }, 3000);
       } catch (error: any) {
         setStatus(error?.message || 'Something went wrong. Please try again.', 'error');
         if (textSpan) textSpan.textContent = originalText;
         submitButton.disabled = false;
+        submitting = false;
         // Turnstile tokens are single-use — reset so the user can retry.
         resetTurnstile();
       }
