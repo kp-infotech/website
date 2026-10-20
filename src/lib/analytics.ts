@@ -23,6 +23,19 @@ export function trackEvent(name: string, params: Record<string, unknown> = {}): 
   (window as any).gtag('event', name, params);
 }
 
+const recordedContactSubmissions = new Set<string>();
+
+/** Only an enquiry acknowledged by the send service may become a lead, once per receipt. */
+export function trackContactLead(result: unknown, projectType: string = ''): void {
+  if (!result || typeof result !== 'object' || !analyticsEnabled()) return;
+  const { success, submissionId } = result as { success?: unknown; submissionId?: unknown };
+  if (success !== true || typeof submissionId !== 'string' || !submissionId) return;
+  if (recordedContactSubmissions.has(submissionId)) return;
+
+  recordedContactSubmissions.add(submissionId);
+  trackEvent('generate_lead', { form_id: 'contact', project_type: projectType });
+}
+
 /**
  * Manual page_view — GA4 is configured with send_page_view:false, so we emit
  * one here on initial load and after every Astro view-transition swap. Bound to

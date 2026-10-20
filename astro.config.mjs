@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 import { loadEnv } from 'vite';
+import { fileURLToPath } from 'node:url';
+import { unstable_readConfig } from 'wrangler';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import cloudflare from '@astrojs/cloudflare';
@@ -18,6 +20,21 @@ const env = loadEnv(
 // Check process.env first (hosting provider injects vars here), then fall back to loadEnv (local .env files)
 const PUBLIC_SANITY_PROJECT_ID = process.env.PUBLIC_SANITY_PROJECT_ID || env.PUBLIC_SANITY_PROJECT_ID;
 const PUBLIC_SANITY_DATASET = process.env.PUBLIC_SANITY_DATASET || env.PUBLIC_SANITY_DATASET || 'production';
+
+// Only these public IDs may be inlined. Private bindings stay server-only.
+// Keep intentional empty overrides (for example, disabling analytics on a host).
+const workerConfig = unstable_readConfig({
+  config: fileURLToPath(new URL('./wrangler.toml', import.meta.url)),
+});
+const publicBuildIds = [
+  'PUBLIC_GA_MEASUREMENT_ID',
+  'PUBLIC_CLARITY_ID',
+  'PUBLIC_TURNSTILE_SITE_KEY',
+];
+const publicBuildDefines = Object.fromEntries(publicBuildIds.map(name => [
+  `import.meta.env.${name}`,
+  JSON.stringify(process.env[name] ?? env[name] ?? workerConfig.vars[name]),
+]));
 
 // Validate required environment variables
 if (!PUBLIC_SANITY_PROJECT_ID) {
@@ -61,6 +78,7 @@ export default defineConfig({
     }),
   ],
   vite: {
+    define: publicBuildDefines,
     plugins: [tailwindcss()],
   },
 });
