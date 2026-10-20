@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 import { loadEnv } from 'vite';
+import { fileURLToPath } from 'node:url';
+import { unstable_readConfig } from 'wrangler';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import cloudflare from '@astrojs/cloudflare';
@@ -18,6 +20,15 @@ const env = loadEnv(
 // Check process.env first (hosting provider injects vars here), then fall back to loadEnv (local .env files)
 const PUBLIC_SANITY_PROJECT_ID = process.env.PUBLIC_SANITY_PROJECT_ID || env.PUBLIC_SANITY_PROJECT_ID;
 const PUBLIC_SANITY_DATASET = process.env.PUBLIC_SANITY_DATASET || env.PUBLIC_SANITY_DATASET || 'production';
+
+// Reuse the committed public Worker configuration for clean builds. Only this
+// public key is inlined; TURNSTILE_SECRET_KEY remains a server-only binding.
+const workerConfig = unstable_readConfig({
+  config: fileURLToPath(new URL('./wrangler.toml', import.meta.url)),
+});
+const PUBLIC_TURNSTILE_SITE_KEY = process.env.PUBLIC_TURNSTILE_SITE_KEY
+  || env.PUBLIC_TURNSTILE_SITE_KEY
+  || workerConfig.vars.PUBLIC_TURNSTILE_SITE_KEY;
 
 // Validate required environment variables
 if (!PUBLIC_SANITY_PROJECT_ID) {
@@ -61,6 +72,9 @@ export default defineConfig({
     }),
   ],
   vite: {
+    define: {
+      'import.meta.env.PUBLIC_TURNSTILE_SITE_KEY': JSON.stringify(PUBLIC_TURNSTILE_SITE_KEY),
+    },
     plugins: [tailwindcss()],
   },
 });
