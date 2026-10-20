@@ -313,7 +313,9 @@ const criticalFontCss = `
       import { initAnimations } from '../lib/animations';
       import { trackPageView, initClickTracking } from '../lib/analytics';
       import { initConsentLifecycle } from '../lib/consent-lifecycle';
+      import { initTurnstileLifecycle } from '../lib/turnstile-lifecycle';
       initConsentLifecycle();
+      initTurnstileLifecycle();
       initAnimations();
       document.addEventListener('astro:after-swap', () => {
         initAnimations();
