@@ -312,6 +312,8 @@ const criticalFontCss = `
     <script>
       import { initAnimations } from '../lib/animations';
       import { trackPageView, initClickTracking } from '../lib/analytics';
+      import { initConsentLifecycle } from '../lib/consent-lifecycle';
+      initConsentLifecycle();
       initAnimations();
       document.addEventListener('astro:after-swap', () => {
         initAnimations();

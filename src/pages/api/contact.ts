@@ -150,5 +150,7 @@ export const POST: APIRoute = async ({ request }) => {
   // 6. Record submission only after a successful send
   limiter.recordSubmission(ip);
 
-  return json({ success: true }, 200);
+  // A generic receipt is issued only after the email service accepts the enquiry.
+  // Keep the honeypot's indistinct success response free of anti-spam details.
+  return json({ success: true, submissionId: crypto.randomUUID() }, 200);
 };
