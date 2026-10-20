@@ -21,14 +21,20 @@ const env = loadEnv(
 const PUBLIC_SANITY_PROJECT_ID = process.env.PUBLIC_SANITY_PROJECT_ID || env.PUBLIC_SANITY_PROJECT_ID;
 const PUBLIC_SANITY_DATASET = process.env.PUBLIC_SANITY_DATASET || env.PUBLIC_SANITY_DATASET || 'production';
 
-// Reuse the committed public Worker configuration for clean builds. Only this
-// public key is inlined; TURNSTILE_SECRET_KEY remains a server-only binding.
+// Only these public IDs may be inlined. Private bindings stay server-only.
+// Keep intentional empty overrides (for example, disabling analytics on a host).
 const workerConfig = unstable_readConfig({
   config: fileURLToPath(new URL('./wrangler.toml', import.meta.url)),
 });
-const PUBLIC_TURNSTILE_SITE_KEY = process.env.PUBLIC_TURNSTILE_SITE_KEY
-  || env.PUBLIC_TURNSTILE_SITE_KEY
-  || workerConfig.vars.PUBLIC_TURNSTILE_SITE_KEY;
+const publicBuildIds = [
+  'PUBLIC_GA_MEASUREMENT_ID',
+  'PUBLIC_CLARITY_ID',
+  'PUBLIC_TURNSTILE_SITE_KEY',
+];
+const publicBuildDefines = Object.fromEntries(publicBuildIds.map(name => [
+  `import.meta.env.${name}`,
+  JSON.stringify(process.env[name] ?? env[name] ?? workerConfig.vars[name]),
+]));
 
 // Validate required environment variables
 if (!PUBLIC_SANITY_PROJECT_ID) {
@@ -72,9 +78,7 @@ export default defineConfig({
     }),
   ],
   vite: {
-    define: {
-      'import.meta.env.PUBLIC_TURNSTILE_SITE_KEY': JSON.stringify(PUBLIC_TURNSTILE_SITE_KEY),
-    },
+    define: publicBuildDefines,
     plugins: [tailwindcss()],
   },
 });

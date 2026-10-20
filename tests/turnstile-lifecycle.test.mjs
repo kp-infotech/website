@@ -3,6 +3,8 @@ import test from 'node:test';
 import { JSDOM } from 'jsdom';
 import { initTurnstileLifecycle } from '../src/lib/turnstile-lifecycle.ts';
 
+const expectedKey = '0x4AAAAAADqzKn4tiPyk5S8v';
+
 function setup({ responseField = true } = {}) {
   const dom = new JSDOM('<body></body>', { url: 'https://kpinfo.tech/contact/' });
   const doc = dom.window.document;
@@ -11,12 +13,12 @@ function setup({ responseField = true } = {}) {
   const active = new Map();
   let sequence = 0;
 
-  function mount(node, implicit = false) {
+  function mount(node, implicit = false, options) {
     assert.ok(node instanceof dom.window.HTMLElement);
     assert.ok(![...active.values()].includes(node), 'a mounted container must not render twice');
     const id = `cf-chl-widget-${++sequence}`;
     active.set(id, node);
-    if (!implicit) renders.push({ node, id });
+    if (!implicit) renders.push({ node, id, options });
     if (responseField || implicit) {
       const field = doc.createElement('input');
       field.type = 'hidden';
@@ -29,7 +31,12 @@ function setup({ responseField = true } = {}) {
 
   const sdk = {
     ready() { throw new Error('The async Turnstile SDK rejects ready()'); },
-    render: node => mount(node),
+    render(node, options) {
+      assert.ok(options && typeof options === 'object', 'render requires an explicit options object');
+      assert.equal(options.sitekey, expectedKey, 'render requires the expected public site key');
+      assert.equal(options.sitekey, node.getAttribute('data-sitekey'));
+      return mount(node, false, options);
+    },
     remove(id) {
       assert.equal(typeof id, 'string', 'remove requires a widget ID, never an element');
       assert.ok(active.has(id), `unknown or already removed widget ${id}`);
@@ -42,7 +49,7 @@ function setup({ responseField = true } = {}) {
   const load = () => doc.dispatchEvent(new dom.window.Event('astro:page-load'));
   const beforeSwap = () => doc.dispatchEvent(new dom.window.Event('astro:before-swap'));
   function form() {
-    doc.body.innerHTML = '<form><div class="cf-turnstile" data-sitekey="existing-public-key"></div></form>';
+    doc.body.innerHTML = `<form><div class="cf-turnstile" data-sitekey="${expectedKey}" data-theme="dark"></div></form>`;
     return doc.querySelector('.cf-turnstile');
   }
   return { dom, doc, sdk, renders, removed, active, mount, load, beforeSwap, form };
@@ -181,4 +188,74 @@ test('pages without widgets and swaps before SDK loading have no side effects', 
   assert.equal(x.doc.scripts.length, 0);
   assert.equal(x.doc.cookie, '');
   assert.equal(x.dom.window.gtag, undefined);
+});
+
+test('explicit rendering preserves existing theme and supported attribute types and callback semantics', t => {
+  const x = setup(); t.after(() => x.dom.window.close());
+  x.dom.window.turnstile = x.sdk;
+  const widget = x.form();
+  const attributes = {
+    size: 'compact', action: 'contact', cdata: 'internal-label', language: 'en',
+    appearance: 'interaction-only', execution: 'execute', retry: 'never',
+    'refresh-expired': 'manual', 'refresh-timeout': 'never', 'response-field-name': 'custom-response',
+    tabindex: '2', 'retry-interval': '12000', 'response-field': 'false', 'feedback-enabled': 'false',
+    'offlabel-show-privacy': 'true', 'offlabel-show-help': 'false',
+  };
+  for (const [name, value] of Object.entries(attributes)) widget.setAttribute(`data-${name}`, value);
+  const callbacks = [
+    'callback', 'error-callback', 'expired-callback', 'timeout-callback',
+    'before-interactive-callback', 'after-interactive-callback', 'unsupported-callback',
+  ];
+  const calls = [];
+  for (const name of callbacks) {
+    const globalName = name.replaceAll('-', '_');
+    widget.setAttribute(`data-${name}`, globalName);
+    x.dom.window[globalName] = function (...args) { calls.push({ name, args, receiver: this }); };
+  }
+  initTurnstileLifecycle(x.doc); x.load();
+  assert.equal(calls.length, 0, 'configuration must not execute callbacks');
+  const options = x.renders[0].options;
+  assert.deepEqual(Object.fromEntries(Object.entries(options).filter(([, v]) => typeof v !== 'function')), {
+    sitekey: expectedKey, theme: 'dark', size: 'compact', action: 'contact', cData: 'internal-label',
+    language: 'en', appearance: 'interaction-only', execution: 'execute', retry: 'never',
+    'refresh-expired': 'manual', 'refresh-timeout': 'never', 'response-field-name': 'custom-response',
+    tabindex: 2, 'retry-interval': 12000, 'response-field': false, 'feedback-enabled': false,
+    'offlabel-show-privacy': true, 'offlabel-show-help': false,
+  });
+  for (const name of callbacks) options[name]('sdk-value');
+  assert.deepEqual(calls.map(c => [c.name, c.args]), callbacks.map(name => [name, ['sdk-value']]));
+  assert.ok(calls.every(c => c.receiver === x.dom.window));
+  x.beforeSwap(); assert.equal(x.active.size, 0);
+});
+
+test('each widget retains its own explicit configuration and returned ID', t => {
+  const x = setup(); t.after(() => x.dom.window.close());
+  x.dom.window.turnstile = x.sdk;
+  const first = x.form();
+  const second = first.cloneNode(); second.setAttribute('data-theme', 'light');
+  second.setAttribute('data-action', 'careers'); x.doc.body.appendChild(second);
+  initTurnstileLifecycle(x.doc); x.load(); x.load();
+  assert.deepEqual(x.renders.map(r => r.options), [
+    { sitekey: expectedKey, theme: 'dark' },
+    { sitekey: expectedKey, theme: 'light', action: 'careers' },
+  ]);
+  assert.notEqual(x.renders[0].id, x.renders[1].id);
+  x.beforeSwap(); assert.deepEqual(x.removed.map(r => r.id), x.renders.map(r => r.id));
+});
+
+test('missing site keys do not trigger an unconfigured render or analytics and consent side effects', t => {
+  const x = setup(); t.after(() => x.dom.window.close());
+  x.dom.window.turnstile = x.sdk;
+  const widget = x.form(); widget.removeAttribute('data-sitekey');
+  const analyticsCalls = [];
+  x.dom.window.gtag = (...args) => analyticsCalls.push(args);
+  x.doc.cookie = 'existing-consent=denied';
+  const cookie = x.doc.cookie;
+  initTurnstileLifecycle(x.doc); x.load(); x.beforeSwap();
+  assert.equal(x.renders.length, 0); assert.equal(x.removed.length, 0);
+  assert.deepEqual(analyticsCalls, []); assert.equal(x.doc.cookie, cookie);
+  assert.equal(x.doc.scripts.length, 0);
+  widget.setAttribute('data-sitekey', expectedKey); x.load(); x.beforeSwap();
+  assert.equal(x.renders.length, 1); assert.equal(x.active.size, 0);
+  assert.deepEqual(analyticsCalls, []); assert.equal(x.doc.cookie, cookie);
 });
