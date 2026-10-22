@@ -3,6 +3,9 @@ import { PUBLIC_BLOG_SLUG_SET } from '../lib/public-blog-policy.js';
 export const PERMANENT_REDIRECT_STATUS = 301;
 
 const EXACT_REDIRECTS = new Map([
+  // Reviewed historical article replacements from the October 22 GSC 404 inventory.
+  ['/erp-software-odoo', '/insights/odoo-erp-complete-guide/'],
+  ['/best-framework-for-web-application', '/insights/best-web-application-frameworks/'],
   ['/services/web-application-development', '/services/custom-software-development/'],
   ['/services/erp-solutions', '/services/erp-software/'],
   ['/services/ai-automation', '/services/ai-automation-agents/'],

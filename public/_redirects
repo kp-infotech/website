@@ -48,3 +48,9 @@
 
 # ─── Old FAQ URL ──────────────────────────────────────────────────────────────
 /kp-infotech-faqs/   /contact/   301
+
+# Reviewed October 22 historical article replacements (exact routes only).
+/erp-software-odoo /insights/odoo-erp-complete-guide/ 301
+/erp-software-odoo/ /insights/odoo-erp-complete-guide/ 301
+/best-framework-for-web-application /insights/best-web-application-frameworks/ 301
+/best-framework-for-web-application/ /insights/best-web-application-frameworks/ 301
