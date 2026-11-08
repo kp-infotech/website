@@ -7,7 +7,21 @@ export const siteSettings = defineType({
   fields: [
     defineField({ name: 'siteName', type: 'string', title: 'Site Name', initialValue: 'KP Infotech' }),
     defineField({ name: 'siteTagline', type: 'string', title: 'Site Tagline' }),
-    defineField({ name: 'heroHeadline', type: 'string', title: 'Hero Headline', description: 'Main headline for the homepage hero section' }),
+    defineField({ name: 'heroHeadline', type: 'string', title: 'Hero Headline (SEO H1)', description: 'The homepage <h1> read by search engines and screen readers. Visually, the hero shows "Hero Rotating Phrases" + "Hero Headline Suffix" below.' }),
+    defineField({
+      name: 'heroRotatingPhrases',
+      type: 'array',
+      title: 'Hero Rotating Phrases',
+      description: 'First line of the visible homepage headline, cycled in gold italic (e.g. "Custom software", "Odoo ERP", "AI agents"). Keep each under ~16 characters so it fits on one line on phones.',
+      of: [{ type: 'string' }],
+      validation: (Rule) => Rule.max(6),
+    }),
+    defineField({
+      name: 'heroHeadlineSuffix',
+      type: 'string',
+      title: 'Hero Headline Suffix',
+      description: 'Rest of the visible homepage headline after the rotating phrase. Must read correctly after every phrase, e.g. "built for how growing businesses actually run."',
+    }),
     defineField({ name: 'logo', type: 'image', title: 'Logo' }),
     defineField({ name: 'logoLight', type: 'image', title: 'Logo (Light Version)' }),
     defineField({ name: 'contactEmail', type: 'string', title: 'Contact Email' }),

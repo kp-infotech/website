@@ -50,6 +50,8 @@ export const homepageDataQuery = `
     siteName,
     siteTagline,
     heroHeadline,
+    heroRotatingPhrases,
+    heroHeadlineSuffix,
     logo,
     contactEmail,
     contactPhone,
