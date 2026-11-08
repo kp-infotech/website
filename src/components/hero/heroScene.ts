@@ -38,13 +38,14 @@ const pick = <T,>(a: T[]): T => a[(Math.random() * a.length) | 0];
 // Tile layout in % of the stage (must match Hero.astro)
 const TILES: number[][] = [[0, 0, 100, 11], [0, 15, 31.5, 23], [34.25, 15, 31.5, 23], [68.5, 15, 31.5, 23], [0, 42, 64.5, 50], [68.5, 42, 31.5, 50]];
 // Unpowered pose per tile: x% of stage w, y% of stage h, rotation, rotationX, rotationY, scale, blur
+// (kept mostly on-screen and sharp so the tool windows read clearly)
 const CHAOS: number[][] = [
-  [-8, -14, -6, 22, -16, 0.88, 0.6],
-  [-14, 6, 9, -22, 30, 0.84, 1.6],
-  [12, -12, -6, 18, 22, 0.94, 0],
-  [20, 10, 12, -30, -26, 0.82, 2.2],
-  [-5, 18, -4, 20, 14, 0.9, 0.4],
-  [12, -22, 8, -16, -34, 0.86, 1.2],
+  [-5, -13, -4, 16, -10, 0.94, 0],
+  [-11, 4, 7, -16, 22, 0.92, 0.3],
+  [9, -9, -5, 12, 16, 0.96, 0],
+  [4, -6, 8, -18, -18, 0.92, 0.4],
+  [-4, 10, -3, 14, 9, 0.94, 0],
+  [4, 6, 6, -10, -22, 0.92, 0.2],
 ];
 // Headline phrase index → tiles it spotlights (Custom software, Odoo ERP, Automation, AI agents, Cloud platforms)
 const SPOT: number[][] = [[0, 1, 2, 3, 4, 5], [1, 2], [5], [3], [0, 4]];
@@ -674,7 +675,8 @@ export function mountHeroScene(root: HTMLElement): Fn {
       const sw = r.width, sh = r.height;
       const chaos = (i: number) => ({ x: CHAOS[i][0] / 100 * sw, y: CHAOS[i][1] / 100 * sh, rotation: CHAOS[i][2], rotationX: CHAOS[i][3], rotationY: CHAOS[i][4], scale: CHAOS[i][5], filter: `blur(${CHAOS[i][6]}px)` });
       const flat = { x: 0, y: 0, rotation: 0, rotationX: 0, rotationY: 0, scale: 1, filter: 'blur(0px)' };
-      const fragHome = { x: 0, y: 0, scale: 1, opacity: 1, rotation: 0, filter: 'blur(0px)' };
+      // z lifts notifications above the 3D-tilted windows (3D sorting ignores z-index)
+      const fragHome = { x: 0, y: 0, z: 90, scale: 1, opacity: 1, rotation: 0, filter: 'blur(0px)' };
       const frameOff = (el: HTMLElement) => (el.classList.contains('v') ? { scaleY: 0 } : { scaleX: 0 });
       const frameOn = (el: HTMLElement) => (el.classList.contains('v') ? { scaleY: 1 } : { scaleX: 1 });
 
@@ -731,7 +733,7 @@ export function mountHeroScene(root: HTMLElement): Fn {
       tl.to(mess, { opacity: 1, duration: 0.4, stagger: 0.05 }, 'sc+=0.25');
       tl.to(dash.bars, { scaleY: 0.04, duration: 0.4 }, 'sc');
       tiles.forEach((t, i) => tl.to(t, { ...chaos(i), duration: 1.3, ease: 'expo.inOut' }, `sc+=${0.1 + i * 0.05}`));
-      tl.fromTo(frags, { x: 0, y: 0, scale: 0, opacity: 0, rotation: 0, filter: 'blur(0px)' }, { scale: 1, opacity: 1, duration: 0.7, ease: 'back.out(2)', stagger: 0.08, immediateRender: false }, 'sc+=0.6');
+      tl.fromTo(frags, { x: 0, y: 0, z: 90, scale: 0, opacity: 0, rotation: 0, filter: 'blur(0px)' }, { scale: 1, opacity: 1, duration: 0.7, ease: 'back.out(2)', stagger: 0.08, immediateRender: false }, 'sc+=0.6');
       tl.to({}, { duration: 0.5 }, 'sc+=2');
       master = tl;
 
