@@ -1,10 +1,11 @@
 ---
 /**
- * Homepage hero — "network + dashboard" motion scene.
+ * Homepage hero — "Power on".
  *
- * A full-bleed live network (canvas) is wired into an operations dashboard that
- * loops through: disconnected → routing → connected (data streams in) → reset.
- * The headline's first line rotates in place through the service phrases.
+ * The operations dashboard is a chip on a gold circuit board. It loops:
+ * unpowered (the mess) → power on (traces light up, fragments are absorbed,
+ * tiles assemble) → live (data pulses stream in) → power down.
+ * The headline's first line rotates in place and spotlights matching modules.
  *
  * Runtime lives in ../hero/heroScene.ts (GSAP + canvas). Respects
  * prefers-reduced-motion and includes a pause control.
@@ -32,7 +33,7 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
 ---
 
 <section class="hs" data-hero-scene aria-labelledby="home-hero-title">
-  <div class="hs__visual" aria-hidden="true"><canvas class="hs__canvas"></canvas></div>
+  <div class="hs__visual" aria-hidden="true"><canvas class="hs__canvas"></canvas><canvas class="hs__bloom"></canvas></div>
   <div class="hs__scrim"></div>
   <div class="hs__glow"></div>
 
@@ -43,7 +44,7 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
     </div></div></div>
     <div class="hs-chip hs-chip--b" data-depth="24"><div class="hs-chip__pop"><div class="hs-chip__in">
       <span class="hs-chip__icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M18 6l-2.5 2.5M8.5 15.5L6 18"/></svg></span>
-      <span class="hs-chip__txt"><span class="hs-chip__k">AI agent</span><span class="hs-chip__v">Drafting supplier reply<span class="hs-typing"><i></i><i></i><i></i></span></span></span>
+      <span class="hs-chip__txt"><span class="hs-chip__k">AI agent <span class="hs-typing"><i></i><i></i><i></i></span></span><span class="hs-chip__v hs-chip__v--type"><span class="hs-typer" data-lines="Drafting supplier reply…|“Hi Ramesh, PO-1046 is approved. Dispatch Friday?”|Summarising 14 unread threads|Flagged: invoice total doesn't match PO">Drafting supplier reply…</span><span class="hs-caret"></span></span></span>
     </div></div></div>
   </div>
 
@@ -72,11 +73,14 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
       </div>
     </div>
 
-    <!-- Dashboard stage: the same six tiles are "the mess" and "the system" -->
-    <div class="hs-flow" aria-hidden="true">
+    <!-- Console stage: the same six tiles are "the mess" and "the system" -->
+    <div class="hs-stage" aria-hidden="true">
+    <div class="hs-console"><span class="hs-led"></span><b class="hs-state"><span class="off">Offline</span><span class="on">Live</span></b><span>Operations console</span><span class="hs-sp"></span><span data-k="clock">--:--:--</span></div>
+    <div class="hs-flow">
+      <div class="hs-frame"><i class="h t"></i><i class="v r"></i><i class="h b"></i><i class="v l"></i><span class="hs-corner tl"></span><span class="hs-corner tr"></span><span class="hs-corner bl"></span><span class="hs-corner br"></span></div>
       <div class="hs-tile" style="--x:0%;--y:0%;--w:100%;--h:11%"><div class="hs-tile__in"><div class="hs-tile__float">
         <div class="hs-face hs-face--mess"><span class="hs-mail">✉&nbsp; RE: RE: Fwd: updated stock sheet?? <span class="hs-muted">· 14 unread</span></span></div>
-        <div class="hs-face hs-face--clean hs-th"><span class="hs-dot"></span><b>Operations</b><span class="hs-muted">Live overview</span><span class="hs-sp"></span><span class="hs-muted" data-k="sync">Synced just now</span></div>
+        <div class="hs-face hs-face--clean hs-th"><span class="hs-dot"></span><b>Operations</b><span class="hs-evt" data-k="event">Waiting for data…</span></div>
       </div></div></div>
       <div class="hs-tile" style="--x:0%;--y:15%;--w:31.5%;--h:23%"><div class="hs-tile__in"><div class="hs-tile__float">
         <div class="hs-face hs-face--mess"><span class="hs-fname">orders_FINAL_v7.xlsx <em>edited</em></span><div class="hs-xls"><span>A1</span><span>qty</span><span>price</span><span>tot</span><span>1043</span><span>12</span><span>—</span><span class="bad">#REF!</span><span>1044</span><span></span><span>960</span><span>??</span></div></div>
@@ -110,17 +114,28 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
           </ul>
         </div>
       </div></div></div>
-      <span class="hs-deb" style="left:-6%;top:6%">XLS</span>
-      <span class="hs-deb" style="left:44%;top:-7%">@</span>
-      <span class="hs-deb" style="left:92%;top:2%">PDF</span>
-      <span class="hs-deb" style="left:-8%;top:66%">CSV</span>
-      <span class="hs-deb" style="left:58%;top:88%">DOC</span>
-      <span class="hs-deb" style="left:96%;top:72%">WA</span>
+      {[
+        { x: -7, y: 4, ic: '☎', t: '3 missed calls · Vendor', b: '3' },
+        { x: 58, y: -9, ic: '◍', t: '“send me the latest sheet pls”', b: '1' },
+        { x: 84, y: 30, ic: '▦', t: 'Stock count — again? Sat 9:00', b: '' },
+        { x: 20, y: 64, ic: '✉', t: 'URGENT: invoice mismatch (4)', b: '4' },
+        { x: 44, y: 34, ic: '✉', t: '37 unread', b: '37' },
+        { x: -6, y: 50, ic: '▤', t: 'final_final_v3.docx', b: '' },
+        { x: 60, y: 84, ic: '⎙', t: 'Printed. Signed. Scanned.', b: '' },
+        { x: 28, y: 95, ic: '?', t: 'Who approved this?', b: '2' },
+        { x: 86, y: 62, ic: '₹', t: 'Payment pending · 46 days', b: '!' },
+      ].map((f) => (
+        <div class="hs-frag" style={`left:${f.x}%;top:${f.y}%`}>
+          <span class="hs-frag__in"><span class="hs-frag__ic">{f.ic}</span>{f.t}{f.b && <b class="hs-frag__badge">{f.b}</b>}</span>
+        </div>
+      ))}
       <div class="hs-flow__sweep"><i></i></div>
+      <div class="hs-glare"></div>
       <div class="hs-flow__cap">
-        <span class="hs-caps"><span class="hs-cap hs-cap--before on">Disconnected · sheets, inboxes, re-typing</span><span class="hs-cap hs-cap--after">Connected · one live system</span></span>
+        <span class="hs-caps"><span class="hs-cap hs-cap--before on">Disconnected · sheets, inboxes, re-typing<span class="hs-cap__hint"> · click to power on</span></span><span class="hs-cap hs-cap--after">Connected · one live system</span></span>
         <span class="hs-flow__prog"><i></i></span>
       </div>
+    </div>
     </div>
   </div>
 
@@ -164,7 +179,10 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
   .hs-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 
   .hs__visual { position: absolute; inset: 0; z-index: 0; will-change: transform; }
+  .hs__visual { transform-origin: 50% 100%; }
   .hs__canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  /* bloom: half-res copy of the bright layer, blurred and screened over the sharp one */
+  .hs__bloom { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; filter: blur(9px) saturate(1.25); mix-blend-mode: screen; opacity: 0.95; }
   .hs__scrim {
     position: absolute; inset: 0; z-index: 1; pointer-events: none;
     background:
@@ -253,8 +271,69 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
   @keyframes hs-typing { 0%, 60%, 100% { opacity: 0.25; transform: none; } 30% { opacity: 1; transform: translateY(-2px); } }
 
   /* Dashboard stage */
-  .hs-flow { position: relative; width: 100%; max-width: 640px; justify-self: end; aspect-ratio: 5 / 4; container-type: inline-size; perspective: 1400px; font-family: var(--font-body); }
+  .hs-stage { position: relative; width: 100%; max-width: 640px; justify-self: end; perspective: 1600px; will-change: transform, opacity; }
+  .hs-flow { position: relative; width: 100%; aspect-ratio: 5 / 4; container-type: inline-size; perspective: 1400px; font-family: var(--font-body); transform-style: preserve-3d; will-change: transform; }
   .hs-flow > * { font-size: max(8.5px, 1.75cqw); }
+  .hs-flow.is-chaos { cursor: pointer; }
+
+  /* console label above the stage */
+  .hs-console { position: absolute; left: 0; right: 0; bottom: calc(100% + 1.4rem); display: flex; align-items: center; gap: 0.75rem; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--hs-fg-3); }
+  .hs-console b { color: var(--accent); font-weight: 500; letter-spacing: 0.2em; }
+  .hs-console [data-k="clock"] { color: var(--hs-fg-2); font-variant-numeric: tabular-nums; }
+  .hs-led { width: 6px; height: 6px; border-radius: 50%; background: var(--error); box-shadow: 0 0 8px rgba(248, 113, 113, 0.7); transition: background 0.4s, box-shadow 0.4s; }
+  .hs-state .on, .hs-stage:has(.is-live) .hs-state .off { display: none; }
+  .hs-stage:has(.is-live) .hs-state .on { display: inline; }
+  .hs-state .off { color: var(--error); }
+  .hs-stage:has(.is-live) .hs-led { background: var(--success); box-shadow: 0 0 10px rgba(74, 222, 128, 0.8); }
+
+  /* frame that draws itself on power-on */
+  .hs-frame { position: absolute; left: -2.4%; right: -2.4%; top: -3%; height: calc(92% + 6%); pointer-events: none; z-index: 0; }
+  .hs-frame i { position: absolute; background: rgba(201, 168, 124, 0.5); }
+  .hs-frame .t { top: 0; left: 0; right: 0; height: 1px; transform-origin: left; }
+  .hs-frame .r { top: 0; right: 0; bottom: 0; width: 1px; transform-origin: top; }
+  .hs-frame .b { bottom: 0; left: 0; right: 0; height: 1px; transform-origin: right; }
+  .hs-frame .l { top: 0; left: 0; bottom: 0; width: 1px; transform-origin: bottom; }
+  .hs-corner { position: absolute; width: 14px; height: 14px; border: 0 solid var(--accent); opacity: 0.35; transition: opacity 0.6s, filter 0.6s; }
+  .hs-corner.tl { left: -5px; top: -5px; border-left-width: 1.5px; border-top-width: 1.5px; }
+  .hs-corner.tr { right: -5px; top: -5px; border-right-width: 1.5px; border-top-width: 1.5px; }
+  .hs-corner.bl { left: -5px; bottom: -5px; border-left-width: 1.5px; border-bottom-width: 1.5px; }
+  .hs-corner.br { right: -5px; bottom: -5px; border-right-width: 1.5px; border-bottom-width: 1.5px; }
+  .hs-flow.is-live .hs-corner { opacity: 1; filter: drop-shadow(0 0 6px rgba(201, 168, 124, 0.8)); }
+
+  /* glass glare that follows the cursor */
+  .hs-glare { position: absolute; left: 0; top: 0; width: 100%; height: 92%; pointer-events: none; z-index: 3; opacity: 0; transition: opacity 0.5s; mix-blend-mode: screen; background: radial-gradient(380px circle at var(--gx, 50%) var(--gy, 30%), rgba(255, 238, 210, 0.09), transparent 62%); }
+  .hs.is-pointer .hs-flow.is-live .hs-glare { opacity: 1; }
+
+  /* fragments of manual work */
+  .hs-frag { position: absolute; z-index: 2; will-change: transform, opacity, filter; }
+  .hs-frag__in { position: relative; display: inline-flex; align-items: center; gap: 0.6em; padding: 0.55em 0.85em; white-space: nowrap; background: rgba(24, 22, 19, 0.94); border: 1px solid var(--border-light); color: var(--hs-fg-2); font-size: 0.92em; box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.9); }
+  .hs-flow.is-chaos .hs-frag__in { animation: hs-drift 3.8s ease-in-out infinite alternate; }
+  .hs-frag:nth-of-type(2n) .hs-frag__in { animation-duration: 4.6s; animation-direction: alternate-reverse; }
+  .hs-frag:nth-of-type(3n) .hs-frag__in { animation-duration: 3.2s; }
+  .hs-frag__ic { color: var(--accent-dim); font-size: 1.05em; }
+  .hs-frag__badge { position: absolute; top: -0.65em; right: -0.65em; min-width: 1.55em; height: 1.55em; padding: 0 0.35em; border-radius: 0.8em; display: grid; place-items: center; background: var(--error); color: #fff; font-size: 0.72em; font-weight: 500; box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.6); animation: hs-badge 1.8s ease-out infinite; }
+  @keyframes hs-badge { 0% { box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.6); } 70%, 100% { box-shadow: 0 0 0 0.6em rgba(248, 113, 113, 0); } }
+
+  /* live event line in the header tile */
+  .hs-evt { flex: 1; min-width: 0; text-align: right; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 0.82em; letter-spacing: 0.02em; color: var(--accent-light); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hs-evt.in { animation: hs-evt 0.45s var(--hs-ease); }
+  @keyframes hs-evt { from { opacity: 0; transform: translateY(70%); } to { opacity: 1; transform: none; } }
+
+  /* odometer digits */
+  .hs-odo { display: inline-block; height: 1em; overflow: hidden; vertical-align: top; }
+  .hs-odo__col { display: flex; flex-direction: column; transition: transform 0.7s var(--hs-ease); }
+  .hs-odo__col span { display: block; height: 1em; line-height: 1; }
+
+  /* spotlighted module */
+  .hs-tile.spot .hs-face--clean { border-color: var(--accent); box-shadow: 0 0 0 1px rgba(201, 168, 124, 0.25), 0 0 2.6em -0.6em rgba(201, 168, 124, 0.6); transition: border-color 0.4s, box-shadow 0.4s; }
+
+  /* AI agent typer */
+  .hs-chip__v--type { display: inline-flex; align-items: center; max-width: 250px; }
+  .hs-typer { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .hs-caret { width: 1px; height: 1.05em; margin-left: 2px; background: var(--accent); animation: hs-caret 1s steps(1) infinite; flex-shrink: 0; }
+  @keyframes hs-caret { 50% { opacity: 0; } }
+  .hs-cap__hint { color: var(--accent-dim); }
+  @media (hover: none) { .hs-cap__hint { display: none; } }
   .hs-tile { position: absolute; left: var(--x); top: var(--y); width: var(--w); height: var(--h); will-change: transform, filter; }
   .hs-tile__in, .hs-tile__float { position: absolute; inset: 0; }
   .hs-flow.is-chaos .hs-tile__float { animation: hs-drift 3.6s ease-in-out infinite alternate; }
@@ -270,7 +349,7 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
     100% { border-color: var(--hs-soft); box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent; }
   }
   .hs-fk { font-size: 0.82em; letter-spacing: 0.2em; text-transform: uppercase; color: var(--hs-fg-3); }
-  .hs-fv { font-family: var(--font-display); font-size: 2.6em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .hs-fv { display: block; height: 1em; font-family: var(--font-display); font-size: 2.6em; line-height: 1; font-variant-numeric: lining-nums tabular-nums; }
   .hs-fs { font-size: 0.9em; color: var(--accent); }
   .hs-th { flex-direction: row; align-items: center; gap: 0.8em; padding-block: 0; }
   .hs-th b { font-weight: 500; font-size: 1.05em; letter-spacing: 0.04em; }
@@ -300,8 +379,6 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
   .hs-bubble { align-self: flex-start; padding: 0.6em 0.9em; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 1em 1em 1em 0.2em; }
   .hs-stamp { align-self: flex-start; margin-top: auto; padding: 0.3em 0.6em; border: 1.5px solid var(--error); color: var(--error); font-size: 0.8em; letter-spacing: 0.18em; text-transform: uppercase; transform: rotate(-6deg); }
   .hs-mail { line-height: 1.35; }
-  .hs-deb { position: absolute; padding: 0.4em 0.6em; border: 1px solid var(--border-light); background: var(--bg-secondary); font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 0.8em; color: var(--hs-fg-3); letter-spacing: 0.08em; }
-  .hs-flow.is-chaos .hs-deb { animation: hs-drift 4s ease-in-out infinite alternate; }
   .hs-flow__sweep { position: absolute; left: 0; top: 0; width: 100%; height: 92%; pointer-events: none; overflow: hidden; z-index: 2; }
   .hs-flow__sweep i { position: absolute; inset: 0; transform: translateX(-110%); background: linear-gradient(100deg, transparent 35%, rgba(228, 212, 188, 0.13) 50%, transparent 65%); }
   .hs-flow__cap { position: absolute; left: 0; right: 0; top: 95%; display: flex; align-items: center; gap: 1em; font-size: 0.85em; letter-spacing: 0.22em; text-transform: uppercase; }
@@ -315,7 +392,7 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
 
   /* Reduced motion: static, connected state */
   @media (prefers-reduced-motion: reduce) {
-    .hs-face--mess, .hs-deb { opacity: 0; }
+    .hs-face--mess, .hs-frag { opacity: 0; }
     .hs-face--clean { opacity: 1; }
   }
 
@@ -323,7 +400,8 @@ const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
   @media (max-width: 1023px) {
     .hs__scrim { background: linear-gradient(180deg, var(--hs-clear) 0%, rgba(10, 10, 10, 0.55) 18%, rgba(10, 10, 10, 0.7) 48%, rgba(10, 10, 10, 0.25) 70%, var(--hs-clear) 92%, var(--bg-primary) 100%); }
     .hs__inner { padding-top: 7rem; padding-bottom: 7.5rem; align-items: start; }
-    .hs-flow { justify-self: stretch; max-width: 560px; margin-bottom: 2.6em; }
+    .hs-stage { justify-self: stretch; max-width: 560px; margin: 2.5rem 0 2.6em; }
+    .hs-frag:nth-of-type(n+6) { display: none; }
   }
   @media (max-width: 480px) {
     .hs__inner { padding-left: 1rem; padding-right: 1rem; }
