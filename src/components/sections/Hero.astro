@@ -1,89 +1,612 @@
 ---
-import PageHero from './PageHero.astro';
+/**
+ * Homepage hero — "Power on".
+ *
+ * The operations dashboard is a chip on a gold circuit board. It loops:
+ * unpowered (the mess) → power on (traces light up, fragments are absorbed,
+ * tiles assemble) → live (data pulses stream in) → power down.
+ * The headline's first line rotates in place and spotlights matching modules.
+ *
+ * Runtime lives in ../hero/heroScene.ts (GSAP + canvas). Respects
+ * prefers-reduced-motion and includes a pause control.
+ */
+import '@fontsource/playfair-display/500-italic.css';
 import SectionLabel from '../ui/SectionLabel.astro';
 import Button from '../ui/Button.astro';
 import HighlightedText from '../ui/HighlightedText.astro';
-import heroImage from '../../assets/hero.png';
 
 interface Props {
   tagline: string;
-  headline: string;
+  /** The real <h1> text (kept for SEO / screen readers; visually hidden). */
+  seoHeadline: string;
+  /** Rotating first line of the H1, e.g. ["Custom software", "Odoo ERP", ...] */
+  phrases: string[];
+  /** Static remainder of the H1, e.g. "built for how growing businesses actually run." */
+  headlineSuffix: string;
   description: string;
-  image?: string;
 }
 
-const { tagline, headline, description, image } = Astro.props;
+const { tagline, seoHeadline, phrases, headlineSuffix, description } = Astro.props;
+const list = phrases.filter(Boolean);
+const firstPhrase = list[0] ?? '';
+const suffixWords = headlineSuffix.split(/\s+/).filter(Boolean);
+
+/* "Before" state: look-alike windows and notifications of the tools teams juggle.
+   Generic labels and our own icons — no third-party logos or screenshots. */
+const IC: Record<string, string> = {
+  sheet: 'M4 4h16v16H4zM4 9.5h16M4 15h16M9.5 4v16',
+  mail: 'M3 6h18v12H3zM3.5 6.5l8.5 6.5 8.5-6.5',
+  chat: 'M4 5h16v11H10l-5 4v-4H4z',
+  phone: 'M7 3.5l3 4-2 2.2a12 12 0 0 0 6.3 6.3L16.5 14l4 3-1.6 2.8C11 20.5 3.5 13 4.2 5.1z',
+  cal: 'M4 6h16v14H4zM4 10.5h16M8.5 3.5v5M15.5 3.5v5',
+  doc: 'M6.5 3h8l4 4v14h-12zM14 3v4.5h4.5M9.5 12h6M9.5 15.5h6',
+  print: 'M7.5 9V3.5h9V9M4.5 9h15v8h-15zM7.5 14h9v6.5h-9z',
+  hash: 'M10 3.5L8 20.5M16 3.5l-2 17M4.5 8.5h16M3.5 15.5h16',
+  pay: 'M7 4.5h10M7 9h10M7 4.5c6.5 0 6.5 9 0 9l7.5 6.5',
+  acct: 'M5 20V11M10 20V5M15 20v-7M20 20V8M3 20.5h18',
+  pdf: 'M6.5 3h8l4 4v14h-12zM14 3v4.5h4.5M9 13.5h6M9 17h4',
+};
+const TABS = [
+  { ic: 'sheet', c: '#1e7145', t: 'orders_FINAL_v7.xlsx' },
+  { ic: 'mail', c: '#2b63c6', t: 'Inbox (214)' },
+  { ic: 'chat', c: '#0f6e57', t: 'Purchase Team' },
+  { ic: 'acct', c: '#1d4a66', t: 'Accounts · Day Book' },
+  { ic: 'pdf', c: '#b83a30', t: 'PO_scan_0034.pdf' },
+  { ic: 'doc', c: '#2f63d8', t: 'final_final_v3.docx' },
+  { ic: 'sheet', c: '#1e7145', t: 'stock_count (2).xlsx' },
+];
+const MAIL = [
+  { f: 'Ravi M.', s: 'RE: RE: Fwd: Invoice mismatch', t: '9:41', u: true },
+  { f: 'Accounts', s: 'Payment reminder (3rd)', t: '9:12', u: true },
+  { f: 'Vendor', s: 'PO attached — final (2)', t: 'Mon', u: false },
+  { f: 'Priya', s: 'Which sheet is correct?', t: 'Mon', u: false },
+];
+const ACCT = [
+  ['1-Nov', 'Shree Packaging', 'Pur', '42,300.00', ''],
+  ['1-Nov', 'Cash', 'Rcpt', '', '18,000.00'],
+  ['2-Nov', 'Sales — Retail', 'Sal', '', '1,26,450.00'],
+  ['2-Nov', 'Freight Inward', 'Jrnl', '3,150.00', ''],
+  ['3-Nov', 'Suspense A/c', 'Jrnl', '4,210.00', ''],
+];
+const NOTIFS = [
+  // placed in the gaps between the floating windows; the first three also show on phones
+  { x: -10, y: 0, ic: 'phone', c: '#2fa84f', app: 'Phone', title: 'Shree Packaging', text: '3 missed calls', b: '3' },
+  { x: 24, y: 30, ic: 'mail', c: '#2b63c6', app: 'Mail', title: 'Inbox', text: '37 unread since Monday', b: '37' },
+  { x: 73, y: 35, ic: 'cal', c: '#d6453d', app: 'Calendar', title: 'Stock count (again)', text: 'Sat 9:00 · Warehouse', b: '' },
+  { x: -12, y: 62, ic: 'mail', c: '#2b63c6', app: 'Mail', title: 'URGENT: invoice mismatch', text: '4 messages · Accounts', b: '4' },
+  { x: 22, y: 5, ic: 'chat', c: '#0f6e57', app: 'Team chat', title: 'Purchase Team', text: 'send me the latest sheet pls', b: '12' },
+  { x: 9, y: 45, ic: 'doc', c: '#2f63d8', app: 'Docs', title: 'final_final_v3.docx', text: 'Edited by 3 people', b: '' },
+  { x: 41, y: 48, ic: 'pay', c: '#d98a12', app: 'Payments', title: 'Payment overdue', text: 'Invoice #883 · 46 days', b: '!' },
+  { x: 60, y: 89, ic: 'print', c: '#7b7b80', app: 'Printer', title: 'Print job done', text: 'Printed. Signed. Scanned.', b: '' },
+  { x: 8, y: 99, ic: 'hash', c: '#6a4bd8', app: 'Team chat', title: '#operations', text: 'who approved this??', b: '2' },
+];
 ---
 
-<PageHero image={image || heroImage}>
-  <SectionLabel text={tagline} />
+<section class="hs" data-hero-scene aria-labelledby="home-hero-title">
+  <div class="hs__visual" aria-hidden="true"><canvas class="hs__canvas"></canvas><canvas class="hs__bloom"></canvas></div>
+  <div class="hs__scrim"></div>
+  <div class="hs__glow"></div>
 
-  <h1>
-    <HighlightedText text={headline} />
-  </h1>
-
-  <p class="page-hero__description">{description}</p>
-
-  <div class="page-hero__actions">
-    <Button href="/contact/" variant="primary" data-cta="cta" data-location="home_hero" data-label="Discuss Your Operations Challenge">Discuss Your Operations Challenge</Button>
-    <Button href="/work/" variant="text">View Our Work</Button>
+  <div class="hs-chips" aria-hidden="true">
+    <div class="hs-chip hs-chip--a" data-depth="16"><div class="hs-chip__pop"><div class="hs-chip__in">
+      <span class="hs-chip__icon"><span class="hs-dot"></span></span>
+      <span class="hs-chip__txt"><span class="hs-chip__k">Odoo ERP</span><span class="hs-chip__v">Inventory sync · live</span></span>
+    </div></div></div>
+    <div class="hs-chip hs-chip--b" data-depth="24"><div class="hs-chip__pop"><div class="hs-chip__in">
+      <span class="hs-chip__icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M18 6l-2.5 2.5M8.5 15.5L6 18"/></svg></span>
+      <span class="hs-chip__txt"><span class="hs-chip__k">AI agent <span class="hs-typing"><i></i><i></i><i></i></span></span><span class="hs-chip__v hs-chip__v--type"><span class="hs-typer" data-lines="Drafting supplier reply…|“Hi Ramesh, PO-1046 is approved. Dispatch Friday?”|Summarising 14 unread threads|Flagged: invoice total doesn't match PO">Drafting supplier reply…</span><span class="hs-caret"></span></span></span>
+    </div></div></div>
   </div>
-</PageHero>
 
-<style>
-  :global(.page-hero__bg .hero-video) {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1.2s ease;
+  <div class="hs__inner">
+    <div class="hs__content">
+      <div class="hs__label"><SectionLabel text={tagline} /></div>
+
+      <!-- The SEO-reviewed H1 stays as the document heading (visually hidden);
+           the animated headline below is its visual presentation. -->
+      <h1 class="hs-sr" id="home-hero-title"><HighlightedText text={seoHeadline} /></h1>
+      <div class="hs__h1" aria-hidden="true">
+        <span>
+          <span class="hs__rot" data-phrases={list.join('|')}>
+            <span class="hs__phrase is-on">{[...firstPhrase].map((c) => <span class="hs-ch">{c === ' ' ? ' ' : c}</span>)}</span>
+            <span class="hs__rot-line"></span>
+          </span>
+          <span class="hs__rest">{suffixWords.map((w, i) => <><span class="hs-w"><span class="hs-wi">{w}</span></span>{i < suffixWords.length - 1 ? ' ' : ''}</>)}</span>
+        </span>
+      </div>
+
+      <p class="hs__desc">{description}</p>
+
+      <div class="hs__actions">
+        <Button href="/contact/" variant="primary" data-cta="cta" data-location="home_hero" data-label="Discuss Your Operations Challenge">Discuss Your Operations Challenge</Button>
+        <Button href="/work/" variant="text">View Our Work</Button>
+      </div>
+    </div>
+
+    <!-- Console stage: the same six tiles are "the mess" and "the system" -->
+    <div class="hs-stage" aria-hidden="true">
+    <div class="hs-console"><span class="hs-led"></span><b class="hs-state"><span class="off">Offline</span><span class="on">Live</span></b><span>Operations console</span><span class="hs-sp"></span><span data-k="clock">--:--:--</span></div>
+    <div class="hs-flow">
+      <div class="hs-frame"><i class="h t"></i><i class="v r"></i><i class="h b"></i><i class="v l"></i><span class="hs-corner tl"></span><span class="hs-corner tr"></span><span class="hs-corner bl"></span><span class="hs-corner br"></span></div>
+      <!-- T0 · browser with too many tabs -->
+      <div class="hs-tile" style="--x:0%;--y:0%;--w:100%;--h:11%"><div class="hs-tile__in"><div class="hs-tile__float">
+        <div class="hs-face hs-face--mess hs-tabs">
+          <span class="hs-app__dots"><i></i><i></i><i></i></span>
+          {TABS.map((t, i) => (
+            <span class:list={['hs-tab', { 'is-active': i === 1 }]}><span class="hs-appic" style={`--c:${t.c}`}><svg viewBox="0 0 24 24"><path d={IC[t.ic]} /></svg></span>{t.t}</span>
+          ))}
+          <span class="hs-tab hs-tab--more">+</span>
+        </div>
+        <div class="hs-face hs-face--clean hs-th"><span class="hs-dot"></span><b>Operations</b><span class="hs-evt" data-k="event">Waiting for data…</span></div>
+      </div></div></div>
+
+      <!-- T1 · spreadsheet → Orders -->
+      <div class="hs-tile" style="--x:0%;--y:15%;--w:31.5%;--h:23%"><div class="hs-tile__in"><div class="hs-tile__float">
+        <div class="hs-face hs-face--mess hs-app" style="--c:#1e7145">
+          <div class="hs-app__bar"><span class="hs-app__dots"><i></i><i></i><i></i></span><b>orders_FINAL_v7.xlsx</b></div>
+          <div class="hs-xl">
+            <div class="hs-xl__fx"><i>fx</i>=SUM(D2:D4)*1.18</div>
+            <div class="hs-xl__grid">
+              <span></span><span class="h">A</span><span class="h">B</span><span class="h">C</span><span class="h">D</span>
+              <span class="n">1</span><span class="b">Order</span><span class="b">Qty</span><span class="b">Price</span><span class="b">Total</span>
+              <span class="n">2</span><span>1043</span><span>12</span><span>1,200</span><span class="err">#REF!</span>
+              <span class="n">3</span><span>1044</span><span class="sel"></span><span>960</span><span class="warn">??</span>
+              <span class="n">4</span><span>1045</span><span>8</span><span>960</span><span>7,680</span>
+            </div>
+          </div>
+        </div>
+        <div class="hs-face hs-face--clean"><span class="hs-fk">Orders today</span><span class="hs-fv" data-k="orders">128</span><span class="hs-fs">All synced to ERP</span></div>
+      </div></div></div>
+
+      <!-- T2 · email inbox → Invoices -->
+      <div class="hs-tile" style="--x:34.25%;--y:15%;--w:31.5%;--h:23%"><div class="hs-tile__in"><div class="hs-tile__float">
+        <div class="hs-face hs-face--mess hs-app" style="--c:#2b63c6">
+          <div class="hs-app__bar"><span class="hs-app__dots"><i></i><i></i><i></i></span><b>Inbox</b><em>214</em></div>
+          <div class="hs-mail">
+            {MAIL.map((m) => (
+              <div class:list={['hs-mail__row', { unread: m.u }]}><span class="hs-mail__from">{m.f}</span><span class="hs-mail__sub">{m.s}</span><span class="hs-mail__t">{m.t}</span></div>
+            ))}
+          </div>
+        </div>
+        <div class="hs-face hs-face--clean"><span class="hs-fk">Invoices matched</span><span class="hs-fv" data-k="inv">96</span><span class="hs-fs">Auto-matched to POs</span></div>
+      </div></div></div>
+
+      <!-- T3 · team chat → Approvals -->
+      <div class="hs-tile" style="--x:68.5%;--y:15%;--w:31.5%;--h:23%"><div class="hs-tile__in"><div class="hs-tile__float">
+        <div class="hs-face hs-face--mess hs-app" style="--c:#0f6e57">
+          <div class="hs-app__bar"><span class="hs-avatar">PT</span><b>Purchase Team</b><em>12 members</em></div>
+          <div class="hs-chat">
+            <span class="hs-bub in"><b>Ravi</b>Which file is the latest one?</span>
+            <span class="hs-bub out">The one I sent yesterday<i>✓✓</i></span>
+            <span class="hs-bub in"><b>Priya</b>That has old prices. Who approved PO-1046??</span>
+          </div>
+        </div>
+        <div class="hs-face hs-face--clean"><span class="hs-fk">Awaiting approval</span><span class="hs-fv" data-k="appr">3</span><span class="hs-fs">Routed to owners</span></div>
+      </div></div></div>
+
+      <!-- T4 · legacy desktop accounting → Throughput -->
+      <div class="hs-tile" style="--x:0%;--y:42%;--w:64.5%;--h:50%"><div class="hs-tile__in"><div class="hs-tile__float">
+        <div class="hs-face hs-face--mess hs-app hs-acct" style="--c:#1d4a66">
+          <div class="hs-app__bar"><span class="hs-app__dots"><i></i><i></i><i></i></span><b>Accounts · Day Book</b><em>Company: Shree Traders</em></div>
+          <div class="hs-acct__body">
+            <ul class="hs-acct__menu">
+              {['Gateway', 'Vouchers', 'Ledgers', 'Stock Items', 'Day Book', 'Reports', 'Quit'].map((x) => <li class:list={{ on: x === 'Day Book' }}>{x}</li>)}
+            </ul>
+            <div class="hs-acct__tbl">
+              <div class="hs-acct__row hd"><span>Date</span><span>Particulars</span><span>Vch</span><span>Debit</span><span>Credit</span></div>
+              {ACCT.map((r) => (
+                <div class="hs-acct__row"><span>{r[0]}</span><span>{r[1]}</span><span>{r[2]}</span><span>{r[3]}</span><span>{r[4]}</span></div>
+              ))}
+              <div class="hs-acct__warn">Difference in opening balances: ₹ 4,210.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="hs-face hs-face--clean"><span class="hs-fk">Throughput · this week</span>
+          <div class="hs-chart">
+            {[['M', 40], ['T', 56], ['W', 49], ['T', 71], ['F', 64], ['S', 83], ['S', 92]].map(([d, h]) => (
+              <div class="hs-bar"><i style={`--h:${h}%`}></i>{d}</div>
+            ))}
+          </div>
+        </div>
+      </div></div></div>
+
+      <!-- T5 · scanned PDF → Workflow -->
+      <div class="hs-tile" style="--x:68.5%;--y:42%;--w:31.5%;--h:50%"><div class="hs-tile__in"><div class="hs-tile__float">
+        <div class="hs-face hs-face--mess hs-app hs-pdf" style="--c:#b83a30">
+          <div class="hs-app__bar"><span class="hs-app__dots"><i></i><i></i><i></i></span><b>PO_scan_0034.pdf</b><em>1 / 3</em></div>
+          <div class="hs-pdf__view">
+            <div class="hs-pdf__page">
+              <b>PURCHASE ORDER</b>
+              <span class="ln" style="width:70%"></span><span class="ln" style="width:52%"></span>
+              <span class="tb"></span><span class="tb"></span><span class="tb"></span><span class="tb"></span>
+              <em class="hand">pls re-enter in system</em>
+              <svg class="sig" viewBox="0 0 120 40"><path d="M4 30c12-22 18-24 20-8s8 10 14-6 10-12 12 4 6 14 16-2 14-10 18 0 10 8 30-6" /></svg>
+              <span class="stamp">Manual entry</span>
+            </div>
+          </div>
+        </div>
+        <div class="hs-face hs-face--clean"><span class="hs-fk">Order #<span data-k="ono">1046</span></span>
+          <ul class="hs-steps">
+            {['Order received', 'Stock reserved', 'Invoice raised', 'Posted to ERP', 'Customer notified'].map((s) => (
+              <li class="hs-step"><span class="hs-st"></span>{s}</li>
+            ))}
+          </ul>
+        </div>
+      </div></div></div>
+
+      <!-- Notifications from the tools a team juggles -->
+      {NOTIFS.map((n, i) => (
+        <div class:list={['hs-frag', { 'hs-frag--extra': i >= 3 }]} style={`left:${n.x}%;top:${n.y}%`}>
+          <div class="hs-frag__in hs-ntf">
+            <span class="hs-appic hs-appic--lg" style={`--c:${n.c}`}><svg viewBox="0 0 24 24"><path d={IC[n.ic]} /></svg>{n.b && <b class="hs-frag__badge">{n.b}</b>}</span>
+            <span class="hs-ntf__body"><span class="hs-ntf__app">{n.app}<i>now</i></span><b>{n.title}</b><span>{n.text}</span></span>
+          </div>
+        </div>
+      ))}
+      <div class="hs-flow__sweep"><i></i></div>
+      <div class="hs-glare"></div>
+      <div class="hs-flow__cap">
+        <span class="hs-caps"><span class="hs-cap hs-cap--before on">Disconnected · sheets, inboxes, re-typing<span class="hs-cap__hint"> · click to power on</span></span><span class="hs-cap hs-cap--after">Connected · one live system</span></span>
+        <span class="hs-flow__prog"><i></i></span>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="hs__foot">
+    <button class="hs__cue" type="button"><span class="hs__cue-track"><span class="hs__cue-dot"></span></span>Scroll to explore</button>
+    <div class="hs__foot-right">
+      <span class="hs__meta">Ahmedabad, India</span>
+      <button class="hs__motion" type="button" aria-pressed="false"><span class="hs__motion-icon" aria-hidden="true"></span><span class="hs__motion-text">Pause motion</span></button>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  /* ============================================
+     HOME HERO SCENE (hs-*) — global because the runtime
+     creates/animates elements outside Astro's scoping.
+     ============================================ */
+  .hs {
+    --hs-fg-2: rgba(255, 255, 255, 0.6);
+    --hs-fg-3: rgba(255, 255, 255, 0.38);
+    --hs-soft: rgba(201, 168, 124, 0.18);
+    --hs-glass: rgba(17, 15, 12, 0.66);
+    --hs-scrim: rgba(10, 10, 10, 0.94);
+    --hs-scrim-mid: rgba(10, 10, 10, 0.8);
+    --hs-scrim-soft: rgba(10, 10, 10, 0.3);
+    --hs-clear: rgba(10, 10, 10, 0);
+    --hs-ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --hs-ease-io: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --hs-gut: 1.5rem;
+    position: relative;
+    min-height: clamp(700px, 100svh, 1040px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    isolation: isolate;
+    background: var(--bg-primary);
+  }
+  .hs *, .hs *::before, .hs *::after { box-sizing: border-box; }
+  @media (min-width: 768px) { .hs { --hs-gut: 2.5rem; } }
+  @media (min-width: 1024px) { .hs { --hs-gut: 3rem; } }
+  .hs-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+  .hs__visual { position: absolute; inset: 0; z-index: 0; will-change: transform; }
+  .hs__visual { transform-origin: 50% 100%; }
+  .hs__canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  /* bloom: half-res copy of the bright layer, blurred and screened over the sharp one */
+  .hs__bloom { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; filter: blur(9px) saturate(1.25); mix-blend-mode: screen; opacity: 0.95; }
+  .hs__scrim {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background:
+      linear-gradient(180deg, var(--hs-scrim-soft) 0%, var(--hs-clear) 16%, var(--hs-clear) 82%, var(--bg-primary) 100%),
+      linear-gradient(90deg, var(--hs-scrim) 0%, var(--hs-scrim-mid) 28%, var(--hs-scrim-soft) 48%, var(--hs-clear) 60%);
+  }
+  .hs__glow {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: 0; transition: opacity 0.6s ease;
+    background: radial-gradient(520px circle at var(--mx, 70%) var(--my, 50%), rgba(201, 168, 124, 0.1), transparent 62%);
+  }
+  .hs.is-pointer .hs__glow { opacity: 1; }
+
+  .hs__inner {
+    position: relative; z-index: 3; flex: 1;
+    display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: 3.5rem;
+    width: 100%; max-width: 1440px; margin: 0 auto;
+    padding: 7.5rem var(--hs-gut) 8.25rem;
+  }
+  @media (min-width: 1024px) { .hs__inner { grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr); } }
+  .hs__content { display: flex; flex-direction: column; gap: 1.75rem; max-width: 760px; min-width: 0; will-change: transform; }
+
+  /* Headline */
+  .hs__h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(2.6rem, min(6.2vw, 8.4vh), 5.5rem);
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    color: var(--text-primary);
+  }
+  .hs__rot { position: relative; display: block; height: 1.24em; overflow: hidden; margin-bottom: -0.1em; }
+  .hs__phrase { position: absolute; left: 0; top: 0; white-space: nowrap; font-style: italic; color: var(--accent); padding-right: 0.12em; line-height: 1.12; }
+  .hs__phrase:not(.is-on) { visibility: hidden; }
+  .hs-ch { display: inline-block; transform-origin: 0 100%; }
+  .hs__rot-line { position: absolute; left: 0; bottom: 0.1em; height: 2px; width: 0; background: linear-gradient(90deg, var(--accent), rgba(201, 168, 124, 0)); transition: width 0.8s var(--hs-ease); }
+  .hs__rest { display: block; text-wrap: balance; }
+  .hs-w { display: inline-block; overflow: hidden; vertical-align: top; padding: 0 0.04em 0.12em; margin: 0 -0.04em -0.12em; }
+  .hs-wi { display: inline-block; transform-origin: 0 100%; }
+
+  .hs__desc { margin: 0; max-width: 580px; font-family: var(--font-body); font-size: clamp(1rem, 1.15vw, 1.125rem); font-weight: 300; line-height: 1.7; color: var(--hs-fg-2); }
+  .hs__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 2.25rem; margin-top: 0.4rem; }
+  .hs__actions .btn--primary { background: rgba(10, 10, 10, 0.4); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+
+  /* Foot row */
+  .hs__foot {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 4;
+    max-width: 1440px; margin: 0 auto; padding: 0 var(--hs-gut) 1.75rem;
+    display: flex; align-items: flex-end; justify-content: space-between; gap: 1.25rem;
+  }
+  .hs__cue { display: inline-flex; align-items: center; gap: 14px; background: none; border: 0; padding: 0; cursor: pointer; font-family: var(--font-body); font-size: 10px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; color: var(--hs-fg-3); transition: color 0.3s; }
+  .hs__cue:hover { color: var(--accent); }
+  .hs__cue-track { position: relative; width: 1px; height: 46px; background: var(--border-light); overflow: hidden; }
+  .hs__cue-dot { position: absolute; left: 0; top: -14px; width: 1px; height: 14px; background: var(--accent); animation: hs-cue 2.2s var(--hs-ease-io) infinite; }
+  @keyframes hs-cue { 0% { transform: translateY(0); } 70%, 100% { transform: translateY(74px); } }
+  /* right margin keeps clear of the site-wide floating WhatsApp button */
+  .hs__foot-right { display: flex; align-items: center; gap: 1.5rem; margin-right: 76px; }
+  .hs__meta { display: none; font-family: var(--font-body); font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--hs-fg-3); }
+  @media (min-width: 768px) { .hs__meta { display: inline; } }
+  .hs__motion { display: inline-flex; align-items: center; gap: 10px; padding: 9px 14px; background: rgba(10, 10, 10, 0.5); border: 1px solid var(--border-light); cursor: pointer; font-family: var(--font-body); font-size: 10px; font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase; color: var(--hs-fg-2); transition: border-color 0.3s, color 0.3s; }
+  .hs__motion:hover { border-color: var(--accent-dim); color: var(--accent); }
+  .hs__cue:focus-visible, .hs__motion:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .hs__motion-icon { width: 8px; height: 9px; border-left: 2px solid currentColor; border-right: 2px solid currentColor; }
+  .hs.is-paused .hs__motion-icon { border: 0; width: 0; height: 0; border-left: 8px solid currentColor; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+  .hs.is-paused *, .hs.is-paused *::before, .hs.is-paused *::after { animation-play-state: paused !important; }
+
+  /* Status chips */
+  .hs-chips { position: absolute; inset: 0; z-index: 4; pointer-events: none; display: none; }
+  @media (min-width: 1024px) { .hs-chips { display: block; } }
+  .hs-chip { position: absolute; will-change: transform; }
+  .hs-chip--a { bottom: 12%; right: 3.5%; }
+  .hs-chip--b { bottom: 12%; right: 38%; }
+  .hs-chip__in { display: flex; align-items: center; gap: 12px; padding: 12px 16px 12px 12px; background: var(--hs-glass); border: 1px solid var(--hs-soft); backdrop-filter: blur(14px) saturate(120%); -webkit-backdrop-filter: blur(14px) saturate(120%); box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.9); animation: hs-bob 6s ease-in-out infinite alternate; }
+  .hs-chip--b .hs-chip__in { animation-delay: -3s; animation-duration: 7s; }
+  @keyframes hs-bob { from { transform: translateY(-5px); } to { transform: translateY(6px); } }
+  .hs-chip__icon { width: 30px; height: 30px; flex-shrink: 0; display: grid; place-items: center; border: 1px solid var(--hs-soft); color: var(--accent); }
+  .hs-chip__txt { display: grid; gap: 4px; font-family: var(--font-body); }
+  .hs-chip__k { font-size: 9.5px; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: var(--hs-fg-3); }
+  .hs-chip__v { font-size: 13px; font-weight: 400; color: var(--text-primary); white-space: nowrap; }
+  .hs-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.45); animation: hs-ping 2.2s ease-out infinite; flex-shrink: 0; }
+  @keyframes hs-ping { 0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.45); } 80%, 100% { box-shadow: 0 0 0 9px transparent; } }
+  .hs-typing { display: inline-flex; gap: 3px; margin-left: 6px; vertical-align: middle; }
+  .hs-typing i { width: 3px; height: 3px; border-radius: 50%; background: var(--accent); animation: hs-typing 1.2s ease-in-out infinite; }
+  .hs-typing i:nth-child(2) { animation-delay: 0.15s; }
+  .hs-typing i:nth-child(3) { animation-delay: 0.3s; }
+  @keyframes hs-typing { 0%, 60%, 100% { opacity: 0.25; transform: none; } 30% { opacity: 1; transform: translateY(-2px); } }
+
+  /* Dashboard stage */
+  .hs-stage { position: relative; width: 100%; max-width: 640px; justify-self: end; perspective: 1600px; will-change: transform, opacity; }
+  .hs-flow { position: relative; width: 100%; aspect-ratio: 5 / 4; container-type: inline-size; perspective: 1400px; font-family: var(--font-body); transform-style: preserve-3d; will-change: transform; }
+  .hs-flow > * { font-size: max(8.5px, 1.75cqw); }
+  .hs-flow.is-chaos { cursor: pointer; }
+
+  /* console label above the stage */
+  .hs-console { position: absolute; left: 0; right: 0; bottom: calc(100% + 1.4rem); display: flex; align-items: center; gap: 0.75rem; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--hs-fg-3); }
+  .hs-console b { color: var(--accent); font-weight: 500; letter-spacing: 0.2em; }
+  .hs-console [data-k="clock"] { color: var(--hs-fg-2); font-variant-numeric: tabular-nums; }
+  .hs-led { width: 6px; height: 6px; border-radius: 50%; background: var(--error); box-shadow: 0 0 8px rgba(248, 113, 113, 0.7); transition: background 0.4s, box-shadow 0.4s; }
+  .hs-state .on, .hs-stage:has(.is-live) .hs-state .off { display: none; }
+  .hs-stage:has(.is-live) .hs-state .on { display: inline; }
+  .hs-state .off { color: var(--error); }
+  .hs-stage:has(.is-live) .hs-led { background: var(--success); box-shadow: 0 0 10px rgba(74, 222, 128, 0.8); }
+
+  /* frame that draws itself on power-on */
+  .hs-frame { position: absolute; left: -2.4%; right: -2.4%; top: -3%; height: calc(92% + 6%); pointer-events: none; z-index: 0; }
+  .hs-frame i { position: absolute; background: rgba(201, 168, 124, 0.5); }
+  .hs-frame .t { top: 0; left: 0; right: 0; height: 1px; transform-origin: left; }
+  .hs-frame .r { top: 0; right: 0; bottom: 0; width: 1px; transform-origin: top; }
+  .hs-frame .b { bottom: 0; left: 0; right: 0; height: 1px; transform-origin: right; }
+  .hs-frame .l { top: 0; left: 0; bottom: 0; width: 1px; transform-origin: bottom; }
+  .hs-corner { position: absolute; width: 14px; height: 14px; border: 0 solid var(--accent); opacity: 0.35; transition: opacity 0.6s, filter 0.6s; }
+  .hs-corner.tl { left: -5px; top: -5px; border-left-width: 1.5px; border-top-width: 1.5px; }
+  .hs-corner.tr { right: -5px; top: -5px; border-right-width: 1.5px; border-top-width: 1.5px; }
+  .hs-corner.bl { left: -5px; bottom: -5px; border-left-width: 1.5px; border-bottom-width: 1.5px; }
+  .hs-corner.br { right: -5px; bottom: -5px; border-right-width: 1.5px; border-bottom-width: 1.5px; }
+  .hs-flow.is-live .hs-corner { opacity: 1; filter: drop-shadow(0 0 6px rgba(201, 168, 124, 0.8)); }
+
+  /* glass glare that follows the cursor */
+  .hs-glare { position: absolute; left: 0; top: 0; width: 100%; height: 92%; pointer-events: none; z-index: 3; opacity: 0; transition: opacity 0.5s; mix-blend-mode: screen; background: radial-gradient(380px circle at var(--gx, 50%) var(--gy, 30%), rgba(255, 238, 210, 0.09), transparent 62%); }
+  .hs.is-pointer .hs-flow.is-live .hs-glare { opacity: 1; }
+
+  /* fragments of manual work */
+  .hs-frag { position: absolute; z-index: 2; will-change: transform, opacity, filter; }
+  .hs-frag__in { position: relative; display: block; }
+  .hs-ntf { display: flex !important; align-items: center; gap: 0.75em; width: 17em; padding: 0.7em 0.85em; border-radius: 0.9em; background: rgba(246, 246, 244, 0.95); color: #1d1d1f; font-family: -apple-system, 'Segoe UI', Roboto, var(--font-body), sans-serif; box-shadow: 0 1.2em 2.4em -0.8em rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.12); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .hs-flow.is-chaos .hs-frag__in { animation: hs-drift 3.8s ease-in-out infinite alternate; }
+  .hs-frag:nth-of-type(2n) .hs-frag__in { animation-duration: 4.6s; animation-direction: alternate-reverse; }
+  .hs-frag:nth-of-type(3n) .hs-frag__in { animation-duration: 3.2s; }
+  .hs-ntf__body { display: grid; gap: 0.12em; min-width: 0; line-height: 1.25; }
+  .hs-ntf__app { display: flex; justify-content: space-between; font-size: 0.72em; text-transform: uppercase; letter-spacing: 0.06em; color: #6e6e73; }
+  .hs-ntf__app i { font-style: normal; text-transform: none; letter-spacing: 0; }
+  .hs-ntf__body b { font-size: 0.86em; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hs-ntf__body > span:last-child { font-size: 0.82em; color: #3a3a3c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hs-frag { font-size: max(9.5px, 1.75cqw); }
+  .hs-frag__badge { position: absolute; top: -0.55em; right: -0.65em; min-width: 1.55em; height: 1.55em; padding: 0 0.35em; border-radius: 0.8em; display: grid; place-items: center; background: var(--error); color: #fff; font-size: 0.72em; font-weight: 500; box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.6); animation: hs-badge 1.8s ease-out infinite; }
+  @keyframes hs-badge { 0% { box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.6); } 70%, 100% { box-shadow: 0 0 0 0.6em rgba(248, 113, 113, 0); } }
+
+  /* live event line in the header tile */
+  .hs-evt { flex: 1; min-width: 0; text-align: right; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 0.82em; letter-spacing: 0.02em; color: var(--accent-light); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hs-evt.in { animation: hs-evt 0.45s var(--hs-ease); }
+  @keyframes hs-evt { from { opacity: 0; transform: translateY(70%); } to { opacity: 1; transform: none; } }
+
+  /* odometer digits */
+  .hs-odo { display: inline-block; height: 1em; overflow: hidden; vertical-align: top; }
+  .hs-odo__col { display: flex; flex-direction: column; transition: transform 0.7s var(--hs-ease); }
+  .hs-odo__col span { display: block; height: 1em; line-height: 1; }
+
+  /* spotlighted module */
+  .hs-tile.spot .hs-face--clean { border-color: var(--accent); box-shadow: 0 0 0 1px rgba(201, 168, 124, 0.25), 0 0 2.6em -0.6em rgba(201, 168, 124, 0.6); transition: border-color 0.4s, box-shadow 0.4s; }
+
+  /* AI agent typer */
+  .hs-chip__v--type { display: inline-flex; align-items: center; max-width: 250px; }
+  .hs-typer { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .hs-caret { width: 1px; height: 1.05em; margin-left: 2px; background: var(--accent); animation: hs-caret 1s steps(1) infinite; flex-shrink: 0; }
+  @keyframes hs-caret { 50% { opacity: 0; } }
+  .hs-cap__hint { color: var(--accent-dim); }
+  @media (hover: none) { .hs-cap__hint { display: none; } }
+  .hs-tile { position: absolute; left: var(--x); top: var(--y); width: var(--w); height: var(--h); will-change: transform, filter; }
+  .hs-tile__in, .hs-tile__float { position: absolute; inset: 0; }
+  .hs-flow.is-chaos .hs-tile__float { animation: hs-drift 3.6s ease-in-out infinite alternate; }
+  .hs-flow.is-chaos .hs-tile:nth-child(2n) .hs-tile__float { animation-duration: 4.4s; animation-direction: alternate-reverse; }
+  .hs-flow.is-chaos .hs-tile:nth-child(3n) .hs-tile__float { animation-duration: 3.1s; }
+  @keyframes hs-drift { from { transform: translate(-0.6em, -0.5em) rotate(-1.2deg); } to { transform: translate(0.6em, 0.6em) rotate(1.4deg); } }
+  .hs-face { position: absolute; inset: 0; padding: 1.2em 1.3em; overflow: hidden; display: flex; flex-direction: column; gap: 0.6em; color: var(--text-primary); }
+  .hs-face--clean { border: 1px solid var(--hs-soft); background: linear-gradient(180deg, rgba(20, 18, 15, 0.94), rgba(12, 11, 10, 0.94)); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .hs-tile.hit .hs-face--clean { animation: hs-hit 0.9s var(--hs-ease); }
+  @keyframes hs-hit {
+    0% { border-color: var(--accent-light); box-shadow: 0 0 0 1px rgba(228, 212, 188, 0.35), 0 0 2.4em -0.4em rgba(201, 168, 124, 0.55); }
+    100% { border-color: var(--hs-soft); box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent; }
+  }
+  .hs-fk { font-size: 0.82em; letter-spacing: 0.2em; text-transform: uppercase; color: var(--hs-fg-3); }
+  .hs-fv { display: block; height: 1em; font-family: var(--font-display); font-size: 2.6em; line-height: 1; font-variant-numeric: lining-nums tabular-nums; }
+  .hs-fs { font-size: 0.9em; color: var(--accent); }
+  .hs-th { flex-direction: row; align-items: center; gap: 0.8em; padding-block: 0; }
+  .hs-th b { font-weight: 500; font-size: 1.05em; letter-spacing: 0.04em; }
+  .hs-sp { flex: 1; }
+  .hs-muted { color: var(--hs-fg-3); font-size: 0.9em; transition: color 0.4s; }
+  .hs-muted.flash { color: var(--accent-light); transition: none; }
+  .hs-chart { flex: 1; display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.8em; align-items: end; background: repeating-linear-gradient(180deg, transparent 0 calc(25% - 1px), var(--border) calc(25% - 1px) 25%); padding-top: 0.6em; }
+  .hs-bar { height: 100%; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.5em; text-align: center; font-size: 0.8em; color: var(--hs-fg-3); }
+  .hs-bar i { display: block; height: var(--h); transform-origin: bottom; transition: height 0.6s var(--hs-ease); background: linear-gradient(180deg, rgba(201, 168, 124, 0.75), rgba(201, 168, 124, 0.08)); }
+  .hs-bar:last-child i { background: linear-gradient(180deg, var(--accent-light), rgba(201, 168, 124, 0.2)); }
+  .hs-steps { list-style: none; margin: 0.3em 0 0; padding: 0; display: grid; gap: 1.05em; }
+  .hs-step { position: relative; display: flex; align-items: center; gap: 0.8em; font-size: 0.95em; color: var(--hs-fg-3); transition: color 0.4s; }
+  .hs-step + .hs-step::before { content: ''; position: absolute; left: 0.55em; top: -1.05em; height: 1.05em; width: 1px; background: var(--border-light); }
+  .hs-st { position: relative; width: 1.1em; height: 1.1em; flex-shrink: 0; border: 1px solid var(--border-light); border-radius: 50%; transition: border-color 0.4s, background 0.4s; }
+  .hs-st::after { content: ''; position: absolute; left: 0.34em; top: 0.16em; width: 0.26em; height: 0.5em; border: solid var(--accent); border-width: 0 1.5px 1.5px 0; transform: rotate(45deg) scale(0); transition: transform 0.35s var(--hs-ease); }
+  .hs-step.done { color: var(--text-primary); }
+  .hs-step.done .hs-st { border-color: var(--accent); background: var(--hs-soft); }
+  .hs-step.done .hs-st::after { transform: rotate(45deg) scale(1); }
+  /* ── "Before" state: look-alike tool windows (light mode, so the mess pops) ── */
+  .hs-face--mess { padding: 0; gap: 0; border: 0; border-radius: 0.6em; background: #f6f6f4; color: #1d1d1f; box-shadow: 0 1.8em 3.6em -1.4em rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.1); font-family: -apple-system, 'Segoe UI', Roboto, var(--font-body), sans-serif; filter: saturate(0.92) brightness(0.95); }
+  .hs-app__bar { display: flex; align-items: center; gap: 0.55em; height: 2.15em; padding: 0 0.75em; flex-shrink: 0; background: var(--c); color: #fff; font-size: 0.82em; white-space: nowrap; overflow: hidden; }
+  .hs-app__bar b { font-weight: 600; overflow: hidden; text-overflow: ellipsis; }
+  .hs-app__bar em { margin-left: auto; font-style: normal; opacity: 0.75; font-size: 0.9em; }
+  .hs-app__dots { display: inline-flex; gap: 0.32em; flex-shrink: 0; }
+  .hs-app__dots i { width: 0.62em; height: 0.62em; border-radius: 50%; background: #ff5f57; }
+  .hs-app__dots i:nth-child(2) { background: #febc2e; }
+  .hs-app__dots i:nth-child(3) { background: #28c840; }
+  .hs-appic { position: relative; display: inline-grid; place-items: center; width: 1.25em; height: 1.25em; border-radius: 0.3em; background: var(--c); flex-shrink: 0; }
+  .hs-appic svg { width: 72%; height: 72%; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .hs-appic--lg { width: 2.5em; height: 2.5em; border-radius: 0.6em; }
+  .hs-avatar { display: inline-grid; place-items: center; width: 1.55em; height: 1.55em; border-radius: 50%; background: rgba(255, 255, 255, 0.25); font-size: 0.85em; font-weight: 600; }
+
+  /* browser tab strip */
+  .hs-tabs { flex-direction: row; align-items: flex-end; gap: 0.25em; padding: 0 0.6em; background: #d9d9d5; overflow: hidden; }
+  .hs-tabs .hs-app__dots { align-self: center; margin-right: 0.5em; }
+  .hs-tab { display: inline-flex; align-items: center; gap: 0.45em; height: 72%; padding: 0 0.8em; border-radius: 0.5em 0.5em 0 0; background: #e8e8e4; color: #3a3a3c; font-size: 0.8em; white-space: nowrap; flex-shrink: 0; max-width: 14em; overflow: hidden; text-overflow: ellipsis; }
+  .hs-tab.is-active { background: #fbfbf9; color: #111; }
+  .hs-tab--more { background: transparent; font-size: 1.1em; color: #555; }
+
+  /* spreadsheet */
+  .hs-xl { flex: 1; display: flex; flex-direction: column; min-height: 0; background: #fff; }
+  .hs-xl__fx { display: flex; gap: 0.6em; align-items: center; padding: 0.25em 0.6em; border-bottom: 1px solid #dadada; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.72em; color: #333; white-space: nowrap; overflow: hidden; }
+  .hs-xl__fx i { font-style: italic; color: #888; }
+  .hs-xl__grid { flex: 1; display: grid; grid-template-columns: 1.5em repeat(4, 1fr); grid-auto-rows: 1fr; font-size: 0.74em; }
+  .hs-xl__grid span { border-right: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2; padding: 0 0.35em; display: flex; align-items: center; color: #222; white-space: nowrap; overflow: hidden; }
+  .hs-xl__grid .h, .hs-xl__grid .n { background: #f1f1ef; color: #777; justify-content: center; font-size: 0.92em; }
+  .hs-xl__grid .b { font-weight: 600; }
+  .hs-xl__grid .err { color: #d0312d; font-weight: 600; background: #fdecea; }
+  .hs-xl__grid .warn { color: #b26a00; background: #fff6d6; }
+  .hs-xl__grid .sel { outline: 2px solid #1e7145; outline-offset: -2px; }
+
+  /* email */
+  .hs-mail { flex: 1; display: flex; flex-direction: column; background: #fff; min-height: 0; }
+  .hs-mail__row { display: grid; grid-template-columns: 4.6em minmax(0, 1fr) auto; gap: 0.5em; align-items: center; padding: 0 0.7em; flex: 1; border-bottom: 1px solid #eee; font-size: 0.74em; color: #555; }
+  .hs-mail__row.unread { color: #111; font-weight: 600; background: #f3f7ff; }
+  .hs-mail__row.unread .hs-mail__from::before { content: ''; display: inline-block; width: 0.5em; height: 0.5em; margin-right: 0.35em; border-radius: 50%; background: #2b63c6; vertical-align: 0.1em; }
+  .hs-mail__from, .hs-mail__sub { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hs-mail__t { color: #888; font-weight: 400; font-size: 0.9em; }
+
+  /* team chat */
+  .hs-chat { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.35em; padding: 0.5em 0.6em; background: #ece5dd; min-height: 0; overflow: hidden; }
+  .hs-bub { max-width: 86%; padding: 0.35em 0.6em; border-radius: 0.55em; font-size: 0.74em; line-height: 1.3; color: #111; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08); }
+  .hs-bub b { display: block; font-size: 0.85em; color: #c2410c; font-weight: 600; }
+  .hs-bub.in { align-self: flex-start; background: #fff; border-top-left-radius: 0.1em; }
+  .hs-bub.in:last-child b { color: #6d28d9; }
+  .hs-bub.out { align-self: flex-end; background: #d9fdd3; border-top-right-radius: 0.1em; }
+  .hs-bub.out i { margin-left: 0.4em; font-style: normal; color: #34b7f1; font-size: 0.85em; }
+
+  /* legacy desktop accounting */
+  .hs-acct__body { flex: 1; display: grid; grid-template-columns: 26% 1fr; min-height: 0; background: #e9f1f4; font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .hs-acct__menu { list-style: none; margin: 0; padding: 0.6em 0; background: #1f5a78; color: #e8f2f6; font-size: 0.74em; display: flex; flex-direction: column; gap: 0.15em; }
+  .hs-acct__menu li { padding: 0.25em 0.8em; }
+  .hs-acct__menu li.on { background: #ffd84d; color: #1b1b1b; font-weight: 700; }
+  .hs-acct__tbl { display: flex; flex-direction: column; min-width: 0; font-size: 0.72em; color: #1b2b33; }
+  .hs-acct__row { display: grid; grid-template-columns: 3.6em minmax(0, 1fr) 2.8em 5.4em 5.8em; gap: 0.4em; padding: 0.38em 0.7em; border-bottom: 1px dashed #b9cdd6; white-space: nowrap; }
+  .hs-acct__row span { overflow: hidden; text-overflow: ellipsis; }
+  .hs-acct__row span:nth-child(n+4) { text-align: right; }
+  .hs-acct__row.hd { background: #cfe0e8; font-weight: 700; }
+  .hs-acct__warn { margin-top: auto; padding: 0.55em 0.7em; background: #c0392b; color: #fff; font-weight: 700; animation: hs-blink 1.4s steps(1) infinite; }
+  @keyframes hs-blink { 50% { background: #8e2a20; } }
+
+  /* scanned PDF */
+  .hs-pdf__view { flex: 1; min-height: 0; display: grid; place-items: center; padding: 0.7em; background: #5d5d5f; overflow: hidden; }
+  .hs-pdf__page { position: relative; width: 88%; height: 100%; padding: 0.8em; display: flex; flex-direction: column; gap: 0.45em; background: linear-gradient(170deg, #f4f0e6, #e7e1d2); box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.4); transform: rotate(-2.2deg); color: #2b2b2b; }
+  .hs-pdf__page b { font-size: 0.72em; letter-spacing: 0.12em; }
+  .hs-pdf__page .ln { height: 0.35em; background: #b9b3a5; border-radius: 2px; }
+  .hs-pdf__page .tb { height: 0.9em; border: 1px solid #c4bdad; border-top: 0; background: repeating-linear-gradient(90deg, transparent 0 32%, #c4bdad 32% calc(32% + 1px)); }
+  .hs-pdf__page .tb:first-of-type { border-top: 1px solid #c4bdad; }
+  .hs-pdf__page .hand { margin-top: 0.3em; font-family: var(--font-display); font-style: italic; font-size: 0.85em; color: #1d4ed8; transform: rotate(-4deg); }
+  .hs-pdf__page .sig { width: 60%; height: auto; fill: none; stroke: #1e3a8a; stroke-width: 2; stroke-linecap: round; }
+  .hs-pdf__page .stamp { position: absolute; right: 0.6em; bottom: 0.9em; padding: 0.25em 0.55em; border: 2px solid #c0392b; border-radius: 0.2em; color: #c0392b; font-size: 0.66em; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; transform: rotate(-12deg); opacity: 0.85; }
+  .hs-flow__sweep { position: absolute; left: 0; top: 0; width: 100%; height: 92%; pointer-events: none; overflow: hidden; z-index: 2; }
+  .hs-flow__sweep i { position: absolute; inset: 0; transform: translateX(-110%); background: linear-gradient(100deg, transparent 35%, rgba(228, 212, 188, 0.13) 50%, transparent 65%); }
+  .hs-flow__cap { position: absolute; left: 0; right: 0; top: 95%; display: flex; align-items: center; gap: 1em; font-size: 0.85em; letter-spacing: 0.22em; text-transform: uppercase; }
+  .hs-caps { display: inline-grid; }
+  .hs-cap { grid-area: 1 / 1; opacity: 0; transition: opacity 0.5s ease; white-space: nowrap; }
+  .hs-cap.on { opacity: 1; }
+  .hs-cap--before { color: var(--hs-fg-3); }
+  .hs-cap--after { color: var(--accent); }
+  .hs-flow__prog { flex: 1; height: 1px; background: var(--border-light); overflow: hidden; }
+  .hs-flow__prog i { display: block; height: 100%; background: var(--accent-dim); transform-origin: left; transform: scaleX(0); }
+
+  /* Reduced motion: static, connected state */
+  @media (prefers-reduced-motion: reduce) {
+    .hs-face--mess, .hs-frag { opacity: 0; }
+    .hs-face--clean { opacity: 1; }
   }
 
-  :global(.page-hero__bg .hero-video.loaded) {
-    opacity: 1;
+  /* Tablet / mobile: dashboard stacks below the copy */
+  @media (max-width: 1023px) {
+    .hs__scrim { background: linear-gradient(180deg, var(--hs-clear) 0%, rgba(10, 10, 10, 0.55) 18%, rgba(10, 10, 10, 0.7) 48%, rgba(10, 10, 10, 0.25) 70%, var(--hs-clear) 92%, var(--bg-primary) 100%); }
+    .hs__inner { padding-top: 7rem; padding-bottom: 7.5rem; align-items: start; }
+    .hs-stage { justify-self: stretch; max-width: 560px; margin: 2.5rem 0 2.6em; }
+    .hs-frag--extra { display: none; }
+  }
+  @media (max-width: 480px) {
+    .hs__inner { padding-left: 1rem; padding-right: 1rem; }
+    .hs__foot { padding-left: 1rem; padding-right: 1rem; }
+    .hs__actions { gap: 1rem 1.75rem; }
   }
 </style>
 
 <script>
-  function initHeroVideo() {
-    if (!window.matchMedia('(min-width: 768px)').matches) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  import { mountHeroScene } from '../hero/heroScene';
 
-    const bg = document.querySelector('.page-hero__bg');
-    if (!bg) return;
+  let cleanup: (() => void) | null = null;
 
-    const video = document.createElement('video');
-    video.className = 'hero-video';
-    video.autoplay = true;
-    video.muted = true;
-    video.loop = true;
-    video.playsInline = true;
-    video.preload = 'none';
-
-    const webm = document.createElement('source');
-    webm.src = '/videos/hero-bg.webm';
-    webm.type = 'video/webm';
-
-    const mp4 = document.createElement('source');
-    mp4.src = '/videos/hero-bg.mp4';
-    mp4.type = 'video/mp4';
-
-    video.appendChild(webm);
-    video.appendChild(mp4);
-
-    video.addEventListener('canplaythrough', () => {
-      video.classList.add('loaded');
-    }, { once: true });
-
-    bg.appendChild(video);
-    video.load();
+  function init() {
+    const root = document.querySelector<HTMLElement>('[data-hero-scene]');
+    if (!root || root.dataset.mounted) return;
+    root.dataset.mounted = '1';
+    cleanup = mountHeroScene(root);
   }
 
-  if (document.readyState === 'complete') {
-    initHeroVideo();
-  } else {
-    window.addEventListener('load', initHeroVideo, { once: true });
-  }
+  init();
+  document.addEventListener('astro:page-load', init);
+  document.addEventListener('astro:before-swap', () => {
+    cleanup?.();
+    cleanup = null;
+  });
 </script>

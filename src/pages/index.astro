@@ -52,11 +52,21 @@ const techSlugs = siteSettings?.techStack || [
 
 // Default description for hero
 const heroDescription = "KP Infotech helps growing B2B teams replace spreadsheets, manual workflows, and disconnected tools with custom software, Odoo ERP, business automation, AI agents, and cloud infrastructure built around how their operations actually work.";
+// SEO-reviewed H1 (kept as the document heading; see tests/step-2-metadata.test.mjs).
 const expectedHeroHeadline = "Custom Software, ERP & Automation Systems for Growing Businesses";
 const legacyHeroHeadline = "We craft *digital experiences* that drive growth";
 const heroHeadline = siteSettings?.heroHeadline && siteSettings.heroHeadline !== legacyHeroHeadline
   ? siteSettings.heroHeadline
   : expectedHeroHeadline;
+// Visual hero headline = rotating first line + static suffix. Editable in Sanity (Site Settings);
+// these are the fallbacks when the fields are empty.
+const defaultHeroPhrases = ['Custom software', 'Odoo ERP', 'Automation', 'AI agents', 'Cloud platforms'];
+const defaultHeroSuffix = 'built for how growing businesses actually run.';
+const cmsPhrases: string[] = (siteSettings?.heroRotatingPhrases || [])
+  .map((p: unknown) => (typeof p === 'string' ? p.trim() : ''))
+  .filter(Boolean);
+const heroPhrases = cmsPhrases.length ? cmsPhrases : defaultHeroPhrases;
+const heroSuffix = siteSettings?.heroHeadlineSuffix?.trim() || defaultHeroSuffix;
 const homeJsonLd = [
   websiteSchema(siteSettings),
 ];
@@ -71,9 +81,10 @@ const homeJsonLd = [
   <!-- Hero Section -->
   <Hero
     tagline={siteSettings?.siteTagline || "B2B Operations Technology Partner"}
-    headline={heroHeadline}
+    seoHeadline={heroHeadline}
+    phrases={heroPhrases}
+    headlineSuffix={heroSuffix}
     description={heroDescription}
-    image={homeHeroUrl}
   />
 
   <!-- Tech Stack Marquee -->
