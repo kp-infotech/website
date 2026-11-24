@@ -37,6 +37,30 @@ if (service.heroImage) {
   }
 }
 
+const serviceCallsToAction: Record<string, { headline: string; description: string }> = {
+  'custom-software-development': {
+    headline: 'Discuss your *software requirements*',
+    description: 'Tell us which workflow needs a new application, what systems it must connect to and what the first release needs to do.',
+  },
+  'business-automation': {
+    headline: 'Discuss a *workflow to automate*',
+    description: 'Share what starts the workflow, where staff hand work over and which tools or approvals are involved.',
+  },
+  'erp-software': {
+    headline: 'Discuss your *Odoo implementation*',
+    description: 'Share the workflows you want to bring into Odoo, the data you need to migrate and the systems that must stay connected.',
+  },
+  'ai-automation-agents': {
+    headline: 'Discuss an *AI use case*',
+    description: 'Describe one task, the data it can use and which decisions or actions require human approval.',
+  },
+  'cloud-devops': {
+    headline: 'Discuss your *cloud environment*',
+    description: 'Tell us what you run today and where releases, monitoring or recovery are causing problems.',
+  },
+};
+const callToAction = slug ? serviceCallsToAction[slug] : undefined;
+
 const seoTitle = service.seoTitle || service.title;
 const seoDescription = service.seoDescription || service.excerpt || service.tagline;
 const serviceUrl = canonicalUrl(`/services/${slug}/`);
@@ -114,8 +138,8 @@ const serviceJsonLd = [
   />
 
   <CTASection
-    headline="Ready to discuss your *project*?"
-    description="Let's discuss the systems and workflows your business needs to run better."
+    headline={callToAction?.headline ?? "Ready to discuss your *project*?"}
+    description={callToAction?.description ?? "Let's discuss the systems and workflows your business needs to run better."}
     buttonText="Start a Conversation"
     buttonHref="/contact/"
     event="service_cta"

@@ -16,7 +16,23 @@ test('all rendered internal links use canonical indexable destinations and acces
  }
  for(const slug of ['custom-software-development','erp-software','business-automation','ai-automation-agents','cloud-devops'])assert(pages.has('https://kpinfo.tech/services/'+slug+'/'));
  const docs=JSON.parse(fs.readFileSync('scripts/sanity/step-4-links-batch.json'));
- for(const row of JSON.parse(fs.readFileSync('docs/seo-review/step-4-evidence/new-relationships.json'))){const d=docs.find(d=>d.slug===row.source);const p=pages.get('https://kpinfo.tech/'+types[d.type]+'/'+row.source+'/');assert(p.links.some(l=>l.href==='/' +(row.relationship==='educational'?'insights':'services')+'/'+row.destination+'/'&&l.text===row.anchor),'Missing planned link '+row.source+' '+row.anchor);}
+ // Step 12B revises these service anchors. Keep the historical Step 4 evidence intact.
+ const serviceLinkUpdates = {
+   'custom-software-development/what-is-custom-software': ['what-is-custom-software', 'when to build custom software'],
+   'custom-software-development/database-design-best-practices': ['business-process-improvement-methods', 'process diagnosis worksheet'],
+   'erp-software/erp-implementation-cost': ['erp-implementation-cost', 'implementation cost guide'],
+   'cloud-devops/cloud-deployment-models-diagram': ['cloud-deployment-models-diagram', 'cloud deployment models'],
+   'cloud-devops/devops-best-practices': ['devops-best-practices', 'DevOps release and recovery checklist'],
+   'ai-automation-agents/business-process-automation-tools': ['business-process-automation-tools', 'automation tools guide'],
+ };
+ const relationships = JSON.parse(fs.readFileSync('docs/seo-review/step-4-evidence/new-relationships.json'));
+ for (const original of relationships) {
+  const updated = serviceLinkUpdates[original.source + '/' + original.destination];
+  const row = updated ? { ...original, destination: updated[0], anchor: updated[1] } : original;
+const d=docs.find(d=>d.slug===row.source);const p=pages.get('https://kpinfo.tech/'+types[d.type]+'/'+row.source+'/');assert(p.links.some(l=>l.href==='/' +(row.relationship==='educational'?'insights':'services')+'/'+row.destination+'/'&&l.text===row.anchor),'Missing planned link '+row.source+' '+row.anchor);}
+ assert(pages.get('https://kpinfo.tech/services/ai-automation-agents/').links.some(link =>
+  link.href === '/insights/business-process-improvement-methods/' && link.text === 'process improvement worksheet'
+ ));
  const baseline=JSON.parse(fs.readFileSync('docs/seo-review/step-4-evidence/graph-before.json'));for(const l of baseline.links.filter(l=>l.location==='body'&&l.source.startsWith('/insights/')))assert(pages.get('https://kpinfo.tech'+l.source).links.some(a=>a.href===l.href&&a.text===l.anchor),'Existing editorial link lost');
 });
 test('Step 4 changes are field-specific and preserve article text, headings and metadata',()=>{

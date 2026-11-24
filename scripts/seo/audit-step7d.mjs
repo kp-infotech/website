@@ -3,8 +3,8 @@ import {inspect as metadata} from './audit-step2.mjs';import {inspect,attr,txt} 
 export const path='/services/custom-software-development/';
 export function validateSoftware(html){
  const m=metadata(html),p=inspect(html,'https://kpinfo.tech'+path),errors=[];const check=(v,s)=>{if(!v)errors.push(s);};
- check(JSON.stringify(m.titles)===JSON.stringify(['Custom Software Development Company | KP Infotech']),'approved title');
- check(JSON.stringify(m.descriptions)===JSON.stringify(['Build custom business software, internal tools, portals, SaaS products and integrations that replace manual work and improve operational visibility.']),'approved description');
+ check(JSON.stringify(m.titles)===JSON.stringify(['Custom Software Development Services | KP Infotech']),'approved title');
+ check(JSON.stringify(m.descriptions)===JSON.stringify(['Plan, build, integrate and modernize custom business software, internal tools and portals with KP Infotech, from discovery through deployment and maintenance.']),'approved description');
  check(JSON.stringify(m.canonicals)===JSON.stringify(['https://kpinfo.tech'+path]),'canonical');check(!m.noindex,'indexability');
  check(JSON.stringify(m.h1)===JSON.stringify(['Custom Software Development Services']),'H1');
  const nodes=[];function walk(n){nodes.push(n);for(const c of n.childNodes||[])walk(c);}walk(parse(html));const has=(n,k)=>(attr(n,'class')||'').split(' ').includes(k);
@@ -16,12 +16,12 @@ export function validateSoftware(html){
  check(faqs.length===10&&new Set(faqs.map(f=>f.question)).size===10,'ten unique FAQs');
  check(JSON.stringify(faq?.mainEntity.map(q=>({question:q.name,answer:q.acceptedAnswer.text})))===JSON.stringify(faqs),'FAQ equality');
  const body=txt(nodes.find(n=>n.tagName==='main')||nodes.find(n=>n.tagName==='body'));
- for(const text of ['When custom software is the right fit','Build, buy, configure or automate?','Types of software we build','Discovery and requirements','Architecture and maintainability','Data and system integrations','Testing and user acceptance','Practical security responsibilities','What your team provides','Scope, cost and delivery planning','Ownership and handover','Support after release','acceptance criteria','system of record','Intellectual-property rights depend on the agreement'])check(body.includes(text),'coverage '+text);
+ for(const text of ['When custom software is the right fit','Use full-cycle delivery','For modernization','Build, buy, configure or automate?','Types of software we build','Discovery and requirements','Architecture and maintainability','Data and system integrations','Testing and user acceptance','Practical security responsibilities','What your team provides','Scope, cost and delivery planning','Ownership and handover','Support after release','acceptance criteria','system of record','Intellectual-property rights depend on the agreement'])check(body.includes(text),'coverage '+text);
  const hero=txt(nodes.find(n=>has(n,'page-hero__description')));
  check(hero.startsWith('KP Infotech designs and builds custom business software'),'direct answer');
  check(!/\b(best custom software company|top software developers|world.s leading development company|you own (?:100%\s+of\s+)?all source code|guaranteed ROI|100% test coverage|zero defects|SOC 2|HIPAA compliant|PCI compliance|ISO certified|lifetime support|unlimited changes)\b/i.test(body),'unsupported claims');
  for(const text of ['Internal tools and admin systems.','Business applications and operational systems.','Customer, partner and vendor portals.','SaaS products and MVPs.','Application and API integrations.','Web and mobile-friendly interfaces.','Odoo-specific connections','Business Automation','Cloud & DevOps','AI interpretation'])check(body.includes(text),'scope '+text);
- for(const href of ['/insights/what-is-custom-software/','/insights/database-design-best-practices/','/contact/'])check(p.links.some(l=>l.href===href),'link '+href);
+ for(const href of ['/insights/what-is-custom-software/','/insights/business-process-improvement-methods/','/contact/'])check(p.links.some(l=>l.href===href),'link '+href);
  const proofs=['/work/collaboration-platform-distributed-teams/','/work/digital-banking-platform/','/work/omnichannel-ecommerce-platform/'];
  for(const proof of proofs){
  check(p.links.filter(l=>l.href===proof).length===1,'one proof link '+proof);
