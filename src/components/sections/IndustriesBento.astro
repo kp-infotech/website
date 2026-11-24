@@ -1,4 +1,5 @@
 ---
+import SanityPicture from '../ui/SanityPicture.astro';
 import SectionLabel from '../ui/SectionLabel.astro';
 import HighlightedText from '../ui/HighlightedText.astro';
 import IndustryCard from '../ui/IndustryCard.astro';
@@ -24,10 +25,19 @@ const featuredIndustry = industries[0];
 const regularIndustries = industries.slice(1);
 ---
 
-<section
-  class:list={["industries-bento", { "industries-bento--has-bg": !!backgroundImage }]}
-  style={backgroundImage ? `background-image: url(${backgroundImage});` : undefined}
->
+<section class="industries-bento">
+  {backgroundImage && (
+    <div class="industries-bento__background" aria-hidden="true">
+      <SanityPicture
+        src={backgroundImage}
+        alt=""
+        width={1920}
+        height={1080}
+        widths={[640, 1024, 1440, 1920]}
+        fill
+      />
+    </div>
+  )}
   <div class="industries-bento__container site-container">
     <header class="industries-bento__header" data-reveal="fade">
       <SectionLabel text="Our Expertise" />
@@ -77,17 +87,11 @@ const regularIndustries = industries.slice(1);
     position: relative;
   }
 
-  .industries-bento--has-bg {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .industries-bento--has-bg::before {
-    content: '';
+  .industries-bento__background {
     position: absolute;
     inset: 0;
-    background: rgba(10, 10, 10, 0.85);
+    opacity: 0.15;
+    pointer-events: none;
   }
 
   @media (max-width: 768px) {

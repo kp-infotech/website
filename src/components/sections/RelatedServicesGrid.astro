@@ -2,6 +2,7 @@
 import SectionLabel from '../ui/SectionLabel.astro';
 import HighlightedText from '../ui/HighlightedText.astro';
 import Button from '../ui/Button.astro';
+import SanityPicture from '../ui/SanityPicture.astro';
 import { urlFor } from '../../lib/sanity';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 import { Icon } from 'astro-icon/components';
@@ -48,10 +49,19 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
 ---
 
 {services.length > 0 && (
-  <section
-    class:list={["rsg", { "rsg--has-bg": !!backgroundImage }]}
-    style={backgroundImage ? `background-image: url(${backgroundImage});` : undefined}
-  >
+  <section class="rsg">
+    {backgroundImage && (
+      <div class="rsg__background" aria-hidden="true">
+        <SanityPicture
+          src={backgroundImage}
+          alt=""
+          width={1920}
+          height={1080}
+          widths={[640, 1024, 1440, 1920]}
+          fill
+        />
+      </div>
+    )}
     <div class="rsg__container site-container">
       <div class="rsg__header">
         <div>
@@ -111,17 +121,11 @@ function getHeroUrl(image: SanityImageSource | undefined): string | null {
     position: relative;
   }
 
-  .rsg--has-bg {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .rsg--has-bg::before {
-    content: '';
+  .rsg__background {
     position: absolute;
     inset: 0;
-    background: rgba(10, 10, 10, 0.95);
+    opacity: 0.05;
+    pointer-events: none;
   }
 
   .rsg__container {
